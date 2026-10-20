@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "protected_files_unchanged": 16,
+  "results": [
+    "RRT/jointspace/FastConnectAnytimeRRTStarJoint.m: OK",
+    "RRT/collisionFreeJointEdge.m: OK",
+    "RRT/collisionFreeJointState.m: OK",
+    "UR5/matlab仿真/replan_weld_actual_axis_adaptive_core.m: OK",
+    "UR5/real_tcp_calibration_active.json: OK",
+    "UR5/real_tcp_calibration_applied.json: OK",
+    "UR5/real_robot_description_calibrated.urdf: OK",
+    "UR5/real_gun_geometry/real_gun_geometry.json: OK",
+    "UR5/real_gun_mount_calibration.json: OK",
+    "UR5/workpiece_pose_real.json: OK",
+    "UR5/environment_geometry_real.json: OK",
+    "UR5/fixed_environment_contacts.json: OK",
+    "UR5/ur5_hmi/ros/trajectory_client.py: OK",
+    "UR5/ur5_hmi/ros/ros_node.py: OK",
+    "UR5/ur5_hmi/config/hmi_config.yaml: OK",
+    "/opt/ros/humble/share/ur_robot_driver/config/ur_controllers.yaml: OK"
+  ],
+  "robot_motion": "NO",
+  "executionReady": false
+}

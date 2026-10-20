@@ -1,0 +1,12 @@
+{
+  "program": "matlab",
+  "arguments": [
+    "-batch",
+    "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); addpath('/home/ttbstt/jixiebi/RRT/benchmark'); req=jsondecode(fileread('/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145349_565017/request.json')); prepare_hmi_continuous_request(req);"
+  ],
+  "request": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145349_565017/request.json",
+  "outputDir": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145349_565017",
+  "default_new_continuous_percent": 50,
+  "actual_button_clicked": true,
+  "robot_motion": "NO"
+}

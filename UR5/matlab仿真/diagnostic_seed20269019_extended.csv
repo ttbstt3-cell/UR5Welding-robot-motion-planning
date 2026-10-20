@@ -1,0 +1,2 @@
+seed,complete,originalFinalPointCount,originalFurthestLayer,failLayer,windowStart,windowEnd,stateCountSum,reachableFinal,edgeTests,edgeFree,edgePoseReject,edgeJointReject,edgeCollisionReject,totalIKCalls,totalAcceptedCandidates,elapsedSec,diagnosis
+20269019,0,21,10,11,6,16,107,0,203,21,0,182,0,8619,107,42.451235,NO_LOCAL_CHAIN_UNDER_CURRENT_GRID_AND_CONSTRAINTS

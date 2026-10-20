@@ -1,0 +1,11 @@
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 4 workers.
+Parallel pool using the 'Processes' profile is shutting down.
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 2 workers.
+              pass: 1
+            checks: [1×1 struct]
+    executionReady: 0
+      robot_motion: 'NO'
+
+Parallel pool using the 'Processes' profile is shutting down.

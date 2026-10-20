@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "classifications": [
+    "PASS",
+    "PRECISION_FAILURE",
+    "COLLISION_FAILURE",
+    "IK_FAILURE",
+    "NO_CONNECTED_CANDIDATE",
+    "OUTPUT_SCHEMA_FAILURE"
+  ],
+  "partial_success_not_promoted": true,
+  "recovered_layer_not_reported_as_final_failure": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

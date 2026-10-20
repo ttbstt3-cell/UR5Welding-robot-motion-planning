@@ -1,0 +1,58 @@
+{
+  "pass_all": true,
+  "negative_cases": [
+    "collision",
+    "joint_limits",
+    "sync_error",
+    "orientation",
+    "acceleration",
+    "samples",
+    "incomplete",
+    "execution_claim",
+    "version_validation",
+    "changed_q",
+    "changed_velocity",
+    "changed_time",
+    "wrong_controller_fields",
+    "changed_binding",
+    "changed_home",
+    "raw_preview",
+    "cached_context_home_changed",
+    "controller_inactive",
+    "program_stopped",
+    "unsafe_mode",
+    "power_off",
+    "action_unready",
+    "zero_scaling",
+    "link_down",
+    "stale_feedback",
+    "start_mismatch"
+  ],
+  "layouts": [
+    {
+      "scale": 1.0,
+      "panel_width": 906,
+      "viewport_width": 924,
+      "screenshot": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/speed_live_sync_20261019/execution_regression/simple_execution_100.png"
+    },
+    {
+      "scale": 1.25,
+      "panel_width": 906,
+      "viewport_width": 924,
+      "screenshot": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/speed_live_sync_20261019/execution_regression/simple_execution_125.png"
+    },
+    {
+      "scale": 1.5,
+      "panel_width": 906,
+      "viewport_width": 924,
+      "screenshot": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/speed_live_sync_20261019/execution_regression/simple_execution_150.png"
+    }
+  ],
+  "actual_saved_offline_result_checked": true,
+  "no_motion_signals": true,
+  "physical_or_servo_acceptance_claimed": false,
+  "no_execution_permit_files": true,
+  "source_and_config_unchanged": true,
+  "scope": "Offline GUI/contract tests with SYNTHETIC READY robot state; no successful send invoked",
+  "robot_motion": "NO"
+}

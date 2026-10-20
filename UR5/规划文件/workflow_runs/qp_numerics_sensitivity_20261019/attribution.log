@@ -1,0 +1,18 @@
+QP_TRANSFORMATION_EQUIVALENCE_PASS
+QP_TRIAL initial raw linprog flag=-2 elapsed=0.987352
+QP_TRIAL initial scaled interior-point-convex flag=-2 elapsed=10.149643
+ATTRIBUTION initial physical_only flag=1
+ATTRIBUTION initial physical_and_position flag=-2
+ATTRIBUTION initial physical_and_orientation flag=1
+ATTRIBUTION initial all_constraints flag=-2
+ATTRIBUTION initial all_with_rest_equalities_only flag=-2
+ATTRIBUTION initial all_with_join_equalities_only flag=-2
+JOINT_SENSITIVITY initial bound=0.46 flag=-2
+JOINT_SENSITIVITY initial bound=0.49 flag=-2
+JOINT_SENSITIVITY initial bound=0.50 flag=-2
+JOINT_SENSITIVITY initial bound=0.55 flag=-2
+JOINT_SENSITIVITY initial bound=0.65 flag=-2
+JOINT_SENSITIVITY initial bound=0.80 flag=-2
+JOINT_SENSITIVITY initial bound=1.00 flag=-2
+JOINT_SENSITIVITY initial bound=2.00 flag=-2
+JOINT_SENSITIVITY initial bound=5.00 flag=1

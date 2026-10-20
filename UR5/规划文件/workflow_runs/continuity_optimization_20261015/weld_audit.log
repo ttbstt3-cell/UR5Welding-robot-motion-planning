@@ -1,0 +1,2 @@
+DENSE_AUDIT mode=weld nodes=47 samples=5015
+DENSE_RESULT mode=weld pass=1 sync=0.461407463 contour=0.183873038 ori=0.470425464 collisions=0 time=39.111

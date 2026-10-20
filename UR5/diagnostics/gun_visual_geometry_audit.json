@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T08:10:24.439832+00:00",
+  "mode": "OFFLINE_READ_ONLY",
+  "visual_geometry": {
+    "coppeliasim_object_path": "/UR5/connection/WeldingGunMount/WeldingGun_visual",
+    "local_cad_assets_found": [],
+    "status": "NO_TRUSTED_LOCAL_CAD_FOUND",
+    "note": "scene_geometry.visual_path is a CoppeliaSim object path, not proof of a local STL/CAD mesh."
+  },
+  "collision_geometry": {
+    "name": "GunCollisionHull",
+    "type": "convex_compound",
+    "component_count": 4,
+    "vertex_count": 104,
+    "face_count": 192,
+    "frame": "WeldingGunMount",
+    "status": "COLLISION_PROXY_ONLY",
+    "note": "Four convex components are suitable for collision checking, not for identifying a conductive-tip centre."
+  },
+  "tcp_geometry": {
+    "weld_tcp_path": "/UR5/connection/WeldingGunMount/WeldTCP",
+    "weld_tcp_pose_mount": {
+      "frame": "WeldingGunMount",
+      "position": [
+        -0.06677482221230058,
+        0.01948920495539974,
+        0.3823302197347518
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "status": "REFERENCE_POINT_PRESENT_BUT_TIP_IDENTITY_UNVERIFIED",
+    "note": "WeldTCP and the nearest hull vertex are not accepted as a measured nozzle/contact-tip centre without physical confirmation."
+  },
+  "wire_geometry": {
+    "wire_length_mm": 18.0,
+    "wire_diameter_mm": 1.2,
+    "length_source": "/home/ttbstt/jixiebi/UR5/matlab仿真/current_weld_geometry_audit.mat",
+    "diameter_source": "/home/ttbstt/jixiebi/UR5/matlab仿真/current_weld_geometry_audit.mat",
+    "measurement_status": "RECORDED_AUDIT_VALUES_NOT_NEWLY_MEASURED",
+    "axis_status": "PENDING_PHYSICAL_MEASUREMENT",
+    "tip_status": "PENDING_PHYSICAL_MEASUREMENT",
+    "derived_axis_policy": "Do not infer the physical feed axis from a collision-hull nearest vertex."
+  },
+  "required_physical_measurements": [
+    "flange->nozzle/conductive-tip centre XYZ in a documented flange frame",
+    "two measured points along the actual wire/feed axis (axis direction and sign)",
+    "wire stick-out length from the measured nozzle/contact point",
+    "tool orientation/reference used by the pendant TCP"
+  ],
+  "source_hashes": {
+    "scene_geometry.json": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+    "current_weld_geometry_audit.mat": "ac671a820f5148832c4c71971318a1e5028e49fc48c9e776ac4abe34c59de27e"
+  }
+}

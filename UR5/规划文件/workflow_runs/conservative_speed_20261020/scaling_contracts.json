@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "checks": [
+    "1 percent geometry/clock/derivatives PASS",
+    "25 percent geometry/clock/derivatives PASS",
+    "50 percent geometry/clock/derivatives PASS",
+    "75 percent geometry/clock/derivatives PASS",
+    "100 percent geometry/clock/derivatives PASS",
+    "Invalid/nonfinite/non-scalar/overspeed percentages rejected",
+    "Mismatching independent Cartesian clock rejected"
+  ],
+  "source_unchanged": true,
+  "robot_motion": "NO",
+  "scope": "Unit contracts, not full collision acceptance or physical authorization"
+}

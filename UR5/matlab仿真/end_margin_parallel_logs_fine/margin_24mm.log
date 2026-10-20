@@ -1,0 +1,122 @@
+
+====================================================
+END-MARGIN BENCHMARK: 24.000 mm (100 seeds)
+====================================================
+[  1/100] margin=24 mm seed=20270001 ... PASS wall=17.835s points=17 IK=1859 stage=PASS
+[  2/100] margin=24 mm seed=20270002 ... PASS wall=4.598s points=16 IK=397 stage=PASS
+[  3/100] margin=24 mm seed=20270003 ... FAIL wall=26.614s points=21 IK=4919 stage=post_recovery_beam_3_angular
+[  4/100] margin=24 mm seed=20270004 ... FAIL wall=36.128s points=21 IK=6582 stage=post_recovery_beam_3_angular
+[  5/100] margin=24 mm seed=20270005 ... PASS wall=5.974s points=17 IK=618 stage=PASS
+[  6/100] margin=24 mm seed=20270006 ... PASS wall=5.768s points=17 IK=618 stage=PASS
+[  7/100] margin=24 mm seed=20270007 ... FAIL wall=28.989s points=21 IK=3384 stage=post_recovery_beam_3_angular
+[  8/100] margin=24 mm seed=20270008 ... PASS wall=12.536s points=17 IK=2217 stage=PASS
+[  9/100] margin=24 mm seed=20270009 ... FAIL wall=7.020s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 10/100] margin=24 mm seed=20270010 ... PASS wall=4.380s points=16 IK=397 stage=PASS
+[ 11/100] margin=24 mm seed=20270011 ... FAIL wall=44.611s points=20 IK=8524 stage=post_recovery_beam_3_angular
+[ 12/100] margin=24 mm seed=20270012 ... PASS wall=13.002s points=17 IK=2217 stage=PASS
+[ 13/100] margin=24 mm seed=20270013 ... PASS wall=12.405s points=17 IK=2217 stage=PASS
+[ 14/100] margin=24 mm seed=20270014 ... FAIL wall=32.583s points=20 IK=7684 stage=post_recovery_beam_3_angular
+[ 15/100] margin=24 mm seed=20270015 ... PASS wall=12.126s points=17 IK=2217 stage=PASS
+[ 16/100] margin=24 mm seed=20270016 ... PASS wall=10.914s points=17 IK=1859 stage=PASS
+[ 17/100] margin=24 mm seed=20270017 ... PASS wall=5.797s points=17 IK=618 stage=PASS
+[ 18/100] margin=24 mm seed=20270018 ... FAIL wall=23.725s points=21 IK=4919 stage=post_recovery_beam_3_angular
+[ 19/100] margin=24 mm seed=20270019 ... FAIL wall=7.360s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 20/100] margin=24 mm seed=20270020 ... PASS wall=4.502s points=16 IK=397 stage=PASS
+[ 21/100] margin=24 mm seed=20270021 ... PASS wall=12.856s points=17 IK=2217 stage=PASS
+[ 22/100] margin=24 mm seed=20270022 ... PASS wall=4.051s points=16 IK=382 stage=PASS
+[ 23/100] margin=24 mm seed=20270023 ... PASS wall=12.023s points=17 IK=2137 stage=PASS
+[ 24/100] margin=24 mm seed=20270024 ... PASS wall=6.031s points=17 IK=618 stage=PASS
+[ 25/100] margin=24 mm seed=20270025 ... PASS wall=13.836s points=17 IK=2217 stage=PASS
+[ 26/100] margin=24 mm seed=20270026 ... PASS wall=4.287s points=16 IK=397 stage=PASS
+[ 27/100] margin=24 mm seed=20270027 ... FAIL wall=26.633s points=21 IK=4872 stage=post_recovery_beam_3_angular
+[ 28/100] margin=24 mm seed=20270028 ... PASS wall=5.979s points=17 IK=618 stage=PASS
+[ 29/100] margin=24 mm seed=20270029 ... FAIL wall=40.324s points=20 IK=6096 stage=post_recovery_beam_3_angular
+[ 30/100] margin=24 mm seed=20270030 ... FAIL wall=35.390s points=20 IK=7684 stage=post_recovery_beam_3_angular
+[ 31/100] margin=24 mm seed=20270031 ... PASS wall=6.013s points=17 IK=618 stage=PASS
+[ 32/100] margin=24 mm seed=20270032 ... PASS wall=4.220s points=16 IK=381 stage=PASS
+[ 33/100] margin=24 mm seed=20270033 ... PASS wall=4.081s points=16 IK=382 stage=PASS
+[ 34/100] margin=24 mm seed=20270034 ... FAIL wall=26.246s points=21 IK=3384 stage=post_recovery_beam_3_angular
+[ 35/100] margin=24 mm seed=20270035 ... FAIL wall=34.357s points=20 IK=7988 stage=post_recovery_beam_3_angular
+[ 36/100] margin=24 mm seed=20270036 ... PASS wall=5.852s points=17 IK=617 stage=PASS
+[ 37/100] margin=24 mm seed=20270037 ... PASS wall=5.788s points=17 IK=617 stage=PASS
+[ 38/100] margin=24 mm seed=20270038 ... PASS wall=6.013s points=17 IK=618 stage=PASS
+[ 39/100] margin=24 mm seed=20270039 ... PASS wall=5.825s points=17 IK=618 stage=PASS
+[ 40/100] margin=24 mm seed=20270040 ... PASS wall=5.929s points=17 IK=618 stage=PASS
+[ 41/100] margin=24 mm seed=20270041 ... PASS wall=12.578s points=17 IK=2217 stage=PASS
+[ 42/100] margin=24 mm seed=20270042 ... PASS wall=5.874s points=17 IK=618 stage=PASS
+[ 43/100] margin=24 mm seed=20270043 ... PASS wall=12.064s points=17 IK=2137 stage=PASS
+[ 44/100] margin=24 mm seed=20270044 ... FAIL wall=7.148s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 45/100] margin=24 mm seed=20270045 ... PASS wall=4.289s points=16 IK=397 stage=PASS
+[ 46/100] margin=24 mm seed=20270046 ... PASS wall=5.911s points=17 IK=617 stage=PASS
+[ 47/100] margin=24 mm seed=20270047 ... PASS wall=12.927s points=17 IK=2217 stage=PASS
+[ 48/100] margin=24 mm seed=20270048 ... PASS wall=4.239s points=16 IK=397 stage=PASS
+[ 49/100] margin=24 mm seed=20270049 ... PASS wall=12.235s points=17 IK=2137 stage=PASS
+[ 50/100] margin=24 mm seed=20270050 ... PASS wall=5.988s points=17 IK=618 stage=PASS
+[ 51/100] margin=24 mm seed=20270051 ... FAIL wall=33.861s points=20 IK=7684 stage=post_recovery_beam_3_angular
+[ 52/100] margin=24 mm seed=20270052 ... PASS wall=5.964s points=17 IK=618 stage=PASS
+[ 53/100] margin=24 mm seed=20270053 ... PASS wall=4.316s points=16 IK=397 stage=PASS
+[ 54/100] margin=24 mm seed=20270054 ... FAIL wall=40.768s points=20 IK=6096 stage=post_recovery_beam_3_angular
+[ 55/100] margin=24 mm seed=20270055 ... PASS wall=4.279s points=16 IK=397 stage=PASS
+[ 56/100] margin=24 mm seed=20270056 ... FAIL wall=33.621s points=21 IK=5697 stage=post_recovery_beam_3_angular
+[ 57/100] margin=24 mm seed=20270057 ... FAIL wall=25.274s points=21 IK=4919 stage=post_recovery_beam_3_angular
+[ 58/100] margin=24 mm seed=20270058 ... PASS wall=5.904s points=17 IK=618 stage=PASS
+[ 59/100] margin=24 mm seed=20270059 ... FAIL wall=41.833s points=20 IK=6400 stage=post_recovery_beam_3_angular
+[ 60/100] margin=24 mm seed=20270060 ... PASS wall=12.427s points=17 IK=2217 stage=PASS
+[ 61/100] margin=24 mm seed=20270061 ... PASS wall=5.959s points=17 IK=617 stage=PASS
+[ 62/100] margin=24 mm seed=20270062 ... PASS wall=6.057s points=17 IK=618 stage=PASS
+[ 63/100] margin=24 mm seed=20270063 ... PASS wall=12.365s points=17 IK=2217 stage=PASS
+[ 64/100] margin=24 mm seed=20270064 ... FAIL wall=26.619s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[ 65/100] margin=24 mm seed=20270065 ... PASS wall=4.270s points=16 IK=397 stage=PASS
+[ 66/100] margin=24 mm seed=20270066 ... FAIL wall=7.310s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 67/100] margin=24 mm seed=20270067 ... PASS wall=13.472s points=17 IK=2217 stage=PASS
+[ 68/100] margin=24 mm seed=20270068 ... PASS wall=5.905s points=17 IK=617 stage=PASS
+[ 69/100] margin=24 mm seed=20270069 ... PASS wall=4.250s points=16 IK=397 stage=PASS
+[ 70/100] margin=24 mm seed=20270070 ... PASS wall=4.452s points=16 IK=397 stage=PASS
+[ 71/100] margin=24 mm seed=20270071 ... FAIL wall=27.462s points=21 IK=5288 stage=post_recovery_beam_3_angular
+[ 72/100] margin=24 mm seed=20270072 ... FAIL wall=24.161s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[ 73/100] margin=24 mm seed=20270073 ... FAIL wall=25.861s points=21 IK=5138 stage=post_recovery_beam_3_angular
+[ 74/100] margin=24 mm seed=20270074 ... PASS wall=12.951s points=17 IK=2217 stage=PASS
+[ 75/100] margin=24 mm seed=20270075 ... PASS wall=6.095s points=17 IK=618 stage=PASS
+[ 76/100] margin=24 mm seed=20270076 ... PASS wall=5.823s points=17 IK=618 stage=PASS
+[ 77/100] margin=24 mm seed=20270077 ... PASS wall=4.355s points=16 IK=397 stage=PASS
+[ 78/100] margin=24 mm seed=20270078 ... FAIL wall=34.433s points=21 IK=4935 stage=post_recovery_beam_3_angular
+[ 79/100] margin=24 mm seed=20270079 ... FAIL wall=35.016s points=20 IK=7684 stage=post_recovery_beam_3_angular
+[ 80/100] margin=24 mm seed=20270080 ... FAIL wall=7.110s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 81/100] margin=24 mm seed=20270081 ... PASS wall=6.103s points=17 IK=618 stage=PASS
+[ 82/100] margin=24 mm seed=20270082 ... PASS wall=4.160s points=16 IK=382 stage=PASS
+[ 83/100] margin=24 mm seed=20270083 ... PASS wall=4.304s points=16 IK=382 stage=PASS
+[ 84/100] margin=24 mm seed=20270084 ... PASS wall=11.857s points=17 IK=1859 stage=PASS
+[ 85/100] margin=24 mm seed=20270085 ... FAIL wall=23.884s points=21 IK=4919 stage=post_recovery_beam_3_angular
+[ 86/100] margin=24 mm seed=20270086 ... PASS wall=4.089s points=16 IK=382 stage=PASS
+[ 87/100] margin=24 mm seed=20270087 ... PASS wall=12.774s points=17 IK=2217 stage=PASS
+[ 88/100] margin=24 mm seed=20270088 ... FAIL wall=38.503s points=20 IK=5320 stage=post_recovery_beam_3_angular
+[ 89/100] margin=24 mm seed=20270089 ... PASS wall=5.846s points=17 IK=618 stage=PASS
+[ 90/100] margin=24 mm seed=20270090 ... PASS wall=4.387s points=16 IK=397 stage=PASS
+[ 91/100] margin=24 mm seed=20270091 ... PASS wall=11.361s points=17 IK=1859 stage=PASS
+[ 92/100] margin=24 mm seed=20270092 ... FAIL wall=23.248s points=21 IK=4919 stage=post_recovery_beam_3_angular
+[ 93/100] margin=24 mm seed=20270093 ... PASS wall=4.380s points=16 IK=382 stage=PASS
+[ 94/100] margin=24 mm seed=20270094 ... PASS wall=12.899s points=17 IK=2217 stage=PASS
+[ 95/100] margin=24 mm seed=20270095 ... FAIL wall=36.060s points=20 IK=7988 stage=post_recovery_beam_3_angular
+[ 96/100] margin=24 mm seed=20270096 ... PASS wall=13.656s points=17 IK=2217 stage=PASS
+[ 97/100] margin=24 mm seed=20270097 ... PASS wall=13.303s points=17 IK=2217 stage=PASS
+[ 98/100] margin=24 mm seed=20270098 ... PASS wall=13.502s points=17 IK=2217 stage=PASS
+[ 99/100] margin=24 mm seed=20270099 ... PASS wall=4.429s points=16 IK=397 stage=PASS
+[100/100] margin=24 mm seed=20270100 ... PASS wall=4.429s points=16 IK=397 stage=PASS
+MARGIN 24.000 mm: PASS 69/100 (69.0%)
+
+Saved summary CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_24mm.csv
+Saved summary MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_24mm.mat
+
+ans = 
+
+  struct with fields:
+
+          name: 'A-ARC-IK+ endpoint-margin benchmark'
+     marginsMm: 24
+         seeds: [20270001 20270002 20270003 20270004 … ] (1×100 double)
+       options: [1×1 struct]
+          rows: [1×1 struct]
+    summaryCsv: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_24mm.csv'
+    summaryMat: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_24mm.mat'
+       created: '2026-09-27 09:13:10'
+

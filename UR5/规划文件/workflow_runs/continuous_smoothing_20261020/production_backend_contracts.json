@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "checks": {
+    "default_reference_unchanged": true,
+    "all_101_states_checked": true,
+    "bad_worker_option": true,
+    "nan_q_rejected": true,
+    "contour_boundary_decision_exact": true,
+    "validator_threshold_dispatch_exact": true,
+    "empty_world_compatible": true,
+    "worker_error_fails_closed": true,
+    "external_pool_retained": true,
+    "serial_full_coverage": true
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

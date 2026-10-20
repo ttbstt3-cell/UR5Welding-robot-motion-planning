@@ -1,0 +1,40 @@
+HMI_WELD_STAGE stage=PREPARING
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[警告: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> 位置：sync_ur5_joint_states (第 181 行)
+位置: run (第 112 行)
+位置: loadUR5JointScene (第 12 行)
+位置: build_real_planning_scene (第 6 行)
+位置: plan_hmi_preview_request (第 17 行)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.

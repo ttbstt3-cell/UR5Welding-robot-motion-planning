@@ -1,0 +1,247 @@
+{
+  "baseline_sec": [
+    595.276691,
+    597.13036
+  ],
+  "optimized_sec": [
+    191.180807,
+    185.378401,
+    192.419892
+  ],
+  "baseline_mean_sec": 596.2035255000001,
+  "baseline_std_sec": 1.310741919975264,
+  "optimized_mean_sec": 189.6597,
+  "optimized_std_sec": 3.7591187471077587,
+  "reduction_percent": 68.1887657673705,
+  "speedup": 3.143543544042304,
+  "source_checks": [
+    {
+      "path": "/home/ttbstt/jixiebi/RRT/checkEnvironmentCollision.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/RRT/collisionFreeJointState.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/RRT/collisionFreeJointEdge.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/check_scene_environment_collision.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/build_real_planning_scene.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_time_scale_accp_output.m",
+      "unchanged": true
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/validate_accp_controller_interpolation.m",
+      "unchanged": true
+    }
+  ],
+  "comparison": {
+    "scope": "Same REAL scene/seed; cold ACCP; no execution trajectory",
+    "original_actual_hmi_seconds": 595.276691,
+    "baseline_seconds": [
+      595.276691,
+      597.13036
+    ],
+    "optimized_seconds": [
+      191.180807,
+      185.378401,
+      192.419892
+    ],
+    "runs": [
+      {
+        "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_01",
+        "pass": true,
+        "weld_q_nodes_identical": true,
+        "weld_tcp_targets_identical": true,
+        "max_q_node_delta_rad": 0,
+        "max_target_pose_matrix_delta": 0,
+        "weld_node_count": 47,
+        "total_node_count": 416,
+        "weld_max_tcp_geometry_error_mm": 0.24425293424533828,
+        "weld_max_node_tcp_error_mm": 0.00014255771936345463,
+        "weld_max_geometry_orientation_error_deg": 0.01808590245764353,
+        "max_raw_joint_step_deg": 7.118994057768612,
+        "joint_limits_pass": true,
+        "collision_pass": true,
+        "collision_samples": 9131,
+        "source_dependencies_stable": true,
+        "timing_deferred": true,
+        "bindings_identical": true,
+        "hard_constraint_options_identical": true,
+        "executionReady": false
+      },
+      {
+        "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_02",
+        "pass": true,
+        "weld_q_nodes_identical": true,
+        "weld_tcp_targets_identical": true,
+        "max_q_node_delta_rad": 0,
+        "max_target_pose_matrix_delta": 0,
+        "weld_node_count": 47,
+        "total_node_count": 416,
+        "weld_max_tcp_geometry_error_mm": 0.24425293424533828,
+        "weld_max_node_tcp_error_mm": 0.00014255771936345463,
+        "weld_max_geometry_orientation_error_deg": 0.01808590245764353,
+        "max_raw_joint_step_deg": 7.118994057768612,
+        "joint_limits_pass": true,
+        "collision_pass": true,
+        "collision_samples": 9131,
+        "source_dependencies_stable": true,
+        "timing_deferred": true,
+        "bindings_identical": true,
+        "hard_constraint_options_identical": true,
+        "executionReady": false
+      },
+      {
+        "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_142704_413362",
+        "pass": true,
+        "weld_q_nodes_identical": true,
+        "weld_tcp_targets_identical": true,
+        "max_q_node_delta_rad": 0,
+        "max_target_pose_matrix_delta": 0,
+        "weld_node_count": 47,
+        "total_node_count": 416,
+        "weld_max_tcp_geometry_error_mm": 0.24425293424533828,
+        "weld_max_node_tcp_error_mm": 0.00014255771936345463,
+        "weld_max_geometry_orientation_error_deg": 0.01808590245764353,
+        "max_raw_joint_step_deg": 7.118994057768612,
+        "joint_limits_pass": true,
+        "collision_pass": true,
+        "collision_samples": 9131,
+        "source_dependencies_stable": true,
+        "timing_deferred": true,
+        "bindings_identical": true,
+        "hard_constraint_options_identical": true,
+        "executionReady": false
+      }
+    ],
+    "executionReady": false,
+    "robot_motion": "NO",
+    "baseline_mean_sec": 596.2035255000001,
+    "baseline_std_sec": 1.310741919975264,
+    "optimized_mean_sec": 189.65970000000002,
+    "optimized_std_sec": 3.7591187471077587,
+    "reduction_percent": 68.1887657673705,
+    "baseline_success_rate": 1,
+    "optimized_success_rate": 1,
+    "pass": true,
+    "sample_size_note": "Baseline includes supplied actual-HMI run plus one fresh unprofiled run; optimized includes two benchmarks and actual QPushButton/QProcess run when available. Profiled run excluded. Same seed only; not multi-seed statistical evidence."
+  },
+  "deferred_timing": {
+    "pass": true,
+    "timing_run_once": true,
+    "q_and_tcp_unchanged": true,
+    "timestamps_identical_to_original": true,
+    "velocities_identical_to_original": true,
+    "initial_timing_acceptance": false,
+    "initial_timing_failure_preserved": "ACCP_TIME_PARAMETERIZATION_FAILED: ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 1.486543 mm >= 0.500000 mm; controller TCP orientation 0.738518 deg > 0.500000 deg; controller peak joint velocity 0.0880438538 rad/s exceeds 0.0872664626; controller peak joint acceleration 0.843655592 rad/s^2 exceeds 0.261799388",
+    "controller_sample_count": 4601,
+    "elapsed_sec": 28.842707,
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "native_reaudit": {
+    "pass": true,
+    "nodes": 416,
+    "samples": 9131,
+    "collision_sample_count_identical": true,
+    "collision_pairs_identical": true,
+    "frame_statuses_identical": true,
+    "nearest_pair_names_identical": true,
+    "max_frame_gap_difference_mm": 0,
+    "minimum_positive_gap_mm": 0.40218062562951773,
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "actual_hmi_button": {
+    "pass": true,
+    "scope": "Actual QPushButton -> QProcess MATLAB -> HMI report/load/preview; ROS worker disabled",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_142704_413362/report.json",
+    "request": {
+      "task": "Full_Welding_Task",
+      "qStart": [
+        -1.2762191931353968,
+        -2.0178359190570276,
+        1.565992832183838,
+        -1.318944279347555,
+        -1.379878346120016,
+        3.3301806449890137
+      ],
+      "qHome": [
+        -1.2762191931353968,
+        -2.0178359190570276,
+        1.565992832183838,
+        -1.318944279347555,
+        -1.379878346120016,
+        3.3301806449890137
+      ],
+      "algorithm": "V1 FastConnectAnytimeRRTStar",
+      "seed": 20260917,
+      "maxPlanningTimeSec": 30.0,
+      "planning_scene": "REAL_CALIBRATION",
+      "calibration_binding": {
+        "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_calibration_source": "real_tcp_calibration_active.json",
+        "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+        "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+        "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+        "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+        "real_gun_geometry_status": "ACTIVE",
+        "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+        "gun_geometry_version": "real-gun-1791876831259595871",
+        "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "workpiece_source": "REAL CALIBRATION",
+        "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+        "planning_scene": "REAL_CALIBRATION",
+        "wire_collision_shorten_mm": 3,
+        "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+        "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+        "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+        "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+        "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+        "robot_collision_coverage": "COMPLETE",
+        "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+        "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+      },
+      "preview_only": true,
+      "executionReady": false,
+      "realhome_version": "REALHOME-1758fd2d499add56a99bab746861f85c8bece7c8d9fcf0ccc00a2b9ae4e7e1bc",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+      "preweld_version": null,
+      "regenerate_preweld": true,
+      "start_source": "real_home",
+      "request_id": "20261016_142704_413362",
+      "outputDir": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_142704_413362"
+    },
+    "gui_stage": "Preview Ready",
+    "matlab_planning_sec": 192.419892,
+    "button_to_preview_sec": 197.53748469101265,
+    "transfer": {
+      "phase": "preview",
+      "file_load_and_scene_adoption_sec": 0.05628013100067619,
+      "completion_callback_sec": 0.11535711000033189,
+      "process_and_transfer_sec": 197.2641749089962,
+      "robot_motion": "NO"
+    },
+    "node_count": 416,
+    "live_state_preserved": true,
+    "config_unchanged": true,
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

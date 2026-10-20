@@ -1,0 +1,17 @@
+
+====================================================
+BIDIRECTIONAL LOCAL DENSE RECOVERY
+Forward set + suffix backward set + local meet
+====================================================
+
+Seed 20269018, local base window [13,17]
+  meet=1 complete=1 forwardFinal=1 backwardFirst=6 maxJump=39.740 deg TCPseg=2.5416 mm
+
+Seed 20269019, local base window [9,13]
+  meet=1 complete=1 forwardFinal=14 backwardFirst=19 maxJump=116.347 deg TCPseg=32.4657 mm
+
+Seed 20269022, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Saved MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/bidirectional_local_dense_recovery.mat
+Saved CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/bidirectional_local_dense_recovery.csv

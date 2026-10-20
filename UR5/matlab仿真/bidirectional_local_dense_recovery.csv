@@ -1,0 +1,4 @@
+seed,complete,nodeCollisionFree,edgeCollisionFree,wallTimeSec,meetLayer,forwardFinal,backwardFirst,maxJointJumpDeg,maxTcpSegmentErrorMm,diagnosis,errorMessage
+20269018,0,0,0,11.547062,0,0,5,NaN,NaN,NO_FORWARD_BACKWARD_MEET,
+20269019,0,1,0,15.290154,1,1,19,14.303910,1.530987,TCP_SEGMENT_ERROR,
+20269022,0,0,0,6.076571,0,0,0,NaN,NaN,NO_FORWARD_BACKWARD_MEET,

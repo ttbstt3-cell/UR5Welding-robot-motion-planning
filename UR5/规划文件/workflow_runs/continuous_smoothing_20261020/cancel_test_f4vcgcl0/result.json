@@ -1,0 +1,13 @@
+{
+  "pass_all": true,
+  "elapsed_after_termination": 4.472431428031996,
+  "parent_pid": 1650574,
+  "worker_pids": [
+    1650852,
+    1650854,
+    1650856,
+    1650858
+  ],
+  "remaining": [],
+  "robot_motion": "NO"
+}

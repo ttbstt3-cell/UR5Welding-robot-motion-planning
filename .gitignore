@@ -1,0 +1,44 @@
+# Tool-private state and local data snapshots (not remote/cloud backups).
+/.project_backups/
+/.agents/
+/.codex/
+/.aws/
+/System Volume Information/
+
+# Rebuildable Python / ROS workspace caches only.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/
+/log/
+/UR5/logs/
+/UR5/ur5_hmi/bin/
+
+# Temporary editor files; do not glob-ignore MAT/STL/TTT/experimental logs.
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+**/.idea/workspace.xml
+
+# Credentials must be supplied out of band; examples are safe to review.
+.env
+.env.*
+!.env.example
+!.env.template
+.git-credentials
+.netrc
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+*.key
+*.pem

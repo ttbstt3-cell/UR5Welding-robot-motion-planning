@@ -1,0 +1,53 @@
+{
+  "schema_version": "real_gun_stl_audit_v1",
+  "created_utc": "2026-10-13T06:56:47.258279+00:00",
+  "source_file": "/home/ttbstt/jixiebi/UR5/real_gun_geometry_candidates/Areal_06f38186/welding_gun_source.STL",
+  "sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "file_size_bytes": 19895584,
+  "format": "binary_stl",
+  "triangle_count": 397910,
+  "raw_coordinate_bounds": {
+    "min": [
+      0.3300011157989502,
+      0.3188103437423706,
+      0.0
+    ],
+    "max": [
+      66.33000183105469,
+      191.811767578125,
+      366.1353759765625
+    ],
+    "size": [
+      66.00000071525574,
+      191.49295723438263,
+      366.1353759765625
+    ]
+  },
+  "raw_coordinate_origin": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "unit_assessment": {
+    "inferred_unit": "mm",
+    "scale_to_m": 0.001,
+    "method": "size heuristic only; source mesh is not modified",
+    "requires_human_confirmation": true
+  },
+  "mesh_integrity": {
+    "nonfinite_triangle_count": 0,
+    "degenerate_triangle_count": 0,
+    "binary_size_matches_triangle_count": true
+  },
+  "installation": {
+    "status": "NOT_DEFINED",
+    "reason": "STL contains no flange frame or mounting transform metadata",
+    "automatic_center_rotate_scale_applied": false
+  },
+  "tip_and_wire": {
+    "status": "NOT_DEFINED",
+    "reason": "No reliable nozzle centre or wire axis metadata was found in STL file",
+    "automatic_tip_inference": false
+  },
+  "original_source_file": "/home/ttbstt/jixiebi/焊枪模型/A焊枪real.STL"
+}

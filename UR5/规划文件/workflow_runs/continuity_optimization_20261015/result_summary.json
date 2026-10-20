@@ -1,0 +1,46 @@
+{
+  "executionReady": false,
+  "robot_motion": "NO",
+  "original": {
+    "tcp_time_sync_max_mm": 2.816926,
+    "tcp_orientation_max_deg": 0.760377,
+    "cause": "node velocity/time allocation under controller-equivalent cubic Hermite"
+  },
+  "optimized_offline_candidate": {
+    "node_count": 414,
+    "original_accp_weld_nodes": 47,
+    "inserted_execution_nodes": 57,
+    "duration_sec": 255.040839562,
+    "tcp_time_sync_max_mm": 0.461498660,
+    "tcp_contour_max_mm": 0.224258228,
+    "tcp_orientation_max_deg": 0.459694720,
+    "max_joint_velocity_rad_s": 0.081951102,
+    "max_joint_acceleration_rad_s2": 0.259981836,
+    "max_segment_jerk_rad_s3": 4.2443883529,
+    "rms_segment_jerk_rad_s3": 0.1753766591,
+    "max_acceleration_jump_rad_s2": 0.3951812597,
+    "collision_samples": 41301,
+    "collision_pass": true,
+    "joint_limits_pass": true,
+    "min_positive_clearance_mm": 0.1930496993,
+    "strict_c2_interfaces_pass": true,
+    "original_weld_nodes_preserved": true,
+    "original_weld_targets_preserved": true
+  },
+  "segments_sec": {
+    "approach": 119.204087488,
+    "weld": 31.398255222,
+    "exit": 104.438496853
+  },
+  "j6": {
+    "approach_actual_sweep_deg": 329.109496,
+    "full_path_absolute_travel_deg": 921.862300,
+    "periodic_wrapping_used": false
+  },
+  "limitations": [
+    "Minimum model clearance is not a physical safety-margin certification.",
+    "wire_collision_shorten_mm=3 remains an approximation requiring physical validation.",
+    "Real servo tracking response was not tested; the controller snapshot had trajectory controllers inactive.",
+    "No execution-ready file was generated and no ROS motion was sent."
+  ]
+}

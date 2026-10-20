@@ -1,0 +1,89 @@
+{
+  "status": "DRAFT",
+  "method": "planar boundary circles + four-hole rigid registration",
+  "source_sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "source_contact_plane_axis": "Z",
+  "source_contact_plane_mm": 0,
+  "source_plate_center_mm": [
+    33.330000912937734,
+    31.814999795235835,
+    0
+  ],
+  "source_plate_diameter_mm": 63,
+  "source_holes_xy_mm": [
+    [
+      50.865497876895056,
+      14.279503064178144
+    ],
+    [
+      50.865497966153434,
+      49.350496909383025
+    ],
+    [
+      15.79450390777725,
+      14.279503060345569
+    ],
+    [
+      15.794503995073255,
+      49.35049688047481
+    ]
+  ],
+  "robot_holes_flange_yz_mm": [
+    [
+      17.663646438892176,
+      -17.706643688651507
+    ],
+    [
+      17.73032711258434,
+      17.672142584574406
+    ],
+    [
+      -17.61614784972524,
+      -17.66995977237648
+    ],
+    [
+      -17.65297945974783,
+      17.656960560931324
+    ]
+  ],
+  "per_hole_error_mm": [
+    0.184532088081291,
+    0.22072372094187542,
+    0.16661114539742697,
+    0.2004159641696078
+  ],
+  "hole_center_rms_mm": 0.19409848336781532,
+  "hole_center_max_mm": 0.22072372094187542,
+  "in_plane_rotation_deg": -0.020812120347976856,
+  "T_flange_source": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      2.5055181980135344e-05
+    ],
+    [
+      0.9999999340283433,
+      0.0003632400164056554,
+      0.0,
+      -0.033310343658252674
+    ],
+    [
+      -0.0003632400164056554,
+      0.9999999340283429,
+      0.0,
+      -0.031814766168500715
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "contact_gap_mm": 0,
+  "normal_opposition_dot": -1,
+  "orientation_basis": "Previous +90 branch; source X/Y/Z = old -Z/Y/X",
+  "note": "Mesh fit only; CAD and robot hole pitches differ. Physical confirmation required.",
+  "robot_motion": "NO"
+}

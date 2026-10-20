@@ -1,0 +1,25 @@
+{
+  "publication_pass": true,
+  "published_path": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/保守调试轨迹_50pct_2026-10-20_14-58-27_003182.mat",
+  "published_sha256": "60288ec1f3c310f425dff85d3b8265373e4de961aa4503a55f0d963257f4c917",
+  "original_227_sec_file_preserved": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/连续规划完成轨迹_2026-10-20_10-05-24_168245.mat",
+  "all_protected_files_unchanged_during_publication": {
+    "/home/ttbstt/jixiebi/UR5/real_robot_description_calibrated.urdf": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "/home/ttbstt/jixiebi/UR5/real_tcp_calibration_active.json": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "/home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+    "/home/ttbstt/jixiebi/UR5/real_gun_mount_calibration.json": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+    "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+    "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+    "/home/ttbstt/jixiebi/UR5/scene_geometry.json": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+    "/home/ttbstt/jixiebi/UR5/fixed_environment_contacts.json": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+    "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/连续规划完成轨迹_2026-10-20_10-05-24_168245.mat": "94ef7306a122ad7bf97aec0190fe93482510b1504bd4c49da4425c3fef58f5cd",
+    "/home/ttbstt/jixiebi/UR5/robot_motion_limits.json": "8eaa422c8c8856ecc5f7745a8add8716de6cbe6983813a4d6d1afa5651dd03a3",
+    "/home/ttbstt/jixiebi/UR5/ur5_hmi/config/hmi_config.yaml": "d98ddc4625633c88853de38f8f4f9a3ad8ed85dc37ea7057de9c2d39109eacbc",
+    "/home/ttbstt/jixiebi/UR5/ur5_hmi/safety/robot_motion_limits.py": "eb7945005fff8009e736beed218108d4a0e93dad7cc42ec12d179be0784f5043",
+    "/home/ttbstt/jixiebi/UR5/ur5_hmi/ros/trajectory_client.py": "395601d736d3932d5a5c56a8fc4f44715a4491d2c5c76b4ad33588b2ca56e983",
+    "/home/ttbstt/jixiebi/UR5/ur5_hmi/trajectory/trajectory_utils.py": "150aac3c57d84c7851182b5de11723b0349d574d3c124060d10d2c7eb4dbdb3a"
+  },
+  "offline_context_pass": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "executionReady": false,
+  "iterations": [
+    {
+      "iteration": 1,
+      "exitflag": 1,
+      "message": "Minimum found that satisfies the constraints.\n\nOptimization completed because the objective function is non-decreasing in \nfeasible directions, to within the value of the optimality tolerance,\nand constraints are satisfied to within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization completed: The relative dual feasibility, 3.141476e-09,\nis less than options.OptimalityTolerance = 1.000000e-08, the complementarity measure,\n9.704125e-11, is less than options.OptimalityTolerance, and the relative maximum constraint\nviolation, 2.736824e-13, is less than options.ConstraintTolerance = 1.000000e-08.",
+      "position_mm": 0.46094549185148448,
+      "orientation_deg": 0.45964842309015497,
+      "max_velocity": 0.081951102028987768,
+      "max_acceleration": 0.26168184029859437
+    }
+  ],
+  "failure_reason": "",
+  "elapsed_sec": 18.592398,
+  "q_nodes_unchanged": true,
+  "tcp_targets_unchanged": true,
+  "collision_status": "NOT_CHECKED: requires independent dense audit"
+}

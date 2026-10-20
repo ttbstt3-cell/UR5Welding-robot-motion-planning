@@ -1,0 +1,7 @@
+{
+  "phase": "preview",
+  "file_load_and_scene_adoption_sec": 2.226027930038981,
+  "completion_callback_sec": 2.289114070998039,
+  "process_and_transfer_sec": 157.75641396798892,
+  "robot_motion": "NO"
+}

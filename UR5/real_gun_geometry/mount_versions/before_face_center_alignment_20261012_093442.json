@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "calibration_type": "real_gun_mount_adjustment",
+  "coordinate_frame": "URDF flange",
+  "rotation_axis_flange": [
+    1.0,
+    -2.6347356871039033e-19,
+    6.179952383167374e-17
+  ],
+  "rotation_axis_source": "URDF wrist_3_joint / J6 local axis",
+  "roll_deg": 90.0,
+  "translation_flange_mm": [
+    -50.0,
+    40.0,
+    -30.0
+  ],
+  "T_flange_adjustment": [
+    [
+      1.0,
+      -6.206299740038413e-17,
+      6.153605026296334e-17,
+      -0.05
+    ],
+    [
+      6.153605026296335e-17,
+      6.123233995736766e-17,
+      -1.0,
+      0.04
+    ],
+    [
+      6.206299740038412e-17,
+      1.0,
+      6.123233995736766e-17,
+      -0.03
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_sha256": "437e28161ee9f50ad688f6f4239f432775dc6a9594f331a13110a89847442699",
+  "T_flange_source": [
+    [
+      1.0,
+      -6.206299740038413e-17,
+      6.153605026296334e-17,
+      -0.05
+    ],
+    [
+      6.153605026296335e-17,
+      6.074791377708869e-17,
+      -1.0,
+      0.04
+    ],
+    [
+      6.206299740038412e-17,
+      1.0,
+      6.074791377708869e-17,
+      -0.03
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_source_nominal": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      -4.844261802789766e-19,
+      0.0
+    ],
+    [
+      0.0,
+      4.844261802789766e-19,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "status": "CONFIRMED",
+  "valid": true,
+  "confirmed_by_operator": true,
+  "applied_to_matlab": false,
+  "requires_replan": true,
+  "requires_collision_revalidation": true,
+  "wire_tcp_error_mm": {
+    "available": false,
+    "reason": "REAL 焊丝停用：未验证几何；不是已通过焊丝碰撞检查",
+    "status": "DISABLED_UNVERIFIED",
+    "distance_mm": null
+  },
+  "timestamp": "2026-10-12T09:03:38+0800",
+  "version": "UR5-HMI-GUN-MOUNT-1"
+}

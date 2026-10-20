@@ -1,0 +1,13 @@
+RRT-Connect approach/exit report
+Created: 2026-09-17 15:00:09
+Source weld result: /home/ttbstt/jixiebi/UR5/matlab仿真/weld_actual_axis_replan.mat
+Overall PASS: 1
+PreWeld success=1 distance_m=0.030000 edgeFree=1
+PostWeld success=1 distance_m=0.030000 edgeFree=1
+approach success=1 pass=1
+  time_s=11.898240 iterations=31 samples=31 nodes=32 collision_checks=317 edge_checks=60 path_length_rad=19.842372 max_jump_deg=12.000000
+  validation nodes=21 edges=20 node_free=1 edge_free=1
+exit success=1 pass=1
+  time_s=6.752958 iterations=11 samples=11 nodes=22 collision_checks=181 edge_checks=30 path_length_rad=17.255930 max_jump_deg=12.000000
+  validation nodes=19 edges=18 node_free=1 edge_free=1
+Note: Existing 80-point weld path is read-only and was not replanned.

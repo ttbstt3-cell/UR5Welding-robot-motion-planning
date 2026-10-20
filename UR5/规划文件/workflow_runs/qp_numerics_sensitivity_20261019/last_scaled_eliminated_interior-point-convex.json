@@ -1,0 +1,45 @@
+{
+  "snapshot": "last",
+  "mode": "scaled_eliminated",
+  "algorithm": "interior-point-convex",
+  "formal_thresholds_unchanged": true,
+  "formal_QP_constraints_unchanged": true,
+  "TCP_internal_position_mm": 0.46,
+  "TCP_internal_orientation_deg": 0.46,
+  "vars": 6462,
+  "inequalities": 1.341408E+6,
+  "equalities": 12,
+  "transformed_vars": 6450,
+  "transformed_inequalities": 1.289076E+6,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "status": "NO_SOLUTION_ACCEPTED",
+  "conditioning": {
+    "row_scale_min": 0.0069701632870681806,
+    "row_scale_max": 211.10806519577295,
+    "removed_constant_rows": 72,
+    "singleton_rows_to_bounds": 52284,
+    "constant_infeasible": false,
+    "bound_infeasible": false,
+    "objective_scale": 7.6249882965957054
+  },
+  "matrix_stats": {
+    "H_diagonal_min": 0.035474597855163721,
+    "H_diagonal_max": 296.71088185670266,
+    "row_norm_min": 7.21983934446695E-5,
+    "row_norm_max": 424.31803649088147,
+    "time_step_min": 0.0094268912843773478,
+    "time_step_max": 1.8049100439106809
+  },
+  "exitflag": -2,
+  "solver_output": {
+    "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 5.797332e+04 has grown \nto more than 1e5 times its minimum value during the iterations.",
+    "algorithm": "interior-point-convex",
+    "firstorderopt": 4.2502269935903766E+11,
+    "constrviolation": 1.1048945593883797,
+    "iterations": 23,
+    "linearsolver": "sparse",
+    "cgiterations": []
+  },
+  "elapsed_sec": 83.971555
+}

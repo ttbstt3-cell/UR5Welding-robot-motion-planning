@@ -1,0 +1,1018 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "frame_id": "UR5_base",
+  "faces_index_base": 1,
+  "status": "EXPORTED_REVIEW_REQUIRED",
+  "generated_utc": "2026-10-14T11:30:30.704189+00:00",
+  "source": {
+    "scene": "/home/ttbstt/jixiebi/UR5/ur5.ttt",
+    "scene_sha256": "1e2b295f479d96ea51489e7bea7425dc832748695b2c0941ce69315afd642644",
+    "active_scene_path": "/home/ttbstt/jixiebi/UR5/ur5.ttt",
+    "simulation_state": 0,
+    "remote_api": {
+      "host": "localhost",
+      "port": 23070
+    },
+    "raw_inventory_path": "/home/ttbstt/jixiebi/UR5/environment_inventory_raw.json",
+    "raw_inventory_sha256": "b2cdacf67fbe46154941aa2819fd59f8e2006100dbf0b21294dfb8cb98d4150f",
+    "method": "CoppeliaSim read-only API snapshot; no convexification"
+  },
+  "frames": {
+    "base_path": "/UR5",
+    "base_pose_world": {
+      "frame": "world",
+      "position": [
+        0.5499999339247766,
+        -0.8750000122428505,
+        0.014649842865765095
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "T_world_UR5base": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.5499999339247766
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -0.8750000122428505
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.014649842865765095
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_base_UR5base": [
+      [
+        6.123233995736766e-17,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        6.123233995736766e-17,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.01465
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "registration_source": {
+      "calibration_path": "/home/ttbstt/jixiebi/UR5/ur5_tool_calibration.mat",
+      "calibration_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "urdf_path": "/home/ttbstt/jixiebi/UR5/real_robot_description_calibrated.urdf",
+      "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "urdf_root": "world",
+      "T_URDFroot_base": [
+        [
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0,
+          0.0
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_CopBase_MatBase": [
+        [
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          6.123233995736766e-17,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.01465
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "derivation": "inv(T_URDFroot_base) @ inv(T_CopBase_MatBase)"
+    }
+  },
+  "objects": [
+    {
+      "name": "EnvironmentCollision_Floor",
+      "path": "/Floor",
+      "source_alias": "Floor",
+      "category": "floor",
+      "collision_enabled": true,
+      "collidable_source": false,
+      "special_property": 0,
+      "static": true,
+      "primitive_type_code": 3,
+      "geometry_flags": 6,
+      "pose_UR5_base": {
+        "frame": "UR5_base",
+        "position": [
+          -0.5499999339247766,
+          0.8750000122428505,
+          -0.11464984435588121
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "pose_world": {
+        "frame": "world",
+        "position": [
+          0.0,
+          0.0,
+          -0.10000000149011612
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "T_UR5base_object": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.5499999339247766
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.8750000122428505
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.11464984435588121
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bbox_size_m": [
+        5.0,
+        5.0,
+        0.20000000298023224
+      ],
+      "bbox_pose_object": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "type": "box",
+        "size_m": [
+          5.0,
+          5.0,
+          0.20000018179416656
+        ],
+        "is_convex": true,
+        "vertices_m": [
+          [
+            -2.5,
+            -2.5,
+            -0.10000000149011612
+          ],
+          [
+            2.5,
+            -2.5,
+            -0.10000000149011612
+          ],
+          [
+            -2.5,
+            2.5,
+            -0.10000000149011612
+          ],
+          [
+            2.5,
+            2.5,
+            -0.10000000149011612
+          ],
+          [
+            -2.5,
+            -2.5,
+            0.10000000149011612
+          ],
+          [
+            2.5,
+            -2.5,
+            0.10000000149011612
+          ],
+          [
+            -2.5,
+            2.5,
+            0.10000000149011612
+          ],
+          [
+            2.5,
+            2.5,
+            0.10000000149011612
+          ]
+        ],
+        "faces": [
+          [
+            2,
+            1,
+            4
+          ],
+          [
+            4,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            6,
+            5
+          ],
+          [
+            4,
+            3,
+            8
+          ],
+          [
+            8,
+            3,
+            7
+          ],
+          [
+            8,
+            7,
+            6
+          ],
+          [
+            6,
+            7,
+            5
+          ],
+          [
+            3,
+            1,
+            7
+          ],
+          [
+            7,
+            1,
+            5
+          ],
+          [
+            2,
+            4,
+            8
+          ],
+          [
+            2,
+            8,
+            6
+          ]
+        ],
+        "faces_index_base": 1,
+        "components": [
+          {
+            "index": 1,
+            "name": "EnvironmentCollision_Floor_component_001",
+            "type": "mesh",
+            "is_convex": true,
+            "vertices_m": [
+              [
+                -2.5,
+                -2.5,
+                -0.10000000149011612
+              ],
+              [
+                2.5,
+                -2.5,
+                -0.10000000149011612
+              ],
+              [
+                -2.5,
+                2.5,
+                -0.10000000149011612
+              ],
+              [
+                2.5,
+                2.5,
+                -0.10000000149011612
+              ],
+              [
+                -2.5,
+                -2.5,
+                0.10000000149011612
+              ],
+              [
+                2.5,
+                -2.5,
+                0.10000000149011612
+              ],
+              [
+                -2.5,
+                2.5,
+                0.10000000149011612
+              ],
+              [
+                2.5,
+                2.5,
+                0.10000000149011612
+              ]
+            ],
+            "faces": [
+              [
+                2,
+                1,
+                4
+              ],
+              [
+                4,
+                1,
+                3
+              ],
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                6,
+                5
+              ],
+              [
+                4,
+                3,
+                8
+              ],
+              [
+                8,
+                3,
+                7
+              ],
+              [
+                8,
+                7,
+                6
+              ],
+              [
+                6,
+                7,
+                5
+              ],
+              [
+                3,
+                1,
+                7
+              ],
+              [
+                7,
+                1,
+                5
+              ],
+              [
+                2,
+                4,
+                8
+              ],
+              [
+                2,
+                8,
+                6
+              ]
+            ],
+            "faces_index_base": 1,
+            "pose_object": {
+              "frame": "Floor",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "quaternion": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          }
+        ]
+      },
+      "collision_policy_reason": "Physical environment geometry included despite disabled Coppelia collidable flag"
+    },
+    {
+      "name": "EnvironmentCollision_box",
+      "path": "/Floor/box",
+      "source_alias": "box",
+      "category": "floor",
+      "collision_enabled": false,
+      "collidable_source": false,
+      "special_property": 1008,
+      "static": true,
+      "primitive_type_code": 0,
+      "geometry_flags": 1,
+      "pose_UR5_base": {
+        "frame": "UR5_base",
+        "position": [
+          -0.5499999339247766,
+          0.8750000122428505,
+          -0.11464985925704241
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "pose_world": {
+        "frame": "world",
+        "position": [
+          0.0,
+          0.0,
+          -0.10000001639127731
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "T_UR5base_object": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.5499999339247766
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.8750000122428505
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.11464985925704241
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bbox_size_m": [
+        5.0,
+        5.0,
+        0.20000004768371582
+      ],
+      "bbox_pose_object": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "type": "compound",
+        "size_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "is_convex": false,
+        "vertices_m": [
+          [
+            2.5,
+            -2.5,
+            -0.10000002384185791
+          ],
+          [
+            -2.5,
+            -2.5,
+            -0.10000002384185791
+          ],
+          [
+            2.5,
+            2.5,
+            -0.10000002384185791
+          ],
+          [
+            -2.5,
+            2.5,
+            -0.10000002384185791
+          ],
+          [
+            2.5,
+            -2.5,
+            0.09999997913837433
+          ],
+          [
+            -2.5,
+            -2.5,
+            0.09999997913837433
+          ],
+          [
+            2.5,
+            2.5,
+            0.09999997913837433
+          ],
+          [
+            -2.5,
+            2.5,
+            0.09999997913837433
+          ],
+          [
+            2.5,
+            2.5,
+            0.10000002384185791
+          ],
+          [
+            -2.5,
+            2.5,
+            0.10000002384185791
+          ],
+          [
+            2.5,
+            -2.5,
+            0.10000002384185791
+          ],
+          [
+            -2.5,
+            -2.5,
+            0.10000002384185791
+          ]
+        ],
+        "faces": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            4
+          ],
+          [
+            2,
+            1,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            3,
+            4,
+            7
+          ],
+          [
+            7,
+            4,
+            8
+          ],
+          [
+            4,
+            2,
+            8
+          ],
+          [
+            8,
+            2,
+            6
+          ],
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            1,
+            7,
+            5
+          ],
+          [
+            9,
+            10,
+            11
+          ],
+          [
+            11,
+            10,
+            12
+          ]
+        ],
+        "faces_index_base": 1,
+        "components": [
+          {
+            "index": 1,
+            "name": "EnvironmentCollision_box_component_001",
+            "type": "mesh",
+            "is_convex": false,
+            "vertices_m": [
+              [
+                2.5,
+                -2.5,
+                -0.10000002384185791
+              ],
+              [
+                -2.5,
+                -2.5,
+                -0.10000002384185791
+              ],
+              [
+                2.5,
+                2.5,
+                -0.10000002384185791
+              ],
+              [
+                -2.5,
+                2.5,
+                -0.10000002384185791
+              ],
+              [
+                2.5,
+                -2.5,
+                0.09999997913837433
+              ],
+              [
+                -2.5,
+                -2.5,
+                0.09999997913837433
+              ],
+              [
+                2.5,
+                2.5,
+                0.09999997913837433
+              ],
+              [
+                -2.5,
+                2.5,
+                0.09999997913837433
+              ]
+            ],
+            "faces": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                3,
+                2,
+                4
+              ],
+              [
+                2,
+                1,
+                5
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                7
+              ],
+              [
+                7,
+                4,
+                8
+              ],
+              [
+                4,
+                2,
+                8
+              ],
+              [
+                8,
+                2,
+                6
+              ],
+              [
+                1,
+                3,
+                7
+              ],
+              [
+                1,
+                7,
+                5
+              ]
+            ],
+            "faces_index_base": 1,
+            "pose_object": {
+              "frame": "box",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "quaternion": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "name": "EnvironmentCollision_box_component_002",
+            "type": "mesh",
+            "is_convex": false,
+            "vertices_m": [
+              [
+                2.5,
+                2.5,
+                0.10000002384185791
+              ],
+              [
+                -2.5,
+                2.5,
+                0.10000002384185791
+              ],
+              [
+                2.5,
+                -2.5,
+                0.10000002384185791
+              ],
+              [
+                -2.5,
+                -2.5,
+                0.10000002384185791
+              ]
+            ],
+            "faces": [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                3,
+                2,
+                4
+              ]
+            ],
+            "faces_index_base": 1,
+            "pose_object": {
+              "frame": "box",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "quaternion": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          }
+        ]
+      },
+      "collision_policy_reason": "Non-collidable child duplicates native /Floor slab and planar checkered top; no independent physical obstacle",
+      "duplicate_floor_max_bound_excess_m": 0.0
+    }
+  ],
+  "object_count": 2,
+  "inventory": [
+    {
+      "path": "/Floor",
+      "source_alias": "Floor",
+      "included": true,
+      "type": "box",
+      "category": "floor",
+      "static": true,
+      "collidable_source": false,
+      "collision_enabled": true,
+      "size_m": [
+        5.0,
+        5.0,
+        0.20000018179416656
+      ],
+      "component_count": 1
+    },
+    {
+      "path": "/Floor/box",
+      "source_alias": "box",
+      "included": true,
+      "type": "compound",
+      "category": "floor",
+      "static": true,
+      "collidable_source": false,
+      "collision_enabled": false,
+      "size_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "component_count": 2,
+      "reason": "Non-collidable child duplicates native /Floor slab and planar checkered top; no independent physical obstacle"
+    },
+    {
+      "path": "/UR5",
+      "source_alias": "UR5",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/Workpiece",
+      "source_alias": "Workpiece",
+      "included": false,
+      "reason": "Existing calibrated workpiece collision model is retained separately"
+    },
+    {
+      "path": "/UR5/link1_visible",
+      "source_alias": "link1_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/link2_visible",
+      "source_alias": "link2_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/link3_visible",
+      "source_alias": "link3_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/link4_visible",
+      "source_alias": "link4_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/link5_visible",
+      "source_alias": "link5_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/link6_visible",
+      "source_alias": "link6_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link",
+      "source_alias": "link",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/link7_visible",
+      "source_alias": "link7_visible",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/connection/WeldingGunMount/WeldingGun_visual",
+      "source_alias": "WeldingGun_visual",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    },
+    {
+      "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/connection/WeldingGunMount/GunCollisionHull",
+      "source_alias": "GunCollisionHull",
+      "included": false,
+      "reason": "Existing robot/tool collision model is retained separately"
+    }
+  ],
+  "warnings": [],
+  "inventory_complete": true,
+  "source_shape_count": 19,
+  "scene_coverage": {
+    "floor": true,
+    "safety_fence": false,
+    "workbench": false,
+    "fixture": false
+  },
+  "collision_object_count": 1,
+  "missing_categories": [
+    "safety_fence",
+    "workbench",
+    "fixture"
+  ],
+  "environment_status": "SOURCE_SCENE_PARTIAL_COVERAGE",
+  "coverage_note": "Floor exported; safety fence/workbench/fixtures absent from the source scene. This is not complete registration of the real workplace.",
+  "version": "environment_dd72e9f8d5fbd1db"
+}

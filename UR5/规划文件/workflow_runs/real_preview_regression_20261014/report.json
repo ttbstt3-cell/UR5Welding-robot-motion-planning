@@ -1,0 +1,11 @@
+{
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "previewReady": false,
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "failure_reason": "Duplicate field name \"selected_fractions\"",
+  "failure_identifier": "MATLAB:DuplicateFieldName",
+  "planning_time": 34.807049
+}

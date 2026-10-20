@@ -1,0 +1,18 @@
+         541 function calls in 0.000 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       30    0.000    0.000    0.000    0.000 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:1961(_on_state)
+       30    0.000    0.000    0.000    0.000 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:2330(_motion_ready)
+       30    0.000    0.000    0.000    0.000 /home/ttbstt/jixiebi/UR5/ur5_hmi/safety/safety_checks.py:15(check_motion_ready)
+       30    0.000    0.000    0.000    0.000 <string>:2(__init__)
+      180    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      120    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+       30    0.000    0.000    0.000    0.000 {built-in method setEnabled}
+       30    0.000    0.000    0.000    0.000 {method 'tolist' of 'numpy.ndarray' objects}
+       30    0.000    0.000    0.000    0.000 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:2026(_record_execution_sample)
+       30    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

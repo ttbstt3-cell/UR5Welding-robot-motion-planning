@@ -1,0 +1,151 @@
+{
+  "snapshot": "initial",
+  "subset_results": [
+    {
+      "exitflag": 1,
+      "message": "Optimal solution found.",
+      "elapsed_sec": 0.050118,
+      "executionReady": false,
+      "original_residual": 1.4210854715202004E-14,
+      "name": "physical_only",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.275211,
+      "executionReady": false,
+      "name": "physical_and_position",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    },
+    {
+      "exitflag": 1,
+      "message": "Optimal solution found.",
+      "elapsed_sec": 0.435538,
+      "executionReady": false,
+      "original_residual": 7.0750072467262726E-12,
+      "name": "physical_and_orientation",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.764629,
+      "executionReady": false,
+      "name": "all_constraints",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.773443,
+      "executionReady": false,
+      "name": "all_with_rest_equalities_only",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.701295,
+      "executionReady": false,
+      "name": "all_with_join_equalities_only",
+      "scope": "SUBSET_FEASIBILITY_NOT_AN_ACCEPTED_PATH"
+    }
+  ],
+  "both_TCP_sensitivity": [
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.696302,
+      "executionReady": false,
+      "position_bound_mm": 0.46,
+      "orientation_bound_deg": 0.46,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.669858,
+      "executionReady": false,
+      "position_bound_mm": 0.49,
+      "orientation_bound_deg": 0.49,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.679494,
+      "executionReady": false,
+      "position_bound_mm": 0.5,
+      "orientation_bound_deg": 0.5,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 1.384275,
+      "executionReady": false,
+      "position_bound_mm": 0.55,
+      "orientation_bound_deg": 0.55,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.710798,
+      "executionReady": false,
+      "position_bound_mm": 0.65,
+      "orientation_bound_deg": 0.65,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.688266,
+      "executionReady": false,
+      "position_bound_mm": 0.8,
+      "orientation_bound_deg": 0.8,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.744183,
+      "executionReady": false,
+      "position_bound_mm": 1,
+      "orientation_bound_deg": 1,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.83182,
+      "executionReady": false,
+      "position_bound_mm": 2,
+      "orientation_bound_deg": 2,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    },
+    {
+      "exitflag": 1,
+      "message": "Optimal solution found.",
+      "elapsed_sec": 1.457069,
+      "executionReady": false,
+      "original_residual": 7.4082961987187446E-12,
+      "position_bound_mm": 5,
+      "orientation_bound_deg": 5,
+      "scope": "DIAGNOSTIC_BOTH_TCP_RHS_ONLY"
+    }
+  ],
+  "minimum_common_bound": {
+    "exitflag": 1,
+    "message": "Optimal solution found.",
+    "bound_numeric_mm_and_deg": 3.8427720989147089,
+    "original_residual": 1.8071655283335986E-12
+  },
+  "matrix_stats": {
+    "H_condest_raw": 815260.66355194279,
+    "H_condest_scaled_eliminated": 127002.25528939633
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

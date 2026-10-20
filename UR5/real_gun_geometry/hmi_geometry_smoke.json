@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "angle_deg": 0,
+      "components": 26,
+      "shared_transform_pass": true,
+      "LIVE_state_unchanged": true,
+      "wire_disabled": true,
+      "installation_confirmed": false
+    },
+    {
+      "angle_deg": 90,
+      "components": 26,
+      "shared_transform_pass": true,
+      "LIVE_state_unchanged": true,
+      "wire_disabled": true,
+      "installation_confirmed": false
+    },
+    {
+      "angle_deg": -90,
+      "components": 26,
+      "shared_transform_pass": true,
+      "LIVE_state_unchanged": true,
+      "wire_disabled": true,
+      "installation_confirmed": false
+    }
+  ],
+  "reload_no_duplicate_actors": true,
+  "robot_motion": "NO"
+}

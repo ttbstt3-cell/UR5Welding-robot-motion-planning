@@ -1,0 +1,9 @@
+taskID,algorithm,plannerResolutionDeg,validationResolutionDeg,seedCount,certifiedSuccessCount,certifiedSuccessRate,timeoutCount,candidateCountMedian,candidateValidationFailuresMedian,candidateRejectionRate,firstCertifiedTimeMedian_ms,firstCertifiedTimeP90_ms,planningTimeMedian_ms,jointPathLengthMedian_rad,totalJointMotionMedian_rad,collisionConfigurationChecksMedian
+T01_Safe_to_Point1,RRT-Connect,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2095.412,NaN,0,575
+T01_Safe_to_Point1,Bi-RRT*,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2754.537,NaN,0,773
+T01_Safe_to_Point1,ClassGoal-Lite,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2872.732,NaN,0,812
+T01_Safe_to_Point1,Full Classified-RRT*,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2031.733,NaN,0,561
+T02_Point80_to_Safe,RRT-Connect,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2085.122,NaN,0,587
+T02_Point80_to_Safe,Bi-RRT*,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2579.762,NaN,0,723
+T02_Point80_to_Safe,ClassGoal-Lite,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2382.526,NaN,0,647
+T02_Point80_to_Safe,Full Classified-RRT*,0.5,0.125,5,0,0,5,0,0,0,NaN,NaN,2086.274,NaN,0,581

@@ -1,0 +1,114 @@
+Adaptive TCP segment correction benchmark
+Date: 2026-09-23
+
+The adaptive run starts a fresh beam=1 continuation planner.  It does not
+load a previous qPath or state graph.  The original 80 weld nodes are kept;
+inserted points are execution/validation waypoints only.  No ROS2 command,
+real robot motion, or CoppeliaSim edit was made.
+
+Configuration
+-------------
+  maxSegmentTcpErrorMm = 0.5
+  maxIntermediatePoints = 4
+  edge resolution = 3 deg
+  full node and edge collision checks enabled
+  wire collision cylinder enabled
+
+Result
+------
+  Original weld nodes       : 80
+  Execution points          : 85
+  Segments over 0.5 mm      : 2
+  Adaptive points inserted  : 5
+  Adaptive IK calls         : 5
+  Adaptive IK time          : 0.011 s
+  Base continuation algorithm time : 17.528 s
+  Base continuation wall time      : 22.164 s
+  Adaptive phase time              : 2.301 s
+  Total algorithm time             : 19.829 s
+  Total wall time                  : 24.465 s
+  PASS                            : true
+
+TCP and collision validation
+----------------------------
+  Initial max segment TCP position error : 1.955098 mm
+  Final max segment TCP position error   : 0.265895 mm
+  Final max segment TCP orientation error: 0.038748 deg
+  Node collision free                   : true
+  Edge collision free                   : true
+  All 80 weld nodes retained            : true
+
+Corrected segments
+------------------
+  Segment 64: 1.955098 mm -> below tolerance, 3 points inserted
+  Segment 74: 1.350423 mm -> below tolerance, 2 points inserted
+
+The remaining 0.265895 mm is below the configured 0.5 mm tolerance.  The
+node TCP error remains approximately 0.000048 mm.  The adaptive points use
+Cartesian position/orientation interpolation, numerical IK seeded by the
+joint interpolation, joint limits, full node collision, and full segment
+collision checks.
+
+Files
+-----
+  replan_weld_actual_axis_adaptive.m
+  weld_actual_axis_replan_adaptive.mat
+  weld_actual_axis_replan_adaptive_base.mat
+  weld_planner_adaptive_tcp_report.txt
+
+Reproduce
+---------
+  matlab -batch "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); opts=struct('animate',false,'publish',false,'enableFallback',false,'outputFile','weld_actual_axis_replan_adaptive.mat','baseOutputFile','weld_actual_axis_replan_adaptive_base.mat'); replan_weld_actual_axis_adaptive(opts);"
+
+Reduced continuation configuration (2026-09-23)
+------------------------------------------------
+The adaptive wrapper now forwards all continuation options explicitly.  A
+fair cold-start run uses beam=1, firstPointMaxStates=2, maxPoseSeeds=3,
+three first-point random seeds, coarseTravelDeg=0 and 45 degree coarse roll
+samples.  It does not load a previous qPath or state graph.
+
+Base continuation:
+  Algorithm time             : 15.272679 s
+  Wall time                   : 19.422270 s
+  IK time                     : 8.348373 s
+  IK calls                    : 2192
+  PASS                        : true
+  Max joint jump             : 12.580372 deg
+  Max node TCP error         : 0.000048 mm
+  Max segment TCP error      : 1.955098 mm
+  Max segment TCP orientation: 0.141530 deg
+  Node collision free        : true
+  Edge collision free        : true
+
+Adaptive TCP correction with the same base configuration:
+  Original weld nodes         : 80
+  Execution points            : 85
+  Adaptive points inserted    : 5
+  Adaptive IK calls           : 5
+  Total algorithm time        : 17.787 s
+  Total wall time             : 22.046 s
+  Final max segment TCP       : 0.265895 mm
+  Final max segment orientation: 0.038748 deg
+  Node/edge collision free    : true / true
+  PASS                        : true
+
+The two corrected segments remain segment 64 (three points) and segment 74
+(two points).  The 80 original weld nodes are retained in result.qPath;
+result.qPathExecution contains the five inserted execution waypoints.
+
+Per-layer timing shows the first point is now only 32 IK calls (0.402390 s
+IK), point 2 is 54 calls (0.199159 s IK), and the typical later layer uses
+27 calls.  Full details are in:
+  weld_actual_axis_continuation_reduced_profile.txt
+
+A repeat cold-start run with the same configuration measured 15.496429 s
+algorithm time, 19.803686 s wall time, 8.512210 s IK time, and 2192 IK
+calls.  This run also passed; the practical algorithm-time range is about
+15.3--15.5 s.
+
+Files:
+  replan_weld_actual_axis_adaptive.m
+  weld_actual_axis_replan_adaptive_reduced.mat
+  weld_actual_axis_replan_adaptive_reduced_base.mat
+  weld_actual_axis_continuation_reduced_profile.mat
+  weld_actual_axis_continuation_reduced_profile.txt

@@ -1,0 +1,175 @@
+{
+  "task": "Full_Welding_Task",
+  "algorithm": "Bi-RRT* + ACCP-D",
+  "previewReady": false,
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "start_state_status": "NOT_CHECKED",
+  "goal_state_status": "NOT_GENERATED",
+  "rrt_entered": false,
+  "seam_candidate_reused": false,
+  "endpoint_validation": {},
+  "seed": 2.0260916E+7,
+  "scene_dependency_validation": {
+    "pass": true,
+    "status": "PASS",
+    "changed_files": [],
+    "before_sha256": "86b2fb47cfc4c5ca254575adf149265550cddf188a81165fbc14be09c638a080",
+    "after_sha256": "86b2fb47cfc4c5ca254575adf149265550cddf188a81165fbc14be09c638a080",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "scene_dependency_snapshot": {
+    "schema_version": "HMI_PLANNING_DEPENDENCY_SNAPSHOT_v1",
+    "files": [
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json",
+        "exists": true,
+        "sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+        "bytes": 120690
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/vhacd_collision_export.json",
+        "exists": true,
+        "sha256": "0bbd33e3295ed75a7f947dd6169c34adc9395f1127e0a690171b6a20595c29cd",
+        "bytes": 179320
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/welding_gun_visual_m.stl",
+        "exists": true,
+        "sha256": "8adfeff693a496bc95c590fcfd0151c7b37c894260ebad9d734cb270c57186de",
+        "bytes": 1.9895584E+7
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_gun_mount_calibration.json",
+        "exists": true,
+        "sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+        "bytes": 1539
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_robot_description_calibrated.urdf",
+        "exists": true,
+        "sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "bytes": 29003
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/real_tcp_calibration_active.json",
+        "exists": true,
+        "sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "bytes": 3693
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/scene_geometry.json",
+        "exists": true,
+        "sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+        "bytes": 61407
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/ur5_hmi/config/hmi_config.yaml",
+        "exists": true,
+        "sha256": "ebd9379fb5ddabb25b4bb108fb6aa49f1c08096c866d63b145053a7f09340d71",
+        "bytes": 1346
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/ur5_tool_calibration.mat",
+        "exists": true,
+        "sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+        "bytes": 668
+      },
+      {
+        "path": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+        "exists": true,
+        "sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "bytes": 2452
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/base.stl",
+        "exists": true,
+        "sha256": "81c2ad265f7140313c305d9bfdf98d5b00f5978e9b01acbf12243602dc4dd151",
+        "bytes": 11834
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/forearm.stl",
+        "exists": true,
+        "sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+        "bytes": 52584
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/shoulder.stl",
+        "exists": true,
+        "sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+        "bytes": 33784
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/upperarm.stl",
+        "exists": true,
+        "sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+        "bytes": 58884
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/wrist1.stl",
+        "exists": true,
+        "sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+        "bytes": 35184
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/wrist2.stl",
+        "exists": true,
+        "sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+        "bytes": 35184
+      },
+      {
+        "path": "/opt/ros/humble/share/ur_description/meshes/ur5/collision/wrist3.stl",
+        "exists": true,
+        "sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+        "bytes": 22384
+      }
+    ],
+    "content_sha256": "86b2fb47cfc4c5ca254575adf149265550cddf188a81165fbc14be09c638a080",
+    "discovery_errors": [],
+    "robot_motion": "NO"
+  },
+  "calibration_binding": {
+    "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "tcp_calibration_source": "real_tcp_calibration_active.json",
+    "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+    "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+    "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+    "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+    "real_gun_geometry_status": "ACTIVE",
+    "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+    "gun_geometry_version": "real-gun-1791876831259595871",
+    "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+    "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+    "workpiece_source": "REAL CALIBRATION",
+    "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+    "planning_scene": "REAL_CALIBRATION",
+    "wire_collision_shorten_mm": 3,
+    "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+    "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+    "collision_scene_version": "SCENE-cba7f5f05b3134e84eee2b874d70d203d81929ff5f89410cc2369817dbe05d24",
+    "robot_collision_coverage": "COMPLETE",
+    "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2"
+  },
+  "collision_scene_version": "SCENE-cba7f5f05b3134e84eee2b874d70d203d81929ff5f89410cc2369817dbe05d24",
+  "binding_mismatches": [
+    "Missing request binding: gun_mount_sha256",
+    "Version mismatch: wire_model_version",
+    "Version mismatch: collision_scene_version",
+    "Missing request binding: robot_collision_geometry_sha256",
+    "Missing request binding: robot_collision_coverage",
+    "Missing request realhome_version"
+  ],
+  "status": "STALE",
+  "failure_reason": "Request is STALE: Missing request binding: gun_mount_sha256; Version mismatch: wire_model_version; Version mismatch: collision_scene_version; Missing request binding: robot_collision_geometry_sha256; Missing request binding: robot_collision_coverage; Missing request realhome_version",
+  "failure_identifier": "PREVIEW:VersionMismatch",
+  "failure_stack": {
+    "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/plan_hmi_preview_request.m",
+    "name": "plan_hmi_preview_request",
+    "line": 43
+  },
+  "planning_time": 5.046214
+}

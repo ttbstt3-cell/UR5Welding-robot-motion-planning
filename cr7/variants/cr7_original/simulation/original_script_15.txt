@@ -1,0 +1,464 @@
+import math
+
+
+# ============================================================
+# CR7 Welding Demo - Extra Slow Version
+#
+# ?????
+# ?? TCP
+#   -> WeldStart
+#   -> WeldEnd??????
+#   -> LiftPoint
+#   -> ??
+#
+# ???????????
+# ============================================================
+
+
+def sysCall_init():
+    global sim
+    global simIK
+    global ikEnv
+    global ikGroup
+    global ikElement
+
+    global base
+    global tcp
+    global target
+    global weldStart
+    global weldEnd
+    global liftPoint
+
+    global p0
+    global pStart
+    global pEnd
+    global pLift
+
+    global approachTime
+    global weldTime
+    global liftTime
+    global weldSpeed
+    global startTime
+
+    global lastStage
+    global lastWarnTime
+
+    # ???????? cleanup ??
+    ikEnv = None
+    ikGroup = None
+    ikElement = None
+
+    lastStage = -1
+    lastWarnTime = -100.0
+
+    # ========================================================
+    # ?? CoppeliaSim API
+    # ========================================================
+    sim = require('sim')
+    simIK = require('simIK')
+
+    print('======================================')
+    print('CR7 welding trajectory initializing...')
+    print('EXTRA SLOW SPEED VERSION')
+    print('======================================')
+
+    # ========================================================
+    # ??????
+    # ========================================================
+    base = sim.getObject('/xMateCR7_base_respondable')
+    tcp = sim.getObject('/TCP')
+
+    target = sim.getObject('/IK_Target')
+    weldStart = sim.getObject('/WeldStart')
+    weldEnd = sim.getObject('/WeldEnd')
+    liftPoint = sim.getObject('/LiftPoint')
+
+    print('Found base')
+    print('Found TCP')
+    print('Found IK_Target')
+    print('Found WeldStart')
+    print('Found WeldEnd')
+    print('Found LiftPoint')
+
+    # ========================================================
+    # ???? TCP ??????
+    # ========================================================
+    p0 = sim.getObjectPosition(
+        tcp,
+        sim.handle_world
+    )
+
+    pStart = sim.getObjectPosition(
+        weldStart,
+        sim.handle_world
+    )
+
+    pEnd = sim.getObjectPosition(
+        weldEnd,
+        sim.handle_world
+    )
+
+    pLift = sim.getObjectPosition(
+        liftPoint,
+        sim.handle_world
+    )
+
+    # ========================================================
+    # IK_Target ????? TCP ??
+    # ========================================================
+    sim.setObjectPosition(
+        target,
+        p0,
+        sim.handle_world
+    )
+
+    # ???? TCP ??
+    tcpPose = sim.getObjectPose(
+        tcp,
+        sim.handle_world
+    )
+
+    targetPose = sim.getObjectPose(
+        target,
+        sim.handle_world
+    )
+
+    targetPose[3] = tcpPose[3]
+    targetPose[4] = tcpPose[4]
+    targetPose[5] = tcpPose[5]
+    targetPose[6] = tcpPose[6]
+
+    sim.setObjectPose(
+        target,
+        targetPose,
+        sim.handle_world
+    )
+
+    # ========================================================
+    # ?? IK
+    # ========================================================
+    ikEnv = simIK.createEnvironment()
+
+    ikGroup = simIK.createGroup(
+        ikEnv,
+        'CR7_Welding_IK'
+    )
+
+    simIK.setGroupCalculation(
+        ikEnv,
+        ikGroup,
+        simIK.method_damped_least_squares,
+        0.1,
+        100
+    )
+
+    # ========================================================
+    # ???
+    # base -> J1~J6 -> TCP -> IK_Target
+    #
+    # ????? TCP ? XYZ ??
+    # ========================================================
+    ikElement, simToIkMap, ikToSimMap = \
+        simIK.addElementFromScene(
+            ikEnv,
+            ikGroup,
+            base,
+            tcp,
+            target,
+            simIK.constraint_position
+        )
+
+    # IK ???????2 mm
+    simIK.setElementPrecision(
+        ikEnv,
+        ikGroup,
+        ikElement,
+        [
+            0.002,
+            math.radians(2.0)
+        ]
+    )
+
+    # ========================================================
+    # ??????
+    # ========================================================
+
+    # ?? TCP -> WeldStart
+    # ??? 6 ?
+    # ?? 12 ?
+    approachTime = 12.0
+
+    # ????
+    # ??? 10 mm/s
+    # ?? 5 mm/s
+    weldSpeed = 0.005
+
+    # WeldStart -> WeldEnd ??
+    dx = pEnd[0] - pStart[0]
+    dy = pEnd[1] - pStart[1]
+    dz = pEnd[2] - pStart[2]
+
+    weldDistance = math.sqrt(
+        dx * dx +
+        dy * dy +
+        dz * dz
+    )
+
+    # ????????
+    weldTime = weldDistance / weldSpeed
+
+    if weldTime < 0.1:
+        weldTime = 0.1
+
+    # WeldEnd -> LiftPoint
+    # ??? 4 ?
+    # ?? 8 ?
+    liftTime = 8.0
+
+    startTime = sim.getSimulationTime()
+
+    # ========================================================
+    # ???????
+    # ========================================================
+    print('')
+    print('------ Welding parameters ------')
+
+    print(
+        'Weld distance: %.1f mm'
+        % (weldDistance * 1000.0)
+    )
+
+    print(
+        'Weld speed: %.1f mm/s'
+        % (weldSpeed * 1000.0)
+    )
+
+    print(
+        'Weld time: %.2f s'
+        % weldTime
+    )
+
+    print(
+        'Approach time: %.2f s'
+        % approachTime
+    )
+
+    print(
+        'Lift time: %.2f s'
+        % liftTime
+    )
+
+    print('--------------------------------')
+    print('CR7 welding trajectory ready')
+
+
+# ============================================================
+# ????/??
+# ============================================================
+def smoothStep(s):
+
+    if s < 0.0:
+        s = 0.0
+
+    if s > 1.0:
+        s = 1.0
+
+    return 0.5 - 0.5 * math.cos(math.pi * s)
+
+
+# ============================================================
+# XYZ ????
+# ============================================================
+def interpolatePosition(p1, p2, s):
+
+    return [
+        p1[0] + (p2[0] - p1[0]) * s,
+        p1[1] + (p2[1] - p1[1]) * s,
+        p1[2] + (p2[2] - p1[2]) * s
+    ]
+
+
+# ============================================================
+# ????????
+# ============================================================
+def showStage(stage):
+
+    global lastStage
+
+    if stage == lastStage:
+        return
+
+    lastStage = stage
+
+    if stage == 1:
+
+        print('')
+        print('Stage 1: approaching WeldStart')
+
+    elif stage == 2:
+
+        print('')
+        print('Stage 2: welding')
+        print('TCP moving WeldStart -> WeldEnd')
+
+    elif stage == 3:
+
+        print('')
+        print('Stage 3: lifting torch')
+
+    elif stage == 4:
+
+        print('')
+        print('Stage 4: welding sequence finished')
+
+
+# ============================================================
+# ????????
+# ============================================================
+def sysCall_actuation():
+
+    global lastWarnTime
+
+    t = sim.getSimulationTime() - startTime
+
+    # ========================================================
+    # Stage 1
+    #
+    # TCP -> WeldStart
+    # ? 12 ???
+    # ========================================================
+    if t < approachTime:
+
+        showStage(1)
+
+        s = t / approachTime
+        s = smoothStep(s)
+
+        targetPosition = interpolatePosition(
+            p0,
+            pStart,
+            s
+        )
+
+    # ========================================================
+    # Stage 2
+    #
+    # WeldStart -> WeldEnd
+    #
+    # ?????
+    # 5 mm/s
+    # ========================================================
+    elif t < approachTime + weldTime:
+
+        showStage(2)
+
+        localT = t - approachTime
+
+        s = localT / weldTime
+
+        if s > 1.0:
+            s = 1.0
+
+        targetPosition = interpolatePosition(
+            pStart,
+            pEnd,
+            s
+        )
+
+    # ========================================================
+    # Stage 3
+    #
+    # WeldEnd -> LiftPoint
+    # ? 8 ???
+    # ========================================================
+    elif t < approachTime + weldTime + liftTime:
+
+        showStage(3)
+
+        localT = (
+            t
+            - approachTime
+            - weldTime
+        )
+
+        s = localT / liftTime
+        s = smoothStep(s)
+
+        targetPosition = interpolatePosition(
+            pEnd,
+            pLift,
+            s
+        )
+
+    # ========================================================
+    # Stage 4
+    #
+    # ?? LiftPoint ???
+    # ========================================================
+    else:
+
+        showStage(4)
+
+        targetPosition = pLift
+
+    # ========================================================
+    # ?? IK Target
+    # ========================================================
+    sim.setObjectPosition(
+        target,
+        targetPosition,
+        sim.handle_world
+    )
+
+    # ========================================================
+    # ??????
+    # ========================================================
+    result, flags, precision = simIK.handleGroup(
+        ikEnv,
+        ikGroup,
+        {
+            'syncWorlds': True,
+            'allowError': True
+        }
+    )
+
+    # ========================================================
+    # ?? TCP ?????? 5 mm ???
+    # ?? 1 ?????
+    # ========================================================
+    if precision is not None and len(precision) > 0:
+
+        linearError = precision[0]
+
+        now = sim.getSimulationTime()
+
+        if (
+            linearError > 0.005
+            and now - lastWarnTime > 1.0
+        ):
+
+            lastWarnTime = now
+
+            sim.addLog(
+                sim.verbosity_scriptwarnings,
+                'TCP position error = %.2f mm'
+                % (linearError * 1000.0)
+            )
+
+
+# ============================================================
+# ??????? IK
+# ============================================================
+def sysCall_cleanup():
+
+    global ikEnv
+
+    if ikEnv is not None:
+
+        simIK.eraseEnvironment(
+            ikEnv
+        )
+
+        ikEnv = None
+
+    print('CR7 welding trajectory stopped')

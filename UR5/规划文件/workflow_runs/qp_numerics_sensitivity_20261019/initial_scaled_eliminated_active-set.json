@@ -1,0 +1,38 @@
+{
+  "snapshot": "initial",
+  "mode": "scaled_eliminated",
+  "algorithm": "active-set",
+  "formal_thresholds_unchanged": true,
+  "TCP_internal_position_mm": 0.46,
+  "TCP_internal_orientation_deg": 0.46,
+  "vars": 2160,
+  "inequalities": 236272,
+  "equalities": 24,
+  "transformed_vars": 2136,
+  "transformed_inequalities": 218752,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "status": "NO_FEASIBLE_SEED",
+  "conditioning": {
+    "row_scale_min": 0.024027743359719009,
+    "row_scale_max": 4.2208882813881088,
+    "removed_constant_rows": 72,
+    "singleton_rows_to_bounds": 17496,
+    "constant_infeasible": false,
+    "bound_infeasible": false,
+    "objective_scale": 7.5344651827899716
+  },
+  "matrix_stats": {
+    "H_diagonal_min": 0.35014316530166811,
+    "H_diagonal_max": 1093.470660616154,
+    "row_norm_min": 0.022508344094985613,
+    "row_norm_max": 163.04227007496561,
+    "time_step_min": 0.27926451847207545,
+    "time_step_max": 1.6115268249202472
+  },
+  "seed_LP": {
+    "exitflag": -2,
+    "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints."
+  },
+  "elapsed_sec": 0.791024
+}

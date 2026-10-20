@@ -1,0 +1,26 @@
+{
+ "request_id": "20261008_170954_960488",
+ "task": "Full_Welding_Task",
+ "qStart": [
+  -1.0147631804095667,
+  -1.5450175444232386,
+  0.03494739532470703,
+  -1.5666325728045862,
+  0.05197520926594734,
+  -0.007649723683492482
+ ],
+ "qGoal": [
+  -1.0147631804095667,
+  -1.5450175444232386,
+  0.03494739532470703,
+  -1.5666325728045862,
+  0.05197520926594734,
+  -0.007649723683492482
+ ],
+ "algorithm": "Constraint-aware Bidirectional RRT* (CBi-RRT*)",
+ "seed": 20260917,
+ "maxPlanningTimeSec": 30.0,
+ "start_source": "real_home",
+ "endpoint_source": "Saved RealHome -> weld_anchor_points.json:qHome",
+ "weld_algorithm": "ACCP (replan_weld_actual_axis_adaptive_feasibility.m)"
+}

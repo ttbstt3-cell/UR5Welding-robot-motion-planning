@@ -1,0 +1,92 @@
+{
+  "RTDE_output_only_read": {
+    "input_recipe_empty": true,
+    "operation": "read",
+    "output_only": true,
+    "snapshot": {
+      "actual_TCP_pose": [
+        -0.4461575002863528,
+        0.3861819092312604,
+        0.045117336778491834,
+        -0.7133457622417597,
+        -0.016628995867989594,
+        -0.11415478898685616
+      ],
+      "actual_q": [
+        -1.0523422400103968,
+        -1.5447657744037073,
+        1.6037044525146484,
+        -1.7964513937579554,
+        -1.3799145857440394,
+        3.330120801925659
+      ],
+      "actual_qd": [
+        0.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payload": 0.5,
+      "payload_cog": [
+        -0.006411567805279295,
+        -0.016572140285435966,
+        0.3908228756953938
+      ],
+      "reference_frame": "controller_base",
+      "robot_mode": 7,
+      "runtime_state": 1,
+      "safety_mode": 1,
+      "tcp_frame": "controller_tool_output_flange",
+      "tcp_offset": [
+        -0.006411567805279295,
+        -0.016572140285435966,
+        0.3908228756953938,
+        -0.7737551909515683,
+        2.68666941754907,
+        1.1457482063497175
+      ],
+      "timestamp": 4759.152,
+      "units": {
+        "joint_velocity": "rad/s",
+        "joints": "rad",
+        "rotation": "rotation_vector_rad",
+        "translation": "m"
+      }
+    },
+    "success": true
+  },
+  "program": "matlab",
+  "arguments": [
+    "-batch",
+    "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); addpath('/home/ttbstt/jixiebi/RRT/benchmark'); req=jsondecode(fileread('/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145643_142594/request.json')); retime_hmi_continuous_request(req);"
+  ],
+  "request": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145643_142594/request.json",
+  "outputDir": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145643_142594",
+  "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145643_142594/report.json",
+  "actual_button_clicked": true,
+  "no_ros_thread": true,
+  "motion_speed_or_stop_signals": 0,
+  "robot_motion": "NO",
+  "source_unmodified": true,
+  "default_new_continuous_percent": 50,
+  "default_loaded_file_retime_percent": 50,
+  "estimates_checked": true,
+  "preview_and_busy_rejected": true,
+  "shell_command": "matlab -batch 'addpath('\"'\"'/home/ttbstt/jixiebi/UR5/matlab仿真'\"'\"'); addpath('\"'\"'/home/ttbstt/jixiebi/RRT/benchmark'\"'\"'); req=jsondecode(fileread('\"'\"'/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_145643_142594/request.json'\"'\"')); retime_hmi_continuous_request(req);'",
+  "new_continuous_default_capture": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/conservative_speed_20261020/hmi_completed_with_readonly_tcp_default_request.json",
+  "completion_callback_pass": true,
+  "auto_import_pass": true,
+  "unchanged_q_path": true,
+  "exact_time_doubling": true,
+  "exact_velocity_halving": true,
+  "numerical_compatibility_gate_pass": true,
+  "execution_button_enabled": false,
+  "duration_sec": 454.03468951750426,
+  "maximum_velocity_rad_s": 0.08478332124559251,
+  "maximum_acceleration_rad_s2": 0.16309560071058324,
+  "published_path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/conservative_speed_20261020/ISOLATED_CURRENT_TRAJECTORIES/保守调试轨迹_50pct_2026-10-20_14-39-26_708830.mat",
+  "collision_fail_closed": true,
+  "ui_screenshot": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/conservative_speed_20261020/hmi_completed_with_readonly_tcp.png"
+}

@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-10-20T13:35:00.392254+08:00",
+  "robot_motion": "NO",
+  "read_only": true,
+  "topics": {
+    "/io_and_status_controller/robot_program_running:VOLATILE": {
+      "samples": 0,
+      "last_value": null
+    },
+    "/io_and_status_controller/robot_program_running:TRANSIENT_LOCAL": {
+      "samples": 0,
+      "last_value": null
+    },
+    "/io_and_status_controller/robot_mode:VOLATILE": {
+      "samples": 0,
+      "last_value": null
+    },
+    "/io_and_status_controller/robot_mode:TRANSIENT_LOCAL": {
+      "samples": 1,
+      "last_value": 3,
+      "received_after_sec": 0.011892207025084645
+    },
+    "/io_and_status_controller/safety_mode:VOLATILE": {
+      "samples": 0,
+      "last_value": null
+    },
+    "/io_and_status_controller/safety_mode:TRANSIENT_LOCAL": {
+      "samples": 1,
+      "last_value": 1,
+      "received_after_sec": 0.012105926987715065
+    },
+    "/speed_scaling_state_broadcaster/speed_scaling:VOLATILE": {
+      "samples": 1126,
+      "last_value": 0.0,
+      "received_after_sec": 9.002521404996514
+    },
+    "/speed_scaling_state_broadcaster/speed_scaling:TRANSIENT_LOCAL": {
+      "samples": 1125,
+      "last_value": 0.0,
+      "received_after_sec": 8.994493012025487
+    },
+    "/joint_states": {
+      "samples": 1124,
+      "names": [
+        "shoulder_pan_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "wrist_1_joint",
+        "elbow_joint",
+        "shoulder_lift_joint"
+      ],
+      "positions": [
+        -1.0523541609393519,
+        -1.3799145857440394,
+        3.330120801925659,
+        -1.7964876333819788,
+        1.6037640571594238,
+        -1.5446341673480433
+      ]
+    }
+  },
+  "services": {
+    "program_running": {
+      "success": false,
+      "program_running": false,
+      "answer": "Failed to send request to dashboard server. Are you connected to the Dashboard Server?"
+    },
+    "stopper_parameters": {
+      "joint_controller_active": {
+        "type": 1,
+        "bool_value": false
+      },
+      "headless_mode": {
+        "type": 1,
+        "bool_value": false
+      }
+    },
+    "controllers": [
+      {
+        "name": "joint_state_broadcaster",
+        "state": "active",
+        "type": "joint_state_broadcaster/JointStateBroadcaster"
+      },
+      {
+        "name": "scaled_joint_trajectory_controller",
+        "state": "inactive",
+        "type": "ur_controllers/ScaledJointTrajectoryController"
+      },
+      {
+        "name": "joint_trajectory_controller",
+        "state": "inactive",
+        "type": "joint_trajectory_controller/JointTrajectoryController"
+      },
+      {
+        "name": "io_and_status_controller",
+        "state": "active",
+        "type": "ur_controllers/GPIOController"
+      },
+      {
+        "name": "forward_velocity_controller",
+        "state": "inactive",
+        "type": "velocity_controllers/JointGroupVelocityController"
+      },
+      {
+        "name": "speed_scaling_state_broadcaster",
+        "state": "active",
+        "type": "ur_controllers/SpeedScalingStateBroadcaster"
+      },
+      {
+        "name": "forward_position_controller",
+        "state": "inactive",
+        "type": "position_controllers/JointGroupPositionController"
+      },
+      {
+        "name": "force_torque_sensor_broadcaster",
+        "state": "active",
+        "type": "force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster"
+      },
+      {
+        "name": "forward_effort_controller",
+        "state": "inactive",
+        "type": "effort_controllers/JointGroupEffortController"
+      },
+      {
+        "name": "force_mode_controller",
+        "state": "inactive",
+        "type": "ur_controllers/ForceModeController"
+      },
+      {
+        "name": "tcp_pose_broadcaster",
+        "state": "active",
+        "type": "pose_broadcaster/PoseBroadcaster"
+      },
+      {
+        "name": "passthrough_trajectory_controller",
+        "state": "inactive",
+        "type": "ur_controllers/PassthroughTrajectoryController"
+      },
+      {
+        "name": "ur_configuration_controller",
+        "state": "active",
+        "type": "ur_controllers/URConfigurationController"
+      },
+      {
+        "name": "freedrive_mode_controller",
+        "state": "inactive",
+        "type": "ur_controllers/FreedriveModeController"
+      },
+      {
+        "name": "friction_model_controller",
+        "state": "active",
+        "type": "ur_controllers/FrictionModelController"
+      },
+      {
+        "name": "tool_contact_controller",
+        "state": "inactive",
+        "type": "ur_controllers/ToolContactController"
+      }
+    ]
+  },
+  "publishers": {
+    "/io_and_status_controller/robot_program_running": [
+      {
+        "node": "io_and_status_controller",
+        "namespace": "/",
+        "reliability": "RELIABLE",
+        "durability": "TRANSIENT_LOCAL"
+      }
+    ],
+    "/io_and_status_controller/robot_mode": [
+      {
+        "node": "io_and_status_controller",
+        "namespace": "/",
+        "reliability": "RELIABLE",
+        "durability": "TRANSIENT_LOCAL"
+      }
+    ],
+    "/io_and_status_controller/safety_mode": [
+      {
+        "node": "io_and_status_controller",
+        "namespace": "/",
+        "reliability": "RELIABLE",
+        "durability": "TRANSIENT_LOCAL"
+      }
+    ],
+    "/speed_scaling_state_broadcaster/speed_scaling": [
+      {
+        "node": "speed_scaling_state_broadcaster",
+        "namespace": "/",
+        "reliability": "RELIABLE",
+        "durability": "TRANSIENT_LOCAL"
+      }
+    ]
+  }
+}

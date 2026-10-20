@@ -1,0 +1,71 @@
+[
+  {
+    "before_hash": "9395f7c246346261a1b032748b88dcaf8fa8a2546c6e3360e364c669485c65b4",
+    "before_q": [
+      -1.2759,
+      -2.0181,
+      1.5669,
+      -1.3182,
+      -1.3797,
+      3.3298
+    ],
+    "request_config": "/home/ttbstt/jixiebi/UR5/ur5_hmi/config/hmi_config.yaml",
+    "request_version": "REALHOME-2d6dadea56b095d9c52069aa5ae72b8f4afd55ee9708492c5da44830db2c6eb7",
+    "run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_validation_20261016_084913_264823",
+    "after_hash": "2f12daa31ef8578766d2db26fca7d097632ba3294dc828040c3111a421d652b9",
+    "after_q": [
+      -1.2762,
+      -2.0178,
+      1.5667,
+      -1.318,
+      -1.3799,
+      3.3301
+    ],
+    "after_version": "REALHOME-2d6dadea56b095d9c52069aa5ae72b8f4afd55ee9708492c5da44830db2c6eb7",
+    "label": "RealHome Validation: VALIDATION_PASS",
+    "report_status": "VALIDATION_PASS",
+    "report_success": true,
+    "report_reason": null
+  },
+  {
+    "before_hash": "2f12daa31ef8578766d2db26fca7d097632ba3294dc828040c3111a421d652b9",
+    "before_q": [
+      -1.2762,
+      -2.0178,
+      1.5667,
+      -1.318,
+      -1.3799,
+      3.3301
+    ],
+    "request_config": "/home/ttbstt/jixiebi/UR5/ur5_hmi/config/hmi_config.yaml",
+    "request_version": "REALHOME-49c30c0e2e55481e3c522a1ed3fe757d84ab9bc7ae0c5f56644b2f9cbadd601e",
+    "run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_validation_20261016_084925_866218",
+    "after_hash": "c6aa65d7c27a31c5e36243c29fb32789b662d2a595bc8275901fdc2b3bf798c4",
+    "after_q": [
+      -1.2759,
+      -2.0181,
+      1.5669,
+      -1.3182,
+      -1.3797,
+      3.3298
+    ],
+    "after_version": "REALHOME-49c30c0e2e55481e3c522a1ed3fe757d84ab9bc7ae0c5f56644b2f9cbadd601e",
+    "label": "RealHome Validation: VALIDATION_PASS",
+    "report_status": "VALIDATION_PASS",
+    "report_success": true,
+    "report_reason": null
+  },
+  {
+    "restart_label": "RealHome Validation: VALIDATION_PASS",
+    "restart_status": "VALIDATION_PASS",
+    "restart_version": "REALHOME-49c30c0e2e55481e3c522a1ed3fe757d84ab9bc7ae0c5f56644b2f9cbadd601e",
+    "restart_q": [
+      -1.2759,
+      -2.0181,
+      1.5669,
+      -1.3182,
+      -1.3797,
+      3.3298
+    ]
+  }
+]

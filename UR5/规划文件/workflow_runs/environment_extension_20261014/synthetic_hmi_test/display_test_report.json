@@ -1,0 +1,110 @@
+{
+  "manifest": "UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/environment_extension_20261014/synthetic_loader_test/synthetic_environment_fixture.json",
+  "manifest_sha256": "7d7c85a3aa0f7e44e6bd5c9ac9c4b44f331998fb439439d2ce1a832d15a5f80a",
+  "environment_component_count": 3,
+  "snapshot_source": "UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/preview_20261014_190649_439402/preview_display_snapshot.json",
+  "actual_matlab_snapshot_compared": false,
+  "frame_id": "base",
+  "robot_motion": "NO",
+  "preview_environment_transforms": {
+    "frame_id": "base",
+    "source": "preview_snapshot",
+    "status": "",
+    "object_count": 3,
+    "objects": [
+      {
+        "name": "EnvironmentTest_robot",
+        "pose_base": [
+          [
+            -1.0,
+            2.83276944882399e-16,
+            0.0,
+            0.0
+          ],
+          [
+            -2.83276944882399e-16,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "sphere"
+      },
+      {
+        "name": "EnvironmentTest_gun",
+        "pose_base": [
+          [
+            -1.0,
+            2.83276944882399e-16,
+            0.0,
+            -0.2276233166705235
+          ],
+          [
+            -2.83276944882399e-16,
+            -1.0,
+            0.0,
+            0.32998267769525713
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.5281474997204412
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "sphere"
+      },
+      {
+        "name": "EnvironmentTest_wire",
+        "pose_base": [
+          [
+            -1.0,
+            2.83276944882399e-16,
+            0.0,
+            -0.28665142588993503
+          ],
+          [
+            -2.83276944882399e-16,
+            -1.0,
+            0.0,
+            0.28556407198428335
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.22377797356428825
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "sphere"
+      }
+    ]
+  },
+  "vtk_actors_and_toggle_pass": true,
+  "preview_environment_fixed_under_fk_and_workpiece_updates": true,
+  "live_q_untouched": true
+}

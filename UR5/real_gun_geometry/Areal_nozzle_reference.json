@@ -1,0 +1,24 @@
+{
+  "source_sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "method": "Terminal CAD annulus planar boundary circle fits",
+  "nozzle_center_source_mm": [
+    33.33000067736497,
+    59.362931822830376,
+    357.00022100226397
+  ],
+  "nozzle_axis_source": [
+    0.0,
+    -0.7071067811865475,
+    0.7071067811865475
+  ],
+  "outer_radius_mm": 10.291885830641306,
+  "inner_radius_mm": 8.612501735173543,
+  "outer_fit_rms_mm": 5.249272845274082e-06,
+  "inner_fit_rms_mm": 4.316081596849277e-06,
+  "concentricity_error_mm": 1.4243672156606085e-06,
+  "plane_projection_mm": 210.46134551275892,
+  "embedded_wire_extent_mm": 12.519063765850149,
+  "embedded_wire_diameter_mm": 0.8,
+  "physical_measurement": false,
+  "note": "CAD reference only. Added cylinder follows nozzle centre to synchronized TCP, not an axis acceptance test."
+}

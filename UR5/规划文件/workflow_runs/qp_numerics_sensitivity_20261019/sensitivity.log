@@ -1,0 +1,16 @@
+SENSITIVITY initial group=4 bound=0.40 flag=-2 feasible=0
+SENSITIVITY initial group=4 bound=0.46 flag=-2 feasible=0
+SENSITIVITY initial group=4 bound=0.49 flag=-2 feasible=0
+SENSITIVITY initial group=4 bound=0.50 flag=-2 feasible=0
+SENSITIVITY initial group=4 bound=0.55 flag=-2 feasible=0
+SENSITIVITY initial group=4 bound=0.65 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.40 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.46 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.49 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.50 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.55 flag=-2 feasible=0
+SENSITIVITY initial group=5 bound=0.65 flag=-2 feasible=0
+SENSITIVITY last group=4 bound=0.46 flag=-2 feasible=0
+SENSITIVITY last group=4 bound=0.55 flag=-2 feasible=0
+SENSITIVITY last group=4 bound=0.65 flag=1 feasible=1
+SENSITIVITY last group=4 bound=0.80 flag=1 feasible=1

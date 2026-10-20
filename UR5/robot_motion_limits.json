@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source": "UR_PRIMARY_READ_ONLY_CONFIGURATION",
+  "robot_ip": "192.168.0.10",
+  "read_only_port": 30011,
+  "pendant_evidence": {
+    "source": "USER_PROVIDED_NORMAL_MODE_PHOTOS_20261019",
+    "normal_joint_velocity_deg_s": [191, 191, 191, 191, 191, 191],
+    "displayed_joint_tolerance_deg_s": 11,
+    "normal_tcp_speed_m_s": 1.5,
+    "normal_force_N": 150,
+    "normal_power_W": 300,
+    "normal_momentum_kg_m_s": 25,
+    "general_photo": "robot_motion_limit_evidence/normal_general.jpg",
+    "general_photo_sha256": "af3e53982f45c4e3225449f38df342f95a3171d2694b8a74cfc4e4e109a1c40e",
+    "joint_photo": "robot_motion_limit_evidence/normal_joint_speed.jpg",
+    "joint_photo_sha256": "7592057af857ac46f21d58cb36c1512d7fd828cc30c782b5dfe0b86e35000eb3",
+    "note": "Photographic observation of safety pages, NOT a tool payload/CoG or load-dependent acceleration record. Reduced mode is not authorized."
+  },
+  "captured_at": "2026-10-19T06:45:52.138536+00:00",
+  "joint_names": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint"
+  ],
+  "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+  "controller": {
+    "position_limits_rad": [
+      [
+        -6.3355451848,
+        6.3355451848
+      ],
+      [
+        -6.3355451848,
+        6.3355451848
+      ],
+      [
+        -6.3355451848,
+        6.3355451848
+      ],
+      [
+        -6.3355451848,
+        6.3355451848
+      ],
+      [
+        -6.3355451848,
+        6.3355451848
+      ],
+      [
+        -6.3355451848,
+        6.3355451848
+      ]
+    ],
+    "velocity_rad_s": [
+      3.341592653589793,
+      3.341592653589793,
+      3.341592653589793,
+      3.341592653589793,
+      3.341592653589793,
+      3.341592653589793
+    ],
+    "acceleration_rad_s2": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "default_joint_velocity_rad_s": 1.0471975511965976,
+    "default_joint_acceleration_rad_s2": 1.3962634015954636,
+    "raw_configuration_hex": "000001bd06c0195799282c2f6340195799282c2f63c0195799282c2f6340195799282c2f63c0195799282c2f6340195799282c2f63c0195799282c2f6340195799282c2f63c0195799282c2f6340195799282c2f63c0195799282c2f6340195799282c2f63400abb94edddc6b14044000000000000400abb94edddc6b14044000000000000400abb94edddc6b14044000000000000400abb94edddc6b14044000000000000400abb94edddc6b14044000000000000400abb94edddc6b140440000000000003ff0c152382d73653ff657184ae744873fd00000000000003ff33333333333333fd00000000000000000000000000000bfdb333333333333bfd91a9fbe76c8b40000000000000000000000000000000000000000000000003fb6d31fcd24e161000000000000000000000000000000003fbbf141205bc01a3fb83afb7e90ff973fb5119ce075f6fd3ff921fb54524550000000000000000000000000000000003ff921fb54524550bff921fb54524550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000040000000100000002",
+    "raw_configuration_sha256": "16f37086fb9d6bb38b68bf8c5d4d8d0d09e1c4c789250dfda3b6f5de61e65f7e"
+  },
+  "installation_safety_verified": false,
+  "payload_acceleration_verified": false,
+  "note": "OFFLINE ceilings only. Installation safety configuration and load-dependent acceleration have NOT been verified; do not infer them from ConfigurationData. No robot writes."
+}

@@ -1,0 +1,161 @@
+{
+  "snapshot": "initial",
+  "scope": "ISOLATED_TCP_INTERNAL_RHS_DIAGNOSTIC_ONLY",
+  "formal_position_gate_mm": 0.5,
+  "formal_orientation_gate_deg": 0.5,
+  "production_unchanged": true,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "trials": [
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.4,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 1.669599,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.46,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.833297,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.49,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.817693,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.5,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.745293,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.55,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.80308,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.65,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.758869,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.4,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.806098,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.46,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.769912,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.49,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.727762,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.5,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.792776,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.55,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.733992,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 5,
+      "internal_bound": 0.65,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 0.756065,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    }
+  ],
+  "minimum_bounds": [
+    {
+      "changed_TCP_group": 4,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 4.609777,
+      "executionReady": false
+    },
+    {
+      "changed_TCP_group": 5,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 1.810819,
+      "executionReady": false
+    }
+  ]
+}

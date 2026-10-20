@@ -1,0 +1,11 @@
+HMI_WELD_STAGE stage=BOUNDARIES
+HMI_WELD_STAGE stage=VELOCITY_OPTIMIZATION
+VELOCITY_PROFILE audit=C_NONZERO_ENTRY_CONTROLLER_AWARE
+duration=23.348725 sync=0.428675 contour=0.073083 orientation=0.280062 vmax=0.237020201 amax=1.616888386 collision=1 pass=1
+HYBRID cap_fraction=0.90 iteration=1
+HYBRID cap_fraction=0.90 iteration=2
+HYBRID cap_fraction=0.90 iteration=3
+HYBRID cap_fraction=1.00 iteration=1
+HYBRID cap_fraction=1.00 iteration=2
+HYBRID cap_fraction=1.00 iteration=3
+CONTINUOUS_PLANNING_FAILED Hybrid velocity generation failed

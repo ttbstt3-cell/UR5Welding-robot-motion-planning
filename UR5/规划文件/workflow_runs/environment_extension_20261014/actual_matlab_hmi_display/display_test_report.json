@@ -1,0 +1,58 @@
+{
+  "manifest": "UR5/environment_geometry_real.json",
+  "manifest_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+  "environment_component_count": 1,
+  "snapshot_source": "UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/environment_extension_20261014/real_scene_audit/preview_display_snapshot.json",
+  "actual_matlab_snapshot_compared": true,
+  "frame_id": "base",
+  "robot_motion": "NO",
+  "source_coverage_warning": "\u5b89\u5168\u6805\u680f\uff1a\u6e90\u573a\u666f\u672a\u627e\u5230",
+  "matlab_hmi_environment_max_matrix_error": 1.1102230246251565e-16,
+  "matlab_hmi_environment_max_position_error_mm": 1.570092458683775e-13,
+  "first_frame_collision_status": "PREVIEW WARNING",
+  "first_frame_collision_pairs": [
+    "base_link_inertia <-> EnvironmentCollision_Floor",
+    "base_link_inertia <-> EnvironmentCollision_Floor"
+  ],
+  "preview_environment_transforms": {
+    "frame_id": "base",
+    "source": "preview_snapshot",
+    "status": "\u5b89\u5168\u6805\u680f\uff1a\u6e90\u573a\u666f\u672a\u627e\u5230",
+    "object_count": 1,
+    "objects": [
+      {
+        "name": "EnvironmentCollision_Floor",
+        "pose_base": [
+          [
+            6.123233995736766e-17,
+            1.0,
+            0.0,
+            0.8750000122428504
+          ],
+          [
+            -1.0,
+            6.123233995736766e-17,
+            0.0,
+            0.5499999339247768
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.09999984435588122
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "box"
+      }
+    ]
+  },
+  "vtk_actors_and_toggle_pass": true,
+  "preview_environment_fixed_under_fk_and_workpiece_updates": true,
+  "live_q_untouched": true
+}

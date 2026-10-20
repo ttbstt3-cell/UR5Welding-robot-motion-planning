@@ -1,0 +1,5 @@
+CP_GEOMETRY iter=1 knots=360 pos=13.549108 ori=0.894680 bad=1275
+CP_IK span=3 trial=1 pe=2.97062898e-06 ae=0 dq=0.0381695 limits=1
+CP_IK span=3 trial=2 pe=1.21250331e-05 ae=0 dq=0.038168 limits=1
+CP_IK span=3 trial=3 pe=1.82891277e-05 ae=0 dq=0.0381687 limits=1
+INDEPENDENT_RESULT current pass=0 time=1.893 executionReady=0

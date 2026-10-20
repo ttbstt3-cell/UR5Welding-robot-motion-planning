@@ -1,0 +1,13 @@
+{
+  "pass_all": true,
+  "real_report_callback": true,
+  "loaded_points": 638,
+  "three_display_frames": true,
+  "live_state_preserved": true,
+  "false_collision_pass_rejected": true,
+  "physical_pending": true,
+  "execution_button_enabled": false,
+  "production_config_unchanged": true,
+  "isolated_publish": true,
+  "robot_motion": "NO"
+}

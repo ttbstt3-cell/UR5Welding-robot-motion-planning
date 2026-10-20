@@ -1,0 +1,104 @@
+{
+  "pass_all": true,
+  "robot_motion": "NO",
+  "ROS_node_started": false,
+  "real_network_calls": 0,
+  "robot_send_calls": 0,
+  "limits": {
+    "profile_sha256": "8eaa422c8c8856ecc5f7745a8add8716de6cbe6983813a4d6d1afa5651dd03a3",
+    "profile_path": "/home/ttbstt/jixiebi/UR5/robot_motion_limits.json",
+    "source": "UR_PRIMARY_READ_ONLY_CONFIGURATION",
+    "joint_names": [
+      "shoulder_pan_joint",
+      "shoulder_lift_joint",
+      "elbow_joint",
+      "wrist_1_joint",
+      "wrist_2_joint",
+      "wrist_3_joint"
+    ],
+    "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "position_lower_rad": [
+      -6.283185307179586,
+      -6.283185307179586,
+      -3.141592653589793,
+      -6.283185307179586,
+      -6.283185307179586,
+      -6.283185307179586
+    ],
+    "position_upper_rad": [
+      6.283185307179586,
+      6.283185307179586,
+      3.141592653589793,
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "velocity_rad_s": [
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793
+    ],
+    "acceleration_rad_s2": [
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0
+    ],
+    "scalar_velocity_rad_s": 3.141592653589793,
+    "scalar_acceleration_rad_s2": 40.0,
+    "normal_joint_speed_evidence_present": true,
+    "normal_tcp_speed_m_s": 1.5,
+    "installation_safety_verified": false,
+    "payload_acceleration_verified": false,
+    "status": "OFFLINE_LIMITS_AVAILABLE_EXECUTION_INCREASE_PENDING",
+    "note": "Configuration ceilings, not safety settings or recommended operating speeds"
+  },
+  "negative_cases": [
+    "between_node_velocity_peak",
+    "between_node_acceleration_peak",
+    "between_node_position_overshoot",
+    "cartesian_speed_bound",
+    "nonfinite",
+    "zero_dt",
+    "missing_velocities",
+    "urdf_version",
+    "controller_array",
+    "controller_hash",
+    "wrong_joint_order",
+    "photo_hash",
+    "false_pass_over_robot_velocity",
+    "false_pass_over_robot_acceleration",
+    "false_pass_unbound_profile",
+    "legacy_cannot_claim_new_limits",
+    "modified_report_contract"
+  ],
+  "baseline_remains_legal": true,
+  "uniform_2x_controller_urdf_ceiling_pass": true,
+  "uniform_2x_execution_blocked_pending_payload": true,
+  "two_x_max_velocity_per_joint": [
+    0.1371903633560287,
+    0.14358715522185891,
+    0.16074046944477507,
+    0.11646852341808382,
+    0.12325695075824891,
+    0.1693474842448108
+  ],
+  "two_x_max_acceleration_per_joint": [
+    1.0462875571073758,
+    0.9872955699487007,
+    0.9986619864904167,
+    0.7829622302834979,
+    1.0468747086532084,
+    0.9806038533393446
+  ],
+  "two_x_tcp_speed_upper_bound_m_s": 0.7413352559391438,
+  "original_profile_model_trajectory_unchanged": true,
+  "flipping_json_booleans_cannot_approve_execution": true,
+  "GUI_blocks_speed_increase_before_confirmation_and_invalidates_numeric_cache": true,
+  "synthetic_new_limit_offline_status_not_misreported_as_algorithm_failure": true
+}

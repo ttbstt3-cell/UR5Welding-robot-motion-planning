@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "original_weld_q_exact": true,
+    "original_weld_tcp_exact": true,
+    "original_all_q_exact": true,
+    "rest_end_velocities": true,
+    "rest_end_acceleration": true,
+    "interface_C2": true,
+    "time_strictly_increasing": true,
+    "execution_false": true,
+    "reference_independent_of_candidate": true,
+    "home_reference_decelerates": true,
+    "mismatched_fixed_target_rejected": true,
+    "turn_boundary_rejected": true,
+    "original_cartesian_reference_exact": true
+  },
+  "pass": true,
+  "scope": "Data/FK/analytic contracts only; not a collision or execution approval",
+  "executionReady": false
+}

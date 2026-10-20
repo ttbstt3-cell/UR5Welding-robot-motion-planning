@@ -1,0 +1,3 @@
+group,axis_constraint,IK_calls,IK_numeric_success,IK_pose_valid,direction_pass,collision_pass,final_feasible
+A,ON,264,264,144,55,0,0
+B,DIAGNOSTIC_OFF,264,264,144,144,0,0

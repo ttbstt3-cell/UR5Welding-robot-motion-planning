@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "robot_motion": "NO",
+  "source": "SYNTHETIC_OFFLINE_ONLY",
+  "joint_pose_count": 10,
+  "max_source_position_error_mm": 4.3555034097351218E-13,
+  "max_source_orientation_error_deg": 2.091309789151873E-6,
+  "max_fixed_flange_tcp_transform_error": 6.9422107698062509E-16,
+  "wire_endpoint_error_mm": 7.7579192288977284E-15,
+  "wire_diameter_mm": 1.2,
+  "quality_level": "CONTROLLER_DEFINED",
+  "pivot_accuracy_claim": "NONE",
+  "bad_inputs_blocked": 9,
+  "historical_explicit_diagnostics": "PASS",
+  "missing_active_no_fallback": "PASS",
+  "protected_file_hashes_unchanged": true
+}

@@ -1,0 +1,1375 @@
+                                                      Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+                                                             Contents lists available at ScienceDirect
+
+
+                                                 Applied Mathematical Modelling
+                                                    journal homepage: www.elsevier.com/locate/apm
+
+
+
+
+Auxiliary-based dual-stage constrained multiobjective
+evolutionary algorithm for obstacle-avoidance inverse kinematics
+of redundant welding manipulators
+Zhao He, Hui Liu∗
+Institute of Artiﬁcial Intelligence & Robotics (IAIR), Key Laboratory of Traﬃc Safety on Track of Ministry of Education, School of Traﬃc and
+Transportation Engineering, Central South University, Changsha, Hunan, 410075, China
+
+
+
+
+a r t i c l e           i n f o                            a b s t r a c t
+
+Keywords:                                                  The motion planning algorithm for redundant robotic arms is a core technology for achieving ef-
+Redundant robotic arms                                     ﬁcient and precise operations in intelligent manufacturing. However, solving inverse kinematics
+Inverse kinematics problem                                 under multiple constraints remains a major challenge in the motion planning process. To tackle
+Obstacle-avoidance constraint
+                                                           this challenge, this paper reformulates the inverse kinematics problem as a constrained multiob-
+Data-driven prediction method
+Constrained multiobjective evolutionary
+                                                           jective optimization problem and proposes a corresponding evolutionary algorithm to solve it.
+algorithm                                                  Speciﬁcally, we ﬁrst construct a model of the inverse kinematics problem, encompassing both
+                                                           objectives and constraints. The obstacle-avoidance constraint is formulated using a data-driven
+                                                           collision prediction method. We then introduce an auxiliary-based dual-stage constrained mul-
+                                                           tiobjective evolutionary algorithm to address this problem. This algorithm subdivides the evo-
+                                                           lutionary process into an objective optimization phase and a constraint handling phase, thereby
+                                                           eﬀectively balancing objectives and constraints. Besides, a global competitive swarm optimizer
+                                                           and a novel ﬁtness evaluation strategy are developed in the proposed algorithm. The eﬀectiveness
+                                                           of the proposed algorithm is validated by comparing it with 9 state-of-the-art constrained multiob-
+                                                           jective evolutionary algorithms across four welding paths. The experimental results demonstrate
+                                                           the markedly best solving performance and middle-level time eﬃciency compared to peer al-
+                                                           gorithms on all welding paths. Besides, the proposed algorithm exhibits strong robustness at a
+                                                           data perturbation level of 5 %. This research can provide valuable insights for the ﬁeld of robotic
+                                                           motion planning.
+
+
+
+
+1. Introduction
+
+    In the era of intelligent manufacturing, there is a high demand for automated welding of complex curved structural components, as
+well as high requirements for welding precision, welding quality, and adaptability to non-structured environments. Robots are hailed
+as the jewel in the crown of manufacturing and the physical execution terminal of intelligent manufacturing. They play an important
+role in improving industrial production eﬃciency, realizing ﬂexible manufacturing, and performing high-risk, high-precision welding
+operations [1–4]. Traditional 6-degree-of-freedom welding robots have limited working spaces and insuﬃcient ﬂexibility. When faced
+with complex constraints such as conﬁned spaces, singular points, and obstructions caused by the workpiece itself, they struggle to
+generate high-quality welding trajectories. Redundant welding robotic arms are an ideal solution to this challenge. Their additional
+
+
+  ∗ Corresponding author.
+
+    E-mail address: csuliuhui@csu.edu.cn (H. Liu).
+
+https://doi.org/10.1016/j.apm.2025.116440
+Received 16 June 2025; Received in revised form 5 September 2025; Accepted 8 September 2025
+Available online 11 September 2025
+0307-904X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+Z. He and H. Liu                                                                                 Applied Mathematical Modelling 151 (2026) 116440
+
+
+degrees of freedom enable them to optimize a series of secondary tasks (such as obstacle avoidance, singular point avoidance, and
+joint limit avoidance) while fulﬁlling the primary task of controlling the position and orientation of the welding gun. In the event of a
+joint failure, the redundant robotic arm can redistribute speed and torque to the aﬀected joint and continue to execute the established
+operational tasks using the remaining joints, thereby oﬀering enhanced ﬂexibility and fault tolerance.
+    Redundant robotic arms provide ﬂexibility for welding operations while also posing signiﬁcant challenges for motion planning
+algorithms, with the core challenge being the solution of the inverse kinematics problem. In real-world welding scenarios, this is not
+merely an IK solution problem but a multi-objective, strongly coupled, high-dimensional real-time optimization problem that must
+satisfy various complex constraints. For example, task space constraints require the welding gun tip to precisely track the predeﬁned
+trajectory and posture. Joint space constraints require that the joint angles, velocities, and accelerations of the robotic arm do not
+exceed speciﬁed limits. Obstacle avoidance constraints require that the robotic arm does not collide with the welded part or any
+obstacles in the environment. How to eﬃciently and stably solve the inverse kinematics problem of a redundant robotic arm that
+incorporates all these complex constraints within a uniﬁed framework is a highly challenging open problem in the ﬁeld of robotics
+[5].
+    Presently, methods for solving the inverse kinematics of redundant robotic arms can be classiﬁed into four main categories:
+kinematic transformation methods, numerical optimization methods, heuristic algorithms, and learning-based methods. Kinematic
+transformation methods can be further divided into analytical, geometric, and arm-angle methods. The analytical method yields
+the exact inverse solution through formula derivation; however, the applicable conﬁgurations of robotic arms are limited, thereby
+restricting the ﬂexibility of this approach [6,7]. In fact, the majority of redundant robotic arms lack analytical solutions. Similarly,
+the geometric method is contingent upon the arm conﬁguration design, which precludes a generalized computational approach and
+constrains its applicability [8,9]. The arm angle method constrains the conﬁguration by deﬁning a speciﬁc arm angle, ensuring that
+the number of joints equals the number of equations to facilitate the determination of the inverse solution [10]. The above kinematic
+transformation methods are fast to calculate but diﬃcult to handle inequality constraints.
+    Numerical optimization methods include geometric iterative methods, damped least squares methods, mathematical optimization
+methods, and their respective enhancements. The stringent constraints and complex structures of cable-driven redundant robotic
+arms pose challenges to inverse kinematics calculations. Several researchers have employed multiple geometric iterative methods
+to solve inverse kinematics [11,12], with simulation results demonstrating their eﬀectiveness. The main idea of the damped least
+squares method is to introduce a damping factor to achieve a balance between the tracking accuracy of the end-eﬀector trajectory
+and the stability of joint motion, thereby avoiding numerical instability caused by the singularity of the Jacobian matrix [13–15]. Its
+performance depends on the intelligent adjustment strategy of the damping factor. Inverse kinematics problems can also be modeled as
+mathematical optimization problems and addressed using optimization techniques while incorporating relevant constraints to achieve
+globally optimal solutions [16,17]. The above numerical optimization methods are more powerful in handling multiple constraints,
+but they are computationally expensive and sensitive to initial values and parameters.
+    Heuristic algorithms center on converting the inverse kinematics problem of redundant robotic arms into an optimization prob-
+lem, employing heuristic algorithms and their associated enhancements for resolution [18–23]. Some scholars have also adopted
+multiobjective heuristic methods to solve inverse kinematics problems. Reddy et al. [24] formulated the inverse kinematics problem
+as a multiobjective optimization and resolved it using MOPSO. Wu et al. [25] utilized an enhanced NSGA-II algorithm to resolve
+the inverse kinematics of an 8-degree-of-freedom redundant robotic arm, ensuring accuracy, continuity, and real-time performance.
+The above heuristic algorithms have strong global search abilities, but they are mostly designed for single-objective optimization
+problems. For multi-objective optimization algorithms such as MOPSO and NSGA-II, they are diﬃcult to handle complex constraints,
+which limits their widespread application.
+    Certain literature utilizes learning-based methods such as neural networks and reinforcement learning to tackle the inverse kine-
+matics problems of redundant robotic arms. For instance, Dong et al. [26] partitioned the workspace of the robotic arm and employed
+a pre-trained neural network model for each partition to achieve high-precision inverse kinematics solutions. Ho et al. [27] modeled
+the solution space of the robotic arm with neural networks to compute inverse kinematics, facilitating the assessment of additional
+obstacle avoidance constraints during the optimization process. Habibkhah et al. [28] initially introduced a virtual vector function
+into the task space, ensuring that the number of variables in the task space is at least equal to that in the joint space. They subsequently
+utilized artiﬁcial neural networks to address the inverse kinematics problem. Hlavac et al. [29] derived inverse kinematics solutions
+for redundant robotic arms through the training of a multilayer perceptron. Vu et al. [30] proposed a real-time framework for solving
+inverse kinematics, utilizing neural networks to learn the redundant parameters of the robotic arm. Simulation results corroborated
+the high precision and real-time performance of this framework. Emami et al. [31] conducted a review of multi-agent reinforcement
+learning methods applied to solving the inverse kinematics problems of redundant robotic arms. In addition, some researchers have
+employed some hybrid methods [32]. These cutting-edge methods are very promising, but they require large amounts of high-quality
+data for training, and their generalization capabilities are limited.
+    In summary, existing methods either limit their ability to solve for generalization or compromise on solution accuracy. The ability
+of these methods to handle multiple complex constraints needs to be further improved. Therefore, there is an urgent need to develop
+a new paradigm for inverse kinematics optimization that combines generality, optimality in solving, and robust handling of multiple
+complex constraints.
+    To address the aforementioned challenges, this paper transforms the obstacle avoidance inverse kinematics problem of redun-
+dant robotic arms into a constrained multiobjective optimization problem and proposes an auxiliary-based dual-stage constrained
+multiobjective evolutionary algorithm, denoted as ADCMEA. The novelty of the proposed ADCMEA in solving inverse kinematics
+problems is as follows. First, a global competitive swarm optimizer was developed, where the winner individuals also undergo learn-
+
+                                                                     2
+Z. He and H. Liu                                                                               Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                Fig. 1. View of the working environment of a redundant welding robot arm.
+
+
+
+ing and updating. This update mechanism enhances the diversity of the population, providing more possibilities for the algorithm
+to explore unknown regions of the solution space for the inverse kinematics problem. Second, a new ﬁtness evaluation strategy was
+developed. This evaluation method combines convergence information and diversity information to better select solutions for the
+inverse kinematics problem, thereby accelerating convergence. Finally, a dual-stage evolutionary framework was proposed, where
+the objective optimization stage focuses on objective optimization, while the constraint handling stage develops a dual-constraint
+handling method to better address the complex constraints in the inverse kinematics problem. The primary contributions of this paper
+can be summarized as follows:
+
+1. The inverse kinematics problem of redundant manipulators is transformed into a constrained multiobjective optimization problem
+   with multiple complex constraints. In this framework, the obstacle-avoidance constraint is modeled utilizing a data-driven obstacle-
+   collision prediction approach.
+2. We proposed an auxiliary-based dual-stage constrained multiobjective evolutionary algorithm to deal with the constrained mul-
+   tiobjective optimization problem.
+3. Simulation experiments were performed on four types of welding paths. The eﬀectiveness of the proposed algorithm was validated
+   through comparisons with 9 state-of-the-art constrained multiobjective evolutionary algorithms.
+4. Across all welding paths, we investigated the sensitivity of the proposed algorithm to data perturbations to simulate environmental
+   uncertainties and real-world measurement errors.
+
+    The structure of the remainder of this paper is organized as follows. Section 2 details the construction of the redundant robotic arm
+and the welding simulation environment. Section 3 provides an in-depth discussion on modeling the obstacle-avoidance constraint.
+Section 4 outlines the constrained multiobjective optimization model and introduces the proposed ADCMEA algorithm. Section 5
+presents the ablation experiments of ADCMEA and the comparison experiments of various algorithms. Additionally, sensitivity analysis
+for data perturbations is also presented in this section. Finally, we summarize the paper drawn from the study in Section 6.
+
+2. Construction of the welding simulation environment
+
+    In automobile manufacturing, welding robotic arms have become an important tool for the automation and intelligence of welding
+operations, and their level of automation and intelligence directly aﬀects the production eﬃciency, quality, and cost of vehicles.
+However, the workshop environment is complex and variable, and there are often various obstacles, such as weldments, conveyors,
+unmanned vehicles, wall columns, and pedestrians. The redundant welding robotic arms, due to their redundant degrees of freedom,
+can be used to avoid obstacles in the workshop, maintain joint continuity, etc., in addition to accomplishing the main welding task.
+This paper considers several common obstacles, including welding tables, weldments, conveyors, and welding workshop columns.
+Fig. 1(a) shows the main view of the working environment; Fig. 1(b) shows the top view; Fig. 1(c) shows the left view; and Fig. 1(d)
+shows the front view. The manipulator is a redundant robotic arm named LBR iiwa 14 R820 manufactured by KUKA with seven axes
+of rotational freedom. A simpliﬁed welding gun is connected at the end for welding operations. Each linkage is shown in Fig. 2(a).
+
+2.1. Inverse kinematics of redundant manipulators
+
+    The kinematic modeling of the robotic arm aims to ﬁnd the relative positional relationship of the welding gun end coordinate
+system with respect to the base coordinate system. In this paper, the standard D-H method is used, and the parameters are shown in
+Table 1. The coordinate system is established in Coppeliasim software, as shown in Fig. 2(b). The transformation generalized formula
+
+                                                                   3
+Z. He and H. Liu                                                                                                      Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                        Fig. 2. Schematic diagram of robot arm linkage and joint coordinate system.
+
+                             Table 1
+                             Standard D-H parameter sheet for iiwa 14 R820 robotic arm.
+                               𝑖     𝑑𝑖 (mm)      𝛼𝑖 (◦ )      Range of motion angle (◦ )   Maximum angular velocity for rated load (◦ /s)
+
+                               1     360          −90          (−170,170)                   85
+                               2     0            90           (−120,120)                   85
+                               3     420          90           (−170,170)                   100
+                               4     0            −90          (−120,120)                   75
+                               5     400          −90          (−170,170)                   130
+                               6     0            90           (−120,120)                   135
+                               7     344          0            (−175,175)                   135
+
+
+
+between adjacent links is as follows:
+                   ⎡cos 𝜃𝑖   − sin 𝜃𝑖 cos 𝛼𝑖       sin 𝜃𝑖 sin 𝛼𝑖         𝑎𝑖 cos 𝜃𝑖 ⎤
+                   ⎢                                                               ⎥
+        𝑖−1 ⎢ sin 𝜃𝑖          cos 𝜃𝑖 cos 𝛼𝑖       − cos 𝜃𝑖 sin 𝛼𝑖        𝑎𝑖 sin 𝜃𝑖 ⎥
+        𝑖 𝐓=⎢ 0                  sin 𝛼𝑖               cos 𝛼𝑖                 𝑑𝑖 ⎥
+                                                                                                                                                                  (1)
+                   ⎢ 0              0                    0                   1 ⎥⎦
+                   ⎣
+where 𝜃𝑖 (𝑖 = 1, 2, … , 7) is the joint angle, which denotes the angle between 𝑋𝑖−1 and 𝑋𝑖 as viewed from the 𝑍𝑖−1 direction; 𝑑𝑖 is the
+linkage oﬀset, which denotes the distance between 𝑋𝑖−1 and 𝑋𝑖 along the 𝑍𝑖−1 direction; 𝑎𝑖 (𝑎𝑖 = 0) is the linkage length, denoting
+the distance between 𝑍𝑖−1 and 𝑍𝑖 along the 𝑋𝑖 direction; 𝛼𝑖 is the linkage torsion angle, denoting the angle between 𝑍𝑖−1 and 𝑍𝑖 as
+viewed in the 𝑋𝑖 direction. According to Eq. (1), the position and orientation matrix 07 𝐓 of the welding torch end of the robotic arm
+can be obtained as follows:
+                                                        ⎡𝑁𝑥        𝑂𝑥       𝐴𝑥    𝑃𝑥 ⎤
+                                                        ⎢                            ⎥ [                   ]
+        0     0     1     2     3     4     5     6     ⎢ 𝑁𝑦       𝑂𝑦       𝐴𝑦    𝑃𝑦 ⎥   𝐑3×3       𝐏3×1
+        7 𝐓 = 1 𝐓 ⋅ 2 𝐓 ⋅ 3 𝐓 ⋅ 4 𝐓 ⋅ 5 𝐓 ⋅ 6 𝐓 ⋅ 7 𝐓 = ⎢𝑁         𝑂𝑧       𝐴𝑧    𝑃𝑧 ⎥
+                                                                                       =
+                                                                                          0          1
+                                                                                                                                                                  (2)
+                                                           𝑧
+                                                        ⎢ 0        0        0     1 ⎥⎦
+                                                        ⎣
+where 𝑁𝑥 , 𝑁𝑦 , 𝑁𝑧 are 𝑁-axis direction cosines; 𝑂𝑥 , 𝑂𝑦 , 𝑂𝑧 are 𝑂-axis direction cosines; and 𝐴𝑥 , 𝐴𝑦 , 𝐴𝑧 are 𝐴-axis direction cosines. 𝐑3×3
+is the orientation matrix, and 𝐏3×1 = [𝑃𝑥 , 𝑃𝑦 , 𝑃𝑧 ] is the position vector. Eq. (2) describes the one-to-one correspondence between the
+welding torch end position 07 𝐓 and 𝚯, i.e., the forward kinematics are uniquely determined. To verify the correctness of the constructed
+kinematic model, the joint angle 𝚯 = [𝜋∕3, 𝜋∕4, −𝜋∕6, 𝜋∕2, 0.183𝜋, 0.417𝜋, −𝜋∕4] was randomly given in the working range. The end
+position (m) of the welding torch displayed in Coppeliasim software is [−0.2182, 0.4245, 1.0895], and the Euler angle (◦ ) of the
+
+                                                                                       4
+Z. He and H. Liu                                                                                                Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                                                    Fig. 3. Motion diagram of a Bezier curve.
+
+
+
+welding torch end orientation is [−56.13, −11.92, −1.52]. The position and orientation matrix of the welding torch end obtained by
+modeling with MATLAB software is shown in Eq. (3).
+
+               ⎡1            0        −0.2        −218.2⎤
+               ⎢                                         ⎥
+        0     ⎢0.2          0.6        0.8         424.5 ⎥
+        7 𝐓 = ⎢0.1          −0.8      0.5         1089.5 ⎥
+                                                                                                                                                            (3)
+               ⎢0            0          0            1 ⎥⎦
+               ⎣
+    The end positions (mm) of the welding torch corresponding to this matrix are [−218.2, 424.5, 1089.5], and the Euler angles (rad)
+of the end orientation of the welding torch are [−0.9796, −0.208, −0.0265]. The results correspond to the Coppeliasim software,
+proving the correctness of the kinematic modeling.
+    In contrast, the inverse kinematics problem is the process of solving the joint angles with the known position and orientation 07 𝐓
+of the welding torch end. The mathematical deﬁnition is shown in Eq. (4).
+
+        𝚯 = [𝜃1 , 𝜃2 , 𝜃3 , 𝜃4 , 𝜃5 , 𝜃6 , 𝜃7 ]𝑇 = 𝑓 (07 𝐓)                                                                                                 (4)
+
+   For a given end position and orientation, there are often countless combinations of joint angles. How to solve and select the
+appropriate solutions for a given scene exists a great challenge.
+
+
+2.2. Bezier curve
+
+    During welding, the welding torch end of the robotic arm needs to move along a ﬁxed welding trajectory. Depending on the
+diﬀerent application scenarios, the common types of welding trajectories include straight-line, circular arc, and spiral trajectories. To
+realize this goal, the Bezier curve is used to approximate the welding trajectory and generate interpolation points.
+    The Bezier curve is a very important parametric curve in computer graphics, originally used by French engineer Pierre Bézier in
+1962 for the design of automobile bodies [33]. A Bezier curve consists of a line segment, a start point, an end point, and a series of
+control points. These control points determine the shape and direction of the curve. The line segments connect these control points
+like a stretchable leather band. Various smooth curves can be ﬂexibly generated by adjusting the position of the control points. Due
+to these characteristics, Bezier curves are widely used in architectural design, vehicle design, industrial engineering, and other ﬁelds.
+    Given 𝑛 + 1 control points 𝑃𝑖 (𝑖 = 0, 1, 2, … , 𝑛), the general generalization of the 𝑛th order Bessel curve can be introduced as follows.
+                   ∑
+                   𝑛                              ∑
+                                                  𝑛
+        𝐵(𝑡) =           𝐶𝑛𝑖 𝑡𝑖 (1 − 𝑡)𝑛−𝑖 𝑃𝑖 =         𝑏(𝑡)𝑃𝑖 , 𝑡 ∈ (0, 1)                                                                                 (5)
+                   𝑖=0                            𝑖=0
+
+where 𝑏(𝑡) is called the Bernstein primary function.
+   In this paper, Bezier curves are used to approximate the linear welding trajectory and the circular welding trajectory. This can
+be achieved by moving each control point on the curve, which is shown schematically in Fig. 3. To validate the inverse kinematics
+algorithm of the redundant robotic arm, it is necessary to obtain a series of interpolated points on the trajectory. Speciﬁcally, the
+current position and orientation of the welding torch end are acquired in real-time in Coppeliasim software, and the interpolation
+points are updated using the following equation.
+
+        𝑃 𝑂𝑛𝑒𝑥𝑡 = 𝑃 𝑂𝑐 + 𝑃 𝑉 ⋅ 𝑑𝑡                                                                                                                           (6)
+
+where 𝑃 𝑂𝑛𝑒𝑥𝑡 is the position and orientation of the next interpolation point. 𝑃 𝑂𝑐 is the current position and orientation. 𝑃 𝑉 denotes
+the moving velocity of the interpolation point. 𝑑𝑡 is the simulation time step.
+
+                                                                                       5
+Z. He and H. Liu                                                                              Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                             Fig. 4. Example of minimum distance detection.
+
+
+3. Data-driven prediction of obstacle collisions
+
+3.1. Dataset acquisition
+
+    Each joint of the manipulator arm has its own range of motion limitations, as shown in Table 1. These range combinations
+constitute the working space of the robotic arm. The robotic arm is interconnected with each static obstacle in the workspace.
+Diﬀerent joint combinations of the robotic arm may or may not encounter obstacles. Most of the existing collision detection methods
+use the bounding volume method to wrap the robotic arm and the obstacle with regular geometries and then determine whether the
+geometries intersect with each other to detect the collision or directly simplify the robotic arm to perform the computation [34].
+Although the bounding volume method is simple and eﬃcient, it also has the disadvantages of insuﬃcient tightness, poor adaptability
+to complex objects, high updating cost, and limited collision detection accuracy. The multiobjective optimization method proposed
+in this paper needs to update the position of each joint of the robotic arm in real-time, and it will be very time-consuming and limited
+in accuracy if the collision detection is carried out by the bounding volume method. Learning the relative relationship between the
+robotic arm and obstacles in the workspace can improve eﬃciency. For this reason, this paper proposes a data-driven prediction
+method for detection.
+    Sampling is ﬁrst performed in the workspace with a sample size of 30,000, representing 30,000 joint combinations. For learn-
+ing the features of each region in the workspace, an optimized Latin hypercube sampling method based on the max-min idea
+is used [35]. This method overcomes the aggregation phenomena of sample points that may occur in traditional Latin hyper-
+cube sampling methods. The core idea is: when selecting each sample point, not only consider its position within the respec-
+tive variable interval but also consider the minimum distance between it and the selected sample point and try to maximize
+this minimum distance, so that the sample points are more discretely distributed throughout the variable space, thus improv-
+ing the spatial ﬁllability. Since the sample points are more evenly distributed, the accuracy and reliability of the model can be
+improved.
+    In this paper, the method of minimum distance detection is used to determine whether an obstacle is encountered. When the
+minimum distance between each link of the robot arm and the obstacles is 0, it means that it touches the obstacle, and greater than
+0 means that it does not touch the obstacle. Take link-5 in two joint combinations for instance. The ﬁrst joint combination is [100◦ ,
+−20◦ , 70◦ , 50◦ , 120◦ , −90◦ , −75◦ ]. The minimum distances between the link-5 and the weldment, conveyor, workshop column are
+obtained through the minimum distance detection algorithm in the Coppeliasim software. They are 0.164 m, 0.168 m, and 0.437 m,
+respectively. In this situation, the robotic arm did not touch the obstacles in the environment, as shown in Fig. 4(a). The second
+joint combination is [100◦ , −50◦ , 70◦ , 50◦ , 120◦ , −90◦ , −75◦ ]. Similarly, the minimum distances between link-5 and the weldment,
+conveyor, and workshop column are 0 m, 0.179 m, and 0.628 m, respectively. In this situation, link-5 collides with the weldment
+mutually, as shown in Fig. 4(b). Through the above analysis, we can deﬁne the collision state of the whole robotic arm with the
+obstacles in the environment, as shown in Eq. (7).
+                                  {
+                                    0, with collision
+        𝑑𝑖𝑐 = min(max(𝑑𝑖𝑗 , 0)) =                                                                                                    (7)
+                                    > 0, no collision
+where 𝑑𝑖𝑐 denotes the collision state. 𝑑𝑖𝑗 denotes the minimum distance between the 𝑖th link of the robotic arm and the 𝑗th obstacle.
+𝑖 (𝑖 = 1, 2, … , 8) denotes the link serial number. 𝑗 (𝑗 = 1, 2, 3) denotes the obstacle serial number. The 𝑑𝑖𝑐 values of 30,000 joint
+combinations are obtained separately by MATLAB software. Feed-forward back-propagation neural network was used to learn the
+nonlinear mapping relationship between the joint states of the robotic arm and the distances.
+
+
+
+
+                                                                   6
+Z. He and H. Liu                                                                                    Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+         Fig. 5. The ﬁtting diagram of FFBPNN. (a) the straight and polygonal welding scene; (b) the circular and L-shaped welding scene.
+
+
+
+3.2. Collision prediction for redundant robotic arms
+
+    In this section, we use a feed-forward backpropagation neural network (FFBPNN) to perform the prediction process [36]. The
+training process of FFBPNN consists of two phases: forward propagation of information and backward propagation of errors. In the
+forward propagation stage, the input data are propagated forward through the layers of the network until the output results are
+produced. In the backward propagation phase, the weights of the network are updated according to errors between output results
+and desired results to minimize the errors. Due to its powerful nonlinear mapping ability and self-learning and self-adaptive ability,
+the BP neural network is widely used in the ﬁelds of function approximation, pattern recognition, classiﬁcation, etc., and is one of
+the most widely used neural networks.
+    The accuracy of collision prediction will be veriﬁed on four welding paths of two parts. The number of training samples is 30,000,
+and the number of additional test samples is 1000. The simulation experiments are performed in MATLAB software. The speciﬁc
+parameters are set as follows. The training algorithm is Levenberg-Marquardt. The performance is evaluated by mean square error
+(MSE). The learning rate is set to 0.01. The network uses two hidden layers, and the number of neurons in each layer is set to 50.
+The activation function uses the sigmoid function. The last layer adopts the purelin function for output. The ﬁtting curves are shown
+in Fig. 5; it is clear that the correlation coeﬃcients of the two parts are greater than 0.9, indicating that the training process of the
+FFBPNN is excellent.
+    Fig. 6(a) and (b) show the error distribution histograms for 1000 additional test samples. As can be seen from the plots, only a
+few sample points have large prediction errors, while about 90 % of the sample points have errors within 0.05 m, indicating that the
+results are reliable. The MSE is 0.00083 for the straight and polygonal welding scene and 0.001 for the circular and L-shaped welding
+scene. These two trained FFBPNN models will be used as constraints in the multiobjective optimization stage to predict the collision
+state of the robotic arm to reduce computational cost and complexity. The speciﬁc expressions for the obstacle avoidance constraints
+will be given in the next subsection.
+
+
+4. Model construction and ADCMEA algorithm
+
+4.1. Constrained multiobjective optimization model for obstacle-avoidance inverse kinematics
+
+4.1.1. Deﬁnition of objective functions
+   During the welding process, the manipulator has to reach the position of the task accurately. In other words, a set of joint
+combinations needs to be found that minimizes the error between the end position of the welding gun and the position of the task.
+Thus, the following objective function can be deﬁned:
+
+        𝑓1 (𝐉) = ‖𝐏𝑒𝑛𝑑 − 𝐏𝑡𝑎𝑟 ‖2 = ‖𝐹 𝐾(𝐉) − 𝐏𝑡𝑎𝑟 ‖2                                                                                            (8)
+
+                                                                        7
+Z. He and H. Liu                                                                                              Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+      Fig. 6. Error distribution histogram of test samples. (a) straight and polygonal welding paths; (b) circular and L-shaped welding paths.
+
+
+
+where ‖ ⋅ ‖2 denotes the L2 norm. 𝐏𝑒𝑛𝑑 and 𝐏𝑡𝑎𝑟 denote the end position vector of the manipulator welding gun and the task position
+vector, respectively. 𝐹 𝐾(⋅) denotes the forward kinematics, which can be computed by the D-H modeling method in Section 2.1
+to obtain the end position of the manipulator welding gun. 𝐉 denotes the joint combination vector of the robotic arm, where 𝐉 =
+[𝑗1 , 𝑗2 , 𝑗3 , 𝑗4 , 𝑗5 , 𝑗6 , 𝑗7 ].
+     Besides the position, the orientation of the robotic arm at this position is also crucial, which aﬀects the eﬀectiveness of the task
+execution. Similarly, we also deﬁne the objective function as in Eq. (9), so that it minimizes the error between the end orientation of
+the manipulator welding gun and the orientation of the task.
+
+        𝑓2 (𝐉) = ‖𝐎𝑒𝑛𝑑 − 𝐎𝑡𝑎𝑟 ‖2 = ‖𝐹 𝐾(𝐽 ) − 𝐎𝑡𝑎𝑟 ‖2                                                                                                      (9)
+
+where ‖ ⋅ ‖2 denotes the L2 norm. 𝐎𝑒𝑛𝑑 and 𝐎𝑡𝑎𝑟 denote the end orientation vector of the manipulator welding gun and the task
+orientation vector, respectively. In this paper, the orientation is set to a constant value to stabilize the welding process of the robotic
+arm. The 𝐹 𝐾(⋅) denotes the forward kinematics, which can be calculated by the D-H modeling method in Section 2.1 to obtain the
+end orientation of the welding gun of the robotic arm.
+    In the welding process, even though the robotic arm can accurately reach the speciﬁed position and orientation, the welding is
+carried out on the trajectory path and is not an independent multi-point inverse kinematics solving. The large diﬀerence in joint
+angles between adjacent interpolation points will easily hit the obstacles in the working area and will also cause sudden changes in
+the joint angles and angular velocities of the robotic arm, which will easily damage the mechanical system. Therefore, it is crucial
+to consider the continuity of joint angles between adjacent interpolation points. In this paper, the following objective function is
+deﬁned.
+
+        𝑓3 (𝐉) = ‖𝐉 − 𝐉̃𝑒𝑛𝑑 ‖2                                                                                                                           (10)
+
+where ‖ ⋅ ‖2 denotes the L2 norm. 𝐉 denotes the joint combination of the current interpolation point. 𝐉̃𝑒𝑛𝑑 denotes the optimal joint
+combination of the last interpolation point.
+
+
+4.1.2. Deﬁnition of constraints
+   The working range of the robotic arm should be within the speciﬁed joint space, subject to the following joint limit constraints.
+
+        𝐣min
+         𝑖   ≤ 𝐣𝑖 ≤ 𝐣max
+                     𝑖                                                                                                                                   (11)
+
+where 𝐣min
+        𝑖   represents the lower limit of joint angle 𝐣𝑖 , and 𝐣min
+                                                                𝑖   = [𝑗1min , 𝑗2min , 𝑗3min , 𝑗4min , 𝑗5min , 𝑗6min , 𝑗7min ]; 𝐣max
+                                                                                                                                 𝑖   represents the upper limit
+                         max   max  max  max  max  max     max  max
+of joint angle 𝐣𝑖 , and 𝐣𝑖 = [𝑗1 , 𝑗2 , 𝑗3 , 𝑗4 , 𝑗5 , 𝑗6 , 𝑗7 ]. During the solving process of the inverse kinematic, it is necessary
+to satisfy the joint limit condition of Eq. (11).
+    In the optimization process, the errors in position, orientation and joint continuity need to meet certain accuracy requirements.
+Therefore, the following constraints are set.
+
+        𝑓1 (𝐉) = ‖𝐏𝑒𝑛𝑑 − 𝐏𝑡𝑎𝑟 ‖2 = ‖𝐹 𝐾(𝐉) − 𝐏𝑡𝑎𝑟 ‖2 ≤ 𝑙𝑖𝑚1
+        𝑓2 (𝐉) = ‖𝐎𝑒𝑛𝑑 − 𝐎𝑡𝑎𝑟 ‖2 = ‖𝐹 𝐾(𝐉) − 𝐎𝑡𝑎𝑟 ‖2 ≤ 𝑙𝑖𝑚2                                                                                              (12)
+        𝑓3 (𝐉) = ‖𝐉 − 𝐉̃𝑒𝑛𝑑 ‖2 ≤ 𝑙𝑖𝑚3
+
+where 𝑙𝑖𝑚1 , 𝑙𝑖𝑚2 and 𝑙𝑖𝑚3 are the corresponding maximum limits, respectively.
+
+                                                                              8
+Z. He and H. Liu                                                                               Applied Mathematical Modelling 151 (2026) 116440
+
+
+   In addition to considering the continuity of the overall joint combination, for each joint of the robotic arm, the angle variation
+cannot be too large. Therefore, the following constraints also need to be satisﬁed:
+        |𝑗 𝑘 − 𝑗̃𝑒𝑛𝑑
+                 𝑘
+                     | ≤ 𝑙𝑖𝑚𝑘 , 𝑘 = 1, 2, … , 7                                                                                          (13)
+                                                              𝑘 denotes the 𝑘th optimal joint angle value at the last interpolation point.
+where 𝑗 𝑘 denotes the current angle value of the 𝑘th joint. 𝑗̃𝑒𝑛𝑑
+   𝑘
+𝑙𝑖𝑚 denotes the 𝑘th limit value.
+   For the obstacle-avoidance constraint, a detailed description has been given in Section 3. The constraint expressions are directly
+given here.
+        𝐸𝑅𝑀𝑆𝐸 − 𝑝𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟(𝑛𝑒𝑡, 𝐉) ≤ 0                                                                                                    (14)
+where 𝐸𝑅𝑀𝑆𝐸 is the root mean square error (RMSE) of the additional test set, which is also the safety threshold. 𝑝𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 is the
+predictor. 𝑛𝑒𝑡 is the pre-trained FFBPNN model. 𝐉 is the current input joint vector.
+
+4.1.3. Mathematical model
+   In summary, the following constrained multiobjective optimization model can be deﬁned.
+        𝑚𝑖𝑛𝑖𝑚𝑖𝑧𝑒 𝐅 = [𝑓1 (𝐉), 𝑓2 (𝐉), 𝑓3 (𝐉)]
+            ⎧ min          max
+            ⎪𝑗𝑖 ≤ 𝑗𝑖 ≤ 𝑗𝑖 , 𝑖 = 1, 2, … , 7
+            ⎪𝑓1 (𝐉) ≤ 𝑙𝑖𝑚1
+            ⎪
+            ⎪𝑓 (𝐉) ≤ 𝑙𝑖𝑚2                                                                                                                (15)
+        𝑠.𝑡.⎨ 2
+            ⎪𝑓3 (𝐉) ≤ 𝑙𝑖𝑚3
+            ⎪|𝑗 𝑘 − 𝑗̃𝑘 | ≤ 𝑙𝑖𝑚𝑘 , 𝑘 = 1, 2, … , 7
+            ⎪         𝑒𝑛𝑑
+            ⎪𝐸𝑅𝑀𝑆𝐸 − 𝑝𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟(𝑛𝑒𝑡, 𝐉) ≤ 0
+            ⎩
+Eq. (15) contains 3 objective functions and 12 constraints, which is a complex constrained multiobjective optimization problem. For
+the objective function, it changes dynamically with the interpolation points during the welding process. At the same time, there is a
+strong dependence between adjacent interpolation points. For the constraints, the feasible domain of the constraint space is very small
+and discretely distributed, which makes it diﬃcult to ﬁnd feasible solutions, and solving this type of problem is very challenging.
+Therefore, it is necessary to design a constrained multiobjective evolutionary algorithm for solving them. The details are shown in
+Section 4.2.
+
+4.2. The proposed ADCMEA algorithm
+
+   The constrained multiobjective optimization problem is complex. There are constraints in both the objective space and the decision
+space, and the feasible domain is small. Solving the problem is very challenging. Dealing with this type of problem requires addressing
+the following three issues simultaneously, i.e., how to better generate the solution, how to better select the solution, and how to
+better handle the constraints. Following this idea, we divide the evolutionary process into an objective optimization phase and a
+constraint handling phase and propose the population-auxiliary two-stage constrained multiobjective evolutionary algorithm, denoted
+as ADCMEA.
+   This subsection is divided into four parts for detailed description. Section 4.2.1 presents the general framework of the proposed
+ADCMEA. Section 4.2.2 introduces a global competitive swarm optimizer. Section 4.2.3 discusses a new ﬁtness evaluation method in
+detail. Finally, the proposed constraint handling technique is presented.
+
+4.2.1. The overall framework of ADCMEA
+    The Algorithm 1 gives the overall framework of the ADCMEA. First, the population 𝑃 and the auxiliary population 𝑃1 are randomly
+initialized with 𝑁 individuals, respectively. The population evolution is divided into two stages according to the value of 𝑟𝑎. The ﬁrst
+stage is the objective optimization stage, and the second stage is the constraint handling stage. In the objective optimization phase, the
+ﬁtness values of 𝑃 and 𝑃1 are calculated using the method proposed in the literature [37]. Subsequently, a global competitive swarm
+optimizer (GCSO) is developed to generate the oﬀspring, as described in Section 4.2.2. In the individual selection phase, a novel
+ﬁtness evaluation strategy 𝑛𝑜𝑣𝑒𝑙𝐸𝑆 is introduced to generate the next generation population 𝑃 and 𝑃1 . The details are presented in
+Section 4.2.3. Finally, constraints are considered and 𝑃 and 𝑃1 are evaluated for use in the second stage. In the constraint processing
+stage, a population-auxiliary evolutionary strategy is employed and a dual constraint handling technique is used. Speciﬁcally, the
+maximum constraint violation value 𝑚𝑎𝑥𝐶𝐵 of 𝑃 ∪ 𝑃1 is ﬁrst calculated. Second, the boundary value 𝐶𝐵 of the 𝜖 constraint handling
+technique is computed according to Eq. (16).
+
+        ⎧𝐶𝐵 = 𝑚𝑎𝑥𝐶𝐵 ⋅ (1 − 𝑓 )𝑐𝑝
+        ⎪               1
+        ⎨𝑓 = 1+𝑒−25(𝐹 𝐸∕𝑚𝑎𝑥𝐹 𝐸−0.25)                                                                                                     (16)
+        ⎪𝑐𝑝 = − log(𝑚𝑎𝑥𝐶𝐵)−𝜆
+        ⎩         log(1−𝑝𝑝)
+
+where 𝑓 is a dynamic function that varies with respect to the number of iterations, which controls the value of 𝐶𝐵. 𝑐𝑝 is a parameter
+that controls the variation rate of 𝐶𝐵. 𝜆 and 𝑝𝑝 are set to 6 and 0.5, respectively [38]. Then, the oﬀspring 𝑃 and 𝑃1 are generated
+
+                                                                    9
+Z. He and H. Liu                                                                                  Applied Mathematical Modelling 151 (2026) 116440
+
+
+using the global competitive swarm optimizer (GCSO). Finally, two constraint handling techniques, ES1 and ES2, are employed to
+select the non-dominated feasible solutions and output the ﬁnal population 𝑃 , as shown in Section 4.2.4.
+
+
+Algorithm 1 Procedure of ADCMEA.
+  Input: population size 𝑁, number of consumed function evaluations 𝐹 𝐸, maximum number of function evaluations 𝑚𝑎𝑥𝐹 𝐸, stage
+  rate 𝑟𝑎, proportion of elite individuals 𝜆𝑒
+  Output: ﬁnal population 𝑃
+ 1: 𝑃 ← initialize 𝑁 individuals;
+ 2: 𝑃1 ← initialize 𝑁 individuals;
+ 3: while 𝐹 𝐸 < 𝑚𝑎𝑥𝐹 𝐸 do
+ 4: if 𝐹 𝐸∕𝑚𝑎𝑥𝐹 𝐸 ≤ 𝑟𝑎 then
+ 5:     𝐹 𝑊1 ← evaluate 𝑃 without constraints;
+ 6:     𝐹 𝑊2 ← evaluate 𝑃1 without constraints;
+ 7:     𝑜𝑓 𝑓1 ← the optimizer deﬁned by Eq. (17), i.e., GCSO(𝑃 ,𝐹 𝑊1 ,𝜆𝑒 ), is used to generate oﬀspring;
+ 8:     𝑜𝑓 𝑓2 ← the optimizer deﬁned by Eq. (17), i.e., GCSO(𝑃1 ,𝐹 𝑊2 ,𝜆𝑒 ), is used to generate oﬀspring;
+ 9:     𝑃 ← the novel ﬁtness evaluation method, i.e., novelES(𝑃 ,𝑜𝑓 𝑓1 ,𝑁), is adopted to select solutions;
+10:     𝑃1 ← the novel ﬁtness evaluation method, i.e., novelES(𝑃1 ,𝑜𝑓 𝑓2 ,𝑁), is adopted to select solutions;
+11:     𝐹 𝐶1 ← evaluate 𝑃 with constraints;
+12:     𝐹 𝐶2 ← evaluate 𝑃1 with constraints;
+13: else
+14:     get the maximum constraint violation value 𝑚𝑎𝑥𝐶𝐵 for 𝑃 ∪ 𝑃1 . If 𝑚𝑎𝑥𝐶𝐵 = 0, then 𝑚𝑎𝑥𝐶𝐵 = 1;
+15:     calculate constraint boundary value 𝐶𝐵 of 𝜖-constraint handling method according to Eq. (16);
+16:     𝑜𝑓 𝑓1 ← the optimizer deﬁned by Eq. (17), i.e., GCSO(𝑃 ,𝐹 𝐶1 ,𝜆𝑒 ), is used to generate oﬀspring;
+17:     𝑜𝑓 𝑓2 ← the optimizer deﬁned by Eq. (17), i.e., GCSO(𝑃1 ,𝐹 𝐶2 ,𝜆𝑒 ), is used to generate oﬀspring;
+18:     [𝑃 , 𝐹 𝐶1 ]← perform the environmental selection ES1([𝑃 , 𝑜𝑓 𝑓1 , 𝑜𝑓 𝑓2 ], 𝑁);
+19:     [𝑃1 , 𝐹 𝐶2 ]← perform the environmental selection ES2([𝑃1 , 𝑜𝑓 𝑓1 , 𝑜𝑓 𝑓2 ], 𝑁, 𝐶𝐵);
+20: end if
+21: end while
+
+
+
+
+4.2.2. The global competitive swarm optimizer
+    The quality of solution generation determines the convergence performance of the population. The competitive swarm optimizer
+(CSO) [39] has been widely used as a variant of PSO. The algorithm maintains its diversity by using two individuals competing with
+each other, but only half of the individuals are updated. To generate higher-quality oﬀspring solutions, the global competitive swarm
+optimizer GCSO is proposed in this subsection. In addition to the loser updating, the winner also participates in the updating process,
+as shown in Eq. (17).
+
+        𝐕𝑡+1
+         𝑙
+             = 𝑟1 𝐕𝑡𝑙 + 𝑟2 (𝐗𝑡𝑤 − 𝐗𝑡𝑙 )
+        𝐗𝑡+1
+         𝑙
+             = 𝐗𝑡𝑙 + 𝐕𝑡+1
+                      𝑙
+                                                                                                                                            (17)
+        𝐕𝑡+1     𝑡        𝑡    𝑡          𝑡    𝑡
+         𝑤 = 𝑟1 𝐕𝑤 + 𝑟2 (𝐗𝑒 − 𝐗𝑤 ) + 𝑟3 (𝐗𝑟 − 𝐗𝑤 )
+        𝐗𝑡+1  𝑡    𝑡+1
+         𝑤 = 𝐗𝑤 + 𝐕𝑤
+
+where 𝑟1 , 𝑟2 , and 𝑟3 are random numbers generated between 0 and 1. 𝐕𝑡𝑤 and 𝐕𝑡𝑙 denote the velocities of the winners and losers at
+                                         𝑡+1
+the iteration 𝑡, respectively. 𝐕𝑡+1
+                                𝑤 and 𝐕𝑙     are the velocities at the corresponding iteration 𝑡 + 1. 𝐗𝑡𝑤 and 𝐗𝑡𝑙 are the positions of the
+                                                                    𝑡+1
+winner and the loser at the iteration 𝑡, respectively. 𝐗𝑡+1
+                                                         𝑤 and 𝑋𝑙       are the positions at the corresponding iteration 𝑡 + 1. 𝐗𝑡𝑒 and 𝐗𝑡𝑟
+are the positions of elite and randomly selected individuals at the iteration 𝑡, respectively. Updating winners and losers with diﬀerent
+learning strategies, respectively, can well balance the diversity and convergence of the population.
+
+
+4.2.3. Novel ﬁtness evaluation strategy
+    In addition to generating solutions, the selection of solutions is also crucial. In the objective optimization stage, a novel ﬁtness eval-
+uation strategy 𝑛𝑜𝑣𝑒𝑙𝐸𝑆 is developed. This evaluation method combines the convergence information with the diversity information
+of individuals, which can eﬀectively improve the selection pressure. The expression is shown in Eq. (18).
+
+        𝐹 (𝑃𝑖 ) = 𝜆𝑑 ⋅ 𝑑𝑑(𝑃𝑖 ) + 𝜆𝑐 ⋅ 𝑐𝑑(𝑃𝑖 )                                                                                               (18)
+
+where 𝑑𝑑(𝑃𝑖 ) and 𝑐𝑑(𝑃𝑖 ) denote the normalized diversity distance and convergence distance of individual 𝑃𝑖 , respectively. 𝜆𝑑 and 𝜆𝑐
+are two weighting coeﬃcients that control the inﬂuence degree of the two distances. The expression for the diversity distance 𝑑𝑑(𝑃𝑖 )
+
+                                                                     10
+Z. He and H. Liu                                                                               Applied Mathematical Modelling 151 (2026) 116440
+
+
+is as follows.
+                  𝑆𝐷𝐸(𝑃𝑖 ) − 𝑆𝐷𝐸min
+           𝑑𝑑(𝑃𝑖 ) =
+                   𝑆𝐷𝐸max − 𝑆𝐷𝐸min
+                        √
+                        √𝑚                                                                                                               (19)
+                        √∑
+        𝑆𝐷𝐸(𝑃𝑖 ) = min √ 𝑚𝑎𝑥{0, 𝑓𝑘 (𝑃𝑗 ) − 𝑓𝑘 (𝑃𝑖 )}2
+                       𝑃𝑗 ∈𝑃 ,𝑗≠𝑖
+                                    𝑘=1
+
+where 𝑚 is the number of objectives. 𝑓𝑘 (𝑃𝑖 ) denotes the 𝑘th normalized objective of individual 𝑃𝑖 . A larger 𝑑𝑑(𝑃𝑖 ) indicates that 𝑃𝑖
+is farther away from its surrounding neighbors. For the convergence distance 𝑐𝑑(𝑃𝑖 ), it is deﬁned as the proximity to the ideal point
+𝐙∗ = (0, 0, … , 0). The formula is shown in Eq. (20).
+        𝑐𝑑(𝑃𝑖 ) = 1 − ‖𝑓𝑘 (𝑃𝑖 ) − 𝐙∗ ‖2                                                                                                  (20)
+where ‖ ⋅ ‖2 denotes the Euclidean distance. The larger 𝑐𝑑(𝑃𝑖 ) indicates that 𝑃𝑖 is closer to the ideal point. In addition, the diver-
+sity distance makes the solution distribution more uniform and diverse. This ﬁtness evaluation method can eﬀectively improve the
+selection pressure of solutions.
+    Algorithm 2 presents the speciﬁc steps of ﬁtness evaluations. First, the dominance relationship between two individuals is deter-
+mined by the IfDominance function, as shown in lines 1 to 8; then the dominated solutions in 𝑃 are removed and the dominated
+solutions in 𝑜𝑓 𝑓𝑖 are added to 𝑃 ; when the number of individuals in 𝑃 exceeds the maximum capacity 𝑁, the ﬁtness value is calcu-
+lated according to Eqs. (18)–(20), and the individual with the worst ﬁtness is removed. The values of 𝜆𝑑 and 𝜆𝑐 are critical in the
+ﬁtness calculation process. These two parameters change dynamically as the iteration proceeds, and the values in this paper are taken
+according to the methodology in the literature [40].
+
+Algorithm 2 Novel ﬁtness evaluation strategy.
+Input: parent population 𝑃 , oﬀspring population 𝑜𝑓 𝑓 , population size 𝑁
+Output: selected population 𝑃
+ 1: for 𝑖 ← 1, … , |𝑜𝑓 𝑓 | do
+ 2: for 𝑗 ← 1, … , |𝑃 | do
+ 3:      label=IfDominance(𝑜𝑓 𝑓𝑖 ,𝑃𝑗 );
+ 4:      if label== 1 then
+ 5:         consider 𝑃𝑗 as a dominated solution;
+ 6:      else if label== -1 then
+ 7:         consider 𝑜𝑓 𝑓𝑖 as a dominated solution;break;
+ 8:      end if
+ 9: end for
+10: Remove the dominated solution marked in 𝑃 ;
+11: add 𝑜𝑓 𝑓𝑖 that is not treated as a dominated solution to 𝑃 ;
+12: if |𝑃 | > 𝑁 then
+13:      evaluate ﬁtness values according to Eqs. (18)–(20);
+14:      remove the one with the worst ﬁtness value;
+15: end if
+16: end for
+
+
+
+4.2.4. Constraint handling techniques
+    The constrained dominance principle (CDP) [41] is widely used because of its simplicity and easy implementation. However,
+the CDP method focuses too much on constraint satisfaction and weakens the optimization information of objectives, making the
+population easily trapped in the local optimal region. The 𝜖 constraint handling technique dynamically adjusts the value of the 𝜖
+parameter to achieve a balance between the objectives and constraints. This ﬂexibility allows it to be applied to a variety of complex
+constrained multiobjective optimization problems.
+    For the constrained multiobjective optimization problem required to be solved in this paper, a combination of two constraint
+handling techniques is adopted to achieve complementary advantages. The main population 𝑃 adopts the CDP constraint handling
+technique because the main population has to ensure the strict satisfaction of the constraints, i.e., 𝐸𝑆1 adopts the environment
+selection strategy proposed in the literature [42]. The auxiliary population 𝑃1 uses a modiﬁed 𝜖 constraint handling technique [38]
+𝐸𝑆2. The constraint violation boundary value 𝐶𝐵 of this technique changes dynamically as iterations, and its dynamic function is
+shown in Eq. (16). In the early stage, more objective information can be considered for a larger value of 𝐶𝐵, while in the later stage it
+gradually focuses on constraint satisfaction to achieve a dynamic balance between objective optimization and constraint satisfaction.
+The environmental selection 𝐸𝑆2 is shown in Algorithm 3. The framework ﬁrst divides the population into feasible population 𝑃𝑓
+and infeasible population 𝑃𝑖𝑓 according to the constraint violation boundary value 𝐶𝐵, and then divides the feasible population
+𝑃𝑓 into three cases, i.e., |𝑃𝑓 | = 0, |𝑃𝑓 | ≤ 𝑁 and |𝑃𝑓 | > 𝑁. For the ﬁrst case (lines 5–17), i.e., there are all infeasible solutions in
+the population, the ﬁtness value is calculated according to the CDP method. It is worth noting that during the process of solution
+selection, if the number of individuals is less than 𝑁, the individuals are all selected; for the second case (lines 18–26), i.e., when
+
+                                                                   11
+Z. He and H. Liu                                                                               Applied Mathematical Modelling 151 (2026) 116440
+
+
+the number of feasible solutions is less than 𝑁, the feasible solutions are all selected, and then the 𝑁 − |𝑃𝑓 | individuals are selected
+again according to the density estimation method; for the third case (lines 27–32), i.e., when the number of feasible solutions is more
+than 𝑁, 𝑁 individuals are directly selected using the density estimation method and calculate the corresponding ﬁtness values.
+    In addition, a population-auxiliary information migration strategy is also employed in this phase. The auxiliary population 𝑃1
+selected by 𝐸𝑆2 can provide more objective information for the main population, while the main population 𝑃 selected by 𝐸𝑆1 can
+provide more constraint information for the auxiliary population. The two populations generate oﬀspring through GCSO and perform
+information interaction, respectively. Through the above strategies, the population enhances diversity while balancing objective
+optimization and constraint satisfaction.
+
+
+Algorithm 3 The improved 𝜖-constrained method.
+Input: 𝑃𝑐𝑜𝑛 : population; 𝑁: population size; 𝐶𝐵: constraint violation boundary value
+Output: 𝑃𝑛 : the auxiliary population; 𝐹𝑛 : sorted ﬁtness
+ 1: 𝑃𝑛 ← ∅;
+ 2: 𝐹𝑛 ← ∅;
+ 3: 𝑃𝑓 ← the individuals in 𝑃𝑐𝑜𝑛 satisfying CV(⃗ 𝑥) ≤ 𝐶𝐵, deﬁned by Eq. (16);
+ 4: 𝑃𝑖𝑓 ← the individuals in 𝑃𝑐𝑜𝑛 satisfying CV(⃗𝑥) > 𝐶𝐵, deﬁned by Eq. (16);
+ 5: if 𝑃𝑓 ∈ ∅ then
+ 6: 𝐹𝑖𝑓 ← calculate the ﬁtness of 𝑃𝑖𝑓 based on CDP;
+ 7: 𝑛𝑒𝑥𝑡 ← select the solutions with ﬁtness less than one;
+ 8: if |𝑛𝑒𝑥𝑡| ≤ 𝑁 then
+ 9:      𝑛𝑒𝑥𝑡 ← select 𝑁 individuals with the smallest ﬁtness;
+10: else if |𝑛𝑒𝑥𝑡| > 𝑁 then
+11:      𝑥⃗𝑑 ← select |𝑛𝑒𝑥𝑡| − 𝑁 individuals in 𝑛𝑒𝑥𝑡 with the highest density;
+12:      𝑛𝑒𝑥𝑡 ← 𝑛𝑒𝑥𝑡 ⧵ 𝑥⃗𝑑 ;
+13: end if
+14: 𝑃𝑖𝑓 ← 𝑛𝑒𝑥𝑡 in 𝑃𝑖𝑓 ;
+15: 𝐹𝑖𝑓 ← 𝑛𝑒𝑥𝑡 in 𝐹𝑖𝑓 ;
+16: sort 𝑃𝑖𝑓 and 𝐹𝑖𝑓 in ascending order;
+17: 𝑃𝑛 ← 𝑃𝑓 ∪ 𝑃𝑖𝑓 , 𝐹𝑛 ← 𝐹𝑓 ∪ 𝐹𝑖𝑓 ;
+18: else if |𝑃𝑓 | ≤ 𝑁 then
+19: All individuals in 𝑃𝑓 are selected and 𝐹𝑓 are calculated;
+20: 𝑃𝑓 ← sort 𝑃𝑓 in ascending order;
+21: 𝐹𝑓 ← sort 𝐹𝑓 in ascending order;
+22: 𝑛𝑒𝑥𝑡 ← calculate the ﬁtness in 𝑃𝑖𝑓 and select the solutions with ﬁtness less than one;
+23: 𝑃𝑖𝑓 , 𝐹𝑖𝑓 ← select 𝑁 − |𝑃𝑓 | individuals in 𝑃𝑖𝑓 by ﬁtness sorting (when |𝑛𝑒𝑥𝑡| ≤ 𝑁 − |𝑃𝑓 |) or density estimation (when |𝑛𝑒𝑥𝑡| >
+       𝑁 − |𝑃𝑓 |);
+24: 𝑃𝑖𝑓 ← sort 𝑃𝑖𝑓 in ascending order;
+25: 𝐹𝑖𝑓 ← sort 𝐹𝑖𝑓 in ascending order;
+26: 𝑃𝑛 ← 𝑃𝑓 ∪ 𝑃𝑖𝑓 , 𝐹𝑛 ← 𝐹𝑓 ∪ 𝐹𝑖𝑓 ;
+27: else if |𝑃𝑓 | > 𝑁 then
+28: 𝑛𝑒𝑥𝑡 ← calculate the ﬁtness in 𝑃𝑓 and select the solutions with ﬁtness less than one;
+29: 𝑃𝑓 , 𝐹𝑓 ← select 𝑁 individuals in 𝑃𝑓 by ﬁtness sorting (when |𝑛𝑒𝑥𝑡| ≤ 𝑁) or density estimation (when |𝑛𝑒𝑥𝑡| > 𝑁);
+30: 𝑃𝑓 ← sort 𝑃𝑓 in ascending order;
+31: 𝐹𝑓 ← sort 𝐹𝑓 in ascending order;
+32: 𝑃𝑛 ← 𝑃𝑓 ∪ 𝑃𝑖𝑓 , 𝐹𝑛 ← 𝐹𝑓 ∪ 𝐹𝑖𝑓 ;
+33: end if
+
+
+
+
+5. Experimental comparison results for welding manipulators
+
+5.1. Parameter setting of simulation
+
+    The four welding paths in vehicle parts, i.e., straight path, polygonal path, circular path, and L-shaped path, are considered, as
+shown in Fig. 7. Taking the straight welding path for instance, it is interpolated by a Bezier curve, and the welding direction is left.
+The dummy is a virtual point on the path that is used to track the interpolated positions of the straight path. At ﬁrst, the dummy
+is placed at the starting position. The position of the dummy is updated according to Eq. (6) in real time and then sent to MATLAB
+software via a remote API. The end position of the welding gun moves along with the position of the dummy to complete the welding
+process of the straight path. The time step of the simulation is set to 50 ms for all paths. The dummy moves at a speed of 0.1 m/s for
+the circular path and 0.05 m/s for the other paths. The number of interpolation points during the welding process can be calculated
+
+                                                                   12
+Z. He and H. Liu                                                                                    Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                        Fig. 7. Schematic diagram of welding paths for vehicle parts.
+
+
+
+
+                                          Fig. 8. The sensitivity analysis for ADCMEA parameters.
+
+
+according to Eq. (21).
+                    𝑙
+        𝑁𝑖𝑝 =            +1                                                                                                      (21)
+                𝑃 𝑉 ⋅ 𝑑𝑡
+where 𝑁𝑖𝑝 is the number of interpolation points. 𝑙 is the path length. 𝑃 𝑉 is the moving velocity of Dummy. 𝑑𝑡 is the time step of
+simulation. After calculation, the number of interpolation points for the straight path is 53, 16 for the polygonal path, 118 for the
+circular path, and 64 for the L-shaped path.
+    For the constrained multiobjective optimization model, the maximum limit of position error 𝑙𝑖𝑚1 is 1 mm, and the maximum
+limits of orientation and continuity errors 𝑙𝑖𝑚2 and 𝑙𝑖𝑚3 are 0.01 rad. The maximum limit of joint angle variation 𝑙𝑖𝑚𝑘 is 0.005 rad,
+(𝑘 = 1, 2, … , 7). To make the manipulator arm always perpendicular
+                                                       √             to the welding
+                                                                                √ plane, set the value of the orientation constant [𝜋,
+0, 0]. For the straight and polygonal paths, 𝐸𝑅𝑀𝑆𝐸 = 0.00083 and 𝐸𝑅𝑀𝑆𝐸 = 0.001 for the circular and L-shaped welding paths.
+
+5.2. Ablation experiments
+
+    In this section, we conduct a sensitivity analysis on the parameters 𝑁, 𝑟𝑎, and 𝜆𝑒 in ADCMEA. The population size 𝑁 aﬀects the
+results to some extent. When the total number of evaluations is ﬁxed, a larger 𝑁 leads to fewer iterations. Conversely, a smaller 𝑁
+for each generation leads to more iterations. In this experiment, the values of 𝑁 are set to 20, 60, 100, and 150; 𝑟𝑎 controls the ratio
+between two stages of ADCMEA, with its values set to 0, 0.3, 0.6, and 1, where 0 and 1 represent only the constraint processing stage
+and the objective optimization stage, respectively. 𝜆𝑒 represents the proportion of elite individuals, with its values set to 0.1, 0.4, 0.7,
+and 1. Four types of welding paths were considered: straight lines, polygons, circular arcs, and L-shapes. The simulation parameters
+for each path were set as described in Section 5.1. The average IGD for each constraint optimization problem was calculated using
+Eq. (22).
+    Fig. 8 shows the results of the parametric sensitivity analysis. For the population size 𝑁 in Fig. 8(a), the performance improves
+as the population size increases on both linear and polygonal paths. However, on more complex circular and L-shaped paths, the
+performance metrics deteriorate sharply when 𝑁 = 150. Therefore, this paper recommends 𝑁 = 100. For the stage ratio in Fig. 8(b),
+when 𝑟𝑎 is set to 0 or 1 (i.e., considering only the constraint processing stage or only the objective optimization stage), performance
+is poor, which further validates the eﬀectiveness and necessity of the two-stage evolutionary strategy. When 𝑟𝑎 = 0.6, the average
+IGD values across the four paths are slightly better than those when 𝑟𝑎 = 0.3. Therefore, we set 𝑟𝑎 to 0.6 in this paper. In Fig. 8(c), we
+
+                                                                     13
+Z. He and H. Liu                                                                                   Applied Mathematical Modelling 151 (2026) 116440
+
+
+                               Table 2
+                               The average IGD values for each path obtained by ADCMEA and its variants.
+                                 Algorithm      Straight path   Polygonal path   Circular path   L-shaped path
+
+                                 ADCMEA_CSO     1.750e+00       2.103e+00        2.137e+00       2.405e+00
+                                 ADCMEA_SDE     8.898e−01       7.839e−01        1.751e+00       9.737e−01
+                                 ADCMEA         8.670e−01       8.664e−01        7.890e−01       8.589e−01
+
+
+
+can see that when 𝜆𝑒 is set to 1, the average IGD metric for the complex arc path suddenly deteriorates. This may be attributed to the
+fact that when selecting an elite individual, the range is set to the entire population, i.e., 𝜆𝑒 = 1, resulting in a very poor individual
+being selected as the elite. This eﬀect is not very noticeable for other paths, but the distribution of points on the circular arc path is
+relatively complex, leading to a signiﬁcant deterioration in performance. Therefore, we set 𝜆𝑒 to 0.7. In summary, in this paper, the
+three parameters 𝑁, 𝑟𝑎, and 𝜆𝑒 of ADCMEA are set to 100, 0.6, and 0.7, respectively.
+    Besides, to prove the eﬀectiveness of ADCMEA, we also performed ablation experiments on the components of the algorithm.
+Two variants of the algorithm were considered for comparison: one is ADCMEA_CSO, which replaces GCSO with the original CSO to
+verify the eﬀectiveness of GCSO. The other variant only considers SDE deﬁned by Eq. (19) as the ﬁtness evaluation method, denoted
+as ADCMEA_SDE. The experiments also considered four welding paths, and the simulation parameters were the same as those in
+the experiments on parametric sensitivity analysis. 𝑁, 𝑟𝑎, and 𝜆𝑒 of ADCMEA are set to 100, 0.6, and 0.7, respectively. The results
+are presented in Table 2. The best performance value on each path is highlighted in bold. As shown in the table, ADCMEA achieves
+signiﬁcantly better average IGD values than ADCMEA_CSO across all four paths, indicating that the proposed GCSO performs better
+than CSO when solving optimization problems. Although the performance of ADCMEA on the polygonal path is slightly inferior to
+that of ADCMEA_SDE, it demonstrates a clear advantage in IGD metrics on the other three paths, further validating that the proposed
+novel ﬁtness evaluation strategy 𝑛𝑜𝑣𝑒𝑙𝐸𝑆 can enhance performance.
+
+5.3. Comparative experiments with peer constrained multiobjective evolutionary algorithms
+
+    In recent years, many constrained multiobjective evolutionary algorithms have been proposed to solve practical optimization
+problems. To verify the advantages of ADCMEA in solving the obstacle-avoidance inverse kinematics problem for redundant welding
+manipulators, it is compared with 9 state-of-the-art constrained multiobjective evolutionary algorithms. The peer algorithms include
+NSGAII [41], CMOEAD [43], BiCo [44], CCMO [37], IMTCMO [45], DAEAEO [38], CMOEMT [46], CMOES [47], and DDCMOEA
+[48]. Each of the compared algorithms has its characteristics in balancing objectives and constraints. NSGAII, as a well-known
+multiobjective optimization algorithm, proposed the nondominated sorting and crowding distance methods for selecting solutions. The
+constraint handling technique uses the constraint dominance principle (CDP). CMOEAD extended decomposition-based multiobjective
+evolutionary algorithms to solve constrained optimization problems. BiCo approximates the constrained Pareto front via the main
+population and the archive population from two complementary directions, respectively. In CCMO, a co-evolutionary framework was
+proposed to solve the primal constrained multiobjective optimization problem by introducing an auxiliary population. In IMTCMO, the
+authors proposed an evolutionary multi-task constrained multiobjective evolutionary algorithm for solving test functions with high-
+dimensional decision space constraints. DAEAEO adopted the idea of auxiliary population. In CMOEMT, a new two-stage algorithm
+was presented to solve constrained multiobjective problems based on the proposed multitasking framework. In CMOES, the even
+search strategy was deveploed to exploit and detect feasible regions. DDCMOEA used a dual population collaborative search method,
+which can quickly ﬁnd constrained Pareto front. Therefore, selecting these algorithms as comparison algorithms is very representative,
+and it can well represent the advantages of ADCMEA to solve the optimization problem in this paper.
+    The parameters of each peer algorithm adopted the optimal values suggested in the literature, as shown in Table 3, where 𝐷
+denotes the number of decision variables. For ADCMEA, the stage ratio is 𝑟𝑎 = 0.6, and the proportion of elite individuals is 𝜆𝑒 = 0.7.
+For all algorithms on each welding scene, the maximum number of function evaluations 𝑚𝑎𝑥𝐹 𝐸 was set to 10,000, and the population
+size is 𝑁 = 100.
+    The experiments were performed on a Windows 10 i7-11800H 8-core CPU. The simulation platform is based on a combination of
+CoppeliaSim software and MATLAB software. The speciﬁc implementation process is shown in Fig. 9. The function of CoppeliaSim
+software is to visualize the welding process and transmit a position of each welding path point to MATLAB via a remote API. MATLAB
+receives a position of each path point in real time and performs inverse kinematics calculation for each point. Inverse kinematics
+calculation is performed using a constrained multiobjective evolutionary algorithm. One solution is selected from the ﬁnal Pareto so-
+lution set as the ﬁnal joint conﬁguration. Priority is given to joint conﬁgurations that do not violate the obstacle-avoidance constraint.
+The speciﬁc selection steps are as follows. If all solutions violate the obstacle-avoidance constraint, select a solution with the smallest
+total constraint violation values among all solutions. If only one solution does not violate the obstacle-avoidance constraint, select the
+current solution as the ﬁnal solution. If there are at least two solutions that do not violate the obstacle-avoidance constraint, select a
+solution with the smallest overall constraint violation values among them. During the co-simulation, communication between the two
+software programs is bidirectional. CoppeliaSim transmits a position to MATLAB, which then returns the ﬁnal joint angles back to
+CoppeliaSim. Subsequently, the robotic arm sets its joints to position the welding torch tip at the target position. After completing one
+communication cycle, CoppeliaSim resends a position to MATLAB. This process repeats cyclically until all path points are traversed.
+    During the optimization process, each algorithm was run 10 times independently on the Platemo [49], and 8 cases were run in
+parallel on the CPU each time. Since the ideal optimal front is known to be located at the point (0, 0, 0). Therefore, the performance
+
+                                                                     14
+Z. He and H. Liu                                                                                                Applied Mathematical Modelling 151 (2026) 116440
+
+
+                                     Table 3
+                                     Main parameters for each algorithm.
+                                                    Crossover probability: 1
+                                       BiCo
+                                                    Mutation probability: 1∕𝐷
+                                                    Type of operator: GA
+
+                                                    Crossover probability: 1
+                                       CCMO         Mutation probability: 1∕𝐷
+                                                    Type of operator: GAhalf
+                                                    Operation of the environmental selection:       SPEA2
+
+                                                    Crossover probability: 1
+                                       CMOEAD       Mutation probability: 1∕𝐷
+                                                    Type of operator: GAhalf
+
+                                                    Crossover probability: 1
+                                       IMTCMO       Mutation probability: 1∕𝐷
+                                                    Type of operator: DE
+
+                                                    Crossover probability: 1
+                                       NSGAII       Mutation probability: 1∕𝐷
+                                                    Type of operator: GA
+
+                                                    Crossover probability: 1
+                                                    Mutation probability: 1∕𝐷
+                                       DAEAEO
+                                                    Type of operator1: GA
+                                                    Type of operator2: PSO
+
+                                                    The probability of choosing parents locally 𝛿: 0.9
+                                       CMOEMT
+                                                    Maximum number of solutions replaced by each oﬀspring 𝑛𝑟:         2
+
+                                                    Crossover probability: 1
+                                       CMOES        Mutation probability: 1∕𝐷
+                                                    Type of operator: GA
+
+                                                    Crossover probability: 1
+                                       DDCMOEA      Mutation probability: 1∕𝐷
+                                                    Type of operator: GAhalf
+
+                                                    Stage rate 𝑟𝑎: 0.6
+                                       ADCMEA
+                                                    Proportion of elite individuals 𝜆𝑒 :    0.7
+
+
+                                 Table 4
+                                 Statistical results from 10 independent runs on the circular path.
+                                   Algorithm    Mean error      Standard deviation         Mean squared error    P-value
+
+                                   BiCo         4.480e+00       1.293e−01                  2.009e+01             1.776e−04
+                                   CCMO         4.642e+00       1.493e−01                  2.156e+01             1.766e−04
+                                   CMOEAD       5.448e+00       1.628e−01                  2.970e+01             1.776e−04
+                                   CMOEMT       6.045e+00       1.245e−01                  3.656e+01             1.766e−04
+                                   CMOES        4.935e+00       1.613e−01                  2.438e+01             1.776e−04
+                                   DAEAEO       4.116e+00       1.884e−01                  1.697e+01             1.766e−04
+                                   DDCMOEA      7.310e+00       1.923e−01                  5.348e+01             1.776e−04
+                                   IMTCMO       4.123e+00       1.113e−01                  1.701e+01             1.766e−04
+                                   NSGAII       5.815e+00       1.676e−01                  3.384e+01             1.776e−04
+                                   ADCMEA       9.031e−01       7.517e−02                  8.206e−01             Reference
+
+
+
+
+metrics of algorithms adopt the inverse generation distance IGD [50]. Its modiﬁed calculation is deﬁned as in Eq. (22).
+                           ∑𝑁      ∗
+                            𝑖=1 𝑑(𝐏 , 𝑃 𝐹𝑖 )
+        IGD(𝐏∗ , 𝑃 𝐹 ) =                                                                                                                                  (22)
+                                 𝑁
+where 𝑑(𝐏∗ , 𝑃 𝐹𝑖 ) denotes the Euclidean distance from the ideal point 𝐏∗ = (0, 0, 0) to a point 𝑃 𝐹𝑖 on the ﬁnal Pareto front, and 𝑁 is
+the population size. The smaller the value of the IGD indicates that the solution set is closer to the ideal point, and the larger the
+value of the IGD indicates the worse performance.
+   Tables 4–7 present the statistical results of algorithms on each welding path among 10 independent runs. The algorithm with the
+smallest IGD error is highlighted in bold. Besides, the Wilcoxon rank-sum test with a signiﬁcance level of 0.05 was adopted among 10
+times runs. The 𝑝-value of the Wilcoxon rank-sum test is also presented in tables. When the 𝑝-value is less than 0.05, it indicates that
+the current algorithm diﬀers from the reference algorithm in statistical metrics. When the 𝑝-value is greater than or equal to 0.5, it
+indicates no diﬀerence. The smaller 𝑝-value indicates a more signiﬁcant diﬀerence [51]. It is evident that across four welding paths,
+ADCMEA exhibits signiﬁcantly lower mean error, standard deviation, and mean squared error in the IGD metric compared to peer
+algorithms. The 𝑝-values for each algorithm are also signiﬁcantly less than 0.05, indicating that ADCMEA demonstrates statistically
+
+                                                                             15
+Z. He and H. Liu                                                                                Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                           Fig. 9. The overall ﬂowchart for obstacle-avoidance inverse kinematics optimization.
+
+
+
+signiﬁcant diﬀerences from other algorithms. This conﬁrms that ADCMEA delivers the best inverse kinematics solution performance
+among all algorithms.
+    Taking CCMO and ADCMEA for example, the calculation process for the values in the table is shown in Fig. 10. The left side
+of the image displays the welding scenario of the robotic arm in CoppeliaSim. It can be observed that CCMO exhibits signiﬁcant
+deviation in its welding orientation, while ADCMEA maintains stable perpendicularity to the welding plane. The right side of the
+image shows the solution process and monitoring curves for each algorithm in MATLAB. Each curve is updated after every path
+point is computed. Upon completing all path points, the average IGD across all points is taken as the performance value for the
+current welding path. Each algorithm runs independently 10 times on each path, yielding the respective error values in each table.
+Fig. 11 shows the boxplots of the IGD values on four welding paths among 10 runs. The IQR in the ﬁgure represents the interquartile
+
+                                                                   16
+Z. He and H. Liu                                                                                     Applied Mathematical Modelling 151 (2026) 116440
+
+
+                             Table 5
+                             Statistical results from 10 independent runs on the L-shaped path.
+                               Algorithm    Mean error     Standard deviation   Mean squared error    𝑃 -value
+
+                               BiCo         4.474e+00      2.533e−01            2.008e+01             1.776e−04
+                               CCMO         4.615e+00      3.105e−01            2.138e+01             1.766e−04
+                               CMOEAD       5.452e+00      1.358e−01            2.974e+01             1.776e−04
+                               CMOEMT       5.744e+00      3.680e−01            3.312e+01             1.766e−04
+                               CMOES        5.047e+00      2.087e−01            2.551e+01             1.776e−04
+                               DAEAEO       4.079e+00      3.198e−01            1.673e+01             1.766e−04
+                               DDCMOEA      7.360e+00      3.779e−01            5.430e+01             1.776e−04
+                               IMTCMO       4.256e+00      4.136e−01            1.827e+01             1.766e−04
+                               NSGAII       5.768e+00      1.840e−01            3.329e+01             1.786e−04
+                               ADCMEA       8.658e−01      8.580e−02            7.563e−01             Reference
+
+
+
+
+                             Table 6
+                             Statistical results from 10 independent runs on the polygonal path.
+                               Algorithm    Mean error     Standard deviation   Mean squared error    𝑃 -value
+
+                               BiCo         4.589e+00      3.798e−01            2.119e+01             1.796e−04
+                               CCMO         4.782e+00      5.950e−01            2.319e+01             1.776e−04
+                               CMOEAD       5.271e+00      1.839e−01            2.781e+01             1.786e−04
+                               CMOEMT       5.554e+00      3.579e−01            3.096e+01             1.776e−04
+                               CMOES        4.856e+00      4.642e−01            2.378e+01             1.786e−04
+                               DAEAEO       4.406e+00      5.877e−01            1.972e+01             1.776e−04
+                               DDCMOEA      7.352e+00      4.584e−01            5.425e+01             1.786e−04
+                               IMTCMO       4.015e+00      3.615e−01            1.624e+01             1.776e−04
+                               NSGAII       5.482e+00      2.957e−01            3.013e+01             1.786e−04
+                               ADCMEA       9.586e−01      2.657e−01            9.824e−01             Reference
+
+
+
+
+                             Table 7
+                             Statistical results from 10 independent runs on the straight path.
+                               Algorithm    Mean error     Standard deviation   Mean squared error    𝑃 -value
+
+                               BiCo         4.639e+00      1.117e−01            2.153e+01             1.776e−04
+                               CCMO         4.668e+00      1.006e−01            2.180e+01             1.766e−04
+                               CMOEAD       5.295e+00      2.214e−01            2.808e+01             1.776e−04
+                               CMOEMT       5.879e+00      4.525e−01            3.475e+01             1.766e−04
+                               CMOES        5.045e+00      1.282e−01            2.547e+01             1.776e−04
+                               DAEAEO       4.436e+00      3.550e−01            1.979e+01             1.766e−04
+                               DDCMOEA      7.431e+00      2.926e−01            5.530e+01             1.776e−04
+                               IMTCMO       4.035e+00      1.945e−01            1.631e+01             1.766e−04
+                               NSGAII       5.721e+00      2.828e−01            3.280e+01             1.786e−04
+                               ADCMEA       9.604e−01      1.476e−01            9.419e−01             Reference
+
+
+
+
+range, which is the diﬀerence between the upper quartile and the lower quartile, which is used to represent the central tendency and
+stability of the data distribution. As shown in the ﬁgure, across the four welding paths, ADCMEA exhibits the smallest median value
+among all algorithms, demonstrating the best performance. Furthermore, the IRQ values of ADCMEA are smaller than those of most
+other algorithms, indicating relatively stable algorithmic performance. Overall, ADCMEA signiﬁcantly outperforms other algorithms
+in solving inverse kinematics.
+    Moreover, we also show the ﬁnal Pareto front and joint curve diagrams for each algorithm during the computation process. The
+Pareto front, exempliﬁed by the circular path from the ﬁfth run, is depicted in Fig. 12. It can be observed that the ADCMEA algorithm
+exhibits signiﬁcantly smaller errors in position, orientation, and joint continuity compared to its counterparts, positioning closer to
+the ideal point (0,0,0). On the joint curve diagram for the L-shaped path shown in Fig. 13, the proposed ADCMEA algorithm maintains
+excellent joint continuity, whereas the continuity errors of the peer algorithms are relatively large.
+    In addition to computational performance, runtime is another critical metric for evaluating algorithms. During 10 independent
+runs, we recorded the average runtime for each algorithm on every path, as shown in Table 8, with the shortest time values highlighted
+in bold. The table indicates that NSGA-II achieved the shortest solution time on the circular arc path, IMTCMO on the L-shaped and
+straight paths, and DDCMOEA on the polygonal path. The statistical histogram in Fig. 14 shows that ADCMEA ranked 5th out of 10,
+4th out of 10, 6th out of 10, and 5th out of 10 in average runtime eﬃciency on the circular arc, L-shaped, polygonal, and straight
+paths, respectively. Its time eﬃciency placed it at a middle level among all algorithms. According to the No Free Lunch Theorem,
+performance improvements inevitably come at the cost of reduced time eﬃciency. Considering both performance and time cost
+overall, the proposed ADCMEA still holds advantages over other algorithms in solving inverse kinematics problems.
+
+                                                                       17
+Z. He and H. Liu                                                                                        Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                          Fig. 10. The monitoring diagrams of the actual calculation process. (a) CCMO, and (b) ADCMEA.
+
+                                     Table 8
+                                     The average runtime (s) of each path point among 10 independent runs on four
+                                     welding paths.
+                                      Algorithm     Circular path   L-shaped path   Polygonal path   Straight path
+
+                                      BiCo          82.16           79.39           82.67            77.71
+                                      CCMO          75.91           80.33           80.10            78.23
+                                      CMOEAD        81.54           84.81           86.01            85.37
+                                      CMOEMT        82.16           85.18           85.76            85.83
+                                      CMOES         78.98           80.04           78.62            78.86
+                                      DAEAEO        80.33           80.20           80.82            79.84
+                                      DDCMOEA       75.46           78.16           76.56            77.30
+                                      IMTCMO        75.60           76.56           77.38            75.78
+                                      NSGAII        75.09           76.74           77.15            76.29
+                                      ADCMEA        77.81           78.99           80.79            77.80
+
+
+
+5.4. The sensitivity analysis of data perturbation
+
+   During actual welding operations, the positions of path points may deviate due to environmental disturbances, repeatability
+measurement errors, and other factors. To verify the sensitivity of the proposed ADCMEA to external disturbances, we applied Gaussian
+noise perturbations to the path points to simulate random measurement errors and environmental disturbances. The formula for the
+Gaussian noise perturbation is as follows.
+        𝐱𝑝𝑒𝑟𝑡𝑢𝑟𝑏𝑒𝑑 = 𝐱𝑜𝑟𝑖𝑔𝑖𝑛𝑎𝑙 + 𝐧
+                   𝐧 ∼  (0, 𝜎 2 )                                                                                                                (23)
+         𝜎 = 𝛼 ⋅ range(𝐱𝑜𝑟𝑖𝑔𝑖𝑛𝑎𝑙 )
+where 𝐧 is the Gaussian noise. 𝐱𝑝𝑒𝑟𝑡𝑢𝑟𝑏𝑒𝑑 and 𝐱𝑜𝑟𝑖𝑔𝑖𝑛𝑎𝑙 represent the data after and before perturbation, respectively. 𝛼 is the noise level
+parameter, and range denotes the original data range.
+    In this paper, we consider two noise perturbation levels, 𝛼 = 5 % and 𝛼 = 10 %. The position distributions and frequency histograms
+of the perturbation paths are shown in Fig. 15. As seen in the ﬁgure, after perturbation, the path points at the 10 % perturbation level
+exhibit greater dispersion than those at the 5 % level. We also independently ran the perturbed data ten times across four welding
+paths. The statistical results are presented in Tables 9–12. The 𝑝-values displayed in each table are all greater than 0.05, indicating
+
+                                                                            18
+Z. He and H. Liu                                                                Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                   Fig. 11. The boxplots of the IGD values on four paths among 10 runs.
+                                                   19
+Z. He and H. Liu                                                                               Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                   Fig. 12. The Pareto fronts at the 60th path point during the 5th run for each algorithm.
+
+
+
+
+                   Fig. 13. The joint curves of the L-shaped path during the second run for each algorithm.
+
+
+
+                    Table 9
+                    Statistical results with perturbation from 10 independent runs on the circular path.
+                      Algorithm        Mean error    Standard deviation   Mean squared error      𝑃 -value
+
+                      ADCMEA           9.031e−01     7.517e−02            8.206e−01               Reference
+                      ADCMEA_5 %       8.345e−01     4.177e−02            6.980e−01               5.816e−02
+                      ADCMEA_10 %      1.097e+00     4.644e−01            1.398e+00               9.691e−01
+
+
+
+
+                    Table 10
+                    Statistical results with perturbation from 10 independent runs on the L-shaped path.
+                      Algorithm        Mean error    Standard deviation   Mean squared error      𝑃 -value
+
+                      ADCMEA           8.658e−01     8.580e−02            7.563e−01               Reference
+                      ADCMEA_5 %       9.633e−01     1.752e−01            9.556e−01               5.183e−02
+                      ADCMEA_10 %      9.072e−01     7.564e−02            8.282e−01               1.191e−01
+
+
+
+                                                              20
+Z. He and H. Liu                                                                              Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                       Fig. 14. The statistical histogram of the average runtime for each algorithm.
+
+
+
+
+                           Fig. 15. The distribution plots of data at diﬀerent perturbation levels.
+
+
+                   Table 11
+                   Statistical results with perturbation from 10 independent runs on the polygonal path.
+                    Algorithm         Mean error    Standard deviation   Mean squared error     𝑃 -value
+
+                    ADCMEA            9.586e−01     2.657e−01            9.824e−01              Reference
+                    ADCMEA_5 %        8.336e−01     5.738e−02            6.979e−01              1.000e+00
+                    ADCMEA_10 %       8.526e−01     4.139e−02            7.284e−01              9.698e−01
+
+
+
+                                                              21
+Z. He and H. Liu                                                                                     Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                    Fig. 16. The boxplots of algorithms at diﬀerent perturbation levels.
+
+                           Table 12
+                           Statistical results with perturbation from 10 independent runs on the straight path.
+                             Algorithm        Mean error   Standard deviation   Mean squared error      𝑃 -value
+
+                             ADCMEA           9.604e−01    1.476e−01            9.419e−01               Reference
+                             ADCMEA_5 %       8.700e−01    1.125e−01            7.684e−01               6.252e−02
+                             ADCMEA_10 %      8.581e−01    4.306e−02            7.380e−01               1.396e−01
+
+
+
+
+no signiﬁcant diﬀerence in performance metrics before and after perturbation. However, from the perspective of standard deviation,
+only the standard deviation of the circular path in Table 9 gradually increases with the increase in disturbance level, indicating a
+decline in stability. As shown in Fig. 16, the median IGD values for all four welding paths remained about 0.8 to 0.9 both before
+and after perturbation. However, when the disturbance level on the circular path reached 10 %, a signiﬁcant performance decline
+occurred during one run. Additionally, we present the average IGD values across 10 runs, as shown in Fig. 17. At a perturbation level
+of 5 %, the average IGD values consistently remained within the range of 0.8 to 1. When the perturbation level increased to 10 %, the
+performance on the circular path slightly improved to 1.1, while the performance values for the other three paths remained around
+0.8 to 0.9.
+    Therefore, we can conclude that for the L-shaped path, polygonal path, and straight path, ADCMEA exhibits robust performance
+under small and moderate noise levels, with solution accuracy comparable to the original ADCMEA. For circular paths, however,
+ADCMEA exhibits a signiﬁcant decline in performance under moderate noise levels (i.e., 𝛼 = 10 %), as evidenced by the mean error,
+standard deviation, and mean squared error values presented in Table 9.
+
+5.5. Further discussions
+
+    From the results in Tables 4–7 and Fig. 12, we can observe that the proposed ADCMEA demonstrates signiﬁcantly better perfor-
+mance than other algorithms, which is attributed to its well-designed optimization mechanism. In ADCMEA, we introduce the GCSO.
+Unlike the classical CSO, the GCSO also updates the winner individuals. This update mechanism enables the population to explore
+more unknown positions, thereby enhancing its diversity. Furthermore, our developed ﬁtness evaluation strategy provides eﬃciency
+in solution evaluation and selection, signiﬁcantly enhancing convergence. Beneﬁting from an eﬀective balance between diversity and
+convergence, ADCMEA demonstrates satisfactory results in solving inverse kinematics problems.
+    Regarding the handling of complex constraints, as shown in Fig. 12, ADCMEA satisﬁes the position error constraint but fails to
+meet the orientation error constraint and joint continuity error constraint. The primary reasons are as follows. First, the constraint-
+handling techniques inherent to the algorithm itself cannot adapt to the current complex constraints, and more advanced and eﬃcient
+
+                                                                     22
+Z. He and H. Liu                                                                                   Applied Mathematical Modelling 151 (2026) 116440
+
+
+
+
+                                        Fig. 17. The sensitive curve at diﬀerent perturbation levels.
+
+
+
+constraint-handling techniques need to be developed. Second, the constraint limits set in this paper–such as requiring orientation error
+and joint continuity error not to exceed 0.01 rad–are overly strict. Thus, the feasible region formed by these constraints is extremely
+small or nonexistent. Despite these limitations, our approach demonstrates satisfactory results in constraint handling. As shown in
+Fig. 13, other algorithms cannot directly address joint continuity constraints. Solutions from these peer algorithms exhibit signiﬁcant
+ﬂuctuations in joint angles, posing safety hazards during actual robotic welding operations. In contrast, the joint curves obtained by
+ADCMEA are relatively smooth, making them highly suitable for practical applications.
+
+
+6. Conclusion
+
+    This paper reformulates the inverse kinematics problem of redundant robotic arms as a multiobjective optimization problem sub-
+ject to constraints. The constraints encompass position error constraint, orientation error constraint, highly correlated joint continuity
+error constraint, obstacle-avoidance constraint, etc. We modeled the obstacle-avoidance constraint using a data-driven prediction
+method. The results demonstrate that, for all paths, the coeﬃcients of determination exceed 0.9. For the straight and polygonal
+welding paths, 91.3 % of the samples exhibit a prediction error of less than 0.05 m, while for the circular and L-shaped welding
+paths, 86.6 % of the samples show a prediction error of less than 0.05 m. The prediction accuracy satisfactorily fulﬁlls the modeling
+requirements of the obstacle-avoidance constraints.
+    To address this constrained multiobjective optimization problem, we proposed an auxiliary-based dual-stage constrained multiob-
+jective evolutionary algorithm, referred to as ADCMEA. This algorithm divides the optimization process into an objective optimization
+phase and a constraint handling phase, eﬀectively balancing objectives and constraints. In ADCMEA, we developed a global com-
+petitive swarm optimizer and a novel ﬁtness evaluation strategy. Sensitivity analysis of ADCMEA parameters was also performed,
+and the eﬀectiveness of ADCMEA was validated through comparisons with 9 state-of-the-art constrained multiobjective evolutionary
+algorithms. The results demonstrated that ADCMEA yields markedly the best performance compared to peer algorithms on all welding
+paths.
+    Additionally, we conducted time eﬃciency analysis and robustness studies under data perturbations. Regarding computational
+time, results indicate that the proposed ADCMEA achieves a time eﬃciency ranking in the middle of all algorithms. With respect to
+sensitivity analysis under data perturbations, ADCMEA demonstrates strong robustness on the L-shaped path, polygonal path, and
+straight path. However, for the circular path, performance and stability decline signiﬁcantly when the perturbation level increases
+to 10 %. In the future, more eﬀective optimization strategies and constraint handling techniques can be proposed to further enhance
+the performance, robustness, and time eﬃciency of ADCMEA.
+
+
+CRediT authorship contribution statement
+
+   Zhao He: Writing – original draft, Validation, Software, Methodology, Conceptualization; Hui Liu: Writing – review & editing,
+Supervision.
+
+
+Data availability
+
+    Data will be made available on request.
+
+                                                                     23
+Z. He and H. Liu                                                                                                   Applied Mathematical Modelling 151 (2026) 116440
+
+
+Declaration of competing interest
+
+   The authors declare that they have no known competing ﬁnancial interests or personal relationships that could have appeared to
+inﬂuence the work reported in this paper.
+
+Acknowledgment
+
+   This paper is fully supported by the National Natural Science Foundation of China under Grant number 52072412, National Top
+Talent of the Ten Thousand Program of China under Grant number 140030001.
+
+References
+
+ [1] R. Tian, X. Wu, F. Xu, et al., Research on autonomous robotic grinding of bogie welds, in: 2025 5th International Conference on Computer, Control and Robotics,
+     Hangzhou, China, 2025, pp. 55–59. https://doi.org/10.1109/ICCCR65461.2025.11072586
+ [2] L. Zhou, Y. Guo, T. Yin, et al., An automatic pipeline welding system based on arc weld tracking technology, Int. J. Precis. Eng. Manuf. 2025. https://doi.org/
+     10.1007/s12541-025-01275-w
+ [3] S. Yao, L. Xue, J. Huang, et al., Mobile welding robots under special working conditions: a review, Int. J. Adv. Manuf. Technol. 138 (2025) 3907–3923.
+     https://doi.org/10.1007/s00170-025-15813-3
+ [4] A. Biber, R. Sharma, U. Reisgen, Robotic welding system for adaptive process control in gas metal arc welding, Weld. World 68 (9) (2024) 2311–2320. https:
+     //doi.org/10.1007/s40194-024-01756-y
+ [5] J. Zhao, Z. Tian, Z. Zhao, et al., Constraint-integrated inverse kinematics method for dual-arm motion, Acta Astronaut. 228 (2025) 755–768. https://doi.org/
+     10.1016/j.actaastro.2024.12.048
+ [6] R. Dou, S. Yu, W. Li, et al., Inverse kinematics for a 7-DOF humanoid robotic arm with joint limit and end pose coupling, Mech. Mach. Theory 169 (2022)
+     104637. https://doi.org/10.1016/j.mechmachtheory.2021.104637
+ [7] X. Tian, Q. Xu, Q. Zhan, An analytical inverse kinematics solution with joint limits avoidance of 7-DOF anthropomorphic manipulators without oﬀset, J. Frankl.
+     Inst. - Eng. Appl. Math. 358 (2) (2021) 1252–1272. https://doi.org/10.1016/j.jfranklin.2020.11.020
+ [8] I. Zaplana, H. Hadﬁeld, J. Lasenby, Closed-form solutions for the inverse kinematics of serial robots using conformal geometric algebra, Mech. Mach. Theory
+     173 (2022) 104835. https://doi.org/10.1016/j.mechmachtheory.2022.104835
+ [9] C. Lauretti, T. Grasso, E.D. Marchi, et al., A geometric approach to inverse kinematics of hyper-redundant manipulators for tokamaks maintenance, Mech. Mach.
+     Theory 176 (2022) 104967. https://doi.org/10.1016/j.mechmachtheory.2022.104967
+[10] S. Wang, Z. Liu, Z. Ma, et al., A closed-form solution for inverse kinematics of redundant space manipulator with multiple joint oﬀsets, Adv. Space Res. 72 (5)
+     (2023) 1844–1860. https://doi.org/10.1016/j.asr.2023.05.009
+[11] T. Liu, T. Yang, W. Xu, et al., Eﬃcient inverse kinematics and planning of a hybrid active and passive cable-driven segmented manipulator, IEEE Trans. Syst.,
+     Man, Cybern. 52 (7) (2022) 4233–4246. https://doi.org/10.1109/TSMC.2021.3095152
+[12] H. Yang, C. Xia, X. Wang, et al., An eﬃcient solver for the inverse kinematics of cable-driven manipulators with pure rolling joints using a geometric iterative
+     approach, Mech. Mach. Theory 196 (2024) 105611. https://doi.org/10.1016/j.mechmachtheory.2024.105611
+[13] M. Safeea, R. Bearee, P. Neto, A modiﬁed DLS scheme with controlled cyclic solution for inverse kinematics in redundant robots, IEEE Trans. Ind. Inform. 17
+     (12) (2021) 8014–8023. https://doi.org/10.1109/TII.2021.3060019
+[14] X. Wang, X. Liu, L. Chen, et al., Deep-learning damped least squares method for inverse kinematics of redundant robots, Measurement 171 (2021) 108821.
+     https://doi.org/10.1016/j.measurement.2020.108821
+[15] S. Lloyd, R.A. Irani, M. Ahmadi, Fast and robust inverse kinematics of serial robots using Halley’s method, IEEE Trans. Robot. 38 (5) (2022) 2768–2780.
+     https://doi.org/10.1109/TRO.2022.3162954
+[16] L. Woliński, M. Wojtyra, An inverse kinematics solution with trajectory scaling for redundant manipulators, Mech. Mach. Theory 191 (2024) 105493. https:
+     //doi.org/10.1016/j.mechmachtheory.2023.105493
+[17] P. Trutman, M.S.E. Din, D. Henrion, et al., Globally optimal solution to inverse kinematics of 7DOF serial manipulator, IEEE Robot. Autom. Lett. 7 (3) (2022)
+     6012–6019. https://doi.org/10.48550/arXiv.2007.12550
+[18] J.A. Abdor-Sierra, E.A. Merchán-Cruz, R.G. Rodríguez-Cañizo, A comparative analysis of metaheuristic algorithms for solving the inverse kinematics of robot
+     manipulators, Results Eng. 16 (2022) 100597. https://doi.org/10.1016/j.rineng.2022.100597
+[19] P. Yang, F. Shen, D. Xu, et al., An obstacle-avoidance inverse kinematics method for robotic manipulator in overhead multi-line environment, Eng. Sci. Technol.
+     53 (2024) 101686. https://doi.org/10.1016/j.jestch.2024.101686
+[20] J. Hernandez-Barragan, C. Lopez-Franco, N. Arana-Daniel, et al., A modiﬁed ﬁreﬂy algorithm for the inverse kinematics solutions of robotic manipulators, Integr.
+     Computer-Aided Eng. 28 (3) (2021) 257–275. https://doi.org/10.3233/ICA-210660
+[21] D.O. Santos, L. Molina, J.G. Carvalho, Modiﬁcations of fully resampled PSO in the inverse kinematics of robot manipulators, IEEE Robot. Autom. Lett. 9 (2)
+     (2024) 1923–1928. https://doi.org/10.1109/LRA.2024.3349927
+[22] F. Liu, H. Huang, B. Li, et al., A parallel learning particle swarm optimizer for inverse kinematics of robotic manipulator, Int. J. Intell. Syst. 36 (10) (2021)
+     6101–6132. https://doi.org/10.1002/int.22543
+[23] Y. Ning, T. Li, W. Du, et al., Inverse kinematics and planning/control co-design method of redundant manipulator for precision operation: design and experiments,
+     Robot. Computer-Integrated Manuf. 80 (2023) 102457. https://doi.org/10.1016/j.rcim.2022.102457
+[24] A.S. Reddy, V.S. Chembuly, V.K. Rao, Multi-objective optimization approach for inverse kinematics of redundant manipulator for welding applications, Mater.
+     Today 2023. https://doi.org/10.1016/j.matpr.2023.04.571
+[25] D. Wu, G. Hou, W. Qiu, et al., T-Ik: an eﬃcient multi-objective evolutionary algorithm for analytical inverse kinematics of redundant manipulator, IEEE Robot.
+     Autom. Lett. 6 (4) (2021) 8474–8481. https://doi.org/10.1109/LRA.2021.3108550
+[26] H. Dong, C. Li, W. Wu, et al., A novel algorithm by combining nonlinear workspace partition with neural networks for solving the inverse kinematics problem
+     of redundant manipulators, Mech. Sci. 12 (1) (2021) 259–267. https://doi.org/10.5194/ms-12-259-2021
+[27] C.K. Ho, L.W. Chan, C.T. King, A deep learning approach to navigating the joint solution space of redundant inverse kinematics and its applications to numerical
+     IK computations, IEEE Access 11 (2023) 2274–2290. https://doi.org/10.1109/ACCESS.2023.3234104
+[28] S. Habibkhah, R.V. Mayorga, An ANN and virtual vector function approach for the computation of the inverse kinematics of redundant manipulators, WSEAS
+     Trans. Inf. Sci. Appl. 18 (2021) 131–140. https://doi.org/10.37394/23209.2021.18.15
+[29] V. Hlavac, Inverted kinematics of a redundant manipulator with a, in: 2022 International Conference on Electrical, Computer, Communications and Mechatronics
+     Engineering, 2022, pp. 1–5. https://doi.org/10.1109/ICECCME55909.2022.9987898
+[30] M.N. Vu, F. Beck, M. Schwegel, et al., Machine learning-based framework for optimally solving the analytical inverse kinematics for redundant manipulators,
+     Mechatronics 91 (2023) 102970. https://doi.org/10.1016/j.mechatronics.2023.102970
+[31] P. Emami, A.R. Ghiasi, A.A. Ghavifekr, Survey of multi-agent reinforcement learning to solve inverse kinematic problems of redundant robotic manipulators,
+     in: 2022 8th International Conference on Control, Instrumentation and Automation, Tehran, Iran, 2022, pp. 1–6. https://doi.org/10.1109/ICCIA54998.2022.
+     9737188
+[32] Y. Bai, S.J. Hsieh, A hybrid method using FABRIK and custom ANN in solving inverse kinematic for generic serial robot manipulator, Int. J. Adv. Manuf. Technol.
+     130 (2024) 4883–4904. https://doi.org/10.1007/s00170-023-12928-3
+
+                                                                                 24
+Z. He and H. Liu                                                                                                    Applied Mathematical Modelling 151 (2026) 116440
+
+
+[33] X.A. Han, Y. Ma, X. Huang, A novel generalization of Bézier curve and surface, J. Comput. Appl. Math. 217 (1) (2008) 180–193. https://doi.org/10.1016/j.cam.
+     2007.06.027
+[34] Z. Mu, L. Liu, L. Jia, et al., Intelligent demolition robot: structural statics, collision detection, and dynamic control, Autom. Constr. 142 (2022) 104490. https:
+     //doi.org/10.1016/j.autcon.2022.104490
+[35] Z. He, T. Liu, H. Liu, Improved particle swarm optimization algorithms for aerodynamic shape optimization of high-speed train, Adv. Eng. Softw. 173 (2022)
+     103242. https://doi.org/10.1016/j.advengsoft.2022.103242
+[36] Z. He, S. Liang, J. Mao, et al., Thermal management of turbine disc cavity system using FFBPNN and NSGA II algorithm, Case Stud. Therm. Eng. 68 (2025)
+     105954. https://doi.org/10.1016/j.csite.2025.105954
+[37] Y. Tian, T. Zhang, J. Xiao, A coevolutionary framework for constrained multiobjective optimization problems, IEEE Trans. Evol. Comput. 25 (1) (2021) 102–116.
+     https://doi.org/10.1109/TEVC.2020.3004012
+[38] Z. He, H. Liu, A dual-population auxiliary multiobjective coevolutionary algorithm for constrained multiobjective optimization problems, Appl. Soft. Comput.
+     163 (2024) 111827. https://doi.org/10.1016/j.asoc.2024.111827
+[39] R. Cheng, Y. Jin, A competitive swarm optimizer for large scale optimization, IEEE Trans. Cybern. 45 (2) (2015) 191–204. https://doi.org/10.1109/TCYB.2014.
+     2322602
+[40] Q. Lin, S. Liu, Q. Zhu, et al., Particle swarm optimization with a balanceable ﬁtness estimation for many-objective optimization problems, IEEE Trans. Evol.
+     Comput. 22 (1) (2018) 32–46. https://doi.org/10.1109/TEVC.2016.2631279
+[41] K. Deb, A. Pratap, S. Agarwal, A fast and elitist multiobjective genetic algorithm: NSGA-II, IEEE Trans. Evol. Comput. 6 (2) (2002) 182–197. https://doi.org/10.
+     1109/4235.996017
+[42] E. Zitzler, M. Laumanns, L. Thiele, SPEA2: improving the strength pareto evolutionary algorithm, TIK Report 103 (2001). https://doi.org/10.3929/
+     ETHZ-A-004284029
+[43] H. Jain, K. Deb, An evolutionary many-objective optimization algorithm using reference-point based nondominated sorting approach, part II: handling constraints
+     and extending to an adaptive approach, IEEE Trans. Evol. Comput. 18 (4) (2014) 602–622. https://doi.org/10.1109/TEVC.2013.2281534
+[44] Z.Z. Liu, B.C. Wang, K. Tang, Handling constrained multiobjective optimization problems via bidirectional coevolution, IEEE Trans. Cybern. 52 (10) (2022)
+     10163–10176. https://doi.org/10.1109/TCYB.2021.3056176
+[45] K. Qiao, J. Liang, K. Yu, et al., Evolutionary constrained multiobjective optimization: scalable high-dimensional constraint benchmarks and algorithm, IEEE
+     Trans. Evol. Comput. 28 (4) (2024) 965–979. https://doi.org/10.1109/TEVC.2023.3281666
+[46] F. Ming, W. Gong, L. Wang, et al., Constrained multiobjective optimization via multitasking and knowledge transfer, IEEE Trans. Evol. Comput. 28 (1) (2024)
+     77–89. https://doi.org/10.1109/TEVC.2022.3230822
+[47] F. Ming, W. Gong, Y. Jin, Even search in a promising region for constrained multi-objective optimization, IEEE-CAA J. Autom. Sin. 11 (2) (2024) 474–486.
+     https://doi.org/10.1109/JAS.2023.123792
+[48] Y. Wang, Y. Zhang, C. Xu, et al., Decomposition-based dual-population evolutionary algorithm for constrained multi-objective problem, Swarm Evol. Comput.
+     95 (2025) 101912. https://doi.org/10.1016/j.swevo.2025.101912
+[49] Y. Tian, R. Cheng, X. Zhang, et al., PlatEMO: a MATLAB platform for evolutionary multi-objective optimization, IEEE Comput. Intell. Mag. 12 (4) (2017) 73–87.
+     https://doi.org/10.1109/MCI.2017.2742868
+[50] P.A.N. Bosman, D. Thierens, The balance between proximity and diversity in multiobjective evolutionary algorithms, IEEE Trans. Evol. Comput. 7 (2) (2003)
+     174–188. https://doi.org/10.1109/TEVC.2003.810761
+[51] J. Derrac, S. Garcia, D. Molina, et al., A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm
+     intelligence algorithms, Swarm Evol. Comput. 1 (1) (2011) 3–18. https://doi.org/10.1016/j.swevo.2011.02.002
+
+
+
+
+                                                                                  25
+

@@ -1,0 +1,73 @@
+UR5 80-point weld planner optimization benchmark
+Date: 2026-09-23
+
+Scope
+-----
+Only MATLAB planning was measured. No ROS2 command was published, no real
+robot was moved, and the CoppeliaSim scene/TCP calibration were not changed.
+
+Validated comparison
+--------------------
+Baseline result:
+  weld_actual_axis_replan_timed_20260917.mat
+Optimized result:
+  weld_actual_axis_replan_fast.mat
+
+                         baseline       fast
+Algorithm time (s)          454.006    346.143
+Speedup                       23.76 %
+Complete path                     1          1
+Accepted states                 898        910
+Graph edge tests                496        435
+Collision-free edges            372        343
+Max joint jump (deg)          9.954      9.270
+Max TCP position err (mm)  0.000044   0.000047
+Max TCP orientation err (deg)
+                             0.000004   0.000005
+Node collision free               1          1
+Edge collision free               1          1
+
+Profiler diagnosis
+------------------
+The fresh profiled baseline took 672.732 s of algorithm time (profiler wall
+time 676.762 s). The largest costs were:
+  localGenerateLayer                       658.869 s
+  generate_actual_axis_ik_candidates       658.441 s
+  inverseKinematics.stepImpl               292.792 s
+  inverseKinematics.solve                  288.084 s
+  rigidBody.rigidBody construction         194.318 s
+  IKHelpers.computeCost                    188.465 s
+  localJointLimits                         168.784 s
+  inverseKinematics constructor            135.267 s
+
+The optimized profiled run took 346.143 s of algorithm time (350.343 s wall).
+The stable fast configuration reuses one inverseKinematics solver and one
+joint-limit vector, caches accepted candidates for repeated exact poses, and
+uses Lazy collision only for interior samples of graph edges. Node collision
+checks remain eager, so colliding IK states never enter the layered graph.
+
+Important experiment result
+---------------------------
+An additional continuation-seed experiment was tested, but it retained too
+many fine-refinement states (1756 states), failed to form a complete path, and
+took 997.286 s. It is therefore disabled in the stable fast profile:
+  profile_weld_actual_axis_fast.m -> reusePoseCandidates = false
+
+Files
+-----
+  replan_weld_actual_axis.m                 main planner with opt-in flags
+  generate_actual_axis_ik_candidates.m      solver/cache support
+  profile_weld_actual_axis_baseline.m       reproducible baseline profiler
+  profile_weld_actual_axis_fast.m           stable optimized profiler
+  compare_weld_planner_optimization.m       read-only metric comparison
+  weld_actual_axis_baseline_profile.mat     profiler output
+  weld_actual_axis_fast_profile.mat         profiler output
+  weld_actual_axis_replan_fast.mat          optimized validated result
+
+Reproduce
+---------
+  matlab -batch "run('/home/ttbstt/jixiebi/UR5/matlab仿真/profile_weld_actual_axis_fast.m');"
+  matlab -batch "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); compare_weld_planner_optimization();"
+
+The default options in replan_weld_actual_axis.m remain unchanged. The fast
+profile is opt-in and does not overwrite the historical validated result.

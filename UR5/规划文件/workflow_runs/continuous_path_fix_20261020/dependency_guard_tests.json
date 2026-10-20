@@ -1,0 +1,7 @@
+{
+  "shadow_adapter_rejected": true,
+  "stale_input_still_rejected": true,
+  "no_optimized_artifact_on_failure": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

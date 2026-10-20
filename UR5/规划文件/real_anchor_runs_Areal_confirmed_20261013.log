@@ -1,0 +1,978 @@
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In generate_real_weld_anchors (line 20)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=59.7 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.035970 -0.091424 -0.995162]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+
+========================================
+ACCP: ADAPTIVE CONFIGURATION AND EMBEDDED PRECISION
+========================================
+Initial seam points : 16
+Max refinement     : 4 rounds / 40 points
+Cooperative budget : 60.0 s (checked between rounds only)
+
+[Adaptive round 0] planning 16 seam points...
+
+========================================
+REPLAN WELD WITH LOCAL IK CONTINUATION
+========================================
+No previous weld path is used as an input.
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In sync_ur5_real_scene (line 2)
+In run (line 112)
+In replan_weld_actual_axis_adaptive_core>localLoadScene (line 570)
+In replan_weld_actual_axis_adaptive_core (line 82)
+In replan_weld_actual_axis_adaptive_feasibility (line 145)
+In generate_real_weld_anchors (line 45)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=59.7 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.035970 -0.091424 -0.995162]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+Branch reference overridden: [305.287 -99.669 64.495 83.969 104.327 -9.883] deg
+  distance from qMat0 = 0.000 deg
+Analytical IK valid for loaded universalUR5: 0
+Analytical IK is not used; numeric IK remains the validated solver.
+ACCP_STAGE stage=CONTINUOUS_IK
+
+Self-collision structural exclusions (attachment only):
+  base_link <-> base
+  base <-> base_link_inertia
+  base_link_inertia <-> shoulder_link
+  shoulder_link <-> upper_arm_link
+  upper_arm_link <-> forearm_link
+  forearm_link <-> wrist_1_link
+  wrist_1_link <-> wrist_2_link
+  wrist_2_link <-> wrist_3_link
+  wrist_3_link <-> flange
+  flange <-> tool0
+  WeldingGunMount <-> wrist_3_link
+  WeldingGunMount <-> ee_link
+  WeldingGunMount <-> WeldTCP
+  WeldingGunMount <-> WeldingGunWire
+All other self-collision pairs remain hard constraints.
+
+Physical welding frame:
+  seam = bottom x wall_y1
+  start WP = [0.0300 0.2300 0.0050] m
+  end   WP = [0.2050 0.2300 0.0050] m
+  tangent = [1.0000 0.0000 0.0000]
+  measured gun axis target = [0.0000 0.7071 -0.7071]
+  work angle to bottom normal = 45.00 deg
+  plate thickness = 5.0 mm
+  welding side = U-interior: y < wall_y1 inner face, z > bottom top face
+
+--- Cold-start bounded continuation ---
+Candidate audit Point 1: node=0 connected=0 kept=0 scoring=1
+Point  1/16: beam states = 0
+Candidate audit Point 2: node=0 connected=0 kept=0 scoring=1
+Point  2/16: beam states = 0, IK calls = 32
+Continuation broke at point 2; bounded fallback will be considered.
+
+[FAIL] No complete 16-point path under hard constraints.
+Weld points             : 16
+Layers with IK states   : 0 / 16
+Reachable final states  : 0
+Node collision free     : 0
+Edge collision free     : 0
+Max joint jump          : NaN deg
+IK calls                : 32
+IK elapsed              : 0.412927 s
+IK pose-success rate    : 65.62 %
+Max node TCP error      : NaN mm
+Max segment TCP error   : NaN mm
+Max segment TCP orient  : NaN deg
+Fallback used           : 0
+Wire collision model    : enabled
+Approach path planned   : 0
+Exit path planned       : 0
+Algorithm time (scene excluded): 0.661444 s
+ACCP configuration time : 0.661444 s
+ACCP precision time     : 0.000000 s
+Saved result: /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/real_seam_round_00.mat
+[Recovery] first layer failed; retrying with stronger first-point seeds.
+
+[Adaptive round 1] planning 16 seam points...
+
+========================================
+REPLAN WELD WITH LOCAL IK CONTINUATION
+========================================
+No previous weld path is used as an input.
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In sync_ur5_real_scene (line 2)
+In run (line 112)
+In replan_weld_actual_axis_adaptive_core>localLoadScene (line 570)
+In replan_weld_actual_axis_adaptive_core (line 82)
+In replan_weld_actual_axis_adaptive_feasibility (line 145)
+In generate_real_weld_anchors (line 45)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=59.7 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.035970 -0.091424 -0.995162]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+Branch reference overridden: [305.287 -99.669 64.495 83.969 104.327 -9.883] deg
+  distance from qMat0 = 0.000 deg
+Analytical IK valid for loaded universalUR5: 0
+Analytical IK is not used; numeric IK remains the validated solver.
+ACCP_STAGE stage=CONTINUOUS_IK
+
+Self-collision structural exclusions (attachment only):
+  base_link <-> base
+  base <-> base_link_inertia
+  base_link_inertia <-> shoulder_link
+  shoulder_link <-> upper_arm_link
+  upper_arm_link <-> forearm_link
+  forearm_link <-> wrist_1_link
+  wrist_1_link <-> wrist_2_link
+  wrist_2_link <-> wrist_3_link
+  wrist_3_link <-> flange
+  flange <-> tool0
+  WeldingGunMount <-> wrist_3_link
+  WeldingGunMount <-> ee_link
+  WeldingGunMount <-> WeldTCP
+  WeldingGunMount <-> WeldingGunWire
+All other self-collision pairs remain hard constraints.
+
+Physical welding frame:
+  seam = bottom x wall_y1
+  start WP = [0.0300 0.2300 0.0050] m
+  end   WP = [0.2050 0.2300 0.0050] m
+  tangent = [1.0000 0.0000 0.0000]
+  measured gun axis target = [0.0000 0.7071 -0.7071]
+  work angle to bottom normal = 45.00 deg
+  plate thickness = 5.0 mm
+  welding side = U-interior: y < wall_y1 inner face, z > bottom top face
+
+--- Cold-start bounded continuation ---
+Candidate audit Point 1: node=0 connected=0 kept=0 scoring=1
+Point  1/16: beam states = 0
+Candidate audit Point 2: node=0 connected=0 kept=0 scoring=1
+Point  2/16: beam states = 0, IK calls = 264
+Continuation broke at point 2; bounded fallback will be considered.
+
+[FAIL] No complete 16-point path under hard constraints.
+Weld points             : 16
+Layers with IK states   : 0 / 16
+Reachable final states  : 0
+Node collision free     : 0
+Edge collision free     : 0
+Max joint jump          : NaN deg
+IK calls                : 264
+IK elapsed              : 2.704096 s
+IK pose-success rate    : 53.41 %
+Max node TCP error      : NaN mm
+Max segment TCP error   : NaN mm
+Max segment TCP orient  : NaN deg
+Fallback used           : 0
+Wire collision model    : enabled
+Approach path planned   : 0
+Exit path planned       : 0
+Algorithm time (scene excluded): 2.886311 s
+ACCP configuration time : 2.886311 s
+ACCP precision time     : 0.000000 s
+Saved result: /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/real_seam_round_01.mat
+[STOP] No safe interval available for another refinement.
+
+[Post-recovery] sparse refinement failed; trying bounded beam/angular recovery.
+
+========================================
+REPLAN WELD WITH LOCAL IK CONTINUATION
+========================================
+No previous weld path is used as an input.
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In sync_ur5_real_scene (line 2)
+In run (line 112)
+In replan_weld_actual_axis_adaptive_core>localLoadScene (line 570)
+In replan_weld_actual_axis_adaptive_core (line 82)
+In replan_weld_actual_axis_adaptive_feasibility (line 250)
+In generate_real_weld_anchors (line 45)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=59.7 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.035970 -0.091424 -0.995162]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+Branch reference overridden: [305.287 -99.669 64.495 83.969 104.327 -9.883] deg
+  distance from qMat0 = 0.000 deg
+Analytical IK valid for loaded universalUR5: 0
+Analytical IK is not used; numeric IK remains the validated solver.
+ACCP_STAGE stage=CONTINUOUS_IK
+
+Self-collision structural exclusions (attachment only):
+  base_link <-> base
+  base <-> base_link_inertia
+  base_link_inertia <-> shoulder_link
+  shoulder_link <-> upper_arm_link
+  upper_arm_link <-> forearm_link
+  forearm_link <-> wrist_1_link
+  wrist_1_link <-> wrist_2_link
+  wrist_2_link <-> wrist_3_link
+  wrist_3_link <-> flange
+  flange <-> tool0
+  WeldingGunMount <-> wrist_3_link
+  WeldingGunMount <-> ee_link
+  WeldingGunMount <-> WeldTCP
+  WeldingGunMount <-> WeldingGunWire
+All other self-collision pairs remain hard constraints.
+
+Physical welding frame:
+  seam = bottom x wall_y1
+  start WP = [0.0300 0.2300 0.0050] m
+  end   WP = [0.2050 0.2300 0.0050] m
+  tangent = [1.0000 0.0000 0.0000]
+  measured gun axis target = [0.0000 0.7071 -0.7071]
+  work angle to bottom normal = 45.00 deg
+  plate thickness = 5.0 mm
+  welding side = U-interior: y < wall_y1 inner face, z > bottom top face
+
+--- Cold-start bounded continuation ---
+Candidate audit Point 1: node=0 connected=0 kept=0 scoring=1
+Point  1/16: beam states = 0
+Candidate audit Point 2: node=0 connected=0 kept=0 scoring=1
+Point  2/16: beam states = 0, IK calls = 264
+Continuation broke at point 2; bounded fallback will be considered.
+
+[FAIL] No complete 16-point path under hard constraints.
+Weld points             : 16
+Layers with IK states   : 0 / 16
+Reachable final states  : 0
+Node collision free     : 0
+Edge collision free     : 0
+Max joint jump          : NaN deg
+IK calls                : 264
+IK elapsed              : 2.675454 s
+IK pose-success rate    : 53.41 %
+Max node TCP error      : NaN mm
+Max segment TCP error   : NaN mm
+Max segment TCP orient  : NaN deg
+Fallback used           : 0
+Wire collision model    : enabled
+Approach path planned   : 0
+Exit path planned       : 0
+Algorithm time (scene excluded): 2.846376 s
+ACCP configuration time : 2.846376 s
+ACCP precision time     : 0.000000 s
+Saved result: /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/real_seam_round_recovery_beam2.mat
+[Post-recovery] beam=2, complete=0, points=16, time=4.003s
+
+========================================
+REPLAN WELD WITH LOCAL IK CONTINUATION
+========================================
+No previous weld path is used as an input.
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In sync_ur5_real_scene (line 2)
+In run (line 112)
+In replan_weld_actual_axis_adaptive_core>localLoadScene (line 570)
+In replan_weld_actual_axis_adaptive_core (line 82)
+In replan_weld_actual_axis_adaptive_feasibility (line 250)
+In generate_real_weld_anchors (line 45)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=59.7 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.035970 -0.091424 -0.995162]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+Branch reference overridden: [305.287 -99.669 64.495 83.969 104.327 -9.883] deg
+  distance from qMat0 = 0.000 deg
+Analytical IK valid for loaded universalUR5: 0
+Analytical IK is not used; numeric IK remains the validated solver.
+ACCP_STAGE stage=CONTINUOUS_IK
+
+Self-collision structural exclusions (attachment only):
+  base_link <-> base
+  base <-> base_link_inertia
+  base_link_inertia <-> shoulder_link
+  shoulder_link <-> upper_arm_link
+  upper_arm_link <-> forearm_link
+  forearm_link <-> wrist_1_link
+  wrist_1_link <-> wrist_2_link
+  wrist_2_link <-> wrist_3_link
+  wrist_3_link <-> flange
+  flange <-> tool0
+  WeldingGunMount <-> wrist_3_link
+  WeldingGunMount <-> ee_link
+  WeldingGunMount <-> WeldTCP
+  WeldingGunMount <-> WeldingGunWire
+All other self-collision pairs remain hard constraints.
+
+Physical welding frame:
+  seam = bottom x wall_y1
+  start WP = [0.0300 0.2300 0.0050] m
+  end   WP = [0.2050 0.2300 0.0050] m
+  tangent = [1.0000 0.0000 0.0000]
+  measured gun axis target = [0.0000 0.7071 -0.7071]
+  work angle to bottom normal = 45.00 deg
+  plate thickness = 5.0 mm
+  welding side = U-interior: y < wall_y1 inner face, z > bottom top face
+
+--- Cold-start bounded continuation ---
+Candidate audit Point 1: node=0 connected=0 kept=0 scoring=1
+Point  1/16: beam states = 0
+Candidate audit Point 2: node=0 connected=0 kept=0 scoring=1
+Point  2/16: beam states = 0, IK calls = 264
+Continuation broke at point 2; bounded fallback will be considered.
+
+[FAIL] No complete 16-point path under hard constraints.
+Weld points             : 16
+Layers with IK states   : 0 / 16
+Reachable final states  : 0
+Node collision free     : 0
+Edge collision free     : 0
+Max joint jump          : NaN deg
+IK calls                : 264
+IK elapsed              : 2.588194 s
+IK pose-success rate    : 53.41 %
+Max node TCP error      : NaN mm
+Max segment TCP error   : NaN mm
+Max segment TCP orient  : NaN deg
+Fallback used           : 0
+Wire collision model    : enabled
+Approach path planned   : 0
+Exit path planned       : 0
+Algorithm time (scene excluded): 2.760917 s
+ACCP configuration time : 2.760917 s
+ACCP precision time     : 0.000000 s
+Saved result: /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/real_seam_round_recovery_beam3.mat
+[Post-recovery] beam=3, complete=0, points=16, time=3.900s
+
+========================================
+ACCP result (configuration + embedded precision)
+Initial points       : 16
+Final points         : 16
+Refinement rounds    : 4
+Complete             : 0
+Configuration time   : 9.155 s
+ACCP total time      : 9.155 s
+Adaptive time scale  : 0.000 s
+Total wall time      : 14.337 s
+Overall PASS         : 0
+Point1 diagnostics   : IK numeric=264, pose OK=141, direction reject=86, position reject=13, joint limit reject=110
+  continuity=141, self=0, gun=0, workpiece=55, accepted=0
+Point1 diagnostics JSON: /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/accp_point1_diagnostics.json
+Saved result         : /home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/real_seam.mat
+Error using generate_real_weld_anchors (line 82)
+ACCP did not complete the real seam
+REAL_ANCHORS_FAILED ACCP did not complete the real seam
+{"success":false,"status":"PLAN_FAILED","robot_motion":"NO","preview_only":false,"calibration_binding":{"tcp_calibration_sha256":"dce1b7400da67cd7673d243b69b7caaaa6cc1fdd389406e31209473a2f53f640","real_gun_geometry_sha256":"1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82","gun_mount_sha256":"5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79","workpiece_sha256":"a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7","planning_scene":"REAL_CALIBRATION","tcp_calibration_version":"CONTROLLER-TCP-fa3f8dfe17fa33101b874414944bf8ce89428e47879c6c4a7cf3993634046c95","gun_geometry_version":"real-gun-1791876831259595871","workpiece_pose_version":"WORKPIECE-a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7","urdf_version":"URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4"},"calibration_versions":{"tcp_calibration_version":"CONTROLLER-TCP-fa3f8dfe17fa33101b874414944bf8ce89428e47879c6c4a7cf3993634046c95","gun_geometry_version":"real-gun-1791876831259595871","workpiece_pose_version":"WORKPIECE-a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7","urdf_version":"URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4"},"real_tcp_loaded":true,"real_workpiece_loaded":true,"gun_component_count":10,"wire_axis_status":"MODEL_AXIS_TO_TCP_ACTIVE","real_workpiece_origin_root_m":[0.29433208813713896,-0.36856612348871803,0.0036043197100720514],"saved_real_home":[5.3282623291015625,-1.7395442167865198,1.1256504058837891,1.4655367136001587,1.8208539485931396,-0.17249614397157842],"initial_points":16,"final_points":null,"refinement_rounds":[{"round":0,"pointsBefore":16,"pointsAfter":null,"complete":false,"furthestPoint":0,"failedLayer":1,"algorithmTimeSec":0.661444,"wallTimeSec":2.293786,"ikCalls":32,"maxJointJumpDeg":null,"maxSegmentTcpErrorMm":null,"recovery":"strong_first_point_retry","insertedPoint":[null,null,null],"insertedInterval":[null,null]},{"round":1,"pointsBefore":16,"pointsAfter":null,"complete":false,"furthestPoint":0,"failedLayer":1,"algorithmTimeSec":2.886311,"wallTimeSec":4.12951,"ikCalls":264,"maxJointJumpDeg":null,"maxSegmentTcpErrorMm":null,"recovery":"no_bisection_possible","insertedPoint":[null,null,null],"insertedInterval":[null,null]},{"round":5,"pointsBefore":16,"pointsAfter":16,"complete":false,"furthestPoint":0,"failedLayer":1,"algorithmTimeSec":2.846376,"wallTimeSec":4.003138,"ikCalls":264,"maxJointJumpDeg":null,"maxSegmentTcpErrorMm":null,"recovery":"post_recovery_beam_2_angular","insertedPoint":[null,null,null],"insertedInterval":[null,null]},{"round":6,"pointsBefore":16,"pointsAfter":16,"complete":false,"furthestPoint":0,"failedLayer":1,"algorithmTimeSec":2.760917,"wallTimeSec":3.8999,"ikCalls":264,"maxJointJumpDeg":null,"maxSegmentTcpErrorMm":null,"recovery":"post_recovery_beam_3_angular","insertedPoint":[null,null,null],"insertedInterval":[null,null]}],"planning_time_sec":9.155048,"complete":false,"seam_complete":false,"point1_diagnostics_file":"/home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/Areal_confirmed_20261013/accp_point1_diagnostics.json","point1_filter_counts":{"ik_numeric_success":264,"ik_success":141,"orientation_direction_rejected":86,"position_error_rejected":13,"orientation_error_rejected":6,"joint_limit_rejected":110,"joint_continuity_rejected":141,"self_collision_rejected":0,"gun_collision_rejected":0,"workpiece_collision_rejected":55,"welding_side_position_rejected":0,"accepted_after_all_filters":0},"ik_calls":264,"ik_pose_success":141,"ik_pose_success_rate":0.53409090909090906,"edge_collision_checks":0,"collision_check_pass":false,"failure_reason":"ACCP did not complete the real seam","identifier":"REAL_ANCHORS:Seam","failure_stack":{"file":"/home/ttbstt/jixiebi/UR5/matlab仿真/generate_real_weld_anchors.m","name":"generate_real_weld_anchors","line":82},"elapsed_sec":17.524532}
+{Real anchor generation failed; see report.json
+} 

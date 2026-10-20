@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "nodes": 416,
+  "samples": 9131,
+  "collision_sample_count_identical": true,
+  "collision_pairs_identical": true,
+  "frame_statuses_identical": true,
+  "nearest_pair_names_identical": true,
+  "max_frame_gap_difference_mm": 0,
+  "minimum_positive_gap_mm": 0.40218062562951773,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

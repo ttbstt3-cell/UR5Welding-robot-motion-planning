@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "backup_directory": ".project_backups",
+  "git_max_file_bytes": 8388608,
+  "context_total_max_bytes": 16384,
+  "exclude_directory_names": [".git", ".project_backups", ".aws", ".codex", ".agents", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", "node_modules", ".venv", "venv", "System Volume Information"],
+  "exclude_path_prefixes": ["ros2_ws/build", "ros2_ws/install", "ros2_ws/log", "log", "UR5/logs"],
+  "git_archive_only_prefixes": ["UR5/backups", "backup_before_hmi_weld_20261008", "UR5/third_party/IKLink"],
+  "nested_repositories": ["UR5/third_party/IKLink"],
+  "git_text_suffixes": [".py", ".m", ".sh", ".cpp", ".cc", ".c", ".h", ".hpp", ".cmake", ".xml", ".urdf", ".xacro", ".yaml", ".yml", ".json", ".toml", ".ini", ".cfg", ".launch", ".rviz", ".md", ".txt", ".csv", ".tex", ".sty", ".bib", ".sdf", ".srv", ".msg", ".action", ".log"],
+  "git_mesh_suffixes": [".stl", ".obj", ".mtl", ".dae"],
+  "git_mat_paths": ["UR5/ur5_tool_calibration.mat", "fair_task_smoke2.mat"],
+  "git_evidence_prefixes": ["UR5/robot_motion_limit_evidence"],
+  "note": "Explicit reviewed path list, never git add all. Large and historical research assets remain eligible for immutable local snapshots; no blanket MAT/STL/TTT exclusion. Snapshot storage is same-disk until explicitly copied elsewhere. No remote operation in this policy."
+}

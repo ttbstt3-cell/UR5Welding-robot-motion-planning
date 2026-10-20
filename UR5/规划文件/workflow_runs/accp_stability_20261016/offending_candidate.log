@@ -1,0 +1,26 @@
+    {'Ttarget'  }
+    {'travelDeg'}
+    {'rollDeg'  }
+    {'poseInfo' }
+    {'rows'     }
+
+OFFENDING_RAW_POOL 159
+                             q_rad: [-1.4795 -0.8130 0.5773 … ] (1×6 double)
+                             q_deg: [-84.7709 -46.5834 33.0775 … ] (1×6 double)
+                          tcp_pose: [4×4 double]
+               tcp_rotation_matrix: [3×3 double]
+      welding_gun_mount_axis_world: [0.2671 -0.5862 -0.7649]
+            target_weld_axis_world: [0.2927 -0.6451 -0.7058]
+                seam_tangent_world: [-0.9139 -0.4058 -0.0081]
+                    axis_angle_deg: 5.0000
+            axis_vs_seam_angle_deg: 90.0000
+                 position_error_mm: 2.3285e-06
+             orientation_error_deg: 0
+         joint_delta_from_seed_deg: [10.5709 9.7270 -21.2622 … ] (1×6 double)
+    joint_delta_from_reference_deg: [-11.6475 69.4562 -56.6905 … ] (1×6 double)
+               max_joint_delta_deg: 168.1756
+                        travel_deg: -5
+                          roll_deg: 140
+                        seed_index: 1
+                  rejection_reason: "orientation_direction"
+

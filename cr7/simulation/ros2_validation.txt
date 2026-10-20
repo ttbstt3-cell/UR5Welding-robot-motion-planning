@@ -1,0 +1,2 @@
+MATLAB -> ROS2 -> ZMQ -> CR7 -> ROS2 -> MATLAB PASS
+1498 feedback samples; J1 excursion 2.000000 deg; final error 0.000000 deg

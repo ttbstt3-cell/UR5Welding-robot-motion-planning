@@ -1,0 +1,252 @@
+{
+  "source": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_144235_155027/preview_accp.mat",
+  "layers": [
+    {
+      "layer": 1,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 0,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 1,
+      "reachable_states": 1
+    },
+    {
+      "layer": 2,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 3,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 4,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 5,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 6,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 7,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 8,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 9,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 10,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 11,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 12,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 13,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 14,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 15,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 16,
+      "candidate_nodes": 1,
+      "tested_edges": 1,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 1
+    },
+    {
+      "layer": 17,
+      "candidate_nodes": 5,
+      "tested_edges": 5,
+      "connected_edges": 5,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 0,
+      "reachable_states": 5
+    },
+    {
+      "layer": 18,
+      "candidate_nodes": 5,
+      "tested_edges": 25,
+      "connected_edges": 23,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 2,
+      "reachable_states": 5
+    },
+    {
+      "layer": 19,
+      "candidate_nodes": 5,
+      "tested_edges": 24,
+      "connected_edges": 18,
+      "step_rejected_pairs": 1,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 6,
+      "reachable_states": 5
+    },
+    {
+      "layer": 20,
+      "candidate_nodes": 5,
+      "tested_edges": 19,
+      "connected_edges": 12,
+      "step_rejected_pairs": 6,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 7,
+      "reachable_states": 5
+    },
+    {
+      "layer": 21,
+      "candidate_nodes": 3,
+      "tested_edges": 13,
+      "connected_edges": 4,
+      "step_rejected_pairs": 2,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 9,
+      "reachable_states": 3
+    },
+    {
+      "layer": 22,
+      "candidate_nodes": 3,
+      "tested_edges": 9,
+      "connected_edges": 3,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 6,
+      "reachable_states": 3
+    },
+    {
+      "layer": 23,
+      "candidate_nodes": 2,
+      "tested_edges": 6,
+      "connected_edges": 2,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 4,
+      "reachable_states": 2
+    },
+    {
+      "layer": 24,
+      "candidate_nodes": 1,
+      "tested_edges": 2,
+      "connected_edges": 1,
+      "step_rejected_pairs": 0,
+      "pose_step_rejected_pairs": 0,
+      "collision_rejected_edges": 1,
+      "reachable_states": 1
+    }
+  ],
+  "edge_tests": 119,
+  "connected_edges": 83,
+  "collision_rejected_edges": 36,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "archived_graph_counts_exact_match": true,
+  "note": "Graph policy collision passes do not certify axis/side or precision at unscreened raw endpoints. Final refinement failure is retained."
+}

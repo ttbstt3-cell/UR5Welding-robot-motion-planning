@@ -1,0 +1,26 @@
+GAO-AR-RRT* COLD-START COMPARISON
+================================
+seed = 20260924
+algorithm_time_sec = 21.750389000
+wall_time_sec = 26.210296000
+first_feasible_time_sec = NaN
+iterations = 25
+ik_calls = 4592
+ik_pose_success = 3977
+ik_success_rate_pct = 86.607143
+accepted_states = 107
+edge_tests = 56
+edge_collision_free = 55
+complete_80_point_path = 0
+node_collision_free = 0
+edge_collision_free_pass = 0
+max_joint_jump_deg = NaN
+max_node_tcp_error_mm = NaN
+max_segment_tcp_error_mm = NaN
+max_segment_tcp_orientation_deg = NaN
+result_mat = /home/ttbstt/jixiebi/UR5/matlab仿真/weld_actual_axis_gao_ar_rrtstar.mat
+
+This is a single cold-start run on the same scene/model.
+It is not a direct numerical comparison with Gao et al. paper times.
+Run repeated seeds for mean/std/success-rate statistics.
+Stable continuation planner was not modified or loaded as a result.

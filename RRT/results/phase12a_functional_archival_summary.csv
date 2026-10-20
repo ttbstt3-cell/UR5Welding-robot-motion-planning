@@ -1,0 +1,25 @@
+caseID,description,algorithm,seed,success,pathValid,planningTime_ms,firstSolutionTime_ms,jointPathCostL2,nodeCount,collisionChecks,pathStateCount,maxJointEdgeStepDeg,firstSolutionIteration,jointLimitsViolated
+"C01_Home_to_PreWeld","real approach transition","RRT-Connect",1,1,1,5441.757,4568.169,10.7128015,74,1680,26,22.792476,65,0
+"C01_Home_to_PreWeld","real approach transition","Bi-RRT*",1,1,1,2194.211,1757.897,5.79759986,6,718,5,172.899752,4,0
+"C01_Home_to_PreWeld","real approach transition","ClassGoal-Lite",1,1,1,28442.891,28024.021,5.6665231,58,7981,8,43.2817734,64,0
+"C01_Home_to_PreWeld","real approach transition","Full Classified-RRT*",1,1,1,33693.046,33358.568,5.20922316,57,9423,3,154.192655,56,0
+"C02_PostWeld_to_Home","real exit transition","RRT-Connect",2,1,1,2225.312,1693.155,6.26021715,18,778,16,20.386164,53,0
+"C02_PostWeld_to_Home","real exit transition","Bi-RRT*",2,1,1,9388.614,8997.15,5.26444302,26,2747,5,116.477045,51,0
+"C02_PostWeld_to_Home","real exit transition","ClassGoal-Lite",2,1,1,2075.138,1700.285,5.1554095,4,676,4,147.906607,44,0
+"C02_PostWeld_to_Home","real exit transition","Full Classified-RRT*",2,1,1,1488.795,1119.768,4.78968122,3,510,3,171.228328,2,0
+"C03_PreWeld_to_Point1","real weld-entry transition","RRT-Connect",3,1,1,708.829,513.183,2.56273939,9,246,7,16.9317973,21,0
+"C03_PreWeld_to_Point1","real weld-entry transition","Bi-RRT*",3,1,1,196.09,184.752,0.0739053026,4,60,2,3.27878856,13,0
+"C03_PreWeld_to_Point1","real weld-entry transition","ClassGoal-Lite",3,1,1,206.158,194.581,0.0739053026,3,60,2,3.27878856,6,0
+"C03_PreWeld_to_Point1","real weld-entry transition","Full Classified-RRT*",3,1,1,541.773,482.059,0.734263011,2,180,3,15.0950664,4,0
+"C04_Point80_to_PostWeld","real weld-exit transition","RRT-Connect",4,1,1,499.551,354.902,1.81767661,7,178,6,15.5350524,13,0
+"C04_Point80_to_PostWeld","real weld-exit transition","Bi-RRT*",4,1,1,417.903,406.597,0.0723473571,5,127,2,3.16998432,21,0
+"C04_Point80_to_PostWeld","real weld-exit transition","ClassGoal-Lite",4,1,1,77.639,66.437,0.0723473571,2,24,2,3.16998432,2,0
+"C04_Point80_to_PostWeld","real weld-exit transition","Full Classified-RRT*",4,1,1,175.543,164.346,0.0723473571,2,61,2,3.16998432,3,0
+"C05_Home_to_Point1","diagnostic near-workpiece/tool case","RRT-Connect",5,1,1,5066.228,4064.706,13.4731467,79,1706,32,20.02627,49,0
+"C05_Home_to_Point1","diagnostic near-workpiece/tool case","Bi-RRT*",5,1,1,19329.34,18882.96,5.64267337,56,5487,10,34.5708068,110,0
+"C05_Home_to_Point1","diagnostic near-workpiece/tool case","ClassGoal-Lite",5,1,1,29933.9,29441.23,6.38336773,60,8424,8,66.2993426,60,0
+"C05_Home_to_Point1","diagnostic near-workpiece/tool case","Full Classified-RRT*",5,1,1,37333.63,36936.625,5.33771279,60,10481,3,145.099894,59,0
+"C06_Simple_5deg","simple local free-space case","RRT-Connect",6,1,1,237.934,159.231,0.861097624,4,82,3,16.3744929,1,0
+"C06_Simple_5deg","simple local free-space case","Bi-RRT*",6,1,1,264.784,192.009,0.861097624,3,92,3,16.3744929,1,0
+"C06_Simple_5deg","simple local free-space case","ClassGoal-Lite",6,1,1,298.195,226.394,0.861097624,2,102,3,16.3744929,1,0
+"C06_Simple_5deg","simple local free-space case","Full Classified-RRT*",6,1,1,330.25,258.743,0.861097624,2,112,3,16.3744929,1,0

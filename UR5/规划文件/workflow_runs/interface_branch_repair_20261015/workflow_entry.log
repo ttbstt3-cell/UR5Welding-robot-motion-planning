@@ -1,0 +1,16 @@
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_x0
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_x0
+                                pass: 1
+                      executionReady: 0
+                            attempts: {[1×1 struct]  [1×1 struct]}
+                 requested_start_rad: [-1.2761 -2.0179 1.5659 … ] (1×6 double)
+                  requested_goal_rad: [-1.6585 -1.1573 1.3751 … ] (1×6 double)
+             selected_representation: 'RAW_NUMERIC_PHYSICAL_EDGES'
+                      failure_reason: ''
+       original_path_nodes_preserved: 1
+                   output_node_count: 165
+    actual_long_rotation_revalidated: 1
+                      physical_audit: [1×1 struct]
+

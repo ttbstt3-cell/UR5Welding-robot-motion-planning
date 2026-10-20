@@ -1,0 +1,29 @@
+{
+  "method": "vtkDecimatePro topology-preserving",
+  "target_reduction": 0.98,
+  "absolute_error_setting_mm": 0.1,
+  "source_faces": 1251936,
+  "collision_input_faces": 74556,
+  "sample_count": 10000,
+  "sampled_max_surface_distance_mm": 0.8838510358405545,
+  "sampled_rms_surface_distance_mm": 0.0542494872097206,
+  "source_bounds_mm": [
+    38.13095474243164,
+    390.5365295410156,
+    0.3627450168132782,
+    196.8589324951172,
+    7.914309501647949,
+    73.914306640625
+  ],
+  "derived_bounds_mm": [
+    38.13095474243164,
+    390.53436279296875,
+    0.3932141661643982,
+    196.81468200683594,
+    7.914309501647949,
+    73.914306640625
+  ],
+  "source_modified": false,
+  "recenter_rotate_applied": false,
+  "note": "Sampled distance, not a certified continuous Hausdorff bound; original full mesh is visual only."
+}

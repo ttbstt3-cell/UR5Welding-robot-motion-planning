@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "checks": {
+    "invalid_endpoint_keeps_precise_failure": true,
+    "stale_home_rejected_before_expensive_audit": true,
+    "invalid_clock_rejected": true,
+    "stale_raw_fails_closed": true,
+    "no_export_on_failure": true,
+    "legacy_reference_default_identical": true,
+    "reference_finite": true,
+    "single_timing_owner_analytic_pass": true
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

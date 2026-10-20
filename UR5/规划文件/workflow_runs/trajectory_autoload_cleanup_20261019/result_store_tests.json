@@ -1,0 +1,12 @@
+{
+  "pass_all": true,
+  "byte_identical_q_time_velocity_metadata": true,
+  "renamed_trajectory_and_associated_report_pass": true,
+  "latest_selection_pass": true,
+  "new_preview_invalidates_old_continuous_selection": true,
+  "invalid_phase_and_failed_collision_rejected": true,
+  "tampered_latest_rejected": true,
+  "original_inputs_unchanged": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

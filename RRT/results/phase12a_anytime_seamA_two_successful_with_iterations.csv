@@ -1,0 +1,5 @@
+taskID,description,algorithm,seed,effectiveSeed,success,certifiedSuccess,outcome,planningTime_ms,firstSolutionTime_ms,firstPathLengthL2_rad,bestPathLengthAt30s,iterations,firstSolutionIteration,samples,nodeCount,edgeCollisionChecks,collisionConfigurationChecks,candidateCount,candidateValidationFailures,totalJointMotion_rad
+Home_to_PreWeld,Home -> PreWeld,RRT-Connect,1,20260917,1,1,success,2909.07,2907.586,5.70177200025913,5.70177200025913,35,35,35,39,122,743,1,0,11.6042959872351
+Home_to_PreWeld,Home -> PreWeld,Bi-RRT*,1,20260917,1,1,timeout_with_solution,30002.134,8364.633,6.34953510763476,5.18451219015354,63,37,63,45,256,8256,11,2,10.8502384958754
+PostWeld_to_Home,PostWeld -> Home,RRT-Connect,1,20268836,1,1,success,3503.214,3502.602,6.28588457831738,6.28588457831738,89,89,89,57,192,970,1,0,12.6222017071322
+PostWeld_to_Home,PostWeld -> Home,Bi-RRT*,1,20268836,1,1,timeout_with_solution,30002.8,11765.281,5.14732738393573,5.14732738393573,120,83,120,60,363,8238,8,1,10.5584586645222

@@ -1,0 +1,7 @@
+HYBRID cap_fraction=0.90 iteration=1
+{Unrecognized field name "jointLimits".
+
+Error in hmi_select_hybrid_velocity_candidate (line 39)
+    all(m.position_min>=scene.jointLimits(:,1).') && all(m.position_max<=scene.jointLimits(:,2).'),...
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+} 

@@ -1,0 +1,652 @@
+{
+  "robot_motion": "NO",
+  "executionReady": false,
+  "source_run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_143725_608305",
+  "scene_sha256": "3026c8bd194140571304ef32e6086466c5b73fce28d1ae64527d2308be40bd34",
+  "calibration_binding": {
+    "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+    "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+    "workpiece_sha256": "a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+    "planning_scene": "REAL_CALIBRATION",
+    "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+    "gun_geometry_version": "real-gun-1791876831259595871",
+    "workpiece_pose_version": "WORKPIECE-a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+    "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4"
+  },
+  "seam_candidate_file": "/home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/hybrid_velocity_20261014_final/hybrid_velocity_diagnostic.mat",
+  "seam_candidate_sha256": "b91072f2fa9d618b0b406cf6667ac1704c2606a28ac6313e2cf455321df37aa5",
+  "states": [
+    {
+      "label": "requested_q0",
+      "q_rad": [
+        3.1415926535897931,
+        -1.5707963267948966,
+        0,
+        -1.5707963267948966,
+        0,
+        0
+      ],
+      "q_deg": [
+        180,
+        -90,
+        0,
+        -90,
+        0,
+        0
+      ],
+      "within_joint_limits": true,
+      "self_collision": false,
+      "environment_collision": false,
+      "TCP_pose_URDFroot": [
+        [
+          0.86260853564408646,
+          0.49814602842744282,
+          0.088074108544630589,
+          0.0054966180189009121
+        ],
+        [
+          0.2977603551324281,
+          -0.64073235283392649,
+          0.707672821961753,
+          -0.58442506252912163
+        ],
+        [
+          0.40895633647783952,
+          -0.58421963882932426,
+          -0.701029334950227,
+          1.0172925155828441
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "TCP_pose_base": [
+        [
+          -0.86260853564408646,
+          -0.49814602842744288,
+          -0.0880741085446305,
+          -0.0054966180189009841
+        ],
+        [
+          -0.29776035513242821,
+          0.64073235283392638,
+          -0.707672821961753,
+          0.58442506252912163
+        ],
+        [
+          0.40895633647783952,
+          -0.58421963882932426,
+          -0.701029334950227,
+          1.0172925155828441
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flange_pose_base": [
+        [
+          0.0015643585035763027,
+          0.99999877492882094,
+          5.40678243542372E-5,
+          0.00030445086233527128
+        ],
+        [
+          0.99999633285801148,
+          -0.0015642351524226704,
+          -0.0022107552820875478,
+          0.19355695389029087
+        ],
+        [
+          -0.0022106679989634974,
+          5.7526039904708143E-5,
+          -0.99999755481588726,
+          1.0015847642760105
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "collision_pairs": [],
+      "collision_details": [],
+      "forearm_wrist2_collision": false,
+      "minimum_positive_separation_mm": 11.703558322931142,
+      "forearm_wrist2_separation_mm": 14.431391718206434,
+      "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of colliding configuration"
+    },
+    {
+      "label": "requested_zero",
+      "q_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "within_joint_limits": true,
+      "self_collision": false,
+      "environment_collision": false,
+      "TCP_pose_URDFroot": [
+        [
+          0.86322246285140569,
+          0.49682331811577235,
+          0.089518546710660771,
+          0.82208355922669751
+        ],
+        [
+          -0.29724159599707484,
+          0.643541563575581,
+          -0.70533799667947,
+          0.58498136034246084
+        ],
+        [
+          -0.40803726942261787,
+          0.58225496694071255,
+          0.70319608946225165,
+          -0.022549233887378003
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "TCP_pose_base": [
+        [
+          -0.86322246285140569,
+          -0.49682331811577229,
+          -0.089518546710660854,
+          -0.8220835592266974
+        ],
+        [
+          0.29724159599707473,
+          -0.64354156357558112,
+          0.70533799667947,
+          -0.584981360342461
+        ],
+        [
+          -0.40803726942261787,
+          0.58225496694071255,
+          0.70319608946225165,
+          -0.022549233887378003
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flange_pose_base": [
+        [
+          0.0036168686121676231,
+          0.999993457263468,
+          6.0759351617748344E-5,
+          -0.81708458145013818
+        ],
+        [
+          -0.99999309343812459,
+          0.003616919243925599,
+          -0.00085496855690694786,
+          -0.19415216242532657
+        ],
+        [
+          -0.00085518272474105093,
+          -5.7666623041659869E-5,
+          0.99999963266846659,
+          -0.005643244451147186
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "collision_pairs": [],
+      "collision_details": [],
+      "forearm_wrist2_collision": false,
+      "minimum_positive_separation_mm": 11.896653119695213,
+      "forearm_wrist2_separation_mm": 15.218745872700026,
+      "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of colliding configuration"
+    },
+    {
+      "label": "actual_request_start",
+      "q_rad": [
+        5.3282623291015625,
+        -1.7395442167865198,
+        1.1256504058837891,
+        1.4655367136001587,
+        1.8208539485931396,
+        -0.17249614397157842
+      ],
+      "q_deg": [
+        305.28694359606561,
+        -99.668541898257914,
+        64.495017464329209,
+        83.969068410761963,
+        104.32724636411787,
+        -9.8833010318524614
+      ],
+      "within_joint_limits": true,
+      "self_collision": true,
+      "environment_collision": false,
+      "TCP_pose_URDFroot": [
+        [
+          -0.97375036740767706,
+          0.046333741862774544,
+          0.22285288048039398,
+          0.255959047285637
+        ],
+        [
+          -0.036019517495085557,
+          -0.99809302638865938,
+          0.050128884226043113,
+          -0.39072678114503284
+        ],
+        [
+          0.22475056469970528,
+          0.040785966205552693,
+          0.97356237017863556,
+          0.31860423470479654
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "TCP_pose_base": [
+        [
+          0.97375036740767706,
+          -0.046333741862774669,
+          -0.22285288048039398,
+          -0.25595904728563706
+        ],
+        [
+          0.036019517495085675,
+          0.99809302638865938,
+          -0.050128884226043141,
+          0.39072678114503279
+        ],
+        [
+          0.22475056469970528,
+          0.040785966205552693,
+          0.97356237017863556,
+          0.31860423470479654
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flange_pose_base": [
+        [
+          -0.16445699829176147,
+          -0.79696912262570929,
+          -0.58120057922723312,
+          -0.20642704938637743
+        ],
+        [
+          0.66461703172344044,
+          -0.52492085568179248,
+          0.53173517507629509,
+          0.13642566582819726
+        ],
+        [
+          -0.728860821320495,
+          -0.298828233022756,
+          0.616006160920904,
+          0.61175229991229585
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "collision_pairs": [
+        "forearm_link <-> wrist_2_link"
+      ],
+      "collision_details": [
+        {
+          "type": "self",
+          "a": "forearm_link",
+          "b": "wrist_2_link",
+          "penetration_depth_mm": [],
+          "distance_status": "Collision; native signed penetration unavailable"
+        }
+      ],
+      "forearm_wrist2_collision": true,
+      "minimum_positive_separation_mm": 4.6278746454678767,
+      "forearm_wrist2_separation_mm": [],
+      "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of colliding configuration"
+    },
+    {
+      "label": "cached_qPreWeld",
+      "q_rad": [
+        4.8670724192112909,
+        -0.082331807571531135,
+        -0.99156682723357337,
+        -0.31462054664292993,
+        -1.255320578896455,
+        0.14421797050570034
+      ],
+      "q_deg": [
+        278.86270820533429,
+        -4.71726509353197,
+        -56.812594305661413,
+        -18.026429470738748,
+        -71.924571106686145,
+        8.2630810399188164
+      ],
+      "within_joint_limits": true,
+      "self_collision": false,
+      "environment_collision": true,
+      "TCP_pose_URDFroot": [
+        [
+          0.750587913636065,
+          0.64904511528178577,
+          -0.12392829472042667,
+          0.35649488714113708
+        ],
+        [
+          -0.50437306374809221,
+          0.68392882794315235,
+          0.52711400178108359,
+          -0.59205440440622414
+        ],
+        [
+          0.42687890140978219,
+          -0.33313930515200224,
+          0.840709585346818,
+          0.0073155897911461043
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "TCP_pose_base": [
+        [
+          -0.75058791363606514,
+          -0.64904511528178566,
+          0.12392829472042674,
+          -0.35649488714113714
+        ],
+        [
+          0.5043730637480921,
+          -0.68392882794315246,
+          -0.52711400178108359,
+          0.59205440440622414
+        ],
+        [
+          0.42687890140978219,
+          -0.33313930515200224,
+          0.840709585346818,
+          0.0073155897911461043
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flange_pose_base": [
+        [
+          -0.27853457492663497,
+          0.96030398940945771,
+          0.015321177980776245,
+          -0.2412262447351011
+        ],
+        [
+          -0.21760378849932552,
+          -0.0475619231785127,
+          -0.97487766139875343,
+          0.66063818692849641
+        ],
+        [
+          -0.93545020273725943,
+          -0.27487108139606314,
+          0.22221342626173446,
+          0.37483112559199644
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "collision_pairs": [
+        "forearm_link <-> WorkpieceCollision_wall_x1"
+      ],
+      "collision_details": [
+        {
+          "type": "environment",
+          "a": "forearm_link",
+          "b": "WorkpieceCollision_wall_x1",
+          "penetration_depth_mm": [],
+          "distance_status": "Collision; native signed penetration unavailable"
+        }
+      ],
+      "forearm_wrist2_collision": false,
+      "minimum_positive_separation_mm": 0.64154319035962648,
+      "forearm_wrist2_separation_mm": 14.753033665119565,
+      "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of colliding configuration"
+    }
+  ],
+  "qOffset": {
+    "offset_deg": [
+      180,
+      -90,
+      0,
+      -90,
+      0,
+      0
+    ],
+    "frozen_adapter_equation": "qMat=qCop+qOffset (Coppelia joint convention only)",
+    "frozen_qCop0_deg": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "real_scene_qMat0_deg": [
+      305.28694359606561,
+      -99.668541898257914,
+      64.495017464329209,
+      83.969068410761963,
+      104.32724636411787,
+      -9.8833010318524614
+    ],
+    "actual_request_qStart_deg": [
+      305.28694359606561,
+      -99.668541898257914,
+      64.495017464329209,
+      83.969068410761963,
+      104.32724636411787,
+      -9.8833010318524614
+    ],
+    "real_qMat0_matches_request_home": true,
+    "real_input_offset_applied": false,
+    "conclusion": "REAL builder replaces qMat0 with saved RealHome. HMI sends ROS joint values directly; preview planner and FK do not add qOffset.",
+    "display_conversion": "T_base_pose = inv(T_URDFroot_base)*T_URDFroot_pose; frame rotation does not change joint values",
+    "T_URDFroot_base": [
+      [
+        -1,
+        -1.2246467991473532E-16,
+        0,
+        0
+      ],
+      [
+        1.2246467991473532E-16,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "failure_return_regression": [
+    {
+      "source": "/home/ttbstt/jixiebi/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_start_and_goal_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": true,
+        "environmentRaw": false,
+        "selfRaw": true
+      },
+      "goal_check": {
+        "environmentCollision": true,
+        "selfCollision": false,
+        "environmentRaw": true,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    },
+    {
+      "source": "/home/ttbstt/jixiebi/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_start_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": true,
+        "environmentRaw": false,
+        "selfRaw": true
+      },
+      "goal_check": {
+        "environmentCollision": false,
+        "selfCollision": false,
+        "environmentRaw": false,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    },
+    {
+      "source": "/home/ttbstt/jixiebi/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_goal_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": false,
+        "environmentRaw": false,
+        "selfRaw": false
+      },
+      "goal_check": {
+        "environmentCollision": true,
+        "selfCollision": false,
+        "environmentRaw": true,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    },
+    {
+      "source": "/home/ttbstt/jixiebi/UR5/机械臂控制算法/源码副本/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_start_and_goal_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": true,
+        "environmentRaw": false,
+        "selfRaw": true
+      },
+      "goal_check": {
+        "environmentCollision": true,
+        "selfCollision": false,
+        "environmentRaw": true,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    },
+    {
+      "source": "/home/ttbstt/jixiebi/UR5/机械臂控制算法/源码副本/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_start_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": true,
+        "environmentRaw": false,
+        "selfRaw": true
+      },
+      "goal_check": {
+        "environmentCollision": false,
+        "selfCollision": false,
+        "environmentRaw": false,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    },
+    {
+      "source": "/home/ttbstt/jixiebi/UR5/机械臂控制算法/源码副本/RRT/jointspace/FastConnectAnytimeRRTStarJoint.m",
+      "pass": true,
+      "success": false,
+      "reason": "invalid_goal_collision",
+      "start_check": {
+        "environmentCollision": false,
+        "selfCollision": false,
+        "environmentRaw": false,
+        "selfRaw": false
+      },
+      "goal_check": {
+        "environmentCollision": true,
+        "selfCollision": false,
+        "environmentRaw": true,
+        "selfRaw": false
+      },
+      "iterations": 0,
+      "tree_nodes": 0
+    }
+  ]
+}

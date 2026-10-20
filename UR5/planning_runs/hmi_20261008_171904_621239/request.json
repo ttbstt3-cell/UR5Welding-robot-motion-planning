@@ -1,0 +1,26 @@
+{
+ "request_id": "20261008_171904_621239",
+ "task": "Weld_Seam",
+ "qStart": [
+  -0.014894647819507709,
+  4.583678798565408,
+  -1.5827839940260957,
+  4.875095607430998,
+  -4.481179136277017,
+  -3.8834036633603373
+ ],
+ "qGoal": [
+  0.10103311567507861,
+  4.554816683704839,
+  -1.4847377912913284,
+  4.802397855108552,
+  -5.033633228372634,
+  -4.331702979668904
+ ],
+ "algorithm": "Constraint-aware Bidirectional RRT* (CBi-RRT*)",
+ "seed": 20260917,
+ "maxPlanningTimeSec": 30.0,
+ "start_source": "real_home",
+ "endpoint_source": "weld_anchor_points.json:qPreWeld -> qPostWeld",
+ "weld_algorithm": "ACCP (replan_weld_actual_axis_adaptive_feasibility.m)"
+}

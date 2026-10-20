@@ -1,0 +1,8 @@
+INITIAL_QP_FROZEN nodes=360
+{Error using cellfun
+Input #2 expected to be a cell array, was struct instead.
+
+Error in prepare_qp_diagnostic_inputs (line 21)
+assert(all(cellfun(@(x)~x.pass,old.velocity_optimization.refinement_trials)));
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

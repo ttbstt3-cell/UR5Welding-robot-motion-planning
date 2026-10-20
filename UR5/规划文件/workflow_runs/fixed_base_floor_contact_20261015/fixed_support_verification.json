@@ -1,0 +1,108 @@
+{
+  "status": "MODEL_VERIFIED_FIXED_SUPPORT",
+  "eligible": true,
+  "pair": [
+    "base_link_inertia",
+    "EnvironmentCollision_Floor"
+  ],
+  "fixed_joint_chain": [
+    {
+      "body": "base_link_inertia",
+      "joint": "base_link-base_link_inertia",
+      "type": "fixed"
+    },
+    {
+      "body": "base_link",
+      "joint": "base_joint",
+      "type": "fixed"
+    }
+  ],
+  "all_joints_to_root_fixed": true,
+  "sample_count": 10,
+  "max_base_transform_drift": 0,
+  "base_inside_floor_footprint": true,
+  "floor_horizontal": true,
+  "base_lowest_z_in_floor_frame_m": 0.099997445036098365,
+  "floor_top_z_in_floor_frame_m": 0.10000009089708328,
+  "vertical_gap_mm": -0.0026458609849178139,
+  "vertical_bounds_overlap_mm": 0.0026458609849178139,
+  "classification_band_mm": 0.01,
+  "T_root_base_body": [
+    [
+      -1,
+      -1.2246467991473532E-16,
+      0,
+      0
+    ],
+    [
+      1.2246467991473532E-16,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "floor_pose": [
+    [
+      6.123233995736766E-17,
+      -1,
+      0,
+      -0.87500001224285051
+    ],
+    [
+      1,
+      6.123233995736766E-17,
+      0,
+      -0.54999993392477664
+    ],
+    [
+      0,
+      0,
+      1,
+      -0.099999844355881218
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "floor_size_m": [
+    5,
+    5,
+    0.20000018179416656
+  ],
+  "robot_collision_counts": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    10,
+    0,
+    1
+  ],
+  "physical_installation_independently_measured": false,
+  "scope": "Model evidence of normal fixed support only; overlap is bounds-based, not penetration depth",
+  "executionReady": false,
+  "robot_motion": "NO"
+}

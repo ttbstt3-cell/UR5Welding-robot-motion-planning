@@ -1,0 +1,3 @@
+HMI_WELD_STAGE stage=BOUNDARIES
+HMI_WELD_STAGE stage=VELOCITY_OPTIMIZATION
+PREPARATION_FAILED Boundary velocity/acceleration continuity infeasible under fixed weld nodes/timestamps

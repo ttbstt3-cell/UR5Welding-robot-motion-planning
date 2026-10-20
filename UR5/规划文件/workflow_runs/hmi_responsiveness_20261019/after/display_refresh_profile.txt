@@ -1,0 +1,33 @@
+         3302281 function calls (3264391 primitive calls) in 0.817 seconds
+
+   Ordered by: cumulative time
+   List reduced from 260 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       30    0.000    0.000    0.817    0.027 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:1969(_refresh_state_display)
+       30    0.000    0.000    0.790    0.026 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:3000(_update_online_start_display)
+       30    0.000    0.000    0.789    0.026 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/main_window.py:2996(_saved_real_home)
+       30    0.000    0.000    0.789    0.026 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/realhome_workflow.py:96(_read_saved_real_home)
+       30    0.000    0.000    0.789    0.026 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/realhome_workflow.py:93(_saved_real_home_record)
+       30    0.000    0.000    0.788    0.026 /home/ttbstt/jixiebi/UR5/ur5_hmi/gui/realhome_workflow.py:34(read_realhome_record)
+       30    0.000    0.000    0.773    0.026 /usr/lib/python3/dist-packages/yaml/__init__.py:154(safe_load)
+       30    0.004    0.000    0.773    0.026 /usr/lib/python3/dist-packages/yaml/__init__.py:103(load)
+       30    0.000    0.000    0.767    0.026 /usr/lib/python3/dist-packages/yaml/constructor.py:47(get_single_data)
+       30    0.000    0.000    0.732    0.024 /usr/lib/python3/dist-packages/yaml/composer.py:29(get_single_node)
+       30    0.000    0.000    0.730    0.024 /usr/lib/python3/dist-packages/yaml/composer.py:50(compose_document)
+ 17610/30    0.016    0.000    0.730    0.024 /usr/lib/python3/dist-packages/yaml/composer.py:63(compose_node)
+   810/30    0.005    0.000    0.730    0.024 /usr/lib/python3/dist-packages/yaml/composer.py:117(compose_mapping_node)
+    52230    0.016    0.000    0.669    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:94(check_event)
+   126600    0.045    0.000    0.550    0.000 /usr/lib/python3/dist-packages/yaml/scanner.py:113(check_token)
+    27300    0.031    0.000    0.429    0.000 /usr/lib/python3/dist-packages/yaml/scanner.py:156(fetch_more_tokens)
+ 1470/690    0.005    0.000    0.280    0.000 /usr/lib/python3/dist-packages/yaml/composer.py:99(compose_sequence_node)
+    15120    0.007    0.000    0.265    0.000 /usr/lib/python3/dist-packages/yaml/scanner.py:668(fetch_plain)
+    15120    0.062    0.000    0.240    0.000 /usr/lib/python3/dist-packages/yaml/scanner.py:1270(scan_plain)
+     5970    0.005    0.000    0.216    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:446(parse_block_mapping_value)
+     6780    0.006    0.000    0.181    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:427(parse_block_mapping_key)
+     3420    0.003    0.000    0.132    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:402(parse_indentless_sequence_entry)
+    17610    0.027    0.000    0.124    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:273(parse_node)
+     3540    0.003    0.000    0.116    0.000 /usr/lib/python3/dist-packages/yaml/parser.py:381(parse_block_sequence_entry)
+   210810    0.050    0.000    0.094    0.000 /usr/lib/python3/dist-packages/yaml/scanner.py:145(need_more_tokens)
+
+

@@ -1,0 +1,12 @@
+{
+  "pass_all": true,
+  "latest_file": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-19_11-04-48_976674.mat",
+  "node_count": 416,
+  "default_dialog_selects_latest": true,
+  "manual_import_resumes_preview_for_continuous_planning": true,
+  "byte_identical_to_original": true,
+  "named_report_associated": true,
+  "execution_disabled_until_checks_and_manual_confirmation": true,
+  "no_motion_signals": true,
+  "calibration_config_unchanged": true
+}

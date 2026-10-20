@@ -1,0 +1,88 @@
+{
+  "pass": true,
+  "scope": "10 cold runs; same saved scene/Home/seed/parameters; only exact memoization differs",
+  "rows": [
+    {
+      "group": "cache_on",
+      "run": 1,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": true
+    },
+    {
+      "group": "cache_on",
+      "run": 2,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": true
+    },
+    {
+      "group": "cache_on",
+      "run": 3,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": true
+    },
+    {
+      "group": "cache_on",
+      "run": 4,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": true
+    },
+    {
+      "group": "cache_on",
+      "run": 5,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": true
+    },
+    {
+      "group": "cache_off",
+      "run": 1,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": false
+    },
+    {
+      "group": "cache_off",
+      "run": 2,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": false
+    },
+    {
+      "group": "cache_off",
+      "run": 3,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": false
+    },
+    {
+      "group": "cache_off",
+      "run": 4,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": false
+    },
+    {
+      "group": "cache_off",
+      "run": 5,
+      "same_numeric_path_and_targets": true,
+      "same_options_except_output": true,
+      "geometry_complete": false,
+      "exact_cache_enabled": false
+    }
+  ],
+  "executionReady": false,
+  "robot_motion": "NO"
+}

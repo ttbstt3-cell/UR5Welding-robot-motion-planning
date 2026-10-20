@@ -1,0 +1,6 @@
+REAL environment loaded: 3 source objects, 3 enabled collision objects (/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/environment_extension_20261014/synthetic_loader_test/synthetic_environment_fixture.json)
+SYNTHETIC ENVIRONMENT TEST COLLISION CHECK: COLLISION/INVALID
+  base_link_inertia <-> EnvironmentTest_robot
+  WeldingGunMount <-> EnvironmentTest_gun
+  WeldingGunWire <-> EnvironmentTest_wire
+SYNTHETIC environment regression PASS: /home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/environment_extension_20261014/synthetic_loader_test

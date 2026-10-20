@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "robot_motion": "NO",
+  "executionReady": false,
+  "valid_numeric_path_pass": true,
+  "equivalent_wrong_start_rejected": true,
+  "over_limit_equivalent_branch_rejected": true,
+  "actual_360_edge_rejected": true,
+  "actual_360_edge_samples": 721,
+  "old_preview_preparation_rejected": true
+}

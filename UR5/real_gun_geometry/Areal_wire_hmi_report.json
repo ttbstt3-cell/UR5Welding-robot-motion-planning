@@ -1,0 +1,51 @@
+{
+  "status": "OFFLINE_PREVIEW_PASS",
+  "pose_count": 10,
+  "errors": [
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 7.850462293418876e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 0.0
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.721958498152797e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 1.3877787807814457e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    },
+    {
+      "visual_error_mm": 0.0,
+      "collision_error_mm": 5.551115123125783e-14
+    }
+  ],
+  "diameter_mm": 1.2,
+  "collision_cylinder_present": true,
+  "live_feedback_unchanged": true,
+  "execution_authorized": false,
+  "robot_motion": "NO"
+}

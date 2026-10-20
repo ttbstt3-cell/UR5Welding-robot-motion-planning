@@ -1,0 +1,67 @@
+{
+  "snapshot": "last",
+  "scope": "ISOLATED_TCP_INTERNAL_RHS_DIAGNOSTIC_ONLY",
+  "formal_position_gate_mm": 0.5,
+  "formal_orientation_gate_deg": 0.5,
+  "production_unchanged": true,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "trials": [
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.46,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 3.771884,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.55,
+      "other_TCP_bound": 0.46,
+      "exitflag": -2,
+      "message": "No feasible solution found.\n\nLinprog stopped because no point satisfies the constraints.",
+      "elapsed_sec": 5.217445,
+      "linear_feasible": false,
+      "executionReady": false,
+      "collision_status": "NOT_RUN"
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.65,
+      "other_TCP_bound": 0.46,
+      "exitflag": 1,
+      "message": "Optimal solution found.",
+      "elapsed_sec": 15.284589,
+      "linear_feasible": true,
+      "executionReady": false,
+      "collision_status": "NOT_RUN",
+      "original_residual": 1.8891057607106632E-9
+    },
+    {
+      "changed_TCP_group": 4,
+      "internal_bound": 0.8,
+      "other_TCP_bound": 0.46,
+      "exitflag": 1,
+      "message": "Optimal solution found.",
+      "elapsed_sec": 15.610865,
+      "linear_feasible": true,
+      "executionReady": false,
+      "collision_status": "NOT_RUN",
+      "original_residual": 1.6093864019239845E-9
+    }
+  ],
+  "minimum_bounds": [
+    {
+      "changed_TCP_group": 4,
+      "other_TCP_bound": 0.46,
+      "exitflag": 0,
+      "message": "Solver stopped prematurely.\n\nLinprog stopped because it exceeded the time limit, options.MaxTime = 90.",
+      "elapsed_sec": 90.519928,
+      "executionReady": false
+    }
+  ]
+}

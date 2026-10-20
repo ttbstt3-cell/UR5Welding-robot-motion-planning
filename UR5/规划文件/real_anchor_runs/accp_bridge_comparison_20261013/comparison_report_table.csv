@@ -1,0 +1,3 @@
+algorithm,configuration_pass,overall_pass,execution_ready,original_points,expanded_points,failed_point,recovery_points,added_selected_bridge_nodes,total_ik_calls,planning_time_sec,refined_tcp_contour_max_mm,controller_tcp_contour_max_mm,controller_tcp_time_sync_max_mm,controller_orientation_max_deg,controller_max_velocity_rad_s,controller_max_acceleration_rad_s2,collision_pass,selected_bridge_min_clearance_mm,controller_min_clearance_mm
+baseline_original_accp,0,0,0,21,21,20,,0,3026,29.283615000,,,,,,,0,,
+improved_accp_with_cartesian_bridge,1,1,0,21,24,,20,3,3898,214.838504000,0.076950408,0.187599835,2.885363725,0.694329612,0.074036738,0.323358589,1,0.579816491,0.484626267

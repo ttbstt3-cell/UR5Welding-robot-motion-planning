@@ -1,0 +1,45 @@
+              exporter_velocity_rule: '[zeros(1,6); diff(qPath)./diff(timeFromStart)]'
+                       interpolation: 'joint-space cubic Hermite (positions+velocities)'
+               sample_count_per_edge: 101
+          max_same_time_tcp_error_mm: 2.3314
+    max_geometric_chord_deviation_mm: 0.3849
+                          worst_edge: 27
+        sampled_cubic_collision_pass: 1
+              collision_sample_count: 630
+     sampled_cubic_joint_limits_pass: 1
+                                note: 'Time-phase error differs from geometric path deviation; no robot execution tested'
+                        robot_motion: 'NO'
+
+refine_accp_cartesian_path.m
+interpolate_tcp_pose_slerp.m
+test_accp_cartesian_refinement.m
+  3×1 struct array with fields:
+
+    id
+    message
+    fix
+    line
+    column
+
+audit_accp_export_interpolation.m
+         id: 'MSNU'
+    message: 'A Code Analyzer message was once suppressed here, but the message is no longer generated.'
+        fix: 1
+       line: 44
+     column: [77 87]
+
+replan_weld_actual_axis_adaptive_feasibility.m
+         id: 'MSNU'
+    message: 'A Code Analyzer message was once suppressed here, but the message is no longer generated.'
+        fix: 1
+       line: 563
+     column: [39 49]
+
+  10×1 struct array with fields:
+
+    id
+    message
+    fix
+    line
+    column
+

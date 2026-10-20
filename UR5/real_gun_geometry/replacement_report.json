@@ -1,0 +1,200 @@
+{
+  "schema_version": "real_gun_replacement_report_v2",
+  "status": "STAGED_ALIGNMENT_AND_COVERAGE_REVIEW_REQUIRED",
+  "source_stl": {
+    "stl": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/welding_gun_source.STL",
+    "sha256": "437e28161ee9f50ad688f6f4239f432775dc6a9594f331a13110a89847442699",
+    "units": "mm",
+    "scale_to_m": 0.001,
+    "source_frame": "STL_SOURCE",
+    "audit_file": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/stl_audit.json"
+  },
+  "backup_dir": "/home/ttbstt/jixiebi/UR5/backups/gun_geometry_20261010_184312",
+  "collision": {
+    "method": "CoppeliaSim simConvex.vhacd",
+    "component_count": 26,
+    "vertex_count": 853,
+    "face_count": 1602,
+    "parameters": {
+      "resolution": 1000000,
+      "concavity": 0.0025,
+      "plane_downsampling": 4,
+      "hull_downsampling": 4,
+      "alpha": 0.05,
+      "beta": 0.05,
+      "max_vertices": 64,
+      "min_volume": 1e-05,
+      "pca": false,
+      "voxels": true
+    },
+    "elapsed_seconds": 12.308987538999645,
+    "component_frame_error_m": 3.175536403743624e-09,
+    "collision_input": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/welding_gun_source.STL",
+    "coppelia_preview_visual": "full source STL"
+  },
+  "collision_input_audit_experimental_derivative_not_used_in_final_full_source_run": {
+    "method": "vtkDecimatePro topology-preserving",
+    "target_reduction": 0.98,
+    "absolute_error_setting_mm": 0.1,
+    "source_faces": 1251936,
+    "collision_input_faces": 74556,
+    "sample_count": 10000,
+    "sampled_max_surface_distance_mm": 0.8838510358405545,
+    "sampled_rms_surface_distance_mm": 0.0542494872097206,
+    "source_bounds_mm": [
+      38.13095474243164,
+      390.5365295410156,
+      0.3627450168132782,
+      196.8589324951172,
+      7.914309501647949,
+      73.914306640625
+    ],
+    "derived_bounds_mm": [
+      38.13095474243164,
+      390.53436279296875,
+      0.3932141661643982,
+      196.81468200683594,
+      7.914309501647949,
+      73.914306640625
+    ],
+    "source_modified": false,
+    "recenter_rotate_applied": false,
+    "note": "Sampled distance, not a certified continuous Hausdorff bound; original full mesh is visual only."
+  },
+  "coverage": {
+    "surface_vertex_sample_count": 20000,
+    "sample_fraction_inside_union": 0.9991,
+    "max_convex_halfspace_violation_mm": 0.8857608557291397,
+    "coverage_note": "Sampled normalized plane violation only; not Euclidean distance, no automatic collision PASS."
+  },
+  "HMI_MATLAB_10_pose_comparison": {
+    "component_center_max_error_mm": 2.8305244335018377e-13,
+    "component_center_RMS_error_mm": 1.2185614416690523e-13,
+    "flange_transform_max_abs_error": 4.440892098500626e-16,
+    "relative_transform_max_fro_error": 7.179850196105465e-16
+  },
+  "saved_home_collision_preview": {
+    "0": {
+      "self_collision": false,
+      "environment_collision": false,
+      "workpiece_review_status": "DRAFT",
+      "collision_acceptance": "NOT_ACCEPTED_UNTIL_PHYSICAL_ALIGNMENT_CONFIRMATION"
+    },
+    "90": {
+      "self_collision": false,
+      "environment_collision": false,
+      "workpiece_review_status": "DRAFT",
+      "collision_acceptance": "NOT_ACCEPTED_UNTIL_PHYSICAL_ALIGNMENT_CONFIRMATION"
+    },
+    "-90": {
+      "self_collision": false,
+      "environment_collision": false,
+      "workpiece_review_status": "DRAFT",
+      "collision_acceptance": "NOT_ACCEPTED_UNTIL_PHYSICAL_ALIGNMENT_CONFIRMATION"
+    }
+  },
+  "HMI_smoke": {
+    "checks": [
+      {
+        "angle_deg": 0,
+        "components": 26,
+        "shared_transform_pass": true,
+        "LIVE_state_unchanged": true,
+        "wire_disabled": true,
+        "installation_confirmed": false
+      },
+      {
+        "angle_deg": 90,
+        "components": 26,
+        "shared_transform_pass": true,
+        "LIVE_state_unchanged": true,
+        "wire_disabled": true,
+        "installation_confirmed": false
+      },
+      {
+        "angle_deg": -90,
+        "components": 26,
+        "shared_transform_pass": true,
+        "LIVE_state_unchanged": true,
+        "wire_disabled": true,
+        "installation_confirmed": false
+      }
+    ],
+    "reload_no_duplicate_actors": true,
+    "robot_motion": "NO"
+  },
+  "HMI_panel_smoke": {
+    "checks": [
+      {
+        "scale": 1.0,
+        "mount_controls": true,
+        "draft_has_source_hash_and_full_transform": true,
+        "ROS_worker_not_started": true,
+        "LIVE_state_unchanged": true
+      },
+      {
+        "scale": 1.25,
+        "mount_controls": true,
+        "draft_has_source_hash_and_full_transform": true,
+        "ROS_worker_not_started": true,
+        "LIVE_state_unchanged": true
+      },
+      {
+        "scale": 1.5,
+        "mount_controls": true,
+        "draft_has_source_hash_and_full_transform": true,
+        "ROS_worker_not_started": true,
+        "LIVE_state_unchanged": true
+      }
+    ],
+    "robot_motion": "NO",
+    "writes_to_calibration": false
+  },
+  "frozen_hash_checks": {
+    "scene_geometry.json": {
+      "current": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "backup": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "unchanged": true
+    },
+    "ur5_tool_calibration.mat": {
+      "current": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "backup": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "unchanged": true
+    },
+    "real_tcp_calibration.json": {
+      "current": "e06a19a8933c74debb79ce6c9df2f50503ab695d25ee457712a8b71db7cbf5a8",
+      "backup": "e06a19a8933c74debb79ce6c9df2f50503ab695d25ee457712a8b71db7cbf5a8",
+      "unchanged": true
+    },
+    "real_tcp_calibration_applied.json": {
+      "current": "a2588c841ef2f16a0ee529752949fe9ce28831e5453909d4ecf197370035eaf9",
+      "backup": "a2588c841ef2f16a0ee529752949fe9ce28831e5453909d4ecf197370035eaf9",
+      "unchanged": true
+    },
+    "workpiece_pose_real.json": {
+      "current": "15bb2e2e30bd97ff7a2a7433afcd8b3a0ba85816b87fc2c0d5ca8fcc3e9b4d9e",
+      "backup": "15bb2e2e30bd97ff7a2a7433afcd8b3a0ba85816b87fc2c0d5ca8fcc3e9b4d9e",
+      "unchanged": true
+    },
+    "real_robot_description_calibrated.urdf": {
+      "current": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "backup": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "unchanged": true
+    },
+    "ur5.ttt": {
+      "current": "1e2b295f479d96ea51489e7bea7425dc832748695b2c0941ce69315afd642644",
+      "backup": "1e2b295f479d96ea51489e7bea7425dc832748695b2c0941ce69315afd642644",
+      "unchanged": true
+    }
+  },
+  "wire_status": "DISABLED_UNVERIFIED",
+  "old_real_trajectories": "STALE",
+  "activation_blockers": [
+    "STL units/flange mounting datum must be physically confirmed",
+    "Local V-HACD undercoverage requires conservative collision-envelope review",
+    "Recheck Saved RealHome/environment collision with confirmed mounting",
+    "Existing DRAFT workpiece requires its own acceptance; this review does not bypass it"
+  ],
+  "real_TCP_unchanged": true,
+  "robot_motion_sent": false
+}

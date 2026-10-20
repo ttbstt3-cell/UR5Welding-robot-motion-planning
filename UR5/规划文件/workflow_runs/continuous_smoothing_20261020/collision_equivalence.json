@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "states": 105,
+  "environment_collision_states": 66,
+  "self_collision_states": 66,
+  "maximum_pair_distance_difference_m": 0,
+  "bad_policy_rejected": true,
+  "elapsed_sec": 1.391641,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

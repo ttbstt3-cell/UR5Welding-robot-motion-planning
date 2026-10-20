@@ -1,0 +1,12 @@
+{
+  "protected_files_unchanged": true,
+  "native_realhome_validation": "PASS",
+  "source_snapshot_guard": "PASS",
+  "cold_preweld_generation": "FAIL",
+  "failure_reason": "Duplicate field name \"selected_fractions\"",
+  "failed_point": 14,
+  "rrt_entered": false,
+  "old_preweld_cache_used": false,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

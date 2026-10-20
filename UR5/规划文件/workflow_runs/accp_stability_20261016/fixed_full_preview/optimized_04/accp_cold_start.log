@@ -1,0 +1,93 @@
+
+========================================
+REPLAN WELD WITH LOCAL IK CONTINUATION
+========================================
+No previous weld path is used as an input.
+Wire collision diagnostic: shorten=3.000 mm, collision length=52.941479 mm, visual length=55.941479 mm
+Branch reference overridden: [-73.123 -116.040 89.768 -75.517 -79.067 190.807] deg
+  distance from qMat0 = 0.000 deg
+Analytical IK valid for loaded universalUR5: 0
+Analytical IK is not used; numeric IK remains the validated solver.
+ACCP_STAGE stage=CONTINUOUS_IK
+
+Self-collision structural exclusions (attachment only):
+  base_link <-> base
+  base <-> base_link_inertia
+  base_link_inertia <-> shoulder_link
+  shoulder_link <-> upper_arm_link
+  upper_arm_link <-> forearm_link
+  forearm_link <-> wrist_1_link
+  wrist_1_link <-> wrist_2_link
+  wrist_2_link <-> wrist_3_link
+  wrist_3_link <-> flange
+  flange <-> tool0
+  WeldingGunMount <-> wrist_3_link
+  WeldingGunMount <-> ee_link
+  WeldingGunMount <-> WeldTCP
+  WeldingGunMount <-> WeldingGunWire
+All other self-collision pairs remain hard constraints.
+
+Physical welding frame:
+  seam = bottom x wall_y1
+  start WP = [0.0300 0.2300 0.0050] m
+  end   WP = [0.2050 0.2300 0.0050] m
+  tangent = [1.0000 0.0000 0.0000]
+  measured gun axis target = [0.0000 0.7071 -0.7071]
+  work angle to bottom normal = 45.00 deg
+  plate thickness = 5.0 mm
+  welding side = U-interior: y < wall_y1 inner face, z > bottom top face
+
+--- Cold-start bounded continuation ---
+Candidate audit Point 1: node=1 connected=1 kept=1 scoring=1
+Point  1/21: beam states = 1
+Candidate audit Point 2: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 3: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 4: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 5: node=2 connected=1 kept=1 scoring=1
+Point  5/21: beam states = 1, IK calls = 320
+Candidate audit Point 6: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 7: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 8: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 9: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 10: node=2 connected=1 kept=1 scoring=1
+Point 10/21: beam states = 1, IK calls = 680
+Candidate audit Point 11: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 12: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 13: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 14: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 15: node=2 connected=1 kept=1 scoring=1
+Point 15/21: beam states = 1, IK calls = 1088
+Candidate audit Point 16: node=2 connected=1 kept=1 scoring=1
+Candidate audit Point 17: node=6 connected=0 kept=0 scoring=1
+Point 17/21: beam states = 0, IK calls = 1418
+Continuation broke at point 17: NO_CONNECTED_CANDIDATE.
+BRIDGE_ENDPOINT_HARD_CHECK total=14 rejected=9
+Candidate audit Point 21: node=4 connected=4 kept=3 scoring=1
+Candidate audit Point 22: node=3 connected=3 kept=3 scoring=1
+Candidate audit Point 23: node=2 connected=2 kept=2 scoring=1
+Candidate audit Point 24: node=1 connected=1 kept=1 scoring=1
+Point 24/24: beam states = 1, IK calls = 2258
+ACCP_STAGE stage=CARTESIAN_REFINEMENT
+ACCP_STAGE stage=GEOMETRY_PREVIEW_READY timing=DEFERRED_TO_PREPARATION
+
+[PASS] ACCP high-precision path: 24 sparse -> 47 output points.
+Weld points             : 24
+Layers with IK states   : 24 / 24
+Reachable final states  : 1
+Node collision free     : 1
+Edge collision free     : 1
+Max joint jump          : 6.131 deg
+IK calls                : 2258
+IK elapsed              : 14.790627 s
+IK pose-success rate    : 94.60 %
+Max node TCP error      : 0.000137 mm
+Max segment TCP error   : 0.244253 mm
+Max segment TCP orient  : 0.019454 deg
+Fallback used           : 0
+Wire collision model    : enabled
+Approach path planned   : 0
+Exit path planned       : 0
+Algorithm time (scene excluded): 58.055165 s
+ACCP configuration time : 45.974985 s
+ACCP precision time     : 12.080180 s
+Saved result: /home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_04/preview_accp.mat

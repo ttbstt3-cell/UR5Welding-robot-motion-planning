@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "max_fk_matrix_difference": 0,
+  "native_matrices_equal": true,
+  "nearby_values_not_rounded": true,
+  "new_request_cold": true,
+  "statistics": {
+    "environment_queries": 6,
+    "environment_hits": 3,
+    "environment_native_sec": 0.138534,
+    "self_queries": 6,
+    "self_hits": 3,
+    "self_native_sec": 0.076834,
+    "fk_queries": 6,
+    "fk_hits": 3,
+    "fk_native_sec": 0.002046,
+    "ik_calls": 0,
+    "ik_native_sec": 0,
+    "enabled": true,
+    "binding": {
+      "scene_snapshot_sha256": "0d75c011d78aae145b2ab520c35424a48280e7d6f6d9104bc72abac428086927",
+      "realhome_q": [
+        -1.2762191931353968,
+        -2.0178359190570276,
+        1.5659928321838379,
+        -1.318944279347555,
+        -1.3798783461200159,
+        3.3301806449890137
+      ],
+      "collision_rule": "UNCHANGED_NATIVE_EXHAUSTIVE",
+      "calibration_binding": {
+        "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+        "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+        "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "planning_scene": "REAL_CALIBRATION",
+        "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+        "gun_geometry_version": "real-gun-1791876831259595871",
+        "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+        "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+        "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb"
+      }
+    },
+    "environment_native_queries": 3,
+    "self_native_queries": 3,
+    "fk_native_queries": 3,
+    "scope": "One immutable input scene in one function/request; discarded on return",
+    "key": "IEEE754 num2hex of all six raw joint values; no rounding or wrapping"
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

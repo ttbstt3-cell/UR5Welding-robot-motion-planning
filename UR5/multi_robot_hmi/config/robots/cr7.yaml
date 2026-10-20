@@ -1,0 +1,37 @@
+robot_id: CR7
+display_name: CR7
+joint_names: [joint1, joint2, joint3, joint4, joint5, joint6]
+joint_display_names: [J1, J2, J3, J4, J5, J6]
+joint_limits:
+  - [-3.1416, 3.1416]
+  - [-3.1416, 3.1416]
+  - [-4.9742, 4.9742]
+  - [-3.1416, 3.1416]
+  - [-3.1416, 3.1416]
+  - [-6.1082, 6.1082]
+robot_description: /home/ttbstt/jixiebi/cr7/rokae_description/CR7_linux.urdf
+controller_name: ''
+controller_action: ''
+real_home: config/robots/data/cr7/real_home.yaml
+tcp_calibration: config/robots/data/cr7/tcp_calibration.yaml
+planning_model: /home/ttbstt/jixiebi/cr7/matlab仿真/load_cr7_scene.m
+collision_scene_file: /home/ttbstt/jixiebi/cr7/scene_geometry_matlab.json
+scene_geometry_file: null
+workpiece_pose_file: config/robots/data/cr7/workpiece_pose_real.json
+planning_runs_dir: /home/ttbstt/jixiebi/cr7/planning_runs
+trajectory_dir: /home/ttbstt/jixiebi/cr7/planning_runs/trajectories
+log_dir: /home/ttbstt/jixiebi/cr7/planning_runs/logs
+supports_real_robot: false
+supports_ros_control: false
+# CR7 weld execution path is not commissioned; do not route UR5 tasks to it.
+supports_online_planning: false
+matlab_model_root: /home/ttbstt/jixiebi/cr7/matlab仿真
+matlab_scene_script: null
+matlab_planning_entry: /home/ttbstt/jixiebi/cr7/matlab仿真/plan_cr7_rrt.m
+matlab_anchor_file: null
+ros:
+  namespace: /cr7
+  joint_states_topic: /cr7/joint_states
+  tcp_pose_topic: ''
+  controller_name: ''
+  status: CR7 CoppeliaSim joint state only; physical controller not configured

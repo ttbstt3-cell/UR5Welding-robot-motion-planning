@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "calibration_type": "real_gun_mount_adjustment",
+  "coordinate_frame": "URDF flange",
+  "rotation_axis_flange": [
+    1.0,
+    -2.6347356871039033e-19,
+    6.179952383167374e-17
+  ],
+  "rotation_axis_source": "URDF wrist_3_joint / J6 local axis",
+  "roll_deg": 90.0,
+  "translation_flange_mm": [0.0, 0.0, 0.0],
+  "T_flange_adjustment": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_sha256": "437e28161ee9f50ad688f6f4239f432775dc6a9594f331a13110a89847442699",
+  "T_flange_source": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.038130955
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.040914322
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.166858932
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_source_nominal": [
+    [1.0, 0.0, 0.0, -0.038130955],
+    [0.0, 1.0, 0.0, -0.166858932],
+    [0.0, 0.0, 1.0, -0.040914322],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_mount_face": {
+    "method": "STL planar-face bounds / circle fit",
+    "plane": "x = 38.130955 mm",
+    "center_source_mm": [38.130955, 166.858932, 40.914322],
+    "normal_source": [-1.0, 0.0, 0.0],
+    "radius_estimate_mm": 20.12,
+    "fit_note": "Candidate only; verify physical bolt pattern and contact face before confirmation."
+  },
+  "status": "DRAFT",
+  "valid": true,
+  "confirmed_by_operator": false,
+  "applied_to_matlab": false,
+  "requires_replan": true,
+  "requires_collision_revalidation": true,
+  "wire_tcp_error_mm": {
+    "available": false,
+    "reason": "REAL 焊丝停用：未验证几何；不是已通过焊丝碰撞检查",
+    "status": "DISABLED_UNVERIFIED",
+    "distance_mm": null
+  },
+  "timestamp": "2026-10-12T09:34:42+0800",
+  "version": "UR5-HMI-GUN-MOUNT-FACE-CENTER-DRAFT-1",
+  "robot_motion": "NO"
+}

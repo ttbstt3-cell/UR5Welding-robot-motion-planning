@@ -1,0 +1,24 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "stage": "INTERFACE_GEOMETRY",
+  "failure_reason": "approach numeric path violates joint limits; regenerate its pinned branch",
+  "failure_identifier": "PREPARE:InterfaceLimits",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/prepare_hmi_continuous_request.m",
+      "name": "prepare_hmi_continuous_request",
+      "line": 25
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/test_hmi_interface_branch_repair.m",
+      "name": "test_hmi_interface_branch_repair",
+      "line": 21
+    }
+  ],
+  "planning_time": 0.642738
+}

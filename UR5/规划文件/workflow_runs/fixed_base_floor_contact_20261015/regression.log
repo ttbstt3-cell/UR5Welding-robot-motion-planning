@@ -1,0 +1,4 @@
+STRICT HOME COLLISION CHECK: COLLISION/INVALID
+  base_link_inertia <-> EnvironmentCollision_Floor
+FIXED SUPPORT HOME COLLISION CHECK: FREE
+FIXED SUPPORT REGRESSION PASS; one pair only, all moving/tool/wire pairs retained

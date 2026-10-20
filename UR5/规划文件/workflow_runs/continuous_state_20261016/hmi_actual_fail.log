@@ -1,0 +1,17 @@
+ACTUAL_BUTTON_MATLAB_STARTED /home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145746_567676/report.json
+{
+  "test_pass": true,
+  "expected_offline_pass": false,
+  "scope": "Actual HMI QPushButton -> QProcess MATLAB -> callback/state/load. ROS worker disabled; recorded readiness/Home replayed in isolated test YAML, not current live certification.",
+  "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145746_567676/report.json",
+  "stage": "CONTINUOUS_PLANNING_FAILED",
+  "status": "approach numeric path violates joint limits; regenerate its pinned branch",
+  "execution_status": "真机执行准备：未通过（无执行许可）",
+  "elapsed_sec": 7.865018090000376,
+  "live_state_preserved": true,
+  "config_unchanged": true,
+  "executionReady": false,
+  "execute_button_enabled": false,
+  "execution_permit_files": [],
+  "robot_motion": "NO"
+}

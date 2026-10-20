@@ -1,0 +1,15 @@
+{
+  "pass_all": true,
+  "full_task_pass": false,
+  "report": "UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/hybrid_fallback_recovery_20261019/full_prepare/report.json",
+  "full_task_failure": "CONTROLLER_FK_VELOCITY_TIMING_NOT_FEASIBLE",
+  "candidate_recovery_pass": true,
+  "HMI_correctly_failed_closed": true,
+  "final_dense_collision_audit": "NOT_RUN",
+  "rejected_partial_pass_cases": [
+    "genuine full task failure",
+    "partial success disguised as complete"
+  ],
+  "executionReady": false,
+  "robot_motion": "NO"
+}

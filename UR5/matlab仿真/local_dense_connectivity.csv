@@ -1,0 +1,4 @@
+seed,failLayer,windowStart,windowEnd,denseLayers,totalStates,totalIKCalls,forwardFinal,backwardFirst,localChain,minDenseJointDeltaDeg,minPoseCompatibleJointDeltaDeg,transitionFreeEdges,transitionJointRejects,transitionCollisionRejects,diagnosis,elapsedSec
+20269018,15,13,17,17,116,45968,1,5,1,0.080745,0.080745,102,520,17,DENSE_LOCAL_CHAIN_EXISTS,207.205858
+20269019,11,9,13,17,400,45968,14,19,1,0.054148,0.054148,1323,2750,83,DENSE_LOCAL_CHAIN_EXISTS,245.817972
+20269022,17,15,19,17,66,45968,0,0,0,0.167640,0.167640,56,111,18,NODES_EXIST_BUT_INTERPOLATED_COLLISION_BLOCKS_EDGES,120.913532

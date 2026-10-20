@@ -1,0 +1,2 @@
+marginMm,sampleCount,passCount,successRatePct,medianFirstSolutionTimeSec,p90FirstSolutionTimeSec,medianTotalTimeSec,p90TotalTimeSec,medianIkCalls,p90IkCalls,medianTcpErrorMm,p90TcpErrorMm,medianMaxJointJumpDeg,collisionFailureCount,noNodeFailureCount,connectivityFailureCount,runtimeErrorCount
+25,100,89,89,4.372762,10.358788,5.803229,11.4451738,618,1550.60000000001,0.33162621794978,0.440021615324013,8.70272944780268,0,0,11,0

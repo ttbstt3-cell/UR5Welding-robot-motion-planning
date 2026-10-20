@@ -1,0 +1,129 @@
+Paper-guided weld continuation optimization
+Date: 2026-09-23
+
+References used
+---------------
+1. Moscatelli et al. (2026), Vision-based real-time autonomous trajectory
+   planning in robotic laser welding applications: incremental trajectory
+   generation and latency-aware local updates.
+2. Xiao et al. (2027), Path planning and trajectory planning of robot spot
+   welding based on graph attention network deep reinforcement learning and
+   inverse kinematics solution optimization: retain multiple IK candidates
+   and choose them through a bounded continuity/cost graph.
+3. Xu Jiawei (2025), Research on obstacle avoidance motion planning for
+   robotic arms in ship narrow-space welding operations: conservative
+   collision geometry, bidirectional search and staged trajectory checks.
+
+Implemented idea
+----------------
+The current 80-point weld path uses a cold-start local continuation.  Instead
+of evaluating the full 3x3 pose neighborhood at every point, normal layers
+use a five-pose local neighborhood.  If a layer has no feasible state, only
+that layer is expanded to the nine-pose neighborhood.  The same IK seeds,
+pose limits, joint limits, welding-side constraint, full node collision,
+self-collision and interpolated edge collision tests are retained.
+
+This is an incremental, bounded candidate strategy.  It is not a neural
+network or an unverified analytical IK replacement, and it does not reuse a
+previous qPath or state graph.
+
+Progressive 5 -> 9 cold-start result
+-------------------------------------
+  Algorithm time             : 9.971550 s
+  Wall time                   : 14.189 s
+  IK time                    : 5.275876 s
+  IK calls                   : 1286
+  Expanded layers            : 65, 75 (layer 2 has two initial branches)
+  Complete 80-point path     : true
+  Node collision free        : true
+  Edge collision free        : true (79/79)
+  Max joint jump             : 12.580 deg
+  Max node TCP error         : 0.000048 mm
+  Max segment TCP error      : 1.955098 mm
+  Max segment orientation    : 0.141530 deg
+
+The result is approximately 22x faster than the 346.143 s stable planner and
+is about 35% faster than the 15.3--15.5 s reduced 9-neighbor baseline.  The
+3 -> 9 experiment also passed, but took 10.447 s because it triggered many
+more expansions, so it is not selected as the baseline.
+
+Angular-continuity cost variant
+-------------------------------
+The pose-neighborhood ranking was also changed to use relative travel/roll
+change from the previous point, matching Gao's angular cost instead of the
+legacy global-zero ranking.  It passed with 1259 IK calls and the same
+collision/TCP constraints, but measured 11.264 s in this cold start.  Since
+that run was slower despite fewer IK calls, the faster 5 -> 9 configuration
+remains the runtime baseline; the relative angular-cost option is retained
+for quality-focused experiments as `poseNeighborhoodCost="previous"`.
+
+Progressive 5 -> 9 plus adaptive TCP correction
+------------------------------------------------
+  Original weld nodes        : 80
+  Execution points            : 85
+  Inserted TCP points         : 5
+  Adaptive corrected segments : 64 (3 points), 74 (2 points)
+  Total algorithm time        : 12.340 s
+  Total wall time             : 16.619 s
+  Final max segment TCP       : 0.265895 mm
+  Final max segment orient    : 0.038748 deg
+  Node/edge collision free    : true / true
+  PASS                        : true
+
+Files
+-----
+  replan_weld_actual_axis_continuation.m
+  profile_weld_actual_axis_continuation_progressive.m
+  weld_actual_axis_replan_continuation_progressive.mat
+  weld_actual_axis_continuation_progressive_profile.mat
+  weld_actual_axis_continuation_progressive_profile.txt
+  weld_actual_axis_replan_adaptive_progressive.mat
+  weld_actual_axis_replan_adaptive_progressive_base.mat
+  replan_weld_actual_axis_adaptive.m
+
+The stable planner and all ROS2/real-robot/CoppeliaSim files were not
+modified.  The 8 s target is not reached yet; the remaining cost is mainly
+numeric IK and full collision validation.  No collision check or weld point
+was removed to obtain this speed.
+
+Conditional angular-redundancy recovery
+----------------------------------------
+`replan_weld_actual_axis_continuation.m` now has an opt-in
+`angularRedundancyFallback`.  Only when a layer has no feasible state does it
+try the measured-wire-axis pose neighborhood with roll offsets +/-10 and
+ +/-20 degrees (and small travel offsets), before the legacy broad recovery.
+The normal layers therefore keep the 5->9 runtime.  On the current scene no
+fallback was needed; the opt-in run still passed at 9.773 s and 1286 IK calls.
+
+Experiment C: adaptive TCP segment correction on the new baseline
+------------------------------------------------------------------
+The correction was rerun from a fresh cold start with the same progressive
+5->9 continuation and angular-redundancy option enabled.  It inspected all
+79 original segments and refined only segments whose joint-linear
+interpolation TCP error exceeded the configured 0.5 mm threshold.
+
+  Base algorithm time        : 9.823827 s
+  Base IK calls              : 1286
+  Base node/edge collision   : true / true
+  Original weld nodes        : 80
+  Execution points           : 85
+  Inserted points            : 5
+  Corrected segments         : 64 (3 points), 74 (2 points)
+  Adaptive IK calls          : 5
+  Total algorithm time       : 12.013 s
+  Total wall time            : 16.174 s
+  Initial max segment TCP    : 1.955098 mm
+  Final max segment TCP      : 0.265895 mm
+  Final segment orientation  : 0.038748 deg
+  Final node/edge collision  : true / true
+  PASS                       : true
+
+The 0.5 mm value is only a configurable computational acceptance threshold;
+it is not an asserted physical welding-process tolerance.  It must be
+replaced by the validated process requirement before real-robot execution.
+The controller interpolation mode must also be checked; this result
+validates MATLAB joint-linear interpolation only, not an unknown spline mode.
+
+Files:
+  weld_actual_axis_replan_angular_adaptive.mat
+  weld_actual_axis_replan_angular_adaptive_base.mat

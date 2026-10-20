@@ -1,0 +1,37 @@
+robot_id: UR5
+display_name: UR5
+joint_names: [shoulder_pan_joint, shoulder_lift_joint, elbow_joint, wrist_1_joint, wrist_2_joint, wrist_3_joint]
+joint_display_names: [肩部旋转, 肩部俯仰, 肘部, 腕部1, 腕部2, 腕部3]
+joint_limits:
+  - [-6.283185307179586, 6.283185307179586]
+  - [-6.283185307179586, 6.283185307179586]
+  - [-6.283185307179586, 6.283185307179586]
+  - [-6.283185307179586, 6.283185307179586]
+  - [-6.283185307179586, 6.283185307179586]
+  - [-6.283185307179586, 6.283185307179586]
+robot_description: /home/ttbstt/jixiebi/UR5/real_robot_description_calibrated.urdf
+controller_name: scaled_joint_trajectory_controller
+controller_action: /scaled_joint_trajectory_controller/follow_joint_trajectory
+real_home: config/robots/data/ur5/real_home.yaml
+tcp_calibration: /home/ttbstt/jixiebi/UR5/ur5_tool_calibration.mat
+planning_model: calibrated UR5 rigidBodyTree + ACCP welding scene
+collision_scene_file: /home/ttbstt/jixiebi/UR5/scene_geometry.json
+scene_geometry_file: /home/ttbstt/jixiebi/UR5/scene_geometry.json
+workpiece_pose_file: /home/ttbstt/jixiebi/UR5/workpiece_pose_real.json
+planning_runs_dir: /home/ttbstt/jixiebi/UR5/planning_runs
+trajectory_dir: /home/ttbstt/jixiebi/UR5/规划文件
+log_dir: logs/robot_runs/UR5
+supports_real_robot: true
+supports_ros_control: true
+supports_online_planning: true
+matlab_model_root: /home/ttbstt/jixiebi/UR5/matlab仿真
+matlab_scene_script: /home/ttbstt/jixiebi/UR5/matlab仿真/sync_ur5_joint_states.m
+matlab_planning_entry: /home/ttbstt/jixiebi/RRT/benchmark/plan_hmi_weld_request.m
+matlab_anchor_file: /home/ttbstt/jixiebi/UR5/规划文件/weld_anchor_points.json
+ros:
+  namespace: /
+  robot_ip: 192.168.0.10
+  joint_states_topic: /joint_states
+  tcp_pose_topic: /tcp_pose_broadcaster/pose
+  controller_name: scaled_joint_trajectory_controller
+  status: UR5 ROS2 driver

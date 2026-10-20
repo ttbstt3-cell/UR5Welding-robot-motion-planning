@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "poses": 10,
+  "max_hmi_matlab_endpoint_error_mm": 3.3306690738754696e-13,
+  "no_yellow_tip": true,
+  "LIVE_preview_isolated": true,
+  "visual_wire_reaches_controller_tcp": true,
+  "controller_difference_does_not_change_collision_wire": true,
+  "synthetic_controller_planning_difference_mm": 35.197,
+  "robot_motion": "NO"
+}

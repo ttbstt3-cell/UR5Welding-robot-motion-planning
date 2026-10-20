@@ -1,0 +1,36 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "stage": "CONTINUOUS_PLANNING_FAILED",
+  "continuous_planning_complete": false,
+  "continuous_planning_status": "CONTINUOUS_PLANNING_FAILED",
+  "physical_validation_status": "PENDING",
+  "servo_validation_status": "PENDING",
+  "architecture_version": "THREE_STAGE_CONTINUOUS_v1",
+  "stage_timings": {},
+  "failure_reason": "Source file changed: /home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/连续规划完成轨迹_2026-10-20_10-05-24_168245.mat",
+  "failed_stage": "INPUT_VALIDATION",
+  "failure_identifier": "RETIME:Stale",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/retime_hmi_continuous_request.m",
+      "name": "checkSources",
+      "line": 110
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/retime_hmi_continuous_request.m",
+      "name": "retime_hmi_continuous_request",
+      "line": 21
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/test_hmi_retime_input_guards.m",
+      "name": "test_hmi_retime_input_guards",
+      "line": 20
+    }
+  ],
+  "planning_time": 0.541648
+}

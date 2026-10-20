@@ -1,0 +1,26 @@
+Reduced continuation cold-start profile
+Created: 2026-09-23 19:04:00
+
+Algorithm time (s): 15.496429
+Wall time (s): 19.803686
+IK time (s): 8.512210
+IK calls: 2192
+Complete: 1
+Node collision free: 1
+Edge collision free: 1
+Max joint jump (deg): 12.580372
+Max node TCP error (mm): 0.000048
+Max segment TCP error (mm): 1.955098
+Max segment TCP orientation (deg): 0.141530
+
+Top segment times (segment i means point i -> i+1):
+segment,elapsed_s,ik_elapsed_s,ik_calls,edge_tests
+1,0.354725,0.204092,54,8
+6,0.240125,0.127753,27,5
+7,0.239343,0.129603,27,5
+12,0.236674,0.129822,27,5
+20,0.235745,0.139851,27,4
+9,0.231066,0.121521,27,5
+11,0.230794,0.123927,27,5
+13,0.228128,0.124420,27,5
+8,0.226901,0.116867,27,5

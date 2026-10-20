@@ -1,0 +1,14 @@
+CONTINUITY_VELOCITY iter=1 nodes=414 sync=0.522162 ori=0.211158 v=0.010134292 a=0.217275057
+CONTINUITY_VELOCITY iter=2 nodes=414 sync=0.518680 ori=0.212434 v=0.010711114 a=0.213875671
+CONTINUITY_VELOCITY iter=3 nodes=414 sync=0.508763 ori=0.196408 v=0.010076150 a=0.221531343
+CONTINUITY_VELOCITY iter=4 nodes=414 sync=0.517919 ori=0.198869 v=0.010468098 a=0.218279433
+CONTINUITY_VELOCITY iter=5 nodes=414 sync=0.515180 ori=0.200346 v=0.010511660 a=0.215614083
+                     pass: 0
+           executionReady: 0
+               iterations: {1×5 cell}
+           failure_reason: ''
+              elapsed_sec: 63.6279
+        q_nodes_unchanged: 1
+    tcp_targets_unchanged: 1
+         collision_status: 'NOT_CHECKED: requires independent dense audit'
+

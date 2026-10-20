@@ -1,0 +1,16 @@
+{
+  "test_pass": true,
+  "expected_offline_pass": true,
+  "scope": "Actual HMI QPushButton -> QProcess MATLAB -> callback/state/load. ROS worker disabled; recorded readiness/Home replayed in isolated test YAML, not current live certification.",
+  "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_093204_279082/report.json",
+  "stage": "PHYSICAL_VALIDATION_PENDING",
+  "status": "连续规划完成（离线验证通过）；真机执行准备：待验证",
+  "execution_status": "真机执行准备：待验证（物理安全 / 伺服验收；无执行许可）",
+  "elapsed_sec": 476.4879589410266,
+  "live_state_preserved": true,
+  "config_unchanged": true,
+  "executionReady": false,
+  "execute_button_enabled": false,
+  "execution_permit_files": [],
+  "robot_motion": "NO"
+}

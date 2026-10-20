@@ -1,0 +1,10 @@
+{
+  "pass_all": true,
+  "genuine_MATLAB_failure_replayed": true,
+  "displayed_reason": "CONTROLLER_FK_VELOCITY_TIMING_NOT_FEASIBLE",
+  "preview_preserved": true,
+  "candidate_recovery_not_mistaken_for_full_task_pass": true,
+  "hardware_requests": 0,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

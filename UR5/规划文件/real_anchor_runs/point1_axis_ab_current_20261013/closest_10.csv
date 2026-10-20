@@ -1,0 +1,11 @@
+rank,candidate_index,J1_deg,J2_deg,J3_deg,J4_deg,J5_deg,J6_deg,collision_pairs,min_noncolliding_clearance_mm,colliding_objects
+1,133,260.547185,-26.551897,146.824519,210.088715,44.094878,12.247817,2,13.488151729,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+2,28,257.246212,91.393979,-150.615346,253.309776,322.219927,-192.194823,2,13.488148680,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+3,27,257.246214,91.393977,-150.615346,-106.690223,-37.780075,-192.194823,2,13.488148399,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+4,83,-103.420995,-60.699805,153.575302,257.436722,-322.776851,-357.646295,2,13.488146249,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+5,137,-227.999692,209.577356,-145.780413,316.444649,271.396498,349.702541,2,13.488144127,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+6,135,-99.452815,-26.551900,146.824519,210.088718,-315.905124,-347.752184,2,13.488143943,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+7,29,-228.170518,268.510081,-145.031380,228.079194,271.475439,359.353301,2,13.488143179,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+8,134,-99.452814,-26.551899,146.824520,210.088717,44.094878,-347.752186,2,13.488142845,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+9,30,257.294772,-87.060875,143.890925,-42.993741,37.891713,-11.952968,2,13.488142815,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"
+10,81,256.525501,106.005812,-136.757435,-158.829337,-37.086765,-177.704766,2,13.488142792,"WireCollision <-> WorkpieceCollision_bottom; WireCollision <-> WorkpieceCollision_wall_y1"

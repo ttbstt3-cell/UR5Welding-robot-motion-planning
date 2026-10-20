@@ -1,0 +1,16 @@
+{
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "previewReady": false,
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "seed": 2.0260917E+7,
+  "accp_geometry_complete": true,
+  "accp_internal_timing_pass": true,
+  "seam_candidate_source": "/home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/hybrid_velocity_20261014_final/hybrid_velocity_diagnostic.mat",
+  "seam_candidate_reused": true,
+  "failure_reason": "输入参数太多。",
+  "failure_identifier": "MATLAB:TooManyInputs",
+  "planning_time": 5.081771
+}

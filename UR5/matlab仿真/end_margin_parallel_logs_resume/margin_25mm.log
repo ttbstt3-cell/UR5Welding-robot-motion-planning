@@ -1,0 +1,122 @@
+
+====================================================
+END-MARGIN BENCHMARK: 25.000 mm (100 seeds)
+====================================================
+[  1/100] margin=25 mm seed=20270001 ... CACHED PASS
+[  2/100] margin=25 mm seed=20270002 ... CACHED PASS
+[  3/100] margin=25 mm seed=20270003 ... CACHED FAIL
+[  4/100] margin=25 mm seed=20270004 ... CACHED FAIL
+[  5/100] margin=25 mm seed=20270005 ... CACHED PASS
+[  6/100] margin=25 mm seed=20270006 ... CACHED PASS
+[  7/100] margin=25 mm seed=20270007 ... CACHED FAIL
+[  8/100] margin=25 mm seed=20270008 ... CACHED PASS
+[  9/100] margin=25 mm seed=20270009 ... CACHED PASS
+[ 10/100] margin=25 mm seed=20270010 ... CACHED PASS
+[ 11/100] margin=25 mm seed=20270011 ... CACHED PASS
+[ 12/100] margin=25 mm seed=20270012 ... CACHED PASS
+[ 13/100] margin=25 mm seed=20270013 ... CACHED PASS
+[ 14/100] margin=25 mm seed=20270014 ... CACHED PASS
+[ 15/100] margin=25 mm seed=20270015 ... CACHED PASS
+[ 16/100] margin=25 mm seed=20270016 ... CACHED PASS
+[ 17/100] margin=25 mm seed=20270017 ... CACHED PASS
+[ 18/100] margin=25 mm seed=20270018 ... CACHED PASS
+[ 19/100] margin=25 mm seed=20270019 ... CACHED PASS
+[ 20/100] margin=25 mm seed=20270020 ... CACHED PASS
+[ 21/100] margin=25 mm seed=20270021 ... CACHED PASS
+[ 22/100] margin=25 mm seed=20270022 ... CACHED PASS
+[ 23/100] margin=25 mm seed=20270023 ... CACHED PASS
+[ 24/100] margin=25 mm seed=20270024 ... CACHED PASS
+[ 25/100] margin=25 mm seed=20270025 ... CACHED PASS
+[ 26/100] margin=25 mm seed=20270026 ... CACHED PASS
+[ 27/100] margin=25 mm seed=20270027 ... CACHED PASS
+[ 28/100] margin=25 mm seed=20270028 ... CACHED PASS
+[ 29/100] margin=25 mm seed=20270029 ... CACHED PASS
+[ 30/100] margin=25 mm seed=20270030 ... CACHED PASS
+[ 31/100] margin=25 mm seed=20270031 ... CACHED PASS
+[ 32/100] margin=25 mm seed=20270032 ... CACHED PASS
+[ 33/100] margin=25 mm seed=20270033 ... CACHED PASS
+[ 34/100] margin=25 mm seed=20270034 ... CACHED PASS
+[ 35/100] margin=25 mm seed=20270035 ... CACHED PASS
+[ 36/100] margin=25 mm seed=20270036 ... CACHED PASS
+[ 37/100] margin=25 mm seed=20270037 ... CACHED PASS
+[ 38/100] margin=25 mm seed=20270038 ... CACHED PASS
+[ 39/100] margin=25 mm seed=20270039 ... CACHED PASS
+[ 40/100] margin=25 mm seed=20270040 ... CACHED PASS
+[ 41/100] margin=25 mm seed=20270041 ... CACHED PASS
+[ 42/100] margin=25 mm seed=20270042 ... CACHED PASS
+[ 43/100] margin=25 mm seed=20270043 ... CACHED PASS
+[ 44/100] margin=25 mm seed=20270044 ... CACHED PASS
+[ 45/100] margin=25 mm seed=20270045 ... CACHED PASS
+[ 46/100] margin=25 mm seed=20270046 ... CACHED PASS
+[ 47/100] margin=25 mm seed=20270047 ... CACHED PASS
+[ 48/100] margin=25 mm seed=20270048 ... CACHED PASS
+[ 49/100] margin=25 mm seed=20270049 ... CACHED PASS
+[ 50/100] margin=25 mm seed=20270050 ... CACHED PASS
+[ 51/100] margin=25 mm seed=20270051 ... CACHED PASS
+[ 52/100] margin=25 mm seed=20270052 ... CACHED PASS
+[ 53/100] margin=25 mm seed=20270053 ... CACHED PASS
+[ 54/100] margin=25 mm seed=20270054 ... CACHED FAIL
+[ 55/100] margin=25 mm seed=20270055 ... CACHED PASS
+[ 56/100] margin=25 mm seed=20270056 ... CACHED PASS
+[ 57/100] margin=25 mm seed=20270057 ... CACHED FAIL
+[ 58/100] margin=25 mm seed=20270058 ... CACHED PASS
+[ 59/100] margin=25 mm seed=20270059 ... CACHED PASS
+[ 60/100] margin=25 mm seed=20270060 ... CACHED PASS
+[ 61/100] margin=25 mm seed=20270061 ... CACHED PASS
+[ 62/100] margin=25 mm seed=20270062 ... CACHED FAIL
+[ 63/100] margin=25 mm seed=20270063 ... CACHED PASS
+[ 64/100] margin=25 mm seed=20270064 ... CACHED PASS
+[ 65/100] margin=25 mm seed=20270065 ... CACHED PASS
+[ 66/100] margin=25 mm seed=20270066 ... CACHED PASS
+[ 67/100] margin=25 mm seed=20270067 ... CACHED PASS
+[ 68/100] margin=25 mm seed=20270068 ... CACHED PASS
+[ 69/100] margin=25 mm seed=20270069 ... CACHED PASS
+[ 70/100] margin=25 mm seed=20270070 ... PASS wall=13.594s points=16 IK=332 stage=PASS
+[ 71/100] margin=25 mm seed=20270071 ... FAIL wall=40.241s points=21 IK=5153 stage=post_recovery_beam_3_angular
+[ 72/100] margin=25 mm seed=20270072 ... PASS wall=15.106s points=17 IK=2215 stage=PASS
+[ 73/100] margin=25 mm seed=20270073 ... PASS wall=27.346s points=21 IK=6209 stage=PASS
+[ 74/100] margin=25 mm seed=20270074 ... PASS wall=7.507s points=16 IK=1086 stage=PASS
+[ 75/100] margin=25 mm seed=20270075 ... PASS wall=5.689s points=17 IK=618 stage=PASS
+[ 76/100] margin=25 mm seed=20270076 ... PASS wall=4.150s points=16 IK=334 stage=PASS
+[ 77/100] margin=25 mm seed=20270077 ... PASS wall=4.046s points=16 IK=395 stage=PASS
+[ 78/100] margin=25 mm seed=20270078 ... FAIL wall=32.903s points=21 IK=4797 stage=post_recovery_beam_3_angular
+[ 79/100] margin=25 mm seed=20270079 ... PASS wall=7.460s points=16 IK=1086 stage=PASS
+[ 80/100] margin=25 mm seed=20270080 ... PASS wall=3.730s points=16 IK=317 stage=PASS
+[ 81/100] margin=25 mm seed=20270081 ... PASS wall=4.135s points=16 IK=334 stage=PASS
+[ 82/100] margin=25 mm seed=20270082 ... PASS wall=3.964s points=16 IK=332 stage=PASS
+[ 83/100] margin=25 mm seed=20270083 ... PASS wall=11.708s points=17 IK=2135 stage=PASS
+[ 84/100] margin=25 mm seed=20270084 ... PASS wall=7.844s points=16 IK=1088 stage=PASS
+[ 85/100] margin=25 mm seed=20270085 ... FAIL wall=35.344s points=21 IK=6987 stage=post_recovery_beam_3_angular
+[ 86/100] margin=25 mm seed=20270086 ... PASS wall=3.956s points=16 IK=332 stage=PASS
+[ 87/100] margin=25 mm seed=20270087 ... PASS wall=3.849s points=16 IK=319 stage=PASS
+[ 88/100] margin=25 mm seed=20270088 ... PASS wall=7.804s points=16 IK=1086 stage=PASS
+[ 89/100] margin=25 mm seed=20270089 ... PASS wall=5.654s points=17 IK=618 stage=PASS
+[ 90/100] margin=25 mm seed=20270090 ... PASS wall=3.943s points=16 IK=332 stage=PASS
+[ 91/100] margin=25 mm seed=20270091 ... PASS wall=10.960s points=17 IK=1859 stage=PASS
+[ 92/100] margin=25 mm seed=20270092 ... FAIL wall=22.718s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[ 93/100] margin=25 mm seed=20270093 ... PASS wall=4.022s points=16 IK=332 stage=PASS
+[ 94/100] margin=25 mm seed=20270094 ... PASS wall=7.624s points=16 IK=1086 stage=PASS
+[ 95/100] margin=25 mm seed=20270095 ... FAIL wall=38.036s points=20 IK=7832 stage=post_recovery_beam_3_angular
+[ 96/100] margin=25 mm seed=20270096 ... PASS wall=7.739s points=16 IK=1086 stage=PASS
+[ 97/100] margin=25 mm seed=20270097 ... PASS wall=3.759s points=16 IK=317 stage=PASS
+[ 98/100] margin=25 mm seed=20270098 ... PASS wall=7.529s points=16 IK=1086 stage=PASS
+[ 99/100] margin=25 mm seed=20270099 ... PASS wall=3.907s points=16 IK=332 stage=PASS
+[100/100] margin=25 mm seed=20270100 ... PASS wall=3.967s points=16 IK=332 stage=PASS
+MARGIN 25.000 mm: PASS 89/100 (89.0%)
+
+Saved summary CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_25mm.csv
+Saved summary MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_25mm.mat
+
+ans = 
+
+  struct with fields:
+
+          name: 'A-ARC-IK+ endpoint-margin benchmark'
+     marginsMm: 25
+         seeds: [20270001 20270002 20270003 20270004 … ] (1×100 double)
+       options: [1×1 struct]
+          rows: [1×1 struct]
+    summaryCsv: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_25mm.csv'
+    summaryMat: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_25mm.mat'
+       created: '2026-09-27 08:25:13'
+

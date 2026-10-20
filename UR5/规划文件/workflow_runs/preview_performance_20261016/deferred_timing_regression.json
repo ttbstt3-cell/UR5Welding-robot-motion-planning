@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "timing_run_once": true,
+  "q_and_tcp_unchanged": true,
+  "timestamps_identical_to_original": true,
+  "velocities_identical_to_original": true,
+  "initial_timing_acceptance": false,
+  "initial_timing_failure_preserved": "ACCP_TIME_PARAMETERIZATION_FAILED: ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 1.486543 mm >= 0.500000 mm; controller TCP orientation 0.738518 deg > 0.500000 deg; controller peak joint velocity 0.0880438538 rad/s exceeds 0.0872664626; controller peak joint acceleration 0.843655592 rad/s^2 exceeds 0.261799388",
+  "controller_sample_count": 4601,
+  "elapsed_sec": 28.842707,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

@@ -1,0 +1,93 @@
+{
+  "current": {
+    "before": {
+      "peak_jerk": 1600.27984530854,
+      "peak_joint": 1,
+      "peak_edge": 299,
+      "peak_time_interval": [
+        88.813563044211364,
+        88.8243749820597
+      ],
+      "peak_segment": "weld",
+      "peak_acceleration": 14.465544664458548,
+      "rms_acceleration": 0.15636571101095931,
+      "rms_segment_jerk": 15.681106617765018,
+      "max_acceleration_jump": 0.0054763028422482041,
+      "interface_acceleration_jump": 7.1054273576010019E-15,
+      "rest_end_acceleration": 1.0187567298965883E-19,
+      "duration": 207.84239041542247,
+      "nodes": 638
+    },
+    "after": {
+      "peak_jerk": 4.934481758101227,
+      "peak_joint": 4,
+      "peak_edge": 531,
+      "peak_time_interval": [
+        175.10316153494048,
+        175.21929662261584
+      ],
+      "peak_segment": "exit",
+      "peak_acceleration": 0.65243428456532726,
+      "rms_acceleration": 0.033565595520924217,
+      "rms_segment_jerk": 0.48005056405250851,
+      "max_acceleration_jump": 0.00054298229900989346,
+      "interface_acceleration_jump": 3.8857805861880479E-16,
+      "rest_end_acceleration": 1.0187567298965883E-19,
+      "duration": 227.023341691866,
+      "nodes": 638
+    },
+    "all_q_exact": true,
+    "all_tcp_exact": true,
+    "geometry_reference_exact": true,
+    "weld47_exact": true
+  },
+  "historical": {
+    "before": {
+      "peak_jerk": 4.4784616465219287,
+      "peak_joint": 6,
+      "peak_edge": 213,
+      "peak_time_interval": [
+        156.09900627948122,
+        156.18275373134503
+      ],
+      "peak_segment": "weld",
+      "peak_acceleration": 0.24754996556096134,
+      "rms_acceleration": 0.01301899634127702,
+      "rms_segment_jerk": 0.16106532075504951,
+      "max_acceleration_jump": 0.20092996187350384,
+      "interface_acceleration_jump": 8.3266726846886741E-17,
+      "rest_end_acceleration": 5.342410113083961E-20,
+      "duration": 325.08688878141771,
+      "nodes": 478
+    },
+    "after": {
+      "peak_jerk": 3.9185588133437781,
+      "peak_joint": 6,
+      "peak_edge": 213,
+      "peak_time_interval": [
+        156.35680279010091,
+        156.44091443569047
+      ],
+      "peak_segment": "weld",
+      "peak_acceleration": 0.22738963478526858,
+      "rms_acceleration": 0.012734089289537249,
+      "rms_segment_jerk": 0.13062971231962558,
+      "max_acceleration_jump": 0.00038848554480078418,
+      "interface_acceleration_jump": 3.1918911957973251E-16,
+      "rest_end_acceleration": 5.342410113083961E-20,
+      "duration": 325.87144550012079,
+      "nodes": 478
+    },
+    "all_q_exact": true,
+    "all_tcp_exact": true,
+    "geometry_reference_exact": true,
+    "weld47_exact": true
+  },
+  "exact_state_cache": {
+    "samples": 63701,
+    "unique_joint_states": 63700,
+    "note": "No rounded-angle or cross-request cache was introduced"
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

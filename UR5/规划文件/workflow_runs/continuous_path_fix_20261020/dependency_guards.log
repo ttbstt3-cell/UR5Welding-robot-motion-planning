@@ -1,0 +1,8 @@
+CONTINUOUS_PLANNING_FAILED Unexpected collision adapter: /home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/continuous_path_fix_20261020/shadow/checkEnvironmentCollision.m; expected /home/ttbstt/jixiebi/RRT/checkEnvironmentCollision.m
+CONTINUOUS_PLANNING_FAILED Raw preview changed
+             shadow_adapter_rejected: 1
+          stale_input_still_rejected: 1
+    no_optimized_artifact_on_failure: 1
+                      executionReady: 0
+                        robot_motion: 'NO'
+

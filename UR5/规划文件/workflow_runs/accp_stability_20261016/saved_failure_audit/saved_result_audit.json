@@ -1,0 +1,3101 @@
+{
+  "source": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_144235_155027/preview_accp.mat",
+  "result_fields": [
+    "scene",
+    "seam",
+    "originalSeamPointCount",
+    "stateBank",
+    "layerStats",
+    "graph",
+    "options",
+    "qPath",
+    "complete",
+    "nodeCollisionFree",
+    "edgeCollisionFree",
+    "ikSuccessAll",
+    "maxJointJumpDeg",
+    "actualGunAxisTcp",
+    "gunAxisTargetWP",
+    "weldingSideConstraint",
+    "approachPathPlanned",
+    "exitPathPlanned",
+    "startConnectedStateCount",
+    "startConnectivityChecked",
+    "approachExitNote",
+    "algorithmElapsedSec",
+    "totalPlanningTimeSec",
+    "continuationStats",
+    "cartesianBridge",
+    "candidateSelectionDiagnostics",
+    "candidateScoringMode",
+    "candidateSelectionDiagnosticsFile",
+    "firstPointDiagnostics",
+    "fallbackUsed",
+    "analyticalIK",
+    "tcpMetrics",
+    "algorithmName",
+    "configurationComplete",
+    "configurationSearchTimeSec",
+    "configurationPerformanceQueries",
+    "qPathInitial",
+    "configurationTcpMetrics",
+    "configurationNodeCollisionFree",
+    "configurationEdgeCollisionFree",
+    "configurationMaxJointJumpDeg",
+    "qPathExecution",
+    "tcpPath",
+    "refinedTcpPath",
+    "tcpPosePath",
+    "tcpTargetExecution",
+    "cartesianRefinement",
+    "adaptiveCorrectionComplete",
+    "adaptiveIkCalls",
+    "adaptiveIkElapsedSec",
+    "adaptiveCollisionChecks",
+    "precisionAlgorithmTimeSec",
+    "precisionInsertedPoints",
+    "precisionStageInvocationCount",
+    "highPrecisionPathAvailable",
+    "initialTcpMetrics",
+    "finalTcpMetrics",
+    "adaptiveSegmentReport",
+    "timeParameterization",
+    "timeParameterizationComplete",
+    "executionReady",
+    "timeFromStart",
+    "velocities",
+    "accelerations",
+    "timeScalingAlgorithmTimeSec",
+    "algorithmStages",
+    "acppStages",
+    "offlineOnly",
+    "executionReadinessOverride",
+    "outputFile",
+    "cartesianBridgeDiagnosticsFile"
+  ],
+  "executionReady": false,
+  "robot_motion": "NO",
+  "flags": {
+    "configurationComplete": true,
+    "complete": false,
+    "adaptiveCorrectionComplete": false,
+    "nodeCollisionFree": true,
+    "edgeCollisionFree": false,
+    "configurationNodeCollisionFree": true,
+    "configurationEdgeCollisionFree": true,
+    "ikSuccessAll": true,
+    "highPrecisionPathAvailable": false,
+    "precisionStageInvocationCount": 1,
+    "timeParameterizationComplete": false,
+    "timeScalingAlgorithmTimeSec": 0,
+    "originalSeamPointCount": 21,
+    "maxJointJumpDeg": 13.979716047473531,
+    "configurationMaxJointJumpDeg": 13.979716047473531
+  },
+  "options": {
+    "sceneScript": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_144235_155027/preview_scene.m",
+    "numPoints": 21,
+    "endMarginM": 0.025,
+    "seamPositionsWP": [
+      [
+        0.030000000000000002,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.041666666626930242,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.044583333283662804,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.046041666612029082,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.04749999994039536,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.053333333253860485,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.05916666656732561,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.062083333224058172,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.064999999880790735,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.076666666507720957,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.0883333331346512,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.099999999761581457,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.11166666638851169,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.12333333301544191,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.13499999964237216,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.14666666626930241,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.15833333289623264,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.16999999952316291,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.18166666615009314,
+        0.22999999940395355,
+        0.005000000000000001
+      ],
+      [
+        0.19333333277702339,
+        0.22999999940395355,
+        0.005
+      ],
+      [
+        0.20499999940395361,
+        0.22999999940395355,
+        0.005
+      ]
+    ],
+    "coarseTravelDeg": 0,
+    "coarseRollDeg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ],
+    "beamWidth": 3,
+    "firstPointMaxStates": 3,
+    "maxPoseSeeds": 12,
+    "seedPerturbDeg": 8,
+    "maxPoseNeighbors": 25,
+    "maxPoseStepRollDeg": 20,
+    "maxPoseStepTravelDeg": 10,
+    "numRandomSeedsFirstPoint": 3,
+    "maxRollStepDeg": 45,
+    "maxTravelStepDeg": 15,
+    "maxJointStepDeg": 15,
+    "edgeResolutionDeg": 3,
+    "maxBacktrackLayers": 8,
+    "positionToleranceM": 0.0001,
+    "orientationToleranceDeg": 0.5,
+    "sideToleranceDeg": 5,
+    "sideMarginM": 0.001,
+    "axis_angle_tolerance_deg": [],
+    "checkSelfCollision": true,
+    "animate": false,
+    "publish": false,
+    "reuseIKSolver": true,
+    "reuseCandidateCache": true,
+    "lazyCollision": true,
+    "disableAxisConstraint": false,
+    "wire_collision_shorten_mm": 3,
+    "disable_axis_constraint": false,
+    "candidate_scoring_mode": true,
+    "candidate_diagnostics": true,
+    "candidate_score_weights": [
+      1,
+      1,
+      0.1,
+      0.1
+    ],
+    "progressivePoseNeighbors": false,
+    "progressiveInitialPoseNeighbors": 5,
+    "progressiveMaxPoseNeighbors": 9,
+    "disableLocalRecovery": false,
+    "poseNeighborhoodCost": "previous",
+    "angularRedundancyFallback": true,
+    "angularFallbackRollDeg": [
+      10,
+      20
+    ],
+    "angularFallbackTravelDeg": [
+      0,
+      5,
+      10
+    ],
+    "initialStartLayer": 1,
+    "enableFallback": false,
+    "enableCartesianBridgeFallback": true,
+    "cartesianBridgeFractions": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "cartesianBridgeMaxDepth": 2,
+    "cartesianBridgeMaxIKCalls": 3000,
+    "cartesianBridgeMaxTimeSec": 60,
+    "cartesianBridgeMaxEdgeSamples": 101,
+    "cartesianBridgeBeamWidth": 24,
+    "cartesianBridgeMaxPaths": 6,
+    "cartesianBridgeRandomSeeds": 24,
+    "cartesianBridgeJointPerturbDeg": [
+      15,
+      30
+    ],
+    "branchReferenceQ": [
+      -1.2762430349933069,
+      -2.02527362505068,
+      1.5667476654052734,
+      -1.3180115858661097,
+      -1.379986588154928,
+      3.330216646194458
+    ],
+    "configurationOnlyDiagnostic": false,
+    "deferTimeParameterization": true,
+    "performanceExactQueryCache": true,
+    "performanceBinding": {
+      "realhome_version": "REALHOME-00fce9ee38407d26bd77a3214ea0af3c0073d17a0dd132c3ec3f2a52f7eb3088",
+      "qStart": [
+        -1.2762430349933069,
+        -2.02527362505068,
+        1.5667476654052734,
+        -1.3180115858661097,
+        -1.379986588154928,
+        3.330216646194458
+      ],
+      "qHome": [
+        -1.2762430349933069,
+        -2.02527362505068,
+        1.5667476654052734,
+        -1.3180115858661097,
+        -1.379986588154928,
+        3.330216646194458
+      ],
+      "seed": 2.0260919E+7,
+      "calibration_binding": {
+        "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_calibration_source": "real_tcp_calibration_active.json",
+        "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+        "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+        "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+        "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+        "real_gun_geometry_status": "ACTIVE",
+        "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+        "gun_geometry_version": "real-gun-1791876831259595871",
+        "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "workpiece_source": "REAL CALIBRATION",
+        "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+        "planning_scene": "REAL_CALIBRATION",
+        "wire_collision_shorten_mm": 3,
+        "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+        "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+        "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+        "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+        "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+        "robot_collision_coverage": "COMPLETE",
+        "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+        "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+      },
+      "scene_snapshot_sha256": "72b51384dbe3524cf2c48f2b51ac54754d29e458016e49accb67bbf8c572a5f4",
+      "self_collision_skip_pairs": [
+        "base_link",
+        "base",
+        "base_link_inertia",
+        "shoulder_link",
+        "upper_arm_link",
+        "forearm_link",
+        "wrist_1_link",
+        "wrist_2_link",
+        "wrist_3_link",
+        "flange",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "base",
+        "base_link_inertia",
+        "shoulder_link",
+        "upper_arm_link",
+        "forearm_link",
+        "wrist_1_link",
+        "wrist_2_link",
+        "wrist_3_link",
+        "flange",
+        "tool0",
+        "wrist_3_link",
+        "ee_link",
+        "WeldTCP",
+        "WeldingGunWire"
+      ],
+      "joint_limits": [
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -3.1415926535897931,
+          3.1415926535897931
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ]
+      ],
+      "wire_collision_shorten_mm": 3,
+      "collision_rule_sources": [
+        {
+          "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/replan_weld_actual_axis_adaptive_core.m",
+          "sha256": "8244fb0abb9b20a7681d8f595ecbbab22b26ce9185fa82002deed9fd17efc5f5"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/generate_actual_axis_ik_candidates.m",
+          "sha256": "03bbb4b732f0bb56329a708e2437da8a39a45458a504aabfc7a955718ab4ea18"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/refine_accp_cartesian_path.m",
+          "sha256": "d220ef2467b846c3f5490f81789014d08e562ccf5bde8147c5e56c98518cedbf"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/UR5/matlab仿真/check_scene_environment_collision.m",
+          "sha256": "389936128b9ddfd97dc431bafcdf3d753669fcef13f61816a703497309a59c09"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/RRT/checkEnvironmentCollision.m",
+          "sha256": "72a04a7f5a332a9332c67b22fa4f638134078c2605282fbe9cf3f75729e9de52"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/RRT/collisionFreeJointState.m",
+          "sha256": "0e69a4fd6c61ebd92a97e8ccb387d72f86b21c2b1948b54e3f9a74fa17c4ded8"
+        },
+        {
+          "path": "/home/ttbstt/jixiebi/RRT/collisionFreeJointEdge.m",
+          "sha256": "57654ed311719f3fc7113da0522ece4482e901def2faccac164b043a6f15d626"
+        }
+      ],
+      "lifecycle": "New instance per immutable scene/function; no cross-request cache"
+    },
+    "maxSegmentTcpErrorMm": 0.5,
+    "maxIntermediatePoints": 4,
+    "errorSamplesPerEdge": 21,
+    "timeScalingMaxVelocityRadPerSec": 0.087266462599716474,
+    "timeScalingMaxAccelerationRadPerSec2": 0.26179938779914941,
+    "timeScalingMaxDurationSec": 50,
+    "timeScalingLambda": 0.001,
+    "randomSeed": 2.0260919E+7,
+    "outputFile": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_144235_155027/preview_accp.mat"
+  },
+  "layers": [
+    {
+      "layer": 1,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.743117,
+        "ikCalls": 32,
+        "ikElapsedSec": 0.49597100000000005,
+        "edgeTests": 0,
+        "edgeCollisionChecks": 0
+      },
+      "candidate_count": 1,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 2,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.521225,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.247607,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 3,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.464048,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.22829700000000003,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 4,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.473424,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.214416,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 5,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.497955,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.230815,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 6,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.432623,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.217924,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 7,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.437043,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.224512,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 8,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.4365,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.21924200000000002,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 9,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.444056,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.23256000000000002,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 10,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.447024,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.23337200000000002,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 11,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.432016,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.214401,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 12,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.4593,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.24908,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 13,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.571299,
+        "ikCalls": 96,
+        "ikElapsedSec": 0.333461,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 14,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.535331,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.222893,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 15,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.636576,
+        "ikCalls": 96,
+        "ikElapsedSec": 0.318643,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 16,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 0.520536,
+        "ikCalls": 72,
+        "ikElapsedSec": 0.21851399999999999,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 17,
+      "valid_states": 5,
+      "reachable_states": 5,
+      "stats": {
+        "coarseStates": 5,
+        "fineStates": 0,
+        "elapsedSec": 0,
+        "ikCalls": 0,
+        "ikElapsedSec": 0,
+        "edgeTests": 0,
+        "edgeCollisionChecks": 0
+      },
+      "point_status": "CARTESIAN_BRIDGE"
+    },
+    {
+      "layer": 18,
+      "valid_states": 5,
+      "reachable_states": 5,
+      "stats": {
+        "coarseStates": 5,
+        "fineStates": 0,
+        "elapsedSec": 0,
+        "ikCalls": 0,
+        "ikElapsedSec": 0,
+        "edgeTests": 0,
+        "edgeCollisionChecks": 0
+      },
+      "point_status": "CARTESIAN_BRIDGE"
+    },
+    {
+      "layer": 19,
+      "valid_states": 5,
+      "reachable_states": 5,
+      "stats": {
+        "coarseStates": 5,
+        "fineStates": 0,
+        "elapsedSec": 0,
+        "ikCalls": 0,
+        "ikElapsedSec": 0,
+        "edgeTests": 0,
+        "edgeCollisionChecks": 0
+      },
+      "point_status": "CARTESIAN_BRIDGE"
+    },
+    {
+      "layer": 20,
+      "valid_states": 5,
+      "reachable_states": 5,
+      "stats": {
+        "coarseStates": 5,
+        "fineStates": 0,
+        "elapsedSec": 0,
+        "ikCalls": 0,
+        "ikElapsedSec": 0,
+        "edgeTests": 0,
+        "edgeCollisionChecks": 0
+      },
+      "point_status": "CARTESIAN_BRIDGE_ENDPOINT"
+    },
+    {
+      "layer": 21,
+      "valid_states": 3,
+      "reachable_states": 3,
+      "stats": {
+        "coarseStates": 3,
+        "fineStates": 0,
+        "elapsedSec": 6.362177,
+        "ikCalls": 360,
+        "ikElapsedSec": 5.193154,
+        "edgeTests": 12,
+        "edgeCollisionChecks": 12
+      },
+      "candidate_count": 6,
+      "connected_candidate_count": 6,
+      "retained_count": 3,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 22,
+      "valid_states": 3,
+      "reachable_states": 3,
+      "stats": {
+        "coarseStates": 3,
+        "fineStates": 0,
+        "elapsedSec": 3.383503,
+        "ikCalls": 216,
+        "ikElapsedSec": 2.8143949999999993,
+        "edgeTests": 5,
+        "edgeCollisionChecks": 5
+      },
+      "candidate_count": 3,
+      "connected_candidate_count": 3,
+      "retained_count": 3,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 23,
+      "valid_states": 2,
+      "reachable_states": 2,
+      "stats": {
+        "coarseStates": 2,
+        "fineStates": 0,
+        "elapsedSec": 3.503903,
+        "ikCalls": 216,
+        "ikElapsedSec": 3.0040080000000011,
+        "edgeTests": 3,
+        "edgeCollisionChecks": 3
+      },
+      "candidate_count": 2,
+      "connected_candidate_count": 2,
+      "retained_count": 2,
+      "point_status": "SEARCHED"
+    },
+    {
+      "layer": 24,
+      "valid_states": 1,
+      "reachable_states": 1,
+      "stats": {
+        "coarseStates": 1,
+        "fineStates": 0,
+        "elapsedSec": 2.810384,
+        "ikCalls": 144,
+        "ikElapsedSec": 2.6902619999999997,
+        "edgeTests": 1,
+        "edgeCollisionChecks": 1
+      },
+      "candidate_count": 1,
+      "connected_candidate_count": 1,
+      "retained_count": 1,
+      "point_status": "SEARCHED"
+    }
+  ],
+  "graph": {
+    "reachable": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true
+      ],
+      true
+    ],
+    "cost": [
+      0,
+      0.0013681092286407246,
+      0.0014539646312552263,
+      0.0014754580373711878,
+      0.0014969730417088475,
+      0.0018420919741507255,
+      0.0021888003192200092,
+      0.0022758083950729867,
+      0.0023630567316430609,
+      0.0037696270565630947,
+      0.005196267962643007,
+      0.0066472259474310369,
+      0.058077403669320966,
+      0.059367429739443284,
+      0.10501827398750432,
+      0.10616745414946793,
+      [
+        0.10874638370729053,
+        0.11153032334310238,
+        0.11579652292214546,
+        0.11416136506744881,
+        0.12837990612233513
+      ],
+      [
+        0.11123215172417335,
+        0.1173331266784616,
+        0.12490198743837441,
+        0.1228995034881824,
+        0.150993417576096
+      ],
+      [
+        0.11362572305782156,
+        0.12368978393780897,
+        0.13354156251380872,
+        0.13255651910163618,
+        0.17406250076625254
+      ],
+      [
+        0.11593034243762415,
+        0.13076534349639035,
+        0.14183838096940632,
+        0.14326356076231944,
+        0.1976837988529796
+      ],
+      [
+        0.14257417090258617,
+        0.11692580475381337,
+        0.35166858287264213
+      ],
+      [
+        0.35224264624606527,
+        0.14334769728169833,
+        0.11797997991121212
+      ],
+      [
+        0.3528366737663462,
+        0.14416467794768054
+      ],
+      0.353454346043733
+    ],
+    "parent": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      1
+    ],
+    "edgeTests": 119,
+    "collisionFreeEdges": 83,
+    "finalReachableCount": 1,
+    "startConnectedCount": 0
+  },
+  "continuation_stats": {
+    "ikCalls": 2354,
+    "ikPoseSuccess": 2168,
+    "acceptedStates": 70,
+    "candidatePoseCalls": 296,
+    "edgeTests": 36,
+    "edgeCollisionChecks": 36,
+    "ikElapsedSec": 20.028209
+  },
+  "first_point": {
+    "point_index": 1,
+    "ik_calls": 32,
+    "ik_numeric_success": 32,
+    "ik_success": 18,
+    "orientation_direction_rejected": 0,
+    "position_error_rejected": 0,
+    "orientation_error_rejected": 0,
+    "joint_limit_rejected": 14,
+    "joint_continuity_rejected": 18,
+    "joint_continuity_threshold_deg": 15,
+    "joint_continuity_is_diagnostic_only": true,
+    "axis_constraint_disabled": false,
+    "self_collision_rejected": 0,
+    "gun_collision_rejected": 0,
+    "workpiece_collision_rejected": 17,
+    "welding_side_position_rejected": 0,
+    "accepted_after_all_filters": 1
+  },
+  "retained_pool_filters": [
+    {
+      "layer": 1,
+      "pose_valid_records": 0,
+      "accepted_records": 0,
+      "direction_rejected": 0,
+      "side_rejected": 0,
+      "environment_rejected": 0,
+      "self_rejected": 0,
+      "native_collision_pairs": []
+    },
+    {
+      "layer": 2,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 3,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 4,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 5,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 6,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 7,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 8,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 9,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 10,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 11,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 12,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 13,
+      "pose_valid_records": 96,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 32,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 14,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 15,
+      "pose_valid_records": 96,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 32,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 16,
+      "pose_valid_records": 72,
+      "accepted_records": 16,
+      "direction_rejected": 48,
+      "side_rejected": 0,
+      "environment_rejected": 8,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 17,
+      "pose_valid_records": 0,
+      "accepted_records": 0,
+      "direction_rejected": 0,
+      "side_rejected": 0,
+      "environment_rejected": 0,
+      "self_rejected": 0,
+      "native_collision_pairs": []
+    },
+    {
+      "layer": 18,
+      "pose_valid_records": 0,
+      "accepted_records": 0,
+      "direction_rejected": 0,
+      "side_rejected": 0,
+      "environment_rejected": 0,
+      "self_rejected": 0,
+      "native_collision_pairs": []
+    },
+    {
+      "layer": 19,
+      "pose_valid_records": 0,
+      "accepted_records": 0,
+      "direction_rejected": 0,
+      "side_rejected": 0,
+      "environment_rejected": 0,
+      "self_rejected": 0,
+      "native_collision_pairs": []
+    },
+    {
+      "layer": 20,
+      "pose_valid_records": 238,
+      "accepted_records": 43,
+      "direction_rejected": 112,
+      "side_rejected": 0,
+      "environment_rejected": 83,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 21,
+      "pose_valid_records": 296,
+      "accepted_records": 75,
+      "direction_rejected": 188,
+      "side_rejected": 0,
+      "environment_rejected": 33,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 22,
+      "pose_valid_records": 184,
+      "accepted_records": 56,
+      "direction_rejected": 112,
+      "side_rejected": 0,
+      "environment_rejected": 16,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 23,
+      "pose_valid_records": 184,
+      "accepted_records": 40,
+      "direction_rejected": 112,
+      "side_rejected": 0,
+      "environment_rejected": 32,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    },
+    {
+      "layer": 24,
+      "pose_valid_records": 120,
+      "accepted_records": 24,
+      "direction_rejected": 72,
+      "side_rejected": 0,
+      "environment_rejected": 24,
+      "self_rejected": 0,
+      "native_collision_pairs": [
+        "WeldingGunMount <-> WorkpieceCollision_wall_x1"
+      ]
+    }
+  ],
+  "bridge": {
+    "enabled": true,
+    "attempts": [
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -92.729788325563717,
+          -40.907831992064359,
+          27.024489017546575,
+          -52.68795053876368,
+          -70.606771749317588,
+          3.4655490529628561
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.42790601783307747,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.661315
+      },
+      {
+        "success": true,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -85.777012106119443,
+          -55.143974315145741,
+          47.932629758541559,
+          -72.21551061265815,
+          -80.59005451882156,
+          -2.3316233760928196
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 4,
+        "added_nodes": 3,
+        "max_joint_delta_deg": 3.4908721094874391,
+        "max_tcp_error_mm": 1.0593623968521928E-5,
+        "min_positive_clearance_mm": 0.41431675163697446,
+        "failure_reason": "",
+        "runtime_sec": 2.562798
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -248.08868304701062,
+          -147.94151508381862,
+          -6.4375143599974853,
+          -132.94822646441887,
+          101.62269725418729,
+          15.044867299014051
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.40207916385710879,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.649162
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -248.09004232257413,
+          -154.10205747487578,
+          6.399970653354738,
+          -139.62674000550146,
+          101.61952465932796,
+          15.037174369810737
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.40207916385710879,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.015754
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -88.164733078560474,
+          -68.125924002579367,
+          69.811654764664837,
+          -89.953846589524915,
+          -77.312537656215312,
+          -5.0389152547388747
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.41169115197461204,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.658689
+      },
+      {
+        "success": true,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -90.622918187472266,
+          -55.492600539278747,
+          50.295921442917454,
+          -71.708202393783054,
+          -73.736455158622874,
+          -1.4840061106094919
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 4,
+        "added_nodes": 3,
+        "max_joint_delta_deg": 1.7361558259684802,
+        "max_tcp_error_mm": 1.6846092101353756E-5,
+        "min_positive_clearance_mm": 0.58646080190257255,
+        "failure_reason": "",
+        "runtime_sec": 2.527133
+      },
+      {
+        "success": true,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -93.967698250966166,
+          -49.594642703845338,
+          42.606955245991855,
+          -63.3192715202926,
+          -68.920269477792715,
+          1.3909836228613008
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 4,
+        "added_nodes": 3,
+        "max_joint_delta_deg": 3.4902430418093258,
+        "max_tcp_error_mm": 5.32783107268154E-6,
+        "min_positive_clearance_mm": 0.4541663622548246,
+        "failure_reason": "",
+        "runtime_sec": 2.526846
+      },
+      {
+        "success": true,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -84.770880935444566,
+          -46.583400839215088,
+          33.077515449482831,
+          -61.391720389987789,
+          -81.971683584592427,
+          -1.0170883962671713
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 4,
+        "added_nodes": 3,
+        "max_joint_delta_deg": 5.6666891910238313,
+        "max_tcp_error_mm": 1.2684555104440961E-5,
+        "min_positive_clearance_mm": 0.50600904278440528,
+        "failure_reason": "",
+        "runtime_sec": 2.522848
+      },
+      {
+        "success": true,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -86.904136498713086,
+          -62.077278599283787,
+          59.647055347055449,
+          -81.456989117900676,
+          -79.043413531943514,
+          -3.6728678358431956
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 4,
+        "added_nodes": 3,
+        "max_joint_delta_deg": 3.1170232172517762,
+        "max_tcp_error_mm": 4.6727379487492945E-5,
+        "min_positive_clearance_mm": 0.30148870011593382,
+        "failure_reason": "",
+        "runtime_sec": 2.518287
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -73.410805220750234,
+          -56.656886061521831,
+          50.343680434781604,
+          -77.35372490269684,
+          -98.321027152419433,
+          -5.114618917389123
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 2,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.019217384127457535,
+        "failure_reason": "NODE_CANDIDATES_BUT_EDGE_COLLISION",
+        "runtime_sec": 0.200588
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -74.879782780388581,
+          -75.0157449396631,
+          81.16497328892099,
+          -104.84116607901038,
+          -96.229342242121149,
+          -6.4065959076144665
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 2,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.027389391894649961,
+        "failure_reason": "NODE_CANDIDATES_BUT_EDGE_COLLISION",
+        "runtime_sec": 0.116684
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          103.34666306938317,
+          222.40062172000566,
+          -31.179971153080849,
+          -118.65089617702988,
+          114.83629875877529,
+          19.336759517801752
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.42790601783307747,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.019337
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          111.65887837758082,
+          235.40087236699043,
+          -49.1473446802641,
+          -103.63230201663545,
+          101.99372703063675,
+          14.835995985479057
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 8,
+        "edge_checks": 3,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.42339363728411017,
+        "failure_reason": "FINAL_IK_CONFIGURATION_BRANCH_DISCONTINUITY",
+        "runtime_sec": 0.043044
+      },
+      {
+        "success": false,
+        "level": 1,
+        "fractions": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "endpoint_q_deg": [
+          -248.65209481678627,
+          -111.91833186256069,
+          -70.817317431744442,
+          275.30097372969414,
+          102.4371344300494,
+          14.622208126102361
+        ],
+        "edge_sample_count": 101,
+        "ik_calls": 5,
+        "edge_checks": 1,
+        "added_nodes": 0,
+        "max_joint_delta_deg": null,
+        "max_tcp_error_mm": null,
+        "min_positive_clearance_mm": 0.41169115197461204,
+        "failure_reason": "NO_CONSTRAINED_NODE_CANDIDATE",
+        "runtime_sec": 0.020358
+      }
+    ],
+    "recovery_count": 1,
+    "recovered_point_indices": 17,
+    "failed_point_indices": [],
+    "inserted_nodes": 15,
+    "ik_calls": 586,
+    "edge_checks": 31,
+    "max_depth_used": 0,
+    "min_positive_clearance_mm": 0.019217384127457535,
+    "selected_path_count": 1,
+    "selected_path_added_nodes": 3,
+    "selected_path_min_positive_clearance_mm": 0.58646080190257255,
+    "selected_path_max_joint_delta_deg": 1.7361558259684802,
+    "selected_path_max_tcp_error_mm": 1.6846092101353756E-5,
+    "selected_path_edge_sample_count": 101,
+    "selected_level": 1,
+    "selected_fractions": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "max_bridge_depth_budget": 2,
+    "max_bridge_ik_budget": 3000,
+    "max_bridge_time_budget_sec": 60,
+    "attempt_min_positive_clearance_mm": 0.019217384127457535,
+    "executionReady": false,
+    "note": [
+      "Bounded offline fallback only; dense samples do not prove ",
+      "continuous collision safety and wire_collision_shorten_mm=3 remains an approximate parameter."
+    ]
+  },
+  "sparse_q": [
+    [
+      -1.658501662583139,
+      -1.1573079082937563,
+      1.3750864991815974,
+      -1.493366203773616,
+      -0.8919323007497536,
+      0.19595010120492429
+    ],
+    [
+      -1.6742347514760356,
+      -1.1476621329106664,
+      1.358497625775831,
+      -1.4743929919036327,
+      -0.8965778388190544,
+      0.176694358001953
+    ],
+    [
+      -1.6781311228814635,
+      -1.1451684781178972,
+      1.3542316652522084,
+      -1.4696663062378474,
+      -0.89775608188807388,
+      0.171948081044376
+    ],
+    [
+      -1.680073746702869,
+      -1.1439093561632792,
+      1.3520807785754048,
+      -1.4673053118408161,
+      -0.8983475994613429,
+      0.16958508937508954
+    ],
+    [
+      -1.6820126311732184,
+      -1.1426419846965221,
+      1.3499177867334977,
+      -1.4649457808370485,
+      -0.8989406777690655,
+      0.16722885535263771
+    ],
+    [
+      -1.6897309633144133,
+      -1.1374905950835941,
+      1.3411457522894221,
+      -1.4555223310975931,
+      -0.90132825133937855,
+      0.15787156057144455
+    ],
+    [
+      -1.6973893230520973,
+      -1.1322081669350632,
+      1.3321794175932404,
+      -1.4461201810363822,
+      -0.90373908664180147,
+      0.1486224463684398
+    ],
+    [
+      -1.7011959155705325,
+      -1.1295178621208117,
+      1.3276228530967205,
+      -1.4414264059968331,
+      -0.90495277914734407,
+      0.14403841586819921
+    ],
+    [
+      -1.704987432475046,
+      -1.1267947012632391,
+      1.3230169367090114,
+      -1.4367371133683935,
+      -0.90617173557914921,
+      0.1394812955967665
+    ],
+    [
+      -1.7200019030163589,
+      -1.1155745985833159,
+      1.3040948652762883,
+      -1.4180180828362472,
+      -0.91109689889714618,
+      0.12152186436806069
+    ],
+    [
+      -1.7347726310021709,
+      -1.1038290802698216,
+      1.28436021592622,
+      -1.3993434014181845,
+      -0.91609277326805072,
+      0.10399045174299582
+    ],
+    [
+      -1.7492983563491682,
+      -1.0915554974049282,
+      1.2637905648921324,
+      -1.380688824276753,
+      -0.92114892002352178,
+      0.086883376025983089
+    ],
+    [
+      -1.6864884669731306,
+      -1.0524063895053659,
+      1.1257113388428301,
+      -1.3334186442676934,
+      -1.0390775132018131,
+      0.05958965521598477
+    ],
+    [
+      -1.7009123174193903,
+      -1.0403961989192552,
+      1.1055673549662985,
+      -1.3172913436341713,
+      -1.0435228844419131,
+      0.043711913156508124
+    ],
+    [
+      -1.6351174634776944,
+      -1.0057316826700857,
+      0.98706054553814015,
+      -1.2829753548960761,
+      -1.1626124410387793,
+      0.016944782161388675
+    ],
+    [
+      -1.6495724388745276,
+      -0.99426672118687243,
+      0.96773401070273046,
+      -1.2691573028448695,
+      -1.1664813742296818,
+      0.0017999364652724597
+    ],
+    [
+      -1.6073609434259206,
+      -0.95208708803567321,
+      0.87115130849639755,
+      -1.2211055266036814,
+      -1.2323041109257216,
+      -0.0032444604781796714
+    ],
+    [
+      -1.5648509509108159,
+      -0.90786820746583774,
+      0.774045433727204,
+      -1.1722821477738044,
+      -1.2983153732783463,
+      -0.0081528816942315965
+    ],
+    [
+      -1.5221918906321761,
+      -0.86155800162844909,
+      0.67621393704330723,
+      -1.1224911814344327,
+      -1.3644592212845696,
+      -0.012974904102775187
+    ],
+    [
+      -1.4795309821395983,
+      -0.81303372142059294,
+      0.57731155297276748,
+      -1.0714876542690241,
+      -1.4306757719541257,
+      -0.017751541298690943
+    ],
+    [
+      -1.4265222661679353,
+      -0.96154580026742642,
+      0.8213036264950685,
+      -1.2810498926571428,
+      -1.5311382193323759,
+      -0.073229964619038385
+    ],
+    [
+      -1.4419608229225263,
+      -0.95667434019807351,
+      0.81348012402707359,
+      -1.2775431556678531,
+      -1.533428028884386,
+      -0.088502017283557347
+    ],
+    [
+      -1.4572958905950417,
+      -0.95118034296740994,
+      0.80462507828355456,
+      -1.2736658840464437,
+      -1.5357105942860865,
+      -0.1036685606943258
+    ],
+    [
+      -1.472520977001514,
+      -0.94505249459332263,
+      0.79471004201094286,
+      -1.2694005516965705,
+      -1.5379843037924761,
+      -0.11872338504882815
+    ]
+  ],
+  "refinement_flags": {
+    "complete": false,
+    "failed_sparse_edges": [
+      19,
+      20
+    ],
+    "failed_dense_edges": [
+      37,
+      38
+    ],
+    "sparse_nodes": 24,
+    "diagnostic_dense_nodes": 45,
+    "public_qPath_rows": 0,
+    "public_qPathExecution_rows": 0
+  },
+  "segment_reports": [
+    {
+      "initialErrorMm": 0.03315570404896992,
+      "initialOrientationErrorDeg": 0.0016033978185210095,
+      "initialJointJumpDeg": 1.1032728169179771,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.337821,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.083289,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0082841527040725289,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.0020719397093560167,
+      "initialOrientationErrorDeg": 9.8380511746445E-5,
+      "initialJointJumpDeg": 0.27194163806935406,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.316606,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.069566,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.00051527301280432283,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.00051549174857909072,
+      "initialOrientationErrorDeg": 2.4626597273599991E-5,
+      "initialJointJumpDeg": 0.13538944967468783,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.332795,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.070185,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.00017266368232775865,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.00052222619311499631,
+      "initialOrientationErrorDeg": 2.4358747163462139E-5,
+      "initialJointJumpDeg": 0.13519116814615156,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.322449,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.073092,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.00018116817913980867,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.00830372656325257,
+      "initialOrientationErrorDeg": 0.0003847555352623804,
+      "initialJointJumpDeg": 0.53992389852445044,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.316476,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.070606,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0020737522883214183,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.0083067949956622,
+      "initialOrientationErrorDeg": 0.00037837105801647055,
+      "initialJointJumpDeg": 0.53870351685605455,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.312304,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.06924,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0020791786752017093,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.00207696206822497,
+      "initialOrientationErrorDeg": 9.3487239632029478E-5,
+      "initialJointJumpDeg": 0.26893349975001118,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.310358,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.069347,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0005225711526477177,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.0020773500268441809,
+      "initialOrientationErrorDeg": 9.25704838773274E-5,
+      "initialJointJumpDeg": 0.2686766765114002,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.37062,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.069672,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.00052131999993081915,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.033273387595147981,
+      "initialOrientationErrorDeg": 0.0014525939320974167,
+      "initialJointJumpDeg": 1.0841548327401007,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.326827,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.071574,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0083095660123338085,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.033400932691966721,
+      "initialOrientationErrorDeg": 0.00140282882455007,
+      "initialJointJumpDeg": 1.1307121179295068,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.324022,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.072667,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0083580700399263318,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.033594618581513622,
+      "initialOrientationErrorDeg": 0.0013526636336256997,
+      "initialJointJumpDeg": 1.1785541903101282,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.313202,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.069867,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0084148916140160072,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.83333841740378878,
+      "initialOrientationErrorDeg": 0.040073857146381793,
+      "initialJointJumpDeg": 7.9113568910578733,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.487018,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.073384,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.21416838171536171,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.032594176855248722,
+      "initialOrientationErrorDeg": 0.001034689123773758,
+      "initialJointJumpDeg": 1.1541652587048399,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.330154,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.071715,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0081793005799932726,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.94789910093851149,
+      "initialOrientationErrorDeg": 0.042918180462235347,
+      "initialJointJumpDeg": 6.8233289770847811,
+      "initialCollisionFree": false,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.440003,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.070152,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.24425290072751762,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.031811966609363189,
+      "initialOrientationErrorDeg": 0.000783192025865822,
+      "initialJointJumpDeg": 1.1073288786815385,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.328045,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.074823,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0079917011496714475,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.1490627221498646,
+      "initialOrientationErrorDeg": 0.016805859082835811,
+      "initialJointJumpDeg": 5.5337812103917408,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.385093,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.071148,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.03759080580902896,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.14393148360700261,
+      "initialOrientationErrorDeg": 0.016904306974662869,
+      "initialJointJumpDeg": 5.5637567902006957,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.364746,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.069417,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.036317830559091734,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.13851452259626898,
+      "initialOrientationErrorDeg": 0.016950356352925949,
+      "initialJointJumpDeg": 5.6053318634353948,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.368577,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.071927,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.034988461926884526,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.13234885068710481,
+      "initialOrientationErrorDeg": 0.016951390003346049,
+      "initialJointJumpDeg": 5.6666891910238313,
+      "initialCollisionFree": false,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 2.510448,
+      "ikCalls": 20,
+      "ikElapsedSec": 0.71260199999999985,
+      "correctionAttempted": true,
+      "correctionAccepted": false,
+      "insertedPoints": 0,
+      "finalErrorMm": null,
+      "failureReason": "dense edge collision, branch, hard constraint or TCP error"
+    },
+    {
+      "initialErrorMm": 0.65651936894525664,
+      "initialOrientationErrorDeg": 0.0698924419042108,
+      "initialJointJumpDeg": 13.979716047473531,
+      "initialCollisionFree": false,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 3.655591,
+      "ikCalls": 20,
+      "ikElapsedSec": 0.716671,
+      "correctionAttempted": true,
+      "correctionAccepted": false,
+      "insertedPoints": 0,
+      "finalErrorMm": null,
+      "failureReason": "dense edge collision, branch, hard constraint or TCP error"
+    },
+    {
+      "initialErrorMm": 0.026313122057948668,
+      "initialOrientationErrorDeg": 0.00025850032792090326,
+      "initialJointJumpDeg": 0.88456414381125015,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.326812,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.072627,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0065957314660741668,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.02660830462688147,
+      "initialOrientationErrorDeg": 0.00025456203002452318,
+      "initialJointJumpDeg": 0.8786346561826428,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.324601,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.068338,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.0066711034032016963,
+      "failureReason": ""
+    },
+    {
+      "initialErrorMm": 0.026949312051658035,
+      "initialOrientationErrorDeg": 0.00025086130468774889,
+      "initialJointJumpDeg": 0.87233319381286056,
+      "initialCollisionFree": true,
+      "correctionTrigger": "cartesian",
+      "elapsedSec": 0.307949,
+      "ikCalls": 2,
+      "ikElapsedSec": 0.068001,
+      "correctionAttempted": true,
+      "correctionAccepted": true,
+      "insertedPoints": 1,
+      "finalErrorMm": 0.00675947550311419,
+      "failureReason": ""
+    }
+  ],
+  "final_metrics": {
+    "nodePositionErrorMm": [
+      1.6485250707737779E-5,
+      1.3243123387919013E-5,
+      5.906703740617322E-6,
+      2.7658480446371582E-5,
+      5.7149356553478743E-6,
+      0.00013690785122698603,
+      9.1048617457062852E-6,
+      0.00012869476158114363,
+      3.4067384914261371E-5,
+      1.7399706572731341E-5,
+      2.6059346984615634E-5,
+      2.1715707349748617E-5,
+      1.4251845362480504E-5,
+      1.282347508540422E-5,
+      1.6122684688451551E-5,
+      4.3312543276504189E-5,
+      9.9217503909873391E-6,
+      3.4650047384407069E-5,
+      4.8771408267322472E-6,
+      9.7663649391201925E-6,
+      2.9326105754076134E-5,
+      9.6674204186879874E-6,
+      3.09829117410968E-5,
+      2.0467033653958092E-6,
+      9.5657255728609579E-6,
+      6.0152738689916413E-6,
+      7.4259429356677939E-6,
+      4.9171877790040064E-6,
+      1.3332746087138734E-5,
+      1.1347885200289213E-5,
+      1.0064633916691254E-6,
+      9.22849969836054E-6,
+      5.6305035155024962E-6,
+      8.6400816351316349E-6,
+      4.2603350749083662E-6,
+      1.0212877111075205E-6,
+      1.2684555104440961E-5,
+      2.3284644790799449E-6,
+      2.2610785003904903E-5,
+      7.0093910498054057E-6,
+      1.6651511461425527E-6,
+      9.1775240609848361E-6,
+      4.4086063473969957E-6,
+      1.2232012283054088E-5,
+      6.6152249716832251E-6
+    ],
+    "nodeOrientationErrorDeg": [
+      0,
+      1.2074182697257333E-6,
+      0,
+      1.7075472925031877E-6,
+      0,
+      2.9575586669421963E-6,
+      0,
+      4.8296730789029342E-6,
+      1.7075472925031877E-6,
+      1.2074182697257333E-6,
+      0,
+      2.9575586669421963E-6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1.7075472925031877E-6,
+      0,
+      0,
+      0,
+      1.2074182697257333E-6,
+      0,
+      0,
+      0,
+      1.7075472925031877E-6,
+      0,
+      1.2074182697257333E-6,
+      0,
+      0,
+      0,
+      1.2074182697257333E-6,
+      0,
+      0,
+      1.2074182697257333E-6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1.2074182697257333E-6,
+      0,
+      0,
+      0
+    ],
+    "nodeHardConstraintsPass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "segmentPositionErrorMm": [
+      0.0082800880055355613,
+      0.0082841527040725289,
+      0.00051527301280432283,
+      0.00051515404763442438,
+      0.00017266368232775865,
+      0.00017095464511843886,
+      0.00017194668112070004,
+      0.00018116817913980867,
+      0.0020725140773129192,
+      0.0020737522883214183,
+      0.0020791786752017093,
+      0.002078002223958353,
+      0.0005225711526477177,
+      0.000513869816220326,
+      0.00051308864865537874,
+      0.00052131999993081915,
+      0.0083015592661342171,
+      0.0083095660123338085,
+      0.00833696174742943,
+      0.0083580700399263318,
+      0.0083836765828851616,
+      0.0084148916140160072,
+      0.20253787875186155,
+      0.21416838171536171,
+      0.0081194172182363338,
+      0.0081793005799932726,
+      0.22948049209299498,
+      0.24425290072751762,
+      0.0079177914732369622,
+      0.0079917011496714475,
+      0.03759080580902896,
+      0.036957451324143631,
+      0.036317830559091734,
+      0.035665708572148083,
+      0.034988461926884526,
+      0.0342824022014521,
+      0.13234885068710481,
+      0.65651936894525664,
+      0.0065597794799082459,
+      0.0065957314660741668,
+      0.006632514110524337,
+      0.0066711034032016963,
+      0.0067138514089723341,
+      0.00675947550311419
+    ],
+    "segmentOrientationErrorDeg": [
+      0.00040410649862060633,
+      0.00039793912480941447,
+      2.4744711127599622E-5,
+      2.468572484316022E-5,
+      6.3890569402603996E-6,
+      6.2739293674556212E-6,
+      6.9360898910140305E-6,
+      6.6133022267264147E-6,
+      9.69399728080488E-5,
+      9.588147936434699E-5,
+      9.5561645089527588E-5,
+      9.4964809375512976E-5,
+      2.3536915126363769E-5,
+      2.3722005120437366E-5,
+      2.3287840231354886E-5,
+      2.2717439178655149E-5,
+      0.00036581187006048195,
+      0.00036006378902645836,
+      0.00035405572088289937,
+      0.00034758759874664271,
+      0.00034143688002892921,
+      0.00033500580913129065,
+      0.0098423741486250976,
+      0.010196174688666673,
+      0.00026081352582016571,
+      0.00025646200721159932,
+      0.010661724580830834,
+      0.010798098958252912,
+      0.000197131139736484,
+      0.00019422177650827997,
+      0.0041936603677992668,
+      0.0042094706814499276,
+      0.0042218551730682846,
+      0.0042302327723348016,
+      0.0042358852115999884,
+      0.0042392157988800656,
+      0.016951390003346049,
+      0.0698924419042108,
+      6.5222942330144654E-5,
+      6.4616621907878432E-5,
+      6.4038715040233728E-5,
+      6.3340568614767928E-5,
+      6.2797358743604324E-5,
+      6.256477513434841E-5
+    ],
+    "segmentJointJumpDeg": [
+      0.55473443499897079,
+      0.54853838191900628,
+      0.1361651161226467,
+      0.13577652194670733,
+      0.067750087282209562,
+      0.067639362392478267,
+      0.067632210002454632,
+      0.067558958143696918,
+      0.27012006852258219,
+      0.26980383000186825,
+      0.26949763554363154,
+      0.26920588131242296,
+      0.1344968062573641,
+      0.13443669349264706,
+      0.13436508422728349,
+      0.13431159228411668,
+      0.53666177867616538,
+      0.54782673269660409,
+      0.55946438021553768,
+      0.571247737713969,
+      0.58321480242160706,
+      0.59533938788852125,
+      4.06084265953231,
+      3.8505142315255636,
+      0.57014204313243511,
+      0.58402321557240477,
+      3.5503490981103427,
+      3.425414346056002,
+      0.54584887293123252,
+      0.561480005750306,
+      2.7636665797633375,
+      2.7701146306284028,
+      2.7775393136204967,
+      2.786217476580199,
+      2.796491650073905,
+      2.80884021336149,
+      5.6666891910238313,
+      13.979716047473531,
+      0.44299869788688312,
+      0.44156544592436703,
+      0.44008097640365595,
+      0.43855367977898679,
+      0.43697503066703158,
+      0.435358163145829
+    ],
+    "segmentCollisionFree": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "nodeCollisionFree": true,
+    "edgeCollisionFree": false,
+    "checkedSegments": 44,
+    "allSegmentsChecked": true,
+    "errorSamplesPerEdge": 21,
+    "collisionChecks": 1155
+  },
+  "classification": "PRECISION_FAILURE",
+  "preweld": {
+    "candidate_exists": true,
+    "official_generated": false,
+    "reason": "Complete precision-valid seam required before exporting a PreWeld",
+    "diagnostic_endpoint": {
+      "label": "DIAGNOSTIC_PREWELD",
+      "status": "PASS",
+      "valid": true,
+      "q_rad": [
+        -1.658501662583139,
+        -1.1573079082937563,
+        1.3750864991815974,
+        -1.493366203773616,
+        -0.8919323007497536,
+        0.19595010120492429
+      ],
+      "q_deg": [
+        -95.025145581444,
+        -66.308858742345564,
+        78.786652868525067,
+        -85.563580743701863,
+        -51.103956444354111,
+        11.227113794203509
+      ],
+      "collision_pairs": [
+        "wrist_3_link <-> WeldingGunMount"
+      ],
+      "collision_details": [
+        {
+          "object_a": "wrist_3_link",
+          "object_b": "WeldingGunMount",
+          "category": "RobotGunCollision",
+          "separation_mm": [],
+          "penetration_depth_mm": [],
+          "distance_status": "Collision; native signed penetration unavailable"
+        }
+      ],
+      "collision_coverage_pass": true,
+      "missing_robot_collision_bodies": [],
+      "joint_limits_pass": true,
+      "joint_limit_violations": [],
+      "calibration_binding": {},
+      "executionReady": false,
+      "robot_motion": "NO",
+      "joint_limits_rad": [
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -3.1415926535897931,
+          3.1415926535897931
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ],
+        [
+          -6.2831853071795862,
+          6.2831853071795862
+        ]
+      ],
+      "TCP_pose_base": [
+        [
+          -0.34321396607920474,
+          -0.9106066322672095,
+          0.23021671259740056,
+          -0.35928563330447844
+        ],
+        [
+          0.78345534194296618,
+          -0.41274475739942224,
+          -0.46458529079203664,
+          0.58806155313096919
+        ],
+        [
+          0.518075188239326,
+          0.020912353054186927,
+          0.85507939562389423,
+          0.0099684817944047377
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flange_pose_base": [
+        [
+          -0.64354332325205577,
+          0.7304182393091847,
+          -0.22878196341095311,
+          -0.10688246180141991
+        ],
+        [
+          -0.1715987707492809,
+          -0.428974300776428,
+          -0.88686803480039256,
+          0.63767857887746648
+        ],
+        [
+          -0.74592617126297145,
+          -0.531479298710538,
+          0.40140241910969976,
+          0.30473797474346842
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "TCP_pose_URDFroot": [
+        [
+          0.34321396607920462,
+          0.9106066322672095,
+          -0.23021671259740051,
+          0.35928563330447838
+        ],
+        [
+          -0.78345534194296618,
+          0.41274475739942212,
+          0.4645852907920367,
+          -0.58806155313096919
+        ],
+        [
+          0.518075188239326,
+          0.020912353054186927,
+          0.85507939562389423,
+          0.0099684817944047377
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "fixed_environment_contact": {
+        "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+        "pair": [
+          "base_link_inertia",
+          "EnvironmentCollision_Floor"
+        ],
+        "raw_contact": true,
+        "raw_environment_collision": true
+      },
+      "self_collision": false,
+      "environment_collision": false,
+      "collision_categories": {
+        "RobotSelfCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "RobotGunCollision": {
+          "status": "FAIL",
+          "pair_count": 1
+        },
+        "RobotWorkpieceCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "RobotWireCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "GunWorkpieceCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "WireWorkpieceCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "ToolInternalCollision": {
+          "status": "SKIPPED_FIXED_ATTACHMENT",
+          "pair_count": 0
+        },
+        "RobotEnvironmentCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "GunEnvironmentCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        },
+        "WireEnvironmentCollision": {
+          "status": "PASS",
+          "pair_count": 0
+        }
+      },
+      "self_collision_skip_pairs": [
+        "base_link",
+        "base",
+        "base_link_inertia",
+        "shoulder_link",
+        "upper_arm_link",
+        "forearm_link",
+        "wrist_1_link",
+        "wrist_2_link",
+        "wrist_3_link",
+        "flange",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "WeldingGunMount",
+        "base",
+        "base_link_inertia",
+        "shoulder_link",
+        "upper_arm_link",
+        "forearm_link",
+        "wrist_1_link",
+        "wrist_2_link",
+        "wrist_3_link",
+        "flange",
+        "tool0",
+        "wrist_3_link",
+        "ee_link",
+        "WeldTCP",
+        "WeldingGunWire"
+      ],
+      "attached_gun_wire_collision_policy": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair": [
+          "WeldingGunMount",
+          "WeldingGunWire"
+        ],
+        "checked": false,
+        "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+      },
+      "wire_collision_pass": true,
+      "environment_object_names": [
+        "WorkpieceCollision_bottom",
+        "WorkpieceCollision_wall_x0",
+        "WorkpieceCollision_wall_x1",
+        "WorkpieceCollision_wall_y1",
+        "EnvironmentCollision_Floor"
+      ],
+      "environment_object_count": 5,
+      "environment_geometry_load": {
+        "pass": true,
+        "source_file": "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json",
+        "source_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+        "version": "environment_dd72e9f8d5fbd1db",
+        "frame_id": "UR5_base",
+        "units": "m",
+        "source_object_count": 2,
+        "loaded_collision_object_count": 1,
+        "skipped_noncollision_objects": [
+          "EnvironmentCollision_box"
+        ],
+        "T_URDFroot_UR5base": [
+          [
+            6.123233995736766E-17,
+            -1,
+            -0,
+            -0
+          ],
+          [
+            1,
+            6.123233995736766E-17,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0.01465
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "T_base_UR5base": [
+          [
+            6.123233995736766E-17,
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            6.123233995736766E-17,
+            -0,
+            -0
+          ],
+          [
+            0,
+            0,
+            1,
+            0.01465
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "object_names": [
+          "EnvironmentCollision_Floor"
+        ],
+        "source_status": "COPPELIASIM_SCENE_EXPORT",
+        "robot_motion": "NO",
+        "missing_categories": [
+          "safety_fence",
+          "workbench",
+          "fixture"
+        ],
+        "source_warnings": [],
+        "source_coverage": {
+          "floor": true,
+          "safety_fence": false,
+          "workbench": false,
+          "fixture": false
+        }
+      },
+      "environment_collision_scope": "Only objects in the saved exported environment; missing source categories are not certified",
+      "minimum_positive_separation_mm": 0.6415521002342226,
+      "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+      "failure_reason": ""
+    }
+  },
+  "bad_edge_audit": [
+    {
+      "edge": 37,
+      "samples": 101,
+      "colliding_samples": 0,
+      "axis_rejections": 1,
+      "side_rejections": 0,
+      "limit_rejections": 0,
+      "pairs": [],
+      "rejected_samples": [
+        {
+          "u": 1,
+          "q_rad": [
+            -1.4795309821395983,
+            -0.81303372142059294,
+            0.57731155297276748,
+            -1.0714876542690241,
+            -1.4306757719541257,
+            -0.017751541298690943
+          ],
+          "TCP": [
+            [
+              0.8616613436982834,
+              0.50270900452232037,
+              -0.069450597896978911,
+              0.24199596158755401
+            ],
+            [
+              -0.40905823757158422,
+              0.76900475428400306,
+              0.49122606421425652,
+              -0.64013350277052428
+            ],
+            [
+              0.30035160570720965,
+              -0.394861171376444,
+              0.86825892928798787,
+              0.008925031088769575
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "pairs": [],
+          "axis_angle_deg": 5.0000000335531976,
+          "axis_rejected": true,
+          "side_rejected": false,
+          "limits_rejected": false,
+          "minimum_positive_gap_mm": 0.50600904278440528
+        }
+      ]
+    },
+    {
+      "edge": 38,
+      "samples": 113,
+      "colliding_samples": 0,
+      "axis_rejections": 1,
+      "side_rejections": 0,
+      "limit_rejections": 0,
+      "pairs": [],
+      "rejected_samples": [
+        {
+          "u": 0,
+          "q_rad": [
+            -1.4795309821395983,
+            -0.81303372142059294,
+            0.57731155297276748,
+            -1.0714876542690241,
+            -1.4306757719541257,
+            -0.017751541298690943
+          ],
+          "TCP": [
+            [
+              0.8616613436982834,
+              0.50270900452232037,
+              -0.069450597896978911,
+              0.24199596158755401
+            ],
+            [
+              -0.40905823757158422,
+              0.76900475428400306,
+              0.49122606421425652,
+              -0.64013350277052428
+            ],
+            [
+              0.30035160570720965,
+              -0.394861171376444,
+              0.86825892928798787,
+              0.008925031088769575
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "pairs": [],
+          "axis_angle_deg": 5.0000000335531976,
+          "axis_rejected": true,
+          "side_rejected": false,
+          "limits_rejected": false,
+          "minimum_positive_gap_mm": 0.50600904278440528
+        }
+      ]
+    }
+  ],
+  "missing_statistics_note": "Saved layerStats does not contain all generator rejection counters or rejected collision pairs. No per-layer total collision rejection counts are invented; above native audit covers selected failed edges."
+}

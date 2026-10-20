@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "scale": 1.0,
+      "mount_controls": true,
+      "draft_has_source_hash_and_full_transform": true,
+      "ROS_worker_not_started": true,
+      "LIVE_state_unchanged": true
+    },
+    {
+      "scale": 1.25,
+      "mount_controls": true,
+      "draft_has_source_hash_and_full_transform": true,
+      "ROS_worker_not_started": true,
+      "LIVE_state_unchanged": true
+    },
+    {
+      "scale": 1.5,
+      "mount_controls": true,
+      "draft_has_source_hash_and_full_transform": true,
+      "ROS_worker_not_started": true,
+      "LIVE_state_unchanged": true
+    }
+  ],
+  "robot_motion": "NO",
+  "writes_to_calibration": false,
+  "loaded_full_transform_matches_saved": true,
+  "loaded_mount_status": "PREVIEW",
+  "loaded_roll_deg": 90.0,
+  "loaded_translation_mm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "loaded_nominal_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.04920610481801987
+    ],
+    [
+      0.0,
+      0.999999934028688,
+      0.00036323906767285474,
+      -0.031885669187674034
+    ],
+    [
+      0.0,
+      -0.0003632390676729519,
+      0.9999999340286881,
+      -0.040933945631130085
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,114 @@
+
+====================================================
+A-ARC-IK+ NEW 100-SEED COLD-START BENCHMARK
+Frozen implementation; no historical paths or graphs
+Seeds 20270001 ... 20270100 (100 runs)
+====================================================
+[  1/100] seed=20270001 ... PASS first=6.947s wall=14.298s points=16 IK=1088 stage=PASS
+[  2/100] seed=20270002 ... PASS first=2.783s wall=4.776s points=16 IK=332 stage=PASS
+[  3/100] seed=20270003 ... FAIL first=NaNs wall=27.268s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[  4/100] seed=20270004 ... FAIL first=NaNs wall=34.728s points=21 IK=6489 stage=post_recovery_beam_3_angular
+[  5/100] seed=20270005 ... PASS first=2.447s wall=4.057s points=16 IK=334 stage=PASS
+[  6/100] seed=20270006 ... PASS first=2.491s wall=4.095s points=16 IK=334 stage=PASS
+[  7/100] seed=20270007 ... FAIL first=NaNs wall=25.414s points=21 IK=3192 stage=post_recovery_beam_3_angular
+[  8/100] seed=20270008 ... PASS first=2.109s wall=3.726s points=16 IK=317 stage=PASS
+[  9/100] seed=20270009 ... PASS first=2.217s wall=3.777s points=16 IK=317 stage=PASS
+[ 10/100] seed=20270010 ... PASS first=2.243s wall=4.190s points=16 IK=395 stage=PASS
+[ 11/100] seed=20270011 ... PASS first=5.206s wall=7.651s points=16 IK=1086 stage=PASS
+[ 12/100] seed=20270012 ... PASS first=2.871s wall=5.640s points=17 IK=618 stage=PASS
+[ 13/100] seed=20270013 ... PASS first=4.917s wall=7.308s points=16 IK=1086 stage=PASS
+[ 14/100] seed=20270014 ... PASS first=31.836s wall=38.689s points=20 IK=8909 stage=PASS
+[ 15/100] seed=20270015 ... PASS first=4.865s wall=7.363s points=16 IK=1086 stage=PASS
+[ 16/100] seed=20270016 ... PASS first=2.181s wall=4.038s points=16 IK=395 stage=PASS
+[ 17/100] seed=20270017 ... PASS first=2.868s wall=5.684s points=17 IK=618 stage=PASS
+[ 18/100] seed=20270018 ... PASS first=2.337s wall=3.878s points=16 IK=332 stage=PASS
+[ 19/100] seed=20270019 ... PASS first=4.999s wall=7.442s points=16 IK=1086 stage=PASS
+[ 20/100] seed=20270020 ... PASS first=2.423s wall=3.996s points=16 IK=332 stage=PASS
+[ 21/100] seed=20270021 ... PASS first=4.837s wall=7.260s points=16 IK=1086 stage=PASS
+[ 22/100] seed=20270022 ... PASS first=1.972s wall=3.853s points=16 IK=380 stage=PASS
+[ 23/100] seed=20270023 ... PASS first=5.207s wall=7.668s points=16 IK=1086 stage=PASS
+[ 24/100] seed=20270024 ... PASS first=2.780s wall=5.507s points=17 IK=618 stage=PASS
+[ 25/100] seed=20270025 ... PASS first=4.811s wall=7.200s points=16 IK=1086 stage=PASS
+[ 26/100] seed=20270026 ... PASS first=2.064s wall=3.854s points=16 IK=395 stage=PASS
+[ 27/100] seed=20270027 ... PASS first=17.831s wall=23.604s points=21 IK=4732 stage=PASS
+[ 28/100] seed=20270028 ... PASS first=2.306s wall=3.838s points=16 IK=332 stage=PASS
+[ 29/100] seed=20270029 ... PASS first=1.918s wall=3.751s points=16 IK=380 stage=PASS
+[ 30/100] seed=20270030 ... PASS first=4.963s wall=7.344s points=16 IK=1086 stage=PASS
+[ 31/100] seed=20270031 ... PASS first=2.864s wall=5.617s points=17 IK=618 stage=PASS
+[ 32/100] seed=20270032 ... PASS first=2.286s wall=3.817s points=16 IK=332 stage=PASS
+[ 33/100] seed=20270033 ... PASS first=1.922s wall=3.717s points=16 IK=380 stage=PASS
+[ 34/100] seed=20270034 ... PASS first=16.822s wall=22.612s points=21 IK=3658 stage=PASS
+[ 35/100] seed=20270035 ... PASS first=4.910s wall=7.295s points=16 IK=1086 stage=PASS
+[ 36/100] seed=20270036 ... PASS first=2.440s wall=4.017s points=16 IK=334 stage=PASS
+[ 37/100] seed=20270037 ... PASS first=2.437s wall=3.980s points=16 IK=334 stage=PASS
+[ 38/100] seed=20270038 ... PASS first=2.474s wall=4.059s points=16 IK=334 stage=PASS
+[ 39/100] seed=20270039 ... PASS first=2.504s wall=4.072s points=16 IK=334 stage=PASS
+[ 40/100] seed=20270040 ... PASS first=2.904s wall=5.665s points=17 IK=618 stage=PASS
+[ 41/100] seed=20270041 ... PASS first=4.823s wall=7.211s points=16 IK=1086 stage=PASS
+[ 42/100] seed=20270042 ... PASS first=2.850s wall=5.664s points=17 IK=618 stage=PASS
+[ 43/100] seed=20270043 ... PASS first=4.792s wall=7.159s points=16 IK=1086 stage=PASS
+[ 44/100] seed=20270044 ... PASS first=2.079s wall=3.647s points=16 IK=317 stage=PASS
+[ 45/100] seed=20270045 ... PASS first=2.299s wall=3.812s points=16 IK=332 stage=PASS
+[ 46/100] seed=20270046 ... PASS first=2.860s wall=5.614s points=17 IK=618 stage=PASS
+[ 47/100] seed=20270047 ... PASS first=4.989s wall=7.364s points=16 IK=1086 stage=PASS
+[ 48/100] seed=20270048 ... PASS first=2.127s wall=3.944s points=16 IK=395 stage=PASS
+[ 49/100] seed=20270049 ... PASS first=5.046s wall=7.424s points=16 IK=1086 stage=PASS
+[ 50/100] seed=20270050 ... PASS first=2.974s wall=5.762s points=17 IK=618 stage=PASS
+[ 51/100] seed=20270051 ... PASS first=4.816s wall=7.179s points=16 IK=1086 stage=PASS
+[ 52/100] seed=20270052 ... PASS first=2.435s wall=3.991s points=16 IK=334 stage=PASS
+[ 53/100] seed=20270053 ... PASS first=2.302s wall=3.837s points=16 IK=332 stage=PASS
+[ 54/100] seed=20270054 ... FAIL first=NaNs wall=39.294s points=20 IK=6420 stage=post_recovery_beam_3_angular
+[ 55/100] seed=20270055 ... PASS first=2.303s wall=3.848s points=16 IK=332 stage=PASS
+[ 56/100] seed=20270056 ... PASS first=20.348s wall=26.101s points=21 IK=4732 stage=PASS
+[ 57/100] seed=20270057 ... FAIL first=NaNs wall=22.667s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[ 58/100] seed=20270058 ... PASS first=2.356s wall=3.911s points=16 IK=332 stage=PASS
+[ 59/100] seed=20270059 ... PASS first=6.664s wall=10.245s points=17 IK=1859 stage=PASS
+[ 60/100] seed=20270060 ... PASS first=2.021s wall=3.572s points=16 IK=317 stage=PASS
+[ 61/100] seed=20270061 ... PASS first=2.820s wall=5.578s points=17 IK=618 stage=PASS
+[ 62/100] seed=20270062 ... FAIL first=8.815s wall=14.834s points=21 IK=2771 stage=post_recovery_beam_2_angular
+[ 63/100] seed=20270063 ... PASS first=4.937s wall=7.373s points=16 IK=1086 stage=PASS
+[ 64/100] seed=20270064 ... PASS first=2.328s wall=3.879s points=16 IK=332 stage=PASS
+[ 65/100] seed=20270065 ... PASS first=2.127s wall=3.979s points=16 IK=395 stage=PASS
+[ 66/100] seed=20270066 ... PASS first=5.031s wall=7.396s points=16 IK=1086 stage=PASS
+[ 67/100] seed=20270067 ... PASS first=5.096s wall=7.485s points=16 IK=1086 stage=PASS
+[ 68/100] seed=20270068 ... PASS first=2.827s wall=5.616s points=17 IK=618 stage=PASS
+[ 69/100] seed=20270069 ... PASS first=4.172s wall=6.577s points=17 IK=691 stage=PASS
+[ 70/100] seed=20270070 ... PASS first=2.297s wall=3.823s points=16 IK=332 stage=PASS
+[ 71/100] seed=20270071 ... FAIL first=NaNs wall=24.550s points=21 IK=5153 stage=post_recovery_beam_3_angular
+[ 72/100] seed=20270072 ... PASS first=8.595s wall=12.109s points=17 IK=2215 stage=PASS
+[ 73/100] seed=20270073 ... PASS first=20.078s wall=26.728s points=21 IK=6209 stage=PASS
+[ 74/100] seed=20270074 ... PASS first=4.816s wall=7.186s points=16 IK=1086 stage=PASS
+[ 75/100] seed=20270075 ... PASS first=2.733s wall=5.491s points=17 IK=618 stage=PASS
+[ 76/100] seed=20270076 ... PASS first=2.502s wall=4.059s points=16 IK=334 stage=PASS
+[ 77/100] seed=20270077 ... PASS first=2.123s wall=3.930s points=16 IK=395 stage=PASS
+[ 78/100] seed=20270078 ... FAIL first=NaNs wall=31.531s points=21 IK=4797 stage=post_recovery_beam_3_angular
+[ 79/100] seed=20270079 ... PASS first=4.884s wall=7.306s points=16 IK=1086 stage=PASS
+[ 80/100] seed=20270080 ... PASS first=2.042s wall=3.592s points=16 IK=317 stage=PASS
+[ 81/100] seed=20270081 ... PASS first=2.405s wall=3.949s points=16 IK=334 stage=PASS
+[ 82/100] seed=20270082 ... PASS first=2.297s wall=3.836s points=16 IK=332 stage=PASS
+[ 83/100] seed=20270083 ... PASS first=7.784s wall=11.251s points=17 IK=2135 stage=PASS
+[ 84/100] seed=20270084 ... PASS first=5.130s wall=7.543s points=16 IK=1088 stage=PASS
+[ 85/100] seed=20270085 ... FAIL first=NaNs wall=33.735s points=21 IK=6987 stage=post_recovery_beam_3_angular
+[ 86/100] seed=20270086 ... PASS first=2.350s wall=3.914s points=16 IK=332 stage=PASS
+[ 87/100] seed=20270087 ... PASS first=2.213s wall=3.840s points=16 IK=319 stage=PASS
+[ 88/100] seed=20270088 ... PASS first=5.090s wall=7.485s points=16 IK=1086 stage=PASS
+[ 89/100] seed=20270089 ... PASS first=2.879s wall=5.640s points=17 IK=618 stage=PASS
+[ 90/100] seed=20270090 ... PASS first=2.273s wall=3.806s points=16 IK=332 stage=PASS
+[ 91/100] seed=20270091 ... PASS first=6.935s wall=10.580s points=17 IK=1859 stage=PASS
+[ 92/100] seed=20270092 ... FAIL first=NaNs wall=21.969s points=21 IK=5069 stage=post_recovery_beam_3_angular
+[ 93/100] seed=20270093 ... PASS first=2.249s wall=3.780s points=16 IK=332 stage=PASS
+[ 94/100] seed=20270094 ... PASS first=4.842s wall=7.208s points=16 IK=1086 stage=PASS
+[ 95/100] seed=20270095 ... FAIL first=NaNs wall=36.837s points=20 IK=7832 stage=post_recovery_beam_3_angular
+[ 96/100] seed=20270096 ... PASS first=4.969s wall=7.338s points=16 IK=1086 stage=PASS
+[ 97/100] seed=20270097 ... PASS first=2.050s wall=3.589s points=16 IK=317 stage=PASS
+[ 98/100] seed=20270098 ... PASS first=4.889s wall=7.261s points=16 IK=1086 stage=PASS
+[ 99/100] seed=20270099 ... PASS first=2.289s wall=3.850s points=16 IK=332 stage=PASS
+[100/100] seed=20270100 ... PASS first=2.275s wall=3.806s points=16 IK=332 stage=PASS
+
+Summary: PASS 89/100 (89.0%), FAIL 11
+  stage PASS                             : 89
+  stage post_recovery_beam_2_angular     : 1
+  stage post_recovery_beam_3_angular     : 10
+Successful first-solution algorithm time: median 2.820s, P90 6.826s
+Saved CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_arc_ik_new100.csv
+Saved MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_arc_ik_new100.mat

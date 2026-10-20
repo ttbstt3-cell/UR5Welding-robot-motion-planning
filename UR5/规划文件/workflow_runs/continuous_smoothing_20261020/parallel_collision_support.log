@@ -1,0 +1,10 @@
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 4 workers.
+    license_available: 1
+                 pass: 1
+       executionReady: 0
+          startup_sec: 6.8547
+            query_sec: 1.9593
+              workers: 4
+
+Parallel pool using the 'Processes' profile is shutting down.

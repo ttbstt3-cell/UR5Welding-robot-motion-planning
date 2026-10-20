@@ -1,0 +1,11 @@
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_x0
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_x0
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_x1
+INTERFACE COLLISION COLLISION CHECK: COLLISION/INVALID
+  WeldingGunMount <-> WorkpieceCollision_wall_y1
+PREVIEW AUDIT nodes=359 queries=7877 nodeHits=0 edgeHitSamples=0 status=PASS minGapMm=0.231724
+   1
+

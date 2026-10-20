@@ -1,0 +1,17 @@
+{
+  "pass_all": true,
+  "view": "Robot3DView",
+  "controller_input": "SYNTHETIC non-motion-ready 50 Hz; ROS/RTDE disabled",
+  "matlab": "Real QProcess callbacks, genuine saved result REPLAY; no new MATLAB optimization",
+  "button_return_s": 0.0396149400039576,
+  "max_heartbeat_gap_while_busy_s": 0.10341094201430678,
+  "max_heartbeat_gap_including_completion_s": 0.403874067007564,
+  "state_notifications": 67,
+  "display_timer_interval_ms": 100,
+  "cancel_to_finished_s": 0.2615742879570462,
+  "completion_delivered": true,
+  "busy_execution_blocked": true,
+  "no_motion_signals": true,
+  "source_and_config_unchanged": true,
+  "executionReady": false
+}

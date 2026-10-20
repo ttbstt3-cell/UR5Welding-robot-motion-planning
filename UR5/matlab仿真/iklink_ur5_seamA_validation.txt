@@ -1,0 +1,13 @@
+IKLink UR5 Seam A validation
+waypoints = 17
+node_collision_free = 0
+edge_collision_free = 0
+tcp_position_pass = 0
+tcp_orientation_pass = 1
+max_node_tcp_error_mm = 2.113334
+max_node_tcp_orientation_error_deg = 0.162591
+max_joint_jump_deg = 9.876030
+edge_samples = 35
+node_collision_indices = [1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17]
+edge_collision_indices = [1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16]
+complete = 0

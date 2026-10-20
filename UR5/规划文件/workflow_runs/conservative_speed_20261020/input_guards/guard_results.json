@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "cases": [
+    {
+      "name": "source_SHA",
+      "identifier": "RETIME:Stale",
+      "reason": "Source file changed: /home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/连续规划完成轨迹_2026-10-20_10-05-24_168245.mat",
+      "no_output": true
+    },
+    {
+      "name": "raw_SHA",
+      "identifier": "RETIME:Stale",
+      "reason": "Source file changed: /home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-20_09-34-46_959865.mat",
+      "no_output": true
+    },
+    {
+      "name": "overspeed_percent",
+      "identifier": "RETIME:Percent",
+      "reason": "Offline speed must be 1..100 percent",
+      "no_output": true
+    },
+    {
+      "name": "partial_source_PASS",
+      "identifier": "RETIME:Source",
+      "reason": "Source is not a completed offline trajectory",
+      "no_output": true
+    },
+    {
+      "name": "wrong_source_preview",
+      "identifier": "RETIME:Stale",
+      "reason": "Source request points to a different preview",
+      "no_output": true
+    }
+  ],
+  "robot_motion": "NO",
+  "executionReady": false
+}

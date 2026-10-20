@@ -1,0 +1,12 @@
+            checks: [1×1 struct]
+              pass: 1
+             scope: 'Data/FK/analytic contracts only; not a collision or execution approval'
+    executionReady: 0
+
+CP_GEOMETRY iter=1 knots=414 pos=13.549146 ori=0.894700 bad=279
+CP_GEOMETRY iter=2 knots=437 pos=4.789390 ori=0.321455 bad=272
+CP_GEOMETRY iter=3 knots=464 pos=1.457607 ori=0.262342 bad=90
+CP_GEOMETRY iter=4 knots=475 pos=0.499399 ori=0.262334 bad=19
+CP_GEOMETRY iter=5 knots=478 pos=0.296003 ori=0.262333 bad=0
+CP_TIME iter=1 nodes=478 pos=0.296105 ori=0.262423
+INDEPENDENT_RESULT historical pass=1 time=294.540 executionReady=0

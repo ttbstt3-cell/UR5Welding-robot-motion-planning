@@ -1,0 +1,343 @@
+{
+  "pass": true,
+  "scope": "SYNTHETIC regression only; not real environment approval",
+  "source_scene": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/hmi_current_home_preview/raw_scene.mat",
+  "synthetic_fixture": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/environment_extension_20261014/synthetic_loader_test/synthetic_environment_fixture.json",
+  "loader": {
+    "pass": true,
+    "source_file": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/environment_extension_20261014/synthetic_loader_test/synthetic_environment_fixture.json",
+    "source_sha256": "7d7c85a3aa0f7e44e6bd5c9ac9c4b44f331998fb439439d2ce1a832d15a5f80a",
+    "version": "SYNTHETIC_NOT_FOR_PLANNING",
+    "frame_id": "UR5_base",
+    "units": "m",
+    "source_object_count": 3,
+    "loaded_collision_object_count": 3,
+    "skipped_noncollision_objects": [],
+    "T_URDFroot_UR5base": [
+      [
+        6.123233995736766E-17,
+        -1,
+        -0,
+        -0
+      ],
+      [
+        1,
+        6.123233995736766E-17,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0.01465
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "T_base_UR5base": [
+      [
+        6.123233995736766E-17,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        6.123233995736766E-17,
+        -0,
+        -0
+      ],
+      [
+        0,
+        0,
+        1,
+        0.01465
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "object_names": [
+      "EnvironmentTest_robot",
+      "EnvironmentTest_gun",
+      "EnvironmentTest_wire"
+    ],
+    "source_status": "COPPELIASIM_SCENE_EXPORT",
+    "robot_motion": "NO"
+  },
+  "endpoint": {
+    "label": "SYNTHETIC ENVIRONMENT TEST",
+    "status": "FAIL",
+    "valid": false,
+    "q_rad": [
+      -1.2762430349933069,
+      -2.0179079214679163,
+      1.5659332275390625,
+      -1.3189204374896448,
+      -1.3801425139056605,
+      3.3301687240600586
+    ],
+    "q_deg": [
+      -73.123339538083528,
+      -115.61760734612797,
+      89.72136493728749,
+      -75.568574581704766,
+      -79.076341173369869,
+      190.80461295510781
+    ],
+    "collision_pairs": [
+      "base_link_inertia <-> EnvironmentTest_robot",
+      "WeldingGunMount <-> EnvironmentTest_gun",
+      "WeldingGunWire <-> EnvironmentTest_wire"
+    ],
+    "collision_details": [
+      {
+        "object_a": "base_link_inertia",
+        "object_b": "EnvironmentTest_robot",
+        "category": "RobotEnvironmentCollision",
+        "separation_mm": [],
+        "penetration_depth_mm": [],
+        "distance_status": "Collision; native signed penetration unavailable"
+      },
+      {
+        "object_a": "WeldingGunMount",
+        "object_b": "EnvironmentTest_gun",
+        "category": "GunEnvironmentCollision",
+        "separation_mm": [],
+        "penetration_depth_mm": [],
+        "distance_status": "Collision; native signed penetration unavailable"
+      },
+      {
+        "object_a": "WeldingGunWire",
+        "object_b": "EnvironmentTest_wire",
+        "category": "WireEnvironmentCollision",
+        "separation_mm": [],
+        "penetration_depth_mm": [],
+        "distance_status": "Collision; native signed penetration unavailable"
+      }
+    ],
+    "collision_coverage_pass": true,
+    "missing_robot_collision_bodies": [],
+    "joint_limits_pass": true,
+    "joint_limit_violations": [],
+    "calibration_binding": {},
+    "executionReady": false,
+    "robot_motion": "NO",
+    "joint_limits_rad": [
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -3.1415926535897931,
+        3.1415926535897931
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ]
+    ],
+    "TCP_pose_base": [
+      [
+        0.94675132101404391,
+        0.269316787908995,
+        0.17643810220172138,
+        -0.28519121375689266
+      ],
+      [
+        -0.32002564697355063,
+        0.727094497084081,
+        0.60738552632509013,
+        0.26662931825061287
+      ],
+      [
+        0.035291945785457024,
+        -0.63150776722098045,
+        0.77456595490781,
+        0.20324251284392553
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "flange_pose_base": [
+      [
+        -0.2359510431074236,
+        -0.96600084469110159,
+        -0.10568572899212425,
+        -0.20092116720904168
+      ],
+      [
+        0.13328443425622508,
+        -0.13989904497952707,
+        0.98115417585556575,
+        0.22990156480030102
+      ],
+      [
+        -0.96258109520264123,
+        0.21741808864465317,
+        0.16176220166834093,
+        0.58351596127741145
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "TCP_pose_URDFroot": [
+      [
+        -0.94675132101404391,
+        -0.2693167879089951,
+        -0.17643810220172146,
+        0.2851912137568926
+      ],
+      [
+        0.32002564697355074,
+        -0.727094497084081,
+        -0.60738552632509013,
+        -0.26662931825061292
+      ],
+      [
+        0.035291945785457024,
+        -0.63150776722098045,
+        0.77456595490781,
+        0.20324251284392553
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "self_collision": false,
+    "environment_collision": true,
+    "collision_categories": {
+      "RobotSelfCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotGunCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWireCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "ToolInternalCollision": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair_count": 0
+      },
+      "RobotEnvironmentCollision": {
+        "status": "FAIL",
+        "pair_count": 1
+      },
+      "GunEnvironmentCollision": {
+        "status": "FAIL",
+        "pair_count": 1
+      },
+      "WireEnvironmentCollision": {
+        "status": "FAIL",
+        "pair_count": 1
+      }
+    },
+    "self_collision_skip_pairs": [
+      "base_link",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "tool0",
+      "wrist_3_link",
+      "ee_link",
+      "WeldTCP",
+      "WeldingGunWire"
+    ],
+    "attached_gun_wire_collision_policy": {
+      "status": "SKIPPED_FIXED_ATTACHMENT",
+      "pair": [
+        "WeldingGunMount",
+        "WeldingGunWire"
+      ],
+      "checked": false,
+      "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+    },
+    "wire_collision_pass": false,
+    "environment_object_names": [
+      "WorkpieceCollision_bottom",
+      "WorkpieceCollision_wall_x0",
+      "WorkpieceCollision_wall_x1",
+      "WorkpieceCollision_wall_y1",
+      "EnvironmentTest_robot",
+      "EnvironmentTest_gun",
+      "EnvironmentTest_wire"
+    ],
+    "environment_object_count": 7,
+    "minimum_positive_separation_mm": 4.1559612005792772,
+    "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+    "failure_reason": "COLLISION"
+  },
+  "exact_pairs_pass": true,
+  "pose_consistency_pass": true,
+  "stale_frame_mapping_rejected": true,
+  "old_environment_unchanged": true,
+  "self_collision_skips_unchanged": true,
+  "qOffset_unchanged": true,
+  "robot_motion": "NO"
+}

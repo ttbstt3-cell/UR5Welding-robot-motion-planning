@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "calibration_type": "real_gun_mount_adjustment",
+  "coordinate_frame": "URDF flange",
+  "rotation_axis_flange": [
+    1.0,
+    -2.6347356871039033e-19,
+    6.179952383167374e-17
+  ],
+  "rotation_axis_source": "URDF wrist_3_joint / J6 local axis",
+  "roll_deg": 90.0,
+  "translation_flange_mm": [0.0, 0.0, 0.0],
+  "T_flange_adjustment": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_sha256": "437e28161ee9f50ad688f6f4239f432775dc6a9594f331a13110a89847442699",
+  "T_flange_source": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.04920610481801987
+    ],
+    [
+      0.0,
+      0.0003632390676729519,
+      -0.9999999340286881,
+      0.040933945631130085
+    ],
+    [
+      0.0,
+      0.999999934028688,
+      0.00036323906767285474,
+      -0.031885669187674034
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_source_nominal": [
+    [1.0, 0.0, 0.0, -0.04920610481801987],
+    [0.0, 0.999999934028688, 0.00036323906767285474, -0.031885669187674034],
+    [0.0, -0.0003632390676729519, 0.9999999340286881, -0.040933945631130085],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_mount_face": {
+    "method": "contact plane and four bolt-hole rigid registration against UR5 wrist3 mesh",
+    "plane": "x = 49.23116 mm",
+    "center_source_mm": [49.23116, 31.858934584965844, 40.914309239534376],
+    "normal_source": [-1.0, 0.0, 0.0],
+    "radius_estimate_mm": 31.49999988035614,
+    "bolt_pcd_mm": 50.0,
+    "bolt_hole_diameter_mm": 6.0,
+    "hole_center_rms_mm": 0.03135233267636142,
+    "hole_center_max_mm": 0.04025449963304357,
+    "alignment_report": "real_gun_geometry/mount_hole_alignment.json",
+    "fit_note": "Four-hole match and opposed contact normals; +90 azimuth branch retained. Residual measures meshes, not physical installation accuracy."
+  },
+  "status": "DRAFT",
+  "valid": true,
+  "confirmed_by_operator": false,
+  "applied_to_matlab": false,
+  "requires_replan": true,
+  "requires_collision_revalidation": true,
+  "wire_tcp_error_mm": {
+    "available": false,
+    "reason": "REAL 焊丝停用：未验证几何；不是已通过焊丝碰撞检查",
+    "status": "DISABLED_UNVERIFIED",
+    "distance_mm": null
+  },
+  "timestamp": "2026-10-12",
+  "version": "UR5-HMI-GUN-MOUNT-FOUR-HOLES-DRAFT-2",
+  "robot_motion": "NO"
+}

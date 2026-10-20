@@ -1,0 +1,16 @@
+RRT-Connect complete-path command report
+Created: 2026-09-18 09:23:55
+Source result: /home/ttbstt/jixiebi/UR5/matlab仿真/weld_rrt_connect_approach_exit.mat
+Sent: 1
+Points: 120
+Total duration (s): 17.850000
+Timing mode: fixed
+Fixed segment duration (s): 0.150000
+Weld speed target (m/s): 0.043000
+qMat Home (deg): [180 -90 0 -90 0 0]
+qCop Home (deg): [0 0 0 0 0 0]
+qCop final (deg): [360 0 0 0 0 0]
+qCop final modulo 2pi (deg): [-1.4033419e-14 0 0 0 0 0]
+Max qMat step (deg): 12.000000
+Max qCop step (deg): 12.000000
+Existing 80-point weld path was not replanned: 1

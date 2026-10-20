@@ -1,0 +1,26 @@
+{
+ "request_id": "20261010_105205_168803",
+ "task": "RealHome_to_PreWeld",
+ "qStart": [
+  5.669307708740234,
+  -1.8625906149493616,
+  2.2919654846191406,
+  0.31346654891967773,
+  2.1461029052734375,
+  -0.6893985907184046
+ ],
+ "qGoal": [
+  -0.014894647819507709,
+  4.583678798565408,
+  -1.5827839940260957,
+  4.875095607430998,
+  -4.481179136277017,
+  -3.8834036633603373
+ ],
+ "algorithm": "Constraint-aware Bidirectional RRT* (CBi-RRT*)",
+ "seed": 20260917,
+ "maxPlanningTimeSec": 30.0,
+ "start_source": "current",
+ "endpoint_source": "Current Robot snapshot -> weld_anchor_points.json:qPreWeld",
+ "weld_algorithm": "ACCP (replan_weld_actual_axis_adaptive_feasibility.m)"
+}

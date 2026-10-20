@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "robot_motion": "NO",
+  "executionReady": false,
+  "fixture_root": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397",
+  "unchanged_snapshot": {
+    "pass": true,
+    "status": "PASS",
+    "changed_files": [],
+    "before_sha256": "ae68ea7c0c4bb3081a4743f50d32bc7deb599eb33324d4182e1c956f18284854",
+    "after_sha256": "ae68ea7c0c4bb3081a4743f50d32bc7deb599eb33324d4182e1c956f18284854",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "collision_mesh_content_change": {
+    "pass": false,
+    "status": "STALE",
+    "changed_files": [
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/collision_fixture.stl"
+    ],
+    "before_sha256": "ae68ea7c0c4bb3081a4743f50d32bc7deb599eb33324d4182e1c956f18284854",
+    "after_sha256": "5bf2bcb27efa843cc3b5abde83b5301161f8d4158c782478765d8f28cb396b51",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "referenced_collision_data_change": {
+    "pass": false,
+    "status": "STALE",
+    "changed_files": [
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_gun_geometry/collision_fixture.json"
+    ],
+    "before_sha256": "5bf2bcb27efa843cc3b5abde83b5301161f8d4158c782478765d8f28cb396b51",
+    "after_sha256": "cb5f93921d59759935338d99537a19650bdadfcb977a6adcdc22ddd3ddffa3f7",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "missing_dependency_created": {
+    "pass": false,
+    "status": "STALE",
+    "changed_files": [
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_tcp_calibration_active.json"
+    ],
+    "before_sha256": "cb5f93921d59759935338d99537a19650bdadfcb977a6adcdc22ddd3ddffa3f7",
+    "after_sha256": "95864bc5009a05f4fc6a6fb23e2ac080f6a45da6ba2292c29ad324aa7a6434e3",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "reference_list_change": {
+    "pass": false,
+    "status": "STALE",
+    "changed_files": [
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_gun_geometry/changed_reference.json",
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_gun_geometry/collision_fixture.json",
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_gun_geometry/real_gun_geometry.json",
+      "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/realhome_update_regression_20261014_v2/tp5873b338_1763_4b80_94ca_f7baf5a33397/real_tcp_calibration_active.json"
+    ],
+    "before_sha256": "cb5f93921d59759935338d99537a19650bdadfcb977a6adcdc22ddd3ddffa3f7",
+    "after_sha256": "7cb242a2e8540b22416ff5dcbc13e57456ae1f4099ff5c4c6a9382b6b1068578",
+    "scope": "Source-file content stability around scene load; no geometry or planner changes"
+  },
+  "production_files_written": false
+}

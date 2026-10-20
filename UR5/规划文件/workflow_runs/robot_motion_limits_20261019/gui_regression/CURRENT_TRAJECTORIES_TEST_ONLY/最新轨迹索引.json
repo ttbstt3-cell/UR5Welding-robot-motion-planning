@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "selected": "prepare",
+  "prepare": {
+    "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/robot_motion_limits_20261019/gui_regression/CURRENT_TRAJECTORIES_TEST_ONLY/连续规划完成轨迹_2026-10-19_15-19-41_591341.mat",
+    "sha256": "7bab695b30f6069dbc0408a37423c3e1eb01f57fbc6271f6bea3bb41c488ce0c",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/robot_motion_limits_20261019/gui_regression/CURRENT_TRAJECTORIES_TEST_ONLY/连续规划完成轨迹_2026-10-19_15-19-41_591341_report.json",
+    "report_sha256": "8ddd559fd950b2bf56a3052735916338989169ec8300a461e00dd0f2bc9068af",
+    "source_path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/robot_motion_limits_20261019/gui_regression/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_151941_591341/offline_optimized_trajectory.mat",
+    "source_report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/robot_motion_limits_20261019/gui_regression/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_151941_591341/report.json",
+    "source_run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/robot_motion_limits_20261019/gui_regression/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_151941_591341",
+    "phase": "prepare",
+    "realhome_version": "REALHOME-634ae764423f21e54358c5955e69edf3c833793b8c7456cd05608e045eef8321",
+    "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+    "published_at": "2026-10-19T15:19:42.021004+08:00",
+    "executionReady": false,
+    "parent_preview_sha256": "006ccb473b25f5771ce11d00fada40f8ae3db8f2827d05e1c7d4355e52aad314"
+  }
+}

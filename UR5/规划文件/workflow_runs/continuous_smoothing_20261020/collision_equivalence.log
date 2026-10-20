@@ -1,0 +1,10 @@
+                                  pass: 1
+                                states: 105
+          environment_collision_states: 66
+                 self_collision_states: 66
+    maximum_pair_distance_difference_m: 0
+                   bad_policy_rejected: 1
+                           elapsed_sec: 1.3916
+                        executionReady: 0
+                          robot_motion: 'NO'
+

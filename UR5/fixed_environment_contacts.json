@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "version": "fixed-base-floor-20261015-v1",
+  "status": "ACTIVE_MODEL_VERIFIED_FIXED_SUPPORT",
+  "robot_body": "base_link_inertia",
+  "environment_object": "EnvironmentCollision_Floor",
+  "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+  "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+  "base_mesh_sha256": "81c2ad265f7140313c305d9bfdf98d5b00f5978e9b01acbf12243602dc4dd151",
+  "evidence_file": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/fixed_base_floor_contact_20261015/fixed_support_verification.json",
+  "verification_type": "MODEL_FIXED_JOINT_CHAIN_AND_SUPPORT_MESH",
+  "physical_installation_independently_measured": false,
+  "scope": "Only base_link_inertia versus this exact floor; no moving link/tool/wire exception",
+  "timestamp": "2026-10-15",
+  "executionReady": false
+}

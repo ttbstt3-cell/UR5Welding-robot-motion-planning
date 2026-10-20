@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "calibration_type": "fixed_point_rotation_position_only",
+  "coordinate_frames": {
+    "base": "URDF base",
+    "flange": "URDF flange",
+    "tcp": "real welding TCP position"
+  },
+  "position_flange_tcp_m": [
+    0.3764271402004276,
+    0.003814024887134629,
+    0.005615173047235191
+  ],
+  "position_flange_tcp_mm": [
+    376.42714020042763,
+    3.8140248871346287,
+    5.61517304723519
+  ],
+  "pivot_base_m": [
+    -0.2956320793293371,
+    0.3719652212589531,
+    0.200779469126669
+  ],
+  "orientation_source": "fresh controller tcp_offset on confirmed write; not solved by pivot calibration",
+  "orientation_policy": "preserve current controller RX/RY/RZ; no orientation calibration",
+  "fit": {
+    "tcp_flange_m": [
+      0.3764271402004276,
+      0.003814024887134629,
+      0.005615173047235191
+    ],
+    "pivot_base_m": [
+      -0.2956320793293371,
+      0.3719652212589531,
+      0.200779469126669
+    ],
+    "residuals_mm": [
+      0.3874963358759672,
+      1.602125334675613,
+      2.772848666611814,
+      1.0218780669572933,
+      1.0675141284576624
+    ],
+    "rms_residual_mm": 1.5867873155809353,
+    "max_residual_mm": 2.772848666611814,
+    "matrix_rank": 6,
+    "condition_number": 14.493556953658286,
+    "orientation_span_deg": 43.3952705419388,
+    "pose_count": 5,
+    "valid": true
+  },
+  "independent_verification_mm": [],
+  "verification_samples": [],
+  "pose_samples": [
+    {
+      "timestamp": "09:01:45",
+      "q_rad": [
+        5.229847431182861,
+        -1.8790376822101038,
+        1.5796971321105957,
+        1.1769388914108276,
+        1.6593141555786133,
+        -0.058211628590719044
+      ]
+    },
+    {
+      "timestamp": "09:02:47",
+      "q_rad": [
+        5.7180705070495605,
+        -1.5327461401568812,
+        1.3540019989013672,
+        1.3959966897964478,
+        2.1833624839782715,
+        0.8346555829048157
+      ]
+    },
+    {
+      "timestamp": "09:03:47",
+      "q_rad": [
+        4.722735404968262,
+        -1.9556105772601526,
+        1.6530146598815918,
+        1.279697299003601,
+        1.176104187965393,
+        -0.6832740942584437
+      ]
+    },
+    {
+      "timestamp": "09:05:15",
+      "q_rad": [
+        5.507376670837402,
+        -1.6664755980121058,
+        1.4001350402832031,
+        1.316381812095642,
+        1.9558873176574707,
+        -0.08407336870302373
+      ]
+    },
+    {
+      "timestamp": "09:09:00",
+      "q_rad": [
+        5.5074005126953125,
+        -1.6664517561541956,
+        1.4000511169433594,
+        1.3163458108901978,
+        1.955923318862915,
+        -0.08409721056093389
+      ]
+    }
+  ],
+  "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+  "timestamp": "2026-10-10T09:11:33+0800",
+  "version": "UR5-HMI-TCP-PIVOT-2",
+  "valid": true,
+  "review_status": "ACTIVE",
+  "quality_band": "GOOD",
+  "quality_level": "GOOD",
+  "applied_to_planning_model": false,
+  "requires_replan": false,
+  "requires_collision_revalidation": false
+}

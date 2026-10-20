@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "library": "/opt/ros/humble/lib/libjoint_trajectory_controller.so",
+  "mode": "positions_plus_velocities_cubic_hermite",
+  "joint_samples": 15150,
+  "max_q_difference": 6.66134e-16,
+  "max_v_difference": 2.58127e-15,
+  "max_a_difference": 1.15463e-14,
+  "ros_node_started": false,
+  "robot_motion": false,
+  "scope": "Installed ROS interpolation library only; not UR internal servo or physical tracking certification"
+}

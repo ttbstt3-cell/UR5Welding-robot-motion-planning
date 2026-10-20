@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "stage": "PREVIEW WARNING",
+  "warning": "WARNING · WeldingGunMount <-> WorkpieceCollision_bottom; WeldingGunMount <-> WorkpieceCollision_wall_x0; WeldingGunMount <-> WorkpieceCollision_wall_x1; WeldingGunMount <-> WorkpieceCollision_wall_y1; WeldingGunWire <-> WorkpieceCollision_bottom; WeldingGunWire <-> WorkpieceCollision_wall_y1",
+  "execution_gate_open": false,
+  "live_state_unchanged": true,
+  "old_trajectory_stale_reasons": [
+    "碰撞场景版本版本不一致"
+  ],
+  "robot_motion": "NO"
+}

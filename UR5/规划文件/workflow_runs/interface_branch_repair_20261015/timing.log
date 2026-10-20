@@ -1,0 +1,12 @@
+HMI_WELD_STAGE stage=BOUNDARIES
+HMI_WELD_STAGE stage=VELOCITY_OPTIMIZATION
+VELOCITY_PROFILE audit=BASELINE_PREVIOUS_SEGMENT
+duration=25.135842 sync=2.055985 contour=0.406375 orientation=0.738561 vmax=0.091121156 amax=0.848252593 collision=1 pass=0
+VELOCITY_PROFILE audit=A_CENTRAL_DIFFERENCE
+duration=25.135842 sync=3.289951 contour=0.277386 orientation=0.679224 vmax=0.083423386 amax=0.174027119 collision=1 pass=0
+VELOCITY_PROFILE audit=B_MINIMUM_JERK_QUINTIC_DERIVED
+duration=25.135842 sync=4.139510 contour=0.147303 orientation=1.002891 vmax=0.107046991 amax=0.274170004 collision=1 pass=0
+VELOCITY_PROFILE audit=C_NONZERO_ENTRY_CONTROLLER_AWARE
+duration=25.135842 sync=0.568271 contour=0.182934 orientation=0.548976 vmax=0.084158503 amax=0.261796382 collision=1 pass=0
+PREPARATION_FAILED Current ACCP timing/profile C failed: sync=0.568271mm contour=0.182934mm orientation=0.548976deg velocity=0.084158503rad/s acceleration=0.261796382rad/s^2; ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 0.568271 mm >= 0.500000 mm; controller TCP orientation 0.548976 deg > 0.500000 deg
+Current ACCP timing/profile C failed: sync=0.568271mm contour=0.182934mm orientation=0.548976deg velocity=0.084158503rad/s acceleration=0.261796382rad/s^2; ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 0.568271 mm >= 0.500000 mm; controller TCP orientation 0.548976 deg > 0.500000 deg

@@ -1,0 +1,4 @@
+algorithm,source,nRuns,nCollisionFree,collisionFreeRate,rawPathLengthMedian,greedyPathLengthMedian,bsplinePathLengthMedian,turningAngleSumMedian_rad,maxTurningAngleMedian_rad,postProcessTimeMedian_ms,postProcessCollisionChecksMedian
+Bi-RRT*,Common Greedy+B-spline,80,48,0.6,118.942287565043,118.393283454828,113.137569024128,0.0576037500156179,0.0144510096294163,1.6045,200
+APF-Bi-RRT*,APF-native,80,41,0.5125,119.127382547157,118.535493419253,113.137084989848,8.05931326168057e-07,2.48898462779673e-07,1.6975,200
+APF-Bi-RRT*,Common Greedy+B-spline,80,41,0.5125,119.127382547157,118.535493419253,113.137084989848,3.33816475803064e-06,2.58095682795179e-08,1.361,200

@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-10-15T12:34:41.389465+08:00",
+  "mode": "READ_ONLY_NO_MOTION",
+  "queries_only": true,
+  "controllers": [
+    {
+      "name": "joint_state_broadcaster",
+      "type": "joint_state_broadcaster/JointStateBroadcaster",
+      "state": "active"
+    },
+    {
+      "name": "scaled_joint_trajectory_controller",
+      "type": "ur_controllers/ScaledJointTrajectoryController",
+      "state": "inactive"
+    },
+    {
+      "name": "joint_trajectory_controller",
+      "type": "joint_trajectory_controller/JointTrajectoryController",
+      "state": "inactive"
+    },
+    {
+      "name": "io_and_status_controller",
+      "type": "ur_controllers/GPIOController",
+      "state": "active"
+    },
+    {
+      "name": "forward_velocity_controller",
+      "type": "velocity_controllers/JointGroupVelocityController",
+      "state": "inactive"
+    },
+    {
+      "name": "speed_scaling_state_broadcaster",
+      "type": "ur_controllers/SpeedScalingStateBroadcaster",
+      "state": "active"
+    },
+    {
+      "name": "forward_position_controller",
+      "type": "position_controllers/JointGroupPositionController",
+      "state": "inactive"
+    },
+    {
+      "name": "force_torque_sensor_broadcaster",
+      "type": "force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster",
+      "state": "active"
+    },
+    {
+      "name": "forward_effort_controller",
+      "type": "effort_controllers/JointGroupEffortController",
+      "state": "inactive"
+    },
+    {
+      "name": "tcp_pose_broadcaster",
+      "type": "pose_broadcaster/PoseBroadcaster",
+      "state": "active"
+    },
+    {
+      "name": "force_mode_controller",
+      "type": "ur_controllers/ForceModeController",
+      "state": "inactive"
+    },
+    {
+      "name": "passthrough_trajectory_controller",
+      "type": "ur_controllers/PassthroughTrajectoryController",
+      "state": "inactive"
+    },
+    {
+      "name": "ur_configuration_controller",
+      "type": "ur_controllers/URConfigurationController",
+      "state": "active"
+    },
+    {
+      "name": "freedrive_mode_controller",
+      "type": "ur_controllers/FreedriveModeController",
+      "state": "inactive"
+    },
+    {
+      "name": "friction_model_controller",
+      "type": "ur_controllers/FrictionModelController",
+      "state": "active"
+    },
+    {
+      "name": "tool_contact_controller",
+      "type": "ur_controllers/ToolContactController",
+      "state": "inactive"
+    }
+  ],
+  "hardware": [
+    {
+      "name": "ur5",
+      "type": "system",
+      "class_type": "ur_robot_driver/URPositionHardwareInterface",
+      "state": "active"
+    }
+  ],
+  "parameters": {
+    "/scaled_joint_trajectory_controller": {
+      "interpolation_method": "splines",
+      "command_interfaces": [
+        "position"
+      ],
+      "state_interfaces": [
+        "position",
+        "velocity"
+      ],
+      "open_loop_control": false,
+      "allow_nonzero_velocity_at_trajectory_end": true,
+      "update_rate": 125,
+      "speed_scaling_interface_name": "speed_scaling/speed_scaling_factor"
+    },
+    "/controller_manager": {
+      "update_rate": 125
+    }
+  },
+  "robot_description_hardware": [
+    {
+      "plugin": "ur_robot_driver/URPositionHardwareInterface",
+      "parameters": {
+        "script_filename": "/opt/ros/humble/share/ur_client_library/resources/external_control.urscript",
+        "headless_mode": "False",
+        "servoj_gain": "2000",
+        "servoj_lookahead_time": "0.03"
+      }
+    }
+  ],
+  "polyscope": {
+    "success": true,
+    "answer": "URSoftware 3.15.4.106291 (八月 16 2021)",
+    "version": {
+      "major": 3,
+      "minor": 15,
+      "bugfix": 4,
+      "build": 106291
+    }
+  }
+}

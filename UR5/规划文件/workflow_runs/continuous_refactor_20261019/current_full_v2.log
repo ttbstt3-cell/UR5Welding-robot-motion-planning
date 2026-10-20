@@ -1,0 +1,8 @@
+CP_GEOMETRY iter=1 knots=360 pos=13.549108 ori=0.894680 bad=1275
+CP_GEOMETRY iter=2 knots=460 pos=4.789364 ori=0.315744 bad=1194
+CP_GEOMETRY iter=3 knots=572 pos=1.457609 ori=0.262342 bad=434
+CP_GEOMETRY iter=4 knots=624 pos=0.499395 ori=0.262334 bad=74
+CP_GEOMETRY iter=5 knots=637 pos=0.325132 ori=0.262333 bad=4
+CP_GEOMETRY iter=6 knots=638 pos=0.287271 ori=0.262333 bad=0
+CP_TIME iter=1 nodes=638 pos=0.287606 ori=0.261786
+INDEPENDENT_RESULT current pass=1 time=399.990 executionReady=0

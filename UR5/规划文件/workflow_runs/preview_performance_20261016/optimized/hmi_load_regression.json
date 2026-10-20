@@ -1,0 +1,54 @@
+{
+  "scope": "Production Qt completion/load/preview; offscreen renderer, ROS thread never started",
+  "config_unchanged": true,
+  "runs": [
+    {
+      "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_124729_001415",
+      "pass": true,
+      "node_count": 359,
+      "completion_and_three_preview_frames_sec": 0.31725719998939894,
+      "performance": {
+        "phase": "preview",
+        "file_load_and_scene_adoption_sec": 0.05228482199891005,
+        "completion_callback_sec": 0.1059320009953808,
+        "process_and_transfer_sec": null,
+        "robot_motion": "NO"
+      },
+      "live_state_preserved": true,
+      "executionReady": false,
+      "robot_motion": "NO"
+    },
+    {
+      "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_01",
+      "pass": true,
+      "node_count": 416,
+      "completion_and_three_preview_frames_sec": 0.19624565599951893,
+      "performance": {
+        "phase": "preview",
+        "file_load_and_scene_adoption_sec": 0.03810567098844331,
+        "completion_callback_sec": 0.09013591200346127,
+        "process_and_transfer_sec": null,
+        "robot_motion": "NO"
+      },
+      "live_state_preserved": true,
+      "executionReady": false,
+      "robot_motion": "NO"
+    },
+    {
+      "directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_02",
+      "pass": true,
+      "node_count": 416,
+      "completion_and_three_preview_frames_sec": 0.24881565300165676,
+      "performance": {
+        "phase": "preview",
+        "file_load_and_scene_adoption_sec": 0.04162454399920534,
+        "completion_callback_sec": 0.13941181400150526,
+        "process_and_transfer_sec": null,
+        "robot_motion": "NO"
+      },
+      "live_state_preserved": true,
+      "executionReady": false,
+      "robot_motion": "NO"
+    }
+  ]
+}

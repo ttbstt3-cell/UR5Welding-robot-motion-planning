@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "rejected_cases": [
+    "q changed",
+    "TCP changed",
+    "time changed",
+    "version mismatch",
+    "execution claim",
+    "stopped iterate substituted for C",
+    "nonfinite candidate",
+    "failed complete",
+    "failed collision_pass",
+    "failed joint_limits_pass",
+    "failed analytic_derivative_and_position_extrema_pass",
+    "precision exceeded max_tcp_contour_error_mm",
+    "precision exceeded max_tcp_time_sync_error_mm",
+    "precision exceeded max_tcp_orientation_error_deg",
+    "NaN audit",
+    "insufficient samples",
+    "wrong interpolation",
+    "invalid D cannot masquerade as C",
+    "original C failed"
+  ],
+  "fallback_C_exact": true,
+  "D_success_branch_fixture_pass": true,
+  "solver_exit_classification_pass": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

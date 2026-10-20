@@ -1,0 +1,9 @@
+taskID,description,algorithm,seed,plannerResolutionDeg,validationResolutionDeg,timeout,outcome,success,certifiedSuccess,planningTime_ms,firstCandidateTime_ms,firstCertifiedTime_ms,candidateCount,candidateValidationFailures,candidateValidationTimedOut,jointPathLengthL2_rad,totalJointMotion_rad,jointMotion1_rad,jointMotion2_rad,jointMotion3_rad,jointMotion4_rad,jointMotion5_rad,jointMotion6_rad,edgeCollisionChecks,collisionConfigurationChecks,nodeCount,pathStateCount,failedCandidateEdge,failedCandidateSample,failedCandidateType
+T01_Safe_to_Point1,Seam A entry: qSafe(qHome) -> Point 1,RRT-Connect,1,1,0.125,1,TIMEOUT,0,0,2003.533,NaN,NaN,0,0,0,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,53,503,28,0,NaN,NaN,
+T01_Safe_to_Point1,Seam A entry: qSafe(qHome) -> Point 1,Bi-RRT*,1,1,0.125,1,TIMEOUT,0,0,2002.893,NaN,NaN,0,0,0,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,17,528,7,0,NaN,NaN,
+T01_Safe_to_Point1,Seam A entry: qSafe(qHome) -> Point 1,ClassGoal-Lite,1,1,0.125,1,TIMEOUT,0,0,2003.549,NaN,NaN,0,0,0,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,14,545,1,0,NaN,NaN,
+T01_Safe_to_Point1,Seam A entry: qSafe(qHome) -> Point 1,Full Classified-RRT*,1,1,0.125,1,TIMEOUT,0,0,2003.589,NaN,NaN,0,0,0,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,17,547,1,0,NaN,NaN,
+T02_Point80_to_Safe,Seam A exit: Point 80 -> qSafe(qHome),RRT-Connect,1,1,0.125,1,TIMEOUT,0,0,2002.666,1233.699,NaN,1,1,1,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,38,718,17,0,2,67,
+T02_Point80_to_Safe,Seam A exit: Point 80 -> qSafe(qHome),Bi-RRT*,1,1,0.125,1,TIMEOUT,0,0,2001.784,NaN,NaN,0,0,0,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,16,545,6,0,NaN,NaN,
+T02_Point80_to_Safe,Seam A exit: Point 80 -> qSafe(qHome),ClassGoal-Lite,1,1,0.125,1,TIMEOUT,0,0,2002.272,894.763,NaN,1,1,1,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,13,848,3,0,2,73,
+T02_Point80_to_Safe,Seam A exit: Point 80 -> qSafe(qHome),Full Classified-RRT*,1,1,0.125,1,TIMEOUT,0,0,2003.446,889.251,NaN,1,1,1,NaN,0,NaN,NaN,NaN,NaN,NaN,NaN,15,842,3,0,2,70,

@@ -1,0 +1,53 @@
+{
+  "investigation_date": "2026-10-15",
+  "scope": "Read-only UR5 capability investigation; NO ROBOT MOTION",
+  "installed_packages": {
+    "ros-humble-ur-robot-driver": "2.14.0-1jammy.20260908.194018",
+    "ros-humble-ur-controllers": "2.14.0-1jammy.20260908.143119",
+    "ros-humble-ur-client-library": "2.15.0-1jammy.20260905.032610",
+    "ros-humble-joint-trajectory-controller": "2.54.0-1jammy.20260908.124006",
+    "ros-humble-controller-manager": "2.54.2-1jammy.20260908.115549",
+    "ros-humble-control-msgs": "4.9.0-1jammy.20260907.212955"
+  },
+  "motion_primitives_ros_package_installed": false,
+  "post_report_protected_file_check": {
+    "checked_files": 11,
+    "all_sha256_unchanged": true,
+    "mismatches": []
+  },
+  "dpkg_verify_result": "No modified-file entries returned for ur-client-library, ur-controllers, ur-robot-driver, joint-trajectory-controller",
+  "official_manual": {
+    "url": "https://s3-eu-west-1.amazonaws.com/ur-support-site/124999/scriptManual_3.15.4.pdf",
+    "bytes": 872555,
+    "sha256": "a9000a6bedcdf87e90ac33560312e40ad09ab57559c645e287fa7a862feea410",
+    "access": "read into memory; text extraction only"
+  },
+  "offline_message_conversion": {
+    "ros_nodes_created": 0,
+    "action_goals_sent": 0,
+    "tests": [
+      "positions preserved; no derivatives invented",
+      "positions+velocities preserved",
+      "positions+velocities+accelerations preserved"
+    ],
+    "times_seconds": [
+      0,
+      0.123456789,
+      2.5
+    ],
+    "pass": true
+  },
+  "protected_sha256": {
+    "UR5/ur5_hmi/gui/main_window.py": "e077068e9cffe0483d1bd23cff4a61f885a2dca506b4a9062b5784893c2ad484",
+    "UR5/ur5_hmi/gui/planning_workflow.py": "33637dfaa5b0f80920e12dcddd4ea0436359660eb3b7404c0069068f896a7846",
+    "UR5/ur5_hmi/ros/trajectory_client.py": "045ebc5d591ed32234374b0fd3423253a46dc4be89d121bfc345c96532cde76b",
+    "UR5/ur5_hmi/ros/ros_node.py": "f677411c5da17d387c2bbd3010a1da97b2535235727bfb439a522f24c692ec06",
+    "UR5/ur5_hmi/trajectory/trajectory_utils.py": "150aac3c57d84c7851182b5de11723b0349d574d3c124060d10d2c7eb4dbdb3a",
+    "UR5/ur5_hmi/config/hmi_config.yaml": "815e4ebd0003a8cb87c8bf704a64498757086cfa08d47a6e32389619cf7d4c43",
+    "UR5/start_ur5_real.sh": "39f83332dd5161016fd8d7f33783669f131f6f11b4cd3fa0af001c5839b416f4",
+    "UR5/matlab仿真/prepare_hmi_continuous_request.m": "056e53dd5df5f7e3979f1333eb7212a5a5739eebec3bd9c55af4313e0dc8e92e",
+    "/opt/ros/humble/share/ur_robot_driver/config/ur_controllers.yaml": "8f73ed639b0bbae5ab6e1eff2b3bc142f50916875ba2369e6d739349b4112c88",
+    "/opt/ros/humble/share/ur_robot_driver/launch/ur_control.launch.py": "2cf66ff30972e98ed60b531b9b28997d1a9a96948748f30cb154e64e4726f881",
+    "/opt/ros/humble/share/ur_client_library/resources/external_control.urscript": "6b86a908fe1e78078346103c2b73cd126a31d50f02774c22f41e43652211ef36"
+  }
+}

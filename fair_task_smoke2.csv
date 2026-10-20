@@ -1,0 +1,6 @@
+seam,algorithm,trialIndex,taskSeed,complete,passWithinBudget,latePass,tffWallSec,wallSec,algorithmSec,selectedDirection,ikCalls,edgeTests,nodeCollisionFree,edgeCollisionFree,maxJointJumpDeg,maxNodeTcpErrorMm,maxSegmentTcpErrorMm,outputFile
+bottom_x_wall_y1,A-ARC-IK,1,20270901,1,1,0,15.129442,15.128009,4.922162,forward,1264,NaN,1,1,8.78603694676931,3.55371877111871e-05,2.20607566331587,/home/ttbstt/jixiebi/UR5/matlab仿真/fair_task_smoke_runs2/Seam_A_arc_001.mat
+bottom_x_wall_x0,A-ARC-IK,1,20270901,1,1,0,7.416631,7.41463,2.922598,forward,272,NaN,1,1,1.94661438194555,2.92567436601357e-05,2.92567436601357e-05,/home/ttbstt/jixiebi/UR5/matlab仿真/fair_task_smoke_runs2/Seam_B_arc_001.mat
+bottom_x_wall_x0,Gao-AR-RRT*,1,20270901,0,0,0,NaN,21.074229,20.000782,,2792,758,0,0,NaN,NaN,NaN,/home/ttbstt/jixiebi/UR5/matlab仿真/fair_task_smoke_runs2/Seam_B_gao_001.mat
+bottom_x_wall_x1,A-ARC-IK,1,20270901,0,0,1,NaN,53.090197,13.376355,reverse,3874,NaN,0,0,NaN,NaN,NaN,/home/ttbstt/jixiebi/UR5/matlab仿真/fair_task_smoke_runs2/Seam_C_arc_001.mat
+bottom_x_wall_x1,Gao-AR-RRT*,1,20270901,0,0,0,NaN,20.820698,20.021762,,4408,263,0,0,NaN,NaN,NaN,/home/ttbstt/jixiebi/UR5/matlab仿真/fair_task_smoke_runs2/Seam_C_gao_001.mat

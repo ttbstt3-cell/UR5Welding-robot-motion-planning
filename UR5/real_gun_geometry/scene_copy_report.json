@@ -1,0 +1,35 @@
+{
+  "scene": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/ur5_real_gun_alignment_preview.ttt",
+  "removed_old_gun_shapes": 2,
+  "removed_scene_scripts": 1,
+  "visual_note": "full source STL",
+  "simulation_running": false,
+  "status": "UNCONFIRMED_SOURCE_AT_FLANGE",
+  "T_mount_source_preview": [
+    [
+      8.731468152887039e-05,
+      -1.3561208350395193e-07,
+      -0.9999999961880637,
+      -0.00012712534137579974
+    ],
+    [
+      -2.7571243375327784e-08,
+      0.9999999999999901,
+      -1.3561449139525262e-07,
+      1.7720096850403732e-07
+    ],
+    [
+      0.9999999961880726,
+      2.758308440514347e-08,
+      8.731468152516544e-05,
+      0.006411970524354906
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frozen_scene_overwritten": false
+}

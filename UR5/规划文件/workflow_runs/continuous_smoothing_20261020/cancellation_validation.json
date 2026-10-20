@@ -1,0 +1,14 @@
+{
+  "pass_all": true,
+  "elapsed_after_termination": 4.472431428031996,
+  "parent_pid": 1650574,
+  "worker_pids": [
+    1650852,
+    1650854,
+    1650856,
+    1650858
+  ],
+  "remaining": [],
+  "robot_motion": "NO",
+  "run_dir": "/home/ttbstt/jixiebi/UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/continuous_smoothing_20261020/cancel_test_f4vcgcl0"
+}

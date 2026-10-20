@@ -1,0 +1,13 @@
+{
+  "scope": "pre-performance archived core + refinement; same failed input/seed; no timing stage on geometry failure",
+  "wall_sec": 316.81085,
+  "configuration_complete": true,
+  "geometry_complete": false,
+  "max_tcp_error_mm": 0.65651936894525664,
+  "sparse_nodes": 24,
+  "failed_refinement_edges": [
+    19,
+    20
+  ],
+  "executionReady": false
+}

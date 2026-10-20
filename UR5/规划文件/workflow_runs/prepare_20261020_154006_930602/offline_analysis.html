@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>UR5 连续规划离线分析 · 不可用于真机执行</title>
+<style>body{font:16px sans-serif;max-width:1100px;margin:32px auto;line-height:1.6}
+td{border-bottom:1px solid #ddd;padding:6px 18px}pre{white-space:pre-wrap}.pending{color:#8a6d00}</style>
+<h1>连续规划完成（离线验证通过）</h1>
+<h2 class="pending">真机执行准备：待验证</h2>
+<p>executionReady=false。以下轨迹、曲线及报告仅供离线预演和分析，不含执行许可。</p>
+<table><tr><td>Weld velocity source (seed before full-task optimization)</td><td>Not recorded</td></tr><tr><td>Non-optimal C fallback (NOT a D optimizer success)</td><td>Not recorded</td></tr><tr><td>TCP contour max / mm</td><td>0.24849783055586944</td></tr><tr><td>TCP time-sync max / mm</td><td>0.2863160538556576</td></tr><tr><td>TCP orientation max / deg</td><td>0.26142918303371393</td></tr><tr><td>Joint velocity max / rad/s</td><td>0.0847825932551002</td></tr><tr><td>Joint acceleration max / rad/s²</td><td>0.1631066894890289</td></tr><tr><td>Full collision samples</td><td>63701</td></tr><tr><td>Collision PASS</td><td>True</td></tr><tr><td>Joint limits PASS</td><td>True</td></tr><tr><td>Version checks PASS</td><td>True</td></tr><tr><td>Duration / s</td><td>454.01189591844076</td></tr><tr><td>Segment-interior jerk max / rad/s³</td><td>0.6204928818010014</td></tr><tr><td>Segment-interior jerk RMS / rad/s³</td><td>0.0605215610604804</td></tr><tr><td>Minimum sampled positive clearance / mm (NOT physical safety margin)</td><td>0.3057900082671714</td></tr></table><h2>连续性范围</h2><pre>{
+  &quot;interface_c2_pass&quot;: true,
+  &quot;interface_max_acceleration_jump_rad_s2&quot;: 9.71445146547012e-17,
+  &quot;all_nodes_c2_guaranteed&quot;: false,
+  &quot;all_nodes_max_acceleration_jump_rad_s2&quot;: 0.0001357321500108876,
+  &quot;note&quot;: &quot;C2 enforced at task-segment joins only; other node acceleration jumps are reported, not hidden.&quot;
+}</pre>
+<p>分段内jerk与节点加速度跳变分别统计；不能将段接口C²通过解释为全程C²连续。</p>
+<h2>仍需验证</h2><ul><li>Independent physical clearance / calibration uncertainty validation</li><li>Actual servo tracking / execution commissioning</li><li>Sampled collision PASS is not a mathematical continuous-safety proof; wire shorten=3mm remains an approximation</li></ul><h2>误差曲线</h2><img src="offline_tracking_errors.png" style="max-width:100%">
+<p>图表为独立FK显示采样；验收指标来自完整控制器等价验证。实际UR伺服响应尚未验收。</p>
+<p><a href="offline_optimized_trajectory.mat">非执行用途优化轨迹 MAT</a> ·
+<a href="offline_optimized_trajectory.json">非执行用途优化轨迹 JSON</a> ·
+<a href="offline_tracking_curves.csv">曲线 CSV</a> · <a href="report.json">完整报告</a></p></html>

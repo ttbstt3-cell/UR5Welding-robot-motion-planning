@@ -1,0 +1,14 @@
+Measured-wire-axis weld planning timing report
+Created: 2026-09-17 15:56:18
+Source algorithm: replan_weld_actual_axis.m
+Existing result was not overwritten: 1
+Animation: 0
+ROS2 publish: 0
+Random seed: 20260917
+Weld points: 80
+Planning elapsed time (s): 454.006036
+Complete: 1
+Node collision free: 1
+Edge collision free: 1
+Max joint jump (deg): 9.953837
+Timed rerun result: /home/ttbstt/jixiebi/UR5/matlab仿真/weld_actual_axis_replan_timed_20260917.mat

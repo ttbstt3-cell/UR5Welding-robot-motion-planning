@@ -1,0 +1,24 @@
+{
+  "wire_collision_shorten_mm": 10,
+  "visual_wire_length_mm": 55.941478901644707,
+  "collision_wire_length_mm": 45.941478901644707,
+  "ik_count": 144,
+  "wire_collision_count": 0,
+  "workpiece_collision_count": 85,
+  "final_feasible_candidate_count": 16,
+  "axis_constraint_preserved": true,
+  "tcp_unchanged": true,
+  "robot_motion": "NO",
+  "calibration_binding": {
+    "tcp_calibration_sha256": "e83787309caaf9bc888fdf83dc89e48d3c940cb9d23ef15b8f00426316846ac2",
+    "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+    "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+    "workpiece_sha256": "a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+    "planning_scene": "REAL_CALIBRATION",
+    "tcp_calibration_version": "CONTROLLER-TCP-994e951e689e4d5e3c2864cd1134988629dabe9cfa41ae3dad2704825a768aa3",
+    "gun_geometry_version": "real-gun-1791876831259595871",
+    "workpiece_pose_version": "WORKPIECE-a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+    "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4"
+  },
+  "pair_audit": "/home/ttbstt/jixiebi/UR5/规划文件/real_anchor_runs/wire_collision_shorten_20261013b/shorten_10mm/pair_audit/collision_pairs.json"
+}

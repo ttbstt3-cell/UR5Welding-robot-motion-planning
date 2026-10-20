@@ -1,0 +1,25 @@
+caseID,algorithm,seed,0.5deg
+"C01_Home_to_PreWeld","RRT-Connect",1,PASS
+"C01_Home_to_PreWeld","Bi-RRT*",1,PASS
+"C01_Home_to_PreWeld","ClassGoal-Lite",1,PASS
+"C01_Home_to_PreWeld","Full Classified-RRT*",1,PASS
+"C02_PostWeld_to_Home","RRT-Connect",2,PASS
+"C02_PostWeld_to_Home","Bi-RRT*",2,PASS
+"C02_PostWeld_to_Home","ClassGoal-Lite",2,PASS
+"C02_PostWeld_to_Home","Full Classified-RRT*",2,PASS
+"C03_PreWeld_to_Point1","RRT-Connect",3,PASS
+"C03_PreWeld_to_Point1","Bi-RRT*",3,PASS
+"C03_PreWeld_to_Point1","ClassGoal-Lite",3,PASS
+"C03_PreWeld_to_Point1","Full Classified-RRT*",3,PASS
+"C04_Point80_to_PostWeld","RRT-Connect",4,PASS
+"C04_Point80_to_PostWeld","Bi-RRT*",4,PASS
+"C04_Point80_to_PostWeld","ClassGoal-Lite",4,PASS
+"C04_Point80_to_PostWeld","Full Classified-RRT*",4,PASS
+"C05_Home_to_Point1","RRT-Connect",5,FAIL
+"C05_Home_to_Point1","Bi-RRT*",5,PASS
+"C05_Home_to_Point1","ClassGoal-Lite",5,PASS
+"C05_Home_to_Point1","Full Classified-RRT*",5,PASS
+"C06_Simple_5deg","RRT-Connect",6,PASS
+"C06_Simple_5deg","Bi-RRT*",6,PASS
+"C06_Simple_5deg","ClassGoal-Lite",6,PASS
+"C06_Simple_5deg","Full Classified-RRT*",6,PASS

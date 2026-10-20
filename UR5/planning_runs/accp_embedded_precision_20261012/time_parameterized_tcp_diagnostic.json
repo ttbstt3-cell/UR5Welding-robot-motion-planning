@@ -1,0 +1,57 @@
+{
+  "schema_version": "TIME_PARAMETERIZED_TCP_DIAGNOSTIC_v1",
+  "created": "2026-10-12 20:52:49",
+  "robot_motion": "NO",
+  "trajectory_file": "/home/ttbstt/jixiebi/UR5/matlab仿真/../planning_runs/accp_embedded_precision_20261012/time_parameterized_diagnostic_input.mat",
+  "expected_source": "tcpPosePath/tcpTargetExecution",
+  "coordinate_units": {
+    "joint": "rad",
+    "tcp": "m",
+    "error": "mm",
+    "orientation": "deg"
+  },
+  "waypoint_count": 31,
+  "duration_sec": 14.23523401678807,
+  "velocity_field_present": true,
+  "orientation_available": true,
+  "direct_refined_qPath": {
+    "label": "DIRECT_REFINED_QPATH",
+    "sample_count": 31,
+    "max_position_error_mm": 2.7736887224166053E-5,
+    "rms_position_error_mm": 1.0215895305090178E-5,
+    "max_position_error_sample": 24,
+    "max_position_error_time_sec": 8.888005550475393,
+    "orientation_available": true,
+    "max_orientation_error_deg": 1.2074182697257333E-6,
+    "max_orientation_error_sample": 26,
+    "max_orientation_error_time_sec": 9.9489426134914059,
+    "rms_orientation_error_deg": 2.1685872300673629E-7
+  },
+  "time_parameterized_trajectory": {
+    "label": "TIME_PARAMETERIZED_TRAJECTORY",
+    "sample_count": 3001,
+    "max_position_error_mm": 2.3313935340920429,
+    "rms_position_error_mm": 0.37648126015538,
+    "max_position_error_sample": 2635,
+    "max_position_error_time_sec": 10.696707281565374,
+    "orientation_available": true,
+    "max_orientation_error_deg": 2.5188174494315119,
+    "max_orientation_error_sample": 2234,
+    "max_orientation_error_time_sec": 8.3943413332816039,
+    "rms_orientation_error_deg": 0.40282521742124894,
+    "interpolation": "controller-equivalent cubic Hermite (positions+velocities)",
+    "samples_per_segment": 101
+  },
+  "difference": {
+    "max_position_error_increase_mm": 2.3313657972048185,
+    "rms_position_error_increase_mm": 0.37647104426007494,
+    "max_orientation_error_increase_deg": 2.5188162420132421,
+    "interpretation": "Additional error appears between waypoint FK and time-parameterized interpolation; direct refined qPath FK is the baseline."
+  },
+  "artifacts": {
+    "summary_json": "/home/ttbstt/jixiebi/UR5/matlab仿真/../planning_runs/accp_embedded_precision_20261012/time_parameterized_tcp_diagnostic.json",
+    "samples_csv": "/home/ttbstt/jixiebi/UR5/matlab仿真/../planning_runs/accp_embedded_precision_20261012/time_parameterized_tcp_diagnostic_samples.csv",
+    "samples_mat": "/home/ttbstt/jixiebi/UR5/matlab仿真/../planning_runs/accp_embedded_precision_20261012/time_parameterized_tcp_diagnostic_samples.mat"
+  },
+  "note": "Diagnostic only: timestamps/qPath unchanged; no FollowJointTrajectory goal sent."
+}

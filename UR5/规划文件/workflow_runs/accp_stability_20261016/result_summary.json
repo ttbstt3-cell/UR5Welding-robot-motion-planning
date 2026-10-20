@@ -1,0 +1,198 @@
+{
+  "scope": "Offline REAL frozen-input diagnosis and preview regression; no robot motion",
+  "root_cause": "Bridge re-admitted orientation_direction rejected diagnostic endpoint; precision correctly rejected it",
+  "failing_axis_deg": 5.0000000335531976,
+  "axis_limit_deg": 5,
+  "fixed_full_successes": 5,
+  "fixed_full_trials": 5,
+  "fixed_full_wall_sec": [
+    212.906634,
+    212.381742,
+    203.566355,
+    197.335677,
+    196.789895
+  ],
+  "mean_wall_sec": 204.5960606,
+  "sample_std_wall_sec": 7.816523365850337,
+  "fixed_accp_mean_sec": 60.1734282,
+  "before_cache_runs": {
+    "cache_on": [
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 103.266991
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 104.500669
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 107.492565
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 108.140908
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 102.062263
+      }
+    ],
+    "cache_off": [
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 133.166649
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 135.640517
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 140.418961
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 132.497793
+      },
+      {
+        "success": false,
+        "classification": "PRECISION_FAILURE",
+        "wall_sec": 133.5502
+      }
+    ]
+  },
+  "cache_on_off_numeric_match": true,
+  "preperformance_same_failure_reproduced": true,
+  "previous_success_request_wall_sec": 173.498851,
+  "previous_47_q_and_tcp_unchanged": true,
+  "actual_hmi": {
+    "pass": true,
+    "scope": "Actual QPushButton -> QProcess MATLAB -> HMI report/load/preview; ROS worker disabled",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261017_220611_847885/report.json",
+    "request": {
+      "task": "Full_Welding_Task",
+      "qStart": [
+        -1.276243034993307,
+        -2.02527362505068,
+        1.5667476654052734,
+        -1.3180115858661097,
+        -1.379986588154928,
+        3.330216646194458
+      ],
+      "qHome": [
+        -1.276243034993307,
+        -2.02527362505068,
+        1.5667476654052734,
+        -1.3180115858661097,
+        -1.379986588154928,
+        3.330216646194458
+      ],
+      "algorithm": "V1 FastConnectAnytimeRRTStar",
+      "seed": 20260919,
+      "maxPlanningTimeSec": 30.0,
+      "planning_scene": "REAL_CALIBRATION",
+      "calibration_binding": {
+        "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_calibration_source": "real_tcp_calibration_active.json",
+        "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+        "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+        "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+        "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+        "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+        "real_gun_geometry_status": "ACTIVE",
+        "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+        "gun_geometry_version": "real-gun-1791876831259595871",
+        "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+        "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+        "workpiece_source": "REAL CALIBRATION",
+        "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+        "planning_scene": "REAL_CALIBRATION",
+        "wire_collision_shorten_mm": 3,
+        "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+        "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+        "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+        "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+        "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+        "robot_collision_coverage": "COMPLETE",
+        "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+        "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+      },
+      "preview_only": true,
+      "executionReady": false,
+      "realhome_version": "REALHOME-00fce9ee38407d26bd77a3214ea0af3c0073d17a0dd132c3ec3f2a52f7eb3088",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+      "preweld_version": null,
+      "regenerate_preweld": true,
+      "start_source": "real_home",
+      "request_id": "20261017_220611_847885",
+      "outputDir": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261017_220611_847885"
+    },
+    "gui_stage": "Preview Ready",
+    "matlab_planning_sec": 195.674063,
+    "button_to_preview_sec": 200.5272795619967,
+    "transfer": {
+      "phase": "preview",
+      "file_load_and_scene_adoption_sec": 0.050330670026596636,
+      "completion_callback_sec": 0.10219928898732178,
+      "process_and_transfer_sec": 200.29465759999584,
+      "robot_motion": "NO"
+    },
+    "node_count": 414,
+    "live_state_preserved": true,
+    "config_unchanged": true,
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "protected_source_comparison": [
+    {
+      "file": "UR5/matlab仿真/replan_weld_actual_axis_adaptive_core.m",
+      "before": "8244fb0abb9b20a7681d8f595ecbbab22b26ce9185fa82002deed9fd17efc5f5",
+      "after": "4c268092589ea77ef60ad02bda7701f2941e941e1b0f84e593a5a708f6cbaa19",
+      "changed": true
+    },
+    {
+      "file": "UR5/matlab仿真/refine_accp_cartesian_path.m",
+      "before": "d220ef2467b846c3f5490f81789014d08e562ccf5bde8147c5e56c98518cedbf",
+      "after": "d220ef2467b846c3f5490f81789014d08e562ccf5bde8147c5e56c98518cedbf",
+      "changed": false
+    },
+    {
+      "file": "UR5/matlab仿真/generate_actual_axis_ik_candidates.m",
+      "before": "03bbb4b732f0bb56329a708e2437da8a39a45458a504aabfc7a955718ab4ea18",
+      "after": "03bbb4b732f0bb56329a708e2437da8a39a45458a504aabfc7a955718ab4ea18",
+      "changed": false
+    },
+    {
+      "file": "UR5/matlab仿真/HmiExactSceneQueries.m",
+      "before": "ae8495421a656e81ea9c7062b296685c6449b97c37ecaf8cb6de79f0049eeed7",
+      "after": "ae8495421a656e81ea9c7062b296685c6449b97c37ecaf8cb6de79f0049eeed7",
+      "changed": false
+    },
+    {
+      "file": "UR5/matlab仿真/plan_hmi_preview_request.m",
+      "before": "7b733d5e6b77c49c5ea4adf7b8f513b2361b6ee109dbe4633c05987fd8289174",
+      "after": "2b7ee5c2095fba8de03ba310a45476719adfe01236c90ffc6bc160c1ab496e0a",
+      "changed": true
+    },
+    {
+      "file": "UR5/matlab仿真/accp_score_candidates.m",
+      "before": "d23ae0abd012b4421bd8b522f2e6b909cc45db98144d73c0555d4aff770add33",
+      "after": "d23ae0abd012b4421bd8b522f2e6b909cc45db98144d73c0555d4aff770add33",
+      "changed": false
+    }
+  ],
+  "executionReady": false,
+  "robot_motion": "NO"
+}

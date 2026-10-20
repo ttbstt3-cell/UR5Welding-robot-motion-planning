@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T08:12:42.609872+00:00",
+  "mode": "OFFLINE_READ_ONLY",
+  "live_tcp_source": "ROS2 /tcp_pose_broadcaster/pose read-only snapshot",
+  "controller_tcp_pose_base_m": [
+    -0.285722,
+    0.365155,
+    0.208955
+  ],
+  "controller_effective_tcp_offset_flange_m": [
+    0.359928,
+    -0.002719,
+    0.016218
+  ],
+  "controller_effective_tcp_offset_flange_mm": [
+    359.927843,
+    -2.719047,
+    16.218292
+  ],
+  "q_ros_order_rad": [
+    4.905407,
+    -2.121999,
+    1.836483,
+    1.041663,
+    1.340594,
+    -0.179558
+  ],
+  "q_ros_order_deg": [
+    281.059115,
+    -121.581592,
+    105.222752,
+    59.68291,
+    76.810402,
+    -10.287921
+  ],
+  "frames": {
+    "base": "URDF base",
+    "flange": "URDF flange",
+    "tool0": "URDF tool0",
+    "mount": "frozen ur5_tool_calibration.mat tool0->mount",
+    "tcp": "mount->TCP frozen transform for wire geometry",
+    "live_tcp": "controller tcp_pose_broadcaster/pose in URDF base"
+  },
+  "tcp_live_policy": {
+    "red_marker_fresh_controller": true,
+    "red_marker_fallback": "HMI flange FK using real_tcp_calibration_applied.json (or frozen MAT baseline)",
+    "diagnostic_delta_uses_fallback": false
+  },
+  "transforms": {
+    "T_flange_tool0": [
+      [
+        6.17564905874863e-17,
+        -6.1257422745431e-17,
+        0.9999999999999999,
+        0.0
+      ],
+      [
+        1.0000000000000002,
+        6.776263578034403e-21,
+        -6.054510112401464e-17,
+        0.0
+      ],
+      [
+        6.776263578034403e-21,
+        0.9999999999999999,
+        6.10405823109339e-17,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_mount": [
+      [
+        8.731468152890532e-05,
+        -2.757124337411642e-08,
+        0.9999999961880731,
+        -0.006411959399999361
+      ],
+      [
+        -1.3561208350396554e-07,
+        0.9999999999999907,
+        2.758308440635486e-08,
+        -1.7739507016063016e-07
+      ],
+      [
+        -0.9999999961880642,
+        -1.3561449139523904e-07,
+        8.731468152513061e-05,
+        -0.00012768520003145765
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_hull": [
+      [
+        8.731468152890532e-05,
+        -2.757124337411642e-08,
+        0.9999999961880731,
+        -0.0064187388964922895
+      ],
+      [
+        -1.3561208350396554e-07,
+        0.9999999999999907,
+        2.758308440635486e-08,
+        -0.031815166666117424
+      ],
+      [
+        -0.9999999961880642,
+        -1.3561449139523904e-07,
+        8.731468152513061e-05,
+        0.07752676997248054
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_tcp_nominal": [
+      [
+        8.731468152890532e-05,
+        -2.757124337411642e-08,
+        0.9999999961880731,
+        0.37591242818292714
+      ],
+      [
+        -1.3561208350396554e-07,
+        0.9999999999999907,
+        2.758308440635486e-08,
+        0.019489047206249124
+      ],
+      [
+        -0.9999999961880642,
+        -1.3561449139523904e-07,
+        8.731468152513061e-05,
+        0.06668051694380532
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "j6_axis_flange": [
+    1.0,
+    -0.0,
+    0.0
+  ],
+  "j6_axis_norm": 1.0,
+  "wire_geometry": {
+    "length_mm": 18.0,
+    "diameter_mm": 1.2,
+    "length_source": "/home/ttbstt/jixiebi/UR5/matlab仿真/current_weld_geometry_audit.mat",
+    "diameter_source": "/home/ttbstt/jixiebi/UR5/matlab仿真/current_weld_geometry_audit.mat",
+    "measurement_status": "audit MAT recorded values; not newly measured in this run",
+    "head_definition": "nearest GunCollisionHull vertex to frozen TCP (estimate)",
+    "nearest_hull_vertex_index_zero_based": 15,
+    "tip_is_not": "a measured conductive-tip/nozzle centre",
+    "p_head_tcp_m": [
+      0.008411,
+      0.012088,
+      -0.014669
+    ],
+    "p_tip_tcp_m": [
+      0.001127,
+      0.00162,
+      -0.001966
+    ]
+  },
+  "candidates": {
+    "+0deg": {
+      "roll_deg_right_hand_about_j6": 0.0,
+      "wire_tip_flange_m": [
+        0.373946,
+        0.021109,
+        0.065553
+      ],
+      "wire_tip_base_m": [
+        -0.326434,
+        0.392861,
+        0.236761
+      ],
+      "delta_xyz_mm_wire_tip_minus_live_tcp": [
+        -40.712007,
+        27.705229,
+        27.80591
+      ],
+      "distance_mm": 56.55277021913119,
+      "hull_pairwise_distance_max_error_m": 0.0,
+      "T_adjust": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "+90deg": {
+      "roll_deg_right_hand_about_j6": 90.0,
+      "wire_tip_flange_m": [
+        0.373946,
+        -0.065553,
+        0.021109
+      ],
+      "wire_tip_base_m": [
+        -0.236541,
+        0.406368,
+        0.2018
+      ],
+      "delta_xyz_mm_wire_tip_minus_live_tcp": [
+        49.181567,
+        41.213072,
+        -7.154973
+      ],
+      "distance_mm": 64.56421219297279,
+      "hull_pairwise_distance_max_error_m": 1.1102230246251565e-16,
+      "T_adjust": [
+        [
+          1.0,
+          -6.206299740038413e-17,
+          6.153605026296334e-17,
+          0.0
+        ],
+        [
+          6.153605026296335e-17,
+          6.123233995736766e-17,
+          -1.0,
+          0.0
+        ],
+        [
+          6.206299740038412e-17,
+          1.0,
+          6.123233995736766e-17,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "-90deg": {
+      "roll_deg_right_hand_about_j6": -90.0,
+      "wire_tip_flange_m": [
+        0.373946,
+        0.065553,
+        -0.021109
+      ],
+      "wire_tip_base_m": [
+        -0.340167,
+        0.3202,
+        0.173377
+      ],
+      "delta_xyz_mm_wire_tip_minus_live_tcp": [
+        -54.444481,
+        -44.955093,
+        -35.577656
+      ],
+      "distance_mm": 79.0628328796299,
+      "hull_pairwise_distance_max_error_m": 1.1102230246251565e-16,
+      "T_adjust": [
+        [
+          1.0,
+          6.153605026296335e-17,
+          6.206299740038412e-17,
+          0.0
+        ],
+        [
+          -6.206299740038413e-17,
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        [
+          6.153605026296334e-17,
+          -1.0,
+          6.123233995736766e-17,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "consistency_checks": {
+    "rotation_axis_is_flange_local": true,
+    "rotation_about_flange_origin": true,
+    "adjustment_left_multiply_order": "T_base_flange @ T_adjust(flange) @ T_flange_tcp @ p_tip_tcp",
+    "tool0_flange_not_reapplied": true,
+    "gun_hull_and_wire_share_adjustment": true,
+    "wire_endpoint_not_hull_nearest_vertex": true,
+    "hull_nearest_vertex_used_only_to_estimate_head": true
+  },
+  "source_hashes": {
+    "real_robot_description_calibrated.urdf": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "scene_geometry.json": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+    "ur5_tool_calibration.mat": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+    "current_weld_geometry_audit.mat": "ac671a820f5148832c4c71971318a1e5028e49fc48c9e776ac4abe34c59de27e",
+    "real_tcp_calibration_applied.json": "a2588c841ef2f16a0ee529752949fe9ce28831e5453909d4ecf197370035eaf9",
+    "real_gun_mount_roll_preview.json": "d6a3b4455e17d7dcb4c94d364303ff1be9b4ca82230bafc7dfe28a90560b3098"
+  },
+  "controller_rtde_tcp_offset_raw": {
+    "value": [
+      -0.002745,
+      0.016194,
+      0.359952,
+      -0.629535,
+      2.614398,
+      1.155687
+    ],
+    "translation_m": [
+      -0.002745,
+      0.016194,
+      0.359952
+    ],
+    "rotation_vector_rad": [
+      -0.629535,
+      2.614398,
+      1.155687
+    ],
+    "reference": "UR controller tool-output/flange frame (raw RTDE field)",
+    "warning": "不要把这三个平移数值直接当作URDF flange XYZ；必须经过已核对的控制器→URDF坐标变换。",
+    "translation_converted_to_urdf_flange_m": [
+      0.359952,
+      -0.002745,
+      0.016194
+    ],
+    "translation_converted_to_urdf_flange_mm": [
+      359.952098,
+      -2.74535,
+      16.193651
+    ],
+    "converted_vs_actual_pose_derived_delta_mm": [
+      0.024255,
+      -0.026303,
+      -0.024641
+    ]
+  },
+  "hmi_applied_tcp_record": {
+    "path": "/home/ttbstt/jixiebi/UR5/real_tcp_calibration_applied.json",
+    "valid": true,
+    "applied_to_planning_model": true,
+    "position_flange_tcp_mm": [
+      377.68391561598946,
+      -31.71213631151816,
+      7.111946553948397
+    ],
+    "controller_minus_hmi_offset_delta_mm": [
+      -17.756072,
+      28.993089,
+      9.106345
+    ],
+    "controller_minus_hmi_offset_distance_mm": 35.19663119354252,
+    "record_is_used_only_when_controller_tcp_stale": true,
+    "record_role": "legacy approved HMI TCP"
+  },
+  "mount_adjustment_record": {
+    "path": "/home/ttbstt/jixiebi/UR5/real_gun_mount_roll_preview.json",
+    "status": "PREVIEW_ONLY_NOT_COMMITTED",
+    "preview_only": true,
+    "current_default_roll_deg": 90.0
+  },
+  "recommendation": "不修改当前标定。当前偏差由 wire tip 使用GunCollisionHull最近顶点估计、以及焊枪/焊丝几何与真实导电嘴定义未绑定导致；先实测导电嘴中心和焊丝方向，确认后再单独更新真实安装标定并使旧轨迹STALE。"
+}

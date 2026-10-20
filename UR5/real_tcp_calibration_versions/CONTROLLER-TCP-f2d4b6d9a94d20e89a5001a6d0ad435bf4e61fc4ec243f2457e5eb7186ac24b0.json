@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "calibration_type": "controller_active_tcp_mirror_6d",
+  "tcp_authority": "UR_CONTROLLER_ACTIVE_TCP",
+  "source": "RTDE tcp_offset (controller currently active TCP)",
+  "coordinate_frames": {
+    "base": "URDF base",
+    "flange": "URDF flange",
+    "controller_offset": "UR controller tool0",
+    "tcp": "controller active TCP"
+  },
+  "controller_tcp_offset": [
+    0.003578618384772747,
+    0.012480377235572104,
+    0.37103562768917225,
+    -0.5084952856407298,
+    2.711670394164298,
+    1.122817543190586
+  ],
+  "T_flange_tcp": [
+    [
+      -0.2755175878428874,
+      0.6540941770185361,
+      -0.7044507551132874,
+      0.3710356276891722
+    ],
+    [
+      -0.9288570008832331,
+      -0.3699079088828019,
+      0.019819456505143152,
+      0.0035786183847727254
+    ],
+    [
+      -0.2476181146431805,
+      0.6597946245131104,
+      0.7094760903400199,
+      0.012480377235572125
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "position_flange_tcp_m": [
+    0.3710356276891722,
+    0.0035786183847727254,
+    0.012480377235572125
+  ],
+  "position_flange_tcp_mm": [
+    371.0356276891722,
+    3.5786183847727253,
+    12.480377235572124
+  ],
+  "rotation_flange_tcp_rotvec_rad": [
+    0.7450914723889835,
+    -0.5318676750892022,
+    -1.8429518562945584
+  ],
+  "rotation_source": "full controller rotvec via fixed URDF flange<-tool0 transform",
+  "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+  "version": "CONTROLLER-TCP-f2d4b6d9a94d20e89a5001a6d0ad435bf4e61fc4ec243f2457e5eb7186ac24b0",
+  "status": "ACTIVE",
+  "valid": true,
+  "active_for_planning": true,
+  "applied_to_planning_model": true,
+  "sync_policy": "AUTO_CONTROLLER_AUTHORITATIVE",
+  "quality_level": "CONTROLLER_DEFINED",
+  "physical_accuracy_status": "NOT_MEASURED_BY_HMI",
+  "quality_note": "Controller parameters are authoritative; frame consistency is not calibration accuracy.",
+  "frame_alignment": {
+    "pass": true,
+    "position_error_mm": 0.025409445186271817,
+    "orientation_error_deg": 0.0062289956118999025,
+    "max_position_error_mm": 3.0,
+    "max_orientation_error_deg": 0.5,
+    "frame_id": "base",
+    "fk_tool0_position_m": [
+      -0.1318273938051899,
+      0.005222693302169204,
+      0.4325067054533212
+    ],
+    "controller_tool0_position_m": [
+      -0.1318192186036033,
+      0.0051996558267471404,
+      0.4325136394788382
+    ]
+  },
+  "source_snapshot": {
+    "actual_TCP_pose": [
+      -0.30483667141020265,
+      0.28917394487905873,
+      0.26740892264211547,
+      0.2964084664544625,
+      0.05198598713157784,
+      0.19800332812276178
+    ],
+    "actual_q": [
+      -0.8910535017596644,
+      -2.766679112111227,
+      2.3929834365844727,
+      -2.2686222235309046,
+      -1.6980579535113733,
+      3.1327714920043945
+    ],
+    "actual_qd": [
+      0.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "payload": 0.5,
+    "payload_cog": [
+      0.003578618384772747,
+      0.012480377235572104,
+      0.37103562768917225
+    ],
+    "reference_frame": "controller_base",
+    "robot_mode": 7,
+    "runtime_state": 1,
+    "safety_mode": 1,
+    "tcp_frame": "controller_tool_output_flange",
+    "tcp_offset": [
+      0.003578618384772747,
+      0.012480377235572104,
+      0.37103562768917225,
+      -0.5084952856407298,
+      2.711670394164298,
+      1.122817543190586
+    ],
+    "timestamp": 1181.088,
+    "units": {
+      "joint_velocity": "rad/s",
+      "joints": "rad",
+      "rotation": "rotation_vector_rad",
+      "translation": "m"
+    }
+  },
+  "requires_replan": true,
+  "requires_collision_revalidation": true,
+  "timestamp": "2026-10-14T06:29:35.638529+00:00"
+}

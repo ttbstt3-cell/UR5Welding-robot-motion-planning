@@ -1,0 +1,57 @@
+family,comparison,map,metric,nPairs,nBothSuccess,medianPairedDifference,meanPairedDifference,wilcoxonP,rankBiserialEffect
+APF,Bias-only Bi-RRT* minus full,1,FirstSolutionTime_ms,20,20,-0.0615,-0.5802,0.204330247339066,-0.323809523809524
+APF,Bias-only Bi-RRT* minus full,1,FirstPathLength,20,20,0,-0.181392159007467,0.139413973321532,-0.527272727272727
+APF,Bias-only Bi-RRT* minus full,2,FirstSolutionTime_ms,20,20,-0.00950000000000006,0.0253,0.765198444497188,-0.0761904761904762
+APF,Bias-only Bi-RRT* minus full,2,FirstPathLength,20,20,0,-0.0510864521380967,0.0277078493580799,-1
+APF,Bias-only Bi-RRT* minus full,3,FirstSolutionTime_ms,100,100,3.25449999999999,3.61902999999999,1.77290586443665e-13,0.848316831683168
+APF,Bias-only Bi-RRT* minus full,3,FirstPathLength,100,100,-0.221577837550051,0.635530849990857,0.697623334239159,0.0447524752475248
+APF,Bias-only Bi-RRT* minus full,4,FirstSolutionTime_ms,100,100,6.31650000000007,6.96872000000008,9.53549798510625e-17,0.957227722772277
+APF,Bias-only Bi-RRT* minus full,4,FirstPathLength,100,100,2.61951164001222,2.73159955426266,9.38609569467583e-05,0.44990099009901
+APF,APF-only Bi-RRT* minus full,1,FirstSolutionTime_ms,20,20,1.357,0.9919,0.013741290353209,0.628571428571429
+APF,APF-only Bi-RRT* minus full,1,FirstPathLength,20,20,-0.163251902778761,-0.330554206471563,8.85745768786357e-05,-1
+APF,APF-only Bi-RRT* minus full,2,FirstSolutionTime_ms,20,20,0.1845,0.18855,0.0186748740074159,0.6
+APF,APF-only Bi-RRT* minus full,2,FirstPathLength,20,20,-0.127854202815357,-0.183759455187982,0.000131833888982834,-1
+APF,APF-only Bi-RRT* minus full,3,FirstSolutionTime_ms,100,100,1.29699999999999,1.05157999999999,8.86628212573944e-05,0.451485148514851
+APF,APF-only Bi-RRT* minus full,3,FirstPathLength,100,100,2.6283147854322,0.682103322242543,0.0862125521958819,0.197623762376238
+APF,APF-only Bi-RRT* minus full,4,FirstSolutionTime_ms,100,100,13.9845,14.0797,4.01615568546273e-18,0.99960396039604
+APF,APF-only Bi-RRT* minus full,4,FirstPathLength,100,100,-7.38199582942183,-7.91090599740547,1.05018875346146e-17,-0.986930693069307
+APF,Bias+APF Bi-RRT* minus full,1,FirstSolutionTime_ms,20,20,1.3705,0.8776,0.0152400611832001,0.619047619047619
+APF,Bias+APF Bi-RRT* minus full,1,FirstPathLength,20,20,-0.163251902778754,-0.330554206471562,8.85745768786357e-05,-1
+APF,Bias+APF Bi-RRT* minus full,2,FirstSolutionTime_ms,20,20,0.1025,0.0683,0.140274679502989,0.376190476190476
+APF,Bias+APF Bi-RRT* minus full,2,FirstPathLength,20,20,-0.127854202815357,-0.183759455187982,0.000131833888982834,-1
+APF,Bias+APF Bi-RRT* minus full,3,FirstSolutionTime_ms,100,100,0.332999999999984,0.27388999999999,0.294321243011994,0.120792079207921
+APF,Bias+APF Bi-RRT* minus full,3,FirstPathLength,100,100,2.54206964701026,1.4281126244567,0.0313665442440261,0.247920792079208
+APF,Bias+APF Bi-RRT* minus full,4,FirstSolutionTime_ms,100,100,18.5485,18.44432,3.89655984509596e-18,1
+APF,Bias+APF Bi-RRT* minus full,4,FirstPathLength,100,100,-6.78806731548418,-7.33318038816298,2.96426391422831e-17,-0.973069306930693
+Classified,No Offset minus full,1,FirstSolutionTime_ms,20,20,0.0540000000000002,-0.193,0.822760401784478,0.0571428571428571
+Classified,No Offset minus full,1,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Offset minus full,2,FirstSolutionTime_ms,20,20,0.00349999999999995,0.0256,0.60121270573981,0.133333333333333
+Classified,No Offset minus full,2,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Offset minus full,3,FirstSolutionTime_ms,100,100,-3.37450000000002,-3.1784,0.00274642007667163,-0.344950495049505
+Classified,No Offset minus full,3,FirstPathLength,100,100,1.00524779097316,0.647734923511376,0.28492594015284,0.123168316831683
+Classified,No Offset minus full,4,FirstSolutionTime_ms,100,100,-5.023,-4.90659000000001,6.3484284156732e-17,-0.962772277227723
+Classified,No Offset minus full,4,FirstPathLength,100,100,0.646125500986955,0.691100885904223,0.0052955780342667,0.321188118811881
+Classified,No Classification+GoalTree minus full,1,FirstSolutionTime_ms,20,20,69.5685,71.63155,8.85745768786357e-05,1
+Classified,No Classification+GoalTree minus full,1,FirstPathLength,20,20,0.684332495468617,1.44833716806714,0.000293161547758637,0.923809523809524
+Classified,No Classification+GoalTree minus full,2,FirstSolutionTime_ms,20,20,78.113,84.6760499999999,8.85745768786357e-05,1
+Classified,No Classification+GoalTree minus full,2,FirstPathLength,20,20,0.162617483933026,1.26652936944583,0.116887637809533,0.4
+Classified,No Classification+GoalTree minus full,3,FirstSolutionTime_ms,100,100,108.962,117.3346,3.89655984509596e-18,1
+Classified,No Classification+GoalTree minus full,3,FirstPathLength,100,100,-3.34644234003926,-3.53776378584548,1.89797547754214e-07,-0.6
+Classified,No Classification+GoalTree minus full,4,FirstSolutionTime_ms,100,100,71.3004999999999,74.1120799999999,3.89655984509596e-18,1
+Classified,No Classification+GoalTree minus full,4,FirstPathLength,100,100,0.714952636314862,1.15310530574563,2.49351041954636e-05,0.485544554455446
+Classified,No Backtracking minus full,1,FirstSolutionTime_ms,20,20,0.0639999999999997,-0.1046,0.525653198176486,0.161904761904762
+Classified,No Backtracking minus full,1,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Backtracking minus full,2,FirstSolutionTime_ms,20,20,0.1125,0.093,0.145399775065086,0.371428571428571
+Classified,No Backtracking minus full,2,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Backtracking minus full,3,FirstSolutionTime_ms,100,100,-0.734999999999996,-1.08401,0.00145310820071446,-0.366732673267327
+Classified,No Backtracking minus full,3,FirstPathLength,100,100,0.0218070368506602,0.114167152600731,6.00341734242251e-14,0.896591169068863
+Classified,No Backtracking minus full,4,FirstSolutionTime_ms,100,100,0.704000000000018,0.555570000000001,0.00284073803436513,0.343762376237624
+Classified,No Backtracking minus full,4,FirstPathLength,100,100,0,0,NaN,NaN
+Classified,No Sequential Rewire minus full,1,FirstSolutionTime_ms,20,20,-0.372,-0.7347,0.000779593257531405,-0.857142857142857
+Classified,No Sequential Rewire minus full,1,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Sequential Rewire minus full,2,FirstSolutionTime_ms,20,20,-0.1215,-0.15515,0.000448820637056739,-0.895238095238095
+Classified,No Sequential Rewire minus full,2,FirstPathLength,20,20,0,0,NaN,NaN
+Classified,No Sequential Rewire minus full,3,FirstSolutionTime_ms,100,100,-15.804,-16.6078,3.89655984509596e-18,-1
+Classified,No Sequential Rewire minus full,3,FirstPathLength,100,100,0,-0.00474727410509331,0.952765021990753,0.0222222222222222
+Classified,No Sequential Rewire minus full,4,FirstSolutionTime_ms,100,100,-10.894,-11.00564,3.89655984509596e-18,-1
+Classified,No Sequential Rewire minus full,4,FirstPathLength,100,100,0,0,NaN,NaN

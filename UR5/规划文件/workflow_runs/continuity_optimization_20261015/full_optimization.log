@@ -1,0 +1,5 @@
+FULL_BASELINE nodes=357 sync=2.816926 ori=0.760377 duration=218.647993
+FULL_TRIAL 1 nodes=357 pass=0 sync=2.820344 ori=0.761518 time=244.885752
+FULL_TRIAL 2 nodes=393 pass=0 sync=0.706158 ori=0.470170 time=274.272043
+FULL_TRIAL 3 nodes=405 pass=0 sync=0.568121 ori=0.470170 time=307.184688
+FULL_TRIAL 4 nodes=414 pass=0 sync=0.461288 ori=0.470170 time=344.046850

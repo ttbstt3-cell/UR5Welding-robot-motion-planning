@@ -1,0 +1,40 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "matching_real_nonempty_binding",
+      "pass": true
+    },
+    {
+      "name": "real_mount_mismatch_rejected",
+      "pass": true
+    },
+    {
+      "name": "real_empty_mount_not_accepted",
+      "pass": true
+    },
+    {
+      "name": "matching_intentional_frozen_empty_hashes",
+      "pass": true
+    },
+    {
+      "name": "nonempty_frozen_dependency_mismatch_rejected",
+      "pass": true
+    },
+    {
+      "name": "absent_required_key_not_same_as_intentional_empty",
+      "pass": true
+    },
+    {
+      "name": "frozen_coverage_status_still_required",
+      "pass": true
+    },
+    {
+      "name": "frozen_coverage_mismatch_rejected",
+      "pass": true
+    }
+  ],
+  "robot_motion": "NO",
+  "executionReady": false,
+  "scope": "Metadata-only fixtures; matching FROZEN emptiness does not certify collision coverage"
+}

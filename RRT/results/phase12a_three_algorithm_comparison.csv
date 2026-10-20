@@ -1,0 +1,13 @@
+mode,algorithm,path,result,planningTime_s,iterations,collisionChecks,pathLength_rad
+First certified solution,RRT（原始基线）,Home -> PreWeld,PASS,12.219553,31,317,19.8423722606024
+First certified solution,RRT（原始基线）,PostWeld -> Home,PASS,6.786776,11,181,17.2559298871724
+First certified solution,RRT-Connect,Home -> PreWeld,PASS,2.818542,35,743,5.70177200025913
+First certified solution,RRT-Connect,PostWeld -> Home,PASS,3.399464,89,970,6.28588457831738
+First certified solution,Bi-RRT*,Home -> PreWeld,PASS,8.302461,37,2289,6.34953510763476
+First certified solution,Bi-RRT*,PostWeld -> Home,PASS,11.640294,83,3247,5.14732738393573
+30 s best-so-far,RRT（原始基线）,Home -> PreWeld,PASS,12.219553,31,317,19.8423722606024
+30 s best-so-far,RRT（原始基线）,PostWeld -> Home,PASS,6.786776,11,181,17.2559298871724
+30 s best-so-far,RRT-Connect,Home -> PreWeld,PASS,2.90907,35,743,5.70177200025913
+30 s best-so-far,RRT-Connect,PostWeld -> Home,PASS,3.503214,89,970,6.28588457831738
+30 s best-so-far,Bi-RRT*,Home -> PreWeld,PASS,30.002134,63,8256,5.18451219015354
+30 s best-so-far,Bi-RRT*,PostWeld -> Home,PASS,30.0028,120,8238,5.14732738393573

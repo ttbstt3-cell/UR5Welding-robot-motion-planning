@@ -1,0 +1,16 @@
+{
+  "program": "matlab",
+  "arguments": [
+    "-batch",
+    "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); addpath('/home/ttbstt/jixiebi/RRT/benchmark'); req=jsondecode(fileread('/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_094414_458060/request.json')); prepare_hmi_continuous_request(req);"
+  ],
+  "request": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_094414_458060/request.json",
+  "outputDir": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_094414_458060",
+  "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_094414_458060/report.json",
+  "real_button_clicked": true,
+  "cold_start_only_paths": "HMI matlab仿真 and RRT/benchmark; no genpath test setup",
+  "original_request_unchanged": true,
+  "robot_motion": "NO",
+  "motion_signals": 0,
+  "shell_command": "matlab -batch 'addpath('\"'\"'/home/ttbstt/jixiebi/UR5/matlab仿真'\"'\"'); addpath('\"'\"'/home/ttbstt/jixiebi/RRT/benchmark'\"'\"'); req=jsondecode(fileread('\"'\"'/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_094414_458060/request.json'\"'\"')); prepare_hmi_continuous_request(req);' -logfile '/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/continuous_path_fix_20261020/before_launch.log'"
+}

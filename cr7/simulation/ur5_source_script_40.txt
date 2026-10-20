@@ -1,0 +1,82 @@
+def sysCall_init():
+    self.sim = require('sim')
+    self.simROS2 = require('simROS2')
+
+    self.ur5 = self.sim.getObject('/UR5')
+    self.joints = self.sim.getObjectsInTree(
+        self.ur5,
+        self.sim.sceneobject_joint,
+        0
+    )
+
+    if len(self.joints) != 6:
+        raise RuntimeError(
+            f'Expected 6 UR5 joints, found {len(self.joints)}'
+        )
+
+    self.jointNames = [
+        'shoulder_pan_joint',
+        'shoulder_lift_joint',
+        'elbow_joint',
+        'wrist_1_joint',
+        'wrist_2_joint',
+        'wrist_3_joint'
+    ]
+
+    self.publishPeriod = 0.05
+    self.lastPublishTime = -1.0
+
+    self.jointStatePub = self.simROS2.createPublisher(
+        '/joint_states',
+        'sensor_msgs/msg/JointState'
+    )
+
+    print('======================================')
+    print('UR5 ROS2 state publisher started')
+    print('Publish  : /joint_states')
+    print('Control  : standalone ROS2 controller')
+    print('======================================')
+
+
+def sysCall_actuation():
+    # Joint commands are applied by the standalone rclpy controller through
+    # CoppeliaSim's ZMQ Remote API.  This script is feedback-only.
+    pass
+
+
+def sysCall_sensing():
+    t = self.sim.getSimulationTime()
+
+    if self.lastPublishTime >= 0:
+        if t - self.lastPublishTime < self.publishPeriod:
+            return
+
+    self.lastPublishTime = t
+
+    q = [
+        self.sim.getJointPosition(joint)
+        for joint in self.joints
+    ]
+
+    msg = {
+        'header': {
+            'stamp': self.simROS2.getTime(),
+            'frame_id': 'base'
+        },
+        'name': self.jointNames,
+        'position': q,
+        'velocity': [0.0] * 6,
+        'effort': [0.0] * 6
+    }
+
+    self.simROS2.publish(
+        self.jointStatePub,
+        msg
+    )
+
+
+def sysCall_cleanup():
+    if hasattr(self, 'jointStatePub'):
+        self.simROS2.shutdownPublisher(
+            self.jointStatePub
+        )

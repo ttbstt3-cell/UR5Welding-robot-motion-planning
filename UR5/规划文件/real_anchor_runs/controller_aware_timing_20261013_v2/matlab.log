@@ -1,0 +1,6 @@
+CONTROLLER_TIMING stage=BASELINE_AUDIT
+CONTROLLER_TIMING stage=DURATION_OPTIMIZATION first_segment_invariant=0.863661135mm
+CONTROLLER_TIMING stage=EXACT_FK_COLLISION_AUDIT duration=17.099156s
+BEFORE duration=18.606467893 contour=0.187599835 sync=2.885363725 orientation=0.694329612 velocity=0.074037160 acceleration=0.328282831
+AFTER duration=17.099155789 contour=0.073210994 sync=0.863661135 orientation=0.453679271 velocity=0.087119263 acceleration=0.261798476 collision=1 numericalPass=0 executionReady=0
+Failure reason: TIME_ONLY_INFEASIBLE_WITH_EXISTING_VELOCITY_RULE: first segment error >= 0.863661135 mm for every positive duration; ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 0.863661 mm >= 0.500000 mm

@@ -1,0 +1,122 @@
+
+====================================================
+END-MARGIN BENCHMARK: 21.000 mm (100 seeds)
+====================================================
+[  1/100] margin=21 mm seed=20270001 ... FAIL wall=14.305s points=16 IK=824 stage=post_recovery_beam_3_angular
+[  2/100] margin=21 mm seed=20270002 ... FAIL wall=30.042s points=21 IK=3344 stage=post_recovery_beam_3_angular
+[  3/100] margin=21 mm seed=20270003 ... FAIL wall=25.607s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[  4/100] margin=21 mm seed=20270004 ... FAIL wall=34.889s points=21 IK=6350 stage=post_recovery_beam_3_angular
+[  5/100] margin=21 mm seed=20270005 ... FAIL wall=6.962s points=16 IK=824 stage=post_recovery_beam_3_angular
+[  6/100] margin=21 mm seed=20270006 ... FAIL wall=33.377s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[  7/100] margin=21 mm seed=20270007 ... FAIL wall=28.550s points=21 IK=3344 stage=post_recovery_beam_3_angular
+[  8/100] margin=21 mm seed=20270008 ... FAIL wall=31.604s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[  9/100] margin=21 mm seed=20270009 ... FAIL wall=7.030s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 10/100] margin=21 mm seed=20270010 ... FAIL wall=42.239s points=20 IK=8190 stage=post_recovery_beam_3_angular
+[ 11/100] margin=21 mm seed=20270011 ... FAIL wall=43.281s points=20 IK=8366 stage=post_recovery_beam_3_angular
+[ 12/100] margin=21 mm seed=20270012 ... FAIL wall=7.397s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 13/100] margin=21 mm seed=20270013 ... FAIL wall=7.054s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 14/100] margin=21 mm seed=20270014 ... FAIL wall=32.920s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 15/100] margin=21 mm seed=20270015 ... FAIL wall=33.053s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 16/100] margin=21 mm seed=20270016 ... FAIL wall=7.050s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 17/100] margin=21 mm seed=20270017 ... FAIL wall=7.308s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 18/100] margin=21 mm seed=20270018 ... FAIL wall=23.736s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 19/100] margin=21 mm seed=20270019 ... FAIL wall=7.278s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 20/100] margin=21 mm seed=20270020 ... FAIL wall=25.043s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 21/100] margin=21 mm seed=20270021 ... FAIL wall=36.574s points=20 IK=5270 stage=post_recovery_beam_3_angular
+[ 22/100] margin=21 mm seed=20270022 ... FAIL wall=34.762s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 23/100] margin=21 mm seed=20270023 ... FAIL wall=34.930s points=20 IK=5270 stage=post_recovery_beam_3_angular
+[ 24/100] margin=21 mm seed=20270024 ... FAIL wall=34.282s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 25/100] margin=21 mm seed=20270025 ... FAIL wall=45.593s points=20 IK=8382 stage=post_recovery_beam_3_angular
+[ 26/100] margin=21 mm seed=20270026 ... FAIL wall=25.154s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 27/100] margin=21 mm seed=20270027 ... FAIL wall=26.093s points=21 IK=4466 stage=post_recovery_beam_3_angular
+[ 28/100] margin=21 mm seed=20270028 ... FAIL wall=7.439s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 29/100] margin=21 mm seed=20270029 ... FAIL wall=40.253s points=20 IK=5974 stage=post_recovery_beam_3_angular
+[ 30/100] margin=21 mm seed=20270030 ... FAIL wall=7.227s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 31/100] margin=21 mm seed=20270031 ... FAIL wall=7.251s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 32/100] margin=21 mm seed=20270032 ... FAIL wall=34.281s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 33/100] margin=21 mm seed=20270033 ... FAIL wall=34.519s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 34/100] margin=21 mm seed=20270034 ... FAIL wall=26.353s points=21 IK=3344 stage=post_recovery_beam_3_angular
+[ 35/100] margin=21 mm seed=20270035 ... FAIL wall=32.954s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 36/100] margin=21 mm seed=20270036 ... FAIL wall=7.357s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 37/100] margin=21 mm seed=20270037 ... FAIL wall=43.576s points=20 IK=7710 stage=post_recovery_beam_3_angular
+[ 38/100] margin=21 mm seed=20270038 ... FAIL wall=7.252s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 39/100] margin=21 mm seed=20270039 ... FAIL wall=7.097s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 40/100] margin=21 mm seed=20270040 ... FAIL wall=39.679s points=20 IK=5974 stage=post_recovery_beam_3_angular
+[ 41/100] margin=21 mm seed=20270041 ... FAIL wall=38.580s points=20 IK=7726 stage=post_recovery_beam_3_angular
+[ 42/100] margin=21 mm seed=20270042 ... FAIL wall=43.842s points=20 IK=8310 stage=post_recovery_beam_3_angular
+[ 43/100] margin=21 mm seed=20270043 ... FAIL wall=6.834s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 44/100] margin=21 mm seed=20270044 ... FAIL wall=7.165s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 45/100] margin=21 mm seed=20270045 ... FAIL wall=23.610s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 46/100] margin=21 mm seed=20270046 ... FAIL wall=35.210s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 47/100] margin=21 mm seed=20270047 ... FAIL wall=7.572s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 48/100] margin=21 mm seed=20270048 ... FAIL wall=26.821s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 49/100] margin=21 mm seed=20270049 ... FAIL wall=7.422s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 50/100] margin=21 mm seed=20270050 ... FAIL wall=7.553s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 51/100] margin=21 mm seed=20270051 ... FAIL wall=23.463s points=21 IK=4910 stage=post_recovery_beam_3_angular
+[ 52/100] margin=21 mm seed=20270052 ... FAIL wall=6.789s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 53/100] margin=21 mm seed=20270053 ... FAIL wall=33.981s points=21 IK=6350 stage=post_recovery_beam_3_angular
+[ 54/100] margin=21 mm seed=20270054 ... FAIL wall=40.946s points=20 IK=5974 stage=post_recovery_beam_3_angular
+[ 55/100] margin=21 mm seed=20270055 ... FAIL wall=36.223s points=21 IK=6134 stage=post_recovery_beam_3_angular
+[ 56/100] margin=21 mm seed=20270056 ... FAIL wall=29.549s points=21 IK=4466 stage=post_recovery_beam_3_angular
+[ 57/100] margin=21 mm seed=20270057 ... FAIL wall=26.874s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 58/100] margin=21 mm seed=20270058 ... FAIL wall=7.044s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 59/100] margin=21 mm seed=20270059 ... FAIL wall=7.385s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 60/100] margin=21 mm seed=20270060 ... FAIL wall=33.795s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 61/100] margin=21 mm seed=20270061 ... FAIL wall=44.581s points=20 IK=8366 stage=post_recovery_beam_3_angular
+[ 62/100] margin=21 mm seed=20270062 ... FAIL wall=7.056s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 63/100] margin=21 mm seed=20270063 ... FAIL wall=31.856s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 64/100] margin=21 mm seed=20270064 ... FAIL wall=25.008s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 65/100] margin=21 mm seed=20270065 ... FAIL wall=25.869s points=21 IK=4910 stage=post_recovery_beam_3_angular
+[ 66/100] margin=21 mm seed=20270066 ... FAIL wall=7.679s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 67/100] margin=21 mm seed=20270067 ... FAIL wall=38.118s points=20 IK=5974 stage=post_recovery_beam_3_angular
+[ 68/100] margin=21 mm seed=20270068 ... FAIL wall=6.997s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 69/100] margin=21 mm seed=20270069 ... FAIL wall=22.073s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 70/100] margin=21 mm seed=20270070 ... FAIL wall=24.206s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 71/100] margin=21 mm seed=20270071 ... FAIL wall=23.845s points=21 IK=4910 stage=post_recovery_beam_3_angular
+[ 72/100] margin=21 mm seed=20270072 ... FAIL wall=21.698s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 73/100] margin=21 mm seed=20270073 ... FAIL wall=32.127s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 74/100] margin=21 mm seed=20270074 ... FAIL wall=6.761s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 75/100] margin=21 mm seed=20270075 ... FAIL wall=32.948s points=20 IK=5270 stage=post_recovery_beam_3_angular
+[ 76/100] margin=21 mm seed=20270076 ... FAIL wall=39.480s points=20 IK=7710 stage=post_recovery_beam_3_angular
+[ 77/100] margin=21 mm seed=20270077 ... FAIL wall=40.509s points=20 IK=7710 stage=post_recovery_beam_3_angular
+[ 78/100] margin=21 mm seed=20270078 ... FAIL wall=28.960s points=21 IK=4043 stage=post_recovery_beam_3_angular
+[ 79/100] margin=21 mm seed=20270079 ... FAIL wall=30.840s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 80/100] margin=21 mm seed=20270080 ... FAIL wall=6.927s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 81/100] margin=21 mm seed=20270081 ... FAIL wall=32.310s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 82/100] margin=21 mm seed=20270082 ... FAIL wall=31.993s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 83/100] margin=21 mm seed=20270083 ... FAIL wall=7.137s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 84/100] margin=21 mm seed=20270084 ... FAIL wall=31.672s points=20 IK=6198 stage=post_recovery_beam_3_angular
+[ 85/100] margin=21 mm seed=20270085 ... FAIL wall=21.905s points=21 IK=4775 stage=post_recovery_beam_3_angular
+[ 86/100] margin=21 mm seed=20270086 ... FAIL wall=34.736s points=20 IK=5270 stage=post_recovery_beam_3_angular
+[ 87/100] margin=21 mm seed=20270087 ... FAIL wall=31.206s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 88/100] margin=21 mm seed=20270088 ... FAIL wall=7.504s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 89/100] margin=21 mm seed=20270089 ... FAIL wall=32.053s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 90/100] margin=21 mm seed=20270090 ... FAIL wall=21.749s points=21 IK=4910 stage=post_recovery_beam_3_angular
+[ 91/100] margin=21 mm seed=20270091 ... FAIL wall=6.986s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 92/100] margin=21 mm seed=20270092 ... FAIL wall=21.697s points=21 IK=4910 stage=post_recovery_beam_3_angular
+[ 93/100] margin=21 mm seed=20270093 ... FAIL wall=32.906s points=20 IK=6198 stage=post_recovery_beam_3_angular
+[ 94/100] margin=21 mm seed=20270094 ... FAIL wall=32.165s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 95/100] margin=21 mm seed=20270095 ... FAIL wall=37.012s points=20 IK=7726 stage=post_recovery_beam_3_angular
+[ 96/100] margin=21 mm seed=20270096 ... FAIL wall=30.564s points=20 IK=7540 stage=post_recovery_beam_3_angular
+[ 97/100] margin=21 mm seed=20270097 ... FAIL wall=6.772s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 98/100] margin=21 mm seed=20270098 ... FAIL wall=40.844s points=20 IK=8310 stage=post_recovery_beam_3_angular
+[ 99/100] margin=21 mm seed=20270099 ... FAIL wall=32.218s points=21 IK=6587 stage=post_recovery_beam_3_angular
+[100/100] margin=21 mm seed=20270100 ... FAIL wall=22.794s points=21 IK=4910 stage=post_recovery_beam_3_angular
+MARGIN 21.000 mm: PASS 0/100 (0.0%)
+
+Saved summary CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_21mm.csv
+Saved summary MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_21mm.mat
+
+ans = 
+
+  struct with fields:
+
+          name: 'A-ARC-IK+ endpoint-margin benchmark'
+     marginsMm: 21
+         seeds: [20270001 20270002 20270003 20270004 … ] (1×100 double)
+       options: [1×1 struct]
+          rows: [1×1 struct]
+    summaryCsv: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_21mm.csv'
+    summaryMat: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_21mm.mat'
+       created: '2026-09-27 09:30:34'
+

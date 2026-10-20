@@ -1,0 +1,216 @@
+function report = online_v1_fast_connect_anytime_preweld(options)
+%ONLINE_V1_FAST_CONNECT_ANYTIME_PREWELD Run CBi-RRT* for one HMI request.
+%
+% This is a MATLAB-only wrapper around the existing
+% FastConnectAnytimeRRTStarJoint planner.  The HMI calls it with QProcess;
+% it never sends ROS2 commands.  qStart/qGoal are supplied in ROS/real
+% continuous joint space and are never wrapped into [-pi,pi].
+
+arguments
+    options struct = struct()
+end
+
+here = fileparts(mfilename('fullpath'));
+rrtRoot = fileparts(here);
+defaults = struct( ...
+    'inputFile','', ...
+    'outputFile','', ...
+    'reportFile','', ...
+    'sceneScript','/home/ttbstt/jixiebi/UR5/matlab仿真/sync_ur5_joint_states.m', ...
+    'plannerResolutionDeg',2.0, ...
+    'validationResolutionDeg',0.5, ...
+    'maxPlanningTimeSec',30.0, ...
+    'maxIterations',1000000, ...
+    'maxJointStepDeg',12.0, ...
+    'goalBias',0.20, ...
+    'seed',20260917, ...
+    'maxVelocityDegPerSec',5.0, ...
+    'maxAccelerationDegPerSec2',15.0);
+options = localMergeOptions(defaults,options);
+
+if isempty(options.inputFile) || ~isfile(options.inputFile)
+    error('online planner inputFile is missing: %s',options.inputFile);
+end
+if isempty(options.outputFile), error('online planner outputFile is required.'); end
+if isempty(options.reportFile), error('online planner reportFile is required.'); end
+
+request = jsondecode(fileread(options.inputFile));
+qStart = localQ(request,'qStart');
+qGoal = localQ(request,'qGoal');
+seed = options.seed;
+if isfield(request,'seed') && ~isempty(request.seed), seed = double(request.seed); end
+
+if ~isfolder(fileparts(options.outputFile)), mkdir(fileparts(options.outputFile)); end
+if ~isfolder(fileparts(options.reportFile)), mkdir(fileparts(options.reportFile)); end
+
+addpath(genpath(rrtRoot));
+addpath(fileparts(options.sceneScript));
+setenv('RRT_HEADLESS','1');
+scene = loadUR5JointScene(options.sceneScript);
+
+fprintf('ONLINE_CBI_RRT_STAR_START seed=%d\n',seed);
+fprintf('qStart=[%s]\n',sprintf(' %.9f',qStart));
+fprintf('qGoal=[%s]\n',sprintf(' %.9f',qGoal));
+
+cfg = struct( ...
+    'scene',scene, ...
+    'start',qStart, ...
+    'goal',qGoal, ...
+    'maxIterations',options.maxIterations, ...
+    'maxJointStepRad',deg2rad(options.maxJointStepDeg), ...
+    'jointEdgeResolutionRad',deg2rad(options.plannerResolutionDeg), ...
+    'goalBias',options.goalBias, ...
+    'seed',seed, ...
+    'maxPlanningTimeSec',options.maxPlanningTimeSec, ...
+    'anytime',true, ...
+    'continueAfterFirstSolution',true, ...
+    'checkpointTimesSec',[5 10 15 20 30], ...
+    'candidateValidatorFcn',[]);
+
+plannerTimer = tic;
+planner = FastConnectAnytimeRRTStarJoint(cfg);
+wallPlanningTimeSec = toc(plannerTimer);
+
+if ~planner.success || isempty(planner.path)
+    report = localFailureReport(options,request,qStart,qGoal,seed,planner,wallPlanningTimeSec);
+    localWriteJson(report,options.reportFile);
+    error('ONLINE_CBI_RRT_STAR_FAIL no valid planner path. Report: %s',options.reportFile);
+end
+
+qPathRaw = double(planner.path);
+[qPath,turnCounts] = lift_continuous_joint_path(qPathRaw);
+dense = localDenseValidate(scene,qPath,qStart,qGoal,deg2rad(options.validationResolutionDeg));
+if ~dense.pass
+    report = localFailureReport(options,request,qStart,qGoal,seed,planner,wallPlanningTimeSec);
+    report.dense_validation = dense;
+    localWriteJson(report,options.reportFile);
+    error('ONLINE_CBI_RRT_STAR_FAIL dense collision validation failed. Report: %s',options.reportFile);
+end
+
+[timeFromStart,timeDetails] = parameterize_joint_path(qPath, ...
+    'MaxVelocityDegPerSec',options.maxVelocityDegPerSec, ...
+    'MaxAccelerationDegPerSec2',options.maxAccelerationDegPerSec2);
+
+exportReport = export_hmi_trajectory(qPath,options.outputFile, ...
+    'CoordinateSpace','ros_real', ...
+    'TimeFromStart',timeFromStart, ...
+    'TrajectoryName','Online_RealHome_to_PreWeld_CBi-RRT*', ...
+    'Source','MATLAB_CBI_RRT_STAR_ONLINE', ...
+    'Description','Online CBi-RRT* path with independent dense collision validation; no automatic execution.', ...
+    'CollisionVerified',true, ...
+    'CollisionCheckPass',true, ...
+    'CollisionSampleCount',dense.collision_configuration_checks, ...
+    'MinimumClearanceM',NaN, ...
+    'ReportFile',options.reportFile);
+
+report = exportReport;
+report.algorithm = 'CBi-RRT*';
+report.request = request;
+report.q_start_rad = qStart;
+report.q_goal_input_rad = qGoal;
+report.q_goal_export_rad = qPath(end,:);
+report.planning_time_sec = wallPlanningTimeSec;
+report.planner = localPlannerSummary(planner);
+report.dense_validation = dense;
+report.time_parameterization = timeDetails;
+report.raw_path_max_adjacent_step_deg = rad2deg(localMaxAdjacentStep(qPathRaw));
+report.exported_path_max_adjacent_step_deg = rad2deg(localMaxAdjacentStep(qPath));
+report.continuous_branch_turn_counts = turnCounts;
+report.continuous_branch_lift_applied = any(turnCounts(:) ~= 0);
+report.note = 'Generated by QProcess MATLAB wrapper. No ROS2 command was sent.';
+localWriteJson(report,options.reportFile);
+
+fprintf('ONLINE_CBI_RRT_STAR_DONE output=%s report=%s planning=%.3f densePASS=1 points=%d\n', ...
+    options.outputFile,options.reportFile,wallPlanningTimeSec,size(qPath,1));
+end
+
+function q = localQ(request,name)
+if ~isfield(request,name), error('Request does not contain %s.',name); end
+q = double(request.(name)(:).');
+if numel(q) ~= 6 || any(~isfinite(q)), error('%s must be finite 1x6 radians.',name); end
+end
+
+function report = localFailureReport(options,request,qStart,qGoal,seed,planner,wallTime)
+report = struct();
+report.created = char(datetime('now','Format','yyyy-MM-dd HH:mm:ss'));
+report.success = false;
+report.algorithm = 'CBi-RRT*';
+report.request = request;
+report.q_start_rad = qStart;
+report.q_goal_input_rad = qGoal;
+report.seed = seed;
+report.planning_time_sec = wallTime;
+report.planner = localPlannerSummary(planner);
+report.output_file = options.outputFile;
+report.report_file = options.reportFile;
+report.collision_verified = false;
+report.collision_check_pass = false;
+end
+
+function dense = localDenseValidate(scene,qPath,qStart,qGoal,resolutionRad)
+dense = struct('pass',false,'node_count',size(qPath,1),'edge_count',max(0,size(qPath,1)-1), ...
+    'node_collision_free',false,'edge_collision_free',false, ...
+    'collision_configuration_checks',0,'edge_collision_checks',0, ...
+    'collision_nodes',[],'collision_edges',[],'max_joint_jump_deg',rad2deg(localMaxAdjacentStep(qPath)), ...
+    'endpoint_start_error_rad',NaN(1,6),'endpoint_goal_periodic_error_rad',NaN(1,6));
+if isempty(qPath) || size(qPath,2)~=6 || any(~isfinite(qPath(:))), return; end
+dense.endpoint_start_error_rad = qPath(1,:) - qStart;
+dense.endpoint_goal_periodic_error_rad = localPeriodicDifference(qPath(end,:),qGoal);
+if max(abs(dense.endpoint_start_error_rad)) > 1e-8 || max(abs(dense.endpoint_goal_periodic_error_rad)) > 1e-8, return; end
+for i=1:size(qPath,1)
+    [free,~] = collisionFreeJointState(scene.robot,qPath(i,:),scene.environment,scene.selfCollisionSkipPairs);
+    dense.collision_configuration_checks = dense.collision_configuration_checks + 1;
+    if ~free, dense.collision_nodes(end+1)=i; return; end %#ok<AGROW>
+end
+dense.node_collision_free = true;
+for i=1:size(qPath,1)-1
+    opts = struct();
+    opts.wrapJoints = true;
+    opts.selfCollisionSkipPairs = scene.selfCollisionSkipPairs;
+    [free,~,count,timedOut] = collisionFreeJointEdge(scene.robot,qPath(i,:),qPath(i+1,:), ...
+        scene.environment,resolutionRad,opts);
+    dense.edge_collision_checks = dense.edge_collision_checks + 1;
+    dense.collision_configuration_checks = dense.collision_configuration_checks + count;
+    if timedOut || ~free, dense.collision_edges(end+1)=i; return; end %#ok<AGROW>
+end
+dense.edge_collision_free = true;
+dense.pass = true;
+end
+
+function d = localPeriodicDifference(a,b)
+d = a-b;
+d = d - 2*pi*round(d/(2*pi));
+end
+
+function x = localMaxAdjacentStep(q)
+if size(q,1)<2, x=0; else, x=max(max(abs(diff(q,1,1)),[],2)); end
+end
+
+function localWriteJson(report,fileName)
+fid=fopen(fileName,'w');
+if fid<0, error('Cannot write report: %s',fileName); end
+cleanup=onCleanup(@()fclose(fid)); %#ok<NASGU>
+fwrite(fid,jsonencode(report),'char');
+end
+
+function s = localPlannerSummary(p)
+names = {'success','planningTimeSec','firstSolutionTimeSec', ...
+    'firstPathLengthL2Rad','finalBestPathLengthL2Rad','totalJointMotionRad', ...
+    'nodeCount','samples','collisionConfigurationChecks','edgeCollisionChecks', ...
+    'rewireAttempts','rewireSuccesses','numberOfImprovements','terminationReason'};
+s = struct();
+for i=1:numel(names)
+    name=names{i};
+    if isfield(p,name), s.(name)=p.(name); end
+end
+if isfield(p,'totalJointMotionPerAxis'), s.totalJointMotionPerAxis=p.totalJointMotionPerAxis; end
+if isfield(p,'stage1Iterations'), s.stage1Iterations=p.stage1Iterations; end
+if isfield(p,'stage2Iterations'), s.stage2Iterations=p.stage2Iterations; end
+end
+
+function out=localMergeOptions(defaults,in)
+out=defaults;
+if isempty(in), return; end
+names=fieldnames(in);
+for i=1:numel(names), out.(names{i})=in.(names{i}); end
+end

@@ -1,0 +1,7 @@
+{
+  "phase": "prepare",
+  "file_load_and_scene_adoption_sec": null,
+  "completion_callback_sec": 0.33844593894900754,
+  "process_and_transfer_sec": 0.8597196059999987,
+  "robot_motion": "NO"
+}

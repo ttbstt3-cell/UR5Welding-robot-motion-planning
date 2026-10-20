@@ -1,0 +1,370 @@
+{
+  "pass": true,
+  "checks": {
+    "t": true,
+    "Q": true,
+    "Qd": true,
+    "Qdd": true,
+    "seg": true,
+    "u": true,
+    "actualP": true,
+    "actualR": true,
+    "targetP": true,
+    "targetR": true,
+    "positionError": true,
+    "orientationError": true,
+    "envFlags": true,
+    "selfFlags": true,
+    "gaps": true,
+    "contour": true,
+    "sample_count": true,
+    "complete": true
+  },
+  "max_contour_difference_mm": 7.4626665524241131E-14,
+  "audit": {
+    "schema_version": "ACCP_CONTROLLER_INTERPOLATION_VALIDATION_v1",
+    "time_reference_mode": "FROZEN_CARTESIAN_PATH_MONOTONE_LOCAL_CLOCK_v2",
+    "stage": "Adaptive Time Scaling / controller-equivalent validation",
+    "robot_motion": "NO",
+    "interpolation_mode": "positions_plus_velocities_cubic_hermite",
+    "interpolation_rule_source": "ROS2 joint_trajectory_controller trajectory.hpp behavior verified by offline export audit",
+    "waypoint_count": 638,
+    "sample_count": 63701,
+    "samples_per_segment": 101,
+    "duration_sec": 207.84239041542247,
+    "max_tcp_contour_error_mm": 0.25153001893839483,
+    "rms_tcp_contour_error_mm": 0.036653838283838759,
+    "max_tcp_time_sync_error_mm": 0.2879952637843286,
+    "rms_tcp_time_sync_error_mm": 0.055531801492040213,
+    "max_tcp_time_sync_error_time_sec": 173.9853278357665,
+    "max_tcp_orientation_error_deg": 0.26222598499920219,
+    "max_position_error_case": {
+      "time_sec": 173.9853278357665,
+      "path_segment_index": 599,
+      "segment_u": 0.39,
+      "q_rad": [
+        -0.95684578626441874,
+        -1.7208298213857229,
+        1.3192635307138287,
+        -1.7746204626179545,
+        -1.5797298747338357,
+        3.0858754132491586
+      ],
+      "q_deg": [
+        -54.82322519782803,
+        -98.596286025653214,
+        75.588232375430039,
+        -101.67826274556246,
+        -90.511854592979,
+        176.80763728236559
+      ],
+      "joint_velocity_rad_s": [
+        -0.030006977992646785,
+        0.026424845551336819,
+        0.018248908794662028,
+        0.013424282816803178,
+        0.01533769104344484,
+        0.01352687711437078
+      ],
+      "joint_acceleration_rad_s2": [
+        -0.45917352410732359,
+        0.60822160441386242,
+        0.16158277709432123,
+        -0.35979269585966456,
+        0.023660051095432556,
+        -0.095385947602701568
+      ],
+      "actual_TCP_pose": [
+        [
+          -0.99110738004134791,
+          0.11251819231587012,
+          0.071033918838432353,
+          0.44409814246108614
+        ],
+        [
+          -0.12305067748623197,
+          -0.97817212012524513,
+          -0.16744501837875891,
+          -0.46018206758345864
+        ],
+        [
+          0.05064278821071827,
+          -0.17469676530391798,
+          0.98331904700081574,
+          0.31899804272741766
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          -0.99112423595246946,
+          0.11230335693192799,
+          0.071138631765403068,
+          0.4440611102459664
+        ],
+        [
+          -0.12286628926846128,
+          -0.9781645047672336,
+          -0.16762480894805268,
+          -0.460386628509915
+        ],
+        [
+          0.050760455760684692,
+          -0.17487755040396794,
+          0.98328084416186778,
+          0.31879873212967424
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.2879952637843286,
+      "orientation_error_deg": 0.01679133829121994,
+      "contour_error_mm": 0.15933429023712711
+    },
+    "max_orientation_error_case": {
+      "time_sec": 86.302752507287849,
+      "path_segment_index": 281,
+      "segment_u": 0.36,
+      "q_rad": [
+        -1.4717963973520096,
+        -0.82185625749066271,
+        0.59019038919221267,
+        -1.0848056925463576,
+        -1.444142494104905,
+        -0.022346683620110327
+      ],
+      "q_deg": [
+        -84.327721870829649,
+        -47.088894920632022,
+        33.815418409897262,
+        -62.154787774672677,
+        -82.743269927707431,
+        -1.2803706575464495
+      ],
+      "joint_velocity_rad_s": [
+        0.022339780855131608,
+        -0.065030639451128885,
+        0.10599939242547209,
+        -0.0889750142032494,
+        -0.042139923467893137,
+        -0.021657664374364193
+      ],
+      "joint_acceleration_rad_s2": [
+        -0.036925554900338456,
+        -0.17970734216815434,
+        0.32466794265057081,
+        -0.22036153184067836,
+        0.045989988482778639,
+        -0.025693355632157012
+      ],
+      "actual_TCP_pose": [
+        [
+          0.87114158038576672,
+          0.48633019912580017,
+          -0.06778852661955044,
+          0.24091876145871985
+        ],
+        [
+          -0.39227534297959515,
+          0.77231120393781216,
+          0.49965534077238438,
+          -0.64068992911870393
+        ],
+        [
+          0.29535131997881875,
+          -0.40867877567887789,
+          0.86356774841142747,
+          0.0089575009095749225
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          0.86984627834429784,
+          0.4883936437197598,
+          -0.069563645855509254,
+          0.24079831726936651
+        ],
+        [
+          -0.39230508729519908,
+          0.77031181992033737,
+          0.50270907946179377,
+          -0.64066521099289131
+        ],
+        [
+          0.29910561768860289,
+          -0.40998944969981138,
+          0.86165218075622907,
+          0.0089143749752739684
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.13029825287393848,
+      "orientation_error_deg": 0.26222598499920219,
+      "contour_error_mm": 0.0830503541446405
+    },
+    "max_contour_error_case": {
+      "time_sec": 49.954062439696251,
+      "path_segment_index": 99,
+      "segment_u": 0.32,
+      "q_rad": [
+        -1.7240066030963421,
+        -1.9381674738099528,
+        1.088701516252967,
+        -1.6346791107167493,
+        -1.0362351828530365,
+        3.0356574211659688
+      ],
+      "q_deg": [
+        -98.778302210106048,
+        -111.04881623884282,
+        62.378002030788409,
+        -93.660213902268353,
+        -59.371902560446124,
+        173.93035828037742
+      ],
+      "joint_velocity_rad_s": [
+        -0.029963289192925509,
+        -0.060701610379466031,
+        -0.046320984251374833,
+        -0.0044933764828458383,
+        -0.020728553856891842,
+        -0.025599129994780347
+      ],
+      "joint_acceleration_rad_s2": [
+        0.021543377040026,
+        -0.011173397665265082,
+        0.0037840560450069535,
+        -0.00037853889041898837,
+        -0.023470072170065807,
+        0.013462444059940466
+      ],
+      "actual_TCP_pose": [
+        [
+          -0.91258052746968832,
+          -0.20007635619114489,
+          -0.35660374728319993,
+          0.26618449573922492
+        ],
+        [
+          0.17554725750525058,
+          -0.97935478514847418,
+          0.10023654617538907,
+          -0.52771781467642254
+        ],
+        [
+          -0.36929654921963634,
+          0.028873110328814677,
+          0.92886296203175633,
+          0.59152644093001583
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          -0.912598131177984,
+          -0.20017710080346,
+          -0.35650214485241549,
+          0.26626118594031389
+        ],
+        [
+          0.17567256850850441,
+          -0.97933587058634752,
+          0.1002018026609581,
+          -0.52748214978562014
+        ],
+        [
+          -0.36919344474689153,
+          0.028816330384040766,
+          0.92890571074739425,
+          0.59147921136116033
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.25228943670762433,
+      "orientation_error_deg": 0.0093912736986202609,
+      "contour_error_mm": 0.25153001893839483
+    },
+    "max_joint_velocity_rad_per_sec": 0.23082351954440505,
+    "max_joint_velocity_time_sec": 110.67128491047566,
+    "max_joint_velocity_joint": 6,
+    "max_joint_acceleration_rad_per_sec2": 14.465544664462016,
+    "max_joint_acceleration_time_sec": 88.8243749820597,
+    "max_joint_acceleration_joint": 1,
+    "joint_limits_pass": true,
+    "collision_pass": true,
+    "collision_sample_count": 63701,
+    "min_positive_clearance_mm": 0.31923766250206548,
+    "first_collision": [],
+    "acceptance": {
+      "max_tcp_contour_error_mm": 0.5,
+      "max_tcp_time_sync_error_mm": 0.5,
+      "max_tcp_orientation_error_deg": 0.5,
+      "max_joint_velocity_rad_per_sec": 3.1415926535897931,
+      "max_joint_acceleration_rad_per_sec2": 40
+    },
+    "complete": true,
+    "executionReady": false,
+    "failureReason": "",
+    "note": "Dense offline audit only. No FollowJointTrajectory goal was created or sent.",
+    "performance": {
+      "input_sec": 0.004773,
+      "sampling_sec": 0.056362,
+      "reference_sec": 2.343759,
+      "fk_sec": 8.104996,
+      "pose_error_sec": 0.064153,
+      "contour_sec": 0.063676,
+      "collision_sec": 112.415399,
+      "summary_sec": 0.009667,
+      "total_sec": 123.063007,
+      "fk_calls": 63701,
+      "environment_calls": 0,
+      "self_calls": 0,
+      "combined_collision_calls": 63701,
+      "collision_coverage": "Same full pair matrices; environment and self in one exhaustive call",
+      "collision_batch": {
+        "mode": "parallel_process_combined",
+        "workers": 4,
+        "startup_sec": 6.849766,
+        "query_sec": 101.105539,
+        "processed_states": 63701,
+        "combined_calls": 63701,
+        "parallel_unavailable_reason": ""
+      }
+    }
+  },
+  "executionReady": false,
+  "robot_motion": "NO"
+}

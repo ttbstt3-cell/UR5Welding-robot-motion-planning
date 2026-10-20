@@ -1,0 +1,348 @@
+{
+  "robot_motion": "NO",
+  "executionReady": false,
+  "run_directory": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/fixed_base_floor_contact_20261015/cold_full_preview_v2",
+  "cold_start": true,
+  "source": "Actual HMI request, no old qPath or state-bank reuse",
+  "calibration_binding": {
+    "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "tcp_calibration_source": "real_tcp_calibration_active.json",
+    "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+    "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+    "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+    "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+    "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+    "real_gun_geometry_status": "ACTIVE",
+    "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+    "gun_geometry_version": "real-gun-1791876831259595871",
+    "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+    "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+    "workpiece_source": "REAL CALIBRATION",
+    "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+    "planning_scene": "REAL_CALIBRATION",
+    "wire_collision_shorten_mm": 3,
+    "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+    "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+    "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+    "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+    "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+    "robot_collision_coverage": "COMPLETE",
+    "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+    "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+    "realhome_version": "REALHOME-944584448568cc2d54b748aa3eb420c3b4147f5bf98383b32fd3a6b442ab929b",
+    "preweld_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+  },
+  "fixed_contact": {
+    "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+    "sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+    "file": "/home/ttbstt/jixiebi/UR5/fixed_environment_contacts.json",
+    "version": "fixed-base-floor-20261015-v1",
+    "pair": [
+      "base_link_inertia",
+      "EnvironmentCollision_Floor"
+    ],
+    "evidence": {
+      "status": "MODEL_VERIFIED_FIXED_SUPPORT",
+      "eligible": true,
+      "pair": [
+        "base_link_inertia",
+        "EnvironmentCollision_Floor"
+      ],
+      "fixed_joint_chain": [
+        {
+          "body": "base_link_inertia",
+          "joint": "base_link-base_link_inertia",
+          "type": "fixed"
+        },
+        {
+          "body": "base_link",
+          "joint": "base_joint",
+          "type": "fixed"
+        }
+      ],
+      "all_joints_to_root_fixed": true,
+      "sample_count": 10,
+      "max_base_transform_drift": 0,
+      "base_inside_floor_footprint": true,
+      "floor_horizontal": true,
+      "base_lowest_z_in_floor_frame_m": 0.099997445036098365,
+      "floor_top_z_in_floor_frame_m": 0.10000009089708328,
+      "vertical_gap_mm": -0.0026458609849178139,
+      "vertical_bounds_overlap_mm": 0.0026458609849178139,
+      "classification_band_mm": 0.01,
+      "T_root_base_body": [
+        [
+          -1,
+          -1.2246467991473532E-16,
+          0,
+          0
+        ],
+        [
+          1.2246467991473532E-16,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "floor_pose": [
+        [
+          6.123233995736766E-17,
+          -1,
+          0,
+          -0.87500001224285051
+        ],
+        [
+          1,
+          6.123233995736766E-17,
+          0,
+          -0.54999993392477664
+        ],
+        [
+          0,
+          0,
+          1,
+          -0.099999844355881218
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "floor_size_m": [
+        5,
+        5,
+        0.20000018179416656
+      ],
+      "robot_collision_counts": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        10,
+        0,
+        1
+      ],
+      "physical_installation_independently_measured": false,
+      "scope": "Model evidence of normal fixed support only; overlap is bounds-based, not penetration depth",
+      "executionReady": false,
+      "robot_motion": "NO"
+    },
+    "scope": "One fixed base support pair only; all moving links, gun, wire and other environment pairs remain hard"
+  },
+  "preview_node_count": 173,
+  "preview_duration_s": 101.19600109706835,
+  "preview_collision_status": "WARNING",
+  "preview_sample_count": 3785,
+  "preview_collision_hit_samples": 18,
+  "collision_pairs": [
+    "WeldingGunMount <-> WorkpieceCollision_bottom",
+    "WeldingGunMount <-> WorkpieceCollision_wall_x0",
+    "WeldingGunMount <-> WorkpieceCollision_wall_x1",
+    "WeldingGunMount <-> WorkpieceCollision_wall_y1",
+    "WeldingGunWire <-> WorkpieceCollision_bottom",
+    "WeldingGunWire <-> WorkpieceCollision_wall_y1"
+  ],
+  "first_collision_frame": 66,
+  "first_collision_sample": {
+    "frame_index": 66,
+    "sample_kind": "edge",
+    "edge_fraction": 0.05,
+    "time_s": 39.833781822327367,
+    "q_rad": [
+      -1.6585016416698766,
+      -1.1573078682351752,
+      1.375086443842602,
+      -1.493366177420931,
+      -0.89193228942360281,
+      6.1649761691433511
+    ],
+    "collision_pairs": [
+      "WeldingGunWire <-> WorkpieceCollision_wall_y1"
+    ],
+    "collision_details": {
+      "category": "WireWorkpieceCollision",
+      "object_a": "WeldingGunWire",
+      "object_b": "WorkpieceCollision_wall_y1",
+      "pair": "WeldingGunWire <-> WorkpieceCollision_wall_y1",
+      "separation_mm": [],
+      "distance_status": "environment collision flag; signed penetration not returned"
+    },
+    "categories": [
+      "WireWorkpieceCollision"
+    ],
+    "min_positive_gap_mm": 3.9712591444204484,
+    "min_gap_pair": "WeldingGunWire <-> WorkpieceCollision_bottom",
+    "min_gap_category": "WireWorkpieceCollision"
+  },
+  "previewReady": false,
+  "approach": {
+    "success": true,
+    "termination_reason": "timeout_with_solution",
+    "planning_time_s": 30.003295,
+    "path_nodes": 15,
+    "stage1_iterations": 21,
+    "stage2_iterations": 62,
+    "collision_state_checks": 5239,
+    "edge_checks": 510,
+    "source_nodes_joint_limits_pass": true
+  },
+  "exit": {
+    "success": true,
+    "termination_reason": "timeout_with_solution",
+    "planning_time_s": 30.001662,
+    "path_nodes": 13,
+    "stage1_iterations": 2,
+    "stage2_iterations": 59,
+    "collision_state_checks": 4921,
+    "edge_checks": 503,
+    "source_nodes_joint_limits_pass": true
+  },
+  "accp": {
+    "configuration_complete": true,
+    "cartesian_refinement_complete": true,
+    "timing_complete": false,
+    "complete": false,
+    "initial_nodes": 24,
+    "refined_nodes": 47,
+    "ik_calls": 2426,
+    "configuration_time_s": 94.711291,
+    "total_time_s": 302.859404,
+    "node_collision_free": true,
+    "edge_collision_free": true,
+    "maximum_cartesian_error_mm": 0.2442528928566241,
+    "bridge_recovered_points": 17,
+    "time_failure_reason": "ACCP_TIME_PARAMETERIZATION_FAILED: ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 2.055985 mm >= 0.500000 mm; controller TCP orientation 0.738561 deg > 0.500000 deg; controller peak joint velocity 0.0911174593 rad/s exceeds 0.0872664626; controller peak joint acceleration 0.835528804 rad/s^2 exceeds 0.261799388",
+    "controller_validation": {
+      "schema_version": "ACCP_CONTROLLER_INTERPOLATION_VALIDATION_v1",
+      "stage": "Adaptive Time Scaling / controller-equivalent validation",
+      "robot_motion": "NO",
+      "interpolation_mode": "positions_plus_velocities_cubic_hermite",
+      "interpolation_rule_source": "ROS2 joint_trajectory_controller trajectory.hpp behavior verified by offline export audit",
+      "waypoint_count": 47,
+      "sample_count": 4601,
+      "samples_per_segment": 101,
+      "duration_sec": 25.135841590014309,
+      "max_tcp_contour_error_mm": 0.40637518368594716,
+      "rms_tcp_contour_error_mm": 0.050523434178446368,
+      "max_tcp_time_sync_error_mm": 2.055985444257697,
+      "rms_tcp_time_sync_error_mm": 0.32691849141172996,
+      "max_tcp_time_sync_error_time_sec": 7.8201348757114815,
+      "max_tcp_orientation_error_deg": 0.73856079104228112,
+      "max_joint_velocity_rad_per_sec": 0.0911174592783749,
+      "max_joint_velocity_time_sec": 20.555594489934744,
+      "max_joint_velocity_joint": 3,
+      "max_joint_acceleration_rad_per_sec2": 0.835528804280796,
+      "max_joint_acceleration_time_sec": 12.858635126353954,
+      "max_joint_acceleration_joint": 1,
+      "joint_limits_pass": true,
+      "collision_pass": true,
+      "collision_sample_count": 4601,
+      "min_positive_clearance_mm": 0.15658880305219255,
+      "complete": false,
+      "executionReady": false,
+      "failureReason": "ACCP_CONTROLLER_INTERPOLATION_FAILED: controller TCP time-sync 2.055985 mm >= 0.500000 mm; controller TCP orientation 0.738561 deg > 0.500000 deg; controller peak joint velocity 0.0911174593 rad/s exceeds 0.0872664626; controller peak joint acceleration 0.835528804 rad/s^2 exceeds 0.261799388",
+      "note": "Dense offline audit only. No FollowJointTrajectory goal was created or sent."
+    }
+  },
+  "floor_collision_pair_count": 0,
+  "floor_scope": "All original moving robot/gun/wire pairs checked; only certified fixed base/Floor masked",
+  "preview_joint_limits_pass": false,
+  "preview_joint_limit_violations": [
+    {
+      "frame": 63,
+      "joint": 6,
+      "q_deg": 362.69296086095858
+    },
+    {
+      "frame": 64,
+      "joint": 6,
+      "q_deg": 365.53767900418723
+    },
+    {
+      "frame": 65,
+      "joint": 6,
+      "q_deg": 368.38239714741576
+    },
+    {
+      "frame": 66,
+      "joint": 6,
+      "q_deg": 371.22711529064435
+    }
+  ],
+  "segment_counts": {
+    "approach": 66,
+    "weld": 47,
+    "exit": 60
+  },
+  "boundaries": [
+    {
+      "from": "approach",
+      "to": "weld",
+      "delta_q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -360
+      ],
+      "wrapped_delta_q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1.4033418597069752E-14
+      ],
+      "TCP_position_difference_mm": 0,
+      "TCP_rotation_difference_deg": 0
+    },
+    {
+      "from": "weld",
+      "to": "exit",
+      "delta_q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wrapped_delta_q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "TCP_position_difference_mm": 0,
+      "TCP_rotation_difference_deg": 0
+    }
+  ],
+  "note": "Ground goal passes sampled preview only. Workpiece junction collision and timing/representation failures remain BLOCKED; no auto-fix."
+}

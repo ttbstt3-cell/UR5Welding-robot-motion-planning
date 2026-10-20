@@ -1,0 +1,3 @@
+HMI_WELD_STAGE stage=GEOMETRIC_CONSISTENCY
+CP_GEOMETRY iter=1 knots=360 pos=13.549113 ori=0.894679 bad=1275
+CONTINUOUS_PLANNING_FAILED 未定义与 'rigidBodyTree' 类型的输入参数相对应的函数 'checkEnvironmentCollision'。

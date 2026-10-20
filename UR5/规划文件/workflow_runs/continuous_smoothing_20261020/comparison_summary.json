@@ -1,0 +1,210 @@
+{
+  "executionReady": false,
+  "robot_motion": "NO",
+  "cases": {
+    "current": {
+      "derivatives": {
+        "before": {
+          "peak_jerk": 1600.27984530854,
+          "peak_joint": 1,
+          "peak_edge": 299,
+          "peak_time_interval": [
+            88.81356304421136,
+            88.8243749820597
+          ],
+          "peak_segment": "weld",
+          "peak_acceleration": 14.465544664458548,
+          "rms_acceleration": 0.1563657110109593,
+          "rms_segment_jerk": 15.681106617765018,
+          "max_acceleration_jump": 0.005476302842248204,
+          "interface_acceleration_jump": 7.105427357601002e-15,
+          "rest_end_acceleration": 1.0187567298965883e-19,
+          "duration": 207.84239041542247,
+          "nodes": 638
+        },
+        "after": {
+          "peak_jerk": 4.934481758101227,
+          "peak_joint": 4,
+          "peak_edge": 531,
+          "peak_time_interval": [
+            175.10316153494048,
+            175.21929662261584
+          ],
+          "peak_segment": "exit",
+          "peak_acceleration": 0.6524342845653273,
+          "rms_acceleration": 0.03356559552092422,
+          "rms_segment_jerk": 0.4800505640525085,
+          "max_acceleration_jump": 0.0005429822990098935,
+          "interface_acceleration_jump": 3.885780586188048e-16,
+          "rest_end_acceleration": 1.0187567298965883e-19,
+          "duration": 227.023341691866,
+          "nodes": 638
+        },
+        "all_q_exact": true,
+        "all_tcp_exact": true,
+        "geometry_reference_exact": true,
+        "weld47_exact": true
+      },
+      "optimized_audit": {
+        "sample_count": 63701,
+        "max_tcp_contour_error_mm": 0.2485024093296539,
+        "rms_tcp_contour_error_mm": 0.03326702161152001,
+        "max_tcp_time_sync_error_mm": 0.2863245965175496,
+        "rms_tcp_time_sync_error_mm": 0.0513967912981705,
+        "max_tcp_orientation_error_deg": 0.26142924057498457,
+        "min_positive_clearance_mm": 0.31962991884633785,
+        "collision_pass": true,
+        "joint_limits_pass": true,
+        "complete": true
+      },
+      "serial_audit_sec": 374.797076,
+      "parallel_audit_sec": 123.223273,
+      "all_q_exact": true,
+      "all_tcp_exact": true,
+      "path_reference_exact": true
+    },
+    "historical": {
+      "derivatives": {
+        "before": {
+          "peak_jerk": 4.478461646521929,
+          "peak_joint": 6,
+          "peak_edge": 213,
+          "peak_time_interval": [
+            156.09900627948122,
+            156.18275373134503
+          ],
+          "peak_segment": "weld",
+          "peak_acceleration": 0.24754996556096134,
+          "rms_acceleration": 0.01301899634127702,
+          "rms_segment_jerk": 0.1610653207550495,
+          "max_acceleration_jump": 0.20092996187350384,
+          "interface_acceleration_jump": 8.326672684688674e-17,
+          "rest_end_acceleration": 5.342410113083961e-20,
+          "duration": 325.0868887814177,
+          "nodes": 478
+        },
+        "after": {
+          "peak_jerk": 3.918558813343778,
+          "peak_joint": 6,
+          "peak_edge": 213,
+          "peak_time_interval": [
+            156.35680279010091,
+            156.44091443569047
+          ],
+          "peak_segment": "weld",
+          "peak_acceleration": 0.22738963478526858,
+          "rms_acceleration": 0.012734089289537249,
+          "rms_segment_jerk": 0.13062971231962558,
+          "max_acceleration_jump": 0.0003884855448007842,
+          "interface_acceleration_jump": 3.191891195797325e-16,
+          "rest_end_acceleration": 5.342410113083961e-20,
+          "duration": 325.8714455001208,
+          "nodes": 478
+        },
+        "all_q_exact": true,
+        "all_tcp_exact": true,
+        "geometry_reference_exact": true,
+        "weld47_exact": true
+      },
+      "optimized_audit": {
+        "sample_count": 47701,
+        "max_tcp_contour_error_mm": 0.26385013628547827,
+        "rms_tcp_contour_error_mm": 0.02011846158253811,
+        "max_tcp_time_sync_error_mm": 0.28254788898561994,
+        "rms_tcp_time_sync_error_mm": 0.036398902696537075,
+        "max_tcp_orientation_error_deg": 0.2830451487345388,
+        "min_positive_clearance_mm": 0.4284793259261782,
+        "collision_pass": true,
+        "joint_limits_pass": true,
+        "complete": true
+      },
+      "serial_audit_sec": 291.837317,
+      "parallel_audit_sec": 93.388141,
+      "all_q_exact": true,
+      "all_tcp_exact": true,
+      "path_reference_exact": true
+    }
+  },
+  "production": {
+    "planning_time": 143.20598,
+    "stages": {
+      "input_sec": 1.367625,
+      "geometry_sec": 11.357875,
+      "parameterization_sec": 1.508182,
+      "controller_validation_sec": 123.442417,
+      "version_validation_sec": 3.498565,
+      "offline_export_sec": 1.938601
+    },
+    "audit": {
+      "sample_count": 63701,
+      "max_tcp_contour_error_mm": 0.2485024093296539,
+      "rms_tcp_contour_error_mm": 0.03326702161152001,
+      "max_tcp_time_sync_error_mm": 0.2863245965175496,
+      "rms_tcp_time_sync_error_mm": 0.0513967912981705,
+      "max_tcp_orientation_error_deg": 0.26142924057498457,
+      "min_positive_clearance_mm": 0.31962991884633785,
+      "collision_pass": true,
+      "joint_limits_pass": true,
+      "complete": true
+    },
+    "realhome_version": "REALHOME-a3b74aa159f6c5b30239fc95a32d10aaec3f58fe00efafde8b0b9d7934bf84d7",
+    "collision_performance": {
+      "input_sec": 0.002138,
+      "sampling_sec": 0.045849,
+      "reference_sec": 2.207558,
+      "fk_sec": 7.928361,
+      "pose_error_sec": 0.054505,
+      "contour_sec": 0.071269,
+      "collision_sec": 113.096179,
+      "summary_sec": 0.005227,
+      "total_sec": 123.411323,
+      "fk_calls": 63701,
+      "environment_calls": 0,
+      "self_calls": 0,
+      "combined_collision_calls": 63701,
+      "collision_coverage": "Same full pair matrices; environment and self in one exhaustive call",
+      "collision_batch": {
+        "mode": "parallel_process_combined",
+        "workers": 4,
+        "startup_sec": 6.809304,
+        "query_sec": 101.908275,
+        "processed_states": 63701,
+        "combined_calls": 63701,
+        "parallel_unavailable_reason": ""
+      }
+    }
+  },
+  "baseline_profile": {
+    "input_sec": 0.002952,
+    "sampling_sec": 0.046693,
+    "reference_sec": 2.285751,
+    "fk_sec": 7.974367,
+    "pose_error_sec": 0.061514,
+    "contour_sec": 3.181099,
+    "collision_sec": 369.860156,
+    "summary_sec": 0.006131,
+    "total_sec": 383.418916,
+    "fk_calls": 63701,
+    "environment_calls": 63701,
+    "self_calls": 63701
+  },
+  "baseline_full_equivalence": true,
+  "backend_contracts": {
+    "pass": true,
+    "checks": {
+      "default_reference_unchanged": true,
+      "all_101_states_checked": true,
+      "bad_worker_option": true,
+      "nan_q_rejected": true,
+      "contour_boundary_decision_exact": true,
+      "validator_threshold_dispatch_exact": true,
+      "empty_world_compatible": true,
+      "worker_error_fails_closed": true,
+      "external_pool_retained": true,
+      "serial_full_coverage": true
+    },
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "protected": true
+}

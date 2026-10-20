@@ -1,0 +1,175 @@
+FULL LOCAL WELD POSE CORRIDOR REPORT
+====================================
+
+Search range: Point 1 -> Point 80
+Last reachable point: Point 80
+Complete corridor: 1
+First break point: none
+Break reason: 无断裂，Point 1-80 全部连通
+
+Layer summary
+Point,PreviousReachableStates,ReachableStates,TargetPoseCellsWithState,CandidateEdges,IKCalls,IKFailures,IKValid,JointRejected,NodeRejected,EdgeTests,EdgeFree,EdgeRejected,BreakReason
+1,0,2028,623,0,20808,12975,7833,0,3831,0,0,0,
+2,2028,525,525,751,751,31,720,49,146,525,525,0,
+3,525,419,419,685,685,24,661,50,192,419,419,0,
+4,419,246,246,586,586,17,569,49,248,272,246,26,
+5,246,253,253,410,410,16,394,51,90,253,253,0,
+6,253,238,238,421,421,12,409,51,120,238,238,0,
+7,238,227,227,402,402,0,402,53,122,227,227,0,
+8,227,226,226,395,395,0,395,51,118,226,226,0,
+9,226,223,223,393,393,2,391,51,117,223,223,0,
+10,223,223,223,390,390,2,388,49,116,223,223,0,
+11,223,221,221,390,390,4,386,48,117,221,221,0,
+12,221,222,222,384,384,2,382,46,114,222,222,0,
+13,222,225,225,385,385,4,381,41,115,225,225,0,
+14,225,231,231,392,392,10,382,34,117,231,231,0,
+15,231,232,232,394,394,10,384,33,119,232,232,0,
+16,232,233,233,394,394,9,385,32,120,233,233,0,
+17,233,235,235,395,395,9,386,30,121,235,235,0,
+18,235,235,235,396,396,8,388,32,121,235,235,0,
+19,235,238,238,396,396,6,390,33,119,238,238,0,
+20,238,239,239,397,397,4,393,35,119,239,239,0,
+21,239,242,242,398,398,5,393,34,117,242,242,0,
+22,242,245,245,400,400,7,393,34,114,245,245,0,
+23,245,246,246,402,402,8,394,34,114,246,246,0,
+24,246,247,247,403,403,8,395,34,114,247,247,0,
+25,247,248,248,403,403,7,396,34,114,248,248,0,
+26,248,250,250,403,403,7,396,32,114,250,250,0,
+27,250,250,250,404,404,7,397,33,114,250,250,0,
+28,250,250,250,404,404,6,398,34,114,250,250,0,
+29,250,252,252,404,404,6,398,32,114,252,252,0,
+30,252,252,252,405,405,5,400,34,114,252,252,0,
+31,252,253,253,405,405,4,401,34,114,253,253,0,
+32,253,253,253,405,405,4,401,34,114,253,253,0,
+33,253,255,255,405,405,3,402,33,114,255,255,0,
+34,255,255,255,406,406,2,404,35,114,255,255,0,
+35,255,255,255,406,406,1,405,36,114,255,255,0,
+36,255,256,256,406,406,0,406,36,114,256,256,0,
+37,256,256,256,407,407,0,407,37,114,256,256,0,
+38,256,259,259,407,407,0,407,34,114,259,259,0,
+39,259,259,259,408,408,0,408,35,114,259,259,0,
+40,259,259,259,408,408,0,408,35,114,259,259,0,
+41,259,260,260,408,408,0,408,34,114,260,260,0,
+42,260,261,261,409,409,0,409,34,114,261,261,0,
+43,261,262,262,409,409,0,409,33,114,262,262,0,
+44,262,262,262,410,410,0,410,34,114,262,262,0,
+45,262,263,263,410,410,0,410,33,114,263,263,0,
+46,263,265,265,411,411,0,411,32,114,265,265,0,
+47,265,266,266,411,411,0,411,30,115,266,266,0,
+48,266,267,267,412,412,0,412,30,115,267,267,0,
+49,267,271,271,413,413,1,412,26,115,271,271,0,
+50,271,272,272,421,421,4,417,26,119,272,272,0,
+51,272,272,272,421,421,4,417,26,119,272,272,0,
+52,272,273,273,421,421,3,418,26,119,273,273,0,
+53,273,273,273,421,421,3,418,26,119,273,273,0,
+54,273,274,274,421,421,2,419,26,119,274,274,0,
+55,274,274,274,421,421,0,421,28,119,274,274,0,
+56,274,274,274,421,421,0,421,28,119,274,274,0,
+57,274,275,275,421,421,0,421,27,119,275,275,0,
+58,275,276,276,421,421,0,421,26,119,276,276,0,
+59,276,276,276,421,421,0,421,26,119,276,276,0,
+60,276,276,276,421,421,0,421,26,119,276,276,0,
+61,276,276,276,421,421,0,421,26,119,276,276,0,
+62,276,278,278,421,421,0,421,24,119,278,278,0,
+63,278,278,278,421,421,0,421,24,119,278,278,0,
+64,278,278,278,421,421,0,421,24,119,278,278,0,
+65,278,279,279,421,421,0,421,23,119,279,279,0,
+66,279,279,279,421,421,0,421,23,119,279,279,0,
+67,279,279,279,421,421,0,421,23,119,279,279,0,
+68,279,281,281,421,421,0,421,21,119,281,281,0,
+69,281,281,281,421,421,0,421,21,119,281,281,0,
+70,281,281,281,421,421,0,421,21,119,281,281,0,
+71,281,281,281,421,421,0,421,20,120,281,281,0,
+72,281,281,281,420,420,0,420,20,119,281,281,0,
+73,281,281,281,420,420,0,420,20,119,281,281,0,
+74,281,282,282,420,420,0,420,18,120,282,282,0,
+75,282,282,282,419,419,0,419,16,121,282,282,0,
+76,282,284,284,418,418,0,418,14,120,284,284,0,
+77,284,284,284,418,418,0,418,13,121,284,284,0,
+78,284,283,283,417,417,0,417,13,121,283,283,0,
+79,283,281,281,416,416,0,416,13,122,281,281,0,
+80,281,279,279,414,414,0,414,12,123,279,279,0,
+
+Collision objects
+Point,Stage,CollisionObject,Count
+1,node,base_link <-> WorkpieceCollision_wall_y1,3831
+2,node,base_link <-> WorkpieceCollision_wall_y1,146
+3,node,base_link <-> WorkpieceCollision_wall_y1,192
+4,node,base_link <-> WorkpieceCollision_wall_y1,248
+4,edge,base_link <-> WorkpieceCollision_wall_y1,26
+5,node,base_link <-> WorkpieceCollision_wall_y1,90
+6,node,base_link <-> WorkpieceCollision_wall_y1,120
+7,node,base_link <-> WorkpieceCollision_wall_y1,122
+8,node,base_link <-> WorkpieceCollision_wall_y1,118
+9,node,base_link <-> WorkpieceCollision_wall_y1,117
+10,node,base_link <-> WorkpieceCollision_wall_y1,116
+11,node,base_link <-> WorkpieceCollision_wall_y1,117
+12,node,base_link <-> WorkpieceCollision_wall_y1,114
+13,node,base_link <-> WorkpieceCollision_wall_y1,115
+14,node,base_link <-> WorkpieceCollision_wall_y1,117
+15,node,base_link <-> WorkpieceCollision_wall_y1,119
+16,node,base_link <-> WorkpieceCollision_wall_y1,120
+17,node,base_link <-> WorkpieceCollision_wall_y1,121
+18,node,base_link <-> WorkpieceCollision_wall_y1,121
+19,node,base_link <-> WorkpieceCollision_wall_y1,119
+20,node,base_link <-> WorkpieceCollision_wall_y1,119
+21,node,base_link <-> WorkpieceCollision_wall_y1,117
+22,node,base_link <-> WorkpieceCollision_wall_y1,114
+23,node,base_link <-> WorkpieceCollision_wall_y1,114
+24,node,base_link <-> WorkpieceCollision_wall_y1,114
+25,node,base_link <-> WorkpieceCollision_wall_y1,114
+26,node,base_link <-> WorkpieceCollision_wall_y1,114
+27,node,base_link <-> WorkpieceCollision_wall_y1,114
+28,node,base_link <-> WorkpieceCollision_wall_y1,114
+29,node,base_link <-> WorkpieceCollision_wall_y1,114
+30,node,base_link <-> WorkpieceCollision_wall_y1,114
+31,node,base_link <-> WorkpieceCollision_wall_y1,114
+32,node,base_link <-> WorkpieceCollision_wall_y1,114
+33,node,base_link <-> WorkpieceCollision_wall_y1,114
+34,node,base_link <-> WorkpieceCollision_wall_y1,114
+35,node,base_link <-> WorkpieceCollision_wall_y1,114
+36,node,base_link <-> WorkpieceCollision_wall_y1,114
+37,node,base_link <-> WorkpieceCollision_wall_y1,114
+38,node,base_link <-> WorkpieceCollision_wall_y1,114
+39,node,base_link <-> WorkpieceCollision_wall_y1,114
+40,node,base_link <-> WorkpieceCollision_wall_y1,114
+41,node,base_link <-> WorkpieceCollision_wall_y1,114
+42,node,base_link <-> WorkpieceCollision_wall_y1,114
+43,node,base_link <-> WorkpieceCollision_wall_y1,114
+44,node,base_link <-> WorkpieceCollision_wall_y1,114
+45,node,base_link <-> WorkpieceCollision_wall_y1,114
+46,node,base_link <-> WorkpieceCollision_wall_y1,114
+47,node,base_link <-> WorkpieceCollision_wall_y1,115
+48,node,base_link <-> WorkpieceCollision_wall_y1,115
+49,node,base_link <-> WorkpieceCollision_wall_y1,115
+50,node,base_link <-> WorkpieceCollision_wall_y1,119
+51,node,base_link <-> WorkpieceCollision_wall_y1,119
+52,node,base_link <-> WorkpieceCollision_wall_y1,119
+53,node,base_link <-> WorkpieceCollision_wall_y1,119
+54,node,base_link <-> WorkpieceCollision_wall_y1,119
+55,node,base_link <-> WorkpieceCollision_wall_y1,119
+56,node,base_link <-> WorkpieceCollision_wall_y1,119
+57,node,base_link <-> WorkpieceCollision_wall_y1,119
+58,node,base_link <-> WorkpieceCollision_wall_y1,119
+59,node,base_link <-> WorkpieceCollision_wall_y1,119
+60,node,base_link <-> WorkpieceCollision_wall_y1,119
+61,node,base_link <-> WorkpieceCollision_wall_y1,119
+62,node,base_link <-> WorkpieceCollision_wall_y1,119
+63,node,base_link <-> WorkpieceCollision_wall_y1,119
+64,node,base_link <-> WorkpieceCollision_wall_y1,119
+65,node,base_link <-> WorkpieceCollision_wall_y1,119
+66,node,base_link <-> WorkpieceCollision_wall_y1,119
+67,node,base_link <-> WorkpieceCollision_wall_y1,119
+68,node,base_link <-> WorkpieceCollision_wall_y1,119
+69,node,base_link <-> WorkpieceCollision_wall_y1,119
+70,node,base_link <-> WorkpieceCollision_wall_y1,119
+71,node,base_link <-> WorkpieceCollision_wall_y1,120
+72,node,base_link <-> WorkpieceCollision_wall_y1,119
+73,node,base_link <-> WorkpieceCollision_wall_y1,119
+74,node,base_link <-> WorkpieceCollision_wall_y1,120
+75,node,base_link <-> WorkpieceCollision_wall_y1,121
+76,node,base_link <-> WorkpieceCollision_wall_y1,120
+77,node,base_link <-> WorkpieceCollision_wall_y1,121
+78,node,base_link <-> WorkpieceCollision_wall_y1,121
+79,node,base_link <-> WorkpieceCollision_wall_y1,122
+80,node,base_link <-> WorkpieceCollision_wall_y1,123

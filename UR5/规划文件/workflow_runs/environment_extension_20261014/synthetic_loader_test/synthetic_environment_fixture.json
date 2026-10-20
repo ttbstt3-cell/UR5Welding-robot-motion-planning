@@ -1,0 +1,105 @@
+{
+  "schema_version": "SYNTHETIC_ENVIRONMENT_LOADER_TEST",
+  "units": "m",
+  "frame_id": "UR5_base",
+  "version": "SYNTHETIC_NOT_FOR_PLANNING",
+  "frames": {
+    "T_base_UR5base": [
+      [
+        6.123233995736766E-17,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        6.123233995736766E-17,
+        -0,
+        -0
+      ],
+      [
+        0,
+        0,
+        1,
+        0.01465
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "objects": [
+    {
+      "name": "EnvironmentTest_robot",
+      "path": "/SYNTHETIC_ONLY/EnvironmentTest_robot",
+      "category": "synthetic_test_only",
+      "collision_enabled": true,
+      "pose_UR5_base": {
+        "position": [
+          0,
+          0,
+          -0.01465
+        ],
+        "quaternion": [
+          0,
+          0,
+          -0.70710678118654746,
+          0.70710678118654757
+        ]
+      },
+      "geometry": {
+        "type": "sphere",
+        "radius_m": 0.02
+      }
+    },
+    {
+      "name": "EnvironmentTest_gun",
+      "path": "/SYNTHETIC_ONLY/EnvironmentTest_gun",
+      "category": "synthetic_test_only",
+      "collision_enabled": true,
+      "pose_UR5_base": {
+        "position": [
+          -0.32998267769525713,
+          -0.22762331667052346,
+          0.51349749972044112
+        ],
+        "quaternion": [
+          0,
+          0,
+          -0.70710678118654746,
+          0.70710678118654757
+        ]
+      },
+      "geometry": {
+        "type": "sphere",
+        "radius_m": 0.001
+      }
+    },
+    {
+      "name": "EnvironmentTest_wire",
+      "path": "/SYNTHETIC_ONLY/EnvironmentTest_wire",
+      "category": "synthetic_test_only",
+      "collision_enabled": true,
+      "pose_UR5_base": {
+        "position": [
+          -0.28556407198428335,
+          -0.28665142588993503,
+          0.20912797356428825
+        ],
+        "quaternion": [
+          0,
+          0,
+          -0.70710678118654746,
+          0.70710678118654757
+        ]
+      },
+      "geometry": {
+        "type": "sphere",
+        "radius_m": 0.001
+      }
+    }
+  ]
+}

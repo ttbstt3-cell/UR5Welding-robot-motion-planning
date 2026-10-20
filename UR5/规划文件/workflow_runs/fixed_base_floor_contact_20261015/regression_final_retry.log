@@ -1,0 +1,8 @@
+STRICT HOME COLLISION CHECK: COLLISION/INVALID
+  base_link_inertia <-> EnvironmentCollision_Floor
+FIXED SUPPORT HOME COLLISION CHECK: FREE
+FIXED SUPPORT REGRESSION PASS; one pair only, all moving/tool/wire pairs retained
+L 52 (C 74-84): MSNU: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+L 16 (C 8-30): ISCL: To improve performance, use 'isscalar' instead of length comparison.
+

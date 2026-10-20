@@ -1,0 +1,15 @@
+{Unrecognized field name "jointLimits".
+
+Error in hmi_workflow_state_free (line 4)
+lim=scene.jointLimits;
+    ^^^^^^^^^^^^^^^^^
+Error in hmi_cartesian_boundary_transition>edgeFree (line 49)
+    [ok,g]=hmi_workflow_state_free(scene,(1-u)*qa+u*qb); checks=checks+1;
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in hmi_cartesian_boundary_transition (line 22)
+            [free,checks,gap]=edgeFree(scene,Q(end,:),q); report.edge_samples=report.edge_samples+checks;
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_hmi_two_stage_workflow (line 19)
+[bridge,br]=hmi_cartesian_boundary_transition(a,c,scene,struct(...
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

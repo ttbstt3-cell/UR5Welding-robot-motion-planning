@@ -1,0 +1,44 @@
+{
+  "executionReady": false,
+  "trials": [
+    {
+      "c2_joins": false,
+      "optimization": {
+        "pass": false,
+        "executionReady": false,
+        "iterations": [
+          {
+            "iteration": 1,
+            "exitflag": -2,
+            "message": "The problem is infeasible.\n\nDuring presolve, quadprog found the constraints to be inconsistent \nto within the constraint tolerance."
+          }
+        ],
+        "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+        "elapsed_sec": 4.196648,
+        "q_nodes_unchanged": true,
+        "tcp_targets_unchanged": true,
+        "collision_status": "NOT_CHECKED: requires independent dense audit"
+      }
+    },
+    {
+      "c2_joins": true,
+      "optimization": {
+        "pass": false,
+        "executionReady": false,
+        "iterations": [
+          {
+            "iteration": 1,
+            "exitflag": -2,
+            "message": "The problem is infeasible.\n\nDuring presolve, quadprog found the constraints to be inconsistent \nto within the constraint tolerance."
+          }
+        ],
+        "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+        "elapsed_sec": 3.629838,
+        "q_nodes_unchanged": true,
+        "tcp_targets_unchanged": true,
+        "collision_status": "NOT_CHECKED: requires independent dense audit"
+      }
+    }
+  ],
+  "q_nodes_changed": false
+}

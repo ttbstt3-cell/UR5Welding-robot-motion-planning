@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "selected": "prepare",
+  "prepare": {
+    "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/trajectory_autoload_cleanup_20261019/vtk_autoload/CURRENT_TRAJECTORIES_TEST_ONLY/连续规划完成轨迹_2026-10-19_11-26-13_504984.mat",
+    "sha256": "9fabc89758f1c19b2b81c87ad9cecbca8f516c1b162b741c33f4878edc314c14",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/trajectory_autoload_cleanup_20261019/vtk_autoload/CURRENT_TRAJECTORIES_TEST_ONLY/连续规划完成轨迹_2026-10-19_11-26-13_504984_report.json",
+    "report_sha256": "22031a321161827676ae4a0191b977f4624654ac622563cdfa60f6d05dc97341",
+    "source_path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/trajectory_autoload_cleanup_20261019/vtk_autoload/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_112613_504984/offline_optimized_trajectory.mat",
+    "source_report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/trajectory_autoload_cleanup_20261019/vtk_autoload/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_112613_504984/report.json",
+    "source_run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/trajectory_autoload_cleanup_20261019/vtk_autoload/UI_FIXTURES/规划文件/workflow_runs/prepare_20261019_112613_504984",
+    "phase": "prepare",
+    "realhome_version": "REALHOME-c765beb7373ff7cd6cd9a8911b2ae518083c73675734a5bf99f36d00703234c2",
+    "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+    "published_at": "2026-10-19T11:26:14.317459+08:00",
+    "executionReady": false,
+    "parent_preview_sha256": "b2a567b6271e9a714046e729e0583b13ebe9e5aa60fefaea1bdb630182d9198e"
+  }
+}

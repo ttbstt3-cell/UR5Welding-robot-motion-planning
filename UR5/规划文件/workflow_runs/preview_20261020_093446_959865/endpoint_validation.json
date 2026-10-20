@@ -1,0 +1,1398 @@
+{
+  "start": {
+    "label": "START",
+    "status": "PASS",
+    "valid": true,
+    "q_rad": [
+      -1.0523422400103968,
+      -1.5446580092059534,
+      1.6036324501037598,
+      -1.7964513937579554,
+      -1.3798664251910608,
+      3.3301565647125244
+    ],
+    "q_deg": [
+      -60.294768955938849,
+      -88.502384718581,
+      91.88137128116901,
+      -102.92908296272525,
+      -79.060522455252126,
+      190.80391627581247
+    ],
+    "collision_pairs": [],
+    "collision_details": [],
+    "collision_coverage_pass": true,
+    "missing_robot_collision_bodies": [],
+    "joint_limits_pass": true,
+    "joint_limit_violations": [],
+    "calibration_binding": {
+      "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_calibration_source": "real_tcp_calibration_active.json",
+      "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+      "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+      "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+      "real_gun_geometry_status": "ACTIVE",
+      "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+      "gun_geometry_version": "real-gun-1791876831259595871",
+      "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "workpiece_source": "REAL CALIBRATION",
+      "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+      "planning_scene": "REAL_CALIBRATION",
+      "wire_collision_shorten_mm": 3,
+      "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+      "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+      "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+      "robot_collision_coverage": "COMPLETE",
+      "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+    },
+    "executionReady": false,
+    "robot_motion": "NO",
+    "joint_limits_rad": [
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -3.1415926535897931,
+        3.1415926535897931
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ]
+    ],
+    "TCP_pose_base": [
+      [
+        0.99362678532779858,
+        0.11018596148481739,
+        0.023766896533032881,
+        -0.44616079442364542
+      ],
+      [
+        -0.098823047459697611,
+        0.75011912269193848,
+        0.65387713453113938,
+        0.38620340867927561
+      ],
+      [
+        0.054220077184781945,
+        -0.65205855232758214,
+        0.756227364994506,
+        0.045067647408597478
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "flange_pose_base": [
+      [
+        -0.24423038749311671,
+        -0.91369438623808863,
+        -0.32482931884601246,
+        -0.36195130260279251
+      ],
+      [
+        0.048850112135422917,
+        -0.34614040310521876,
+        0.93691007459761733,
+        0.38041896990288132
+      ],
+      [
+        -0.96848602693550456,
+        0.21295396191468033,
+        0.12917207800264832,
+        0.4270801680901779
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "TCP_pose_URDFroot": [
+      [
+        -0.99362678532779858,
+        -0.11018596148481749,
+        -0.023766896533032961,
+        0.44616079442364537
+      ],
+      [
+        0.098823047459697735,
+        -0.75011912269193848,
+        -0.65387713453113938,
+        -0.38620340867927566
+      ],
+      [
+        0.054220077184781945,
+        -0.65205855232758214,
+        0.756227364994506,
+        0.045067647408597478
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "fixed_environment_contact": {
+      "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+      "pair": [
+        "base_link_inertia",
+        "EnvironmentCollision_Floor"
+      ],
+      "raw_contact": true,
+      "raw_environment_collision": true
+    },
+    "self_collision": false,
+    "environment_collision": false,
+    "collision_categories": {
+      "RobotSelfCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotGunCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWireCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "ToolInternalCollision": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair_count": 0
+      },
+      "RobotEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      }
+    },
+    "self_collision_skip_pairs": [
+      "base_link",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "tool0",
+      "wrist_3_link",
+      "ee_link",
+      "WeldTCP",
+      "WeldingGunWire"
+    ],
+    "attached_gun_wire_collision_policy": {
+      "status": "SKIPPED_FIXED_ATTACHMENT",
+      "pair": [
+        "WeldingGunMount",
+        "WeldingGunWire"
+      ],
+      "checked": false,
+      "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+    },
+    "wire_collision_pass": true,
+    "environment_object_names": [
+      "WorkpieceCollision_bottom",
+      "WorkpieceCollision_wall_x0",
+      "WorkpieceCollision_wall_x1",
+      "WorkpieceCollision_wall_y1",
+      "EnvironmentCollision_Floor"
+    ],
+    "environment_object_count": 5,
+    "environment_geometry_load": {
+      "pass": true,
+      "source_file": "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json",
+      "source_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "version": "environment_dd72e9f8d5fbd1db",
+      "frame_id": "UR5_base",
+      "units": "m",
+      "source_object_count": 2,
+      "loaded_collision_object_count": 1,
+      "skipped_noncollision_objects": [
+        "EnvironmentCollision_box"
+      ],
+      "T_URDFroot_UR5base": [
+        [
+          6.123233995736766E-17,
+          -1,
+          -0,
+          -0
+        ],
+        [
+          1,
+          6.123233995736766E-17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "T_base_UR5base": [
+        [
+          6.123233995736766E-17,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          6.123233995736766E-17,
+          -0,
+          -0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "object_names": [
+        "EnvironmentCollision_Floor"
+      ],
+      "source_status": "COPPELIASIM_SCENE_EXPORT",
+      "robot_motion": "NO",
+      "missing_categories": [
+        "safety_fence",
+        "workbench",
+        "fixture"
+      ],
+      "source_warnings": [],
+      "source_coverage": {
+        "floor": true,
+        "safety_fence": false,
+        "workbench": false,
+        "fixture": false
+      }
+    },
+    "environment_collision_scope": "Only objects in the saved exported environment; missing source categories are not certified",
+    "minimum_positive_separation_mm": 13.75633392884872,
+    "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+    "failure_reason": ""
+  },
+  "goal": {
+    "label": "GOAL",
+    "status": "PASS",
+    "valid": true,
+    "q_rad": [
+      -1.6585016603876546,
+      -1.1573078736129312,
+      1.3750864614986147,
+      -1.4933662066202125,
+      -0.891932294515646,
+      0.19595010617108821
+    ],
+    "q_deg": [
+      -95.025145455652,
+      -66.308856755280644,
+      78.786650709449191,
+      -85.563580906799828,
+      -51.103956087166061,
+      11.227114078743742
+    ],
+    "collision_pairs": [],
+    "collision_details": [],
+    "collision_coverage_pass": true,
+    "missing_robot_collision_bodies": [],
+    "joint_limits_pass": true,
+    "joint_limit_violations": [],
+    "calibration_binding": {
+      "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_calibration_source": "real_tcp_calibration_active.json",
+      "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+      "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+      "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+      "real_gun_geometry_status": "ACTIVE",
+      "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+      "gun_geometry_version": "real-gun-1791876831259595871",
+      "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "workpiece_source": "REAL CALIBRATION",
+      "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+      "planning_scene": "REAL_CALIBRATION",
+      "wire_collision_shorten_mm": 3,
+      "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+      "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+      "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+      "robot_collision_coverage": "COMPLETE",
+      "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+    },
+    "executionReady": false,
+    "robot_motion": "NO",
+    "joint_limits_rad": [
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -3.1415926535897931,
+        3.1415926535897931
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ]
+    ],
+    "TCP_pose_base": [
+      [
+        -0.34321396115330638,
+        -0.91060663350905036,
+        0.23021671502906071,
+        -0.359285635409035
+      ],
+      [
+        0.78345534142810047,
+        -0.41274475451286929,
+        -0.46458529422474132,
+        0.58806156898983664
+      ],
+      [
+        0.51807519228123255,
+        0.020912355951100969,
+        0.8550793931041365,
+        0.0099684787562080435
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "flange_pose_base": [
+      [
+        -0.643543327243589,
+        0.73041823547080953,
+        -0.22878196443767254,
+        -0.106882462387619
+      ],
+      [
+        -0.17159876631945886,
+        -0.42897430147479543,
+        -0.88686803531971492,
+        0.63767859299197416
+      ],
+      [
+        -0.74592616883837159,
+        -0.531479303421987,
+        0.40140241737711119,
+        0.30473797069876218
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "TCP_pose_URDFroot": [
+      [
+        0.34321396115330627,
+        0.91060663350905036,
+        -0.23021671502906066,
+        0.35928563540903496
+      ],
+      [
+        -0.78345534142810047,
+        0.41274475451286918,
+        0.46458529422474137,
+        -0.58806156898983664
+      ],
+      [
+        0.51807519228123255,
+        0.020912355951100969,
+        0.8550793931041365,
+        0.0099684787562080435
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "fixed_environment_contact": {
+      "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+      "pair": [
+        "base_link_inertia",
+        "EnvironmentCollision_Floor"
+      ],
+      "raw_contact": true,
+      "raw_environment_collision": true
+    },
+    "self_collision": false,
+    "environment_collision": false,
+    "collision_categories": {
+      "RobotSelfCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotGunCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWireCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "ToolInternalCollision": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair_count": 0
+      },
+      "RobotEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      }
+    },
+    "self_collision_skip_pairs": [
+      "base_link",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "tool0",
+      "wrist_3_link",
+      "ee_link",
+      "WeldTCP",
+      "WeldingGunWire"
+    ],
+    "attached_gun_wire_collision_policy": {
+      "status": "SKIPPED_FIXED_ATTACHMENT",
+      "pair": [
+        "WeldingGunMount",
+        "WeldingGunWire"
+      ],
+      "checked": false,
+      "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+    },
+    "wire_collision_pass": true,
+    "environment_object_names": [
+      "WorkpieceCollision_bottom",
+      "WorkpieceCollision_wall_x0",
+      "WorkpieceCollision_wall_x1",
+      "WorkpieceCollision_wall_y1",
+      "EnvironmentCollision_Floor"
+    ],
+    "environment_object_count": 5,
+    "environment_geometry_load": {
+      "pass": true,
+      "source_file": "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json",
+      "source_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "version": "environment_dd72e9f8d5fbd1db",
+      "frame_id": "UR5_base",
+      "units": "m",
+      "source_object_count": 2,
+      "loaded_collision_object_count": 1,
+      "skipped_noncollision_objects": [
+        "EnvironmentCollision_box"
+      ],
+      "T_URDFroot_UR5base": [
+        [
+          6.123233995736766E-17,
+          -1,
+          -0,
+          -0
+        ],
+        [
+          1,
+          6.123233995736766E-17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "T_base_UR5base": [
+        [
+          6.123233995736766E-17,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          6.123233995736766E-17,
+          -0,
+          -0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "object_names": [
+        "EnvironmentCollision_Floor"
+      ],
+      "source_status": "COPPELIASIM_SCENE_EXPORT",
+      "robot_motion": "NO",
+      "missing_categories": [
+        "safety_fence",
+        "workbench",
+        "fixture"
+      ],
+      "source_warnings": [],
+      "source_coverage": {
+        "floor": true,
+        "safety_fence": false,
+        "workbench": false,
+        "fixture": false
+      }
+    },
+    "environment_collision_scope": "Only objects in the saved exported environment; missing source categories are not certified",
+    "minimum_positive_separation_mm": 0.64153985797462587,
+    "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+    "failure_reason": ""
+  },
+  "exit_start": {
+    "label": "EXIT START",
+    "status": "PASS",
+    "valid": true,
+    "q_rad": [
+      -1.4725209772197068,
+      -0.945052494519981,
+      0.79471004174132209,
+      -1.2694005514082831,
+      -1.5379843033848937,
+      -0.11872338579382961
+    ],
+    "q_deg": [
+      -84.369237239168839,
+      -54.147519354305267,
+      45.533531328443239,
+      -72.73129410727411,
+      -88.120009541322375,
+      -6.8023489354898716
+    ],
+    "collision_pairs": [],
+    "collision_details": [],
+    "collision_coverage_pass": true,
+    "missing_robot_collision_bodies": [],
+    "joint_limits_pass": true,
+    "joint_limit_violations": [],
+    "calibration_binding": {
+      "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_calibration_source": "real_tcp_calibration_active.json",
+      "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+      "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+      "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+      "real_gun_geometry_status": "ACTIVE",
+      "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+      "gun_geometry_version": "real-gun-1791876831259595871",
+      "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "workpiece_source": "REAL CALIBRATION",
+      "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+      "planning_scene": "REAL_CALIBRATION",
+      "wire_collision_shorten_mm": 3,
+      "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+      "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+      "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+      "robot_collision_coverage": "COMPLETE",
+      "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+      "realhome_version": "REALHOME-b8b8b4ede731db946b3da967c8a07ca07fb8b2fa47b19fcbcfd1d193a673c63f",
+      "preweld_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+    },
+    "executionReady": false,
+    "robot_motion": "NO",
+    "joint_limits_rad": [
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -3.1415926535897931,
+        3.1415926535897931
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ]
+    ],
+    "TCP_pose_base": [
+      [
+        -0.92535408351383319,
+        -0.37096865673893709,
+        0.078115784842651567,
+        -0.19934516447484635
+      ],
+      [
+        0.25720424452757717,
+        -0.76571302258634677,
+        -0.58951636418226627,
+        0.65906875324222514
+      ],
+      [
+        0.27850636746988883,
+        -0.52541966346815483,
+        0.80397038534994447,
+        0.0085455925346819
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "flange_pose_base": [
+      [
+        -0.01543265935407667,
+        0.97614854527721118,
+        0.21655449794092313,
+        -0.18346631406106997
+      ],
+      [
+        -0.15182128520411811,
+        0.2117814149242398,
+        -0.96545270710255759,
+        0.70376221771809633
+      ],
+      [
+        -0.98828747355424429,
+        -0.047777084945308461,
+        0.14493177626006642,
+        0.3968864486712208
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "TCP_pose_URDFroot": [
+      [
+        0.92535408351383319,
+        0.3709686567389372,
+        -0.0781157848426515,
+        0.19934516447484626
+      ],
+      [
+        -0.25720424452757729,
+        0.76571302258634677,
+        0.58951636418226627,
+        -0.65906875324222514
+      ],
+      [
+        0.27850636746988883,
+        -0.52541966346815483,
+        0.80397038534994447,
+        0.0085455925346819
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "fixed_environment_contact": {
+      "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+      "pair": [
+        "base_link_inertia",
+        "EnvironmentCollision_Floor"
+      ],
+      "raw_contact": true,
+      "raw_environment_collision": true
+    },
+    "self_collision": false,
+    "environment_collision": false,
+    "collision_categories": {
+      "RobotSelfCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotGunCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWireCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "ToolInternalCollision": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair_count": 0
+      },
+      "RobotEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      }
+    },
+    "self_collision_skip_pairs": [
+      "base_link",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "tool0",
+      "wrist_3_link",
+      "ee_link",
+      "WeldTCP",
+      "WeldingGunWire"
+    ],
+    "attached_gun_wire_collision_policy": {
+      "status": "SKIPPED_FIXED_ATTACHMENT",
+      "pair": [
+        "WeldingGunMount",
+        "WeldingGunWire"
+      ],
+      "checked": false,
+      "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+    },
+    "wire_collision_pass": true,
+    "environment_object_names": [
+      "WorkpieceCollision_bottom",
+      "WorkpieceCollision_wall_x0",
+      "WorkpieceCollision_wall_x1",
+      "WorkpieceCollision_wall_y1",
+      "EnvironmentCollision_Floor"
+    ],
+    "environment_object_count": 5,
+    "environment_geometry_load": {
+      "pass": true,
+      "source_file": "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json",
+      "source_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "version": "environment_dd72e9f8d5fbd1db",
+      "frame_id": "UR5_base",
+      "units": "m",
+      "source_object_count": 2,
+      "loaded_collision_object_count": 1,
+      "skipped_noncollision_objects": [
+        "EnvironmentCollision_box"
+      ],
+      "T_URDFroot_UR5base": [
+        [
+          6.123233995736766E-17,
+          -1,
+          -0,
+          -0
+        ],
+        [
+          1,
+          6.123233995736766E-17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "T_base_UR5base": [
+        [
+          6.123233995736766E-17,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          6.123233995736766E-17,
+          -0,
+          -0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "object_names": [
+        "EnvironmentCollision_Floor"
+      ],
+      "source_status": "COPPELIASIM_SCENE_EXPORT",
+      "robot_motion": "NO",
+      "missing_categories": [
+        "safety_fence",
+        "workbench",
+        "fixture"
+      ],
+      "source_warnings": [],
+      "source_coverage": {
+        "floor": true,
+        "safety_fence": false,
+        "workbench": false,
+        "fixture": false
+      }
+    },
+    "environment_collision_scope": "Only objects in the saved exported environment; missing source categories are not certified",
+    "minimum_positive_separation_mm": 0.63699962782221309,
+    "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+    "failure_reason": ""
+  },
+  "exit_goal": {
+    "label": "EXIT GOAL",
+    "status": "PASS",
+    "valid": true,
+    "q_rad": [
+      -1.0523422400103968,
+      -1.5446580092059534,
+      1.6036324501037598,
+      -1.7964513937579554,
+      -1.3798664251910608,
+      3.3301565647125244
+    ],
+    "q_deg": [
+      -60.294768955938849,
+      -88.502384718581,
+      91.88137128116901,
+      -102.92908296272525,
+      -79.060522455252126,
+      190.80391627581247
+    ],
+    "collision_pairs": [],
+    "collision_details": [],
+    "collision_coverage_pass": true,
+    "missing_robot_collision_bodies": [],
+    "joint_limits_pass": true,
+    "joint_limit_violations": [],
+    "calibration_binding": {
+      "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "tcp_calibration_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_calibration_source": "real_tcp_calibration_active.json",
+      "tcp_calibration_active_sha256": "1c721be8b817e1400e6ca0d55ed0fde911c4c84b5535cce85482522d6bfb3390",
+      "tcp_applied_sha256": "3a423c3f4a3628b4a59e24081035d384c4b7d06755252c5c53e56a1c44f4a7e3",
+      "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+      "gun_mount_sha256": "5241fa477ef87ca00175716c576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+      "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+      "real_gun_geometry_status": "ACTIVE",
+      "tcp_calibration_version": "CONTROLLER-TCP-27c4a0461fd2f4a14941b89dae8f1c320f73fa5818d67df2c78e5c96b0cafc4a",
+      "gun_geometry_version": "real-gun-1791876831259595871",
+      "workpiece_pose_version": "WORKPIECE-70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "workpiece_sha256": "70185d4befa5825653e0c6041ed36ea444e9bdbc0a84befa0338e0f318045009",
+      "workpiece_source": "REAL CALIBRATION",
+      "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+      "planning_scene": "REAL_CALIBRATION",
+      "wire_collision_shorten_mm": 3,
+      "scene_geometry_sha256": "bf63a4706a52d677093fa34f6830288515d0c7faeb54520cbff70d47db9bafcd",
+      "environment_geometry_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "environment_geometry_version": "environment_dd72e9f8d5fbd1db",
+      "fixed_environment_contacts_sha256": "a787e02ffe3bd27e5ef49eb5d3f46240eb3c8125e4b4dc3e406d1d1841f0adfb",
+      "robot_collision_geometry_sha256": "5ed59e9595731e5684038fc95b2bc084f99bae1c7316f9bb7e32e70924d592f2",
+      "robot_collision_coverage": "COMPLETE",
+      "wire_model_version": "WIRE-cb98ca7dad4d1a1caaa030566fcd30a4fa7f5b51e55949bdc6d0797118b8e367",
+      "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+      "realhome_version": "REALHOME-b8b8b4ede731db946b3da967c8a07ca07fb8b2fa47b19fcbcfd1d193a673c63f",
+      "preweld_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef"
+    },
+    "executionReady": false,
+    "robot_motion": "NO",
+    "joint_limits_rad": [
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -3.1415926535897931,
+        3.1415926535897931
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ],
+      [
+        -6.2831853071795862,
+        6.2831853071795862
+      ]
+    ],
+    "TCP_pose_base": [
+      [
+        0.99362678532779858,
+        0.11018596148481739,
+        0.023766896533032881,
+        -0.44616079442364542
+      ],
+      [
+        -0.098823047459697611,
+        0.75011912269193848,
+        0.65387713453113938,
+        0.38620340867927561
+      ],
+      [
+        0.054220077184781945,
+        -0.65205855232758214,
+        0.756227364994506,
+        0.045067647408597478
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "flange_pose_base": [
+      [
+        -0.24423038749311671,
+        -0.91369438623808863,
+        -0.32482931884601246,
+        -0.36195130260279251
+      ],
+      [
+        0.048850112135422917,
+        -0.34614040310521876,
+        0.93691007459761733,
+        0.38041896990288132
+      ],
+      [
+        -0.96848602693550456,
+        0.21295396191468033,
+        0.12917207800264832,
+        0.4270801680901779
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "TCP_pose_URDFroot": [
+      [
+        -0.99362678532779858,
+        -0.11018596148481749,
+        -0.023766896533032961,
+        0.44616079442364537
+      ],
+      [
+        0.098823047459697735,
+        -0.75011912269193848,
+        -0.65387713453113938,
+        -0.38620340867927566
+      ],
+      [
+        0.054220077184781945,
+        -0.65205855232758214,
+        0.756227364994506,
+        0.045067647408597478
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "fixed_environment_contact": {
+      "status": "EXEMPT_FIXED_INSTALLATION_CONTACT",
+      "pair": [
+        "base_link_inertia",
+        "EnvironmentCollision_Floor"
+      ],
+      "raw_contact": true,
+      "raw_environment_collision": true
+    },
+    "self_collision": false,
+    "environment_collision": false,
+    "collision_categories": {
+      "RobotSelfCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotGunCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "RobotWireCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireWorkpieceCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "ToolInternalCollision": {
+        "status": "SKIPPED_FIXED_ATTACHMENT",
+        "pair_count": 0
+      },
+      "RobotEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "GunEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      },
+      "WireEnvironmentCollision": {
+        "status": "PASS",
+        "pair_count": 0
+      }
+    },
+    "self_collision_skip_pairs": [
+      "base_link",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "WeldingGunMount",
+      "base",
+      "base_link_inertia",
+      "shoulder_link",
+      "upper_arm_link",
+      "forearm_link",
+      "wrist_1_link",
+      "wrist_2_link",
+      "wrist_3_link",
+      "flange",
+      "tool0",
+      "wrist_3_link",
+      "ee_link",
+      "WeldTCP",
+      "WeldingGunWire"
+    ],
+    "attached_gun_wire_collision_policy": {
+      "status": "SKIPPED_FIXED_ATTACHMENT",
+      "pair": [
+        "WeldingGunMount",
+        "WeldingGunWire"
+      ],
+      "checked": false,
+      "reason": "Existing fixed internal attachment exclusion is retained; external wire/gun/robot/environment pairs remain checked"
+    },
+    "wire_collision_pass": true,
+    "environment_object_names": [
+      "WorkpieceCollision_bottom",
+      "WorkpieceCollision_wall_x0",
+      "WorkpieceCollision_wall_x1",
+      "WorkpieceCollision_wall_y1",
+      "EnvironmentCollision_Floor"
+    ],
+    "environment_object_count": 5,
+    "environment_geometry_load": {
+      "pass": true,
+      "source_file": "/home/ttbstt/jixiebi/UR5/environment_geometry_real.json",
+      "source_sha256": "02f81207182e3275f7ce69a3aac7e06f2cd9c26fcddefeeef3ec7c00611dbc55",
+      "version": "environment_dd72e9f8d5fbd1db",
+      "frame_id": "UR5_base",
+      "units": "m",
+      "source_object_count": 2,
+      "loaded_collision_object_count": 1,
+      "skipped_noncollision_objects": [
+        "EnvironmentCollision_box"
+      ],
+      "T_URDFroot_UR5base": [
+        [
+          6.123233995736766E-17,
+          -1,
+          -0,
+          -0
+        ],
+        [
+          1,
+          6.123233995736766E-17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "T_base_UR5base": [
+        [
+          6.123233995736766E-17,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          6.123233995736766E-17,
+          -0,
+          -0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.01465
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "object_names": [
+        "EnvironmentCollision_Floor"
+      ],
+      "source_status": "COPPELIASIM_SCENE_EXPORT",
+      "robot_motion": "NO",
+      "missing_categories": [
+        "safety_fence",
+        "workbench",
+        "fixture"
+      ],
+      "source_warnings": [],
+      "source_coverage": {
+        "floor": true,
+        "safety_fence": false,
+        "workbench": false,
+        "fixture": false
+      }
+    },
+    "environment_collision_scope": "Only objects in the saved exported environment; missing source categories are not certified",
+    "minimum_positive_separation_mm": 13.75633392884872,
+    "minimum_positive_separation_scope": "Non-colliding pairs only; not clearance of a colliding endpoint",
+    "failure_reason": ""
+  }
+}

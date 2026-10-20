@@ -1,0 +1,9 @@
+caseID,algorithm,seedCount,successCount,successRate,finalValidationCount,finalValidationRate,validSuccessCount,validSuccessRate,timeoutCount,invalidPathCount,planningTimeMedian_ms,planningTimeIQR_ms,planningTimeP90_ms,planningTimeMean_ms,planningTimeStd_ms,planningTimeCI95Low_ms,planningTimeCI95High_ms,jointPathLengthMedian_rad,jointPathLengthIQR_rad,jointPathLengthP90_rad,jointPathLengthMean_rad,jointPathLengthStd_rad,jointPathLengthCI95Low_rad,jointPathLengthCI95High_rad,totalJointMotionMedian_rad,collisionConfigurationChecksMedian,edgeCollisionChecksMedian,nodeCountMedian
+T01_Safe_to_Point1,RRT-Connect,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,573,15,9
+T01_Safe_to_Point1,Bi-RRT*,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,740,3,3
+T01_Safe_to_Point1,ClassGoal-Lite,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,799,4,1
+T01_Safe_to_Point1,Full Classified-RRT*,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,858,5,1
+T02_Point80_to_Safe,RRT-Connect,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,578,25,9
+T02_Point80_to_Safe,Bi-RRT*,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,711,4,3
+T02_Point80_to_Safe,ClassGoal-Lite,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,604,26,1
+T02_Point80_to_Safe,Full Classified-RRT*,5,0,0,0,0,0,0,5,0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,593,20,1

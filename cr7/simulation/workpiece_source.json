@@ -1,0 +1,159 @@
+{
+  "path": "/Workpiece",
+  "pose_base": {
+    "frame": "UR5_base",
+    "position": [
+      -0.07499993392477655,
+      0.3750000122428504,
+      -0.014649842865765095
+    ],
+    "quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "pose_world": {
+    "frame": "world",
+    "position": [
+      0.4750000000000001,
+      -0.5000000000000001,
+      0.0
+    ],
+    "quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "bbox_size_m": [
+    0.23500000000000004,
+    0.2350000000000001,
+    0.23500000000000004
+  ],
+  "bbox_pose_object": [
+    0.11750000000000002,
+    0.11750000000000023,
+    0.11750000000000001,
+    0.0,
+    -0.7071067811865475,
+    0.0,
+    0.7071067811865476
+  ],
+  "mesh_bounds_object": {
+    "min": [
+      2.98023217215615e-10,
+      2.980234531380077e-10,
+      2.9802320333782717e-10
+    ],
+    "max": [
+      0.23499999970197682,
+      0.234999999701977,
+      0.23499999970197682
+    ]
+  },
+  "geometry_description": "U-shaped Workpiece approximation: bottom plate plus three walls (x=0, x=Lx, y=Ly); open side is y=0",
+  "collision_proxy_count": 4,
+  "collision_proxy_open_side": "y=0",
+  "plate_thickness_m": 0.005,
+  "collision_proxies": [
+    {
+      "name": "WorkpieceCollision_bottom",
+      "type": "box",
+      "size_m": [
+        0.2349999994039536,
+        0.23499999940395355,
+        0.005
+      ],
+      "pose_workpiece": {
+        "frame": "Workpiece",
+        "position": [
+          0.1174999997019768,
+          0.11749999970197678,
+          0.0025
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source": "derived from current Workpiece mesh bounds"
+    },
+    {
+      "name": "WorkpieceCollision_wall_x0",
+      "type": "box",
+      "size_m": [
+        0.005,
+        0.23499999940395355,
+        0.2349999994039536
+      ],
+      "pose_workpiece": {
+        "frame": "Workpiece",
+        "position": [
+          0.0025,
+          0.11749999970197678,
+          0.1174999997019768
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source": "derived from current Workpiece mesh bounds"
+    },
+    {
+      "name": "WorkpieceCollision_wall_x1",
+      "type": "box",
+      "size_m": [
+        0.005,
+        0.23499999940395355,
+        0.2349999994039536
+      ],
+      "pose_workpiece": {
+        "frame": "Workpiece",
+        "position": [
+          0.2324999994039536,
+          0.11749999970197678,
+          0.1174999997019768
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source": "derived from current Workpiece mesh bounds"
+    },
+    {
+      "name": "WorkpieceCollision_wall_y1",
+      "type": "box",
+      "size_m": [
+        0.2349999994039536,
+        0.005,
+        0.2349999994039536
+      ],
+      "pose_workpiece": {
+        "frame": "Workpiece",
+        "position": [
+          0.1174999997019768,
+          0.23249999940395355,
+          0.1174999997019768
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source": "derived from current Workpiece mesh bounds"
+    }
+  ]
+}

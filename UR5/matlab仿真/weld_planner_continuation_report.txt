@@ -1,0 +1,97 @@
+80-point weld planner continuation optimization
+Date: 2026-09-23
+
+All runs are cold-start runs.  The continuation planner never loads a
+previous qPath or state graph.  No ROS2 command, real-robot motion, or
+CoppeliaSim scene change was made.
+
+Validated comparison
+--------------------
+                         stable 346 s   beam=3       beam=2       beam=1
+Algorithm time (s)          346.143     58.232       31.825       16.836
+Speedup vs stable              1.00x      5.94x       10.88x       20.91x
+Complete path                     1          1           1           1
+IK calls                       60936      13116        5988        2424
+IK time (s)                       n/a        n/a          n/a       9.546
+Layer states (sum)              910        n/a          n/a          81
+Graph edge tests                435        n/a          n/a          81
+Max joint jump (deg)          9.270      9.172        9.048       12.580
+Max node TCP error (mm)    0.000047   0.000044     0.000048    0.000048
+Max segment TCP error (mm) 2.127387   2.127386     2.084652    1.955098
+Max segment TCP orient (deg)
+                            0.108361   0.102252     0.103100    0.141530
+Node collision free               1          1           1           1
+Edge collision free               1          1           1           1
+
+Stable recommended fast experiment
+-----------------------------------
+The beam=1 run is the fastest complete result while preserving all 80
+points and all hard node/edge collision checks:
+
+  weld_actual_axis_replan_continuation_beam1.mat
+  algorithm time = 16.836 s
+  wall time      = 21.126 s
+  IK time        = 9.686 s
+  IK calls       = 2424
+  IK pose success= 2321 / 2424 = 95.75%
+  accepted states= 509 before beam pruning
+  retained layer states = 81 total (one state per layer plus the first beam)
+  graph edge tests= 81; collision-free graph edges=79
+  max joint jump = 12.580 deg
+  max node TCP error = 0.000048 mm
+  max segment TCP deviation = 1.955098 mm
+  max segment TCP orientation deviation = 0.141530 deg
+  node collision free = true
+  edge collision free = true
+
+Algorithm design
+----------------
+  - Point 1: only a small cold-start seed set is used.
+  - Points 2..80: previous joint state plus local velocity prediction are
+    used as IK seeds.
+  - Local roll/travel neighborhoods are limited to 9 pose candidates.
+  - J4/J5/J6 local perturbations are limited to 3 degree-class seeds.
+  - The beam is explicitly limited to one state in the fastest run.
+  - Every accepted node performs full robot/environment and self-collision
+    checks, including the MATLAB wire cylinder.
+  - Every retained adjacent edge performs dense joint interpolation and
+    complete collision checks.  TCP deviation is independently sampled and
+    reported; it is not hidden by node-only errors.
+  - If enabled, the original layered planner is a fresh-scene fallback; it
+    is disabled in the reported beam=1 benchmark to keep the timing fair.
+
+Analytical IK check
+-------------------
+MATLAB R2025b `analyticalInverseKinematics` was tested on the loaded
+`universalUR5` model.  The object is available, but:
+
+  IsValidGroupForIK = 0
+  KinematicGroupType = RRRRRR
+
+Therefore closed-form UR5 IK cannot be substituted directly without first
+building a supported, calibration-consistent UR5 kinematic group.  The
+experiment keeps the validated numeric IK solver.
+
+Remaining bottleneck and 8-second target
+----------------------------------------
+At beam=1, IK takes 9.686 s and the complete algorithm takes 16.836 s.
+The remaining approximately 7 s includes full collision checks, layered
+edge validation, TCP segment-error validation and MATLAB object overhead.
+An 8-second target would require optimizing collision/object operations or
+using a calibration-consistent closed-form IK implementation; it must not
+be reached by skipping node/edge checks or reducing the 80 points.
+
+Files
+-----
+  replan_weld_actual_axis_continuation.m
+  profile_weld_actual_axis_continuation.m
+  compare_weld_planner_continuation.m
+  weld_actual_axis_replan_continuation_beam1.mat
+  weld_actual_axis_replan_continuation_beam2.mat
+  weld_actual_axis_replan_continuation_beam3.mat
+  weld_actual_axis_continuation_profile.mat  (created by profile script)
+
+Reproduce beam=1
+----------------
+  matlab -batch "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); profile_weld_actual_axis_continuation();"
+  matlab -batch "addpath('/home/ttbstt/jixiebi/UR5/matlab仿真'); compare_weld_planner_continuation();"

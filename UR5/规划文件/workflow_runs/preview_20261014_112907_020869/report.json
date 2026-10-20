@@ -1,0 +1,12 @@
+{
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "previewReady": false,
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "seed": 2.0260917E+7,
+  "failure_reason": "字段名称 \"selected_fractions\" 重复",
+  "failure_identifier": "MATLAB:DuplicateFieldName",
+  "planning_time": 4.291786
+}

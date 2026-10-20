@@ -1,0 +1,138 @@
+{
+  "executionReady": false,
+  "trials": [
+    {
+      "minimum_free_segment_sec": 0.25,
+      "duration_sec": 250.90546543916153,
+      "optimization": {
+        "pass": false,
+        "executionReady": false,
+        "iterations": [
+          {
+            "iteration": 1,
+            "exitflag": -2,
+            "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 1.818497e+02 has grown \nto more than 1e5 times its minimum value during the iterations.",
+            "seed_kinematic_violation": 0.99330860876484883,
+            "seed_fk_linear_violation": 0.24181524856816194,
+            "kinematic_feasibility_exitflag": -2,
+            "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+          }
+        ],
+        "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+        "elapsed_sec": 12.970854,
+        "q_nodes_unchanged": true,
+        "tcp_targets_unchanged": true,
+        "collision_status": "NOT_CHECKED: requires independent dense audit",
+        "without_c2_diagnostic": {
+          "pass": false,
+          "executionReady": false,
+          "iterations": [
+            {
+              "iteration": 1,
+              "exitflag": -2,
+              "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 1.818460e+02 has grown \nto more than 1e5 times its minimum value during the iterations.",
+              "seed_kinematic_violation": 0.99330860876484883,
+              "seed_fk_linear_violation": 0.24181524856816194,
+              "kinematic_feasibility_exitflag": -2,
+              "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+            }
+          ],
+          "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+          "elapsed_sec": 11.942484,
+          "q_nodes_unchanged": true,
+          "tcp_targets_unchanged": true,
+          "collision_status": "NOT_CHECKED: requires independent dense audit"
+        }
+      }
+    },
+    {
+      "minimum_free_segment_sec": 0.5,
+      "duration_sec": 268.15546543916145,
+      "optimization": {
+        "pass": false,
+        "executionReady": false,
+        "iterations": [
+          {
+            "iteration": 1,
+            "exitflag": -2,
+            "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 7.442337e+00 has grown \nto more than 1e5 times its minimum value during the iterations.",
+            "seed_kinematic_violation": 0.16715732181519052,
+            "seed_fk_linear_violation": 0.82451786643044644,
+            "kinematic_feasibility_exitflag": 1,
+            "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+          }
+        ],
+        "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+        "elapsed_sec": 24.804609,
+        "q_nodes_unchanged": true,
+        "tcp_targets_unchanged": true,
+        "collision_status": "NOT_CHECKED: requires independent dense audit",
+        "without_c2_diagnostic": {
+          "pass": false,
+          "executionReady": false,
+          "iterations": [
+            {
+              "iteration": 1,
+              "exitflag": -2,
+              "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 8.609613e+00 has grown \nto more than 1e5 times its minimum value during the iterations.",
+              "seed_kinematic_violation": 0.16715732181519052,
+              "seed_fk_linear_violation": 0.82451786643044644,
+              "kinematic_feasibility_exitflag": 1,
+              "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+            }
+          ],
+          "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+          "elapsed_sec": 23.945647,
+          "q_nodes_unchanged": true,
+          "tcp_targets_unchanged": true,
+          "collision_status": "NOT_CHECKED: requires independent dense audit"
+        }
+      }
+    },
+    {
+      "minimum_free_segment_sec": 1,
+      "duration_sec": 392.13584159001437,
+      "optimization": {
+        "pass": false,
+        "executionReady": false,
+        "iterations": [
+          {
+            "iteration": 1,
+            "exitflag": -2,
+            "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 1.612649e+00 has grown \nto more than 1e5 times its minimum value during the iterations.",
+            "seed_kinematic_violation": 0,
+            "seed_fk_linear_violation": 2.1034067191997114,
+            "kinematic_feasibility_exitflag": 1,
+            "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+          }
+        ],
+        "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+        "elapsed_sec": 12.527694,
+        "q_nodes_unchanged": true,
+        "tcp_targets_unchanged": true,
+        "collision_status": "NOT_CHECKED: requires independent dense audit",
+        "without_c2_diagnostic": {
+          "pass": false,
+          "executionReady": false,
+          "iterations": [
+            {
+              "iteration": 1,
+              "exitflag": -2,
+              "message": "No feasible solution found.\n\nquadprog stopped because it was unable to find a point that satisfies\nthe constraints within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization stopped because the total relative error, 7.761671e-01 has grown \nto more than 1e5 times its minimum value during the iterations.",
+              "seed_kinematic_violation": 0,
+              "seed_fk_linear_violation": 2.1034067191997114,
+              "kinematic_feasibility_exitflag": 1,
+              "diagnostic_only": "Constraint subset for failure attribution; NEVER an acceptance candidate"
+            }
+          ],
+          "failure_reason": "FK_CONSTRAINED_VELOCITY_QP_INFEASIBLE",
+          "elapsed_sec": 20.120946,
+          "q_nodes_unchanged": true,
+          "tcp_targets_unchanged": true,
+          "collision_status": "NOT_CHECKED: requires independent dense audit"
+        }
+      }
+    }
+  ],
+  "original_weld_q_and_targets_preserved": true
+}

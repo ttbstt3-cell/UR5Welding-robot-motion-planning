@@ -1,0 +1,42 @@
+{
+  "status": "MODEL_AXIS_TO_TCP_PREVIEW",
+  "preview_only": true,
+  "definition": "MODEL_AXIS_TO_TCP",
+  "coordinate_frame": "STL_SOURCE",
+  "gun_tip_model": [
+    0.033330000677364975,
+    0.059362931822830374,
+    0.357000221002264
+  ],
+  "tip_source": [
+    0.033330000677364975,
+    0.059362931822830374,
+    0.357000221002264
+  ],
+  "tcp_source": [
+    0.040050197698095105,
+    0.011603785807794562,
+    0.39219046743730057
+  ],
+  "wire_end_source": [
+    0.040050197698095105,
+    0.011603785807794562,
+    0.39219046743730057
+  ],
+  "axis_source": [
+    0.11256042145274182,
+    -0.7999452377798593,
+    0.5894215537929587
+  ],
+  "length_m": 0.05970301935615607,
+  "diameter_m": 0.0012,
+  "tip_definition": "Areal CAD terminal annulus concentric circle centre; not nearest hull vertex",
+  "axis_definition": "normalize(TCP - gun_tip_model); model-defined, not measured nozzle axis",
+  "tcp_source_reference": "/home/ttbstt/jixiebi/UR5/real_tcp_calibration_active.json",
+  "tcp_calibration_sha256": "dce1b7400da67cd7673d243b69b7caaaa6cc1fdd389406e31209473a2f53f640",
+  "tcp_calibration_version": "CONTROLLER-TCP-fa3f8dfe17fa33101b874414944bf8ce89428e47879c6c4a7cf3993634046c95",
+  "gun_source_sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "physical_measurement_required": false,
+  "contact_tip_calibration_required": false,
+  "collision_model": "fixed cylinder child of WeldingGunMount; model reference to applied TCP"
+}

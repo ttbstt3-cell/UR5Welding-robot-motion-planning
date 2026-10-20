@@ -1,0 +1,7 @@
+Importing Coppelia preview mesh: /home/ttbstt/jixiebi/UR5/real_gun_geometry_candidates/Areal_06f38186/welding_gun_source.STL
+Import done, preserving source frame
+Imported source shape 15
+Reading source bounds
+Calling actual V-HACD with {'resolution': 1000000, 'concavity': 0.0025, 'plane_downsampling': 4, 'hull_downsampling': 4, 'alpha': 0.05, 'beta': 0.05, 'max_vertices': 64, 'min_volume': 1e-05, 'pca': False, 'voxels': True}
+V-HACD returned 10 components
+{"component_count": 10, "vertices": 429, "faces": 818, "decomposition_seconds": 4.373589501999959, "component_frame_error_m": 3.6623068941766437e-09, "scene": "/home/ttbstt/jixiebi/UR5/real_gun_geometry_candidates/Areal_06f38186/new_gun_vhacd_source_preview.ttt"}

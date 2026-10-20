@@ -1,0 +1,6 @@
+A5_ROOT /JAKA_A5
+A5_BASE static=1
+TORCH parent=/JAKA_A5/J6_respondable static=1 respondable=0
+TCP parent=/JAKA_A5/hanqiang
+SCRIPT updated for JAKA_A5
+SAVED C:\Users\ASUS\Desktop\JIXIEBI\jaka_A5_welding_migrated.ttt

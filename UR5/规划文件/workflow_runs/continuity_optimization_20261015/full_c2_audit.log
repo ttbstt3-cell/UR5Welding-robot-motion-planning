@@ -1,0 +1,2 @@
+DENSE_AUDIT mode=full_c2 nodes=414 samples=41301
+DENSE_RESULT mode=full_c2 pass=1 sync=0.461498660 contour=0.224258228 ori=0.459694720 collisions=0 time=268.961

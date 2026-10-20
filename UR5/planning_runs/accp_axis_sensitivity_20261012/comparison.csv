@@ -1,0 +1,6 @@
+axis_deg,ik_success,axis_pass,collision_pass_raw,final_candidates,retained,all_16_pass,furthest_point,planning_time_sec
+5,154,51,0,0,0,0,0,2.137789
+10,154,51,0,0,0,0,0,1.561308
+15,154,103,0,0,0,0,0,1.770318
+20,154,154,0,0,0,0,0,1.911229
+30,154,154,0,0,0,0,0,1.884413

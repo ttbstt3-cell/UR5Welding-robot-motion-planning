@@ -1,0 +1,1207 @@
+{
+  "created_at": "2026-10-20T09:39:52.207518+00:00",
+  "files": 15432,
+  "bytes": 20819276482,
+  "git_candidates": 3557,
+  "bytes_by_root": {
+    ".gitignore": 688,
+    "AGENTS.md": 3096,
+    "AGENT_HANDOFF.md": 619654,
+    "HANDOFF.md": 3493,
+    "PROJECT_STATE.md": 7540,
+    "adaptive_arc_ik_new100.log": 9554,
+    "bidirectional_local_dense_recovery.log": 750,
+    "bidirectional_local_dense_recovery_strict.log": 749,
+    "bidirectional_local_dense_recovery_strict2.log": 741,
+    "bidirectional_recovery_new11.log": 1736,
+    "fair_task_smoke2.csv": 1223,
+    "fair_task_smoke2.mat": 136576,
+    "local_dense_connectivity.log": 5163,
+    "local_dense_diagnostics_new11.log": 16895,
+    "local_dense_recovery.log": 11522,
+    "multigrid_corrected.log": 605796,
+    "RRT": 938324700,
+    "UR5": 18755954209,
+    "UR5_real": 1009,
+    "backup_before_hmi_weld_20261008": 98305,
+    "cr7": 658081384,
+    "jakaA5": 362688824,
+    "maintenance": 343798,
+    "ros2_ws": 11749,
+    "tools": 32492,
+    "焊枪模型": 102314836
+  },
+  "git_ignored_candidates": [
+    "UR5/Ur5Test/Ur5Test/.idea/workspace.xml"
+  ],
+  "bytes_by_extension": {
+    "": 372540,
+    ".md": 1197733,
+    ".log": 30087669,
+    ".csv": 60050687,
+    ".mat": 16238757136,
+    ".m": 6779270,
+    ".avi": 1499749284,
+    ".png": 78884157,
+    ".txt": 498617,
+    ".gif": 51000193,
+    ".pdf": 20237496,
+    ".py": 4953285,
+    ".json": 440779188,
+    ".bak-20260915-workpiece3": 76775,
+    ".urdf": 649696,
+    ".sh": 36050,
+    ".ttt": 829337376,
+    ".zip": 114325348,
+    ".mjs": 21145,
+    ".pptx": 103688802,
+    ".ndjson": 72637,
+    ".xml": 10620,
+    ".iml": 964,
+    ".ttm": 134553662,
+    ".stl": 1196794655,
+    ".bak": 67202,
+    ".yaml": 55825,
+    ".rviz": 39028,
+    ".jpg": 5777041,
+    ".lock": 36059,
+    ".toml": 1175,
+    ".rs": 102571,
+    ".cpp": 38615,
+    ".cfg": 194,
+    ".sha256": 4057,
+    ".patch": 61900,
+    ".html": 61128,
+    ".srdf": 9499,
+    ".xacro": 96787,
+    ".lua": 10416
+  },
+  "large_files": [
+    {
+      "path": "RRT/results/formal_first_solution_output.mat",
+      "bytes": 8939687
+    },
+    {
+      "path": "RRT/results/phase10a5_optimization_checkpoint.mat",
+      "bytes": 26729573
+    },
+    {
+      "path": "RRT/results/phase11b_time_budget.mat",
+      "bytes": 29680793
+    },
+    {
+      "path": "RRT/results/phase11b_time_budget_checkpoint.mat",
+      "bytes": 85409252
+    },
+    {
+      "path": "RRT/results/phase11b_time_budget_output.mat",
+      "bytes": 29688017
+    },
+    {
+      "path": "RRT/results/phase12a_2r2_profile_ClassifiedRRTStarJoint.mat",
+      "bytes": 10025199
+    },
+    {
+      "path": "RRT/results/phase12a_2r2_profile_RRTConnectJoint.mat",
+      "bytes": 9808991
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_BiRRT_full_sequence.avi",
+      "bytes": 33401702
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_BiRRT_full_sequence_input.mat",
+      "bytes": 11423265
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_RRTConnect_full_sequence.avi",
+      "bytes": 38684064
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_RRTConnect_full_sequence_input.mat",
+      "bytes": 11425771
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_full_sequence_BiRRT_perspective.avi",
+      "bytes": 33235108
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_full_sequence_BiRRT_top.avi",
+      "bytes": 29803006
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_full_sequence_RRTConnect_perspective.avi",
+      "bytes": 38375008
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_full_sequence_RRTConnect_top.avi",
+      "bytes": 34728974
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_home_preweld_seed1.mat",
+      "bytes": 11519265
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_home_preweld_smoke.mat",
+      "bytes": 11511683
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_home_preweld_smoke5.mat",
+      "bytes": 11518386
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_home_preweld_smoke5_v2.mat",
+      "bytes": 11518405
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_seamA_two_successful.mat",
+      "bytes": 11490242
+    },
+    {
+      "path": "RRT/results/phase12a_anytime_seamA_two_successful_with_iterations.mat",
+      "bytes": 11495486
+    },
+    {
+      "path": "RRT/results/phase12a_first_solution_two_successful.mat",
+      "bytes": 11495702
+    },
+    {
+      "path": "RRT/results/phase12a_seam_approach_exit_pilot_40.mat",
+      "bytes": 12349909
+    },
+    {
+      "path": "RRT/results/phase12a_seam_approach_exit_pilot_40.mat.checkpoint.mat",
+      "bytes": 12302601
+    },
+    {
+      "path": "RRT/results/phase12a_seam_approach_exit_smoke.mat",
+      "bytes": 11660064
+    },
+    {
+      "path": "RRT/results/phase12a_seam_approach_exit_smoke.mat.checkpoint.mat",
+      "bytes": 11611835
+    },
+    {
+      "path": "RRT/results/phase12a_seam_legacy_rrtconnect_repro.mat",
+      "bytes": 11423052
+    },
+    {
+      "path": "RRT/results/v1_fast_connect_anytime_taskA_seed20260917.mat",
+      "bytes": 11530316
+    },
+    {
+      "path": "RRT/results/v1_fast_connect_anytime_taskB_seed20260917.mat",
+      "bytes": 11536953
+    },
+    {
+      "path": "RRT/results/v1_seamA_taskA_taskB_combined.mat",
+      "bytes": 23040822
+    },
+    {
+      "path": "RRT/results/2d_rrt_gifs/GD_RRT_star.gif",
+      "bytes": 11570681
+    },
+    {
+      "path": "RRT/results/2d_rrt_gifs/Q_RRT_star.gif",
+      "bytes": 11555147
+    },
+    {
+      "path": "RRT/results/intermediate/phase12a_anytime_full_sequence_BiRRT_perspective.avi",
+      "bytes": 27099424
+    },
+    {
+      "path": "RRT/results/intermediate/phase12a_anytime_full_sequence_RRTConnect_perspective.avi",
+      "bytes": 38375008
+    },
+    {
+      "path": "RRT/results/intermediate/phase12a_anytime_full_sequence_RRTConnect_top.avi",
+      "bytes": 34502290
+    },
+    {
+      "path": "RRT/results/superseded/phase12a_anytime_home_preweld_BiRRT.superseded.avi",
+      "bytes": 11921966
+    },
+    {
+      "path": "RRT/results/superseded/phase12a_anytime_home_preweld_BiRRT.unlit-home_preweld_only.avi",
+      "bytes": 11921966
+    },
+    {
+      "path": "RRT/results/superseded/phase12a_anytime_home_preweld_RRTConnect.superseded.avi",
+      "bytes": 13472872
+    },
+    {
+      "path": "RRT/results/superseded/phase12a_anytime_home_preweld_RRTConnect.unlit-home_preweld_only.avi",
+      "bytes": 13472872
+    },
+    {
+      "path": "RRT/results/v1_fast_connect_anytime_videos/v1_seamA_full_sequence_V1FastConnectAnytimeRRTStar_perspective.avi",
+      "bytes": 31148664
+    },
+    {
+      "path": "RRT/results/v1_fast_connect_anytime_videos/v1_seamA_full_sequence_V1FastConnectAnytimeRRTStar_top.avi",
+      "bytes": 27116412
+    },
+    {
+      "path": "UR5/99212_UR5_User_Manual_zh_Global.pdf",
+      "bytes": 12225075
+    },
+    {
+      "path": "UR5/ur5.ttt",
+      "bytes": 20778903
+    },
+    {
+      "path": "UR5/ur5.ttt.before-tcp-18mm-20260915.ttt",
+      "bytes": 20778849
+    },
+    {
+      "path": "UR5/机械臂控制算法.zip",
+      "bytes": 17946285
+    },
+    {
+      "path": "UR5/.editable_build/notes_draft/10.15葛洪涛组会汇报_含备注_draft.pptx",
+      "bytes": 97866806
+    },
+    {
+      "path": "UR5/backups/before_Areal_gun_20261013T065647Z/real_gun_geometry/new_gun_source_unconfirmed.ttm",
+      "bytes": 62811282
+    },
+    {
+      "path": "UR5/backups/before_Areal_gun_20261013T065647Z/real_gun_geometry/new_gun_vhacd_source_preview.ttt",
+      "bytes": 63109288
+    },
+    {
+      "path": "UR5/backups/before_Areal_gun_20261013T065647Z/real_gun_geometry/ur5_real_gun_alignment_preview.ttt",
+      "bytes": 63900490
+    },
+    {
+      "path": "UR5/backups/before_Areal_gun_20261013T065647Z/real_gun_geometry/welding_gun_source.STL",
+      "bytes": 62596884
+    },
+    {
+      "path": "UR5/backups/before_Areal_gun_20261013T065647Z/real_gun_geometry/welding_gun_visual_m.stl",
+      "bytes": 62596884
+    },
+    {
+      "path": "UR5/backups/gun_geometry_20261010_184312/ur5_frozen.ttt",
+      "bytes": 20778903
+    },
+    {
+      "path": "UR5/matlab仿真/adaptive_arc_ik_failure_diagnostics.mat",
+      "bytes": 11407888
+    },
+    {
+      "path": "UR5/matlab仿真/adaptive_arc_ik_multigrid.mat",
+      "bytes": 17097310
+    },
+    {
+      "path": "UR5/matlab仿真/adaptive_arc_ik_multigrid_corrected.mat",
+      "bytes": 17170350
+    },
+    {
+      "path": "UR5/matlab仿真/diagnostic_seed20269019_extended.mat",
+      "bytes": 9062320
+    },
+    {
+      "path": "UR5/matlab仿真/multistart_first_feasible_fresh.log",
+      "bytes": 12723741
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_baseline_profile.mat",
+      "bytes": 14091092
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_fast_profile.mat",
+      "bytes": 14123881
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_replan.mat",
+      "bytes": 10352211
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_replan_fast.mat",
+      "bytes": 10465921
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_replan_profile.mat",
+      "bytes": 10353873
+    },
+    {
+      "path": "UR5/matlab仿真/weld_actual_axis_replan_timed_20260917.mat",
+      "bytes": 10353897
+    },
+    {
+      "path": "UR5/matlab仿真/weld_rrt_connect_approach_exit.mat",
+      "bytes": 11424430
+    },
+    {
+      "path": "UR5/matlab仿真/weld_rrt_connect_tcp43mmps_main.avi",
+      "bytes": 38309292
+    },
+    {
+      "path": "UR5/matlab仿真/weld_rrt_connect_tcp43mmps_top.avi",
+      "bytes": 33811684
+    },
+    {
+      "path": "UR5/matlab仿真/weld_rrt_connect_tcp43mmps_weldreverse.avi",
+      "bytes": 38267166
+    },
+    {
+      "path": "UR5/matlab仿真/weld_rrt_connect_tcp43mmps_weldside.avi",
+      "bytes": 34743640
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos/Seam_A_AARC_IK_43mmps_top.avi",
+      "bytes": 9395250
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos/Seam_A_AARC_IK_43mmps_top.before-light-fix.avi",
+      "bytes": 9395250
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_A_AARC_IK_100cmmin_perspective.avi",
+      "bytes": 17808372
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_A_AARC_IK_100cmmin_perspective.before-light-fix.avi",
+      "bytes": 17808372
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_A_AARC_IK_100cmmin_top.avi",
+      "bytes": 24085460
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_A_AARC_IK_100cmmin_top.before-light-fix.avi",
+      "bytes": 24085460
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_B_AARC_IK_100cmmin_perspective.avi",
+      "bytes": 18102134
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_B_AARC_IK_100cmmin_perspective.before-light-fix.avi",
+      "bytes": 18102134
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_B_AARC_IK_100cmmin_top.avi",
+      "bytes": 17313684
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_B_AARC_IK_100cmmin_top.before-light-fix.avi",
+      "bytes": 17313684
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_C_AARC_IK_100cmmin_perspective.avi",
+      "bytes": 18478162
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_C_AARC_IK_100cmmin_perspective.before-light-fix.avi",
+      "bytes": 18478162
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_C_AARC_IK_100cmmin_top.avi",
+      "bytes": 17144576
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_100cmmin/Seam_C_AARC_IK_100cmmin_top.before-light-fix.avi",
+      "bytes": 17144576
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_40cmmin/Seam_A_AARC_IK_40cmmin_perspective.incomplete-aborted-run.avi",
+      "bytes": 14528800
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin/Seam_A_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 163035304
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin/Seam_A_Gao_AR_RRTstar_100cmmin_top.incomplete.avi",
+      "bytes": 11440416
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin/Seam_B_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 75743242
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin/Seam_C_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 85587838
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin_full/Seam_A_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 60088848
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin_full/Seam_B_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 59864162
+    },
+    {
+      "path": "UR5/matlab仿真/weld_seam_videos_gao_100cmmin_full/Seam_C_Gao_AR_RRTstar_100cmmin_perspective.avi",
+      "bytes": 63233438
+    },
+    {
+      "path": "UR5/planning_runs/accp_axis_sensitivity_20261012/tolerance_05/diagnostic_core.mat",
+      "bytes": 12569702
+    },
+    {
+      "path": "UR5/planning_runs/accp_axis_sensitivity_20261012/tolerance_10/diagnostic_core.mat",
+      "bytes": 12569702
+    },
+    {
+      "path": "UR5/planning_runs/accp_axis_sensitivity_20261012/tolerance_15/diagnostic_core.mat",
+      "bytes": 12569174
+    },
+    {
+      "path": "UR5/planning_runs/accp_axis_sensitivity_20261012/tolerance_20/diagnostic_core.mat",
+      "bytes": 12568734
+    },
+    {
+      "path": "UR5/planning_runs/accp_axis_sensitivity_20261012/tolerance_30/diagnostic_core.mat",
+      "bytes": 12568734
+    },
+    {
+      "path": "UR5/planning_runs/accp_candidate_selection_20261012/real_scoring_0/diagnostic_core.mat",
+      "bytes": 12569438
+    },
+    {
+      "path": "UR5/planning_runs/accp_candidate_selection_20261012/real_scoring_1/diagnostic_core.mat",
+      "bytes": 12569438
+    },
+    {
+      "path": "UR5/planning_runs/accp_cartesian_refinement_20261012/production_feasibility.mat",
+      "bytes": 14097453
+    },
+    {
+      "path": "UR5/planning_runs/accp_cartesian_refinement_20261012/production_round_00.mat",
+      "bytes": 13956870
+    },
+    {
+      "path": "UR5/planning_runs/accp_embedded_precision_20261012/configuration_diagnostic.mat",
+      "bytes": 13977304
+    },
+    {
+      "path": "UR5/planning_runs/accp_embedded_precision_20261012/embedded_accp.mat",
+      "bytes": 14292879
+    },
+    {
+      "path": "UR5/planning_runs/accp_embedded_precision_20261012/embedded_round_00.mat",
+      "bytes": 14263658
+    },
+    {
+      "path": "UR5/planning_runs/accp_embedded_precision_20261012/time_parameterized_diagnostic_input.mat",
+      "bytes": 9338519
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_20261012_1815/real_seam.mat",
+      "bytes": 12239438
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_20261012_1815/real_seam_round_00.mat",
+      "bytes": 11484072
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_20261012_1815/real_seam_round_01.mat",
+      "bytes": 12196814
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_20261012_1815/real_seam_round_recovery_beam2.mat",
+      "bytes": 12196870
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_20261012_1815/real_seam_round_recovery_beam3.mat",
+      "bytes": 12196870
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1818/real_seam.mat",
+      "bytes": 12239470
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1818/real_seam_round_00.mat",
+      "bytes": 11484096
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1818/real_seam_round_01.mat",
+      "bytes": 12196838
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1818/real_seam_round_recovery_beam2.mat",
+      "bytes": 12196894
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1818/real_seam_round_recovery_beam3.mat",
+      "bytes": 12196894
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1822/real_seam.mat",
+      "bytes": 12239470
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1822/real_seam_round_00.mat",
+      "bytes": 11484096
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1822/real_seam_round_01.mat",
+      "bytes": 12196838
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1822/real_seam_round_recovery_beam2.mat",
+      "bytes": 12196894
+    },
+    {
+      "path": "UR5/planning_runs/accp_filter_diag_hmi_20261012_1822/real_seam_round_recovery_beam3.mat",
+      "bytes": 12196894
+    },
+    {
+      "path": "UR5/planning_runs/accp_fixed_wire_filter_20261012/default5_core.mat",
+      "bytes": 13955750
+    },
+    {
+      "path": "UR5/planning_runs/accp_fixed_wire_filter_20261012/filtered_core.mat",
+      "bytes": 13124542
+    },
+    {
+      "path": "UR5/planning_runs/accp_real_20261012_175643/real_seam.mat",
+      "bytes": 11410828
+    },
+    {
+      "path": "UR5/planning_runs/accp_real_20261012_175643/real_seam_round_00.mat",
+      "bytes": 11366561
+    },
+    {
+      "path": "UR5/planning_runs/accp_real_20261012_175643/real_seam_round_01.mat",
+      "bytes": 11366921
+    },
+    {
+      "path": "UR5/planning_runs/accp_real_20261012_175643/real_seam_round_recovery_beam2.mat",
+      "bytes": 11366977
+    },
+    {
+      "path": "UR5/planning_runs/accp_real_20261012_175643/real_seam_round_recovery_beam3.mat",
+      "bytes": 11366977
+    },
+    {
+      "path": "UR5/real_gun_geometry/Areal_flange_aligned_preview.ttt",
+      "bytes": 20028328
+    },
+    {
+      "path": "UR5/real_gun_geometry/new_gun_source_unconfirmed.ttm",
+      "bytes": 62811282
+    },
+    {
+      "path": "UR5/real_gun_geometry/new_gun_vhacd_source_preview.ttt",
+      "bytes": 20028297
+    },
+    {
+      "path": "UR5/real_gun_geometry/ur5_real_gun_alignment_preview.ttt",
+      "bytes": 63900490
+    },
+    {
+      "path": "UR5/real_gun_geometry/welding_gun_source.STL",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/real_gun_geometry/welding_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/real_gun_geometry_candidates/Areal_06f38186/Areal_flange_aligned_preview.ttt",
+      "bytes": 20028328
+    },
+    {
+      "path": "UR5/real_gun_geometry_candidates/Areal_06f38186/new_gun_vhacd_source_preview.ttt",
+      "bytes": 20028297
+    },
+    {
+      "path": "UR5/real_gun_geometry_candidates/Areal_06f38186/welding_gun_source.STL",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/real_gun_geometry_candidates/Areal_06f38186/welding_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/机械臂控制算法/源码副本/场景几何/ur5.ttt",
+      "bytes": 20778903
+    },
+    {
+      "path": "UR5/规划文件/real_anchor_runs/accp_bridge_comparison_20261013_improved_config.mat",
+      "bytes": 35886442
+    },
+    {
+      "path": "UR5/规划文件/real_anchor_runs/accp_bridge_comparison_20261013_improved_full_cold.mat",
+      "bytes": 36617709
+    },
+    {
+      "path": "UR5/规划文件/real_anchor_runs/accp_bridge_comparison_20261013_improved_full_cold_v2.mat",
+      "bytes": 36617744
+    },
+    {
+      "path": "UR5/规划文件/real_anchor_runs/bridge_prefix_real_scene_structured2.mat",
+      "bytes": 8857628
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam.mat",
+      "bytes": 11450411
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_00.mat",
+      "bytes": 11351010
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_01.mat",
+      "bytes": 11356394
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_02.mat",
+      "bytes": 11376090
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_03.mat",
+      "bytes": 11379690
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_04.mat",
+      "bytes": 11394762
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_recovery_beam2.mat",
+      "bytes": 11398498
+    },
+    {
+      "path": "UR5/规划文件/real_pipeline_diagnostic_20261012/real_seam_round_recovery_beam3.mat",
+      "bytes": 11398498
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam.mat",
+      "bytes": 11444803
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_00.mat",
+      "bytes": 11345402
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_01.mat",
+      "bytes": 11350786
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_02.mat",
+      "bytes": 11370482
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_03.mat",
+      "bytes": 11374082
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_04.mat",
+      "bytes": 11389154
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_recovery_beam2.mat",
+      "bytes": 11392890
+    },
+    {
+      "path": "UR5/规划文件/real_scene_active_diagnostic_20261012/real_seam_round_recovery_beam3.mat",
+      "bytes": 11392890
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam.mat",
+      "bytes": 11444843
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_00.mat",
+      "bytes": 11345426
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_01.mat",
+      "bytes": 11350810
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_02.mat",
+      "bytes": 11370530
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_03.mat",
+      "bytes": 11374122
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_04.mat",
+      "bytes": 11389194
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_recovery_beam2.mat",
+      "bytes": 11392930
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012b/real_seam_round_recovery_beam3.mat",
+      "bytes": 11392930
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam.mat",
+      "bytes": 11444843
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_00.mat",
+      "bytes": 11345426
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_01.mat",
+      "bytes": 11350810
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_02.mat",
+      "bytes": 11370530
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_03.mat",
+      "bytes": 11374122
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_04.mat",
+      "bytes": 11389194
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_recovery_beam2.mat",
+      "bytes": 11392930
+    },
+    {
+      "path": "UR5/规划文件/real_scene_final_diagnostic_20261012c/real_seam_round_recovery_beam3.mat",
+      "bytes": 11392930
+    },
+    {
+      "path": "UR5/规划文件/real_scene_hmi_20261012/real_seam.mat",
+      "bytes": 11409452
+    },
+    {
+      "path": "UR5/规划文件/real_scene_hmi_20261012/real_seam_round_00.mat",
+      "bytes": 11365185
+    },
+    {
+      "path": "UR5/规划文件/real_scene_hmi_20261012/real_seam_round_01.mat",
+      "bytes": 11365545
+    },
+    {
+      "path": "UR5/规划文件/real_scene_hmi_20261012/real_seam_round_recovery_beam2.mat",
+      "bytes": 11365601
+    },
+    {
+      "path": "UR5/规划文件/real_scene_hmi_20261012/real_seam_round_recovery_beam3.mat",
+      "bytes": 11365601
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_off/run_01/preview_accp.mat",
+      "bytes": 27653815
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_off/run_02/preview_accp.mat",
+      "bytes": 27653815
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_off/run_03/preview_accp.mat",
+      "bytes": 27653815
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_off/run_04/preview_accp.mat",
+      "bytes": 27653815
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_off/run_05/preview_accp.mat",
+      "bytes": 27653815
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_on/run_01/preview_accp.mat",
+      "bytes": 27653803
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_on/run_02/preview_accp.mat",
+      "bytes": 27653803
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_on/run_03/preview_accp.mat",
+      "bytes": 27653803
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_on/run_04/preview_accp.mat",
+      "bytes": 27653803
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/cache_on/run_05/preview_accp.mat",
+      "bytes": 27653803
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/diagnostic_patch_run/preview_accp.mat",
+      "bytes": 27292724
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_cache_off/run_01/preview_accp.mat",
+      "bytes": 27292757
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_01/preview_accp.mat",
+      "bytes": 27292931
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_01/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_02/preview_accp.mat",
+      "bytes": 27292931
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_02/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_03/preview_accp.mat",
+      "bytes": 27292931
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_03/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_04/preview_accp.mat",
+      "bytes": 27292931
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_04/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_05/preview_accp.mat",
+      "bytes": 27292931
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/fixed_full_preview/optimized_05/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/preperformance_case/preview_accp.mat",
+      "bytes": 27437066
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/previous_success_regression/optimized_01/preview_accp.mat",
+      "bytes": 28482547
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/accp_stability_20261016/previous_success_regression/optimized_01/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/bridge_struct_fix_20261014/point14_input_fixture.mat",
+      "bytes": 25740374
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuity_optimization_20261015/adaptive_local_1.mat",
+      "bytes": 11261093
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuous_smoothing_20261020/current/baseline_trace.mat",
+      "bytes": 20713488
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuous_smoothing_20261020/current_spline/audit.mat",
+      "bytes": 20973948
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuous_smoothing_20261020/current_spline/parallel_audit.mat",
+      "bytes": 20980108
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuous_smoothing_20261020/historical_spline/audit.mat",
+      "bytes": 15334287
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/continuous_smoothing_20261020/historical_spline/parallel_audit.mat",
+      "bytes": 15346239
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/environment_extension_20261014/current_binding_audit/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/environment_extension_20261014/real_scene_audit/full_raw_trajectory.mat",
+      "bytes": 108617642
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/environment_extension_20261014/real_scene_audit/preview_display_audit.json",
+      "bytes": 13020293
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/environment_extension_20261014/real_scene_audit/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/environment_extension_20261014/real_scene_audit/real_environment_scene_regression.json",
+      "bytes": 13785256
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/fixed_base_floor_contact_20261015/cold_full_preview_v2/preview_accp.mat",
+      "bytes": 28581337
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/fixed_base_floor_contact_20261015/cold_full_preview_v2/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/interface_branch_repair_20261015/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/interface_branch_repair_20261015/replanned/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261014_185602_486872/preview_accp.mat",
+      "bytes": 41363500
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261014_185602_486872/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261014_190649_439402/preview_accp.mat",
+      "bytes": 41363500
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261014_190649_439402/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_124729_001415/preview_accp.mat",
+      "bytes": 28608009
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_124729_001415/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_142704_413362/preview_accp.mat",
+      "bytes": 28758216
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_142704_413362/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_144235_155027/preview_accp.mat",
+      "bytes": 27653720
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261016_151157_619086/preview_accp.mat",
+      "bytes": 27653720
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261017_220611_847885/preview_accp.mat",
+      "bytes": 27292594
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261017_220611_847885/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_085945_573233/preview_accp.mat",
+      "bytes": 28489800
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_085945_573233/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_090735_341342/preview_accp.mat",
+      "bytes": 28489800
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_090735_341342/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_103229_773681/preview_accp.mat",
+      "bytes": 28968300
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_103229_773681/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_110448_976674/preview_accp.mat",
+      "bytes": 28712850
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_110448_976674/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_120936_910257/preview_accp.mat",
+      "bytes": 28482202
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_120936_910257/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_151534_200122/preview_accp.mat",
+      "bytes": 28733672
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261019_151534_200122/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_092635_430705/preview_accp.mat",
+      "bytes": 28733540
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_092635_430705/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_093446_959865/preview_accp.mat",
+      "bytes": 28733540
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_093446_959865/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_153252_867942/preview_accp.mat",
+      "bytes": 28482012
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_20261020_153252_867942/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_display_audit_20261014/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/baseline_profile/baseline_01/matlab_profiler.mat",
+      "bytes": 14635964
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/baseline_profile/baseline_01/preview_accp.mat",
+      "bytes": 28608373
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/baseline_profile/baseline_01/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/baseline_unprofiled/baseline_01/preview_accp.mat",
+      "bytes": 28710524
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/baseline_unprofiled/baseline_01/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/native_reaudit/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_01/preview_accp.mat",
+      "bytes": 28758496
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_01/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_02/preview_accp.mat",
+      "bytes": 28758496
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/preview_performance_20261016/optimized/optimized_02/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/qp_numerics_sensitivity_20261019/initial_qp.mat",
+      "bytes": 11460918
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/qp_numerics_sensitivity_20261019/last_qp.mat",
+      "bytes": 71035154
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/robot_collision_missing_coverage_regression_20261014/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/robot_collision_repair_preview_20261014/preview_gun_visual_m.stl",
+      "bytes": 19895584
+    },
+    {
+      "path": "UR5/规划文件/workflow_runs/robot_collision_repair_preview_20261014/raw_scene_robot_collision_repaired.mat",
+      "bytes": 12408239
+    },
+    {
+      "path": "cr7/CR7 1.ttt",
+      "bytes": 74903956
+    },
+    {
+      "path": "cr7/CR7 2.ttt",
+      "bytes": 74903858
+    },
+    {
+      "path": "cr7/CR7 3.ttt",
+      "bytes": 75026604
+    },
+    {
+      "path": "cr7/CR7.ttt",
+      "bytes": 72431566
+    },
+    {
+      "path": "cr7/scene_geometry.json",
+      "bytes": 60891620
+    },
+    {
+      "path": "cr7/simulation/cr7.ttt",
+      "bytes": 29018495
+    },
+    {
+      "path": "cr7/simulation/cr7_arm.ttm",
+      "bytes": 8931098
+    },
+    {
+      "path": "cr7/simulation/hanqiang.mat",
+      "bytes": 14899720
+    },
+    {
+      "path": "cr7/variants/cr7_original/scene_geometry.json",
+      "bytes": 89913356
+    },
+    {
+      "path": "cr7/variants/cr7_original/simulation/cr7.ttt",
+      "bytes": 74893789
+    },
+    {
+      "path": "cr7/variants/cr7_original/simulation/hanqiang.mat",
+      "bytes": 14899720
+    },
+    {
+      "path": "jakaA5/JAKA_A5_URDF_source.zip",
+      "bytes": 94193253
+    },
+    {
+      "path": "jakaA5/jaka_A5_welding_migrated.ttt",
+      "bytes": 74020032
+    },
+    {
+      "path": "焊枪模型/A焊枪1.STL",
+      "bytes": 19739284
+    },
+    {
+      "path": "焊枪模型/A焊枪real.STL",
+      "bytes": 19895584
+    },
+    {
+      "path": "焊枪模型/焊枪.STL",
+      "bytes": 62596884
+    }
+  ],
+  "current_run_prefixes": [
+    "UR5/规划文件/workflow_runs/prepare_20261020_154006_930602",
+    "UR5/规划文件/workflow_runs/preview_20261020_153252_867942",
+    "UR5/规划文件/当前轨迹"
+  ],
+  "scope": "Project only; policy exclusions, no symlink traversal."
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": "FULL_WELDING_EXECUTION_VALIDATION_v1",
+  "created_at": "2026-10-14",
+  "task": "RealHome -> CBi-RRT* approach -> PreWeld -> ACCP-D -> PostWeld -> CBi-RRT* exit -> RealHome",
+  "robot_motion": "NO",
+  "offline_only": true,
+  "trajectory_exported": false,
+  "executionReady": false,
+  "validation_status": "BLOCKED",
+  "block_reason": "当前没有与ACCP-D版本绑定的成功CBi-RRT*接近段和退出段；因此禁止使用旧轨迹拼接，也未运行整程控制器插值/碰撞验证。",
+  "controller_interpolation": {
+    "model": "positions+velocities cubic Hermite",
+    "source": "本机ROS 2 joint_trajectory_controller源码/配置审查；不是UR控制器内部伺服插值证明",
+    "full_task_sample_requirement": 5000,
+    "full_task_sample_count": 0,
+    "full_task_validation": "NOT_RUN_MISSING_CURRENT_APPROACH_AND_EXIT",
+    "hardware_inner_servo_verified": false
+  },
+  "version_consistency": {
+    "status": "BLOCKED_MISSING_OR_STALE_SEGMENT_BINDINGS",
+    "all_three_segments_match": false,
+    "current_weld_binding": {
+      "planning_scene": "REAL_CALIBRATION",
+      "tcp_calibration_version": "CONTROLLER-TCP-994e951e689e4d5e3c2864cd1134988629dabe9cfa41ae3dad2704825a768aa3",
+      "tcp_calibration_sha256": "e83787309caaf9bc888fdf83dc89e48d3c940cb9d23ef15b8f00426316846ac2",
+      "urdf_version": "URDF-17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+      "gun_geometry_version": "real-gun-1791876831259595871",
+      "real_gun_geometry_sha256": "1cb68d906d78c6a7cec7fe2b413d178302a5f79f3787a6a940bbad145e048b82",
+      "gun_mount_sha256": "5241fa477ef87ca00175716f576d49b4a9e7dda52a5f00005001ad0f0c5f9d79",
+      "workpiece_pose_version": "WORKPIECE-a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+      "workpiece_sha256": "a72648a809bc338e6219118b15fa7b9add1f2ab3470b9e0c57a2087e55f6d6a7",
+      "wire_collision_shorten_mm": 3,
+      "wire_model_version": "NOT_RECORDED_AS_A_DISTINCT_VERSION",
+      "collision_scene_version": "NOT_RECORDED_AS_A_DISTINCT_VERSION"
+    },
+    "required_fields_missing_from_current_weld_record": [
+      "wire_model_version",
+      "collision_scene_version"
+    ],
+    "approach_binding": "MISSING_STALE_OR_NO_OUTPUT",
+    "exit_binding": "MISSING_STALE"
+  },
+  "segments": {
+    "approach": {
+      "algorithm": "CBi-RRT*",
+      "status": "BLOCKED_NO_CURRENT_VERSION_BOUND_PATH",
+      "latest_real_attempt": {
+        "report": "UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261012_102457_109585_report.json",
+        "success": false,
+        "failure_reason": "PLAN_FAILED: REAL_CALIBRATION scene requested but real TCP/workpiece transforms are not loaded into the MATLAB scene, or qPreWeld is stale",
+        "trajectory_output": null
+      },
+      "older_successful_path": {
+        "report": "UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261010_105205_168803_report.json",
+        "success": true,
+        "binding": "MISSING_STALE",
+        "usable": false,
+        "q_end_rad": [-0.014894647819507334, -1.6995065086141778, -1.5827839940260957, -1.4080896997485883, 1.802006170902569, -3.8834036633603373]
+      }
+    },
+    "weld": {
+      "algorithm": "ACCP-D",
+      "status": "PASS_AS_STANDALONE_SEGMENT_ONLY",
+      "source_mat": "UR5/规划文件/real_anchor_runs/hybrid_velocity_20261014_final/hybrid_velocity_diagnostic.mat",
+      "source_report": "UR5/规划文件/real_anchor_runs/hybrid_velocity_20261014_final/report.json",
+      "point_count": 47,
+      "duration_sec": 17.09915578898368,
+      "standalone_controller_interpolation": "positions_plus_velocities_cubic_hermite",
+      "standalone_sample_count": 4601,
+      "max_tcp_contour_error_mm": 0.10943635215584487,
+      "max_tcp_time_sync_error_mm": 0.35506721444666856,
+      "max_tcp_orientation_error_deg": 0.4209679288326293,
+      "max_joint_velocity_rad_per_sec": 0.08726471727046448,
+      "max_joint_acceleration_rad_per_sec2": 0.14892662884886465,
+      "max_jerk_rad_per_sec3": 0.7174138031272627,
+      "rms_jerk_rad_per_sec3": 0.11942510687140218,
+      "max_node_acceleration_jump_rad_per_sec2": 0.18012328578340417,
+      "collision_pass": true,
+      "joint_limits_pass": true,
+      "minimum_sampled_clearance_mm": 0.569160595962367,
+      "continuous_collision_proof": false,
+      "physical_safety_margin_validated": false,
+      "executionReady": false
+    },
+    "exit": {
+      "algorithm": "CBi-RRT*",
+      "status": "BLOCKED_NO_CURRENT_VERSION_BOUND_PATH",
+      "older_successful_path": {
+        "report": "UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_172136_837652_report.json",
+        "success": true,
+        "binding": "MISSING_STALE",
+        "usable": false,
+        "q_start_rad": [0.10103311567507861, -1.7283686234747471, -1.4847377912913284, -1.4807874520710342, 1.2495520788069525, 1.9514823275106821]
+      }
+    }
+  },
+  "splice_checks": [
+    {
+      "boundary": "CBi-RRT* approach end -> ACCP-D start",
+      "status": "NOT_VERIFIED_STALE_APPROACH",
+      "current_tcp_position_delta_mm": null,
+      "current_tcp_orientation_delta_deg": null,
+      "current_joint_delta_rad": null,
+      "current_velocity_jump_rad_per_sec": null,
+      "current_acceleration_jump_rad_per_sec2": null,
+      "stale_path_joint_delta_to_current_weld_start_rad": [-4.881967067030798, -1.6171747010426467, -0.5912171667925223, -1.0934691531056584, 3.057326749799024, -4.027621633866038],
+      "stale_path_joint_delta_norm_rad": 7.318678286753139,
+      "stale_path_max_abs_joint_delta_rad": 4.881967067030798
+    },
+    {
+      "boundary": "ACCP-D end -> CBi-RRT* exit start",
+      "status": "NOT_VERIFIED_STALE_EXIT",
+      "current_tcp_position_delta_mm": null,
+      "current_tcp_orientation_delta_deg": null,
+      "current_joint_delta_rad": null,
+      "current_velocity_jump_rad_per_sec": null,
+      "current_acceleration_jump_rad_per_sec2": null,
+      "stale_path_joint_delta_from_old_exit_start_rad": [4.704673090881486, 1.554619890277543, 0.6839991421485326, 1.039465522955298, -2.790134734073694, -2.074626291292745],
+      "stale_path_joint_delta_norm_rad": 6.1796489688323835,
+      "stale_path_max_abs_joint_delta_rad": 4.704673090881486
+    }
+  ],
+  "required_seam_boundary_q_rad": {
+    "ACCP-D_entry_PreWeld": [4.867072419211291, -0.08233180757153113, -0.9915668272335734, -0.31462054664292993, -1.255320578896455, 0.14421797050570034],
+    "ACCP-D_exit_PostWeld": [4.8057062065565646, -0.17374873319720407, -0.8007386491427958, -0.4413219291157361, -1.5405826552667414, -0.12314396378206274],
+    "note": "Required continuous-radian branches from current ACCP-D boundary evidence; do not wrap or replace these to match stale paths."
+  },
+  "full_task_metrics": {
+    "duration_sec": null,
+    "max_joint_velocity_rad_per_sec": null,
+    "max_joint_acceleration_rad_per_sec2": null,
+    "max_jerk_rad_per_sec3": null,
+    "rms_jerk_rad_per_sec3": null,
+    "max_node_acceleration_jump_rad_per_sec2": null,
+    "tcp_contour_error_mm": null,
+    "tcp_time_sync_error_mm": null,
+    "tcp_orientation_error_deg": null,
+    "self_collision": "NOT_RUN_FULL_TASK",
+    "gun_collision": "NOT_RUN_FULL_TASK",
+    "wire_collision": "NOT_RUN_FULL_TASK",
+    "workpiece_collision": "NOT_RUN_FULL_TASK"
+  },
+  "classification": [
+    "MISSING_CURRENT_SEGMENT_PATH",
+    "STALE_OR_INCOMPLETE_VERSION_BINDING",
+    "POSITION_ORIENTATION_VELOCITY_ACCELERATION_NOT_VERIFIABLE",
+    "FULL_CONTROLLER_INTERPOLATION_NOT_RUN",
+    "FULL_TASK_COLLISION_NOT_RUN"
+  ],
+  "recommended_next_action": "在同一REAL_CALIBRATION场景快照和版本绑定下重新生成RealHome→PreWeld及PostWeld→RealHome两段，并显式写入wire_model_version与collision_scene_version；之后运行新验证器。若边界速度或加速度不连续，再单独评估过渡段/边界速度，不要直接拼接。",
+  "legacy_full_task_evidence": {
+    "report": "UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_171916_720017_report.json",
+    "historical_success": true,
+    "historical_points": 51,
+    "historical_duration_sec": 81.36814576452761,
+    "historical_collision_samples": 910,
+    "current_version_binding": "MISSING_STALE",
+    "usable_for_current_real_task": false
+  },
+  "no_motion_statement": "No FollowJointTrajectory goal was created or sent; no executable real trajectory was generated.",
+  "output_json": "UR5/规划文件/real_anchor_runs/full_welding_execution_validation_20261014/full_welding_execution_validation.json"
+}

@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "before_sec": 546.832251,
+  "after_sec": 469.661168,
+  "saved_sec": 77.171083000000067,
+  "same_q_tcp_time_velocities": true,
+  "same_C_seed_audit": true,
+  "same_final_dense_controller_validation": true,
+  "comparison_audits_removed": 3,
+  "comparison_collision_samples_removed": 13803,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

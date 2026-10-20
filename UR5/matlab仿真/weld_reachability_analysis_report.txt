@@ -1,0 +1,49 @@
+WeldTCP reachability analysis
+Generated: 2026-09-16 11:31:25
+
+TCP body: WeldTCP
+Workspace samples: 30000
+Workspace bounds min [m]: -1.243465166 -1.300876497 -1.198078650
+Workspace bounds max [m]: 1.269035245 1.271687468 1.374290595
+Max nearest workspace sample distance [mm]: 34.028200
+Pointwise feasible orientation points: 80 / 80
+Pointwise collision-free multi-IK points: 80 / 80
+State count min/max/mean: 36 / 175 / 70.787
+Max verified state position error [mm]: 0.000246279
+Max verified state orientation error [deg]: 0.000007540
+
+Profile strict (roll 15.0, travel 5.0, joint 8.0 deg)
+  Complete path: NO
+  First disconnect: 53 -> 54
+  Last reachable point: 53
+  Pose-compatible pairs at break: 0
+  Full joint-compatible pairs at break: 0
+  No pose-compatible predecessor/candidate pair.
+  Edge tests before/at break: 1518
+  Edge rejections before/at break: 0
+
+Profile medium (roll 30.0, travel 10.0, joint 15.0 deg)
+  Complete path: NO
+  First disconnect: 56 -> 57
+  Last reachable point: 56
+  Pose-compatible pairs at break: 0
+  Full joint-compatible pairs at break: 0
+  No pose-compatible predecessor/candidate pair.
+  Edge tests before/at break: 1983
+  Edge rejections before/at break: 8
+
+Profile loose (roll 45.0, travel 15.0, joint 25.0 deg)
+  Complete path: NO
+  First disconnect: 56 -> 57
+  Last reachable point: 56
+  Pose-compatible pairs at break: 0
+  Full joint-compatible pairs at break: 0
+  No pose-compatible predecessor/candidate pair.
+  Edge tests before/at break: 2063
+  Edge rejections before/at break: 84
+
+Medium forward/backward same-pose overlap points 25~56: 0
+
+Conclusion:
+The current TCP has pointwise collision-free full-pose IK states at 80/80 points, but no tested strict/medium/loose continuous path reaches the end.
+The reported breaks occur in the state-graph continuity filter before a complete path is available; this is not a reason to tune RRT yet.

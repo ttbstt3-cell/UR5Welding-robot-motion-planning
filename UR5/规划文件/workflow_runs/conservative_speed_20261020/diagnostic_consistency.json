@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "result": "DIAGNOSTIC_MATCH_PASS",
+  "checked_with": "MATLAB read-only load/isequal/assert",
+  "run": "prepare_20261020_145827_003182",
+  "fields": ["qPath", "timeFromStart", "velocities", "tr.duration_sec"],
+  "robot_motion": "NO"
+}

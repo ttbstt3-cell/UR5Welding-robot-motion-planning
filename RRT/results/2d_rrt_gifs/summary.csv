@@ -1,0 +1,11 @@
+algorithm,label,success,pathLength,planningTime_s,frameCount,gifFile
+RRT_basic,Basic RRT,1,264.808321284461,0.0657019999999999,270,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/RRT_basic.gif
+RRT_connect,RRT-Connect,1,210.57960273194,0.025725,81,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/RRT_connect.gif
+RRT_star,RRT*,1,207.118820119119,0.102916,186,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/RRT_star.gif
+Bi_RRT,Bi-RRT,1,194.326188895261,0.011164,67,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/Bi_RRT.gif
+Bi_RRT_star,Bi-RRT*,1,210.410235918864,0.052419,104,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/Bi_RRT_star.gif
+Informed_RRT_star,Informed RRT*,1,207.118820119119,0.086936,186,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/Informed_RRT_star.gif
+Q_RRT_star,Q-RRT*,1,202.134542245595,0.22312,246,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/Q_RRT_star.gif
+GD_RRT_star,GD-RRT*,1,168.095661020183,0.271725000000001,238,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/GD_RRT_star.gif
+Classified_RRT_star,Classified RRT*,1,159.628288102427,0.076192,52,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/Classified_RRT_star.gif
+APF_Bi_RRT_star,APF-Bi-RRT*,1,155.273892412718,0.115301,172,/home/ttbstt/jixiebi/RRT/results/2d_rrt_gifs/APF_Bi_RRT_star.gif

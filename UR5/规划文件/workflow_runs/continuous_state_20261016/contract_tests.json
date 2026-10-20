@@ -1,0 +1,24 @@
+{
+  "pass_all": true,
+  "rejected_false_pass_cases": [
+    "success",
+    "continuous_planning_complete",
+    "complete",
+    "collision_pass",
+    "joint_limits_pass",
+    "analytic_extrema_pass",
+    "max_tcp_time_sync_error_mm",
+    "max_tcp_orientation_error_deg",
+    "max_joint_acceleration_rad_per_sec2",
+    "max_joint_velocity_rad_per_sec",
+    "max_tcp_contour_error_mm",
+    "sample_count",
+    "execution claim",
+    "version mismatch",
+    "missing C2",
+    "wrong interpolation"
+  ],
+  "offline_pass_state": "PHYSICAL_VALIDATION_PENDING",
+  "ready_path": null,
+  "robot_motion": "NO"
+}

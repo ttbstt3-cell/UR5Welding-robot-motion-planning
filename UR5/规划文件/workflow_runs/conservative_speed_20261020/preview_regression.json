@@ -1,0 +1,20 @@
+{
+  "pass_all": true,
+  "default_preview_speed": "5x",
+  "choices": [
+    "0.5x",
+    "1x",
+    "2x",
+    "5x",
+    "10x",
+    "20x"
+  ],
+  "both_tabs_synchronized": true,
+  "no_jump_when_changing_rate": true,
+  "pause_resume_seek_stop_complete_pass": true,
+  "motion_lock_preserved": true,
+  "trajectory_and_ros_message_unchanged": true,
+  "live_state_and_robot_speed_unchanged": true,
+  "hardware_signals": 0,
+  "robot_motion": "NO"
+}

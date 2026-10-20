@@ -1,0 +1,35 @@
+ACCP paired cold-start benchmark
+Date: 2026-09-24
+
+Experiment:
+30 identical random seeds (20269001..20269030) were used for each method.
+The same MATLAB UR5, welding-gun hull, wire collision cylinder and four
+Workpiece collision boxes were used.  No old qPath or state graph was loaded.
+
+Methods:
+  Fixed-80 : unchanged stable continuation, 80 planning points.
+  Fixed-16 : unchanged stable continuation, 16 planning points.
+  ACCP : 16-point continuation; failed interval bisection; one bounded
+             first-point recovery; selective execution-waypoint TCP correction.
+
+Results:
+                 PASS       success time median    IK median   final points median   TCP segment median
+  Fixed-80        12/30      9.3506 s                1286        80                    1.9551 mm
+  Fixed-16        13/30      2.3323 s                326         16                    2.1999 mm
+  ACCP        24/30      3.1515 s                364.5       16                    0.3316 mm
+
+ACCP:
+  execution/validation point count median: 22
+  successful final TCP segment error max : 0.4400 mm
+  successful execution max-jump median   : 8.70 deg
+  paired Fixed-16 failures rescued       : 11
+  remaining failed seeds                 : 20269012, 20269018, 20269019,
+                                           20269022, 20269024, 20269027
+
+Interpretation:
+  The first ACCP version improves the measured success rate from roughly
+  40--43% to 80% while retaining sparse planning and reducing the final TCP
+  interpolation error below 0.5 mm on all successful runs.  It is not yet a
+  100% robust planner; the six remaining failures require a bounded next
+  recovery stage (local beam/angular redundancy or deeper local refinement).
+  Fixed-80 and Fixed-16 were intentionally left unchanged.

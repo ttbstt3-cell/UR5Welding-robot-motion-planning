@@ -1,0 +1,13 @@
+{
+  "exporter_velocity_rule": "[zeros(1,6); diff(qPath)./diff(timeFromStart)]",
+  "interpolation": "joint-space cubic Hermite (positions+velocities)",
+  "sample_count_per_edge": 101,
+  "max_same_time_tcp_error_mm": 2.3313935340920429,
+  "max_geometric_chord_deviation_mm": 0.38487226993465107,
+  "worst_edge": 27,
+  "sampled_cubic_collision_pass": true,
+  "collision_sample_count": 630,
+  "sampled_cubic_joint_limits_pass": true,
+  "note": "Time-phase error differs from geometric path deviation; no robot execution tested",
+  "robot_motion": "NO"
+}

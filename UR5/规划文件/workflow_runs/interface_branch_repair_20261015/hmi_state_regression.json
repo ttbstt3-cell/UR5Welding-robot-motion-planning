@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "robot_motion": "NO",
+  "ros_nodes_or_actions_created": 0,
+  "full_gui_worker_started": false,
+  "test_scope": "Existing HMI MAT loader, node validator and two-stage state machine; no live GUI control",
+  "preview_point_count": 359,
+  "loaded_preview_only": true,
+  "loaded_executionReady": false,
+  "loaded_joint_limit_and_node_validation_pass": true,
+  "state_sequence": ["Preview Ready", "Preparation Failed"],
+  "preview_preserved_after_failure": true,
+  "execution_ready_path": null,
+  "fresh_workflow_approach_matches_repaired_preview_max_difference_rad": 0.0
+}

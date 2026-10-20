@@ -1,0 +1,13 @@
+[Warning: Your Hessian is not symmetric. Resetting H=(H+H')/2.] 
+[> In quadprog (line 361)
+In run_qp_numeric_trial (line 32)] 
+{Error using jsonencode
+Unable to encode sparse objects of class double as JSON-formatted text.
+
+Error in run_qp_numeric_trial>writeJson (line 58)
+fid=fopen(path,'w'); assert(fid>=0); c=onCleanup(@()fclose(fid)); fwrite(fid,jsonencode(value,'PrettyPrint',true),'char');
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_qp_numeric_trial (line 54)
+writeJson(path,result);
+^^^^^^^^^^^^^^^^^^^^^^
+} 

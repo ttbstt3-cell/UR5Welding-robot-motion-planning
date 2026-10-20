@@ -1,0 +1,4 @@
+algorithm,passCount,runCount,successRatePct,medianSuccessTimeSec,medianIKCalls,medianFinalPoints,medianExecutionPoints,medianTcpErrorMm,medianJumpDeg
+Fixed-80,12,30,40,9.3505505,1286,80,80,1.95509781229739,12.5803717957
+Fixed-16,13,30,43.3333333333333,2.332269,326,16,16,2.19990980975175,12.6703822647471
+A-ARC-IK,24,30,80,3.1515335,364.5,16,22,0.331626220048314,8.70272948278236

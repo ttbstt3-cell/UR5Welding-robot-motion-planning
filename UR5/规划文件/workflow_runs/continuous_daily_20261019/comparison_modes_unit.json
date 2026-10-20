@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "scope": "SYNTHETIC_HOLD_PATH_UNIT_TEST_NOT_UR5_CERTIFICATION",
+  "default_four_comparisons_preserved": true,
+  "daily_only_C_audited": true,
+  "hybrid_C_and_D_audits_preserved": true,
+  "same_generated_velocities": true,
+  "same_Hybrid_D_velocities_and_audit": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

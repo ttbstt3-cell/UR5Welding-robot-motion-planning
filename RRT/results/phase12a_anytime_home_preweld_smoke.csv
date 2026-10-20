@@ -1,0 +1,5 @@
+taskID,description,algorithm,seed,effectiveSeed,plannerResolutionDeg,validationResolutionDeg,maxPlanningTimeSec,success,certifiedSuccess,outcome,planningTime_ms,firstSolutionTime_ms,firstPathLengthL2_rad,finalBestPathLengthL2_rad,bestPathLengthAt5s,bestPathLengthAt10s,bestPathLengthAt15s,bestPathLengthAt20s,bestPathLengthAt30s,totalJointMotion_rad,nodeCount,edgeCollisionChecks,collisionConfigurationChecks,candidateCount,candidateValidationFailures,stateCacheHits,edgeCacheHits
+T01_Safe_to_PreWeld,qHome(qSafe) -> qPreWeld,RRT-Connect,1,20260917,2,0.5,2,1,0,timeout_with_solution,2003.678,2003.678,5.70177200025913,5.70177200025913,NaN,NaN,NaN,NaN,NaN,11.6042959872351,39,108,480,1,1,65,28
+T01_Safe_to_PreWeld,qHome(qSafe) -> qPreWeld,Bi-RRT*,1,20260917,2,0.5,2,0,0,timeout,2003.154,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,8,26,514,0,0,24,6
+T01_Safe_to_PreWeld,qHome(qSafe) -> qPreWeld,ClassGoal-Lite,1,20260917,2,0.5,2,0,0,timeout,2000.999,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1,28,518,0,0,19,12
+T01_Safe_to_PreWeld,qHome(qSafe) -> qPreWeld,Full Classified-RRT*,1,20260917,2,0.5,2,0,0,timeout,2002.04,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1,34,527,0,0,19,18

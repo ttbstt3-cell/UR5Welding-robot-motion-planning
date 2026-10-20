@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="xMate_robot">
+
+  <!-- 启动参数（launch.py 会传 robot_type） -->
+  <xacro:arg name="robot_type" default="CR7"/>  <!-- 可选: CR7, CR12, CR18, CR20, CR35, SR4, ... -->
+  <xacro:arg name="robot_ip" default="192.168.21.10"/>
+  <xacro:arg name="local_ip" default="192.168.21.131"/>
+  <xacro:arg name="use_fake_hardware" default="false"/>
+
+  <!-- 引入宏文件 -->
+  <xacro:include filename="$(find rokae_description)/urdf/xMate_macro.xacro"/>
+
+  <!-- 先把 launch 传入的 robot_type 映射为可用于表达式的 property -->
+  <xacro:property name="robot_type_prop" value="$(arg robot_type)"/>
+
+  <!-- 映射出 xMate_type（默认 CR7，再按条件覆盖） -->
+  <xacro:property name="xMate_type" value="xMateCR7"/>
+  <xacro:if value="${robot_type_prop == 'SR4'}">
+    <xacro:property name="xMate_type" value="xMateSR4"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'Pro3'}">
+    <xacro:property name="xMate_type" value="xMatePro3"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'Pro7'}">
+    <xacro:property name="xMate_type" value="xMatePro7"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'ER7'}">
+    <xacro:property name="xMate_type" value="xMateER7"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'AR5L'}">
+    <xacro:property name="xMate_type" value="AR5L"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'AR5R'}">
+    <xacro:property name="xMate_type" value="AR5R"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'SR5'}">
+    <xacro:property name="xMate_type" value="xMateSR5"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'CR12'}">
+    <xacro:property name="xMate_type" value="xMateCR12"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'CR18'}">
+    <xacro:property name="xMate_type" value="xMateCR18"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'CR20'}">
+    <xacro:property name="xMate_type" value="xMateCR20"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'CR35'}">
+    <xacro:property name="xMate_type" value="xMateCR35"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'ER3'}">
+    <xacro:property name="xMate_type" value="xMateER3"/>
+  </xacro:if>
+  <xacro:if value="${robot_type_prop == 'SR3'}">
+    <xacro:property name="xMate_type" value="xMateSR3"/>
+  </xacro:if>
+
+
+  <!-- 调用总宏（只传 xMate_type，内部再按机型 include/调用具体实现） -->
+  <xacro:rokae_robot
+      xMate_type="${xMate_type}"
+      robot_ip="$(arg robot_ip)"
+      local_ip="$(arg local_ip)"
+      use_fake_hardware="$(arg use_fake_hardware)"/>
+</robot>

@@ -1,0 +1,16 @@
+{
+  "pass_all": true,
+  "actual_report": "/home/ttbstt/jixiebi/UR5/\u89c4\u5212\u6587\u4ef6/workflow_runs/prepare_20261016_145333_894143/report.json",
+  "restart_load_pass": true,
+  "display_fk_and_collision_pass": true,
+  "report_button_pass": true,
+  "false_pass_rejected": [
+    "sync",
+    "orientation",
+    "collision",
+    "versions",
+    "execution_claim"
+  ],
+  "executionReady": false,
+  "robot_motion": "NO"
+}

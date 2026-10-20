@@ -1,0 +1,77 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "boundaries_before": [
+    {
+      "joint_delta_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tcp_position_delta_mm": 5.0800909318664411E-6,
+      "tcp_orientation_delta_deg": 2.4148365394514667E-6,
+      "velocity_jump": [
+        -0.05492363928635205,
+        -0.060955994098943138,
+        0.071398037331217593,
+        0.057486158468759881,
+        0.050091918323009278,
+        -0.06067295415422589
+      ],
+      "acceleration_jump": [
+        -0.023939993502545984,
+        -0.010777452507507392,
+        0.027182878484662474,
+        -0.0022113075900673123,
+        0.019358343393363363,
+        -0.069309131049306513
+      ]
+    },
+    {
+      "joint_delta_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tcp_position_delta_mm": 4.2014310199274E-6,
+      "tcp_orientation_delta_deg": 1.7075472925031877E-6,
+      "velocity_jump": [
+        -0.0079921083259580344,
+        1.7522990498644878E-5,
+        0.0020127207130558916,
+        0.0061726130691737288,
+        0.026544078694942047,
+        0.0096248631962006122
+      ],
+      "acceleration_jump": [
+        0.2454266663383855,
+        -0.31339701448650104,
+        0.546370139288054,
+        0.46864759872860812,
+        -0.41142153403746956,
+        0.10756726118504994
+      ]
+    }
+  ],
+  "local_transitions": [],
+  "hybrid_velocity_source": "Existing D, identical q/TCP/time; full audit repeated",
+  "velocity_optimization": {
+    "pass": false,
+    "exitflag": -2,
+    "weld_node_velocities_fixed": true,
+    "failure_reason": "Boundary velocity/acceleration continuity infeasible under fixed weld nodes/timestamps"
+  },
+  "failure_reason": "Boundary velocity/acceleration continuity infeasible under fixed weld nodes/timestamps",
+  "failure_identifier": "PREPARE:Velocity",
+  "planning_time": 1.468169
+}

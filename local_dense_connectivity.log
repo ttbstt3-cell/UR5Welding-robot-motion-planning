@@ -1,0 +1,86 @@
+
+====================================================
+LOCAL DENSE CONNECTIVITY ANALYSIS
+Dense interval subdivisions : 4
+Travel/roll local grid     : [-30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30] deg
+Hard joint-step limit      : 15.0 deg
+Only failed local windows; main planner unchanged.
+====================================================
+
+[1/3] /home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_arc_ik_multigrid_corrected_runs/multigrid_seed20269018_grid0_uniform.mat
+  dense layer  1/17 (base 13.00): states=8 IK=2704 accepted=8
+  dense layer  2/17 (base 13.25): states=7 IK=2704 accepted=7
+  dense layer  3/17 (base 13.50): states=8 IK=2704 accepted=8
+  dense layer  4/17 (base 13.75): states=6 IK=2704 accepted=6
+  dense layer  5/17 (base 14.00): states=9 IK=2704 accepted=9
+  dense layer  6/17 (base 14.25): states=7 IK=2704 accepted=7
+  dense layer  7/17 (base 14.50): states=8 IK=2704 accepted=8
+  dense layer  8/17 (base 14.75): states=5 IK=2704 accepted=5
+  dense layer  9/17 (base 15.00): states=6 IK=2704 accepted=6
+  dense layer 10/17 (base 15.25): states=8 IK=2704 accepted=8
+  dense layer 11/17 (base 15.50): states=7 IK=2704 accepted=7
+  dense layer 12/17 (base 15.75): states=6 IK=2704 accepted=6
+  dense layer 13/17 (base 16.00): states=7 IK=2704 accepted=7
+  dense layer 14/17 (base 16.25): states=6 IK=2704 accepted=6
+  dense layer 15/17 (base 16.50): states=5 IK=2704 accepted=5
+  dense layer 16/17 (base 16.75): states=6 IK=2704 accepted=6
+  dense layer 17/17 (base 17.00): states=7 IK=2704 accepted=7
+  seed=20269018, original fail=15, dense layers=17
+  node counts      : [[8 7 8 6 9 7 8 5 6 8 7 6 7 6 5 6 7]]
+  forward reachable: [[2 2 2 2 2 2 2 1 1 2 2 2 2 2 1 1 1]]
+  backward reachable: [[5 5 5 5 5 5 5 5 5 6 6 6 6 5 5 6 7]]
+  complete local chain=1, diagnosis=DENSE_LOCAL_CHAIN_EXISTS
+
+[2/3] /home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_arc_ik_multigrid_corrected_runs/multigrid_seed20269019_grid0_uniform.mat
+  dense layer  1/17 (base 9.00): states=22 IK=2704 accepted=22
+  dense layer  2/17 (base 9.25): states=24 IK=2704 accepted=24
+  dense layer  3/17 (base 9.50): states=23 IK=2704 accepted=23
+  dense layer  4/17 (base 9.75): states=23 IK=2704 accepted=23
+  dense layer  5/17 (base 10.00): states=24 IK=2704 accepted=24
+  dense layer  6/17 (base 10.25): states=24 IK=2704 accepted=24
+  dense layer  7/17 (base 10.50): states=23 IK=2704 accepted=23
+  dense layer  8/17 (base 10.75): states=25 IK=2704 accepted=25
+  dense layer  9/17 (base 11.00): states=24 IK=2704 accepted=24
+  dense layer 10/17 (base 11.25): states=26 IK=2704 accepted=26
+  dense layer 11/17 (base 11.50): states=24 IK=2704 accepted=24
+  dense layer 12/17 (base 11.75): states=21 IK=2704 accepted=21
+  dense layer 13/17 (base 12.00): states=23 IK=2704 accepted=23
+  dense layer 14/17 (base 12.25): states=24 IK=2704 accepted=24
+  dense layer 15/17 (base 12.50): states=26 IK=2704 accepted=26
+  dense layer 16/17 (base 12.75): states=22 IK=2704 accepted=22
+  dense layer 17/17 (base 13.00): states=22 IK=2704 accepted=22
+  seed=20269019, original fail=11, dense layers=17
+  node counts      : [[22 24 23 23 24 24 23 25 24 26 24 21 23 24 26 22 22]]
+  forward reachable: [[8 15 16 15 15 18 16 14 14 15 14 14 15 14 16 15 14]]
+  backward reachable: [[19 19 20 18 17 20 19 17 18 19 18 18 22 20 23 21 22]]
+  complete local chain=1, diagnosis=DENSE_LOCAL_CHAIN_EXISTS
+
+[3/3] /home/ttbstt/jixiebi/UR5/matlab仿真/adaptive_arc_ik_multigrid_corrected_runs/multigrid_seed20269022_grid0_uniform.mat
+  dense layer  1/17 (base 15.00): states=8 IK=2704 accepted=8
+  dense layer  2/17 (base 15.25): states=5 IK=2704 accepted=5
+  dense layer  3/17 (base 15.50): states=6 IK=2704 accepted=6
+  dense layer  4/17 (base 15.75): states=5 IK=2704 accepted=5
+  dense layer  5/17 (base 16.00): states=6 IK=2704 accepted=6
+  dense layer  6/17 (base 16.25): states=4 IK=2704 accepted=4
+  dense layer  7/17 (base 16.50): states=5 IK=2704 accepted=5
+  dense layer  8/17 (base 16.75): states=3 IK=2704 accepted=3
+  dense layer  9/17 (base 17.00): states=4 IK=2704 accepted=4
+  dense layer 10/17 (base 17.25): states=3 IK=2704 accepted=3
+  dense layer 11/17 (base 17.50): states=2 IK=2704 accepted=2
+  dense layer 12/17 (base 17.75): states=4 IK=2704 accepted=4
+  dense layer 13/17 (base 18.00): states=2 IK=2704 accepted=2
+  dense layer 14/17 (base 18.25): states=3 IK=2704 accepted=3
+  dense layer 15/17 (base 18.50): states=2 IK=2704 accepted=2
+  dense layer 16/17 (base 18.75): states=2 IK=2704 accepted=2
+  dense layer 17/17 (base 19.00): states=2 IK=2704 accepted=2
+  seed=20269022, original fail=17, dense layers=17
+  node counts      : [[8 5 6 5 6 4 5 3 4 3 2 4 2 3 2 2 2]]
+  forward reachable: [[4 2 2 2 2 1 1 0 0 0 0 0 0 0 0 0 0]]
+  backward reachable: [[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2]]
+  complete local chain=0, diagnosis=NODES_EXIST_BUT_INTERPOLATED_COLLISION_BLOCKS_EDGES
+
+Saved MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/local_dense_connectivity.mat
+Saved CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/local_dense_connectivity.csv
+seed 20269018: DENSE_LOCAL_CHAIN_EXISTS
+seed 20269019: DENSE_LOCAL_CHAIN_EXISTS
+seed 20269022: NODES_EXIST_BUT_INTERPOLATED_COLLISION_BLOCKS_EDGES

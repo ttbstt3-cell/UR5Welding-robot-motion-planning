@@ -1,0 +1,5 @@
+eventTimeSec,bestPathLengthL2Rad,nodeCount,edgeCollisionChecks,collisionConfigurationChecks,rewireAttempts,rewireSuccesses
+0.766439,5.70177200025913,39,94,215,0,0
+1.103155,5.39981478196558,40,104,306,17,7
+1.351761,5.2123525805104,40,105,374,17,7
+15.255124,5.17336173063258,73,451,4255,333,11

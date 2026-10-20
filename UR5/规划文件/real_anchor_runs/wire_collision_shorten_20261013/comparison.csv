@@ -1,0 +1,5 @@
+shorten_mm,ik_count,wire_collision_count,workpiece_collision_count,final_feasible_count,visual_wire_length_mm,collision_wire_length_mm
+0.0,144,144,144,0,55.941478902,55.941478902
+3.0,144,0,85,16,55.941478902,52.941478902
+5.0,144,0,85,16,55.941478902,50.941478902
+10.0,144,0,85,16,55.941478902,45.941478902

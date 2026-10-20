@@ -1,0 +1,9 @@
+HYBRID cap_fraction=0.90 iteration=1
+HYBRID cap_fraction=0.90 iteration=2
+HYBRID cap_fraction=0.90 iteration=3
+HYBRID cap_fraction=1.00 iteration=1
+HYBRID cap_fraction=1.00 iteration=2
+HYBRID cap_fraction=1.00 iteration=3
+SOLVER_COMPARISON algorithm=active-set D_found=0 elapsed=47.907538 weld_pass=1 executionReady=0
+HYBRID cap_fraction=0.90 iteration=1
+SOLVER_COMPARISON algorithm=interior-point-convex D_found=1 elapsed=504.030547 weld_pass=1 executionReady=0

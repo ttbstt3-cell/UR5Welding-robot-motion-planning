@@ -1,0 +1,5 @@
+task,algorithm,firstSolutionTime_s,planningWallTime_s,firstPathLengthL2_rad,bestPathLengthAt30s_rad,iterationsOrNodes,collisionConfigurationChecks,edgeCollisionChecks,status
+Home -> PreWeld,Original RRT-Connect,12.219553,12.219553,19.8423722606024,19.8423722606024,31,317,60,historical_reproduction
+Home -> PreWeld,RRT-Connect (30 s run),3.057924,3.059556,5.70177200025913,5.70177200025913,39,743,122,anytime_first_solution
+Home -> PreWeld,Bi-RRT* (30 s anytime),8.523588,30.003295,6.34953510763476,5.18451219015354,44,7966,245,anytime_best_so_far
+PostWeld -> Home,Original RRT-Connect,6.786776,6.786776,17.2559298871724,17.2559298871724,11,181,30,historical_reproduction

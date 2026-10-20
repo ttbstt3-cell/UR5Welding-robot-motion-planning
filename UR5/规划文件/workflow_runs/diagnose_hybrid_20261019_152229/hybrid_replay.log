@@ -1,0 +1,7 @@
+HYBRID cap_fraction=0.90 iteration=1
+HYBRID cap_fraction=0.90 iteration=2
+HYBRID cap_fraction=0.90 iteration=3
+HYBRID cap_fraction=1.00 iteration=1
+HYBRID cap_fraction=1.00 iteration=2
+HYBRID cap_fraction=1.00 iteration=3
+HYBRID_REPLAY_DONE found=0 attempts=6

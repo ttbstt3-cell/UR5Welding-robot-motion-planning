@@ -1,0 +1,18 @@
+STRICT HOME COLLISION CHECK: COLLISION/INVALID
+  base_link_inertia <-> EnvironmentCollision_Floor
+FIXED SUPPORT HOME COLLISION CHECK: FREE
+{Error using robotics.manip.internal.error (line 32)
+The Joint property of rigid body object cannot be modified directly, as the
+rigid body has already been added to a robot. Use replaceJoint method in
+rigidBodyTree class instead.
+
+Error in robotics.manip.internal.RigidBody/set.Joint (line 695)
+                robotics.manip.internal.error('rigidbody:BodyAlreadyAddedToRobot', 'Joint', 'replaceJoint');
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in rigidBody/set.Joint (line 474)
+            obj.BodyInternal.Joint = value;
+            ^^^^^^^^^^^^^^^^^^^^^^
+Error in test_fixed_base_floor_contact (line 44)
+base.Joint=joint; replaceBody(bad.robot,base.Name,base);
+^^^^^^^^^^
+} 

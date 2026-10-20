@@ -1,0 +1,5 @@
+FAIR WELD BENCHMARK SUMMARY
+CSV: fair_benchmark_30.csv
+
+Continuation | runs=30 pass=13 | 10/20/30/60=13/13/13/13 | median=8.704900 s | P90=9.324800 s
+Gao-AR-RRT* | runs=30 pass=12 | 10/20/30/60=0/0/0/12 | median=42.976300 s | P90=49.456300 s

@@ -1,0 +1,19 @@
+ACCP endpoint-margin benchmark
+Seeds: 20270001:20270100
+All collision geometry remained enabled; no endpoint collisions were ignored.
+
+ margin_mm  PASS/100  rate(%)  median_time_s  median_IK  median_TCP_seg_mm
+      0.0    0/100      0.0             NaN        NaN                 NaN
+      5.0    0/100      0.0             NaN        NaN                 NaN
+     10.0    0/100      0.0             NaN        NaN                 NaN
+     15.0    0/100      0.0             NaN        NaN                 NaN
+     20.0    0/100      0.0             NaN        NaN                 NaN
+     21.0    0/100      0.0             NaN        NaN                 NaN
+     22.0   59/100     59.0         12.8506     3452.0              0.2620
+     23.0   72/100     72.0          9.8237     1983.0              0.2826
+     24.0   69/100     69.0          4.2260      618.0              0.2814
+     25.0   89/100     89.0          5.8032      618.0              0.3316
+     30.0   69/100     69.0          7.8766     1079.0              0.2689
+
+No tested margin reached 100/100 unless such a row is explicitly present.
+The first tested margin reaching the highest observed rate is benchmark-specific, not a theoretical minimum.

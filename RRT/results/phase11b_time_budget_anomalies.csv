@@ -1,0 +1,1 @@
+variant,family,map,mapName,seed,budget_ms,successByBudget,firstSolutionFound,firstSolutionTime_ms,firstPathLength,bestPathLength,nodeCount,collisionChecks,rewireCount,actualSnapshotTime_ms,budgetOvershoot_ms,pathCollisionFree,anomaly,plannerWallTime_ms,errorMessage

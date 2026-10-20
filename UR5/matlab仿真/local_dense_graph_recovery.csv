@@ -1,0 +1,3 @@
+seed,complete,nodeCollisionFree,edgeCollisionFree,wallTimeSec,algorithmTimeSec,totalPoints,startLayer,firstFailureLayer,finalPointCount,maxJointJumpDeg,outputFile,errorMessage
+20269018,0,0,0,5.445769,1.612334,33,29,30,0,NaN,"/home/ttbstt/jixiebi/UR5/matlab仿真/local_dense_recovery_runs/local_dense_recovery_seed20269018.mat",""
+20269019,0,0,0,8.019059,6.611801,33,25,29,0,NaN,"/home/ttbstt/jixiebi/UR5/matlab仿真/local_dense_recovery_runs/local_dense_recovery_seed20269019.mat",""

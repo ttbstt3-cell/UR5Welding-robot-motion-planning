@@ -1,0 +1,18 @@
+PREVIEW AUDIT nodes=359 queries=7877 nodeHits=0 edgeHitSamples=0 status=PASS minGapMm=0.231724
+              executionReady: 0
+                robot_motion: 'NO'
+            source_directory: '/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/fixed_base_floor_contact_20261015/cold_full_preview_v2'
+     collision_scene_version: 'SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef'
+       dependency_validation: [1×1 struct]
+                      before: [1×1 struct]
+      weld_q_nodes_preserved: 1
+             weld_node_count: 47
+               weld_q_sha256: '2c74066085866408c638a3551ac5b613d64ffdd871ab0ecb3ce409ff1e3e2609'
+    constant_turn_candidates: {[1×1 struct]  [1×1 struct]  [1×1 struct]}
+             approach_trials: {[1×1 struct]}
+                 exit_trials: {[1×1 struct]  [1×1 struct]}
+                       after: [1×1 struct]
+               preview_audit: [1×1 struct]
+              interface_pass: 1
+              output_preview: '/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/interface_branch_repair_20261015/full_raw_trajectory.mat'
+

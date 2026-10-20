@@ -1,0 +1,9 @@
+{
+  "gui_failure_reporting_pass": true,
+  "start": "PASS",
+  "goal": "NOT_GENERATED",
+  "rrt_entered": false,
+  "old_cache_used": false,
+  "robot_motion": "NO",
+  "production_home_unchanged": true
+}

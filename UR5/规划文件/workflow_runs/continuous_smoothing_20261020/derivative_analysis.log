@@ -1,0 +1,4 @@
+                samples: 63701
+    unique_joint_states: 63700
+                   note: 'No rounded-angle or cross-request cache was introduced'
+

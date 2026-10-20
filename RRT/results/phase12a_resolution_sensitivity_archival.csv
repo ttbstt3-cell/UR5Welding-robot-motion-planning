@@ -1,0 +1,73 @@
+caseID,algorithm,seed,plannerResolutionDeg,resolutionDeg,pathStateCount,endpointValid,nodeLimitValid,edgeCount,collisionChecks,collisionFree,pass,failureEdgeIndex,failureSampleIndex,environmentCollision,selfCollision
+"C01_Home_to_PreWeld","RRT-Connect",1,2,2,26,1,1,25,234,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","RRT-Connect",1,2,1,26,1,1,25,436,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","RRT-Connect",1,2,0.5,26,1,1,25,829,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Bi-RRT*",1,2,2,5,1,1,4,120,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Bi-RRT*",1,2,1,5,1,1,4,234,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Bi-RRT*",1,2,0.5,5,1,1,4,463,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","ClassGoal-Lite",1,2,2,8,1,1,7,115,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","ClassGoal-Lite",1,2,1,8,1,1,7,221,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","ClassGoal-Lite",1,2,0.5,8,1,1,7,428,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Full Classified-RRT*",1,2,2,3,1,1,2,93,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Full Classified-RRT*",1,2,1,3,1,1,2,182,1,1,NaN,NaN,0,0
+"C01_Home_to_PreWeld","Full Classified-RRT*",1,2,0.5,3,1,1,2,361,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","RRT-Connect",2,2,2,16,1,1,15,147,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","RRT-Connect",2,2,1,16,1,1,15,276,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","RRT-Connect",2,2,0.5,16,1,1,15,532,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Bi-RRT*",2,2,2,5,1,1,4,110,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Bi-RRT*",2,2,1,5,1,1,4,215,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Bi-RRT*",2,2,0.5,5,1,1,4,424,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","ClassGoal-Lite",2,2,2,4,1,1,3,102,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","ClassGoal-Lite",2,2,1,4,1,1,3,200,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","ClassGoal-Lite",2,2,0.5,4,1,1,3,395,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Full Classified-RRT*",2,2,2,3,1,1,2,102,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Full Classified-RRT*",2,2,1,3,1,1,2,202,1,1,NaN,NaN,0,0
+"C02_PostWeld_to_Home","Full Classified-RRT*",2,2,0.5,3,1,1,2,400,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","RRT-Connect",3,2,2,7,1,1,6,52,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","RRT-Connect",3,2,1,7,1,1,6,97,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","RRT-Connect",3,2,0.5,7,1,1,6,184,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Bi-RRT*",3,2,2,2,1,1,1,3,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Bi-RRT*",3,2,1,2,1,1,1,5,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Bi-RRT*",3,2,0.5,2,1,1,1,8,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","ClassGoal-Lite",3,2,2,2,1,1,1,3,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","ClassGoal-Lite",3,2,1,2,1,1,1,5,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","ClassGoal-Lite",3,2,0.5,2,1,1,1,8,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Full Classified-RRT*",3,2,2,3,1,1,2,16,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Full Classified-RRT*",3,2,1,3,1,1,2,30,1,1,NaN,NaN,0,0
+"C03_PreWeld_to_Point1","Full Classified-RRT*",3,2,0.5,3,1,1,2,57,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","RRT-Connect",4,2,2,6,1,1,5,39,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","RRT-Connect",4,2,1,6,1,1,5,71,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","RRT-Connect",4,2,0.5,6,1,1,5,134,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Bi-RRT*",4,2,2,2,1,1,1,3,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Bi-RRT*",4,2,1,2,1,1,1,5,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Bi-RRT*",4,2,0.5,2,1,1,1,8,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","ClassGoal-Lite",4,2,2,2,1,1,1,3,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","ClassGoal-Lite",4,2,1,2,1,1,1,5,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","ClassGoal-Lite",4,2,0.5,2,1,1,1,8,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Full Classified-RRT*",4,2,2,2,1,1,1,3,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Full Classified-RRT*",4,2,1,2,1,1,1,5,1,1,NaN,NaN,0,0
+"C04_Point80_to_PostWeld","Full Classified-RRT*",4,2,0.5,2,1,1,1,8,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","RRT-Connect",5,2,2,32,1,1,31,281,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","RRT-Connect",5,2,1,32,1,1,31,426,0,0,26,15,1,0
+"C05_Home_to_Point1","RRT-Connect",5,2,0.5,32,1,1,31,819,0,0,26,29,1,0
+"C05_Home_to_Point1","Bi-RRT*",5,2,2,10,1,1,9,123,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","Bi-RRT*",5,2,1,10,1,1,9,231,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","Bi-RRT*",5,2,0.5,10,1,1,9,451,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","ClassGoal-Lite",5,2,2,8,1,1,7,133,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","ClassGoal-Lite",5,2,1,8,1,1,7,256,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","ClassGoal-Lite",5,2,0.5,8,1,1,7,500,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","Full Classified-RRT*",5,2,2,3,1,1,2,109,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","Full Classified-RRT*",5,2,1,3,1,1,2,215,1,1,NaN,NaN,0,0
+"C05_Home_to_Point1","Full Classified-RRT*",5,2,0.5,3,1,1,2,426,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","RRT-Connect",6,2,2,3,1,1,2,20,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","RRT-Connect",6,2,1,3,1,1,2,36,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","RRT-Connect",6,2,0.5,3,1,1,2,68,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Bi-RRT*",6,2,2,3,1,1,2,20,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Bi-RRT*",6,2,1,3,1,1,2,36,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Bi-RRT*",6,2,0.5,3,1,1,2,68,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","ClassGoal-Lite",6,2,2,3,1,1,2,20,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","ClassGoal-Lite",6,2,1,3,1,1,2,36,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","ClassGoal-Lite",6,2,0.5,3,1,1,2,68,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Full Classified-RRT*",6,2,2,3,1,1,2,20,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Full Classified-RRT*",6,2,1,3,1,1,2,36,1,1,NaN,NaN,0,0
+"C06_Simple_5deg","Full Classified-RRT*",6,2,0.5,3,1,1,2,68,1,1,NaN,NaN,0,0

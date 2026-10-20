@@ -1,0 +1,18 @@
+CP_GEOMETRY iter=1 knots=414 pos=13.549146 ori=0.894700 bad=279
+CP_GEOMETRY iter=2 knots=437 pos=4.789390 ori=0.321455 bad=272
+CP_GEOMETRY iter=3 knots=464 pos=1.457607 ori=0.262342 bad=90
+CP_GEOMETRY iter=4 knots=475 pos=0.499399 ori=0.262334 bad=19
+CP_GEOMETRY iter=5 knots=478 pos=0.296003 ori=0.262333 bad=0
+CP_TIME_LOCAL iter=1 nodes=478 T=247.324 accel=12.830514 scale=7.1825
+CP_TIME_LOCAL iter=2 nodes=478 T=324.258 accel=2.120429 scale=2.9199
+CP_TIME_LOCAL iter=3 nodes=478 T=324.524 accel=0.622800 scale=1.5824
+CP_TIME_LOCAL iter=4 nodes=478 T=324.614 accel=0.923004 scale=1.9264
+CP_TIME_LOCAL iter=5 nodes=478 T=324.764 accel=0.762152 scale=1.7506
+CP_TIME_LOCAL iter=6 nodes=478 T=324.922 accel=0.368705 scale=1.2176
+CP_TIME_LOCAL iter=7 nodes=478 T=325.013 accel=0.339576 scale=1.1685
+CP_TIME_LOCAL iter=8 nodes=478 T=325.052 accel=0.362855 scale=1.2079
+CP_TIME_LOCAL iter=9 nodes=478 T=325.076 accel=0.279521 scale=1.0601
+CP_TIME_LOCAL iter=10 nodes=478 T=325.085 accel=0.263927 scale=1.0301
+CP_TIME_LOCAL iter=11 nodes=478 T=325.087 accel=0.247550 scale=1.0000
+CP_TIME iter=12 nodes=478 pos=0.302085 ori=0.274443
+INDEPENDENT_RESULT historical pass=1 time=298.797 executionReady=0

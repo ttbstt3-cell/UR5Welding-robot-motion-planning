@@ -1,0 +1,93 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "stage": "CONTINUOUS_PLANNING_FAILED",
+  "continuous_planning_complete": false,
+  "continuous_planning_status": "CONTINUOUS_PLANNING_FAILED",
+  "physical_validation_status": "PENDING",
+  "servo_validation_status": "PENDING",
+  "architecture_version": "THREE_STAGE_CONTINUOUS_v1",
+  "stage_timings": {
+    "input_sec": 1.288511
+  },
+  "realhome_version": "REALHOME-b8b8b4ede731db946b3da967c8a07ca07fb8b2fa47b19fcbcfd1d193a673c63f",
+  "motion_limits": {
+    "profile_sha256": "8eaa422c8c8856ecc5f7745a8add8716de6cbe6983813a4d6d1afa5651dd03a3",
+    "profile_path": "/home/ttbstt/jixiebi/UR5/robot_motion_limits.json",
+    "source": "UR_PRIMARY_READ_ONLY_CONFIGURATION",
+    "joint_names": [
+      "shoulder_pan_joint",
+      "shoulder_lift_joint",
+      "elbow_joint",
+      "wrist_1_joint",
+      "wrist_2_joint",
+      "wrist_3_joint"
+    ],
+    "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+    "position_lower_rad": [
+      -6.2831853071795862,
+      -6.2831853071795862,
+      -3.1415926535897931,
+      -6.2831853071795862,
+      -6.2831853071795862,
+      -6.2831853071795862
+    ],
+    "position_upper_rad": [
+      6.2831853071795862,
+      6.2831853071795862,
+      3.1415926535897931,
+      6.2831853071795862,
+      6.2831853071795862,
+      6.2831853071795862
+    ],
+    "velocity_rad_s": [
+      3.1415926535897931,
+      3.1415926535897931,
+      3.1415926535897931,
+      3.1415926535897931,
+      3.1415926535897931,
+      3.1415926535897931
+    ],
+    "acceleration_rad_s2": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "scalar_velocity_rad_s": 3.1415926535897931,
+    "scalar_acceleration_rad_s2": 40,
+    "installation_safety_verified": false,
+    "normal_joint_speed_evidence_present": true,
+    "normal_tcp_speed_m_s": 1.5,
+    "payload_acceleration_verified": false,
+    "status": "OFFLINE_LIMITS_AVAILABLE_EXECUTION_INCREASE_PENDING",
+    "note": "Configuration ceilings, not safety settings or recommended operating speeds"
+  },
+  "failure_reason": "Undefined function 'checkEnvironmentCollision' for input arguments of type 'rigidBodyTree'.",
+  "failed_stage": "GEOMETRIC_CONSISTENCY",
+  "failure_identifier": "MATLAB:UndefinedFunction",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/check_scene_environment_collision.m",
+      "name": "check_scene_environment_collision",
+      "line": 10
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/hmi_continuous_geometry.m",
+      "name": "hmi_continuous_geometry",
+      "line": 60
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/prepare_hmi_continuous_request.m",
+      "name": "prepare_hmi_continuous_request",
+      "line": 30
+    }
+  ],
+  "planning_time": 2.950489
+}

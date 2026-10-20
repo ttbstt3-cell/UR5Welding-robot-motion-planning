@@ -1,0 +1,29 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "stage": "CONTINUOUS_PLANNING_FAILED",
+  "continuous_planning_complete": false,
+  "continuous_planning_status": "CONTINUOUS_PLANNING_FAILED",
+  "physical_validation_status": "PENDING",
+  "servo_validation_status": "PENDING",
+  "deferred_weld_timing": {
+    "requested": false,
+    "algorithm_time_sec": 0.000295,
+    "stage": "Adaptive Time Scaling",
+    "executionReady": false,
+    "robot_motion": "NO"
+  },
+  "failure_reason": "approach numeric path violates joint limits; regenerate its pinned branch",
+  "failed_stage": "INTERFACE_GEOMETRY",
+  "failure_identifier": "PREPARE:InterfaceLimits",
+  "failure_stack": {
+    "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/prepare_hmi_continuous_request.m",
+    "name": "prepare_hmi_continuous_request",
+    "line": 28
+  },
+  "planning_time": 1.459129
+}

@@ -1,0 +1,15 @@
+{
+  "status": "DECOMPOSED_ALIGNMENT_REVIEW_REQUIRED",
+  "source_sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "source_vertex_count": 198910,
+  "boundary_or_nonmanifold_edge_count": 20,
+  "component_count": 10,
+  "component_volume_sum_m3_overlap_not_removed": 0.0004127871445260624,
+  "surface_vertex_sample_count": 20000,
+  "max_convex_halfspace_violation_mm": 0.750874272883395,
+  "sample_fraction_inside_union": 0.99725,
+  "coverage_note": "Sampled normalized plane violation only; not Euclidean distance, no automatic collision PASS.",
+  "wire_status": "DISABLED_UNVERIFIED",
+  "physical_mount_status": "NOT_CONFIRMED",
+  "robot_motion": "NO"
+}

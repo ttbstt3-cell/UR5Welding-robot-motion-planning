@@ -1,0 +1,16 @@
+object,candidate_count
+"WireCollision",144
+"WorkpieceCollision_bottom",144
+"WorkpieceCollision_wall_y1",144
+"WorkpieceCollision_wall_x0",70
+"GunCollisionHull/component_04",55
+"GunCollisionHull/component_10",50
+"GunCollisionHull/component_03",35
+"GunCollisionHull/component_09",24
+"GunCollisionHull/component_01",15
+"GunCollisionHull/component_02",15
+"WorkpieceCollision_wall_x1",15
+"GunCollisionHull/component_08",13
+"GunCollisionHull/component_07",5
+"GunCollisionHull/component_05",0
+"GunCollisionHull/component_06",0

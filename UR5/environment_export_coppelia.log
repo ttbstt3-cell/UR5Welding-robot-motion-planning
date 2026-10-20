@@ -1,0 +1,266 @@
+[CoppeliaSimClient]   loading the CoppeliaSim library...
+[CoppeliaSimClient:loadinfo]   done.
+[CoppeliaSimClient:loadinfo]   launching CoppeliaSim...
+[CoppeliaSim:loadinfo]   Application directory is /opt/coppeliaSim
+[CoppeliaSim:loadinfo]   user settings file is /home/ttbstt/.CoppeliaSim/usrset.txt
+[CoppeliaSim:loadinfo]   CoppeliaSim v4.10.0 (rev. 0), flavor: 1, linux
+[CoppeliaSim:loadinfo]   ds:   0
+[CoppeliaSim:loadinfo]   msnd: 1
+[CoppeliaSim:loadinfo]   ms:   1
+[CoppeliaSim:loadinfo]   midx: 5000-91EB-FFC4-9CCA-F764-C71D
+[CoppeliaSim:loadinfo]   did:  
+[CoppeliaSim:loadinfo]   mid0: 7445-3B4E-3E61-0010-3E62-0101
+[CoppeliaSim:loadinfo]   mid1: 74453B4E3E6100103E62
+[CoppeliaSim:loadinfo]   mid2: 1C85B93283ABDFAE8B2F91CF29311720
+[CoppeliaSim:loadinfo]   mid3: 1484A5178489210EF5F9
+[CoppeliaSim:loadinfo]   k:    
+[CoppeliaSim:loadinfo]   plugin simIK0: loading...
+[CoppeliaSim:loadinfo]   plugin simIK0: done.
+[CoppeliaSim:loadinfo]   primary screen physical dots per inch: 163
+[CoppeliaSim:loadinfo]   display scaling (guessed): 200
+[CoppeliaSim:loadinfo]   simulator launched.
+[CoppeliaSim:loadinfo]   plugin 'BWF': loading...
+[CoppeliaSim:loadinfo]   plugin 'BWF': load succeeded.
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': loading...
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': load succeeded.
+[CoppeliaSim:loadinfo]   sk:   
+[CoppeliaSim:loadinfo]   initializing the sandbox script...
+[sandboxScript:loadinfo]   plugin simZMQ: loading...
+[sandboxScript:loadinfo]   plugin simZMQ: done.
+[sandboxScript:loadinfo]   plugin simSubprocess: loading...
+[sandboxScript:loadinfo]   plugin simSubprocess: done.
+[sandboxScript:info]   Simulator launched, welcome! 
+[CoppeliaSim:loadinfo]   sandbox script initialized.
+[CoppeliaSim:loadinfo]   add-on '3D text generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Add-on edit.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Alias change.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Animation capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'B0 remote Api server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Button action.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Collision check.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Color changer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Commander.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Contact display.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition hacd.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition vhacd.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex hull.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Create dummies on mesh surface.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Define joint group.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Denavit Hartenberg creator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Denavit Hartenberg extractor.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Distance check.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Distribute objects uniformly.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Event viewer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Events capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Events dump exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model auto reload.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model auto save.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model load.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model reload selected.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model save.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Find in scripts.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Find midpoint.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Floor plan importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'GLTF animation exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'GLTF exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Inverse Kinematics generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Isometric scaling.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Joint tool.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'LDraw importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Make objects same appearance.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Measure distance and direction.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh decimation.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh difference.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh intersection.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh subdivision.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh symmetric difference.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh union.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Message viewer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Minimalistic exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Minimalistic importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Motion Planning generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Notepad++ autocompletion.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Pause Stop Simulation on Condition.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Plugin enumerator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point cloud importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point sampler interactive.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point sampler service.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Property explorer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'PyRep.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Referenced handles explorer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Referenced handles highlight.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Screenshot tool.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Script capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'SDF importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Simulation stepper.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Subdivide large triangles.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Surface reconstruction.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Translate to align vertex.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URDF exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URDF importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URL drop service.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Video recorder.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Visualization stream.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'WS remote API server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'ZMQ remote API server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition coacd.py' was loaded.
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: loading...
+[simCmd:warning]   Selected script: Sandbox (Python)
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: done.
+[Connectivity >> WebSocket remote API server@addOnScript:loadinfo]   plugin simWS: loading...
+[Connectivity >> WebSocket remote API server@addOnScript:loadinfo]   plugin simWS: done.
+[Connectivity >> WebSocket remote API server@addOnScript:info]   WebSocket Remote API server starting (port=23071)...
+[Connectivity >> ZMQ remote API server@addOnScript:info]   ZeroMQ Remote API server starting (rpcPort=23070)...
+
+[CoppeliaSim:loadinfo]   external exit request: 4
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: cleanup...
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: done.
+[sandboxScript:info]   Leaving...
+[CoppeliaSim:loadinfo]   plugin simWS: cleanup...
+[CoppeliaSim:loadinfo]   plugin simWS: done.
+[CoppeliaSim:loadinfo]   plugin simSubprocess: cleanup...
+[CoppeliaSim:loadinfo]   plugin simSubprocess: done.
+[CoppeliaSim:loadinfo]   plugin simZMQ: cleanup...
+[CoppeliaSim:loadinfo]   plugin simZMQ: done.
+[CoppeliaSim:loadinfo]   plugin simIK0: cleanup...
+[CoppeliaSim:loadinfo]   plugin simIK0: done.
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': unloading...
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': done.
+[CoppeliaSim:loadinfo]   plugin 'BWF': unloading...
+[CoppeliaSim:loadinfo]   plugin 'BWF': done.
+[CoppeliaSim:loadinfo]   CoppeliaSim ended.
+[CoppeliaSimClient:loadinfo]   unloading the CoppeliaSim library...
+[CoppeliaSimClient]   done.
+[CoppeliaSimClient]   loading the CoppeliaSim library...
+[CoppeliaSimClient:loadinfo]   done.
+[CoppeliaSimClient:loadinfo]   launching CoppeliaSim...
+[CoppeliaSim:loadinfo]   Application directory is /opt/coppeliaSim
+[CoppeliaSim:loadinfo]   user settings file is /home/ttbstt/.CoppeliaSim/usrset.txt
+[CoppeliaSim:loadinfo]   CoppeliaSim v4.10.0 (rev. 0), flavor: 1, linux
+[CoppeliaSim:loadinfo]   ds:   0
+[CoppeliaSim:loadinfo]   msnd: 1
+[CoppeliaSim:loadinfo]   ms:   1
+[CoppeliaSim:loadinfo]   midx: 5000-91EB-FFC4-9CCA-F764-C71D
+[CoppeliaSim:loadinfo]   did:  
+[CoppeliaSim:loadinfo]   mid0: 7445-3B4E-3E61-0010-3E62-0101
+[CoppeliaSim:loadinfo]   mid1: 74453B4E3E6100103E62
+[CoppeliaSim:loadinfo]   mid2: 1C85B93283ABDFAE8B2F91CF29311720
+[CoppeliaSim:loadinfo]   mid3: 1484A5178489210EF5F9
+[CoppeliaSim:loadinfo]   k:    
+[CoppeliaSim:loadinfo]   plugin simIK0: loading...
+[CoppeliaSim:loadinfo]   plugin simIK0: done.
+[CoppeliaSim:loadinfo]   primary screen physical dots per inch: 163
+[CoppeliaSim:loadinfo]   display scaling (guessed): 200
+[CoppeliaSim:loadinfo]   simulator launched.
+[CoppeliaSim:loadinfo]   plugin 'BWF': loading...
+[CoppeliaSim:loadinfo]   plugin 'BWF': load succeeded.
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': loading...
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': load succeeded.
+[CoppeliaSim:loadinfo]   sk:   
+[CoppeliaSim:loadinfo]   initializing the sandbox script...
+[sandboxScript:loadinfo]   plugin simZMQ: loading...
+[sandboxScript:loadinfo]   plugin simZMQ: done.
+[sandboxScript:loadinfo]   plugin simSubprocess: loading...
+[sandboxScript:loadinfo]   plugin simSubprocess: done.
+[sandboxScript:info]   Simulator launched, welcome! 
+[CoppeliaSim:loadinfo]   sandbox script initialized.
+[CoppeliaSim:loadinfo]   add-on '3D text generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Add-on edit.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Alias change.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Animation capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'B0 remote Api server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Button action.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Collision check.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Color changer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Commander.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Contact display.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition hacd.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition vhacd.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex hull.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Create dummies on mesh surface.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Define joint group.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Denavit Hartenberg creator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Denavit Hartenberg extractor.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Distance check.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Distribute objects uniformly.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Event viewer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Events capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Events dump exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model auto reload.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model auto save.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model load.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model reload selected.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'External model save.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Find in scripts.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Find midpoint.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Floor plan importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'GLTF animation exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'GLTF exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Inverse Kinematics generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Isometric scaling.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Joint tool.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'LDraw importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Make objects same appearance.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Measure distance and direction.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh decimation.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh difference.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh intersection.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh subdivision.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh symmetric difference.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Mesh union.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Message viewer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Minimalistic exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Minimalistic importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Motion Planning generator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Notepad++ autocompletion.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Pause Stop Simulation on Condition.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Plugin enumerator.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point cloud importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point sampler interactive.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Point sampler service.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Property explorer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'PyRep.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Referenced handles explorer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Referenced handles highlight.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Screenshot tool.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Script capture.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'SDF importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Simulation stepper.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Subdivide large triangles.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Surface reconstruction.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Translate to align vertex.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URDF exporter.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URDF importer.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'URL drop service.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Video recorder.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Visualization stream.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'WS remote API server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'ZMQ remote API server.lua' was loaded.
+[CoppeliaSim:loadinfo]   add-on 'Convex decomposition coacd.py' was loaded.
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: loading...
+[simCmd:warning]   Selected script: Sandbox (Python)
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: done.
+[Connectivity >> WebSocket remote API server@addOnScript:loadinfo]   plugin simWS: loading...
+[Connectivity >> WebSocket remote API server@addOnScript:loadinfo]   plugin simWS: done.
+[Connectivity >> WebSocket remote API server@addOnScript:info]   WebSocket Remote API server starting (port=23071)...
+[Connectivity >> ZMQ remote API server@addOnScript:info]   ZeroMQ Remote API server starting (rpcPort=23070)...
+
+[CoppeliaSim:loadinfo]   external exit request: 4
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: cleanup...
+[Developer tools >> Commander >> Commander@addOnScript:loadinfo]   plugin simCmd: done.
+[sandboxScript:info]   Leaving...
+[CoppeliaSim:loadinfo]   plugin simWS: cleanup...
+[CoppeliaSim:loadinfo]   plugin simWS: done.
+[CoppeliaSim:loadinfo]   plugin simSubprocess: cleanup...
+[CoppeliaSim:loadinfo]   plugin simSubprocess: done.
+[CoppeliaSim:loadinfo]   plugin simZMQ: cleanup...
+[CoppeliaSim:loadinfo]   plugin simZMQ: done.
+[CoppeliaSim:loadinfo]   plugin simIK0: cleanup...
+[CoppeliaSim:loadinfo]   plugin simIK0: done.
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': unloading...
+[CoppeliaSim:loadinfo]   plugin 'RemoteApi': done.
+[CoppeliaSim:loadinfo]   plugin 'BWF': unloading...
+[CoppeliaSim:loadinfo]   plugin 'BWF': done.
+[CoppeliaSim:loadinfo]   CoppeliaSim ended.
+[CoppeliaSimClient:loadinfo]   unloading the CoppeliaSim library...
+[CoppeliaSimClient]   done.

@@ -1,0 +1,17 @@
+{
+  "pass_all": true,
+  "view": "VtkRobotView",
+  "controller_input": "SYNTHETIC non-motion-ready 50 Hz; ROS/RTDE disabled",
+  "matlab": "Real QProcess callbacks, genuine saved result REPLAY; no new MATLAB optimization",
+  "button_return_s": 0.04259702400304377,
+  "max_heartbeat_gap_while_busy_s": 0.06409597099991515,
+  "max_heartbeat_gap_including_completion_s": 2.5384946950362064,
+  "state_notifications": 70,
+  "display_timer_interval_ms": 100,
+  "cancel_to_finished_s": 0.2605455439770594,
+  "completion_delivered": true,
+  "busy_execution_blocked": true,
+  "no_motion_signals": true,
+  "source_and_config_unchanged": true,
+  "executionReady": false
+}

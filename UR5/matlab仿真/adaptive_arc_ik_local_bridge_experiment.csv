@@ -1,0 +1,4 @@
+seed,rightFrontierLayer,completeWindow,forwardFinal,backwardFinal,bridgeFound,completeBridge,bridgeFrom,bridgeTo,maxJointDeltaDeg,bridgeTests,bridgeFree,diagnosis
+20269018,5,1,0,6,0,0,0,0,Inf,165,18,NO_LOCAL_BIDIRECTIONAL_BRIDGE
+20269019,5,1,1,6,1,1,10,11,5.113463,365,42,LOCAL_BIDIRECTIONAL_BRIDGE_FOUND
+20269022,4,0,0,0,0,0,0,0,Inf,91,7,NO_LOCAL_BIDIRECTIONAL_BRIDGE

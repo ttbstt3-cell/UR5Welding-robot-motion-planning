@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "selected": "prepare",
+  "preview": {
+    "path": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-20_15-32-52_867942.mat",
+    "sha256": "0254c01b26ffc4d5a66be1bdc4f261a670a3c5149903fec25e8bfff5acd0d0e7",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-20_15-32-52_867942_report.json",
+    "report_sha256": "ea14932375ff651abd9ef6c90ba7788e5c640d1b5492063b5b9f0ba05e2b67d5",
+    "source_path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261020_153252_867942/full_raw_trajectory.mat",
+    "source_report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261020_153252_867942/report.json",
+    "source_run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261020_153252_867942",
+    "phase": "preview",
+    "realhome_version": "REALHOME-3aff7a1cd79f52495e9a1611ec109078a38c0bf2f4e3d40a9d28caf237af547c",
+    "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+    "published_at": "2026-10-20T15:35:58.448055+08:00",
+    "executionReady": false,
+    "parent_preview_sha256": null
+  },
+  "prepare": {
+    "path": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/保守调试轨迹_50pct_2026-10-20_15-40-06_930602.mat",
+    "sha256": "504cfb6803c455aeb216ea6c6eb3defa2ffa3e3f181af6c2f569ccfc23ed1087",
+    "report": "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/保守调试轨迹_50pct_2026-10-20_15-40-06_930602_report.json",
+    "report_sha256": "8a9367e93558771b643e95334afdee85c5348ac43f733d12d5b3d8dc872db0e3",
+    "source_path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_154006_930602/offline_optimized_trajectory.mat",
+    "source_report": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_154006_930602/report.json",
+    "source_run": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261020_154006_930602",
+    "phase": "prepare",
+    "realhome_version": "REALHOME-3aff7a1cd79f52495e9a1611ec109078a38c0bf2f4e3d40a9d28caf237af547c",
+    "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+    "published_at": "2026-10-20T15:42:28.594511+08:00",
+    "executionReady": false,
+    "parent_preview_sha256": "0254c01b26ffc4d5a66be1bdc4f261a670a3c5149903fec25e8bfff5acd0d0e7"
+  }
+}

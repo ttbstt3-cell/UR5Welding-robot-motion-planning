@@ -1,0 +1,28 @@
+{
+  "task": "RealHome_Validation",
+  "status": "FAIL",
+  "success": false,
+  "realhome_validation_status": "FAIL",
+  "previewReady": false,
+  "executionReady": false,
+  "robot_motion": "NO",
+  "collision_pairs": [],
+  "binding_valid": false,
+  "realhome_version": "REALHOME-4868cca265f4b9cbbbe03adf3d7c9705fb10c8bbdc49c47b8a07d50dbfeecb4c",
+  "collision_scene_version": "SCENE-20241f44dfca1a55fad4a387ca3637ce2793c8ccf450706f65a6cd95714ea3ef",
+  "failure_reason": "Saved HMI RealHome is missing",
+  "failure_identifier": "REAL_SCENE:Home",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/build_real_planning_scene.m",
+      "name": "build_real_planning_scene",
+      "line": 42
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/validate_hmi_realhome_request.m",
+      "name": "validate_hmi_realhome_request",
+      "line": 15
+    }
+  ],
+  "validation_time": 4.452155
+}

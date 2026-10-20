@@ -1,0 +1,881 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-19T11:27:53.429280+08:00",
+  "root": "/home/ttbstt/jixiebi/UR5",
+  "inventory_sha256": "f854882a80caad2834d92a56088474e39193b48d4b4d3ef3a308d561c9501995",
+  "files": [
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170820_806502/trajectory.mat",
+      "size": 4466,
+      "sha256": "87a3497008854059476f6000501116661b8c73dc1c871409d41e44bb36839624",
+      "mtime_ns": 1791450509295074987
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170839_323051/trajectory.mat",
+      "size": 4466,
+      "sha256": "8205ac9bf9297b5368fd06516c0df58b289e4a385397d58641576f86e324bd5a",
+      "mtime_ns": 1791450528377156607
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170936_164181/trajectory.mat",
+      "size": 4466,
+      "sha256": "1500590086c0afa28c6a641c5bfa703eb73db6ee23e7908fe44014761fd6f0cd",
+      "mtime_ns": 1791450585332375866
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/full_approach/trajectory.mat",
+      "size": 1987,
+      "sha256": "fd5d2ccf0484e483ba35b1ec482319630fb3954e3910812ba406ba2f1342b1ff",
+      "mtime_ns": 1791450630119524588
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/full_exit/trajectory.mat",
+      "size": 2431,
+      "sha256": "2af29ab6cdcc8e012b822ee2a4c6195a7dec483a6f8f837b53c0ccb52127f896",
+      "mtime_ns": 1791450666358630975
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/trajectory.mat",
+      "size": 7170,
+      "sha256": "e882c439042b20e14206973653689a61cab42938d486c854e74414384bfe3854",
+      "mtime_ns": 1791450669857640622
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171124_795560/trajectory.mat",
+      "size": 2398,
+      "sha256": "eaf9fcb04d56ab577438b5d4083013ae5ce06b3ab300865a3c7a7265b60fccba",
+      "mtime_ns": 1791450721184770217
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171203_895645/trajectory.mat",
+      "size": 2341,
+      "sha256": "640f010585bf28d987935a3747ca47f128d77a9a765327a733ae03db929682c7",
+      "mtime_ns": 1791450760065854404
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171451_431171/trajectory.mat",
+      "size": 2388,
+      "sha256": "2e54ba7341d4ed3e575e69f85a8838da409215b03e766ff1ac33ad623f12175c",
+      "mtime_ns": 1791450928043100644
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171530_400400/trajectory.mat",
+      "size": 2438,
+      "sha256": "1100348001590142194d2621555398991c2ee6acf474351ad071c040a87eaff5",
+      "mtime_ns": 1791450967081134604
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171614_332550/trajectory.mat",
+      "size": 2438,
+      "sha256": "67bb737f34c9ee72a23b0fdd67ceb87d7ce62680d768658e56a43f9d79694180",
+      "mtime_ns": 1791451011587164263
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171701_252127/trajectory.mat",
+      "size": 4521,
+      "sha256": "4e9e0160233ea73dfcbdb315050c6cab174d4a215843aaabf1d2841b56b5bf8c",
+      "mtime_ns": 1791451029893173841
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/full_approach/trajectory.mat",
+      "size": 1985,
+      "sha256": "f56c214ef3d836f35c0b4164f5e434ed0417fc048bd0099e453d76257318f5db",
+      "mtime_ns": 1791451067703189096
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/full_exit/trajectory.mat",
+      "size": 2431,
+      "sha256": "f8ee1293a5864cfea7ceff92b57af573e9ecd57ad5a27fb591bd2b2cf9141b1c",
+      "mtime_ns": 1791451103665198272
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/trajectory.mat",
+      "size": 7201,
+      "sha256": "df4719360877d63fa731e08c96381e7f55eb86f95ef44dd3fcb816e147139099",
+      "mtime_ns": 1791451107217198909
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171904_621239/trajectory.mat",
+      "size": 4521,
+      "sha256": "62e6c54c711eee46952742fbe56c02536ea8b007f5ee9e100b6b8ee94b6ed33e",
+      "mtime_ns": 1791451153948203060
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/full_approach/trajectory.mat",
+      "size": 1987,
+      "sha256": "9ef9e32b846927cacf7bf4976aca7b33b49b622a884ea55aecc97b1c64570caf",
+      "mtime_ns": 1791451192096200921
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/full_exit/trajectory.mat",
+      "size": 2432,
+      "sha256": "33b7e4dd753024ba7f79c3d4e3b944af23d50d2c0c0429bb72230f3e31d342ae",
+      "mtime_ns": 1791451228433194618
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/trajectory.mat",
+      "size": 7201,
+      "sha256": "f31bf301cb3e554f198d0bd1a6b9b85752f893a65d5406029e47a42ed3808fc7",
+      "mtime_ns": 1791451232183193742
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172043_444479/trajectory.mat",
+      "size": 2438,
+      "sha256": "a52a26be43dffd93eabb452195e6199fd0d85715dd00e34d50aa26f04526a7d8",
+      "mtime_ns": 1791451281201178641
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172123_749752/trajectory.mat",
+      "size": 4521,
+      "sha256": "3c5616a5311345124fc1b8c1a780cf3d01c219487e80817bcb12e1c51370cb1e",
+      "mtime_ns": 1791451293875173678
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172136_837652/trajectory.mat",
+      "size": 2388,
+      "sha256": "6cf2f37429cafd9ecea2a22610838ee2c28651ee477377dbfc31ef190679a6ca",
+      "mtime_ns": 1791451334149155203
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/full_approach/trajectory.mat",
+      "size": 1986,
+      "sha256": "e1bb8b79b3bbc4ca70df3a07a026320ca62f9b5a2fc331462cd82bbb07a371ae",
+      "mtime_ns": 1791451372846133803
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/full_exit/trajectory.mat",
+      "size": 2431,
+      "sha256": "d86e96328a7183ed53571f23ae68541617cf345ce18fa2045be72e712f049d39",
+      "mtime_ns": 1791451408935110855
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/trajectory.mat",
+      "size": 7201,
+      "sha256": "da8f4995dc8c4b3c66c96a435bbbb8697eeec69f743dcdf55129dc68949383d0",
+      "mtime_ns": 1791451412515108429
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261010_105205_168803/trajectory.mat",
+      "size": 3439,
+      "sha256": "375b88349e562fdd407293a757edaa9bf2ffa10d0f340352ee7391d23e05c058",
+      "mtime_ns": 1791600763649790930
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/full_approach/trajectory.mat",
+      "size": 1986,
+      "sha256": "124930e7e42fa60532f4627ac5259bdcf6030ea5ab0e4d345ed369fdefe697f3",
+      "mtime_ns": 1791449954792910240
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/full_exit/trajectory.mat",
+      "size": 2432,
+      "sha256": "25c50acb23d51fba5dce003f37d55999645669217ee5788d43bcbb4436a5ab85",
+      "mtime_ns": 1791449990839477517
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/trajectory.mat",
+      "size": 7170,
+      "sha256": "b6cf390c35747b4b6c0cb22d220d752758fb7975d36fde9d5ee8a0a3aabe8c67",
+      "mtime_ns": 1791449994514532893
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_PostWeld_to_RealHome/trajectory.mat",
+      "size": 2341,
+      "sha256": "47fb01df4f495f19c3e7bfda87fc111468280bebb019c18ce0730eed2360d5ee",
+      "mtime_ns": 1791449694182213037
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_RealHome_to_PreWeld/trajectory.mat",
+      "size": 2398,
+      "sha256": "49cb3ab4352032a3a1efff9e0dff0a500d1b07124eef306fa038bba1f084cebb",
+      "mtime_ns": 1791449657373127611
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Weld_Seam/trajectory.mat",
+      "size": 4466,
+      "sha256": "108f006f2adbd026350db6eb54a4dbc2734f4dfef643eb95a2e7897babc00a1a",
+      "mtime_ns": 1791449620178943739
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/full_approach/trajectory.mat",
+      "size": 1987,
+      "sha256": "f434e0ee2408e05a0e3440e63a8fbea22497ed21b38b7ee37d40bedf84aa6fc7",
+      "mtime_ns": 1791447502261488763
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/full_exit/trajectory.mat",
+      "size": 2431,
+      "sha256": "fccac763a479bd9d279728d0da843e14c5c8ca2907d9f79220f63155cdf81623",
+      "mtime_ns": 1791447533945933973
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/trajectory.mat",
+      "size": 7170,
+      "sha256": "2d35ed2da16bc5a7b60462eb6236f31f129afe56df32d453b4c36bfc94b31a53",
+      "mtime_ns": 1791447537417403596
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_seam_test/trajectory.mat",
+      "size": 4466,
+      "sha256": "eaf2c3a2e86389a188b6339351e2ff55cb56d73cd422d7015323ec9263755505",
+      "mtime_ns": 1791447164424152038
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/20261008_143836_623054.mat",
+      "size": 1685,
+      "sha256": "3bd0f2b0f0f310c2bbe2726b6265377ece254ca5afc68d79d3778b15a396b7c3",
+      "mtime_ns": 1791442392081975327
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_170954_960488.mat",
+      "size": 7170,
+      "sha256": "e882c439042b20e14206973653689a61cab42938d486c854e74414384bfe3854",
+      "mtime_ns": 1791450669857640622
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_171712_578010.mat",
+      "size": 7201,
+      "sha256": "df4719360877d63fa731e08c96381e7f55eb86f95ef44dd3fcb816e147139099",
+      "mtime_ns": 1791451107217198909
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_171916_720017.mat",
+      "size": 7201,
+      "sha256": "f31bf301cb3e554f198d0bd1a6b9b85752f893a65d5406029e47a42ed3808fc7",
+      "mtime_ns": 1791451232183193742
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_172216_700051.mat",
+      "size": 7201,
+      "sha256": "da8f4995dc8c4b3c66c96a435bbbb8697eeec69f743dcdf55129dc68949383d0",
+      "mtime_ns": 1791451412515108429
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_171203_895645.mat",
+      "size": 2341,
+      "sha256": "640f010585bf28d987935a3747ca47f128d77a9a765327a733ae03db929682c7",
+      "mtime_ns": 1791450760065854404
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_171451_431171.mat",
+      "size": 2388,
+      "sha256": "2e54ba7341d4ed3e575e69f85a8838da409215b03e766ff1ac33ad623f12175c",
+      "mtime_ns": 1791450928043100644
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_172136_837652.mat",
+      "size": 2388,
+      "sha256": "6cf2f37429cafd9ecea2a22610838ee2c28651ee477377dbfc31ef190679a6ca",
+      "mtime_ns": 1791451334149155203
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171124_795560.mat",
+      "size": 2398,
+      "sha256": "eaf9fcb04d56ab577438b5d4083013ae5ce06b3ab300865a3c7a7265b60fccba",
+      "mtime_ns": 1791450721184770217
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171530_400400.mat",
+      "size": 2438,
+      "sha256": "1100348001590142194d2621555398991c2ee6acf474351ad071c040a87eaff5",
+      "mtime_ns": 1791450967081134604
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171614_332550.mat",
+      "size": 2438,
+      "sha256": "67bb737f34c9ee72a23b0fdd67ceb87d7ce62680d768658e56a43f9d79694180",
+      "mtime_ns": 1791451011587164263
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_172043_444479.mat",
+      "size": 2438,
+      "sha256": "a52a26be43dffd93eabb452195e6199fd0d85715dd00e34d50aa26f04526a7d8",
+      "mtime_ns": 1791451281201178641
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261010_105205_168803.mat",
+      "size": 3439,
+      "sha256": "375b88349e562fdd407293a757edaa9bf2ffa10d0f340352ee7391d23e05c058",
+      "mtime_ns": 1791600763649790930
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_v1_fastconnect_anytime_rrt_star_20261008_145251_514988.mat",
+      "size": 1983,
+      "sha256": "8a8a067faf53fa8140a0e6a41f498828543c222dde90036f16f843ebff15e580",
+      "mtime_ns": 1791442406148968566
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170820_806502.mat",
+      "size": 4466,
+      "sha256": "87a3497008854059476f6000501116661b8c73dc1c871409d41e44bb36839624",
+      "mtime_ns": 1791450509295074987
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170839_323051.mat",
+      "size": 4466,
+      "sha256": "8205ac9bf9297b5368fd06516c0df58b289e4a385397d58641576f86e324bd5a",
+      "mtime_ns": 1791450528377156607
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170936_164181.mat",
+      "size": 4466,
+      "sha256": "1500590086c0afa28c6a641c5bfa703eb73db6ee23e7908fe44014761fd6f0cd",
+      "mtime_ns": 1791450585332375866
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_171701_252127.mat",
+      "size": 4521,
+      "sha256": "4e9e0160233ea73dfcbdb315050c6cab174d4a215843aaabf1d2841b56b5bf8c",
+      "mtime_ns": 1791451029893173841
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_171904_621239.mat",
+      "size": 4521,
+      "sha256": "62e6c54c711eee46952742fbe56c02536ea8b007f5ee9e100b6b8ee94b6ed33e",
+      "mtime_ns": 1791451153948203060
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_172123_749752.mat",
+      "size": 4521,
+      "sha256": "3c5616a5311345124fc1b8c1a780cf3d01c219487e80817bcb12e1c51370cb1e",
+      "mtime_ns": 1791451293875173678
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/realhome_to_preweld.mat",
+      "size": 2449,
+      "sha256": "be41094ef3d462bc1dcb035b1dc5b872b04417ddb93168192a6cc2304ec8b8f1",
+      "mtime_ns": 1791442353655970460
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/realhome_to_preweld_v1.mat",
+      "size": 1829,
+      "sha256": "1547ed90df8eb95de987cfe07f11b3ca5bac50e2df34b4e783a3816030065fa0",
+      "mtime_ns": 1791442353655970460
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145333_894143/offline_optimized_trajectory.json",
+      "size": 1130964,
+      "sha256": "fac77a5c9652ac71bcc277b8ad691aac0be1857874270696c8f57274cb435ebb",
+      "mtime_ns": 1792134118192995075
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145333_894143/offline_optimized_trajectory.mat",
+      "size": 232522,
+      "sha256": "2f60aa3405c533e9abb06f32e8646fcd783ab2769f67dde0795094d915ee16b7",
+      "mtime_ns": 1792134118145993969
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_091210_620739/offline_optimized_trajectory.json",
+      "size": 1275316,
+      "sha256": "c94f3ea4dab01823e17bd63286fdb335a7e36d559779b7ebfeed0c9ba93103cc",
+      "mtime_ns": 1792372878551351483
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_091210_620739/offline_optimized_trajectory.mat",
+      "size": 260077,
+      "sha256": "9459b2a890a62d8526e4ba88b09ba37fbdd199aa4d9d2184becb859a3c7687c7",
+      "mtime_ns": 1792372878501353626
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_093204_279082/offline_optimized_trajectory.json",
+      "size": 1275316,
+      "sha256": "c94f3ea4dab01823e17bd63286fdb335a7e36d559779b7ebfeed0c9ba93103cc",
+      "mtime_ns": 1792373996011877136
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_093204_279082/offline_optimized_trajectory.mat",
+      "size": 260077,
+      "sha256": "a3b85f7e6ee6a55408a14329a2c72fd9908564f55da6cb9009cf356195c1867d",
+      "mtime_ns": 1792373995958878031
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_103553_826984/offline_optimized_trajectory.json",
+      "size": 1275330,
+      "sha256": "a54888f29446060b8820362a1baf9c9332386650614b3bd80e4c74706ea67f1d",
+      "mtime_ns": 1792377822705484980
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_103553_826984/offline_optimized_trajectory.mat",
+      "size": 260241,
+      "sha256": "9fabc89758f1c19b2b81c87ad9cecbca8f516c1b162b741c33f4878edc314c14",
+      "mtime_ns": 1792377822652480656
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_112929_836447/full_raw_trajectory.mat",
+      "size": 83317,
+      "sha256": "a030be097efd1d0f1d1e6c5eba09708da704b9dae7d853e97f028e1e1fa4e3f4",
+      "mtime_ns": 1791948643910857860
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_121436_257478/full_raw_trajectory.mat",
+      "size": 83318,
+      "sha256": "15a9f998990ba055cdf5751fbde827f1b993c3aaecef1e5d42179fb294e07c63",
+      "mtime_ns": 1791951351544042878
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_185602_486872/full_raw_trajectory.mat",
+      "size": 132427,
+      "sha256": "00f127a8b07413996ab9cfa37166fa8e2a90df721a8033ce183f20fc5c1a3d07",
+      "mtime_ns": 1791975821723870569
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_190649_439402/full_raw_trajectory.mat",
+      "size": 329666,
+      "sha256": "b525c6b93096d46b2b141cdd3ef802befd57dc0a03b16c7c5686dc48d22afa4d",
+      "mtime_ns": 1791976517106541879
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_124729_001415/full_raw_trajectory.mat",
+      "size": 320587,
+      "sha256": "bc4ef26c2f49122d52245ca0a8bc3a7103379e9a09a978f78676c08d53af89c6",
+      "mtime_ns": 1792126646637000466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_142704_413362/full_raw_trajectory.mat",
+      "size": 364476,
+      "sha256": "ecc4c80c7f9683b82992b5f9bc0aa3c6789abb9128153a47b61a739d6101b95a",
+      "mtime_ns": 1792132218975018089
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261017_220611_847885/full_raw_trajectory.mat",
+      "size": 363519,
+      "sha256": "3b6e5f801f97e17c008b8d3485c6b8d2122916f3110e9b733e140876c8d8ffd0",
+      "mtime_ns": 1792246169333822608
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_085945_573233/full_raw_trajectory.mat",
+      "size": 362471,
+      "sha256": "e359f831231c2cec2f100f82b8f3725f2a98e4d45ab6e417595e1ccbd88d16cb",
+      "mtime_ns": 1792371736815564394
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_090735_341342/full_raw_trajectory.mat",
+      "size": 362472,
+      "sha256": "e332fc6bfd48bb7a35956e0ce04749abf3e138d9e2d70808228752cd174cc788",
+      "mtime_ns": 1792372209897254756
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_103229_773681/full_raw_trajectory.mat",
+      "size": 362998,
+      "sha256": "b2a567b6271e9a714046e729e0583b13ebe9e5aa60fefaea1bdb630182d9198e",
+      "mtime_ns": 1792377306735787497
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/轨迹文件/realhome_to_preweld.mat",
+      "size": 2449,
+      "sha256": "be41094ef3d462bc1dcb035b1dc5b872b04417ddb93168192a6cc2304ec8b8f1",
+      "mtime_ns": 1791440162126263096
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/轨迹文件/realhome_to_preweld_v1.mat",
+      "size": 1829,
+      "sha256": "1547ed90df8eb95de987cfe07f11b3ca5bac50e2df34b4e783a3816030065fa0",
+      "mtime_ns": 1791440162556236814
+    }
+  ],
+  "count": 78,
+  "total_bytes": 8953839,
+  "protected_runs": [
+    "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_110448_976674"
+  ],
+  "protected_files": [
+    "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-19_11-04-48_976674.mat",
+    "/home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-19_11-04-48_976674_report.json"
+  ],
+  "scope": "Old daily HMI trajectory payloads only; experiments/models/calibration/logs/reports retained",
+  "recovery": "Desktop Trash",
+  "robot_motion": "NO",
+  "moved": [
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170820_806502/trajectory.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170839_323051/trajectory.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170936_164181/trajectory.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1987
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2431
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_170954_960488/trajectory.mat",
+      "trashed": true,
+      "size": 7170
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171124_795560/trajectory.mat",
+      "trashed": true,
+      "size": 2398
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171203_895645/trajectory.mat",
+      "trashed": true,
+      "size": 2341
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171451_431171/trajectory.mat",
+      "trashed": true,
+      "size": 2388
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171530_400400/trajectory.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171614_332550/trajectory.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171701_252127/trajectory.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1985
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2431
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171712_578010/trajectory.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171904_621239/trajectory.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1987
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2432
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_171916_720017/trajectory.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172043_444479/trajectory.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172123_749752/trajectory.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172136_837652/trajectory.mat",
+      "trashed": true,
+      "size": 2388
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1986
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2431
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261008_172216_700051/trajectory.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_20261010_105205_168803/trajectory.mat",
+      "trashed": true,
+      "size": 3439
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1986
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2432
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Full_Welding_Task/trajectory.mat",
+      "trashed": true,
+      "size": 7170
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_PostWeld_to_RealHome/trajectory.mat",
+      "trashed": true,
+      "size": 2341
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_RealHome_to_PreWeld/trajectory.mat",
+      "trashed": true,
+      "size": 2398
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_Weld_Seam/trajectory.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/full_approach/trajectory.mat",
+      "trashed": true,
+      "size": 1987
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/full_exit/trajectory.mat",
+      "trashed": true,
+      "size": 2431
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_full_test/trajectory.mat",
+      "trashed": true,
+      "size": 7170
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/planning_runs/hmi_weld_seam_test/trajectory.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/20261008_143836_623054.mat",
+      "trashed": true,
+      "size": 1685
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_170954_960488.mat",
+      "trashed": true,
+      "size": 7170
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_171712_578010.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_171916_720017.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_full_welding_task_v1_fastconnect_anytime_rrt_star_hmi_20261008_172216_700051.mat",
+      "trashed": true,
+      "size": 7201
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_171203_895645.mat",
+      "trashed": true,
+      "size": 2341
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_171451_431171.mat",
+      "trashed": true,
+      "size": 2388
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_postweld_to_realhome_v1_fastconnect_anytime_rrt_star_hmi_20261008_172136_837652.mat",
+      "trashed": true,
+      "size": 2388
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171124_795560.mat",
+      "trashed": true,
+      "size": 2398
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171530_400400.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_171614_332550.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261008_172043_444479.mat",
+      "trashed": true,
+      "size": 2438
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_realhome_to_preweld_v1_fastconnect_anytime_rrt_star_hmi_20261010_105205_168803.mat",
+      "trashed": true,
+      "size": 3439
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_v1_fastconnect_anytime_rrt_star_20261008_145251_514988.mat",
+      "trashed": true,
+      "size": 1983
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170820_806502.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170839_323051.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_170936_164181.mat",
+      "trashed": true,
+      "size": 4466
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_171701_252127.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_171904_621239.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/online_weld_seam_v1_fastconnect_anytime_rrt_star_hmi_20261008_172123_749752.mat",
+      "trashed": true,
+      "size": 4521
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/realhome_to_preweld.mat",
+      "trashed": true,
+      "size": 2449
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/realhome_to_preweld_v1.mat",
+      "trashed": true,
+      "size": 1829
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145333_894143/offline_optimized_trajectory.json",
+      "trashed": true,
+      "size": 1130964
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261016_145333_894143/offline_optimized_trajectory.mat",
+      "trashed": true,
+      "size": 232522
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_091210_620739/offline_optimized_trajectory.json",
+      "trashed": true,
+      "size": 1275316
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_091210_620739/offline_optimized_trajectory.mat",
+      "trashed": true,
+      "size": 260077
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_093204_279082/offline_optimized_trajectory.json",
+      "trashed": true,
+      "size": 1275316
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_093204_279082/offline_optimized_trajectory.mat",
+      "trashed": true,
+      "size": 260077
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_103553_826984/offline_optimized_trajectory.json",
+      "trashed": true,
+      "size": 1275330
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/prepare_20261019_103553_826984/offline_optimized_trajectory.mat",
+      "trashed": true,
+      "size": 260241
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_112929_836447/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 83317
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_121436_257478/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 83318
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_185602_486872/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 132427
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261014_190649_439402/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 329666
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_124729_001415/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 320587
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261016_142704_413362/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 364476
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261017_220611_847885/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 363519
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_085945_573233/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 362471
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_090735_341342/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 362472
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/preview_20261019_103229_773681/full_raw_trajectory.mat",
+      "trashed": true,
+      "size": 362998
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/轨迹文件/realhome_to_preweld.mat",
+      "trashed": true,
+      "size": 2449
+    },
+    {
+      "path": "/home/ttbstt/jixiebi/UR5/轨迹文件/realhome_to_preweld_v1.mat",
+      "trashed": true,
+      "size": 1829
+    }
+  ],
+  "mode": "APPLY_TO_TRASH"
+}

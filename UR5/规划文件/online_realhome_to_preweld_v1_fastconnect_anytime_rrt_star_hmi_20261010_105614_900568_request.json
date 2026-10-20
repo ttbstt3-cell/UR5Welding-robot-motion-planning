@@ -1,0 +1,26 @@
+{
+ "request_id": "20261010_105614_900568",
+ "task": "RealHome_to_PreWeld",
+ "qStart": [
+  4.946811676025391,
+  -1.8068793455706995,
+  1.0678586959838867,
+  1.4197841882705688,
+  1.4138842821121216,
+  -0.07496101060976201
+ ],
+ "qGoal": [
+  -0.014894647819507709,
+  4.583678798565408,
+  -1.5827839940260957,
+  4.875095607430998,
+  -4.481179136277017,
+  -3.8834036633603373
+ ],
+ "algorithm": "Constraint-aware Bidirectional RRT* (CBi-RRT*)",
+ "seed": 20260917,
+ "maxPlanningTimeSec": 30.0,
+ "start_source": "real_home",
+ "endpoint_source": "Saved RealHome -> weld_anchor_points.json:qPreWeld",
+ "weld_algorithm": "ACCP (replan_weld_actual_axis_adaptive_feasibility.m)"
+}

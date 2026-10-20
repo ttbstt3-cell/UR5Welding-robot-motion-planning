@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "calibration_type": "real_gun_mount_adjustment",
+  "coordinate_frame": "URDF flange",
+  "source_sha256": "06f38186eddd712eb239f069878da1d9d307171dc693df3a83c8b086b8d2e21c",
+  "status": "CONFIRMED",
+  "confirmed_by_operator": true,
+  "confirmation_source": "User explicitly confirmed installation direction, position and collision coverage in chat on 2026-10-13",
+  "applied_to_planning_model": true,
+  "T_flange_source": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      2.5055181980135344e-05
+    ],
+    [
+      0.9999999340283433,
+      0.0003632400164056554,
+      0.0,
+      -0.033310343658252674
+    ],
+    [
+      -0.0003632400164056554,
+      0.9999999340283429,
+      0.0,
+      -0.031814766168500715
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_source_nominal": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      2.5055181980135344e-05
+    ],
+    [
+      0.9999999340283433,
+      0.0003632400164056554,
+      0.0,
+      -0.033310343658252674
+    ],
+    [
+      -0.0003632400164056554,
+      0.9999999340283429,
+      0.0,
+      -0.031814766168500715
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "roll_deg": 0.0,
+  "translation_flange_mm": [
+    0,
+    0,
+    0
+  ],
+  "rotation_axis_flange": [
+    1,
+    0,
+    0
+  ],
+  "version": "Areal-HOLES-CONFIRMED-06f38186eddd712e",
+  "requires_replan": true,
+  "created_utc": "2026-10-13T06:56:48.026744+00:00",
+  "alignment_evidence": "/home/ttbstt/jixiebi/UR5/real_gun_geometry/mount_hole_alignment.json"
+}

@@ -1,0 +1,362 @@
+{
+  "before_failure_reproduced": true,
+  "actual_hmi_launch_command": true,
+  "full_current_request_pass": true,
+  "hmi_failure_and_success_replayed": true,
+  "wrong_scene_rejected": true,
+  "loaded_points": 638,
+  "samples": 63701,
+  "planning_time": 145.0223,
+  "metrics": {
+    "schema_version": "ACCP_CONTROLLER_INTERPOLATION_VALIDATION_v1",
+    "time_reference_mode": "FROZEN_CARTESIAN_PATH_MONOTONE_LOCAL_CLOCK_v2",
+    "stage": "Adaptive Time Scaling / controller-equivalent validation",
+    "robot_motion": "NO",
+    "interpolation_mode": "positions_plus_velocities_cubic_hermite",
+    "interpolation_rule_source": "ROS2 joint_trajectory_controller trajectory.hpp behavior verified by offline export audit",
+    "waypoint_count": 638,
+    "sample_count": 63701,
+    "samples_per_segment": 101,
+    "duration_sec": 227.01734475875213,
+    "max_tcp_contour_error_mm": 0.24849652234463399,
+    "rms_tcp_contour_error_mm": 0.03326645926542822,
+    "max_tcp_time_sync_error_mm": 0.286312951578176,
+    "rms_tcp_time_sync_error_mm": 0.05139710769732809,
+    "max_tcp_time_sync_error_time_sec": 185.69879858171157,
+    "max_tcp_orientation_error_deg": 0.2614289391781463,
+    "max_position_error_case": {
+      "time_sec": 185.69879858171157,
+      "path_segment_index": 575,
+      "segment_u": 0.39,
+      "q_rad": [
+        -0.9581105391392076,
+        -1.722131097029083,
+        1.369322352574934,
+        -2.0523824914118287,
+        -1.764820780618019,
+        2.9602879110707097
+      ],
+      "q_deg": [
+        -54.89569019968047,
+        -98.67084362800092,
+        78.4563915954686,
+        -117.59285470444271,
+        -101.11678232639585,
+        169.61200344795043
+      ],
+      "joint_velocity_rad_s": [
+        -0.003674779533776416,
+        0.023647493651694954,
+        -0.02534219022413963,
+        0.038283461277168744,
+        0.042527904934604926,
+        0.01382248822766383
+      ],
+      "joint_acceleration_rad_s2": [
+        -0.02460522082160496,
+        -0.05514471309201276,
+        -0.1287413408992115,
+        -0.011791988764057638,
+        0.02763454634072394,
+        0.25175505960980665
+      ],
+      "actual_TCP_pose": [
+        [
+          -0.9884035442817984,
+          0.08267433133203422,
+          0.12737106653388816,
+          0.41063608642699634
+        ],
+        [
+          -0.06585787605751953,
+          -0.9891914556510808,
+          0.1310076495021879,
+          -0.5679301943173073
+        ],
+        [
+          0.13682534053446282,
+          0.12110003718288725,
+          0.9831650966048029,
+          0.39417906325047675
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          -0.9885139858820575,
+          0.08224610164148329,
+          0.1267898989681222,
+          0.4106377475521735
+        ],
+        [
+          -0.06548419379985869,
+          -0.9892001994324933,
+          0.13112889004753486,
+          -0.5679321085505177
+        ],
+        [
+          0.1362054333642766,
+          0.12132000744928571,
+          0.9832240516355135,
+          0.39446536498399537
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.286312951578176,
+      "orientation_error_deg": 0.04295073454109059,
+      "contour_error_mm": 0.2164424368415428
+    },
+    "max_orientation_error_case": {
+      "time_sec": 95.43352079844944,
+      "path_segment_index": 281,
+      "segment_u": 0.36,
+      "q_rad": [
+        -1.4718044364948761,
+        -0.8218774451576436,
+        0.5902294400488386,
+        -1.0848297987662345,
+        -1.444130705404224,
+        -0.022347542740640727
+      ],
+      "q_deg": [
+        -84.32818247978679,
+        -47.09010888452776,
+        33.8176558591683,
+        -62.15616895933164,
+        -82.74259448491246,
+        -1.2804198815269345
+      ],
+      "joint_velocity_rad_s": [
+        0.02232548958821737,
+        -0.06503069835493691,
+        0.10600317672382378,
+        -0.08896896720659307,
+        -0.04211545344844222,
+        -0.02165021657917023
+      ],
+      "joint_acceleration_rad_s2": [
+        -0.03680277832072422,
+        -0.17926106071490494,
+        0.3238573843556428,
+        -0.2198338028731323,
+        0.045821420186289166,
+        -0.025650943787288067
+      ],
+      "actual_TCP_pose": [
+        [
+          0.8711339847577051,
+          0.486343044279394,
+          -0.06779398115773201,
+          0.24091893055211666
+        ],
+        [
+          -0.39228268788946885,
+          0.7723041544357201,
+          0.4996604705432886,
+          -0.6406895221656556
+        ],
+        [
+          0.2953639676439508,
+          -0.4086768115790015,
+          0.863564352144786,
+          0.008957502116035687
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          0.8698462784701968,
+          0.4883936434950347,
+          -0.06956364585898146,
+          0.24079831725065742
+        ],
+        [
+          -0.3923050870327219,
+          0.770311819937445,
+          0.5027090796404118,
+          -0.6406652110011974
+        ],
+        [
+          0.2991056176667322,
+          -0.4099894499353688,
+          0.8616521806517385,
+          0.008914374975107525
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.13037849320667885,
+      "orientation_error_deg": 0.2614289391781463,
+      "contour_error_mm": 0.08278877112807981
+    },
+    "max_contour_error_case": {
+      "time_sec": 51.32151979968069,
+      "path_segment_index": 99,
+      "segment_u": 0.32,
+      "q_rad": [
+        -1.7239490136994828,
+        -1.9381463239430514,
+        1.088709247964359,
+        -1.6346180188042556,
+        -1.0362295610276029,
+        3.0356963064243816
+      ],
+      "q_deg": [
+        -98.7750025807213,
+        -111.0476044407321,
+        62.378445025219584,
+        -93.65671359352008,
+        -59.37158045357562,
+        173.93258624156977
+      ],
+      "joint_velocity_rad_s": [
+        -0.030043031526516693,
+        -0.060853512741475074,
+        -0.04643334704146197,
+        -0.004497059137286502,
+        -0.020774651107191358,
+        -0.025660125077875594
+      ],
+      "joint_acceleration_rad_s2": [
+        0.022258903825655738,
+        -0.009369345876171347,
+        0.004844171072959476,
+        -0.0005244985230123029,
+        -0.022852780744510234,
+        0.013816634173133308
+      ],
+      "actual_TCP_pose": [
+        [
+          -0.9125706549361734,
+          -0.20003714227953234,
+          -0.35665100793072624,
+          0.2662178939208472
+        ],
+        [
+          0.17554782331812727,
+          -0.9793660613655746,
+          0.10012531934305718,
+          -0.5277013561196865
+        ],
+        [
+          -0.3693206756703885,
+          0.028762120122131696,
+          0.9288568129525927,
+          0.591489250545514
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "expected_TCP_pose": [
+        [
+          -0.9125819234387278,
+          -0.20011408847065945,
+          -0.35657900191742914,
+          0.2663076780868298
+        ],
+        [
+          0.17567772912798765,
+          -0.9793543182132982,
+          0.10001227367378641,
+          -0.5274842330043322
+        ],
+        [
+          -0.3692310502941299,
+          0.02862640376512611,
+          0.9288966360721572,
+          0.5914048833749834
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frame_id": "world",
+      "position_error_mm": 0.2496426709232135,
+      "orientation_error_deg": 0.010647062241943332,
+      "contour_error_mm": 0.24849652234463399
+    },
+    "max_joint_velocity_rad_per_sec": 0.16956664249118503,
+    "max_joint_velocity_time_sec": 127.75969295392834,
+    "max_joint_velocity_joint": 6,
+    "max_joint_acceleration_rad_per_sec2": 0.652382402842333,
+    "max_joint_acceleration_time_sec": 125.20553434003527,
+    "max_joint_acceleration_joint": 6,
+    "joint_limits_pass": true,
+    "collision_pass": true,
+    "collision_sample_count": 63701,
+    "min_positive_clearance_mm": 0.3007158578924288,
+    "first_collision": [],
+    "acceptance": {
+      "max_tcp_contour_error_mm": 0.5,
+      "max_tcp_time_sync_error_mm": 0.5,
+      "max_tcp_orientation_error_deg": 0.5,
+      "max_joint_velocity_rad_per_sec": 3.141592653589793,
+      "max_joint_acceleration_rad_per_sec2": 40
+    },
+    "complete": true,
+    "executionReady": false,
+    "failureReason": "",
+    "note": "Dense offline audit only. No FollowJointTrajectory goal was created or sent.",
+    "performance": {
+      "input_sec": 0.002119,
+      "sampling_sec": 0.04607,
+      "reference_sec": 2.145012,
+      "fk_sec": 7.762811,
+      "pose_error_sec": 0.057236,
+      "contour_sec": 0.058384,
+      "collision_sec": 115.161425,
+      "summary_sec": 0.006714,
+      "total_sec": 125.240051,
+      "fk_calls": 63701,
+      "environment_calls": 0,
+      "self_calls": 0,
+      "combined_collision_calls": 63701,
+      "collision_coverage": "Same full pair matrices; environment and self in one exhaustive call",
+      "collision_batch": {
+        "mode": "parallel_process_combined",
+        "workers": 4,
+        "startup_sec": 6.980676,
+        "query_sec": 103.703983,
+        "processed_states": 63701,
+        "combined_calls": 63701,
+        "parallel_unavailable_reason": ""
+      }
+    },
+    "analytic_extrema_pass": true
+  },
+  "production_changes": [
+    "/home/ttbstt/jixiebi/UR5/matlab仿真/prepare_hmi_continuous_request.m"
+  ],
+  "motion_signals": 0,
+  "user_config_and_index_unchanged": true,
+  "executionReady": false,
+  "robot_motion": "NO"
+}

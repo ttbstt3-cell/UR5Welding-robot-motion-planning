@@ -1,0 +1,122 @@
+
+====================================================
+END-MARGIN BENCHMARK: 0.000 mm (100 seeds)
+====================================================
+[  1/100] margin=0 mm seed=20270001 ... CACHED FAIL
+[  2/100] margin=0 mm seed=20270002 ... CACHED FAIL
+[  3/100] margin=0 mm seed=20270003 ... CACHED FAIL
+[  4/100] margin=0 mm seed=20270004 ... CACHED FAIL
+[  5/100] margin=0 mm seed=20270005 ... CACHED FAIL
+[  6/100] margin=0 mm seed=20270006 ... CACHED FAIL
+[  7/100] margin=0 mm seed=20270007 ... CACHED FAIL
+[  8/100] margin=0 mm seed=20270008 ... CACHED FAIL
+[  9/100] margin=0 mm seed=20270009 ... CACHED FAIL
+[ 10/100] margin=0 mm seed=20270010 ... CACHED FAIL
+[ 11/100] margin=0 mm seed=20270011 ... CACHED FAIL
+[ 12/100] margin=0 mm seed=20270012 ... CACHED FAIL
+[ 13/100] margin=0 mm seed=20270013 ... CACHED FAIL
+[ 14/100] margin=0 mm seed=20270014 ... CACHED FAIL
+[ 15/100] margin=0 mm seed=20270015 ... CACHED FAIL
+[ 16/100] margin=0 mm seed=20270016 ... CACHED FAIL
+[ 17/100] margin=0 mm seed=20270017 ... CACHED FAIL
+[ 18/100] margin=0 mm seed=20270018 ... CACHED FAIL
+[ 19/100] margin=0 mm seed=20270019 ... CACHED FAIL
+[ 20/100] margin=0 mm seed=20270020 ... CACHED FAIL
+[ 21/100] margin=0 mm seed=20270021 ... CACHED FAIL
+[ 22/100] margin=0 mm seed=20270022 ... CACHED FAIL
+[ 23/100] margin=0 mm seed=20270023 ... CACHED FAIL
+[ 24/100] margin=0 mm seed=20270024 ... CACHED FAIL
+[ 25/100] margin=0 mm seed=20270025 ... CACHED FAIL
+[ 26/100] margin=0 mm seed=20270026 ... CACHED FAIL
+[ 27/100] margin=0 mm seed=20270027 ... CACHED FAIL
+[ 28/100] margin=0 mm seed=20270028 ... CACHED FAIL
+[ 29/100] margin=0 mm seed=20270029 ... CACHED FAIL
+[ 30/100] margin=0 mm seed=20270030 ... CACHED FAIL
+[ 31/100] margin=0 mm seed=20270031 ... CACHED FAIL
+[ 32/100] margin=0 mm seed=20270032 ... CACHED FAIL
+[ 33/100] margin=0 mm seed=20270033 ... CACHED FAIL
+[ 34/100] margin=0 mm seed=20270034 ... CACHED FAIL
+[ 35/100] margin=0 mm seed=20270035 ... CACHED FAIL
+[ 36/100] margin=0 mm seed=20270036 ... CACHED FAIL
+[ 37/100] margin=0 mm seed=20270037 ... CACHED FAIL
+[ 38/100] margin=0 mm seed=20270038 ... CACHED FAIL
+[ 39/100] margin=0 mm seed=20270039 ... CACHED FAIL
+[ 40/100] margin=0 mm seed=20270040 ... CACHED FAIL
+[ 41/100] margin=0 mm seed=20270041 ... CACHED FAIL
+[ 42/100] margin=0 mm seed=20270042 ... CACHED FAIL
+[ 43/100] margin=0 mm seed=20270043 ... CACHED FAIL
+[ 44/100] margin=0 mm seed=20270044 ... CACHED FAIL
+[ 45/100] margin=0 mm seed=20270045 ... CACHED FAIL
+[ 46/100] margin=0 mm seed=20270046 ... CACHED FAIL
+[ 47/100] margin=0 mm seed=20270047 ... CACHED FAIL
+[ 48/100] margin=0 mm seed=20270048 ... CACHED FAIL
+[ 49/100] margin=0 mm seed=20270049 ... CACHED FAIL
+[ 50/100] margin=0 mm seed=20270050 ... CACHED FAIL
+[ 51/100] margin=0 mm seed=20270051 ... CACHED FAIL
+[ 52/100] margin=0 mm seed=20270052 ... CACHED FAIL
+[ 53/100] margin=0 mm seed=20270053 ... CACHED FAIL
+[ 54/100] margin=0 mm seed=20270054 ... CACHED FAIL
+[ 55/100] margin=0 mm seed=20270055 ... CACHED FAIL
+[ 56/100] margin=0 mm seed=20270056 ... CACHED FAIL
+[ 57/100] margin=0 mm seed=20270057 ... CACHED FAIL
+[ 58/100] margin=0 mm seed=20270058 ... CACHED FAIL
+[ 59/100] margin=0 mm seed=20270059 ... CACHED FAIL
+[ 60/100] margin=0 mm seed=20270060 ... CACHED FAIL
+[ 61/100] margin=0 mm seed=20270061 ... CACHED FAIL
+[ 62/100] margin=0 mm seed=20270062 ... CACHED FAIL
+[ 63/100] margin=0 mm seed=20270063 ... CACHED FAIL
+[ 64/100] margin=0 mm seed=20270064 ... CACHED FAIL
+[ 65/100] margin=0 mm seed=20270065 ... CACHED FAIL
+[ 66/100] margin=0 mm seed=20270066 ... CACHED FAIL
+[ 67/100] margin=0 mm seed=20270067 ... CACHED FAIL
+[ 68/100] margin=0 mm seed=20270068 ... CACHED FAIL
+[ 69/100] margin=0 mm seed=20270069 ... CACHED FAIL
+[ 70/100] margin=0 mm seed=20270070 ... CACHED FAIL
+[ 71/100] margin=0 mm seed=20270071 ... CACHED FAIL
+[ 72/100] margin=0 mm seed=20270072 ... CACHED FAIL
+[ 73/100] margin=0 mm seed=20270073 ... CACHED FAIL
+[ 74/100] margin=0 mm seed=20270074 ... CACHED FAIL
+[ 75/100] margin=0 mm seed=20270075 ... CACHED FAIL
+[ 76/100] margin=0 mm seed=20270076 ... CACHED FAIL
+[ 77/100] margin=0 mm seed=20270077 ... CACHED FAIL
+[ 78/100] margin=0 mm seed=20270078 ... CACHED FAIL
+[ 79/100] margin=0 mm seed=20270079 ... CACHED FAIL
+[ 80/100] margin=0 mm seed=20270080 ... CACHED FAIL
+[ 81/100] margin=0 mm seed=20270081 ... CACHED FAIL
+[ 82/100] margin=0 mm seed=20270082 ... CACHED FAIL
+[ 83/100] margin=0 mm seed=20270083 ... CACHED FAIL
+[ 84/100] margin=0 mm seed=20270084 ... CACHED FAIL
+[ 85/100] margin=0 mm seed=20270085 ... CACHED FAIL
+[ 86/100] margin=0 mm seed=20270086 ... CACHED FAIL
+[ 87/100] margin=0 mm seed=20270087 ... CACHED FAIL
+[ 88/100] margin=0 mm seed=20270088 ... CACHED FAIL
+[ 89/100] margin=0 mm seed=20270089 ... CACHED FAIL
+[ 90/100] margin=0 mm seed=20270090 ... CACHED FAIL
+[ 91/100] margin=0 mm seed=20270091 ... CACHED FAIL
+[ 92/100] margin=0 mm seed=20270092 ... CACHED FAIL
+[ 93/100] margin=0 mm seed=20270093 ... CACHED FAIL
+[ 94/100] margin=0 mm seed=20270094 ... CACHED FAIL
+[ 95/100] margin=0 mm seed=20270095 ... CACHED FAIL
+[ 96/100] margin=0 mm seed=20270096 ... FAIL wall=19.272s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 97/100] margin=0 mm seed=20270097 ... FAIL wall=11.426s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 98/100] margin=0 mm seed=20270098 ... FAIL wall=9.576s points=16 IK=824 stage=post_recovery_beam_3_angular
+[ 99/100] margin=0 mm seed=20270099 ... FAIL wall=8.448s points=16 IK=824 stage=post_recovery_beam_3_angular
+[100/100] margin=0 mm seed=20270100 ... FAIL wall=8.856s points=16 IK=824 stage=post_recovery_beam_3_angular
+MARGIN 0.000 mm: PASS 0/100 (0.0%)
+
+Saved summary CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_0mm.csv
+Saved summary MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_0mm.mat
+
+ans = 
+
+  struct with fields:
+
+          name: 'A-ARC-IK+ endpoint-margin benchmark'
+     marginsMm: 0
+         seeds: [20270001 20270002 20270003 20270004 … ] (1×100 double)
+       options: [1×1 struct]
+          rows: [1×1 struct]
+    summaryCsv: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_0mm.csv'
+    summaryMat: '/home/ttbstt/jixiebi/UR5/matlab仿真/end_margin_0mm.mat'
+       created: '2026-09-27 08:20:10'
+

@@ -1,0 +1,9 @@
+taskID,algorithm,seedCount,successCount,successRate,timeoutCount,planningTimeMedian_ms,planningTimeP90_ms,planningTimeIQR_ms,jointPathLengthMedian_rad,totalJointMotionMedian_rad,collisionConfigurationChecksMedian,nodeCountMedian
+T01_Safe_to_PreWeld,RRT-Connect,1,1,1,0,3258.747,3258.747,0,7.95237112287267,17.1815538974848,821,141
+T01_Safe_to_PreWeld,Bi-RRT*,1,1,1,0,6893.249,6893.249,0,6.34953510763476,13.3992096020587,1833,25
+T01_Safe_to_PreWeld,ClassGoal-Lite,1,0,0,1,30002.947,30002.947,0,NaN,0,8004,1
+T01_Safe_to_PreWeld,Full Classified-RRT*,1,0,0,1,30000.987,30000.987,0,NaN,0,7906,1
+T02_PostWeld_to_Safe,RRT-Connect,1,1,1,0,1190.52,1190.52,0,6.87581379383399,13.6531032718365,325,49
+T02_PostWeld_to_Safe,Bi-RRT*,1,1,1,0,10479.082,10479.082,0,5.14732738393573,10.5584586645222,2818,38
+T02_PostWeld_to_Safe,ClassGoal-Lite,1,1,1,0,2302.892,2302.892,0,4.59505211198866,9.50332073294377,612,19
+T02_PostWeld_to_Safe,Full Classified-RRT*,1,1,1,0,810.332,810.332,0,4.63575478061795,9.28956642588799,221,10

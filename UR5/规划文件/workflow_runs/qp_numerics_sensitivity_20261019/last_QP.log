@@ -1,0 +1,3 @@
+NODE_INVARIANT original_max_mm=0.000140118 inserted_bad=178
+QP_TRIAL last scaled_eliminated interior-point-convex flag=-2 elapsed=83.971555
+QP_TRIAL last scaled_eliminated interior-point-convex flag=1 elapsed=30.408831

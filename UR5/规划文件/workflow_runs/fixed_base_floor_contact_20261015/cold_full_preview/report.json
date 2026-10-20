@@ -1,0 +1,39 @@
+{
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "previewReady": false,
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "start_state_status": "NOT_CHECKED",
+  "goal_state_status": "NOT_GENERATED",
+  "rrt_entered": false,
+  "seam_candidate_reused": false,
+  "endpoint_validation": {},
+  "seed": 2.0260917E+7,
+  "failure_reason": "Dimensions of arrays being concatenated are not consistent.",
+  "failure_identifier": "MATLAB:catenate:dimensionMismatch",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/verify_fixed_base_floor_contact.m",
+      "name": "verify_fixed_base_floor_contact",
+      "line": 14
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/load_fixed_environment_contacts.m",
+      "name": "load_fixed_environment_contacts",
+      "line": 18
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/build_real_planning_scene.m",
+      "name": "build_real_planning_scene",
+      "line": 132
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/plan_hmi_preview_request.m",
+      "name": "plan_hmi_preview_request",
+      "line": 20
+    }
+  ],
+  "planning_time": 5.169461
+}

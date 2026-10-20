@@ -1,0 +1,41 @@
+
+====================================================
+BIDIRECTIONAL LOCAL DENSE RECOVERY
+Forward set + suffix backward set + local meet
+====================================================
+
+Seed 20270003, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270004, local base window [14,18]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=1 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270007, local base window [9,13]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=4 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270054, local base window [12,16]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=5 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270057, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270062, local base window [19,21]
+  meet=1 complete=0 forwardFinal=6 backwardFirst=22 maxJump=9.947 deg TCPseg=2.2111 mm
+
+Seed 20270071, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270078, local base window [13,17]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=5 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270085, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270092, local base window [15,19]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=0 maxJump=NaN deg TCPseg=NaN mm
+
+Seed 20270095, local base window [12,16]
+  meet=0 complete=0 forwardFinal=0 backwardFirst=5 maxJump=NaN deg TCPseg=NaN mm
+
+Saved MAT: /home/ttbstt/jixiebi/UR5/matlab仿真/bidirectional_local_dense_recovery_new11.mat
+Saved CSV: /home/ttbstt/jixiebi/UR5/matlab仿真/bidirectional_local_dense_recovery_new11.csv

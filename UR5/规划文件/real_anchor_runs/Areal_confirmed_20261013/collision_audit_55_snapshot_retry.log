@@ -1,0 +1,186 @@
+
+========================================
+Frozen calibration loaded
+========================================
+qOffset [deg]:
+   180   -90     0   -90     0     0
+
+T_CopBase_MatBase:
+    0.0000    1.0000         0         0
+   -1.0000    0.0000         0         0
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+T_tool0_mount:
+   -0.0000    1.0000    0.0000   -0.0000
+   -1.0000   -0.0000    0.0001   -0.0001
+    0.0001   -0.0000    1.0000   -0.0064
+         0         0         0    1.0000
+
+T_mount_tcp:
+    1.0000         0         0   -0.0668
+         0    1.0000         0    0.0195
+         0         0    1.0000    0.3823
+         0         0         0    1.0000
+
+
+Frozen-adapter wire length  : 18.0 mm (frozen baseline only; REAL scene replaces this)
+Frozen-adapter wire diameter: 1.200 mm (temporary_visual_default_NEEDS_CONFIRMATION)
+[Warning: 当前焊丝直径仅为临时显示值，请按实际焊丝规格确认后更新。] 
+[> In sync_ur5_joint_states (line 181)
+In run (line 112)
+In loadUR5JointScene (line 12)
+In build_real_planning_scene (line 6)
+In diagnose_accp_point1_collision_pairs (line 11)] 
+
+Scene geometry loaded:
+/home/ttbstt/jixiebi/UR5/scene_geometry.json
+Real-gun geometry manifest: /home/ttbstt/jixiebi/UR5/real_gun_geometry/real_gun_geometry.json (ACTIVE)
+Real-gun replacement is not applied in this frozen-scene adapter; REAL scene applies it explicitly.
+
+MATLAB universalUR5 loaded.
+Original MATLAB last body = tool0
+
+========================================
+Adding welding-gun collision model
+========================================
+GunCollisionHull: 4 components, 104 vertices, 192 triangular faces
+Hull pose_mount = [-0.077654 -0.031815 -0.000000] m
+
+WeldingGunMount collision count = 4
+WeldTCP collision count = 1
+
+========================================
+Workpiece transformation
+========================================
+Workpiece pose in Coppelia base:
+    1.0000         0         0   -0.0750
+         0    1.0000         0    0.3750
+         0         0    1.0000   -0.0146
+         0         0         0    1.0000
+
+Workpiece pose in MATLAB base:
+    0.0000   -1.0000         0   -0.3750
+    1.0000    0.0000         0   -0.0750
+         0         0    1.0000    0.0000
+         0         0         0    1.0000
+
+
+========================================
+Creating Workpiece collision proxies
+========================================
+wpSpecs class = struct
+1. WorkpieceCollision_bottom    size = [0.2350 0.2350 0.0050] m
+2. WorkpieceCollision_wall_x0   size = [0.0050 0.2350 0.2350] m
+3. WorkpieceCollision_wall_x1   size = [0.0050 0.2350 0.2350] m
+4. WorkpieceCollision_wall_y1   size = [0.2350 0.0050 0.2350] m
+
+Environment collision object count = 4
+
+Initial Coppelia q [deg]:
+     0     0     0     0     0     0
+
+Initial MATLAB q [deg]:
+   180   -90     0   -90     0     0
+
+
+WeldTCP in MATLAB base [m]:
+   -0.0195   -0.5674    0.9344
+
+WeldTCP predicted in Coppelia base [m]:
+   -0.5674    0.0195    0.9197
+
+
+========================================
+INITIAL COLLISION CHECK
+========================================
+
+[FREE] 当前零位 Robot/Gun 与 Workpiece 无碰撞。
+
+========================================
+PLANNING SCENE READY
+========================================
+UR5 bodies             : 12
+Gun collision proxies  : 4
+Workpiece proxies       : 4
+TCP body                : WeldTCP
+Wire visual             : 18.0 mm long, 1.200 mm diameter
+Wire collision          : enabled (collisionCylinder)
+Wire axis in TCP        : [-0.4047 -0.5816 0.7057]
+Nearest hull head gap   : 20.8 mm (geometry estimate)
+Gun head end in MATLAB base [m]:
+   -0.0316   -0.5527    0.9428
+
+Wire end near TCP in MATLAB base [m]:
+   -0.0211   -0.5654    0.9355
+
+Wire-to-TCP remaining gap: 2.8 mm
+MATLAB planning q0 [deg]:
+   180   -90     0   -90     0     0
+
+
+后续 RRT 直接使用：
+    scene.robot
+    scene.environment
+    scene.qOffset
+    scene.tcpBodyName
+
+场景建立完成。
+REAL model-defined wire: status=MODEL_AXIS_TO_TCP_ACTIVE, length=55.9 mm, diameter=1.20 mm, collision=1
+REAL wire axis in TCP: [0.064214 -0.066987 -0.995685]
+REAL wire body chain: flange -> WeldingGunMount -> WeldingGunWire
+COLLISION AUDIT   1/55: pairs=4 env=1 self=0
+COLLISION AUDIT   2/55: pairs=4 env=1 self=0
+COLLISION AUDIT   3/55: pairs=4 env=1 self=0
+COLLISION AUDIT   4/55: pairs=4 env=1 self=0
+COLLISION AUDIT   5/55: pairs=4 env=1 self=0
+COLLISION AUDIT   6/55: pairs=4 env=1 self=0
+COLLISION AUDIT   7/55: pairs=4 env=1 self=0
+COLLISION AUDIT   8/55: pairs=4 env=1 self=0
+COLLISION AUDIT   9/55: pairs=4 env=1 self=0
+COLLISION AUDIT  10/55: pairs=4 env=1 self=0
+COLLISION AUDIT  11/55: pairs=4 env=1 self=0
+COLLISION AUDIT  12/55: pairs=4 env=1 self=0
+COLLISION AUDIT  13/55: pairs=4 env=1 self=0
+COLLISION AUDIT  14/55: pairs=4 env=1 self=0
+COLLISION AUDIT  15/55: pairs=4 env=1 self=0
+COLLISION AUDIT  16/55: pairs=4 env=1 self=0
+COLLISION AUDIT  17/55: pairs=4 env=1 self=0
+COLLISION AUDIT  18/55: pairs=4 env=1 self=0
+COLLISION AUDIT  19/55: pairs=4 env=1 self=0
+COLLISION AUDIT  20/55: pairs=4 env=1 self=0
+COLLISION AUDIT  21/55: pairs=4 env=1 self=0
+COLLISION AUDIT  22/55: pairs=4 env=1 self=0
+COLLISION AUDIT  23/55: pairs=2 env=1 self=0
+COLLISION AUDIT  24/55: pairs=2 env=1 self=0
+COLLISION AUDIT  25/55: pairs=2 env=1 self=0
+COLLISION AUDIT  26/55: pairs=2 env=1 self=0
+COLLISION AUDIT  27/55: pairs=2 env=1 self=0
+COLLISION AUDIT  28/55: pairs=2 env=1 self=0
+COLLISION AUDIT  29/55: pairs=2 env=1 self=0
+COLLISION AUDIT  30/55: pairs=2 env=1 self=0
+COLLISION AUDIT  31/55: pairs=2 env=1 self=0
+COLLISION AUDIT  32/55: pairs=2 env=1 self=0
+COLLISION AUDIT  33/55: pairs=2 env=1 self=0
+COLLISION AUDIT  34/55: pairs=2 env=1 self=0
+COLLISION AUDIT  35/55: pairs=2 env=1 self=0
+COLLISION AUDIT  36/55: pairs=2 env=1 self=0
+COLLISION AUDIT  37/55: pairs=2 env=1 self=0
+COLLISION AUDIT  38/55: pairs=2 env=1 self=0
+COLLISION AUDIT  39/55: pairs=2 env=1 self=0
+COLLISION AUDIT  40/55: pairs=2 env=1 self=0
+COLLISION AUDIT  41/55: pairs=2 env=1 self=0
+COLLISION AUDIT  42/55: pairs=2 env=1 self=0
+COLLISION AUDIT  43/55: pairs=2 env=1 self=0
+COLLISION AUDIT  44/55: pairs=2 env=1 self=0
+COLLISION AUDIT  45/55: pairs=2 env=1 self=0
+COLLISION AUDIT  46/55: pairs=2 env=1 self=0
+COLLISION AUDIT  47/55: pairs=2 env=1 self=0
+COLLISION AUDIT  48/55: pairs=2 env=1 self=0
+COLLISION AUDIT  49/55: pairs=2 env=1 self=0
+COLLISION AUDIT  50/55: pairs=2 env=1 self=0
+COLLISION AUDIT  51/55: pairs=6 env=1 self=0
+COLLISION AUDIT  52/55: pairs=6 env=1 self=0
+COLLISION AUDIT  53/55: pairs=6 env=1 self=0
+COLLISION AUDIT  54/55: pairs=6 env=1 self=0
+COLLISION AUDIT  55/55: pairs=6 env=1 self=0

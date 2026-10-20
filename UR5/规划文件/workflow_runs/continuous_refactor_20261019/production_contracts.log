@@ -1,0 +1,6 @@
+CONTINUOUS_PLANNING_FAILED Raw preview changed
+              pass: 1
+            checks: [1×1 struct]
+    executionReady: 0
+      robot_motion: 'NO'
+

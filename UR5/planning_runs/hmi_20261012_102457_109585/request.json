@@ -1,0 +1,42 @@
+{
+ "request_id": "20261012_102457_109585",
+ "task": "RealHome_to_PreWeld",
+ "qStart": [
+  5.218624591827393,
+  -1.9930394331561487,
+  1.740513801574707,
+  1.0449861288070679,
+  1.6476725339889526,
+  0.11653460562229156
+ ],
+ "qGoal": [
+  -0.014894647819507709,
+  4.583678798565408,
+  -1.5827839940260957,
+  4.875095607430998,
+  -4.481179136277017,
+  -3.8834036633603373
+ ],
+ "algorithm": "Constraint-aware Bidirectional RRT* (CBi-RRT*)",
+ "seed": 20260917,
+ "maxPlanningTimeSec": 30.0,
+ "start_source": "current",
+ "endpoint_source": "Current Robot snapshot -> weld_anchor_points.json:qPreWeld",
+ "weld_algorithm": "ACCP (replan_weld_actual_axis_adaptive_feasibility.m)",
+ "calibration_binding": {
+  "urdf_sha256": "17eed053e2c4f6e5420d722c5256ea1acb20c38fea812162c02f811723adf4a4",
+  "tcp_calibration_sha256": "a2588c841ef2f16a0ee529752949fe9ce28831e5453909d4ecf197370035eaf9",
+  "tcp_calibration_source": "real_tcp_calibration_applied.json",
+  "tcp_calibration_active_sha256": null,
+  "tcp_applied_sha256": "a2588c841ef2f16a0ee529752949fe9ce28831e5453909d4ecf197370035eaf9",
+  "tcp_frozen_sha256": "11ffb16a1a47dd30b884fb1b593dbba0b38f8fbe314cfa21b28ba5f87d38128b",
+  "gun_mount_sha256": "f8eddbce9a4649e651a2ff4381d4e943133478249b3451bc3f1a7781583108b9",
+  "real_gun_geometry_sha256": "7d626b4f65212b36cefca3a5007f5dadd9ce242efc6949fe1ca80e8457c8aba5",
+  "real_gun_geometry_status": "STAGED_ALIGNMENT_REQUIRED",
+  "workpiece_sha256": "15bb2e2e30bd97ff7a2a7433afcd8b3a0ba85816b87fc2c0d5ca8fcc3e9b4d9e",
+  "workpiece_source": "REAL CALIBRATION",
+  "workpiece_file": "/home/ttbstt/jixiebi/UR5/workpiece_pose_real.json",
+  "planning_scene": "REAL_CALIBRATION"
+ },
+ "planning_scene": "REAL_CALIBRATION"
+}

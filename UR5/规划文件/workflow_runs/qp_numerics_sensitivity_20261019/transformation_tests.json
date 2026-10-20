@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "synthetic_objectives": [
+    -0.25073395661612641,
+    -0.25073395661612641,
+    -0.25073395661612641
+  ],
+  "real_equality_mapping_max_residual": 2.2204460492503131E-16,
+  "scope": "ALGEBRAIC_TRANSFORM_TEST_NOT_A_ROBOT_PLAN",
+  "executionReady": false
+}

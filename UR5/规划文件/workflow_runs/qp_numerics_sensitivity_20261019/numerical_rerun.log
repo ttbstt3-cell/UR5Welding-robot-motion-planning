@@ -1,0 +1,5 @@
+QP_TRIAL initial raw interior-point-convex flag=-2 elapsed=11.700462
+[Warning: Your Hessian is not symmetric. Resetting H=(H+H')/2.] 
+[> In quadprog (line 361)
+In run_qp_numeric_trial (line 32)] 
+QP_TRIAL initial scaled_eliminated interior-point-convex flag=-2 elapsed=9.135586

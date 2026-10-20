@@ -1,0 +1,116 @@
+[
+  {
+    "handle": 13,
+    "path": "/Floor",
+    "alias": "Floor",
+    "excluded": false
+  },
+  {
+    "handle": 15,
+    "path": "/UR5",
+    "alias": "UR5",
+    "excluded": true
+  },
+  {
+    "handle": 41,
+    "path": "/Workpiece",
+    "alias": "Workpiece",
+    "excluded": true
+  },
+  {
+    "handle": 14,
+    "path": "/Floor/box",
+    "alias": "box",
+    "excluded": false
+  },
+  {
+    "handle": 16,
+    "path": "/UR5/link1_visible",
+    "alias": "link1_visible",
+    "excluded": true
+  },
+  {
+    "handle": 18,
+    "path": "/UR5/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 19,
+    "path": "/UR5/joint/link/link2_visible",
+    "alias": "link2_visible",
+    "excluded": true
+  },
+  {
+    "handle": 21,
+    "path": "/UR5/joint/link/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 22,
+    "path": "/UR5/joint/link/joint/link/link3_visible",
+    "alias": "link3_visible",
+    "excluded": true
+  },
+  {
+    "handle": 24,
+    "path": "/UR5/joint/link/joint/link/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 25,
+    "path": "/UR5/joint/link/joint/link/joint/link/link4_visible",
+    "alias": "link4_visible",
+    "excluded": true
+  },
+  {
+    "handle": 27,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 28,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/link5_visible",
+    "alias": "link5_visible",
+    "excluded": true
+  },
+  {
+    "handle": 30,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 39,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/link6_visible",
+    "alias": "link6_visible",
+    "excluded": true
+  },
+  {
+    "handle": 32,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link",
+    "alias": "link",
+    "excluded": true
+  },
+  {
+    "handle": 33,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/link7_visible",
+    "alias": "link7_visible",
+    "excluded": true
+  },
+  {
+    "handle": 36,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/connection/WeldingGunMount/WeldingGun_visual",
+    "alias": "WeldingGun_visual",
+    "excluded": true
+  },
+  {
+    "handle": 38,
+    "path": "/UR5/joint/link/joint/link/joint/link/joint/link/joint/link/joint/link/connection/WeldingGunMount/GunCollisionHull",
+    "alias": "GunCollisionHull",
+    "excluded": true
+  }
+]

@@ -1,0 +1,32 @@
+ros:
+  robot_ip: 192.168.0.10
+  action_name: /scaled_joint_trajectory_controller/follow_joint_trajectory
+  joint_states_topic: /joint_states
+  tcp_pose_topic: /tcp_pose_broadcaster/pose
+  controller_name: scaled_joint_trajectory_controller
+safety:
+  max_start_error_rad: 0.035
+  joint_state_timeout_sec: 1.0
+jog:
+  step_deg: 0.5
+  default_speed_percent: 5
+  max_hmi_speed_percent: 20
+trajectory:
+  start_tolerance_deg: 1.0
+online_planning:
+  default_algorithm: Constraint-aware Bidirectional RRT* (CBi-RRT*)
+  default_task: Weld_Seam
+  seed: 20260917
+  max_planning_time_sec: 30.0
+  v1_report_file: /home/ttbstt/jixiebi/UR5/轨迹文件/realhome_to_preweld_v1_report.json
+  anchor_file: /home/ttbstt/jixiebi/UR5/规划文件/weld_anchor_points.json
+  planning_file_dir: /home/ttbstt/jixiebi/UR5/规划文件
+ui:
+  scale: 1.0
+real_home:
+- 4.946811676025391
+- -1.8068793455706995
+- 1.0678586959838867
+- 1.4197841882705688
+- 1.4138842821121216
+- -0.07496101060976201

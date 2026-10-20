@@ -1,0 +1,31 @@
+{
+  "executionReady": false,
+  "success": false,
+  "robot_motion": "NO",
+  "task": "Full_Welding_Task",
+  "algorithm": "CBi-RRT* + ACCP-D",
+  "preview_preserved": true,
+  "stage": "CONTINUOUS_PLANNING_FAILED",
+  "continuous_planning_complete": false,
+  "continuous_planning_status": "CONTINUOUS_PLANNING_FAILED",
+  "physical_validation_status": "PENDING",
+  "servo_validation_status": "PENDING",
+  "architecture_version": "THREE_STAGE_CONTINUOUS_v1",
+  "stage_timings": {},
+  "failure_reason": "Unexpected collision adapter: /home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/continuous_path_fix_20261020/shadow/checkEnvironmentCollision.m; expected /home/ttbstt/jixiebi/RRT/checkEnvironmentCollision.m",
+  "failed_stage": "DEPENDENCY_VALIDATION",
+  "failure_identifier": "CONTINUOUS:Dependency",
+  "failure_stack": [
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/matlab仿真/prepare_hmi_continuous_request.m",
+      "name": "prepare_hmi_continuous_request",
+      "line": 22
+    },
+    {
+      "file": "/home/ttbstt/jixiebi/UR5/规划文件/workflow_runs/continuous_path_fix_20261020/test_dependency_guards.m",
+      "name": "test_dependency_guards",
+      "line": 8
+    }
+  ],
+  "planning_time": 0.061453
+}

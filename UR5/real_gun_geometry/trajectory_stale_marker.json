@@ -1,0 +1,8 @@
+{
+  "schema_version": "trajectory_stale_marker_v1",
+  "status": "STALE_PENDING_REVALIDATION",
+  "reason": "Replacement welding-gun geometry is staged and is not yet confirmed against the flange.",
+  "geometry_manifest": "real_gun_geometry.json",
+  "policy": "All existing real trajectories must be re-planned or revalidated after the manifest becomes ACTIVE; no old path may be executed as-is.",
+  "created_utc": "2026-10-10T10:43:50Z"
+}

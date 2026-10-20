@@ -1,0 +1,43 @@
+{Error using robotics.manip.internal.error (line 25)
+The robot base has no 'Joint' property.
+
+Error in robotics.manip.internal.RigidBody/get.Joint (line 681)
+                robotics.manip.internal.error('rigidbody:NoSuchPropertyForBase', 'Joint');
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in rigidBody/get.Joint (line 469)
+            value = obj.BodyInternal.Joint;
+                    ^^^^^^^^^^^^^^^^^^^^^^
+Error in verify_fixed_base_floor_contact (line 9)
+    chain(end+1)=struct('body',b.Name,'joint',b.Joint.Name,'type',b.Joint.Type); %#ok<AGROW>
+                                              ^^^^^^^^^^^^
+} 
+{Error using assert
+Assertion failed.
+
+Error in verify_fixed_base_floor_contact (line 22)
+    c=body.Collisions{k}; assert(isa(c,'collisionMesh'));
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+                                          status: 'MODEL_VERIFIED_FIXED_SUPPORT'
+                                        eligible: 1
+                                            pair: {1×2 cell}
+                               fixed_joint_chain: [1×2 struct]
+                        all_joints_to_root_fixed: 1
+                                    sample_count: 10
+                        max_base_transform_drift: 0
+                     base_inside_floor_footprint: 1
+                                floor_horizontal: 1
+                  base_lowest_z_in_floor_frame_m: 0.1000
+                    floor_top_z_in_floor_frame_m: 0.1000
+                                 vertical_gap_mm: -0.0026
+                      vertical_bounds_overlap_mm: 0.0026
+                          classification_band_mm: 0.0100
+                                T_root_base_body: [4×4 double]
+                                      floor_pose: [4×4 double]
+                                    floor_size_m: [5 5 0.2000]
+                          robot_collision_counts: [0 0 1 1 1 … ] (1×15 double)
+    physical_installation_independently_measured: 0
+                                           scope: 'Model evidence of normal fixed support only; overlap is bounds-based, not penetration depth'
+                                  executionReady: 0
+                                    robot_motion: 'NO'
+

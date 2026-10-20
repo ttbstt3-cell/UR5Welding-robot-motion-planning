@@ -1,0 +1,1 @@
+"""Trajectory loading and validation."""

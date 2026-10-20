@@ -1,0 +1,86 @@
+
+========================================
+REAL UR5 FK / RRT START DIAGNOSTIC
+========================================
+Kinematics YAML (driver launch): /home/ttbstt/ur5_calibration.yaml
+MATLAB robot model: /home/ttbstt/jixiebi/UR5/real_robot_description_calibrated.urdf
+Waiting for real /joint_states ...
+
+Real UR5 q (canonical ROS/URDF order) [rad]:
+   -3.8989   -1.1497   -2.2187   -0.2550    1.4867   -2.7571
+
+Real UR5 q [deg]:
+ -223.3896  -65.8718 -127.1236  -14.6131   85.1815 -157.9717
+
+Joint name map:      1     6     5     4     2     3
+
+MATLAB FK: base -> tool0
+position [m] =     0.1559   -0.3087    0.4354
+
+quaternion [w x y z] =     0.4481    0.8395    0.1603    0.2620
+
+Waiting for /tcp_pose_broadcaster/pose ...
+Driver reported TCP frame = base
+Driver TCP position [m] =    -0.3892    0.5651    0.2785
+
+Driver TCP quaternion [w x y z] =     0.9750   -0.0474    0.2023   -0.0794
+
+Driver TCP expressed in MATLAB/base_link frame:
+position [m] =     0.3892   -0.5651    0.2785
+
+quaternion [w x y z] =     0.0794   -0.2023   -0.0474    0.9750
+
+
+MATLAB calibrated WeldTCP prediction
+position [m] =     0.3934   -0.5866    0.3236
+
+quaternion [w x y z] =     0.5022    0.4803    0.7070   -0.1316
+
+MATLAB calibrated TCP vs driver TCP:
+  position error     = 50.150 mm
+  orientation error  = 154.687 deg
+
+Implied driver tool0 -> TCP transform:
+position [m] =     0.0135    0.0170    0.3799
+
+quaternion [w x y z] =     0.1136   -0.3260    0.8376    0.4234
+
+Configured MATLAB tool0 -> WeldTCP transform:
+position [m] =     0.0195    0.0667    0.3759
+
+quaternion [w x y z] =     0.7071   -0.0000   -0.0000   -0.7071
+
+tool0->TCP transform difference: 50.150 mm, 154.687 deg
+
+Pendant TCP parameter (provided photo):
+position [mm] =    13.5300   17.1300  379.8300
+
+rotation vector [rad] =    -0.9562    2.4566    1.2418
+
+rotation-vector norm [deg] = 166.959
+Pendant tool0 -> TCP transform:
+position [mm] =    13.5300   17.1300  379.8300
+
+quaternion [w x y z] =     0.1136   -0.3260    0.8376    0.4234
+
+Driver-implied TCP vs pendant TCP:
+  position difference = 0.100 mm
+  orientation difference = 0.009 deg
+MATLAB WeldTCP vs pendant TCP:
+  position difference = 50.061 mm
+  orientation difference = 154.687 deg
+
+Existing RRT start (result.qHome) [deg]:
+   180   -90     0   -90     0     0
+
+Real q - RRT start shortest delta [deg]:
+  -43.3896   24.1282 -127.1236   75.3869   85.1815 -157.9717
+
+max initial joint jump = 157.972 deg
+initial joint-space distance = 237.738 deg (2-norm)
+
+Interpretation:
+  - 真机 q 直接使用 ROS/URDF 关节坐标；不要加 Coppelia qOffset。
+  - MATLAB universalUR5 根坐标按 base_link 处理；驱动 TCP 已转换到 base_link。
+  - 若 TCP 误差较大，先确认示教器 TCP 与驱动 TCP 配置是否就是同一工具。
+  - 当前脚本只诊断，不发送 trajectory，也不改变控制器状态。

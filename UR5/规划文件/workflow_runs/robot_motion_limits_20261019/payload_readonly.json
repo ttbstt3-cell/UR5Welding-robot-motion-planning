@@ -1,0 +1,58 @@
+{
+  "input_recipe_empty": true,
+  "operation": "read",
+  "output_only": true,
+  "snapshot": {
+    "actual_TCP_pose": [
+      -0.44617000345669455,
+      0.38630203012567527,
+      0.045169122376147064,
+      -0.7131869849459963,
+      -0.016514615672844353,
+      -0.11415440666704571
+    ],
+    "actual_q": [
+      -1.0524380842791956,
+      -1.5447419325457972,
+      1.6036205291748047,
+      -1.7965710798846644,
+      -1.3799026648150843,
+      3.3300607204437256
+    ],
+    "actual_qd": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "payload": 0.5,
+    "payload_cog": [
+      -0.006411567805279295,
+      -0.016572140285435966,
+      0.3908228756953938
+    ],
+    "reference_frame": "controller_base",
+    "robot_mode": 7,
+    "runtime_state": 2,
+    "safety_mode": 1,
+    "tcp_frame": "controller_tool_output_flange",
+    "tcp_offset": [
+      -0.006411567805279295,
+      -0.016572140285435966,
+      0.3908228756953938,
+      -0.7737551909515683,
+      2.68666941754907,
+      1.1457482063497175
+    ],
+    "timestamp": 22723.791999999998,
+    "units": {
+      "joint_velocity": "rad/s",
+      "joints": "rad",
+      "rotation": "rotation_vector_rad",
+      "translation": "m"
+    }
+  },
+  "success": true
+}

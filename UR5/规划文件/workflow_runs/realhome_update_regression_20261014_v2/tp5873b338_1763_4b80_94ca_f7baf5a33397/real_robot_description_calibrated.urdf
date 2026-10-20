@@ -1,0 +1,1 @@
+<robot name="fixture"><link name="base"><collision><geometry><mesh filename="collision_fixture.stl"/></geometry></collision></link></robot>

@@ -1,0 +1,6 @@
+HYBRID cap_fraction=0.90 iteration=1
+A_CENTER sync=0.543578 contour=0.045823 orientation=0.302694 v=0.087112452 a=0.177026986 jerk=2.208399 rmsJerk=0.295479 jump=0.094015 pass=0
+B_QUINTIC_REFERENCE sync=1.229321 contour=0.033386 orientation=0.306707 v=0.086337104 a=0.175337720 jerk=1.164653 rmsJerk=0.189855 jump=0.143568 pass=0
+C_ACCURACY sync=0.238287 contour=0.013041 orientation=0.212377 v=0.087265027 a=0.261796382 jerk=3.517053 rmsJerk=0.612044 jump=0.418127 pass=1
+D_HYBRID sync=0.355067 contour=0.109436 orientation=0.420968 v=0.087264717 a=0.148926629 jerk=0.717414 rmsJerk=0.119425 jump=0.180123 pass=1
+HYBRID_REGRESSION_PASS found=1 preferredOffline=1 soft90=1 executionReady=0

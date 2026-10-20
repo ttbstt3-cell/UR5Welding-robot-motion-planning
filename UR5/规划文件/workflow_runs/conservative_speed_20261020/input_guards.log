@@ -1,0 +1,7 @@
+CONTINUOUS_PLANNING_FAILED Source file changed: /home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/连续规划完成轨迹_2026-10-20_10-05-24_168245.mat
+CONTINUOUS_PLANNING_FAILED Source file changed: /home/ttbstt/jixiebi/UR5/规划文件/当前轨迹/预览轨迹_仅预演_2026-10-20_09-34-46_959865.mat
+HMI_WELD_STAGE stage=OFFLINE_TIME_SCALING
+CONTINUOUS_PLANNING_FAILED Offline speed must be 1..100 percent
+CONTINUOUS_PLANNING_FAILED Source is not a completed offline trajectory
+CONTINUOUS_PLANNING_FAILED Source request points to a different preview
+RETIME_INPUT_GUARDS_PASS

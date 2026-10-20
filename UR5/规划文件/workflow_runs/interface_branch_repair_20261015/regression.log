@@ -1,0 +1,11 @@
+PREPARATION_FAILED approach numeric path violates joint limits; regenerate its pinned branch
+                                     pass: 1
+                             robot_motion: 'NO'
+                           executionReady: 0
+                  valid_numeric_path_pass: 1
+          equivalent_wrong_start_rejected: 1
+    over_limit_equivalent_branch_rejected: 1
+                 actual_360_edge_rejected: 1
+                  actual_360_edge_samples: 721
+         old_preview_preparation_rejected: 1
+

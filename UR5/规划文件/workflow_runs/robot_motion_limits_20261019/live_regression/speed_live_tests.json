@@ -1,0 +1,110 @@
+{
+  "service": {
+    "pass_all": true,
+    "zero_hardware_calls": true,
+    "fake_service_only": true,
+    "startup_writes": 0,
+    "endpoints_1_100_percent_pass": true,
+    "invalid_percent_rejected": true,
+    "overlapping_commands_rejected": true,
+    "timeout_remains_unknown_until_late_result": true,
+    "ack_never_replaces_actual_feedback": true,
+    "stale_faults_rejected": [
+      "robot_link_alive",
+      "robot_mode",
+      "program_running",
+      "safety_mode",
+      "controller_active",
+      "speed_slider_service_ready",
+      "joint_stamp",
+      "speed_scaling_stamp",
+      "speed_scaling"
+    ]
+  },
+  "action_feedback": {
+    "pass_all": true,
+    "fake_action_only": true,
+    "new_feedback_hook_does_not_modify_message": true,
+    "old_goal_invalid_joint_and_post_terminal_feedback_ignored": true,
+    "worker_blocks_sending_canceling_unknown_and_jog_speed_changes": true,
+    "real_network_calls": 0
+  },
+  "pass_all": true,
+  "view": "VtkRobotView",
+  "synthetic_feedback_frames": [
+    {
+      "index": 0,
+      "actual_q": [
+        -1.2763031164752405,
+        -2.0179436842547815,
+        1.5660405158996582,
+        -1.3189805189715784,
+        -1.3799627462970179,
+        3.3301806449890137
+      ],
+      "actual_vtk_tool_update": "VTK gun flange attachment and wire live-TCP endpoint PASS"
+    },
+    {
+      "index": 1,
+      "actual_q": [
+        -1.276946284804618,
+        -2.0180504998368107,
+        1.5660869977329206,
+        -1.3188874501977463,
+        -1.380148791522953,
+        3.3306265318953203
+      ],
+      "actual_vtk_tool_update": "VTK gun flange attachment and wire live-TCP endpoint PASS"
+    },
+    {
+      "index": 2,
+      "actual_q": [
+        -1.2775894531339955,
+        -2.0181573154188404,
+        1.5661334795661832,
+        -1.3187943814239143,
+        -1.380334836748888,
+        3.331072418801627
+      ],
+      "actual_vtk_tool_update": "VTK gun flange attachment and wire live-TCP endpoint PASS"
+    },
+    {
+      "index": 5,
+      "actual_q": [
+        -1.2814484631102605,
+        -2.0187982089110172,
+        1.5664123705657584,
+        -1.3182359687809213,
+        -1.381451108104498,
+        3.333747740239467
+      ],
+      "actual_vtk_tool_update": "VTK gun flange attachment and wire live-TCP endpoint PASS"
+    },
+    {
+      "index": 10,
+      "actual_q": [
+        -1.3174658895553997,
+        -2.0247798815046667,
+        1.56901535322846,
+        -1.3130241174463215,
+        -1.3918696407568594,
+        3.358717406992641
+      ],
+      "actual_vtk_tool_update": "VTK gun flange attachment and wire live-TCP endpoint PASS"
+    }
+  ],
+  "live_model_not_preview": true,
+  "animation_uses_measured_joints": true,
+  "preview_controls_blocked_during_motion": true,
+  "percent_changes_without_apply_send_nothing": true,
+  "actual_feedback_not_forged_by_ack": true,
+  "unknown_stale_feedback_not_wall_clock_fabricated": true,
+  "runtime_speed_change_requires_manual_confirmation": true,
+  "fake_speed_signals": [
+    40.0,
+    40.0
+  ],
+  "robot_trajectory_signals": 0,
+  "ROS_node_started": false,
+  "original_trajectory_and_config_unchanged": true
+}

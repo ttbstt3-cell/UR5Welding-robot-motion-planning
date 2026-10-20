@@ -243,6 +243,40 @@ class Maintenance:
             raise ValueError("Valid snapshot ID required")
         return self.store / "snapshots" / snapshot
 
+    def recover_git(self, folder, item, target):
+        """Rebuild only in a new test directory; preserve shallow boundaries."""
+        target = Path(target)
+        if target.exists():
+            raise ValueError("Git recovery target must not exist")
+        bundle = folder / item["file"]
+        shallow = item.get("shallow_boundary")
+        if shallow:
+            boundary = folder / shallow["file"]
+            raw = boundary.read_bytes()
+            if sha256(boundary) != shallow["sha256"] or not all(
+                    re.fullmatch(rb"[0-9a-f]{40}|[0-9a-f]{64}", line) for line in raw.splitlines()):
+                raise RuntimeError("Invalid shallow-boundary metadata")
+            target.mkdir()
+            git(target, "init", "--initial-branch=main")
+            shutil.copyfile(boundary, target / ".git/shallow")
+            git(target, "bundle", "unbundle", str(bundle))
+            for row in git(self.root, "bundle", "list-heads", str(bundle)).splitlines():
+                digest, ref = row.split(" ", 1)
+                if ref.startswith("refs/"):
+                    git(target, "check-ref-format", ref)
+                    git(target, "update-ref", ref, digest)
+            if item.get("head_ref"):
+                git(target, "symbolic-ref", "HEAD", item["head_ref"])
+            else:
+                git(target, "update-ref", "--no-deref", "HEAD", item["head"])
+        else:
+            proc = subprocess.run(["git", "clone", "--no-checkout", str(bundle), str(target)],
+                                  capture_output=True, text=True)
+            if proc.returncode:
+                raise RuntimeError("Git history recovery failed: " + item["repository"] + ": " + proc.stderr.strip())
+        git(target, "fsck", "--full")
+        git(target, "cat-file", "-e", item["head"] + "^{commit}")
+
     def verify(self, snapshot=None):
         folder = self.snapshot_dir(snapshot)
         manifest_path = folder / "manifest.json"
@@ -259,13 +293,17 @@ class Maintenance:
             if obj.stat().st_size != item["bytes"] or sha256(obj) != digest:
                 raise RuntimeError("Snapshot payload mismatch: " + item["path"])
             checked.add(digest)
-        for bundle in manifest["git_bundles"]:
-            file = folder / bundle["file"]
-            if sha256(file) != bundle["sha256"]:
-                raise RuntimeError("Git bundle checksum mismatch")
-            git(self.root, "bundle", "verify", str(file))
+        with tempfile.TemporaryDirectory(prefix="ur5-bundle-verify-") as temporary:
+            for i, bundle in enumerate(manifest["git_bundles"]):
+                file = folder / bundle["file"]
+                if sha256(file) != bundle["sha256"]:
+                    raise RuntimeError("Git bundle checksum mismatch")
+                git(self.root, "bundle", "verify", str(file))
+                self.recover_git(folder, bundle, Path(temporary) / f"git-{i}")
         return {"status": "PASS", "snapshot": folder.name, "files": len(manifest["files"]),
                 "unique_objects_checked": len(checked), "git_bundles_checked": len(manifest["git_bundles"]),
+                "git_history_reconstruction": "PASS",
+                "shallow_repositories": [b["repository"] for b in manifest["git_bundles"] if b.get("shallow_boundary")],
                 "manifest_sha256": sha256(manifest_path), "verified_at": stamp()}
 
     def backup(self):
@@ -332,11 +370,24 @@ class Maintenance:
                 if head.returncode:
                     raise RuntimeError("No committed history for " + rel)
                 file = "root.bundle" if number == 0 else f"nested-{number}.bundle"
+                head_ref = git(repo, "symbolic-ref", "--quiet", "HEAD", check=False)
+                shallow = None
+                if git(repo, "rev-parse", "--is-shallow-repository") == "true":
+                    git_dir = Path(git(repo, "rev-parse", "--absolute-git-dir"))
+                    boundary = git_dir / "shallow"
+                    name = f"nested-{number}.shallow"
+                    shutil.copyfile(boundary, folder / name)
+                    if sha256(boundary) != sha256(folder / name):
+                        raise RuntimeError("Shallow boundary changed during backup")
+                    shallow = {"file": name, "sha256": sha256(folder / name)}
                 git(repo, "bundle", "create", str(folder / file), "--all")
                 git(repo, "bundle", "verify", str(folder / file))
                 if git(repo, "rev-parse", "HEAD") != head.stdout.strip():
                     raise RuntimeError("Git HEAD changed during backup")
                 bundles.append({"repository": rel, "head": head.stdout.strip(),
+                                "head_ref": head_ref.stdout.strip() if head_ref.returncode == 0 else None,
+                                "shallow_boundary": shallow,
+                                "history_scope": "Existing shallow history only" if shallow else "Existing repository refs/history",
                                 "file": file, "sha256": sha256(folder / file)})
             after = {rel: fingerprint(info) for rel, info in self.walk()}
             if identities != after:
@@ -352,7 +403,7 @@ class Maintenance:
             write_json(self.store / "latest.json", receipt)
             return {**receipt, "new_object_bytes": copied, "unchanged_file_reuses": reused}
 
-    def restore(self, destination, paths, snapshot=None):
+    def restore(self, destination, paths=None, snapshot=None):
         folder = self.snapshot_dir(snapshot)
         dest = Path(destination).absolute()
         resolved = dest.resolve()
@@ -363,7 +414,8 @@ class Maintenance:
         receipt = read_json(folder / "verified.json")
         if receipt["manifest_sha256"] != sha256(folder / "manifest.json"):
             raise RuntimeError("Manifest checksum mismatch")
-        requested = set(safe_relative(p) for p in paths)
+        requested = (set(safe_relative(p) for p in paths) if paths is not None else
+                     {v["path"] for v in manifest["files"] if v["type"] == "file"})
         selected = [v for v in manifest["files"] if v["path"] in requested]
         if len(selected) != len(requested):
             raise ValueError("Requested path missing from snapshot")
@@ -384,6 +436,21 @@ class Maintenance:
                 raise RuntimeError("Restored file mismatch")
         return {"status": "PASS", "snapshot": folder.name, "restored_files": len(selected),
                 "destination": str(dest), "active_project_overwritten": False}
+
+    def recovery_test(self, paths):
+        folder = self.snapshot_dir()
+        parent = Path(tempfile.mkdtemp(prefix="ur5-recovery-check-"))
+        restored = self.restore(parent / "files", paths, folder.name)
+        manifest = read_json(folder / "manifest.json")
+        history = []
+        for i, item in enumerate(manifest["git_bundles"]):
+            target = parent / f"git-{i}"
+            self.recover_git(folder, item, target)
+            history.append({"repository": item["repository"], "head": item["head"], "status": "PASS",
+                            "history_scope": item.get("history_scope", "Existing repository refs/history")})
+        return {"status": "PASS", "tested_at": stamp(), "restore": restored,
+                "history_recovery": history, "temporary_directory": str(parent),
+                "scope": "Selected-file restore plus all Git bundle history; not a full-size restore or robot test."}
 
     def catalog(self):
         manifest = read_json(self.snapshot_dir() / "manifest.json")
@@ -445,7 +512,11 @@ def main():
     restore = sub.add_parser("restore")
     restore.add_argument("--snapshot")
     restore.add_argument("--destination", required=True)
-    restore.add_argument("--paths", nargs="+", required=True)
+    selection = restore.add_mutually_exclusive_group(required=True)
+    selection.add_argument("--paths", nargs="+")
+    selection.add_argument("--all", action="store_true", help="All regular payloads; symlinks need manual review")
+    recovery = sub.add_parser("recovery-test")
+    recovery.add_argument("--paths", nargs="+", required=True)
     cp = sub.add_parser("checkpoint")
     cp.add_argument("--message", required=True)
     cp.add_argument("--tests", required=True)
@@ -461,6 +532,8 @@ def main():
         result = maintenance.checkpoint(paths, args.message, args.tests)
     elif args.command == "restore":
         result = maintenance.restore(args.destination, args.paths, args.snapshot)
+    elif args.command == "recovery-test":
+        result = maintenance.recovery_test(args.paths)
     elif args.command == "inventory":
         result = maintenance.inventory(args.write)
         result = {key: val for key, val in result.items() if key not in ("large_files", "bytes_by_root", "bytes_by_extension")}

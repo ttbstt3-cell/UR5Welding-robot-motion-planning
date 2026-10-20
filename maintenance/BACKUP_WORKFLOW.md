@@ -34,6 +34,7 @@ Git权限受Codex沙箱限制时，申请针对该checkpoint命令的权限，�
 - 默认8MiB以上的资产、非当前大型MAT/TTT、视频/PPT/历史局部备份进独立数据快照，不强制全部上传Git。
 - `asset_catalog.json`记录Git之外的快照资产路径、大小和SHA256。恢复研究环境需要**Git历史+数据快照**，仅clone Git不等于恢复全部MAT/STL数据。
 - `UR5/third_party/IKLink`保留其独立仓库；工作文件进入快照、提交历史另存nested bundle，不改变它的remote/分支。
+- IKLink原本是浅克隆，只保存本机已有历史和shallow边界，不能声称拥有上游完整历史。Git 2.34的bundle verify不能独自证明浅克隆可恢复；维护工具另在隔离目录重建并fsck。
 - 没有一刀切忽略MAT/STL/实验日志；`.editable_build/notes_draft`中研究PPT仍备份。
 - `.gitignore`只排除明确缓存、ROS构建/运行日志、编辑器临时文件、私有工具目录及密钥；不等于数据快照的排除规则。
 - 当前未安装Git LFS。若以后采用LFS，只对评估后的路径操作；未获授权不改写历史、不上传大数据。
@@ -55,7 +56,7 @@ python3 tools/project_maintenance.py catalog
 
 `.project_backups/`以内容SHA256去重，保存真实文件字节、原路径/权限、Git bundle和完整清单。对象不与活动源文件硬链接；旧快照不覆盖、不自动清理。
 复制前后检查源文件身份和目录清单，有并发变更则失败关闭，不把不一致快照设为latest。不要通过停机器人来制造备份窗口；重要源文件持续变化时，等相关编辑/写入完成后重试。
-verify读取所有唯一payload校验SHA256，并验证Git bundle；只有全部成功才发布verified/latest。
+verify读取所有唯一payload校验SHA256，验证Git bundle并隔离重建每个仓库/fsck；只有全部成功才发布verified/latest。
 这属于**同盘恢复点**，不能防磁盘损坏/整机丢失，绝不是已完成云备份。
 符号链接只记录目标、不越出项目读取；恢复链接需人工核对。系统MATLAB/ROS/CoppeliaSim安装、许可证及外部链接依赖不在项目快照内。
 
@@ -66,10 +67,12 @@ verify读取所有唯一payload校验SHA256，并验证Git bundle；只有全部
 ```bash
 python3 tools/project_maintenance.py restore --snapshot SNAPSHOT_ID --destination /tmp/ur5-restore-unique --paths AGENTS.md HANDOFF.md UR5/real_tcp_calibration_active.json
 git clone --no-checkout .project_backups/snapshots/SNAPSHOT_ID/root.bundle /tmp/ur5-git-recovery-unique
+python3 tools/project_maintenance.py recovery-test --paths AGENTS.md UR5/real_tcp_calibration_active.json UR5/ur5_tool_calibration.mat
 ```
 
 工具逐文件校验SHA再复制；示例目标必须尚不存在。没有“覆盖当前项目”的自动恢复选项。
-完整恢复时以manifest逐个路径恢复到新目录，再恢复root/nested bundle；不直接在活动目录批量checkout。外部依赖、密钥和ROS可再生成缓存需独立准备。
+完整数据恢复可使用`restore --all --destination 新隔离目录`，仍不覆盖任何既有目录；符号链接需另行审查。
+Git历史在另一个新目录clone root/nested bundle，核实后再组织新工作副本；不直接在活动目录批量checkout。外部依赖、密钥和ROS可再生成缓存需独立准备。
 
 ## 外接盘/其他机器同步（尚需用户提供目标）
 

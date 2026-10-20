@@ -130,6 +130,43 @@ class MaintenanceTests(unittest.TestCase):
             self.m.checkpoint(["HANDOFF.md"], "Do not commit fixture", "Fixture test")
         self.assertEqual(before, self.git("diff", "--cached").stdout)
 
+    def test_git_history_and_all_files_recovery(self):
+        self.m.backup()
+        target = Path(self.temp.name) / "all-files"
+        self.assertGreaterEqual(self.m.restore(target)["restored_files"], 6)
+        self.assertEqual((target / "source.py").read_text(), "value = 1\n")
+        result = self.m.recovery_test(["source.py", "result.mat"])
+        self.assertEqual(result["status"], "PASS")
+        self.assertEqual(result["history_recovery"][0]["head"], self.git("rev-parse", "HEAD").stdout.strip())
+        # Private fixture-created check directory only, not project data.
+        import shutil
+        shutil.rmtree(result["temporary_directory"])
+
+    def test_shallow_nested_repository_recovery(self):
+        origin = Path(self.temp.name) / "nested-origin"
+        origin.mkdir()
+        subprocess.run(["git", "init", "--initial-branch=main", str(origin)], check=True, capture_output=True)
+        for number in range(2):
+            (origin / "file.txt").write_text(f"revision {number}\n")
+            subprocess.run(["git", "-C", str(origin), "add", "file.txt"], check=True, capture_output=True)
+            subprocess.run(["git", "-C", str(origin), "-c", "user.name=Fixture", "-c",
+                            "user.email=fixture@localhost", "commit", "-m", f"revision {number}"],
+                           check=True, capture_output=True)
+        subprocess.run(["git", "clone", "--depth=1", origin.as_uri(), str(self.root / "third_party")],
+                       check=True, capture_output=True)
+        policy_path = self.root / "maintenance/backup_policy.json"
+        policy = json.loads(policy_path.read_text())
+        policy["nested_repositories"] = ["third_party"]
+        policy_path.write_text(json.dumps(policy))
+        self.m = Maintenance(self.root)
+        receipt = self.m.backup()
+        self.assertEqual(receipt["shallow_repositories"], ["third_party"])
+        result = self.m.recovery_test(["source.py"])
+        self.assertEqual(result["history_recovery"][1]["status"], "PASS")
+        self.assertEqual(result["history_recovery"][1]["history_scope"], "Existing shallow history only")
+        import shutil
+        shutil.rmtree(result["temporary_directory"])
+
     def test_project_change_during_backup_fails_closed(self):
         original_walk = self.m.walk
         count = 0

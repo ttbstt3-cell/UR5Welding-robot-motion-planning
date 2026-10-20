@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-20",
+  "scope": "Local project maintenance only; no ROS/MATLAB planning, robot startup or motion commands",
+  "root_repository": {
+    "initialized_after_read_only_confirmation": true,
+    "branch": "main",
+    "baseline_commit": "9a46f22e466ce2978fe46e0beb2d64bc2b3ce819",
+    "initial_selected_files": 3557,
+    "initial_selected_bytes": 619664423,
+    "identity_if_unconfigured": "Local Project Maintenance <local-maintenance@localhost>; per commit only",
+    "production_paths_unchanged_since_baseline": ["UR5", "UR5_real", "RRT", "ros2_ws", "cr7", "jakaA5"]
+  },
+  "maintenance_tests": {"isolated_tests": 12, "result": "PASS"},
+  "verified_data_snapshot": {
+    "id": "20261020_174823_9db3a83e",
+    "manifest_sha256": "95447d3e7a6b45e7a22bcee35761fa9b6760c4be3bf6f6b3282455aab71a4885",
+    "files": 15432,
+    "unique_payload_objects_checked": 14215,
+    "git_bundles_verified_and_reconstructed": 2,
+    "verified_at_utc": "2026-10-20T09:48:51.575166+00:00",
+    "result": "PASS",
+    "storage": "Same local disk, .project_backups; NOT offsite/cloud",
+    "latest_checkpoint_note": "Later verified snapshots include final documentation; query maintenance status/latest.json for actual latest ID"
+  },
+  "real_recovery_test": {
+    "result": "PASS",
+    "at_utc": "2026-10-20T09:51:59.182913+00:00",
+    "receipt": ".project_backups/recovery_checks/435bc2afe0384b17bf79909c39d3d126.json",
+    "restored_file_count": 12,
+    "isolated_directory": "/tmp/ur5-recovery-check-rinxosh5",
+    "active_project_overwritten": false,
+    "full_size_file_restore_executed": false,
+    "root_git_commit_recovered": "fad2e02c15a23c56e5601228d4ad9a2e38e683c2",
+    "nested_git_commit_recovered": "d2edc00ded9f1406fb6797c4b229d8a01e602ba2",
+    "nested_git_history_scope": "Original existing shallow checkout only; unavailable upstream ancestors were not fetched",
+    "git_fsck": "PASS for both reconstructed repositories"
+  },
+  "secret_scan": {
+    "high_confidence_text_patterns": "No findings in recorded scan",
+    "not_a_complete_security_audit": true,
+    "binary_content_scanned": false,
+    "large_text_not_scanned": ["cr7/scene_geometry.json", "cr7/variants/cr7_original/scene_geometry.json"]
+  },
+  "remote": {
+    "origin": "https://github.com/ttbstt3-cell/UR5Welding-robot-motion-planning.git",
+    "user_authorized_sync_after_private_confirmation": true,
+    "first_visibility_observed": "public",
+    "first_connector_push_permission": false,
+    "latest_visibility": "UNVERIFIED; authenticated connector API returned 404",
+    "local_read_access": "FAIL: no HTTPS Git authentication, terminal prompts disabled",
+    "push_preflight": "Blocked by safety review before execution; not bypassed",
+    "push_executed": false,
+    "remote_sync_completed": false,
+    "next": "User confirms private visibility and configures repository access/writing permission; do not share tokens in chat"
+  },
+  "failure_retained": {
+    "snapshot": "20261020_174014_6c7011fc",
+    "finding": "Payload SHA checks passed but Git 2.34 bundle verify missed absent shallow parent history; direct nested clone failed",
+    "resolution": "Preserve shallow boundary and test real isolated Git reconstruction; newer snapshot is recovery entry",
+    "original_nested_repo_changed": false,
+    "old_snapshot_deleted": false
+  }
+}

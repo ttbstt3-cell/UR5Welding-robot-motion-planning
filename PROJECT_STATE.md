@@ -1,6 +1,7 @@
 # 项目状态与权威入口
 
 更新时间：2026-10-20（Asia/Shanghai）。这是稳定上下文；动态进度见`HANDOFF.md`。
+路径约定：未写完整前缀的Python文件相对`UR5/ur5_hmi/`；MATLAB入口相对`UR5/matlab仿真/`；`workflow_runs/`相对`UR5/规划文件/`。场景根JSON位于`UR5/`。
 
 ## 架构与职责
 

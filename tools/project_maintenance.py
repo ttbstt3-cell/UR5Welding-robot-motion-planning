@@ -448,9 +448,13 @@ class Maintenance:
             self.recover_git(folder, item, target)
             history.append({"repository": item["repository"], "head": item["head"], "status": "PASS",
                             "history_scope": item.get("history_scope", "Existing repository refs/history")})
-        return {"status": "PASS", "tested_at": stamp(), "restore": restored,
-                "history_recovery": history, "temporary_directory": str(parent),
-                "scope": "Selected-file restore plus all Git bundle history; not a full-size restore or robot test."}
+        result = {"status": "PASS", "tested_at": stamp(), "restore": restored,
+                  "history_recovery": history, "temporary_directory": str(parent),
+                  "scope": "Selected-file restore plus available Git histories; not a full-size restore or robot test."}
+        record = self.store / "recovery_checks" / (uuid.uuid4().hex + ".json")
+        result["record"] = record.relative_to(self.root).as_posix()
+        write_json(record, result)
+        return result
 
     def catalog(self):
         manifest = read_json(self.snapshot_dir() / "manifest.json")

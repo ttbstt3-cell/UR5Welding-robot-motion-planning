@@ -3543,9 +3543,11 @@ local_dense_connectivity.log
 local_dense_diagnostics_new11.log
 local_dense_recovery.log
 maintenance/BACKUP_WORKFLOW.md
+maintenance/asset_catalog.json
 maintenance/backup_policy.json
 maintenance/git_paths.txt
 maintenance/inventory.json
+maintenance/setup_verification.json
 multigrid_corrected.log
 ros2_ws/src/ur5_controller/package.xml
 ros2_ws/src/ur5_controller/setup.cfg

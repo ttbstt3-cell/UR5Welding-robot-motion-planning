@@ -84,7 +84,7 @@ Git历史在另一个新目录clone root/nested bundle，核实后再组织新�
 ## GitHub远程（有目标，尚未同步）
 
 用户2026-10-20提供并授权整理后同步：`https://github.com/ttbstt3-cell/UR5Welding-robot-motion-planning.git`。
-首次检查仓库为空、public，用户选择先改为private再同步；连接器push=false。本地认证另需实际验证。
+首次检查仓库为空、public，用户选择先改为private再同步；连接器push=false，后续API返回404；本机只读Git访问因无认证失败。
 在私有状态和写权限核实前不推送；当前上传结果以HANDOFF和最终验证记录为准。
 
 用户在GitHub新建Private仓库，初次建议不自动添加README/许可证/ignore，避免与现有本地历史冲突。

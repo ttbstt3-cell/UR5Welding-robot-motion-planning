@@ -81,13 +81,16 @@ Git历史在另一个新目录clone root/nested bundle，核实后再组织新�
 复制后在目标对manifest和对象SHA256复核，并执行Git bundle verify；仅“复制命令退出0”不能代替内容校验。
 第三方/研究资料上传权利及截图隐私须先确认。
 
-## GitHub远程（有目标，尚未同步）
+## GitHub远程（已完成获授权的首次同步）
 
 用户2026-10-20提供并授权整理后同步：`https://github.com/ttbstt3-cell/UR5Welding-robot-motion-planning.git`。
-首次检查仓库为空、public，用户选择先改为private再同步；连接器push=false，后续API返回404；本机只读Git访问因无认证失败。
-在私有状态和写权限核实前不推送；当前上传结果以HANDOFF和最终验证记录为准。
+2026-10-20本机gh API已核实账号ttbstt3-cell、private=true、push=true，正常首次推送main成功。
+首个远端提交与本地d0e28e8一致，经过API和ls-remote双重核对；证据见setup_verification.json。后续维护记录另正常推送，最终状态应实查。
+早期公开状态、旧连接器404及本机未认证的问题保留在交接中，不能把连接器授权等同于本机Git认证。
+本机gh版本2.4.0使用`gh auth login --hostname github.com --web`，不支持新版的login --git-protocol参数。
+只提交已审查的Git内容，约20GB大型快照仍在本机；这不是全部实验资产的异地备份。
 
-用户在GitHub新建Private仓库，初次建议不自动添加README/许可证/ignore，避免与现有本地历史冲突。
+以后另建Private仓库时，初次建议不自动添加README/许可证/ignore，避免与现有本地历史冲突。
 参照[GitHub创建仓库官方说明](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)。
 提供实际仓库URL并明确授权后，才添加remote；验证身份与仓库可访问性，检查待推送差异/敏感信息/体积后首次push。没有URL时不猜测origin。
 Git只同步已提交内容；大型快照仍需独立授权的存储目标。私有仓库也不应保存密钥。

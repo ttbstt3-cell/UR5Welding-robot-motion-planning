@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "scope": "Local project maintenance only; no ROS/MATLAB planning, robot startup or motion commands",
+  "scope": "Project maintenance and explicitly authorized private Git synchronization; no ROS/MATLAB planning, robot startup or motion commands",
   "root_repository": {
     "initialized_after_read_only_confirmation": true,
     "branch": "main",
@@ -46,12 +46,24 @@
     "user_authorized_sync_after_private_confirmation": true,
     "first_visibility_observed": "public",
     "first_connector_push_permission": false,
-    "latest_visibility": "UNVERIFIED; authenticated connector API returned 404",
-    "local_read_access": "FAIL: no HTTPS Git authentication, terminal prompts disabled",
-    "push_preflight": "Blocked by safety review before execution; not bypassed",
-    "push_executed": false,
-    "remote_sync_completed": false,
-    "next": "User confirms private visibility and configures repository access/writing permission; do not share tokens in chat"
+    "initial_access_failures": "Public repository was not uploaded; old connector later returned 404; local Git initially lacked authentication. Earlier review rejection was not bypassed.",
+    "latest_visibility": "private; authenticated local gh API confirmed private=true",
+    "verified_account": "ttbstt3-cell",
+    "authentication_channel": "User-configured local gh/Git; not the separate GitHub connector",
+    "write_permission_confirmed": true,
+    "local_read_access": "PASS: authenticated API and Git remote references",
+    "remote_was_empty_before_first_push": true,
+    "push_executed": true,
+    "force_push_used": false,
+    "remote_sync_completed": true,
+    "first_verified_sync_commit": "d0e28e809275a1733e3b81d4a050fe8fbd447317",
+    "verification": "GitHub API git/ref/heads/main and git ls-remote both matched local HEAD after successful push",
+    "verified_at_utc": "2026-10-20T11:39:23+00:00",
+    "tracked_files_reviewed": 3559,
+    "maximum_historical_blob_bytes": 8118830,
+    "snapshot_payloads_uploaded": false,
+    "credentials_exposed_in_outputs_or_commits": false,
+    "next": "Normally push the final maintenance record and recheck HEAD; future pushes require explicit authorization. Large assets still require a separate backup destination."
   },
   "failure_retained": {
     "snapshot": "20261020_174014_6c7011fc",
